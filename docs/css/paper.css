@@ -1,0 +1,302 @@
+/* 紙面レイアウト。日本の新聞の版面の作法を、iPhoneの縦スクロールに翻訳する。
+
+   本物の新聞に寄せるために効いているのは、書体よりも次の4つ:
+     1. 罫線の使い分け（太罫・双罫・細罫・段罫）で紙面を区切る
+     2. 見出しと本文の級数差を大きく取る
+     3. 本文を両端揃えにして、字を詰めて組む
+     4. 題字まわりに日付・号・面名などの「紙面の情報」を置く
+*/
+
+.paper {
+  max-width: 40em;
+  margin: 0 auto;
+  padding: 0 var(--space-4) var(--space-8);
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "MS Mincho", serif;
+}
+
+/* ===== 題字 ===== */
+
+.masthead {
+  padding: var(--space-4) 0 0;
+}
+
+/* 発行日・刊種を題字の上に一列で置く。新聞の題字まわりの作法 */
+.masthead__strip {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-2);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--ink);
+  font-family: -apple-system, system-ui, sans-serif;
+  font-size: 0.6875em;
+  letter-spacing: 0.02em;
+  color: var(--ink-2);
+  font-variant-numeric: tabular-nums;
+}
+
+.masthead__edition {
+  padding: 0.15em 0.5em;
+  border: 1px solid var(--ink-2);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.masthead__name {
+  margin: 0;
+  padding: 0.28em 0 0.2em;
+  text-align: center;
+  font-size: 2.75em;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.3em;
+  text-indent: 0.3em;   /* 字間ぶんの右寄りを打ち消して中央に見せる */
+}
+
+/* 題字の下は太罫。紙面で一番強い区切り */
+.masthead__rule {
+  border: none;
+  border-top: 3px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  height: 3px;
+  margin: 0 0 var(--space-2);
+}
+
+.masthead__meta {
+  margin: 0 0 var(--space-4);
+  font-family: -apple-system, system-ui, sans-serif;
+  font-size: 0.6875em;
+  line-height: 1.5;
+  color: var(--ink-3);
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ===== 面名（紙面のセクション見出し） ===== */
+
+.section-head {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin: var(--space-6) 0 var(--space-3);
+  font-family: -apple-system, system-ui, sans-serif;
+  font-size: 0.6875em;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: var(--ink-2);
+}
+
+.section-head::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid var(--rule-strong);
+}
+
+.section-head__mark {
+  padding: 0.1em 0.45em;
+  background: var(--ink);
+  color: var(--paper);
+  letter-spacing: 0.1em;
+}
+
+/* ===== 記事の共通部分 ===== */
+
+.article {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: opacity 100ms ease-out;
+}
+
+.article:active { opacity: 0.55; }
+
+/* 袖見出し。出典を記事の頭に置いて、どこの記事か一目で分かるようにする */
+.article__kicker {
+  margin: 0 0 0.35em;
+  font-family: -apple-system, system-ui, sans-serif;
+  font-size: 0.6875em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--ink-2);
+}
+
+/* 本文。新聞は両端揃えで字を詰めて組む */
+.article__summary {
+  text-align: justify;
+  text-justify: inter-character;
+  text-indent: 1em;         /* 段落の1字下げ */
+  letter-spacing: 0.01em;
+  overflow-wrap: anywhere;
+}
+
+.article__source {
+  margin: var(--space-2) 0 0;
+  font-family: -apple-system, system-ui, sans-serif;
+  font-size: 0.6875em;
+  color: var(--ink-3);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.article--read .article__title { color: var(--ink-2); }
+
+.article__note {
+  margin: var(--space-1) 0 0;
+  font-family: -apple-system, system-ui, sans-serif;
+  font-size: 0.6875em;
+  color: var(--ink-3);
+  text-align: right;
+}
+
+/* ===== トップ記事 ===== */
+
+.lead {
+  padding: var(--space-2) 0 var(--space-4);
+  border-bottom: 3px double var(--ink);
+}
+
+.lead .article__title {
+  margin: 0 0 var(--space-3);
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.045em;   /* 大きい見出しほど字間を詰める */
+}
+
+/* 見出しの頭に黒の四角。新聞の主見出しの印 */
+.lead .article__title::before {
+  content: "■";
+  margin-right: 0.15em;
+  font-size: 0.62em;
+  vertical-align: 0.18em;
+}
+
+.lead .article__summary {
+  margin: 0;
+  font-size: 1.0625em;
+  line-height: 1.85;
+}
+
+/* ===== 準トップ（2段組み・段罫で仕切る） ===== */
+
+.seconds {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 var(--space-4);
+  padding: var(--space-4) 0;
+  border-bottom: 3px double var(--ink);
+}
+
+.seconds--single { grid-template-columns: 1fr; }
+
+/* 2段のときだけ段罫を引く */
+.seconds:not(.seconds--single) > .article:first-child {
+  padding-right: var(--space-4);
+  border-right: 1px solid var(--rule-strong);
+}
+
+.seconds .article__title {
+  margin: 0 0 var(--space-2);
+  font-size: 1.125em;
+  font-weight: 600;
+  line-height: 1.32;
+  letter-spacing: -0.03em;
+}
+
+.seconds .article__title::before {
+  content: "▪";
+  margin-right: 0.2em;
+  font-size: 0.8em;
+  vertical-align: 0.1em;
+}
+
+.seconds .article__summary {
+  margin: 0;
+  font-size: 0.875em;
+  line-height: 1.75;
+}
+
+/* ===== 一段の記事リスト ===== */
+
+.items .article {
+  padding: var(--space-4) 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.items .article:last-child { border-bottom: none; }
+
+.items .article__title {
+  margin: 0 0 var(--space-1);
+  font-size: 1.0625em;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: -0.025em;
+}
+
+.items .article__title::before {
+  content: "・";
+  margin-left: -0.35em;
+  color: var(--ink-2);
+}
+
+.items .article__summary {
+  margin: 0;
+  font-size: 0.875em;
+  line-height: 1.7;
+  color: var(--ink-2);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.items .article__kicker { display: inline; margin-right: 0.5em; }
+
+/* ===== 紙面の締め ===== */
+
+.colophon {
+  margin-top: var(--space-6);
+  padding-top: var(--space-3);
+  border-top: 3px double var(--ink);
+  font-family: -apple-system, system-ui, sans-serif;
+  font-size: 0.6875em;
+  line-height: 1.7;
+  color: var(--ink-3);
+  text-align: center;
+}
+
+/* ===== 記事が無いとき ===== */
+
+.empty {
+  padding: var(--space-8) var(--space-4);
+  text-align: center;
+  color: var(--ink-2);
+  line-height: 1.9;
+}
+
+.empty__title {
+  font-size: 1.25em;
+  font-weight: 600;
+  margin: 0 0 var(--space-2);
+}
+
+/* ===== 要約が失敗した記事 ===== */
+
+.article__retry {
+  margin-top: var(--space-2);
+  font-family: -apple-system, system-ui, sans-serif;
+}
+
+/* ===== 広い画面（iPad・横向き）では段数を増やす ===== */
+
+@media (min-width: 44em) {
+  .lead { display: grid; grid-template-columns: 1.1fr 1fr; gap: var(--space-6); }
+  .lead .article__title { margin-bottom: 0; }
+  .items {
+    columns: 2;
+    column-gap: var(--space-6);
+    column-rule: 1px solid var(--rule-strong);
+  }
+  .items .article { break-inside: avoid; }
+}

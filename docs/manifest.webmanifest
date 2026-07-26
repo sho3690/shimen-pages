@@ -1,0 +1,17 @@
+{
+  "name": "紙面",
+  "short_name": "紙面",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fffdf8",
+  "theme_color": "#fffdf8",
+  "lang": "ja",
+  "icons": [
+    { "src": "./icons/icon-180.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "./icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "./icons/icon-512.png", "sizes": "512x512", "type": "image/png",
+      "purpose": "any maskable" }
+  ]
+}

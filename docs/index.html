@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="紙面">
+  <meta name="theme-color" content="#fffdf8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d0d0f" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="apple-touch-icon" href="./icons/icon-180.png">
+  <link rel="stylesheet" href="./css/hig.css">
+  <link rel="stylesheet" href="./css/paper.css">
+  <meta name="robots" content="noindex, nofollow">
+  <script>window.STATIC_MODE = true;</script>
+  <title>紙面</title>
+</head>
+<body>
+  <header class="toolbar">
+    <button id="build" class="btn" type="button">今日の紙面をつくる</button>
+    <span style="flex:1"></span>
+    <button id="open-settings" class="btn btn--quiet" type="button">フィード</button>
+  </header>
+
+  <div id="notices" aria-live="polite"></div>
+
+  <div id="progress" class="progress" hidden>
+    <div class="progress__track"><div id="progress-fill" class="progress__fill"></div></div>
+    <p id="progress-text" class="progress__text"></p>
+  </div>
+
+  <main id="paper" class="paper" aria-live="polite"></main>
+
+  <footer id="wifi" class="footnote"></footer>
+
+  <section id="settings" class="sheet" hidden aria-labelledby="settings-title">
+    <div class="sheet__head">
+      <h2 id="settings-title" class="sheet__title">フィード</h2>
+      <button id="close-settings" class="btn btn--quiet" type="button">閉じる</button>
+    </div>
+
+    <form id="add-feed" style="padding-bottom:1.5em">
+      <label class="label" for="feed-url">RSSのURLを貼り付け</label>
+      <input id="feed-url" class="field" type="url" inputmode="url"
+             autocomplete="off" autocapitalize="off" spellcheck="false"
+             placeholder="https://example.com/rss">
+      <p id="add-feed-error" class="banner banner--error" hidden></p>
+      <button id="add-feed-submit" class="btn" type="submit"
+              style="margin-top:0.75em">追加する</button>
+    </form>
+
+    <div id="feed-list"></div>
+  </section>
+
+  <script src="./js/api.js"></script>
+  <script src="./js/render.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>

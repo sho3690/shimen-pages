@@ -1,0 +1,305 @@
+/* Apple HIG準拠の土台。色・間隔・UI部品。
+   Dynamic Type: 根に -apple-system-body を置き、以降は em で導出する。 */
+
+:root {
+  /* iOSの文字サイズ設定に追従する。ここが px だと追従しない */
+  font: -apple-system-body;
+  font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  -webkit-text-size-adjust: 100%;
+
+  --paper: #fffdf8;          /* 紙の白。わずかに温かい */
+  --surface: #ffffff;
+  --surface-2: #f2f2f7;      /* systemGroupedBackground */
+  --ink: #1c1c1e;            /* 本文 */
+  --ink-2: #3c3c43;          /* 副情報 */
+  --ink-3: #5c5c62;          /* 出典・時刻 */
+  --rule: rgba(60, 60, 67, 0.22);
+  --rule-strong: rgba(60, 60, 67, 0.42);
+  --accent: #0060df;
+  --danger: #b3261e;
+  --warn-bg: #fff8e6;
+  --warn-ink: #6b4500;
+
+  --space-1: 0.25em;
+  --space-2: 0.5em;
+  --space-3: 0.75em;
+  --space-4: 1em;
+  --space-6: 1.5em;
+  --space-8: 2em;
+
+  --radius: 0.625em;
+  --tap: 2.75rem;            /* 44pt */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #0d0d0f;        /* 黒い紙に白インク */
+    --surface: #1c1c1e;
+    --surface-2: #000000;
+    --ink: #ece9e3;
+    --ink-2: #c4c1bb;
+    --ink-3: #a5a29c;
+    --rule: rgba(235, 235, 245, 0.2);
+    --rule-strong: rgba(235, 235, 245, 0.38);
+    --accent: #6cb4ff;
+    --danger: #ff6961;
+    --warn-bg: #2a2113;
+    --warn-ink: #ffd88a;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  /* ノッチとホームバーを避ける */
+  padding:
+    env(safe-area-inset-top)
+    env(safe-area-inset-right)
+    env(safe-area-inset-bottom)
+    env(safe-area-inset-left);
+  overscroll-behavior-y: contain;
+}
+
+:focus-visible {
+  outline: 0.1875em solid var(--accent);
+  outline-offset: 0.125em;
+  border-radius: 0.25em;
+}
+
+/* --- 半透明のツールバー。中身がその下を流れる --- */
+
+.toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background: color-mix(in srgb, var(--paper) 72%, transparent);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  backdrop-filter: blur(20px) saturate(180%);
+}
+
+/* 硬い1px線ではなく、重なる境目をぼかす */
+.toolbar::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: -0.75em;
+  height: 0.75em;
+  background: linear-gradient(
+    to bottom, color-mix(in srgb, var(--paper) 60%, transparent), transparent
+  );
+  pointer-events: none;
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .toolbar {
+    background: var(--paper);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    border-bottom: 1px solid var(--rule);
+  }
+  .toolbar::after { display: none; }
+}
+
+/* --- ボタン。押した瞬間に沈む（離した時ではない） --- */
+
+.btn {
+  font: inherit;
+  font-weight: 600;
+  letter-spacing: 0;
+  min-height: var(--tap);
+  min-width: var(--tap);
+  padding: var(--space-2) var(--space-4);
+  border: none;
+  border-radius: var(--radius);
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;   /* 300msのタップ遅延を消す */
+  transition: transform 100ms ease-out, opacity 100ms ease-out;
+}
+
+.btn:active { transform: scale(0.97); }
+
+.btn:disabled {
+  opacity: 1;
+  background: var(--surface-2);
+  color: var(--ink-3);          /* 無効でも読める */
+  cursor: default;
+}
+
+.btn--quiet {
+  background: transparent;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.btn--danger { background: transparent; color: var(--danger); }
+
+@media (prefers-color-scheme: dark) {
+  .btn { color: #06121f; }      /* 明るい青地には濃い文字 */
+  .btn--quiet, .btn--danger { color: var(--accent); }
+  .btn--danger { color: var(--danger); }
+  .btn:disabled { color: var(--ink-3); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn { transition: opacity 100ms ease; }
+  .btn:active { transform: none; opacity: 0.6; }
+}
+
+/* --- 入力欄 --- */
+
+.field {
+  font: inherit;
+  width: 100%;
+  min-height: var(--tap);
+  padding: var(--space-2) var(--space-3);
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+}
+
+.field::placeholder { color: var(--ink-3); }
+
+.label {
+  display: block;
+  margin-bottom: var(--space-1);
+  font-size: 0.875em;
+  font-weight: 600;
+  color: var(--ink-2);
+}
+
+/* --- 知らせ --- */
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius);
+  background: var(--warn-bg);
+  color: var(--warn-ink);
+  font-size: 0.9375em;
+  line-height: 1.5;
+}
+
+/* display:flex は [hidden] の display:none に勝ってしまう。
+   明示しないと、隠したはずの空の箱が画面に残る */
+.banner[hidden] { display: none; }
+
+.banner--error { background: var(--surface-2); color: var(--danger); }
+.banner__title { font-weight: 700; margin: 0; }
+.banner__how { margin: 0; color: inherit; }
+
+/* --- 進捗 --- */
+
+.progress { margin: var(--space-4); }
+
+.progress__track {
+  height: 0.375em;
+  border-radius: 0.1875em;
+  background: var(--surface-2);
+  overflow: hidden;
+}
+
+.progress__fill {
+  height: 100%;
+  width: 0%;
+  background: var(--accent);
+  border-radius: inherit;
+  transition: width 250ms ease-out;
+}
+
+.progress__text {
+  margin: var(--space-2) 0 0;
+  font-size: 0.875em;
+  color: var(--ink-2);
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .progress__fill { transition: none; }
+}
+
+/* --- 設定シート --- */
+
+.sheet {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  background: var(--paper);
+  padding: env(safe-area-inset-top) var(--space-4) env(safe-area-inset-bottom);
+  overflow-y: auto;
+}
+
+.sheet[hidden] { display: none; }
+
+.sheet__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-4) 0;
+}
+
+.sheet__title { font-size: 1.25em; font-weight: 700; letter-spacing: -0.01em; margin: 0; }
+
+.feed-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.feed-row__body { flex: 1; min-width: 0; }
+.feed-row__title { font-weight: 600; margin: 0; }
+
+.feed-row__meta {
+  margin: 0;
+  font-size: 0.8125em;
+  color: var(--ink-3);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.feed-row__error { margin: 0; font-size: 0.8125em; color: var(--danger); }
+
+.select {
+  font: inherit;
+  min-height: var(--tap);
+  padding: 0 var(--space-2);
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+}
+
+.footnote {
+  padding: var(--space-6) var(--space-4) var(--space-8);
+  font-size: 0.8125em;
+  line-height: 1.6;
+  color: var(--ink-3);
+  text-align: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  margin: -1px; padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
