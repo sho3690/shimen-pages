@@ -114,15 +114,36 @@
   function applyStaticMode(paper) {
     buildBtn.remove();
     document.getElementById("open-settings").remove();
+    showFreshness(paper);
+  }
 
+  /* いつ作られた紙面かを出す。古いままなら、それと分かるようにする。
+     自動更新が止まっていることに気づける唯一の手がかりなので消さない。 */
+  function showFreshness(paper) {
     const issued = paper && paper.generated_at ? new Date(paper.generated_at) : null;
-    wifiEl.textContent = issued
-      ? "この紙面は " + issued.getFullYear() + "年" + (issued.getMonth() + 1) +
-        "月" + issued.getDate() + "日 " +
-        String(issued.getHours()).padStart(2, "0") + ":" +
-        String(issued.getMinutes()).padStart(2, "0") +
-        " にMacで作られたものです。新しくするにはMacで紙面を作り直してください。"
-      : "この紙面はMacで作られた控えです。";
+    if (!issued || isNaN(issued.getTime())) {
+      wifiEl.textContent = "この紙面はMacで作られた控えです。";
+      return;
+    }
+
+    const clock = String(issued.getHours()).padStart(2, "0") + ":" +
+                  String(issued.getMinutes()).padStart(2, "0");
+    const hours = (Date.now() - issued.getTime()) / 3600000;
+    const sameDay = issued.toDateString() === new Date().toDateString();
+    const when = sameDay
+      ? "今日 " + clock
+      : (issued.getMonth() + 1) + "月" + issued.getDate() + "日 " + clock;
+
+    if (hours >= 24) {
+      wifiEl.textContent = "⚠ この紙面は " + when + " のものです（" +
+        Math.floor(hours / 24) + "日前）。自動更新が止まっているかもしれません。";
+      wifiEl.style.color = "var(--danger)";
+      return;
+    }
+    wifiEl.style.color = "";
+    wifiEl.textContent = hours >= 12
+      ? "この紙面は " + when + " のものです。次の更新は朝6時半／夕6時半です。"
+      : "この紙面は " + when + " に作られました。";
   }
 
   function showProgress(state) {
