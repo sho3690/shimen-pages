@@ -72,6 +72,63 @@
   font-variant-numeric: tabular-nums;
 }
 
+/* ===== きょうの要点（紙面全体の総括） =====
+   新聞の一面コラムの位置。ここだけ読んで済ませられるように、
+   囲み罫で本文と切り離し、地の色を少し変える。 */
+
+.digest {
+  margin: 0 0 var(--space-6);
+  padding: var(--space-4);
+  border: 1px solid var(--ink);
+  border-top: 4px solid var(--ink);
+  background: var(--surface-2);
+}
+
+.digest__label {
+  margin: 0 0 var(--space-3);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--rule-strong);
+  font-size: 0.9375em;
+  font-weight: 700;
+  letter-spacing: 0.26em;
+  text-indent: 0.26em;
+  text-align: center;
+}
+
+.digest__para {
+  margin: 0 0 var(--space-3);
+  font-size: 0.9375em;
+  line-height: 1.85;
+  text-align: justify;
+  text-justify: inter-character;
+}
+
+.digest__para:last-of-type { margin-bottom: 0; }
+
+/* 分野名は白抜きの角判に。段落の頭を拾いやすくする */
+.digest__field {
+  display: inline-block;
+  margin-right: 0.5em;
+  padding: 0.05em 0.4em;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: -apple-system, system-ui, sans-serif;
+  font-size: 0.75em;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  vertical-align: 0.1em;
+}
+
+.digest__note {
+  margin: var(--space-3) 0 0;
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--rule);
+  font-family: -apple-system, system-ui, sans-serif;
+  font-size: 0.6875em;
+  line-height: 1.6;
+  color: var(--ink-3);
+}
+
 /* ===== 面名（紙面のセクション見出し） ===== */
 
 .section-head {

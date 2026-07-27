@@ -118,6 +118,26 @@
     ));
     root.appendChild(masthead);
 
+    // --- 今日の要点（紙面全体を読んだ総括）。これだけ読めば済むように上に置く ---
+    if (data.digest && data.digest.length) {
+      const digest = el("section", "digest");
+      digest.appendChild(el("p", "digest__label", "きょうの要点"));
+      data.digest.forEach(function (paragraph) {
+        const match = /^【([^】]{1,8})】\s*(.*)$/.exec(paragraph);
+        const line = el("p", "digest__para");
+        if (match) {
+          line.appendChild(el("span", "digest__field", match[1]));
+          line.appendChild(document.createTextNode(match[2]));
+        } else {
+          line.textContent = paragraph;
+        }
+        digest.appendChild(line);
+      });
+      digest.appendChild(el("p", "digest__note",
+        "この要点は紙面全体をAIが読んでまとめたものです。詳しくは各記事へ。"));
+      root.appendChild(digest);
+    }
+
     if (!data.lead) {
       const empty = el("div", "empty");
       empty.appendChild(el("p", "empty__title", "まだ記事がありません"));
