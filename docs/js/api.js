@@ -71,8 +71,18 @@
 
     markRead: async function (id) { rememberRead(id); },
 
-    // 紙面の更新はMacで行う。この画面からはできない
-    listFeeds: async () => ({ feeds: [] }),
+    // フィード一覧は紙面JSONに入っている（名前と状態だけ。URLは公開しない）
+    listFeeds: async function () {
+      const response = await fetch("data/paper.json", { cache: "no-cache" });
+      if (!response.ok) throw new Error("フィード一覧を読み込めませんでした");
+      const paper = await response.json();
+      return { feeds: (paper.feeds || []).map(function (f, i) {
+        return { id: i, title: f.title, url: "", priority: f.priority,
+                 last_error: f.last_error, readonly: true };
+      }) };
+    },
+
+    // 追加・削除・優先度の変更はMacの画面から行う
     addFeed: async () => { throw new Error("この画面からは追加できません"); },
     deleteFeed: async () => { throw new Error("この画面からは削除できません"); },
     setPriority: async () => { throw new Error("この画面からは変更できません"); },

@@ -87,6 +87,48 @@
     return link;
   }
 
+  /* 総括の1段落 = 紙面の1記事。下に根拠の元記事をぶら下げる。 */
+  function digestSection(section, handlers) {
+    const block = el("section", "brief");
+
+    const head = el("h2", "brief__head");
+    if (section.field) head.appendChild(el("span", "brief__field", section.field));
+    head.appendChild(document.createTextNode(section.text.slice(0, 999)));
+    block.appendChild(head);
+
+    if (section.sources && section.sources.length) {
+      const list = el("ul", "brief__sources");
+      section.sources.forEach(function (s) {
+        const item = el("li");
+        const link = el("a", "brief__source");
+        link.href = s.url;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.appendChild(el("span", "brief__outlet", s.feed_title));
+        link.appendChild(document.createTextNode(s.title));
+        item.appendChild(link);
+        list.appendChild(item);
+      });
+      block.appendChild(list);
+    }
+    return block;
+  }
+
+  /* その日、複数の記事に繰り返し出てきた語 */
+  function topicStrip(topicList) {
+    const strip = el("div", "topics");
+    strip.appendChild(el("span", "topics__label", "きょう繰り返し出た語"));
+    const row = el("div", "topics__row");
+    topicList.forEach(function (t) {
+      const chip = el("span", "topic");
+      chip.appendChild(el("span", "topic__term", t.term));
+      chip.appendChild(el("span", "topic__count", t.article_count + "本"));
+      row.appendChild(chip);
+    });
+    strip.appendChild(row);
+    return strip;
+  }
+
   function sectionHead(mark, label) {
     const head = el("div", "section-head");
     head.appendChild(el("span", "section-head__mark", mark));
@@ -118,29 +160,10 @@
     ));
     root.appendChild(masthead);
 
-    // --- 今日の要点（紙面全体を読んだ総括）。これだけ読めば済むように上に置く ---
-    if (data.digest && data.digest.length) {
-      const digest = el("section", "digest");
-      digest.appendChild(el("p", "digest__label", "きょうの要点"));
-      data.digest.forEach(function (paragraph) {
-        const match = /^【([^】]{1,8})】\s*(.*)$/.exec(paragraph);
-        const line = el("p", "digest__para");
-        if (match) {
-          line.appendChild(el("span", "digest__field", match[1]));
-          line.appendChild(document.createTextNode(match[2]));
-        } else {
-          line.textContent = paragraph;
-        }
-        digest.appendChild(line);
-      });
-      digest.appendChild(el("p", "digest__note",
-        "この要点は紙面全体をAIが読んでまとめたものです。詳しくは各記事へ。"));
-      root.appendChild(digest);
-    }
-
-    if (!data.lead) {
+    // --- きょうの要点。これが紙面の本体 ---
+    if (!data.digest || !data.digest.length) {
       const empty = el("div", "empty");
-      empty.appendChild(el("p", "empty__title", "まだ記事がありません"));
+      empty.appendChild(el("p", "empty__title", "まだ紙面がありません"));
       empty.appendChild(el("p", null, data.emptyHint ||
         "右上の「フィード」からニュースサイトのRSSを登録して、" +
         "「今日の紙面をつくる」を押してください。"));
@@ -148,38 +171,22 @@
       return root;
     }
 
-    // --- 一面 ---
-    const lead = el("section", "lead");
-    lead.appendChild(articleNode(data.lead, handlers));
-    root.appendChild(lead);
-
-    // --- 二面（主要） ---
-    if (data.seconds.length > 0) {
-      root.appendChild(sectionHead("二面", "主要"));
-      const seconds = el("section", "seconds");
-      if (data.seconds.length === 1) seconds.classList.add("seconds--single");
-      data.seconds.forEach(function (a) {
-        seconds.appendChild(articleNode(a, handlers));
-      });
-      root.appendChild(seconds);
+    if (data.topics && data.topics.length) {
+      root.appendChild(topicStrip(data.topics));
     }
 
-    // --- 総合面 ---
-    if (data.items.length > 0) {
-      root.appendChild(sectionHead("総合", "その他の記事"));
-      const items = el("section", "items");
-      data.items.forEach(function (a) {
-        items.appendChild(articleNode(a, handlers));
-      });
-      root.appendChild(items);
-    }
+    const body = el("section", "briefs");
+    data.digest.forEach(function (section) {
+      body.appendChild(digestSection(section, handlers));
+    });
+    root.appendChild(body);
 
     // --- 締め ---
     const colophon = el("div", "colophon");
     colophon.appendChild(el("p", null,
-      "見出しをタップすると配信元の記事が開きます。"));
+      "この紙面は、集めた記事すべてをAIが読んでまとめたものです。"));
     colophon.appendChild(el("p", null,
-      "要約はこのMacの中のAIが作成したものです。正確さは元記事で確かめてください。"));
+      "各項目の下のリンクが、そのもとになった記事です。正確さはそちらで確かめてください。"));
     root.appendChild(colophon);
 
     return root;
@@ -196,11 +203,18 @@
       const row = el("div", "feed-row");
       const body = el("div", "feed-row__body");
       body.appendChild(el("p", "feed-row__title", feed.title));
-      body.appendChild(el("p", "feed-row__meta", feed.url));
+      if (feed.url) body.appendChild(el("p", "feed-row__meta", feed.url));
       if (feed.last_error) {
         body.appendChild(el("p", "feed-row__error", feed.last_error));
       }
       row.appendChild(body);
+
+      if (feed.readonly) {
+        const label = ["", "重点", "通常", "軽め"][feed.priority] || "通常";
+        row.appendChild(el("span", "feed-row__badge", label));
+        root.appendChild(row);
+        return;
+      }
 
       const select = el("select", "select");
       select.setAttribute("aria-label", feed.title + " の扱い");

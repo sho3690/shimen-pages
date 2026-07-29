@@ -77,6 +77,14 @@
   function loadFeeds() {
     return API.listFeeds().then(function (data) {
       feedListEl.replaceChildren(Render.feedList(data.feeds, handlers));
+      if (API.isStatic) {
+        const note = document.createElement("p");
+        note.className = "sheet__note";
+        note.textContent =
+          "追加・削除はMacの画面から行います。start.command をダブルクリックし、" +
+          "出てきたQRコードをiPhoneで読み取ってください。";
+        feedListEl.appendChild(note);
+      }
     }).catch(function (e) {
       notify("フィード一覧を読み込めませんでした", e.message, "error");
     });
@@ -112,8 +120,10 @@
   /* GitHub Pages版では、Macが必要な操作を画面から消す。
      押せないボタンを残しておくより、無いほうが迷わない。 */
   function applyStaticMode(paper) {
+    // 紙面を作るのはMacの仕事なので、このボタンだけ消す。
+    // フィードの確認はここでもできるようにしておく
     buildBtn.remove();
-    document.getElementById("open-settings").remove();
+    addFeedForm.remove();
     showFreshness(paper);
   }
 
@@ -188,17 +198,17 @@
 
   if (!API.isStatic) {
     buildBtn.addEventListener("click", startBuild);
-
-    document.getElementById("open-settings").addEventListener("click", function () {
-      settingsEl.hidden = false;
-      loadFeeds();
-    });
-
-    document.getElementById("close-settings").addEventListener("click", function () {
-      settingsEl.hidden = true;
-      loadPaper();
-    });
   }
+
+  document.getElementById("open-settings").addEventListener("click", function () {
+    settingsEl.hidden = false;
+    loadFeeds();
+  });
+
+  document.getElementById("close-settings").addEventListener("click", function () {
+    settingsEl.hidden = true;
+    if (!API.isStatic) loadPaper();
+  });
 
   addFeedForm.addEventListener("submit", function (event) {
     event.preventDefault();
