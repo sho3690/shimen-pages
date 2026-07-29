@@ -72,15 +72,15 @@
   font-variant-numeric: tabular-nums;
 }
 
-/* ===== きょう多く報じられた =====
-   その日の重心を最初に見せる要素。語の大きさを本数に比例させ、
+/* ===== ワードクラウド =====
+   複数の記事に出てきた語を、本数に応じた大きさで並べる。
    数えた事実がそのまま視覚の強弱になるようにする。 */
 
 .topics {
   margin: 0 0 var(--space-8);
-  padding: var(--space-5) var(--space-4) var(--space-4);
+  padding: var(--space-5) var(--space-4) var(--space-5);
   background: var(--surface-2);
-  border-radius: var(--radius-lg, 0.875em);
+  border-radius: var(--radius-lg);
   font-family: -apple-system, system-ui, sans-serif;
 }
 
@@ -104,29 +104,38 @@
   color: var(--ink-3);
 }
 
-.topics__row {
+/* 語を中央から広げる。行の高さを揃えず、大きさの差で雲らしく見せる */
+.cloud {
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.5em 1.1em;
+  justify-content: center;
+  align-items: center;
+  gap: 0.35em 0.85em;
+  padding: var(--space-2) 0;
 }
 
-.topic { display: inline-flex; align-items: baseline; gap: 0.28em; }
+.cloud__word {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.22em;
+  line-height: 1.15;
+}
 
-/* 大きい文字ほど字間を詰める（Appleの型組みの作法） */
-.topic__term { font-weight: 700; color: var(--ink); }
-.topic--lg .topic__term { font-size: 1.5em; letter-spacing: -0.03em; }
-.topic--md .topic__term { font-size: 1.125em; letter-spacing: -0.02em; }
-.topic--sm .topic__term { font-size: 0.875em; letter-spacing: -0.01em; }
+.cloud__term { font-weight: 700; }
 
-.topic__count {
-  font-size: 0.6875em;
+.cloud__count {
+  font-size: 0.5em;
   font-weight: 600;
   color: var(--ink-3);
   font-variant-numeric: tabular-nums;
 }
 
-.topic--lg .topic__count { font-size: 0.8125em; }
+/* 本数に応じた5段階。大きい語ほど字間を詰める（Appleの型組みの作法） */
+.cloud--4 .cloud__term { font-size: 2em;     letter-spacing: -0.045em; color: var(--ink); }
+.cloud--3 .cloud__term { font-size: 1.5em;   letter-spacing: -0.035em; color: var(--ink); }
+.cloud--2 .cloud__term { font-size: 1.1875em; letter-spacing: -0.025em; color: var(--ink); }
+.cloud--1 .cloud__term { font-size: 1em;     letter-spacing: -0.015em; color: var(--ink-2); }
+.cloud--0 .cloud__term { font-size: 0.875em; letter-spacing: -0.01em;  color: var(--ink-2); }
 
 /* ===== きょうの要点の各項目 =====
    紙面の本体。通し番号と太罫で、どこからどこまでが1項目かを明示する。 */

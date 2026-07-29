@@ -125,24 +125,33 @@
     const panel = el("section", "topics");
 
     const head = el("div", "topics__head");
-    head.appendChild(el("h2", "topics__title", "きょう多く報じられた"));
+    head.appendChild(el("h2", "topics__title", "ワードクラウド"));
     head.appendChild(el("p", "topics__note", "数字は取り上げた記事の本数"));
     panel.appendChild(head);
 
-    const max = Math.max.apply(null, topicList.map(function (t) {
-      return t.article_count;
-    }));
+    const counts = topicList.map(function (t) { return t.article_count; });
+    const max = Math.max.apply(null, counts);
+    const min = Math.min.apply(null, counts);
+    const span = Math.max(1, max - min);
 
-    const row = el("div", "topics__row");
-    topicList.forEach(function (t) {
-      const share = t.article_count / max;
-      const size = share >= 0.7 ? "topic--lg" : (share >= 0.4 ? "topic--md" : "topic--sm");
-      const item = el("span", "topic " + size);
-      item.appendChild(el("span", "topic__term", t.term));
-      item.appendChild(el("span", "topic__count", t.article_count));
-      row.appendChild(item);
+    // 大きい語を中央寄りに置くと雲らしく見える。
+    // 1,3,5… 番目を前へ、2,4,6… 番目を後ろへ回して山型に並べ替える
+    const front = [];
+    const back = [];
+    topicList.forEach(function (t, i) {
+      (i % 2 === 0 ? front : back).push(t);
     });
-    panel.appendChild(row);
+    const arranged = back.reverse().concat(front);
+
+    const cloud = el("div", "cloud");
+    arranged.forEach(function (t) {
+      const step = Math.round(((t.article_count - min) / span) * 4);   // 0〜4
+      const item = el("span", "cloud__word cloud--" + step);
+      item.appendChild(el("span", "cloud__term", t.term));
+      item.appendChild(el("span", "cloud__count", t.article_count));
+      cloud.appendChild(item);
+    });
+    panel.appendChild(cloud);
     return panel;
   }
 
