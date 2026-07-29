@@ -88,10 +88,14 @@
   }
 
   /* 総括の1段落 = 紙面の1記事。下に根拠の元記事をぶら下げる。 */
-  function digestSection(section, handlers) {
+  function digestSection(section, index, handlers) {
     const block = el("section", "brief");
 
-    if (section.field) block.appendChild(el("p", "brief__field", section.field));
+    const head = el("div", "brief__head");
+    head.appendChild(el("span", "brief__num", ("0" + (index + 1)).slice(-2)));
+    if (section.field) head.appendChild(el("h2", "brief__field", section.field));
+    block.appendChild(head);
+
     block.appendChild(el("p", "brief__text", section.text));
 
     if (section.sources && section.sources.length) {
@@ -115,19 +119,31 @@
     return block;
   }
 
-  /* その日、複数の記事に繰り返し出てきた語 */
+  /* その日、複数の記事に繰り返し出てきた語。
+     語の大きさを本数に比例させて、その日の重心が一目で分かるようにする。 */
   function topicStrip(topicList) {
-    const strip = el("div", "topics");
-    strip.appendChild(el("span", "topics__label", "きょう多く報じられた"));
+    const panel = el("section", "topics");
+
+    const head = el("div", "topics__head");
+    head.appendChild(el("h2", "topics__title", "きょう多く報じられた"));
+    head.appendChild(el("p", "topics__note", "数字は取り上げた記事の本数"));
+    panel.appendChild(head);
+
+    const max = Math.max.apply(null, topicList.map(function (t) {
+      return t.article_count;
+    }));
+
     const row = el("div", "topics__row");
     topicList.forEach(function (t) {
-      const chip = el("span", "topic");
-      chip.appendChild(el("span", "topic__term", t.term));
-      chip.appendChild(el("span", "topic__count", t.article_count + "本"));
-      row.appendChild(chip);
+      const share = t.article_count / max;
+      const size = share >= 0.7 ? "topic--lg" : (share >= 0.4 ? "topic--md" : "topic--sm");
+      const item = el("span", "topic " + size);
+      item.appendChild(el("span", "topic__term", t.term));
+      item.appendChild(el("span", "topic__count", t.article_count));
+      row.appendChild(item);
     });
-    strip.appendChild(row);
-    return strip;
+    panel.appendChild(row);
+    return panel;
   }
 
   function sectionHead(mark, label) {
@@ -177,8 +193,8 @@
     }
 
     const body = el("section", "briefs");
-    data.digest.forEach(function (section) {
-      body.appendChild(digestSection(section, handlers));
+    data.digest.forEach(function (section, index) {
+      body.appendChild(digestSection(section, index, handlers));
     });
     root.appendChild(body);
 

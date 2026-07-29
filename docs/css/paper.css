@@ -63,7 +63,7 @@
 }
 
 .masthead__meta {
-  margin: 0 0 var(--space-4);
+  margin: 0 0 var(--space-6);
   font-family: -apple-system, system-ui, sans-serif;
   font-size: 0.6875em;
   line-height: 1.5;
@@ -72,77 +72,109 @@
   font-variant-numeric: tabular-nums;
 }
 
-/* ===== きょう多く報じられた語 =====
-   何本の記事が触れたかを数えたもの。紙面の脇に置く索引の位置づけなので、
-   本文より一段弱く、1行に収まる密度で組む。 */
+/* ===== きょう多く報じられた =====
+   その日の重心を最初に見せる要素。語の大きさを本数に比例させ、
+   数えた事実がそのまま視覚の強弱になるようにする。 */
 
 .topics {
-  margin: 0 0 var(--space-5);
-  padding: var(--space-3) 0 var(--space-4);
-  border-bottom: 1px solid var(--rule);
+  margin: 0 0 var(--space-8);
+  padding: var(--space-5) var(--space-4) var(--space-4);
+  background: var(--surface-2);
+  border-radius: var(--radius-lg, 0.875em);
   font-family: -apple-system, system-ui, sans-serif;
 }
 
-.topics__label {
-  display: block;
-  margin-bottom: var(--space-2);
+.topics__head {
+  padding-bottom: var(--space-3);
+  margin-bottom: var(--space-4);
+  border-bottom: 1px solid var(--rule);
+}
+
+.topics__title {
+  margin: 0;
+  font-size: 0.9375em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+}
+
+.topics__note {
+  margin: 0.25em 0 0;
   font-size: 0.6875em;
-  font-weight: 600;
-  letter-spacing: 0.12em;
   color: var(--ink-3);
 }
 
 .topics__row {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4em 0.9em;
   align-items: baseline;
+  gap: 0.5em 1.1em;
 }
 
-/* 枠で囲むと数が多いときに散らかる。字の強弱だけで区別する */
-.topic { display: inline-flex; align-items: baseline; gap: 0.25em; }
-.topic__term { font-size: 0.875em; font-weight: 700; color: var(--ink); }
+.topic { display: inline-flex; align-items: baseline; gap: 0.28em; }
+
+/* 大きい文字ほど字間を詰める（Appleの型組みの作法） */
+.topic__term { font-weight: 700; color: var(--ink); }
+.topic--lg .topic__term { font-size: 1.5em; letter-spacing: -0.03em; }
+.topic--md .topic__term { font-size: 1.125em; letter-spacing: -0.02em; }
+.topic--sm .topic__term { font-size: 0.875em; letter-spacing: -0.01em; }
+
 .topic__count {
-  font-size: 0.75em;
+  font-size: 0.6875em;
+  font-weight: 600;
   color: var(--ink-3);
   font-variant-numeric: tabular-nums;
 }
 
+.topic--lg .topic__count { font-size: 0.8125em; }
+
 /* ===== きょうの要点の各項目 =====
-   紙面の本体。1項目 = 1つの話題のまとまり。 */
+   紙面の本体。通し番号と太罫で、どこからどこまでが1項目かを明示する。 */
 
 .briefs { padding-top: 0; }
 
-.brief { padding: 0 0 var(--space-5); }
+.brief { padding: 0 0 var(--space-8); }
 
-.brief + .brief {
-  padding-top: var(--space-5);
-  border-top: 1px solid var(--rule-strong);
+.brief__head {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding-bottom: var(--space-3);
+  margin-bottom: var(--space-4);
+  border-bottom: 2px solid var(--ink);
 }
 
-/* 分野名は本文の上に独立させる。行内に置くと1行目の字送りが乱れる */
-.brief__field {
-  margin: 0 0 var(--space-2);
+/* 通し番号。項目の始まりを一目で分からせる */
+.brief__num {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.1em;
+  height: 2.1em;
+  background: var(--ink);
+  color: var(--paper);
+  border-radius: 50%;
   font-family: -apple-system, system-ui, sans-serif;
-  font-size: 0.6875em;
+  font-size: 0.75em;
   font-weight: 700;
-  letter-spacing: 0.18em;
-  color: var(--ink-3);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
 }
 
-.brief__field::before {
-  content: "";
-  display: inline-block;
-  width: 1.6em;
-  margin-right: 0.6em;
-  border-top: 2px solid var(--ink);
-  vertical-align: 0.3em;
+.brief__field {
+  margin: 0;
+  font-family: -apple-system, system-ui, sans-serif;
+  font-size: 1.0625em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--ink);
 }
 
 .brief__text {
   margin: 0;
   font-size: 1em;
-  line-height: 1.75;      /* 1.95は間延びして読み流せなかった */
+  line-height: 1.75;
   letter-spacing: 0.005em;
   text-align: justify;
   overflow-wrap: anywhere;
@@ -152,7 +184,7 @@
    読みたい人だけが辿れればよい。本文より明確に弱くする。 */
 
 .sources {
-  margin: var(--space-3) 0 0;
+  margin: var(--space-4) 0 0;
   padding: var(--space-2) var(--space-3);
   background: var(--surface-2);
   border-radius: var(--radius);
