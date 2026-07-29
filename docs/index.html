@@ -19,8 +19,6 @@
 <body>
   <header class="toolbar">
     <button id="build" class="btn" type="button">今日の紙面をつくる</button>
-    <span style="flex:1"></span>
-    <button id="open-settings" class="btn btn--quiet" type="button">フィード</button>
   </header>
 
   <div id="notices" aria-live="polite"></div>
@@ -31,6 +29,10 @@
   </div>
 
   <main id="paper" class="paper" aria-live="polite"></main>
+
+  <div class="paper-foot">
+    <button id="open-settings" class="btn btn--quiet" type="button">フィードを見る</button>
+  </div>
 
   <footer id="wifi" class="footnote"></footer>
 

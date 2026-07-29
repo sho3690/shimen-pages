@@ -91,12 +91,12 @@
   function digestSection(section, handlers) {
     const block = el("section", "brief");
 
-    const head = el("h2", "brief__head");
-    if (section.field) head.appendChild(el("span", "brief__field", section.field));
-    head.appendChild(document.createTextNode(section.text.slice(0, 999)));
-    block.appendChild(head);
+    if (section.field) block.appendChild(el("p", "brief__field", section.field));
+    block.appendChild(el("p", "brief__text", section.text));
 
     if (section.sources && section.sources.length) {
+      const wrap = el("div", "sources");
+      wrap.appendChild(el("p", "sources__label", "出典"));
       const list = el("ul", "brief__sources");
       section.sources.forEach(function (s) {
         const item = el("li");
@@ -109,7 +109,8 @@
         item.appendChild(link);
         list.appendChild(item);
       });
-      block.appendChild(list);
+      wrap.appendChild(list);
+      block.appendChild(wrap);
     }
     return block;
   }
@@ -117,7 +118,7 @@
   /* その日、複数の記事に繰り返し出てきた語 */
   function topicStrip(topicList) {
     const strip = el("div", "topics");
-    strip.appendChild(el("span", "topics__label", "きょう繰り返し出た語"));
+    strip.appendChild(el("span", "topics__label", "きょう多く報じられた"));
     const row = el("div", "topics__row");
     topicList.forEach(function (t) {
       const chip = el("span", "topic");

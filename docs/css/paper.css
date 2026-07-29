@@ -72,108 +72,126 @@
   font-variant-numeric: tabular-nums;
 }
 
-/* ===== きょう繰り返し出た語 =====
-   その日いくつの記事が触れたかを数えたもの。紙面の見出し脇の索引の位置。 */
+/* ===== きょう多く報じられた語 =====
+   何本の記事が触れたかを数えたもの。紙面の脇に置く索引の位置づけなので、
+   本文より一段弱く、1行に収まる密度で組む。 */
 
 .topics {
   margin: 0 0 var(--space-5);
-  padding: var(--space-3) 0;
-  border-top: 1px solid var(--rule);
+  padding: var(--space-3) 0 var(--space-4);
   border-bottom: 1px solid var(--rule);
+  font-family: -apple-system, system-ui, sans-serif;
 }
 
 .topics__label {
   display: block;
   margin-bottom: var(--space-2);
+  font-size: 0.6875em;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--ink-3);
+}
+
+.topics__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em 0.9em;
+  align-items: baseline;
+}
+
+/* 枠で囲むと数が多いときに散らかる。字の強弱だけで区別する */
+.topic { display: inline-flex; align-items: baseline; gap: 0.25em; }
+.topic__term { font-size: 0.875em; font-weight: 700; color: var(--ink); }
+.topic__count {
+  font-size: 0.75em;
+  color: var(--ink-3);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ===== きょうの要点の各項目 =====
+   紙面の本体。1項目 = 1つの話題のまとまり。 */
+
+.briefs { padding-top: 0; }
+
+.brief { padding: 0 0 var(--space-5); }
+
+.brief + .brief {
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--rule-strong);
+}
+
+/* 分野名は本文の上に独立させる。行内に置くと1行目の字送りが乱れる */
+.brief__field {
+  margin: 0 0 var(--space-2);
   font-family: -apple-system, system-ui, sans-serif;
   font-size: 0.6875em;
   font-weight: 700;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.18em;
   color: var(--ink-3);
 }
 
-.topics__row { display: flex; flex-wrap: wrap; gap: var(--space-2); }
-
-.topic {
-  display: inline-flex;
-  align-items: baseline;
-  gap: 0.35em;
-  padding: 0.2em 0.55em;
-  border: 1px solid var(--rule-strong);
-  font-family: -apple-system, system-ui, sans-serif;
-  font-size: 0.8125em;
-}
-
-.topic__term { font-weight: 700; }
-.topic__count { font-size: 0.8em; color: var(--ink-3); font-variant-numeric: tabular-nums; }
-
-/* ===== きょうの要点の各項目 =====
-   これが紙面の本体。1項目 = 1つの話題のまとまり。 */
-
-.briefs { padding-top: var(--space-2); }
-
-.brief {
-  padding: var(--space-5) 0;
-  border-bottom: 1px solid var(--rule);
-}
-
-.brief:first-child { padding-top: var(--space-3); }
-.brief:last-child { border-bottom: none; }
-
-.brief__head {
-  margin: 0;
-  font-size: 1.0625em;
-  font-weight: 400;
-  line-height: 1.95;
-  letter-spacing: 0.01em;
-  text-align: justify;
-  text-justify: inter-character;
-}
-
-/* 分野名は白抜きの角判。段落の頭を拾いやすくする */
-.brief__field {
+.brief__field::before {
+  content: "";
   display: inline-block;
+  width: 1.6em;
   margin-right: 0.6em;
-  padding: 0.12em 0.5em;
-  background: var(--ink);
-  color: var(--paper);
-  font-family: -apple-system, system-ui, sans-serif;
-  font-size: 0.72em;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  vertical-align: 0.16em;
+  border-top: 2px solid var(--ink);
+  vertical-align: 0.3em;
 }
 
-/* もとになった記事。読みたい人だけが辿れればよいので控えめに */
-.brief__sources {
+.brief__text {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.75;      /* 1.95は間延びして読み流せなかった */
+  letter-spacing: 0.005em;
+  text-align: justify;
+  overflow-wrap: anywhere;
+}
+
+/* ===== 出典 =====
+   読みたい人だけが辿れればよい。本文より明確に弱くする。 */
+
+.sources {
   margin: var(--space-3) 0 0;
-  padding: 0 0 0 var(--space-3);
-  list-style: none;
-  border-left: 2px solid var(--rule-strong);
+  padding: var(--space-2) var(--space-3);
+  background: var(--surface-2);
+  border-radius: var(--radius);
+  font-family: -apple-system, system-ui, sans-serif;
 }
 
-.brief__sources li { margin-bottom: var(--space-1); }
-.brief__sources li:last-child { margin-bottom: 0; }
+.sources__label {
+  margin: 0 0 var(--space-1);
+  font-size: 0.625em;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: var(--ink-3);
+}
+
+.brief__sources { margin: 0; padding: 0; list-style: none; }
 
 .brief__source {
-  display: block;
+  /* 1行に収まる出典でも指で押せる高さを確保する（44pt） */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   min-height: 2.75rem;
-  padding: 0.35em 0;
+  padding: 0.4em 0;
   color: var(--ink-2);
   text-decoration: none;
-  font-family: -apple-system, system-ui, sans-serif;
-  font-size: 0.8125em;
-  line-height: 1.55;
+  font-size: 0.75em;
+  line-height: 1.45;
   -webkit-tap-highlight-color: transparent;
 }
 
-.brief__source:active { opacity: 0.55; }
+.brief__sources li + li { border-top: 1px solid var(--rule); }
+.brief__source:active { opacity: 0.5; }
 
+/* 配信元の名前は色で分ける。太字にすると本文と強さが並んでしまう */
 .brief__outlet {
   margin-right: 0.5em;
   color: var(--ink-3);
-  font-weight: 700;
   font-size: 0.9em;
+  white-space: nowrap;
 }
 
 /* ===== 面名（紙面のセクション見出し） ===== */

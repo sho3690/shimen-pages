@@ -35,7 +35,7 @@
   :root {
     --paper: #0d0d0f;        /* 黒い紙に白インク */
     --surface: #1c1c1e;
-    --surface-2: #000000;
+    --surface-2: #17171a;   /* 紙より僅かに明るく。暗くすると穴に見える */
     --ink: #ece9e3;
     --ink-2: #c4c1bb;
     --ink-3: #a5a29c;
@@ -77,6 +77,7 @@ body {
   z-index: 10;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: var(--space-3);
   padding: var(--space-3) var(--space-4);
   background: color-mix(in srgb, var(--paper) 72%, transparent);
@@ -303,6 +304,12 @@ body {
   font-size: 0.8125em;
   line-height: 1.7;
   color: var(--ink-2);
+}
+
+.paper-foot {
+  display: flex;
+  justify-content: center;
+  padding: 0 var(--space-4);
 }
 
 .footnote {

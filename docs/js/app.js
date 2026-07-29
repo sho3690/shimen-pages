@@ -122,7 +122,10 @@
   function applyStaticMode(paper) {
     // 紙面を作るのはMacの仕事なので、このボタンだけ消す。
     // フィードの確認はここでもできるようにしておく
-    buildBtn.remove();
+    // 静的版ではツールバーの中身が空になるので、帯ごと消す。
+    // 空の帯が本文の上に居座って場所を取っていた
+    const bar = buildBtn.closest(".toolbar");
+    if (bar) bar.remove(); else buildBtn.remove();
     addFeedForm.remove();
     showFreshness(paper);
   }
