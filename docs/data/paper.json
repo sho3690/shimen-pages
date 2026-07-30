@@ -1,169 +1,164 @@
 {
  "digest": [
   {
-   "field": "地震",
-   "text": "熊本県を震源とする複数の地震が相次いで発生し、大きな被害をもたらしている。30日午前5時16分ごろには熊本県熊本地方でマグニチュード4.2の地震が発生し、震度4を観測。その後も29日午後8時47分ごろには震度4の揺れが観測されるなど、活発な地震活動が続いている。熊本県では最大震度7を記録しており、氷川町では複数の建物が倒壊し、死者12名、心肺停止6名、負傷者64名にのぼる。安否不明となっている人も少なくとも4人確認されている。九州新幹線博多～筑後船小屋の下り運転は再開されたが、全般的にレールの破断や防音壁の落下など、200か所以以上で被害が発生している。",
+   "field": "災害",
+   "text": "28日に熊本県で最大震度7の地震が発生し、大きな被害が出ている。気象庁は今後1週間程度は最大震度7程度の地震に警戒する必要があるとして注意を呼びかけている。熊本地震の影響で携帯電話の通信障害はNTTドコモ、KDDI、ソフトバンク、楽天モバイルの4社全てで復旧した。また、今回の熊本地震で被災地の医療チーム調整医師は、患者搬送が完了したものの、倒壊家屋の地域では断水と暑さによる健康影響が懸念されており、長期的な支援が必要であると訴えている。防衛省はクーラー約300台を被災地へ輸送する際にビックカメラが協力し、販売用の在庫を提供した。",
    "sources": [
     {
-     "title": "【被害情報】熊本 氷川町 複数の建物が倒壊 5人が心肺停止",
-     "url": "http://www3.nhk.or.jp/news/html/20260730/k10015190301000.html",
+     "title": "熊本地震 DMAT調整医師 断水と暑さ懸念で長期支援訴え",
+     "url": "http://www3.nhk.or.jp/news/html/20260731/k10015191371000.html",
      "feed_title": "NHKニュース"
     },
     {
-     "title": "熊本県で震度7 同程度の地震に注意 きょうも熱中症対策を",
-     "url": "http://www3.nhk.or.jp/news/html/20260730/k10015190291000.html",
-     "feed_title": "NHKニュース"
-    },
-    {
-     "title": "【地震情報】熊本県熊本地方で震度４ 津波の心配なし",
-     "url": "http://www3.nhk.or.jp/news/html/20260729/k10015190111000.html",
-     "feed_title": "NHKニュース"
-    }
-   ]
-  },
-  {
-   "field": "被災地",
-   "text": "熊本地震による被災地では、熱中症対策とガソリン供給の確保が急務となっている。政府は被災者支援を優先課題とし、避難所における熱中症対策強化の方針を決定。また、被災地へのガソリン供給を確保するための取り組みも進められている。Yahoo!天気アプリの「みんなの投稿」機能がライフライン情報の共有に活用されており、住民による情報伝達が行われている。陸上自衛隊はドローンを用いてイオンモール熊本内部を撮影し、その映像を公開している。",
-   "sources": [
-    {
-     "title": "熊本地震 熱中症対策やガソリン供給など重点的に取り組む 政府",
-     "url": "http://www3.nhk.or.jp/news/html/20260730/k10015190321000.html",
-     "feed_title": "NHKニュース"
-    },
-    {
-     "title": "熊本地震で「Yahoo!天気」が意外な活躍？ 断水・停電情報など投稿続出 ライフライン情報共有の場に",
-     "url": "https://www.itmedia.co.jp/news/article/2607/29/2000000277/",
+     "title": "熊本地震による通信障害、携帯4社全てで復旧",
+     "url": "https://www.itmedia.co.jp/news/article/2607/31/2000000314/",
      "feed_title": "ITmedia NEWS 最新記事一覧"
     },
     {
-     "title": "陸自が「イオンモール熊本」内部をドローン撮影 防衛省が映像公開",
-     "url": "https://www.itmedia.co.jp/news/article/2607/29/2000000276/",
+     "title": "防衛省の「クーラー300台」投稿動画でビックカメラのトラックが注目を集める 同社「販売用の在庫を迅速に提供」",
+     "url": "https://www.itmedia.co.jp/news/article/2607/30/2000000313/",
      "feed_title": "ITmedia NEWS 最新記事一覧"
     }
    ]
   },
   {
    "field": "経済",
-   "text": "全日本空輸（ANA）は国内一部路線の運航をアイベックスエアラインズに委託することで合意した。これは燃料費の高騰などによる国内航空路線の状況を受けての措置である。また、高市総理大臣は食料品の消費税率を1％に引き下げる方針を示唆しており、具体的な時期や期間は4月開始・2年間の予定である。ソニーは熊本の半導体工場で生産を停止し、建物の被害状況を確認している。日本製紙八代工場では5人が死亡、2人がけがをし、4人が安否不明となっている。",
+   "text": "来年4月から食料品の消費税率が1％減税されることになった。自民党執行部は意見集約を開始する見込みだが、財源について党内で懸念の声が上がっており、取りまとめには困難が生じる可能性もある。ニューヨーク外国為替市場では円相場が急激に値上がりし、一時1ドル＝157円台後半まで円高ドル安となった。金融市場では政府や日本銀行（日銀）の市場介入観測も出ている。",
    "sources": [
     {
-     "title": "全日空 国内一部路線の運航 アイベックスエアラインズに委託へ",
-     "url": "http://www3.nhk.or.jp/news/html/20260729/k10015190101000.html",
+     "title": "NY市場 1ドル＝157円台後半まで値上がり 市場介入の観測も",
+     "url": "http://www3.nhk.or.jp/news/html/20260730/k10015191381000.html",
      "feed_title": "NHKニュース"
     },
     {
-     "title": "高市首相 食料品の消費税率 1％に引き下げる方針表明の見通し",
-     "url": "http://www3.nhk.or.jp/news/html/20260730/k10015190331000.html",
+     "title": "消費税減税 自民 高市首相指示受け意見集約急ぐ 党内異論も",
+     "url": "http://www3.nhk.or.jp/news/html/20260731/k10015191271000.html",
      "feed_title": "NHKニュース"
-    },
-    {
-     "title": "ソニー、熊本の半導体工場で生産停止 令和8年熊本地震で 建屋などの被害状況を確認中",
-     "url": "https://www.itmedia.co.jp/news/article/2607/29/2000000274/",
-     "feed_title": "ITmedia NEWS 最新記事一覧"
     }
    ]
   },
   {
    "field": "国際",
-   "text": "ウクライナのゼレンスキー大統領は、ロシア軍による弾道ミサイル攻撃への対策として、防空システム「パトリオット」の迎撃能力を維持するため、少なくとも300発分の追加ミサイルの必要性を訴えた。アメリカ連邦準備制度理事会（FRB）は政策金利を5会合連続で据え置きとした。eBayと元幹部はジャーナリストへの嫌がらせ事件に関する民事訴訟の解決のため、合計5600万ドルの支払いに合意した。",
+   "text": "アメリカ軍とイランの間で攻撃を繰り返しており、両国間の緊張が高まっている。Telegramの創設者パーヴェル・ドゥーロフ氏がテロ活動幇助の罪でロシア連邦保安庁から訴追された。また、ChatGPTとRobloxがEU域内で月間4500万ユーザーを突破し、「超大規模プラットフォーム」に指定される見込みだ。",
    "sources": [
     {
-     "title": "ゼレンスキー大統領「迎撃ミサイル300発必要」支援訴え",
-     "url": "http://www3.nhk.or.jp/news/html/20260730/k10015190351000.html",
-     "feed_title": "NHKニュース"
-    },
-    {
-     "title": "eBayと元幹部がジャーナリストへの嫌がらせ事件の民事訴訟解決のため合計5600万ドルの支払いに合意",
-     "url": "https://gigazine.net/news/20260729-ebay-statement-agreement-with-steiners/",
+     "title": "Telegramの創設者パーヴェル・ドゥーロフ氏がテロ活動幇助の罪でロシア連邦保安庁から訴追される、ウクライナのスパイがロシア国内での攻撃を組織するためにTelegramを使用していたと主張",
+     "url": "https://gigazine.net/news/20260730-telegram-pavel-durov-fsb/",
      "feed_title": "GIGAZINE"
     },
     {
-     "title": "FRB政策金利 5会合連続で据え置き 物価動向慎重に見極めか",
-     "url": "http://www3.nhk.or.jp/news/html/20260730/k10015190151000.html",
+     "title": "ChatGPTとRobloxがEU域内で月間4500万ユーザーを突破、「超大規模プラットフォーム」指定へ",
+     "url": "https://gigazine.net/news/20260730-eu-dsa-chatgpt-roblox/",
+     "feed_title": "GIGAZINE"
+    },
+    {
+     "title": "アメリカとイラン再び攻撃の応酬 エスカレートの懸念",
+     "url": "http://www3.nhk.or.jp/news/html/20260731/k10015191311000.html",
      "feed_title": "NHKニュース"
     }
    ]
   },
   {
-   "field": "テクノロジー",
-   "text": "ベンチマークテスト「mcpbench」において、GPT-5.6やClaude OpusなどのAIモデルの性能が評価された。GrapheneOSを搭載したスマートフォンで警察官による取り調べへの抵抗を図り、データ抹消に成功したユーザーのインタビューが公開された。AnthropicのAI「Claude」の会話内容やドキュメントがGoogle検索で大量に発見される問題が発生している。Hugging Faceでは女性や子どもの無断ヌード画像生成に使われており、予防措置を講じる必要があるとの調査結果が出ている。",
+   "field": "技術",
+   "text": "Valve社の支援を受けて、オープンソースのRadeonドライバー（RADV）がWindowsに移植されている。キーボードメーカーKeychronが、ゲーミングマウス向けのオープンソースファームウェア「ZGM」を発表した。株式会社カドカワとハテナ社が共同で開発したAI小説エディタ「RIKU」が発表された。",
    "sources": [
     {
-     "title": "Hugging Faceは女性や子どもの無断ヌード画像生成に使われており予防措置が講じられていないとの調査結果",
-     "url": "https://gigazine.net/news/20260729-hugging-face-ai-nudify-deepfake-children/",
+     "title": "オープンソースのRadeonドライバーをWindowsに移植する試みが進行中",
+     "url": "https://gigazine.net/news/20260730-radv-windows/",
      "feed_title": "GIGAZINE"
     },
     {
-     "title": "GrapheneOSの緊急コードでデータを抹消し警察を困らせたユーザーのインタビューが公開される",
-     "url": "https://gigazine.net/news/20260729-interview-grapheneos-data-reset-man/",
-     "feed_title": "GIGAZINE"
+     "title": "「AIと一緒に展開を考える」小説エディタ「RIKU」 はてなとKADOKAWAが共同開発",
+     "url": "https://www.itmedia.co.jp/news/article/2607/30/2000000309/",
+     "feed_title": "ITmedia NEWS 最新記事一覧"
     },
     {
-     "title": "AnthropicのAI「Claude」のプライベートな会話内容・健康記録・社内文書などがGoogle検索で大量に発見される",
-     "url": "https://gigazine.net/news/20260729-claude-chats-google-search/",
+     "title": "Keychronがゲーミングマウス向け初のオープンソースファームウェア「ZGM」を発表、正式公開は2027年に",
+     "url": "https://gigazine.net/news/20260730-keychron-zgm-gaming-mouse/",
      "feed_title": "GIGAZINE"
     }
    ]
   },
   {
    "field": "社会",
-   "text": "警察庁は熊本地震に乗じた詐欺への注意喚起を行った。PayPayアプリが熊本地震の被災地支援のための寄付サービスを開始し、最短3ステップで1円から寄付が可能となっている。トルコの女性を対象とした研究では、パートナーがスマートフォンに夢中になっていると、性生活におけるストレスを強く感じるという結果が出た。東京地方検察庁特捜部で勤務していた男性検事が、取り調べを行った女性との不適切な関係になった疑いで懲戒免職となった。",
+   "text": "熊本地震発生後、SNS上では複数のデマや誤情報が拡散され、被害拡大の一因となっている。偽の救助要請や募金詐欺に加え、生成AIの回答を信じて過去の映像を本物だと誤認するケースも確認された。ドコモ銀行アプリのアイコンデザインについてユーザーから批判的な意見が多く寄せられたため、従来のアプリアイコン選択が可能になった。大人気ゲーム「めっちゃカメレオン」のコミュニティマップにマルウェアが仕込まれていてユーザーのPCが乗っ取られる事態が発生した。",
    "sources": [
     {
-     "title": "PayPayアプリで熊本地震への寄付が可能に 最短3ステップ・1円から",
-     "url": "https://www.itmedia.co.jp/news/article/2607/29/2000000278/",
+     "title": "熊本地震でSNSにデマ拡散 偽の救助要請や募金詐欺、AIを信じ本物を誤判定も",
+     "url": "https://www.itmedia.co.jp/news/article/2607/30/2000000311/",
      "feed_title": "ITmedia NEWS 最新記事一覧"
     },
     {
-     "title": "「パートナーがスマホに夢中だ」と感じている女性は性生活にストレスを覚えやすいとの研究結果",
-     "url": "https://gigazine.net/news/20260729-partner-smartphone-distractions-sexual-distress/",
+     "title": "“ダサい”不評の「ドコモの銀行」、従来のアプリアイコン選択可能に 「ご意見・ご要望も踏まえ」",
+     "url": "https://www.itmedia.co.jp/news/article/2607/30/2000000301/",
+     "feed_title": "ITmedia NEWS 最新記事一覧"
+    },
+    {
+     "title": "大人気ゲーム「めっちゃカメレオン」のコミュニティマップにマルウェアが仕込まれていてユーザーのPCが乗っ取られる事態が発生",
+     "url": "https://gigazine.net/news/20260730-mecca-chameleon-malware/",
+     "feed_title": "GIGAZINE"
+    }
+   ]
+  },
+  {
+   "field": "その他",
+   "text": "イオンモール熊本へのドローン捜索活動は、国産ドローン企業Liberawareが従業員と共に関東から派遣され行われた。アマゾンの熱帯雨林の下には数万個もの古代文明による幾何学的な土塁が存在することが判明した。TSMCの熊本工場では製造装置の調整に時間がかかっているものの、従業員全員の安全は確保されている。",
+   "sources": [
+    {
+     "title": "イオンモール熊本のドローン捜索、状況を現場キーマンに聞いた 撮影を阻んだのは……",
+     "url": "https://www.itmedia.co.jp/news/article/2607/30/2000000312/",
+     "feed_title": "ITmedia NEWS 最新記事一覧"
+    },
+    {
+     "title": "アマゾンの熱帯雨林の下にはすでに滅んだ古代文明による数万個の幾何学的な土塁が存在することが判明",
+     "url": "https://gigazine.net/news/20260730-amazon-hidden-structures-aquiry-civilization/",
      "feed_title": "GIGAZINE"
     },
     {
-     "title": "取り調べた女性と不適切関係 元東京地検特捜部検事を懲戒免職",
-     "url": "http://www3.nhk.or.jp/news/html/20260729/k10015189591000.html",
-     "feed_title": "NHKニュース"
+     "title": "TSMC、熊本工場の製造装置「調整に時間」 建屋の安全は確認 第2工場は29日に工事再開",
+     "url": "https://www.itmedia.co.jp/news/article/2607/30/2000000305/",
+     "feed_title": "ITmedia NEWS 最新記事一覧"
     }
    ]
   }
  ],
- "digest_at": "2026-07-29T21:37:32.755434+00:00",
+ "digest_at": "2026-07-30T21:37:45.711316+00:00",
  "topics": [
   {
    "term": "熊本",
-   "article_count": 18
+   "article_count": 10
   },
   {
    "term": "地震",
-   "article_count": 16
-  },
-  {
-   "term": "熊本県",
-   "article_count": 12
-  },
-  {
-   "term": "被害",
-   "article_count": 11
-  },
-  {
-   "term": "被災地",
-   "article_count": 9
+   "article_count": 10
   },
   {
    "term": "熊本地震",
+   "article_count": 8
+  },
+  {
+   "term": "示唆",
+   "article_count": 8
+  },
+  {
+   "term": "ユーザー",
    "article_count": 7
   },
   {
-   "term": "日午後",
+   "term": "熊本県",
    "article_count": 6
   },
   {
-   "term": "アプリ",
+   "term": "チーム",
+   "article_count": 6
+  },
+  {
+   "term": "安全",
    "article_count": 6
   }
  ],
  "total": 40,
- "readable": 40,
+ "readable": 29,
  "sources": [
   "GIGAZINE",
   "NHKニュース",
@@ -186,5 +181,5 @@
    "last_error": ""
   }
  ],
- "generated_at": "2026-07-29T21:37:33.980249+00:00"
+ "generated_at": "2026-07-30T21:37:47.112169+00:00"
 }
