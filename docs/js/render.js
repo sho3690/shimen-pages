@@ -119,39 +119,115 @@
     return block;
   }
 
-  /* その日、複数の記事に繰り返し出てきた語。
-     語の大きさを本数に比例させて、その日の重心が一目で分かるようにする。 */
+  /* ===== ワードクラウド =====
+     語の大きさを記事の本数に比例させ、中心から渦巻きに詰めて置く。
+     置き場所は总当たりの衝突判定で決める（外部ライブラリは使わない）。 */
+
+  var CLOUD_COLORS = 6;
+
+  function cloudColorClass(term) {
+    var sum = 0;
+    for (var i = 0; i < term.length; i++) sum = (sum + term.charCodeAt(i)) % CLOUD_COLORS;
+    return "cloud--c" + sum;
+  }
+
+  function cloudCollides(x, y, w, h, placed) {
+    for (var i = 0; i < placed.length; i++) {
+      var p = placed[i];
+      if (x < p.x + p.w && x + w > p.x && y < p.y + p.h && y + h > p.y) return true;
+    }
+    return false;
+  }
+
+  function layoutCloud(box, list) {
+    var W = box.clientWidth;
+    if (W < 80) {   // まだレイアウトされていない。次の描画で再挑戦
+      requestAnimationFrame(function () { layoutCloud(box, list); });
+      return;
+    }
+    box.replaceChildren();
+
+    var counts = list.map(function (t) { return t.article_count; });
+    var maxC = Math.max.apply(null, counts);
+    var minC = Math.min.apply(null, counts);
+    var denom = (Math.sqrt(maxC) - Math.sqrt(minC)) || 1;
+    var sMin = 13;
+    var sMax = Math.min(40, W / 8.5);
+
+    var measure = document.createElement("canvas").getContext("2d");
+    var placed = [];
+    var minY = Infinity, maxY = -Infinity;
+
+    // 大きい語から置く。後から来る小さい語が隙間に入る
+    var sorted = list.slice().sort(function (a, b) {
+      return b.article_count - a.article_count;
+    });
+
+    sorted.forEach(function (t, idx) {
+      var size = Math.round(
+        sMin + ((Math.sqrt(t.article_count) - Math.sqrt(minC)) / denom) * (sMax - sMin)
+      );
+      measure.font = "700 " + size + "px -apple-system, 'Hiragino Sans', sans-serif";
+      var w = measure.measureText(t.term).width + size * 0.4;
+      var h = size * 1.25;
+
+      // アルキメデスの渦巻き。縦を0.6倍につぶして横長の雲にする
+      var angle = idx * 2.4;
+      var r = 0, x, y, ok = false, tries = 0;
+      while (tries < 2600) {
+        x = W / 2 + r * Math.cos(angle) - w / 2;
+        y = r * Math.sin(angle) * 0.6 - h / 2;
+        if (x >= 0 && x + w <= W && !cloudCollides(x, y, w, h, placed)) { ok = true; break; }
+        angle += 0.4;
+        r += 1.0;
+        tries++;
+      }
+      if (!ok) return;   // 置き切れない語は諦める（幅が極端に狭いときだけ）
+
+      placed.push({ x: x, y: y, w: w, h: h });
+      if (y < minY) minY = y;
+      if (y + h > maxY) maxY = y + h;
+
+      var node = el("span", "cloud__word " + cloudColorClass(t.term), t.term);
+      node.style.fontSize = size + "px";
+      node.style.left = x.toFixed(1) + "px";
+      node.dataset.top = y.toFixed(1);
+      node.title = t.article_count + "本の記事";
+      box.appendChild(node);
+    });
+
+    // 置き終わってから全体を上端に寄せ、箱の高さを内容に合わせる
+    var shift = -minY;
+    [].forEach.call(box.children, function (node) {
+      node.style.top = (parseFloat(node.dataset.top) + shift).toFixed(1) + "px";
+    });
+    box.style.height = Math.ceil(maxY - minY) + "px";
+  }
+
+  var relayoutTimer = null;
+  window.addEventListener("resize", function () {
+    clearTimeout(relayoutTimer);
+    relayoutTimer = setTimeout(function () {
+      [].forEach.call(document.querySelectorAll(".cloud"), function (box) {
+        if (box.__topics) layoutCloud(box, box.__topics);
+      });
+    }, 200);
+  });
+
   function topicStrip(topicList) {
     const panel = el("section", "topics");
 
     const head = el("div", "topics__head");
     head.appendChild(el("h2", "topics__title", "ワードクラウド"));
-    head.appendChild(el("p", "topics__note", "数字は取り上げた記事の本数"));
+    head.appendChild(el("p", "topics__note", "語が大きいほど多くの記事に登場（タップで本数）"));
     panel.appendChild(head);
 
-    const counts = topicList.map(function (t) { return t.article_count; });
-    const max = Math.max.apply(null, counts);
-    const min = Math.min.apply(null, counts);
-    const span = Math.max(1, max - min);
-
-    // 大きい語を中央寄りに置くと雲らしく見える。
-    // 1,3,5… 番目を前へ、2,4,6… 番目を後ろへ回して山型に並べ替える
-    const front = [];
-    const back = [];
-    topicList.forEach(function (t, i) {
-      (i % 2 === 0 ? front : back).push(t);
-    });
-    const arranged = back.reverse().concat(front);
-
     const cloud = el("div", "cloud");
-    arranged.forEach(function (t) {
-      const step = Math.round(((t.article_count - min) / span) * 4);   // 0〜4
-      const item = el("span", "cloud__word cloud--" + step);
-      item.appendChild(el("span", "cloud__term", t.term));
-      item.appendChild(el("span", "cloud__count", t.article_count));
-      cloud.appendChild(item);
-    });
+    cloud.__topics = topicList;
     panel.appendChild(cloud);
+
+    // 幅が決まってから置く
+    requestAnimationFrame(function () { layoutCloud(cloud, topicList); });
     return panel;
   }
 

@@ -104,38 +104,35 @@
   color: var(--ink-3);
 }
 
-/* 語を中央から広げる。行の高さを揃えず、大きさの差で雲らしく見せる */
+/* 渦巻き配置。JSが絶対座標で語を置く */
 .cloud {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 0.35em 0.85em;
-  padding: var(--space-2) 0;
+  position: relative;
+  min-height: 6em;
 }
 
 .cloud__word {
-  display: inline-flex;
-  align-items: baseline;
-  gap: 0.22em;
-  line-height: 1.15;
+  position: absolute;
+  font-weight: 700;
+  line-height: 1.25;
+  white-space: nowrap;
+  letter-spacing: -0.02em;
 }
 
-.cloud__term { font-weight: 700; }
+/* 語の色。落ち着いた6色に散らす（同じ語は毎回同じ色になる） */
+.cloud--c0 { color: var(--ink); }
+.cloud--c1 { color: #0a5ec7; }
+.cloud--c2 { color: #b0350f; }
+.cloud--c3 { color: #0e6b3d; }
+.cloud--c4 { color: #6d28a8; }
+.cloud--c5 { color: #8a5a00; }
 
-.cloud__count {
-  font-size: 0.5em;
-  font-weight: 600;
-  color: var(--ink-3);
-  font-variant-numeric: tabular-nums;
+@media (prefers-color-scheme: dark) {
+  .cloud--c1 { color: #7ab5ff; }
+  .cloud--c2 { color: #ff9b78; }
+  .cloud--c3 { color: #59c98d; }
+  .cloud--c4 { color: #c99bff; }
+  .cloud--c5 { color: #e8b34b; }
 }
-
-/* 本数に応じた5段階。大きい語ほど字間を詰める（Appleの型組みの作法） */
-.cloud--4 .cloud__term { font-size: 2em;     letter-spacing: -0.045em; color: var(--ink); }
-.cloud--3 .cloud__term { font-size: 1.5em;   letter-spacing: -0.035em; color: var(--ink); }
-.cloud--2 .cloud__term { font-size: 1.1875em; letter-spacing: -0.025em; color: var(--ink); }
-.cloud--1 .cloud__term { font-size: 1em;     letter-spacing: -0.015em; color: var(--ink-2); }
-.cloud--0 .cloud__term { font-size: 0.875em; letter-spacing: -0.01em;  color: var(--ink-2); }
 
 /* ===== きょうの要点の各項目 =====
    紙面の本体。通し番号と太罫で、どこからどこまでが1項目かを明示する。 */

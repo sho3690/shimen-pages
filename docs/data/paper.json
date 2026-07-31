@@ -5,14 +5,14 @@
    "text": "28日に熊本県で最大震度7の地震が発生し、大きな被害が出ている。気象庁は今後1週間程度は最大震度7程度の地震に警戒する必要があるとして注意を呼びかけている。熊本地震の影響で携帯電話の通信障害はNTTドコモ、KDDI、ソフトバンク、楽天モバイルの4社全てで復旧した。また、今回の熊本地震で被災地の医療チーム調整医師は、患者搬送が完了したものの、倒壊家屋の地域では断水と暑さによる健康影響が懸念されており、長期的な支援が必要であると訴えている。防衛省はクーラー約300台を被災地へ輸送する際にビックカメラが協力し、販売用の在庫を提供した。",
    "sources": [
     {
-     "title": "熊本地震 DMAT調整医師 断水と暑さ懸念で長期支援訴え",
-     "url": "http://www3.nhk.or.jp/news/html/20260731/k10015191371000.html",
-     "feed_title": "NHKニュース"
-    },
-    {
      "title": "熊本地震による通信障害、携帯4社全てで復旧",
      "url": "https://www.itmedia.co.jp/news/article/2607/31/2000000314/",
      "feed_title": "ITmedia NEWS 最新記事一覧"
+    },
+    {
+     "title": "熊本地震 DMAT調整医師 断水と暑さ懸念で長期支援訴え",
+     "url": "http://www3.nhk.or.jp/news/html/20260731/k10015191371000.html",
+     "feed_title": "NHKニュース"
     },
     {
      "title": "防衛省の「クーラー300台」投稿動画でビックカメラのトラックが注目を集める 同社「販売用の在庫を迅速に提供」",
@@ -115,8 +115,8 @@
      "feed_title": "GIGAZINE"
     },
     {
-     "title": "TSMC、熊本工場の製造装置「調整に時間」 建屋の安全は確認 第2工場は29日に工事再開",
-     "url": "https://www.itmedia.co.jp/news/article/2607/30/2000000305/",
+     "title": "イオンモール熊本内部の撮影、国産ドローンが活躍 日本企業2社が自衛隊などと協力",
+     "url": "https://www.itmedia.co.jp/news/article/2607/30/2000000303/",
      "feed_title": "ITmedia NEWS 最新記事一覧"
     }
    ]
@@ -137,10 +137,6 @@
    "article_count": 8
   },
   {
-   "term": "示唆",
-   "article_count": 8
-  },
-  {
    "term": "ユーザー",
    "article_count": 7
   },
@@ -149,12 +145,128 @@
    "article_count": 6
   },
   {
-   "term": "チーム",
-   "article_count": 6
+   "term": "被災地",
+   "article_count": 5
   },
   {
-   "term": "安全",
-   "article_count": 6
+   "term": "Twitter",
+   "article_count": 4
+  },
+  {
+   "term": "イオンモール",
+   "article_count": 4
+  },
+  {
+   "term": "熊本県内",
+   "article_count": 4
+  },
+  {
+   "term": "被害",
+   "article_count": 4
+  },
+  {
+   "term": "アメリカ",
+   "article_count": 3
+  },
+  {
+   "term": "ドローン",
+   "article_count": 3
+  },
+  {
+   "term": "アプリ",
+   "article_count": 3
+  },
+  {
+   "term": "住民",
+   "article_count": 3
+  },
+  {
+   "term": "協議",
+   "article_count": 3
+  },
+  {
+   "term": "協力",
+   "article_count": 3
+  },
+  {
+   "term": "産業",
+   "article_count": 3
+  },
+  {
+   "term": "電力",
+   "article_count": 3
+  },
+  {
+   "term": "Liberaware",
+   "article_count": 2
+  },
+  {
+   "term": "Chainage",
+   "article_count": 2
+  },
+  {
+   "term": "産業振興協議会",
+   "article_count": 2
+  },
+  {
+   "term": "能登半島地震",
+   "article_count": 2
+  },
+  {
+   "term": "Google",
+   "article_count": 2
+  },
+  {
+   "term": "OpenAI",
+   "article_count": 2
+  },
+  {
+   "term": "Steam",
+   "article_count": 2
+  },
+  {
+   "term": "バッテリー",
+   "article_count": 2
+  },
+  {
+   "term": "IBIS2",
+   "article_count": 2
+  },
+  {
+   "term": "コンテンツ",
+   "article_count": 2
+  },
+  {
+   "term": "安全確保",
+   "article_count": 2
+  },
+  {
+   "term": "研究結果",
+   "article_count": 2
+  },
+  {
+   "term": "安全保障",
+   "article_count": 2
+  },
+  {
+   "term": "DMAT",
+   "article_count": 2
+  },
+  {
+   "term": "モバイル",
+   "article_count": 2
+  },
+  {
+   "term": "地震発生",
+   "article_count": 2
+  },
+  {
+   "term": "コメント",
+   "article_count": 2
+  },
+  {
+   "term": "要救助者",
+   "article_count": 2
   }
  ],
  "total": 40,
@@ -181,5 +293,5 @@
    "last_error": ""
   }
  ],
- "generated_at": "2026-07-30T21:37:47.112169+00:00"
+ "generated_at": "2026-07-31T17:27:51.632606+00:00"
 }
