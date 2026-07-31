@@ -1,276 +1,281 @@
 {
  "digest": [
   {
-   "field": "災害",
-   "text": "28日に熊本県で最大震度7の地震が発生し、大きな被害が出ている。気象庁は今後1週間程度は最大震度7程度の地震に警戒する必要があるとして注意を呼びかけている。熊本地震の影響で携帯電話の通信障害はNTTドコモ、KDDI、ソフトバンク、楽天モバイルの4社全てで復旧した。また、今回の熊本地震で被災地の医療チーム調整医師は、患者搬送が完了したものの、倒壊家屋の地域では断水と暑さによる健康影響が懸念されており、長期的な支援が必要であると訴えている。防衛省はクーラー約300台を被災地へ輸送する際にビックカメラが協力し、販売用の在庫を提供した。",
-   "sources": [
-    {
-     "title": "熊本地震による通信障害、携帯4社全てで復旧",
-     "url": "https://www.itmedia.co.jp/news/article/2607/31/2000000314/",
-     "feed_title": "ITmedia NEWS 最新記事一覧"
-    },
-    {
-     "title": "熊本地震 DMAT調整医師 断水と暑さ懸念で長期支援訴え",
-     "url": "http://www3.nhk.or.jp/news/html/20260731/k10015191371000.html",
-     "feed_title": "NHKニュース"
-    },
-    {
-     "title": "防衛省の「クーラー300台」投稿動画でビックカメラのトラックが注目を集める 同社「販売用の在庫を迅速に提供」",
-     "url": "https://www.itmedia.co.jp/news/article/2607/30/2000000313/",
-     "feed_title": "ITmedia NEWS 最新記事一覧"
-    }
-   ]
-  },
-  {
    "field": "経済",
-   "text": "来年4月から食料品の消費税率が1％減税されることになった。自民党執行部は意見集約を開始する見込みだが、財源について党内で懸念の声が上がっており、取りまとめには困難が生じる可能性もある。ニューヨーク外国為替市場では円相場が急激に値上がりし、一時1ドル＝157円台後半まで円高ドル安となった。金融市場では政府や日本銀行（日銀）の市場介入観測も出ている。",
+   "text": "大手銀行は8月から住宅ローン固定金利を引き上げ、これは長期金利の上昇を受けての措置です。一方で、政府は来年4月からの消費税減税計画を推進していますが、自民党内には慎重な意見も根強く残っています。また、キオクシアホールディングスは2027年3月期第1四半期決算で売上収益が前年同期比415.5％増と大幅な増収を達成しました。セブン＆アイ・ホールディングスはソフトバンクや三井住友カードなどとの戦略的パートナーシップにより、共通会員ID「7iD」を「PayPay ID」に統合し顧客体験の向上を目指します。",
    "sources": [
     {
-     "title": "NY市場 1ドル＝157円台後半まで値上がり 市場介入の観測も",
-     "url": "http://www3.nhk.or.jp/news/html/20260730/k10015191381000.html",
-     "feed_title": "NHKニュース"
-    },
-    {
-     "title": "消費税減税 自民 高市首相指示受け意見集約急ぐ 党内異論も",
-     "url": "http://www3.nhk.or.jp/news/html/20260731/k10015191271000.html",
-     "feed_title": "NHKニュース"
-    }
-   ]
-  },
-  {
-   "field": "国際",
-   "text": "アメリカ軍とイランの間で攻撃を繰り返しており、両国間の緊張が高まっている。Telegramの創設者パーヴェル・ドゥーロフ氏がテロ活動幇助の罪でロシア連邦保安庁から訴追された。また、ChatGPTとRobloxがEU域内で月間4500万ユーザーを突破し、「超大規模プラットフォーム」に指定される見込みだ。",
-   "sources": [
-    {
-     "title": "Telegramの創設者パーヴェル・ドゥーロフ氏がテロ活動幇助の罪でロシア連邦保安庁から訴追される、ウクライナのスパイがロシア国内での攻撃を組織するためにTelegramを使用していたと主張",
-     "url": "https://gigazine.net/news/20260730-telegram-pavel-durov-fsb/",
-     "feed_title": "GIGAZINE"
-    },
-    {
-     "title": "ChatGPTとRobloxがEU域内で月間4500万ユーザーを突破、「超大規模プラットフォーム」指定へ",
-     "url": "https://gigazine.net/news/20260730-eu-dsa-chatgpt-roblox/",
-     "feed_title": "GIGAZINE"
-    },
-    {
-     "title": "アメリカとイラン再び攻撃の応酬 エスカレートの懸念",
-     "url": "http://www3.nhk.or.jp/news/html/20260731/k10015191311000.html",
-     "feed_title": "NHKニュース"
-    }
-   ]
-  },
-  {
-   "field": "技術",
-   "text": "Valve社の支援を受けて、オープンソースのRadeonドライバー（RADV）がWindowsに移植されている。キーボードメーカーKeychronが、ゲーミングマウス向けのオープンソースファームウェア「ZGM」を発表した。株式会社カドカワとハテナ社が共同で開発したAI小説エディタ「RIKU」が発表された。",
-   "sources": [
-    {
-     "title": "オープンソースのRadeonドライバーをWindowsに移植する試みが進行中",
-     "url": "https://gigazine.net/news/20260730-radv-windows/",
-     "feed_title": "GIGAZINE"
-    },
-    {
-     "title": "「AIと一緒に展開を考える」小説エディタ「RIKU」 はてなとKADOKAWAが共同開発",
-     "url": "https://www.itmedia.co.jp/news/article/2607/30/2000000309/",
+     "title": "セブン＆アイ、共通会員IDのPayPay統合を正式発表 ソフトバンクや三井住友カードなどが計3000億円出資",
+     "url": "https://www.itmedia.co.jp/news/article/2607/31/2000000345/",
      "feed_title": "ITmedia NEWS 最新記事一覧"
     },
     {
-     "title": "Keychronがゲーミングマウス向け初のオープンソースファームウェア「ZGM」を発表、正式公開は2027年に",
-     "url": "https://gigazine.net/news/20260730-keychron-zgm-gaming-mouse/",
-     "feed_title": "GIGAZINE"
+     "title": "大手銀行 8月の住宅ローン固定金利引き上げ 長期金利上昇で",
+     "url": "http://www3.nhk.or.jp/news/html/20260801/k10015193091000.html",
+     "feed_title": "NHKニュース"
+    },
+    {
+     "title": "キオクシアQ1、純利益が前年同期比4500％増 株式分割・自社株買いも",
+     "url": "https://www.itmedia.co.jp/news/article/2607/31/2000000336/",
+     "feed_title": "ITmedia NEWS 最新記事一覧"
     }
    ]
   },
   {
    "field": "社会",
-   "text": "熊本地震発生後、SNS上では複数のデマや誤情報が拡散され、被害拡大の一因となっている。偽の救助要請や募金詐欺に加え、生成AIの回答を信じて過去の映像を本物だと誤認するケースも確認された。ドコモ銀行アプリのアイコンデザインについてユーザーから批判的な意見が多く寄せられたため、従来のアプリアイコン選択が可能になった。大人気ゲーム「めっちゃカメレオン」のコミュニティマップにマルウェアが仕込まれていてユーザーのPCが乗っ取られる事態が発生した。",
+   "text": "熊本地震では、36人の死亡者と9500人余りの避難者を発表しており、長期的な避難生活を見据え、ガソリン供給強化やホテル空室の活用など環境改善策が講じられています。九州新幹線熊本～新水俣間は線路や橋梁の損傷により8月中旬までの運転再開が困難と判断されています。また、タムロン買収提案について、ソニーはイメージング事業の発展に繋がることを目的としています。",
    "sources": [
     {
-     "title": "熊本地震でSNSにデマ拡散 偽の救助要請や募金詐欺、AIを信じ本物を誤判定も",
-     "url": "https://www.itmedia.co.jp/news/article/2607/30/2000000311/",
-     "feed_title": "ITmedia NEWS 最新記事一覧"
+     "title": "熊本地震 避難生活の長期化も見据え環境改善進める 政府",
+     "url": "http://www3.nhk.or.jp/news/html/20260801/k10015193101000.html",
+     "feed_title": "NHKニュース"
     },
     {
-     "title": "“ダサい”不評の「ドコモの銀行」、従来のアプリアイコン選択可能に 「ご意見・ご要望も踏まえ」",
-     "url": "https://www.itmedia.co.jp/news/article/2607/30/2000000301/",
-     "feed_title": "ITmedia NEWS 最新記事一覧"
+     "title": "九州新幹線 熊本～新水俣間「8月中の運転再開は困難」JR九州",
+     "url": "http://www3.nhk.or.jp/news/html/20260731/k10015192431000.html",
+     "feed_title": "NHKニュース"
     },
     {
-     "title": "大人気ゲーム「めっちゃカメレオン」のコミュニティマップにマルウェアが仕込まれていてユーザーのPCが乗っ取られる事態が発生",
-     "url": "https://gigazine.net/news/20260730-mecca-chameleon-malware/",
+     "title": "ソニー、タムロン買収提案の狙いを説明 「イメージング事業の発展につながる」",
+     "url": "https://www.itmedia.co.jp/news/article/2607/31/2000000342/",
+     "feed_title": "ITmedia NEWS 最新記事一覧"
+    }
+   ]
+  },
+  {
+   "field": "テクノロジー",
+   "text": "コンパイラ「GCC」の開発チームはAI生成コードの受け入れポリシーを公開し、15行以上のAI生成コードに対して拒否措置を講じる方針を示しました。TSMCはIntelのEMIB技術に類似した新技術「準EMIB」の開発に取り組んでいます。GoogleはAIを活用してChromeブラウザのセキュリティ対策を強化しており、脆弱性発見ツール「Naptime」や「Big Sleep」を開発しています。Amazon傘下のロボタクシー「Zoox」が商用サービス許可を取得し、最大2500台の展開が可能となりました。",
+   "sources": [
+    {
+     "title": "Googleが「AIを使ってChromeのバグを大量修正した方法」を解説",
+     "url": "https://gigazine.net/news/20260731-chrome-ai-fix/",
+     "feed_title": "GIGAZINE"
+    },
+    {
+     "title": "Amazon傘下のロボタクシー「Zoox」が専用車両で初めて商用サービス許可を取得",
+     "url": "https://gigazine.net/news/20260731-amazon-zoox-us-paid-robotaxis/",
+     "feed_title": "GIGAZINE"
+    },
+    {
+     "title": "コンパイラ「GCC」の開発チームがAI生成コードの受け入れポリシーを公開、15行以上のAI生成コードは受け入れ拒否",
+     "url": "https://gigazine.net/news/20260731-gcc-ai-policy/",
+     "feed_title": "GIGAZINE"
+    }
+   ]
+  },
+  {
+   "field": "国際",
+   "text": "ウクライナ大統領はトランプ大統領に対し、ロシア国内でのドローン攻撃に衛星インターネットStarlinkを利用させるよう要請しました。ロシアの“.ru”ドメインが実質的に利用できなくなる可能性があり、関連事業者は対応を急いでいます。AmazonではAI導入プロジェクトで予算を大幅に超過する事例が発生し、2億円は誤差との反論も出ています。また、4つのnpmパッケージを侵害したサプライチェーン攻撃が北朝鮮ハッカーによるものと特定されました。",
+   "sources": [
+    {
+     "title": "ウクライナのゼレンスキー大統領が「ロシア国内のドローン攻撃にStarlinkを利用させてほしい」とトランプ大統領に要求",
+     "url": "https://gigazine.net/news/20260731-zelensky-trump-starlink-drone-strikes-russia/",
+     "feed_title": "GIGAZINE"
+    },
+    {
+     "title": "4つのnpmパッケージを侵害したサプライチェーン攻撃が北朝鮮ハッカーによるものだとAmazonが特定",
+     "url": "https://gigazine.net/news/20260731-north-korean-hacker-supply-chain-attacks/",
+     "feed_title": "GIGAZINE"
+    },
+    {
+     "title": "AmazonでAIのコストが壊滅的なレベルでかさんで予算を860％も超過した事例が報告される、Amazonは「小規模なケースだし2億円は誤差」と反論",
+     "url": "https://gigazine.net/news/20260731-ai-amazon-expensive/",
+     "feed_title": "GIGAZINE"
+    }
+   ]
+  },
+  {
+   "field": "文化",
+   "text": "メトロポリタン美術館のコレクションを題材としたオンラインゲーム「Anthropeum」が公開され、ユーザーは歴史的遺品の制作年代と国・地域を推測します。近畿大学内にあるラーメン店の人気メニュー「近大まぜそば」がカップ麺として発売されました。丸っこいアライグマ「ジモシー」が様々なゲームに登場し人気を集めています。",
+   "sources": [
+    {
+     "title": "メトロポリタン美術館に所蔵される歴史的遺物がどこでいつ作られたかを推測して地図をクリックするゲーム「Anthropeum」",
+     "url": "https://gigazine.net/news/20260731-anthropeum/",
+     "feed_title": "GIGAZINE"
+    },
+    {
+     "title": "近畿大学内にあるラーメン店の人気メニュー「近大まぜそば」がカップ麺になったエースコックの「魅惑の学食巡りｉｎ関西 近大をすすらんか。近大まぜそば」試食レビュー",
+     "url": "https://gigazine.net/news/20260731-acecook-kindai-mazesoba/",
+     "feed_title": "GIGAZINE"
+    },
+    {
+     "title": "丸っこいアライグマ「ジモシー」がさまざまなゲームに登場、「Minecraft」「Amoung Us」「HALO」など",
+     "url": "https://gigazine.net/news/20260731-jimothy-gaming/",
      "feed_title": "GIGAZINE"
     }
    ]
   },
   {
    "field": "その他",
-   "text": "イオンモール熊本へのドローン捜索活動は、国産ドローン企業Liberawareが従業員と共に関東から派遣され行われた。アマゾンの熱帯雨林の下には数万個もの古代文明による幾何学的な土塁が存在することが判明した。TSMCの熊本工場では製造装置の調整に時間がかかっているものの、従業員全員の安全は確保されている。",
+   "text": "高額療養費制度で、毎月の負担上限額が個人の所得に応じて調整され、長期間治療を受ける患者のために年間全体の負担上限額も新設されます。ダイナミックマッププラットフォーム「3Dmapspocket」は一般道点群データの提供エリアを拡大しました。Ghostty開発者が新会社「Superlogical」を設立し、人間とAIの作業統合を目指すターミナル基盤の開発を開始します。LinkedInにAI生成コンテンツへの対処を目的とした通報ボタンが導入されました。",
    "sources": [
     {
-     "title": "イオンモール熊本のドローン捜索、状況を現場キーマンに聞いた 撮影を阻んだのは……",
-     "url": "https://www.itmedia.co.jp/news/article/2607/30/2000000312/",
-     "feed_title": "ITmedia NEWS 最新記事一覧"
+     "title": "高額療養費制度 自己負担の上限額引き上げも 年間上限額を新設",
+     "url": "http://www3.nhk.or.jp/news/html/20260801/k10015192851000.html",
+     "feed_title": "NHKニュース"
     },
     {
-     "title": "アマゾンの熱帯雨林の下にはすでに滅んだ古代文明による数万個の幾何学的な土塁が存在することが判明",
-     "url": "https://gigazine.net/news/20260730-amazon-hidden-structures-aquiry-civilization/",
+     "title": "Ghostty開発者が新会社「Superlogical」を始動、人間とAIの作業を統合するターミナル基盤を構築へ",
+     "url": "https://gigazine.net/news/20260731-mitchell-hashimoto-superlogical/",
      "feed_title": "GIGAZINE"
     },
     {
-     "title": "イオンモール熊本内部の撮影、国産ドローンが活躍 日本企業2社が自衛隊などと協力",
-     "url": "https://www.itmedia.co.jp/news/article/2607/30/2000000303/",
+     "title": "ダイナミックマッププラットフォーム、「3Dmapspocket」の一般道点群データの提供エリアを拡大",
+     "url": "https://www.itmedia.co.jp/news/article/2607/31/2000000338/",
      "feed_title": "ITmedia NEWS 最新記事一覧"
     }
    ]
   }
  ],
- "digest_at": "2026-07-30T21:37:45.711316+00:00",
+ "digest_at": "2026-07-31T21:38:38.948386+00:00",
  "topics": [
   {
-   "term": "熊本",
-   "article_count": 10
+   "term": "活用",
+   "article_count": 11
   },
   {
-   "term": "地震",
-   "article_count": 10
-  },
-  {
-   "term": "熊本地震",
-   "article_count": 8
-  },
-  {
-   "term": "ユーザー",
-   "article_count": 7
-  },
-  {
-   "term": "熊本県",
-   "article_count": 6
-  },
-  {
-   "term": "被災地",
+   "term": "Amazon",
    "article_count": 5
   },
   {
-   "term": "Twitter",
+   "term": "ユーザー",
+   "article_count": 5
+  },
+  {
+   "term": "決定",
+   "article_count": 5
+  },
+  {
+   "term": "措置",
+   "article_count": 5
+  },
+  {
+   "term": "プロジェクト",
    "article_count": 4
-  },
-  {
-   "term": "イオンモール",
-   "article_count": 4
-  },
-  {
-   "term": "熊本県内",
-   "article_count": 4
-  },
-  {
-   "term": "被害",
-   "article_count": 4
-  },
-  {
-   "term": "アメリカ",
-   "article_count": 3
-  },
-  {
-   "term": "ドローン",
-   "article_count": 3
-  },
-  {
-   "term": "アプリ",
-   "article_count": 3
-  },
-  {
-   "term": "住民",
-   "article_count": 3
-  },
-  {
-   "term": "協議",
-   "article_count": 3
-  },
-  {
-   "term": "協力",
-   "article_count": 3
-  },
-  {
-   "term": "産業",
-   "article_count": 3
-  },
-  {
-   "term": "電力",
-   "article_count": 3
-  },
-  {
-   "term": "Liberaware",
-   "article_count": 2
-  },
-  {
-   "term": "Chainage",
-   "article_count": 2
-  },
-  {
-   "term": "産業振興協議会",
-   "article_count": 2
-  },
-  {
-   "term": "能登半島地震",
-   "article_count": 2
   },
   {
    "term": "Google",
-   "article_count": 2
+   "article_count": 4
   },
   {
-   "term": "OpenAI",
-   "article_count": 2
+   "term": "コード",
+   "article_count": 4
   },
   {
-   "term": "Steam",
-   "article_count": 2
+   "term": "負担",
+   "article_count": 4
   },
   {
-   "term": "バッテリー",
-   "article_count": 2
+   "term": "改善",
+   "article_count": 4
   },
   {
-   "term": "IBIS2",
-   "article_count": 2
+   "term": "地震",
+   "article_count": 4
   },
   {
-   "term": "コンテンツ",
-   "article_count": 2
+   "term": "熊本",
+   "article_count": 4
   },
   {
-   "term": "安全確保",
-   "article_count": 2
+   "term": "貢献",
+   "article_count": 4
   },
   {
-   "term": "研究結果",
-   "article_count": 2
+   "term": "構築",
+   "article_count": 4
   },
   {
-   "term": "安全保障",
-   "article_count": 2
+   "term": "自動",
+   "article_count": 4
   },
   {
-   "term": "DMAT",
-   "article_count": 2
+   "term": "セキュリティ",
+   "article_count": 3
   },
   {
-   "term": "モバイル",
-   "article_count": 2
+   "term": "熊本地震",
+   "article_count": 3
   },
   {
-   "term": "地震発生",
-   "article_count": 2
+   "term": "アクセス",
+   "article_count": 3
   },
   {
-   "term": "コメント",
-   "article_count": 2
+   "term": "開発者",
+   "article_count": 3
   },
   {
-   "term": "要救助者",
-   "article_count": 2
+   "term": "SNS",
+   "article_count": 3
+  },
+  {
+   "term": "モデル",
+   "article_count": 3
+  },
+  {
+   "term": "脆弱性",
+   "article_count": 3
+  },
+  {
+   "term": "リスク",
+   "article_count": 3
+  },
+  {
+   "term": "大手",
+   "article_count": 3
+  },
+  {
+   "term": "消費",
+   "article_count": 3
+  },
+  {
+   "term": "復旧",
+   "article_count": 3
+  },
+  {
+   "term": "個人",
+   "article_count": 3
+  },
+  {
+   "term": "評価",
+   "article_count": 3
+  },
+  {
+   "term": "特定",
+   "article_count": 3
+  },
+  {
+   "term": "商品",
+   "article_count": 3
+  },
+  {
+   "term": "展開",
+   "article_count": 3
+  },
+  {
+   "term": "統合",
+   "article_count": 3
+  },
+  {
+   "term": "億円",
+   "article_count": 3
+  },
+  {
+   "term": "対処",
+   "article_count": 3
+  },
+  {
+   "term": "同様",
+   "article_count": 3
+  },
+  {
+   "term": "社内",
+   "article_count": 3
   }
  ],
  "total": 40,
- "readable": 29,
+ "readable": 30,
  "sources": [
   "GIGAZINE",
   "NHKニュース",
@@ -293,5 +298,5 @@
    "last_error": ""
   }
  ],
- "generated_at": "2026-07-31T17:49:19.509758+00:00"
+ "generated_at": "2026-07-31T21:38:40.557192+00:00"
 }
