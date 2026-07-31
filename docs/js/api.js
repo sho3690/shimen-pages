@@ -118,5 +118,22 @@
     },
   };
 
+  /* GitHubのIssue作成画面を中身入りで開くURLを作る。
+     Pagesは静的なのでMacのデータベースを直接は書けない。
+     ユーザー自身のGitHubアカウントを書き込み経路として使う。 */
+  window.requestUrl = function (action, value) {
+    const repo = window.SHIMEN_REPO || "";
+    if (!repo) return null;
+    const isAdd = action === "add";
+    const title = isAdd ? "フィード追加の依頼" : "フィード削除の依頼: " + value;
+    const body = isAdd
+      ? "shimen-request: add\nurl: " + value
+      : "shimen-request: remove\ntitle: " + value;
+    return "https://github.com/" + repo + "/issues/new"
+      + "?labels=" + encodeURIComponent(window.SHIMEN_LABEL || "feed-request")
+      + "&title=" + encodeURIComponent(title)
+      + "&body=" + encodeURIComponent(body);
+  };
+
   window.API = STATIC ? staticApi : serverApi;
 })();

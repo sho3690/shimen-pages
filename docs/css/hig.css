@@ -299,12 +299,33 @@ body {
 
 .sheet__note {
   margin: var(--space-6) 0 0;
-  padding: var(--space-3);
+  padding: var(--space-4);
   background: var(--surface-2);
   border-radius: var(--radius);
+}
+
+.sheet__add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+}
+
+.sheet__how {
+  margin: var(--space-3) 0 0;
   font-size: 0.8125em;
   line-height: 1.7;
   color: var(--ink-2);
+}
+
+/* フィード行の操作リンク。タップ領域を確保する */
+.feed-row__act {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 .paper-foot {

@@ -314,6 +314,15 @@
       if (feed.readonly) {
         const label = ["", "重点", "通常", "軽め"][feed.priority] || "通常";
         row.appendChild(el("span", "feed-row__badge", label));
+
+        const url = window.requestUrl && window.requestUrl("remove", feed.title);
+        if (url) {
+          const link = el("a", "btn btn--danger feed-row__act", "削除");
+          link.href = url;
+          link.target = "_blank";
+          link.rel = "noopener noreferrer";
+          row.appendChild(link);
+        }
         root.appendChild(row);
         return;
       }

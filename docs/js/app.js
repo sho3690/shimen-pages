@@ -78,12 +78,27 @@
     return API.listFeeds().then(function (data) {
       feedListEl.replaceChildren(Render.feedList(data.feeds, handlers));
       if (API.isStatic) {
-        const note = document.createElement("p");
-        note.className = "sheet__note";
-        note.textContent =
-          "追加・削除はMacの画面から行います。start.command をダブルクリックし、" +
-          "出てきたQRコードをiPhoneで読み取ってください。";
-        feedListEl.appendChild(note);
+        const box = document.createElement("div");
+        box.className = "sheet__note";
+
+        const url = window.requestUrl && window.requestUrl("add", "");
+        if (url) {
+          const add = document.createElement("a");
+          add.className = "btn sheet__add";
+          add.href = url;
+          add.target = "_blank";
+          add.rel = "noopener noreferrer";
+          add.textContent = "フィードを追加する";
+          box.appendChild(add);
+        }
+
+        const how = document.createElement("p");
+        how.className = "sheet__how";
+        how.textContent =
+          "追加と削除はGitHubの画面で受け付けます。開いた画面の url: の右に" +
+          "RSSのURLを書いて送信してください。次の朝の更新で反映されます。";
+        box.appendChild(how);
+        feedListEl.appendChild(box);
       }
     }).catch(function (e) {
       notify("フィード一覧を読み込めませんでした", e.message, "error");
