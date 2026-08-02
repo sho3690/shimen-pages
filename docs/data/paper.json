@@ -2,33 +2,44 @@
  "digest": [
   {
    "field": "災害",
-   "text": "先月28日に発生した熊本地震では、熊本県内で36人が死亡していることが確認されています。9500人余りが避難所などで生活しており、政府は長期化を見据え、車中泊者へのガソリン供給強化やホテル空室の活用など、環境改善策を講じています。九州新幹線 熊本～新水俣間については、線路や橋梁の損傷が大きく、8月中旬までの運転再開は困難とJR九州が発表しました。ソニーの熊本工場も操業停止から8月中旬には地震前の稼働水準に戻る見込みです。",
+   "text": "熊本県で発生した熊本地震により、現在までに36人が死亡し、9500人余りが避難生活を送っています。地震の影響で8400人余りが避難所に滞在しており、過酷な環境下での生活を支えるため、ホテルや旅館への「2次避難」を受け付けています。断水の早期解消を目指し、政府は全国の自治体への支援を強化し、技術職員を派遣するよう要請しています。また、イオンモール熊本での捜索活動が終了し、7人が死亡したことが確認されました。",
    "sources": [
     {
-     "title": "九州新幹線 熊本～新水俣間「8月中の運転再開は困難」JR九州",
-     "url": "http://www3.nhk.or.jp/news/html/20260731/k10015192431000.html",
+     "title": "熊本県 最高気温40度予想 ホテルなど「2次避難」受付へ",
+     "url": "http://www3.nhk.or.jp/news/html/20260803/k10015194601000.html",
      "feed_title": "NHKニュース"
     },
     {
-     "title": "熊本地震 避難生活の長期化も見据え環境改善進める 政府",
-     "url": "http://www3.nhk.or.jp/news/html/20260801/k10015193101000.html",
+     "title": "熊本地震 断水の早期解消へ復旧の取り組み進める 政府",
+     "url": "http://www3.nhk.or.jp/news/html/20260802/k10015193871000.html",
      "feed_title": "NHKニュース"
     },
     {
-     "title": "ソニーの熊本工場、8月中旬には「地震前の稼働水準」に 早期復旧の理由を決算会見で明かす",
-     "url": "https://www.itmedia.co.jp/news/article/2607/31/2000000341/",
-     "feed_title": "ITmedia NEWS 最新記事一覧"
+     "title": "熊本地震 関連調査中含め36人死亡 避難所の熱中症対策を強化へ",
+     "url": "http://www3.nhk.or.jp/news/html/20260802/k10015193881000.html",
+     "feed_title": "NHKニュース"
+    }
+   ]
+  },
+  {
+   "field": "健康",
+   "text": "ADHDの青少年で、より健康的な食事をしているグループは、集中力の問題が少ない傾向が見られています。オーストラリアの研究チームが13～19歳の39人を対象に食生活と認知能力の関係を調査しました。",
+   "sources": [
+    {
+     "title": "健康的な食事をしているADHDの青少年は集中力の問題が少ないとの研究結果",
+     "url": "https://gigazine.net/news/20260802-adhd-better-diets-sharper-focus/",
+     "feed_title": "GIGAZINE"
     }
    ]
   },
   {
    "field": "経済",
-   "text": "大手銀行は、長期金利上昇を受けて、8月からの住宅ローン固定金利を値上げします。政府は来年4月から2年間、消費税率を1％に引き下げる減税計画を推進する方針ですが、自民党内には慎重な意見も根強く存在し、議論が継続されています。また、セブン＆アイ・ホールディングスはソフトバンク、PayPay、三井住友カードと戦略的パートナーシップを締結し、共通会員ID「7iD」を「PayPay ID」に統合します。",
+   "text": "日本とアメリカが円安の進行を食い止めるため、協調して円買い介入を行いました。この協調介入は、5月中旬の日米財務相会談での調整本格化を受けて実施されました。大手銀行は8月からの住宅ローン固定金利を引き上げ、これは長期金利の上昇に対応するものです。政府は来年4月から2年間、消費税率を1％に引き下げる減税計画を推進する方針ですが、自民党内には慎重な意見も根強く存在します。",
    "sources": [
     {
-     "title": "セブン＆アイ、共通会員IDのPayPay統合を正式発表 ソフトバンクや三井住友カードなどが計3000億円出資",
-     "url": "https://www.itmedia.co.jp/news/article/2607/31/2000000345/",
-     "feed_title": "ITmedia NEWS 最新記事一覧"
+     "title": "日米の協調介入 ことし5月の日米財務相会談から本格調整",
+     "url": "http://www3.nhk.or.jp/news/html/20260803/k10015194421000.html",
+     "feed_title": "NHKニュース"
     },
     {
      "title": "消費税減税 自民党内に慎重意見も根強く 週明けも議論継続へ",
@@ -43,91 +54,93 @@
    ]
   },
   {
-   "field": "国際",
-   "text": "モスクワで爆発事故が発生し、3人が死亡、15人が負傷しました。今回の爆発はロシア軍の幹部に対する殺害事件と関連している可能性があり、アメリカのメディアはトランプ政権がイランを攻撃する計画を進めている可能性を報じています。これに対しイラン政府は強く反発しており、緊張が高まっています。ウクライナのゼレンスキー大統領は、ロシア国内でのドローン攻撃にStarlinkを利用させるようトランプ大統領に要請しました。",
+   "field": "テクノロジー",
+   "text": "ブラウザベースのコーディングプラットフォーム「Trinket」が、運営チームによるサービス終了を回避し、オープンソース化を経て無料のコミュニティ版として再開されました。GoogleはパーソナルAIエージェント「Gemini Spark」の提供対象を160カ国以上に拡大し、日本でも利用可能となりました。OpenAIのアクティブユーザー数は7月31日に10億人を超え、導入企業数は200万社を突破しました。",
    "sources": [
     {
-     "title": "ウクライナのゼレンスキー大統領が「ロシア国内のドローン攻撃にStarlinkを利用させてほしい」とトランプ大統領に要求",
-     "url": "https://gigazine.net/news/20260731-zelensky-trump-starlink-drone-strikes-russia/",
+     "title": "Python・HTMLなどをブラウザ上で直接実行でき教室向けに作られたブラウザベースのコーディングプラットフォーム「Trinket」、閉鎖予定だったがオープンソースで無料化されて継続",
+     "url": "https://gigazine.net/news/20260802-trinket/",
      "feed_title": "GIGAZINE"
     },
     {
-     "title": "モスクワで爆発 3人死亡 15人けが 原因や背景を捜査",
-     "url": "http://www3.nhk.or.jp/news/html/20260802/k10015193971000.html",
-     "feed_title": "NHKニュース"
+     "title": "Google、パーソナルAI「Gemini Spark」を日本でも利用可能に Chrome統合は米国から",
+     "url": "https://www.itmedia.co.jp/news/article/2608/02/2000000347/",
+     "feed_title": "ITmedia NEWS 最新記事一覧"
     },
     {
-     "title": "米報道“週末にも攻撃計画” イランもけん制 攻撃応酬に懸念",
-     "url": "http://www3.nhk.or.jp/news/html/20260802/k10015193951000.html",
-     "feed_title": "NHKニュース"
+     "title": "OpenAI、アクティブユーザー10億人超に 導入企業は200万社超",
+     "url": "https://www.itmedia.co.jp/news/article/2608/02/2000000346/",
+     "feed_title": "ITmedia NEWS 最新記事一覧"
     }
    ]
   },
   {
    "field": "社会",
-   "text": "岡山県矢掛町で2歳男児が行方不明になり、警察と消防が2日間にわたり捜索を行っています。愛子内親王は三重県鳥羽市にある鳥羽水族館を訪問し、ジュゴンやラッコをご覧になりました。また、東日本大震災の実体験に基づく書籍『災害初動期指揮心得』がKindleで無料公開されました。",
+   "text": "陸上競技のユニフォームを着た女子高校生の画像を裸に見えるように加工し、SNSに投稿した疑いで32歳の会社員が逮捕されました。これは生成AIを用いたわいせつな目的での画像作成・投稿です。羽田空港では出発便の遅延が増加しており、全日空や日本航空などの航空会社は、荷物預け入れ締め切り時刻を10分前倒しし、出発時刻の30分前に早める方針を決定しました。",
    "sources": [
     {
-     "title": "岡山 矢掛町で2歳男児が行方不明 きょうも警察と消防が捜索",
-     "url": "http://www3.nhk.or.jp/news/html/20260802/k10015193901000.html",
+     "title": "羽田空港 荷物預け入れ締め切りを出発30分前に 出発の遅れ増え",
+     "url": "http://www3.nhk.or.jp/news/html/20260803/k10015194531000.html",
      "feed_title": "NHKニュース"
     },
+    {
+     "title": "女子生徒などの画像を裸に加工し投稿の疑い 32歳会社員を逮捕",
+     "url": "http://www3.nhk.or.jp/news/html/20260803/k10015194511000.html",
+     "feed_title": "NHKニュース"
+    }
+   ]
+  },
+  {
+   "field": "国際",
+   "text": "アメリカのメディアが、トランプ政権がイスラエルと協力してイランを攻撃する計画を進めている可能性を報じました。これに対し、イラン政府は強く反発しています。モスクワで爆発事故が発生し、3人が死亡、15人が負傷しました。",
+   "sources": [
+    {
+     "title": "米報道“週末にも攻撃計画” イランもけん制 攻撃応酬に懸念",
+     "url": "http://www3.nhk.or.jp/news/html/20260802/k10015193951000.html",
+     "feed_title": "NHKニュース"
+    },
+    {
+     "title": "モスクワで爆発 3人死亡 15人けが 原因や背景を捜査",
+     "url": "http://www3.nhk.or.jp/news/html/20260802/k10015193971000.html",
+     "feed_title": "NHKニュース"
+    }
+   ]
+  },
+  {
+   "field": "スポーツ",
+   "text": "2024年6月9日に行われた全英女子オープンで、桑木志帆選手が優勝を果たし、海外メジャー大会初制覇となりました。",
+   "sources": [
+    {
+     "title": "ゴルフ 全英女子オープン 桑木志帆が優勝 海外メジャー初制覇",
+     "url": "http://www3.nhk.or.jp/news/html/20260803/k10015194471000.html",
+     "feed_title": "NHKニュース"
+    }
+   ]
+  },
+  {
+   "field": "その他",
+   "text": "岡山県矢掛町で2歳男児が行方不明になっており、警察と消防が捜索活動を行っています。愛子内親王が三重県鳥羽市にある鳥羽水族館を訪問し、ジュゴンやラッコをご覧になりました。",
+   "sources": [
     {
      "title": "愛子さま 三重県の鳥羽水族館でジュゴンやラッコをご覧に",
      "url": "http://www3.nhk.or.jp/news/html/20260802/k10015193831000.html",
      "feed_title": "NHKニュース"
     },
     {
-     "title": "無料で読める東日本大震災の実体験に基づく「災害初動期指揮心得」、発災後1時間・1日・1週間に指揮官が取るべき行動とは？",
-     "url": "https://gigazine.net/news/20260801-disaster-initial-response-command-guide/",
-     "feed_title": "GIGAZINE"
-    }
-   ]
-  },
-  {
-   "field": "科学",
-   "text": "メンフクロウが体色によって狩りの方法を変えていることが判明しました。GoogleはAIを活用してChromeブラウザのセキュリティ対策を強化しており、脆弱性発見ツール「Naptime」や「Big Sleep」を開発しています。TSMCはIntelの半導体パッケージング技術であるEMIBを模倣した新技術の開発に取り組んでいます。",
-   "sources": [
-    {
-     "title": "Googleが「AIを使ってChromeのバグを大量修正した方法」を解説",
-     "url": "https://gigazine.net/news/20260731-chrome-ai-fix/",
-     "feed_title": "GIGAZINE"
+     "title": "岡山 矢掛町で2歳男児が行方不明 きょうも警察と消防が捜索",
+     "url": "http://www3.nhk.or.jp/news/html/20260802/k10015193901000.html",
+     "feed_title": "NHKニュース"
     },
     {
-     "title": "TSMCが「準EMIB」と社内で呼ぶ高度なAI半導体パッケージング技術を開発中、IntelのEmbedded Multi-die Interconnect Bridge技術に類似か",
-     "url": "https://gigazine.net/news/20260731-tsmc-quasi-emib/",
-     "feed_title": "GIGAZINE"
-    }
-   ]
-  },
-  {
-   "field": "文化",
-   "text": "バトルロイヤルゲーム「Garena Free Fire」がアニメ化され、『Free Fire Daybreak』として2027年の春放送を予定しています。ポケモンのイーブイをモチーフにしたイヤーカフ型ワイヤレスイヤホン「Soundcore C50i イーブイモデル」が登場しました。メトロポリタン美術館のコレクションを題材としたオンラインゲーム「Anthropeum」が公開されました。",
-   "sources": [
-    {
-     "title": "ポケモンのイーブイをベージュ＆ブラウンカラーで表現したイヤーカフ型イヤホン「Soundcore C50i イーブイモデル」フォトレビュー",
-     "url": "https://gigazine.net/news/20260801-soundcore-c50i-eevee/",
-     "feed_title": "GIGAZINE"
-    },
-    {
-     "title": "バトロワ系人気ゲームが「新次元能力覚醒バトルアクションアニメ」に、アニメ『Free Fire Daybreak』PV公開",
-     "url": "https://gigazine.net/news/20260801-free-fire-daybreak-anime-pv/",
-     "feed_title": "GIGAZINE"
-    },
-    {
-     "title": "メトロポリタン美術館に所蔵される歴史的遺物がどこでいつ作られたかを推測して地図をクリックするゲーム「Anthropeum」",
-     "url": "https://gigazine.net/news/20260731-anthropeum/",
-     "feed_title": "GIGAZINE"
+     "title": "イオンモール熊本での捜索活動が終了 7人が死亡 5人がけが",
+     "url": "http://www3.nhk.or.jp/news/html/20260801/k10015193651000.html",
+     "feed_title": "NHKニュース"
     }
    ]
   }
  ],
- "digest_at": "2026-08-01T21:38:19.020796+00:00",
+ "digest_at": "2026-08-02T21:38:03.212877+00:00",
  "topics": [
-  {
-   "term": "活用",
-   "article_count": 10
-  },
   {
    "term": "地震",
    "article_count": 7
@@ -141,11 +154,11 @@
    "article_count": 6
   },
   {
-   "term": "措置",
+   "term": "生活",
    "article_count": 6
   },
   {
-   "term": "段階",
+   "term": "措置",
    "article_count": 6
   },
   {
@@ -153,79 +166,55 @@
    "article_count": 6
   },
   {
+   "term": "避難",
+   "article_count": 5
+  },
+  {
+   "term": "作成",
+   "article_count": 5
+  },
+  {
+   "term": "死亡",
+   "article_count": 5
+  },
+  {
+   "term": "連携",
+   "article_count": 5
+  },
+  {
+   "term": "設計",
+   "article_count": 5
+  },
+  {
+   "term": "自動",
+   "article_count": 5
+  },
+  {
    "term": "熊本地震",
-   "article_count": 5
+   "article_count": 4
   },
   {
-   "term": "範囲",
-   "article_count": 5
+   "term": "熊本県",
+   "article_count": 4
   },
   {
-   "term": "決定",
-   "article_count": 5
+   "term": "被災者",
+   "article_count": 4
   },
   {
-   "term": "強調",
-   "article_count": 5
-  },
-  {
-   "term": "展開",
-   "article_count": 5
+   "term": "ツール",
+   "article_count": 4
   },
   {
    "term": "被災地",
    "article_count": 4
   },
   {
-   "term": "生活",
+   "term": "非常",
    "article_count": 4
   },
   {
-   "term": "連携",
-   "article_count": 4
-  },
-  {
-   "term": "復旧",
-   "article_count": 4
-  },
-  {
-   "term": "協力",
-   "article_count": 4
-  },
-  {
-   "term": "早期",
-   "article_count": 4
-  },
-  {
-   "term": "解決",
-   "article_count": 4
-  },
-  {
-   "term": "死亡",
-   "article_count": 4
-  },
-  {
-   "term": "事故",
-   "article_count": 4
-  },
-  {
-   "term": "計画",
-   "article_count": 4
-  },
-  {
-   "term": "行動",
-   "article_count": 4
-  },
-  {
-   "term": "有効",
-   "article_count": 4
-  },
-  {
-   "term": "購入",
-   "article_count": 4
-  },
-  {
-   "term": "設計",
+   "term": "見直",
    "article_count": 4
   },
   {
@@ -233,7 +222,23 @@
    "article_count": 4
   },
   {
-   "term": "統合",
+   "term": "決定",
+   "article_count": 4
+  },
+  {
+   "term": "範囲",
+   "article_count": 4
+  },
+  {
+   "term": "成果",
+   "article_count": 4
+  },
+  {
+   "term": "無料",
+   "article_count": 4
+  },
+  {
+   "term": "搭載",
    "article_count": 4
   },
   {
@@ -241,31 +246,43 @@
    "article_count": 4
   },
   {
-   "term": "負担",
+   "term": "税込",
    "article_count": 4
   },
   {
-   "term": "オンラインストア",
+   "term": "活用",
+   "article_count": 4
+  },
+  {
+   "term": "段階",
+   "article_count": 4
+  },
+  {
+   "term": "Amazon.co.jp",
    "article_count": 3
   },
   {
-   "term": "Google",
+   "term": "Raspberry",
    "article_count": 3
   },
   {
-   "term": "Amazon",
+   "term": "ダウンロード",
    "article_count": 3
   },
   {
-   "term": "前年同期比",
+   "term": "アメリカ",
    "article_count": 3
   },
   {
-   "term": "インフラ",
+   "term": "研究者",
    "article_count": 3
   },
   {
-   "term": "レビュー",
+   "term": "避難者",
+   "article_count": 3
+  },
+  {
+   "term": "広範囲",
    "article_count": 3
   }
  ],
@@ -293,5 +310,5 @@
    "last_error": ""
   }
  ],
- "generated_at": "2026-08-01T21:38:20.546316+00:00"
+ "generated_at": "2026-08-02T21:38:04.593217+00:00"
 }
