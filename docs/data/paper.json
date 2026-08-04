@@ -1,370 +1,288 @@
 {
  "digest": [
   {
-   "field": "地震",
-   "text": "熊本県宇城市で午前5時32分に震度4の地震が発生し、宇城市では最大震度4を観測しました。現在、津波の心配はありませんが、周辺にはまだずれ動いていない活断層が多数存在することが判明しています。熊本地震から1週間が経過した今なお、震度1以上の揺れが約400回観測されるなど、地震活動は活発な状態が続いています。政府は、避難生活が長期化する可能性を考慮し、飲料水や簡易クーラーなどの物資を被災地に届け続けており、予備費で予算を確保しています。",
+   "field": "災害",
+   "text": "7日から沖縄を直撃する可能性のある大型台風13号について、強い勢力で沖縄本島への影響が長引く見込みです。6日夜には大東島近海へ進み、速度を落として7日から8日にかけて沖縄本島を直撃する可能性があります。熊本県では、先月発生した地震から1週間が経過しても、今後1週間程度は震度5強以上の地震に注意が必要です。特に、5日現在、熊本県内では危険な暑さが見込まれており、復旧作業を行う際は熱中症対策を徹底する必要があります。",
    "sources": [
     {
-     "title": "熊本地震1週間 周辺に動いていない活断層も 備えを",
-     "url": "http://www3.nhk.or.jp/news/html/20260804/k10015195351000.html",
+     "title": "熊本 震度5強程度以上の地震注意 復旧作業の際は熱中症対策を",
+     "url": "http://www3.nhk.or.jp/news/html/20260805/k10015196771000.html",
      "feed_title": "NHKニュース"
     },
     {
-     "title": "熊本地震 プッシュ型支援進める 予備費で予算確保も 政府",
-     "url": "http://www3.nhk.or.jp/news/html/20260804/k10015195331000.html",
-     "feed_title": "NHKニュース"
+     "title": "台風13号 7日から沖縄を直撃 動き遅く影響が長引く 九州南部も雨量多くなる恐れ(tenki.jp)",
+     "url": "https://news.yahoo.co.jp/articles/3b9b61dd6015a12353d26c51cd02be246cf3557f?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "【地震速報】熊本 宇城で震度4 津波の心配なし(5:32)",
-     "url": "http://www3.nhk.or.jp/news/html/20260804/k10015194611000.html",
-     "feed_title": "NHKニュース"
-    }
-   ]
-  },
-  {
-   "field": "選挙",
-   "text": "複数の選挙区が存在する場合、「完全に公平な選挙」は数学的に不可能であることがケンブリッジ大学とコペンハーゲン大学の研究チームによって証明されました。地域代表、得票比例、固定議席数を同時に満たす選挙制度は存在しないという結論です。この研究結果は、今後の選挙制度改革に影響を与える可能性があります。",
-   "sources": [
-    {
-     "title": "「完全に公平な選挙」は数学的に不可能、地域代表・得票比例・議席数の3条件を同時に満たせないことが判明",
-     "url": "https://gigazine.net/news/20260804-election-system/",
-     "feed_title": "GIGAZINE"
-    },
-    {
-     "title": "AI支援で作られた「コラッツ予想の反証」は無効、Leanのカーネルバグを突いていたことが判明",
-     "url": "https://gigazine.net/news/20260803-collatz-lean-kernel-bug/",
-     "feed_title": "GIGAZINE"
-    }
-   ]
-  },
-  {
-   "field": "国際",
-   "text": "ゼレンスキー大統領が対外情報局長官にウメロフ氏を任命しました。これは、ロシアとの和平案の交渉において、欧米諸国との協力体制を強化するための措置とみられています。特に、無人機などの技術協力を推進することが期待されています。",
-   "sources": [
-    {
-     "title": "ウクライナ対外情報局長官にウメロフ氏 無人機協力推進へ",
-     "url": "http://www3.nhk.or.jp/news/html/20260804/k10015195371000.html",
+     "title": "熊本 県が避難先として確保のホテルで被災者を受け入れ",
+     "url": "http://www3.nhk.or.jp/news/html/20260805/k10015196611000.html",
      "feed_title": "NHKニュース"
     }
    ]
   },
   {
    "field": "経済",
-   "text": "政府は来年4月から食料品の消費税率を2年間1％引き下げる方針を固め、閣議決定を行う予定です。この決定にあたっては、自民党合同会議で意見が分かれたため、最終的な判断を小野寺税制調査会長に委ねました。また、年間売上が16億4000万円を超える「1人事業者」がAIの支援を受けて2年で約3倍に急増したことも明らかになりました。",
+   "text": "政府は来年4月から2年間、消費税率を1%に引き下げる減税の方針を決定する予定です。この方針に基づき、与党は税制改正大綱の検討を進め、具体的な制度設計を本格化させる見込みです。一方で、高市早苗首相は、この減税措置を人口減少社会への対応策としていますが、野党からは国会でただす構えを示されています。また、マルハニチロが社名をUmios（ウミオス）に変更しました。",
    "sources": [
     {
-     "title": "食料品の消費税減税 5日にも閣議決定したい考え 政府",
-     "url": "http://www3.nhk.or.jp/news/html/20260804/k10015195321000.html",
+     "title": "消費税減税 基本方針案 閣議決定へ 野党は国会でただす構え",
+     "url": "http://www3.nhk.or.jp/news/html/20260805/k10015196581000.html",
      "feed_title": "NHKニュース"
     },
     {
-     "title": "年間売上が16億4000万円を超える「1人事業者」がAIの支援を受けて2年で約3倍に急増",
-     "url": "https://gigazine.net/news/20260803-solo-business-10-million-revenue/",
-     "feed_title": "GIGAZINE"
-    }
-   ]
-  },
-  {
-   "field": "災害",
-   "text": "熊本地震から1週間が経過し、38人が死亡しています。被災地では危険な暑さの中、車中泊を余儀なくされる人々も多く、災害関連死を防ぐことが喫緊の課題となっています。政府はプッシュ型支援を継続しており、飲料水や簡易クーラーなどの物資を届け続けています。",
-   "sources": [
-    {
-     "title": "熊本地震1週間 38人死亡 災害関連死いかに防ぐか喫緊の課題に",
-     "url": "http://www3.nhk.or.jp/news/html/20260804/k10015195471000.html",
-     "feed_title": "NHKニュース"
+     "title": "高市政権は消費減税を政争の具にするな！人口減少社会にふさわしい税と社会保障制度の再構築を(Wedge（ウェッジ）)",
+     "url": "https://news.yahoo.co.jp/articles/00754c6263cd04aa2ad53e93d8caa7f85875b532?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "熊本地震 プッシュ型支援進める 予備費で予算確保も 政府",
-     "url": "http://www3.nhk.or.jp/news/html/20260804/k10015195331000.html",
-     "feed_title": "NHKニュース"
-    }
-   ]
-  },
-  {
-   "field": "スポーツ",
-   "text": "FIFAワールドカップ2026の試合を違法に配信するために使用されたウェブサイトに対し、「オペレーション・オフサイド」と呼ばれる取り締まりが実施されました。この取り組みにより、約1,000以上のドメインが押収されましたが、ドメイン押収の限界も浮き彫りになりました。",
-   "sources": [
-    {
-     "title": "ワールドカップの違法配信を取り締まる「オペレーション・オフサイド」は成功を収めたがドメイン押収の限界を浮き彫りにしたと映画協会が指摘",
-     "url": "https://gigazine.net/news/20260803-operation-offsides-domain/",
-     "feed_title": "GIGAZINE"
-    }
-   ]
-  },
-  {
-   "field": "医療",
-   "text": "農村地域や農場で育った子どもがアレルギーやぜん息になりにくい「農場効果」を引き起こす細菌が判明しました。これまで、過剰な免疫反応を起こしやすい環境で育った子どもたちがアレルギーを発症しやすいと考えられていましたが、新たな発見です。",
-   "sources": [
-    {
-     "title": "農村地域や農場で育った子どもがアレルギーやぜん息になりにくい「農場効果」を引き起こす細菌が判明",
-     "url": "https://gigazine.net/news/20260803-farm-effect-asthma-allergies-protection-bacteria/",
-     "feed_title": "GIGAZINE"
-    }
-   ]
-  },
-  {
-   "field": "技術",
-   "text": "AI支援によって作成された「コラッツ予想の反証」は無効であることが判明しました。この問題は、定理証明支援システムLeanにおけるカーネルと呼ばれる部分に存在するバグを利用したものでした。また、実在女性の中学時代の体操着姿からAIが生成したわいせつ画像をSNSに投稿する事件が発生し、会社員井元健太容疑者が逮捕されました。",
-   "sources": [
-    {
-     "title": "実在女性の中学時代の体操着姿からAIわいせつ画像作成・投稿か 男逮捕、高校生書類送検",
-     "url": "https://www.itmedia.co.jp/news/article/2608/03/2000000365/",
-     "feed_title": "ITmedia NEWS 最新記事一覧"
-    },
-    {
-     "title": "AI支援で作られた「コラッツ予想の反証」は無効、Leanのカーネルバグを突いていたことが判明",
-     "url": "https://gigazine.net/news/20260803-collatz-lean-kernel-bug/",
-     "feed_title": "GIGAZINE"
-    }
-   ]
-  },
-  {
-   "field": "企業",
-   "text": "東大阪の電線メーカー大原電線は、3000万円を投じて射出成型機を導入し、新たな延長コード製品の開発に取り組んでいます。「東大阪ファクトリーズ」プロジェクトを通じて、思いを形にしています。キオクシアホールディングスは、米国での特許権侵害訴訟の結果、約366億円の損害賠償支払いを命じる判決を受けました。",
-   "sources": [
-    {
-     "title": "つい見せたくなる延長コード、開発したのは東大阪の電線メーカー 3000万円の機械導入で思いを形に",
-     "url": "https://www.itmedia.co.jp/news/article/2608/03/2000000364/",
-     "feed_title": "ITmedia NEWS 最新記事一覧"
-    },
-    {
-     "title": "キオクシアに約366億円の賠償命じる判決 米特許訴訟、陪審評決に続き 「あらゆる法的手段講じる」",
-     "url": "https://www.itmedia.co.jp/news/article/2608/03/2000000363/",
-     "feed_title": "ITmedia NEWS 最新記事一覧"
-    }
-   ]
-  },
-  {
-   "field": "エンタメ",
-   "text": "TBS系列ドラマ『VIVANT』第11話が民放公式配信サービスTVerで887万回再生という記録を樹立しました。これは、これまでのフジテレビ系列・木曜劇場『silent』第4話の582万回再生を上回るものです。",
-   "sources": [
-    {
-     "title": "2026年8月3日のヘッドラインニュース",
-     "url": "https://gigazine.net/news/20260803-headline/",
-     "feed_title": "GIGAZINE"
+     "title": "マルハニチロからUmios（ウミオス）に 海から食卓へ【経済トレンド／わが社のあの時】(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/d53225e5e3b063346cee303f3e20b62f7f70aff8?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "社会",
-   "text": "大阪万博関連ドメインの運用終了が、一部でアダルトサイトへの転用騒動を引き起こしています。元Juice=Juiceの宮本佳林さんは、AIを用いてYouTube生配信システムを自作しました。ぬいぐるみと過ごす時間を記録・共有するSNSアプリ「ぬい日和」が急速に利用者を増やし、約4万人が利用しています。",
+   "text": "60代の女性がSNSを通じて知り合った人物から投資話を持ちかけられ、約4300万円相当の暗号資産を騙し取られました。これは、SNSを通じた詐欺の手口が巧妙化していることを示唆しています。また、2023年の小中高校における暴力行為件数は過去最多の12万8859件に達し、前年度比で18.2%も増加しました。生徒の自主性を重んじる時代になぜ校内暴力が過去最多になったのか、教育現場における「落ちこぼれ」や「吹きこぼれ」生徒への対応の遅れが影響している可能性が指摘されています。",
    "sources": [
     {
-     "title": "妻との雑談で生まれたぬい活SNSに4万人 いいねもフォロワー数も競わないのになぜ人気 「ぬい日和」開発秘話",
-     "url": "https://www.itmedia.co.jp/news/article/2608/03/2000000358/",
-     "feed_title": "ITmedia NEWS 最新記事一覧"
+     "title": "「AIで値動きを予測」などと…60代女性が約4300万円相当の暗号資産騙し取られる SNSで知り合った人物から投資話(東海テレビ)",
+     "url": "https://news.yahoo.co.jp/articles/743eda23cac4c6fac037ef9f58cf5192b1a46495?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "ミャクミャク関連サイトがアダルトサイトに……大阪万博のドメイン運用終了→転用続出で物議 悪用の懸念も",
-     "url": "https://www.itmedia.co.jp/news/article/2608/03/2000000360/",
-     "feed_title": "ITmedia NEWS 最新記事一覧"
-    },
-    {
-     "title": "「コードは一行も書いていない」 アイドルの宮本佳林さん、AIで配信システムを丸ごと構築 “技術ブログ”が話題",
-     "url": "https://www.itmedia.co.jp/news/article/2608/03/2000000362/",
-     "feed_title": "ITmedia NEWS 最新記事一覧"
+     "title": "生徒の自主性を重んじる時代になぜ“校内暴力が12万件超”で過去最多に？ 「落ちこぼれ」と「吹きこぼれ」が教室にあふれる日本型教育の“機能不全”(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/e163525faf63270455c81bb0119e506da30e45c3?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
-   "field": "科学",
-   "text": "北京大学の研究チームが、赤外線をフルカラーで見える光に変える技術を開発しました。この技術は、人間の目が赤外線に直接反応できない仕組みを利用しています。また、Thermo Fisher Scientific製のDNA検査機器に、DNA検査結果を改ざんできる脆弱性が発見されました。",
+   "field": "政治",
+   "text": "福岡県議会の正副議長問題で、藏内勇夫議長は第三者委員会の設置を通じて事実関係の調査を進める方針を決定しました。この決定は、金銭授受疑惑が浮上していることへの対応として行われました。高市早苗首相は、ヘリから被災地を訪問したことについて批判が殺到しており、その軽さが問題視されています。また、熊本県選出の閣僚が株価を上げたことが話題となっています。",
    "sources": [
     {
-     "title": "犯罪捜査に使われるDNA検査ファイルに「検出不能な改ざん」を仕込めることが判明",
-     "url": "https://gigazine.net/news/20260803-thermo-fisher-dna/",
-     "feed_title": "GIGAZINE"
+     "title": "福岡県議会 藏内議長 第三者委員会設置し調査の意向を固める",
+     "url": "http://www3.nhk.or.jp/news/html/20260805/k10015196751000.html",
+     "feed_title": "NHKニュース"
     },
     {
-     "title": "フルカラーで見える暗視ゴーグルを可能にする技術が開発される、ただし実用化には課題あり",
-     "url": "https://gigazine.net/news/20260803-full-color-night-vision/",
-     "feed_title": "GIGAZINE"
+     "title": "大型フェリーが被災地に到着 入浴や宿泊を支援 医療提供も(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/43dce4a3b8555568ae98b337069804c710de953d?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "マルハニチロからUmios（ウミオス）に 海から食卓へ【経済トレンド／わが社のあの時】(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/d53225e5e3b063346cee303f3e20b62f7f70aff8?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
-   "field": "情報漏洩",
-   "text": "講談社は、社員がフィッシングメールに騙され、最大3812件の個人情報が流出しました。EPARKリラク＆エステは、顧客情報約3300万件の不正アクセスを受け、データ漏えいが発生した可能性があります。Moonshot AIは、OpenAIやAnthropicのAIモデルを抽出して国内の軍事システム開発に利用していたことが判明しています。",
+   "field": "事故",
+   "text": "愛知県豊川市の市が実施していた工事入札の募集資料に、事業者が「公開してはいけない情報」が含まれていることが判明し、入札が一時停止されました。この問題の原因は、市側が事業者の機密情報を誤って募集資料に掲載していたことによるものです。熊本県玉名郡大城町のイオンで爆発事故が発生し、従業員2名が死亡しました。警察と消防が出動要領を決定し、現場検証を開始しています。",
    "sources": [
     {
-     "title": "個人情報含む約3300万件のデータ漏えいか 整体院予約など手掛けるEPARKリラク＆エステ システムに不正アクセス",
-     "url": "https://www.itmedia.co.jp/news/article/2608/03/2000000354/",
-     "feed_title": "ITmedia NEWS 最新記事一覧"
+     "title": "事業者から「公開してはいけない情報が…」市が工事入札の募集資料に誤って“機密情報” 入札を中止しやり直す方針(東海テレビ)",
+     "url": "https://news.yahoo.co.jp/articles/a80791855ff2d53df8a1cf9ea83226c4ff31161f?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "講談社、最大3812件の個人情報流出 社員がフィッシングメールに騙される",
-     "url": "https://www.itmedia.co.jp/news/article/2608/03/2000000357/",
-     "feed_title": "ITmedia NEWS 最新記事一覧"
+     "title": "マルハニチロからUmios（ウミオス）に 海から食卓へ【経済トレンド／わが社のあの時】(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/d53225e5e3b063346cee303f3e20b62f7f70aff8?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "中国の軍事研究者がOpenAIやAnthropicのAIモデルを抽出して国内の軍事システム開発に利用していたことが判明",
-     "url": "https://gigazine.net/news/20260803-china-ai-distillation/",
-     "feed_title": "GIGAZINE"
+     "title": "「AIで値動きを予測」などと…60代女性が約4300万円相当の暗号資産騙し取られる SNSで知り合った人物から投資話(東海テレビ)",
+     "url": "https://news.yahoo.co.jp/articles/743eda23cac4c6fac037ef9f58cf5192b1a46495?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "教育",
+   "text": "80歳の妻スーザンがケンブリッジ大学の修士課程に合格し、夫である私は留学先で専業主夫を務めています。この挑戦を支えるために、カナダからイギリスへ移住しました。日本全国の小学校と中学校において、水泳の実技授業が実施されていない学校が増加しており、特に中学校では約23%にあたる1668校で実技が行われていません。",
+   "sources": [
+    {
+     "title": "妻が80歳でケンブリッジ大学に合格した。夫の私は留学先に帯同し専業主夫になった(BUSINESS INSIDER JAPAN)",
+     "url": "https://news.yahoo.co.jp/articles/c6e74088c75141803947719bc9f242a92ccc1a0a?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "学校からプールが消え…“泳げない子ども”が増えている 「クロールで25m泳げず」小6が約半数という衝撃(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/208d8e35f7f12e87bcd3ebd097daea76e84fd7f9?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "その他",
-   "text": "Appleは、大量購入品の返品に関して販売条件を修正し、「15％の手数料」を徴収する条項を追加しました。ソニーグループのPS5の出荷台数が減少しており、2026年度第1四半期は前年同期比で大幅に落ち込む見込みです。",
+   "text": "熊本県は今回の地震の被災者を支援するため、避難所となるホテルを確保し、4月4日夜には八代市内のホテルにおいて5人の被災者を受け入れる準備が整いました。また、手足口病の報告数が東北5県で警報レベルに達しました。東野圭吾さんの最新作「ガリレオ」シリーズが発売され、歴代編集者が集まるイベントが開催されました。",
    "sources": [
     {
-     "title": "Apple、大量購入品の返品に「15％の手数料」 販売条件に明記 “転売対策”か",
-     "url": "https://www.itmedia.co.jp/news/article/2608/03/2000000359/",
-     "feed_title": "ITmedia NEWS 最新記事一覧"
+     "title": "熊本 県が避難先として確保のホテルで被災者を受け入れ",
+     "url": "http://www3.nhk.or.jp/news/html/20260805/k10015196611000.html",
+     "feed_title": "NHKニュース"
     },
     {
-     "title": "ソニーはPS5のメモリを2026年度分まで確保済み、2026年度第1四半期出荷台数は160万台で前年同期の250万台から減少",
-     "url": "https://gigazine.net/news/20260803-sony-ps5/",
-     "feed_title": "GIGAZINE"
+     "title": "先月死去の東野圭吾さん 最新作発売 歴代編集者が魅力語る",
+     "url": "http://www3.nhk.or.jp/news/html/20260805/k10015196601000.html",
+     "feed_title": "NHKニュース"
+    },
+    {
+     "title": "もし地震が起きたら…“観光の町”三重県伊勢市で進む災害への備え 内宮近くに帰宅困難者5千人分の水やベッド等用意(FNNプライムオンライン)",
+     "url": "https://news.yahoo.co.jp/articles/98e5d8cf6e876675dc9b25c23d491ca3e1fd381b?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   }
  ],
- "digest_at": "2026-08-03T21:38:59.298116+00:00",
+ "digest_at": "2026-08-04T21:36:56.856166+00:00",
  "topics": [
   {
-   "term": "アクセス",
-   "article_count": 6
-  },
-  {
-   "term": "不正",
-   "article_count": 6
-  },
-  {
-   "term": "OpenAI",
-   "article_count": 5
-  },
-  {
-   "term": "Claude",
-   "article_count": 5
-  },
-  {
-   "term": "地震",
-   "article_count": 5
+   "term": "従業員",
+   "article_count": 10
   },
   {
    "term": "熊本",
-   "article_count": 5
+   "article_count": 10
   },
   {
-   "term": "活用",
-   "article_count": 5
+   "term": "イオン",
+   "article_count": 9
   },
   {
-   "term": "Anthropic",
-   "article_count": 4
+   "term": "爆発",
+   "article_count": 9
   },
   {
-   "term": "利用者",
-   "article_count": 4
+   "term": "事故",
+   "article_count": 9
   },
   {
-   "term": "協力",
-   "article_count": 4
+   "term": "爆発事故",
+   "article_count": 8
   },
   {
-   "term": "判断",
-   "article_count": 4
+   "term": "指示",
+   "article_count": 8
   },
   {
-   "term": "保護",
-   "article_count": 4
+   "term": "批判",
+   "article_count": 8
   },
   {
-   "term": "強調",
-   "article_count": 4
+   "term": "高市早苗首相",
+   "article_count": 7
   },
   {
-   "term": "億円",
-   "article_count": 4
-  },
-  {
-   "term": "検証",
-   "article_count": 4
-  },
-  {
-   "term": "投稿",
-   "article_count": 4
-  },
-  {
-   "term": "購入",
-   "article_count": 4
-  },
-  {
-   "term": "パスワード",
-   "article_count": 3
-  },
-  {
-   "term": "最大震度",
-   "article_count": 3
-  },
-  {
-   "term": "熊本地震",
-   "article_count": 3
-  },
-  {
-   "term": "アメリカ",
-   "article_count": 3
-  },
-  {
-   "term": "再発防止",
-   "article_count": 3
-  },
-  {
-   "term": "ユーザー",
-   "article_count": 3
-  },
-  {
-   "term": "個人情報",
-   "article_count": 3
+   "term": "テレビ",
+   "article_count": 7
   },
   {
    "term": "熊本県",
-   "article_count": 3
+   "article_count": 7
   },
   {
-   "term": "サイト",
-   "article_count": 3
+   "term": "被災地",
+   "article_count": 7
   },
   {
-   "term": "リスク",
-   "article_count": 3
+   "term": "店舗",
+   "article_count": 7
   },
   {
-   "term": "SNS",
-   "article_count": 3
+   "term": "現場",
+   "article_count": 7
   },
   {
-   "term": "特定",
-   "article_count": 3
+   "term": "訪問",
+   "article_count": 7
   },
   {
-   "term": "大学",
-   "article_count": 3
+   "term": "売上回収",
+   "article_count": 6
   },
   {
-   "term": "人事",
-   "article_count": 3
+   "term": "売上金",
+   "article_count": 6
   },
   {
-   "term": "措置",
-   "article_count": 3
+   "term": "金庫",
+   "article_count": 6
   },
   {
-   "term": "効果",
-   "article_count": 3
+   "term": "地震",
+   "article_count": 6
   },
   {
-   "term": "適用",
-   "article_count": 3
+   "term": "生活",
+   "article_count": 6
   },
   {
-   "term": "専門",
-   "article_count": 3
+   "term": "証言",
+   "article_count": 6
   },
   {
-   "term": "災害",
-   "article_count": 3
+   "term": "店長",
+   "article_count": 6
+  },
+  {
+   "term": "死亡",
+   "article_count": 6
+  },
+  {
+   "term": "警察",
+   "article_count": 5
+  },
+  {
+   "term": "知人",
+   "article_count": 5
+  },
+  {
+   "term": "優先",
+   "article_count": 5
+  },
+  {
+   "term": "作業",
+   "article_count": 5
+  },
+  {
+   "term": "安全管理体制",
+   "article_count": 4
+  },
+  {
+   "term": "売上回収指示",
+   "article_count": 4
+  },
+  {
+   "term": "被災地訪問",
+   "article_count": 4
+  },
+  {
+   "term": "デイリー",
+   "article_count": 4
+  },
+  {
+   "term": "ハビタ",
+   "article_count": 4
+  },
+  {
+   "term": "重要性",
+   "article_count": 4
+  },
+  {
+   "term": "不信感",
+   "article_count": 4
+  },
+  {
+   "term": "捜査",
+   "article_count": 4
+  },
+  {
+   "term": "準備",
+   "article_count": 4
   }
  ],
  "total": 40,
@@ -372,7 +290,7 @@
  "sources": [
   "GIGAZINE",
   "NHKニュース",
-  "ITmedia NEWS 最新記事一覧"
+  "国内 - Yahoo!ニュース"
  ],
  "feeds": [
   {
@@ -389,7 +307,12 @@
    "title": "ITmedia NEWS 最新記事一覧",
    "priority": 2,
    "last_error": ""
+  },
+  {
+   "title": "国内 - Yahoo!ニュース",
+   "priority": 2,
+   "last_error": ""
   }
  ],
- "generated_at": "2026-08-03T21:39:01.149130+00:00"
+ "generated_at": "2026-08-04T21:36:58.203214+00:00"
 }
