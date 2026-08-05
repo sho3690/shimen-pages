@@ -2,287 +2,271 @@
  "digest": [
   {
    "field": "災害",
-   "text": "7日から沖縄を直撃する可能性のある大型台風13号について、強い勢力で沖縄本島への影響が長引く見込みです。6日夜には大東島近海へ進み、速度を落として7日から8日にかけて沖縄本島を直撃する可能性があります。熊本県では、先月発生した地震から1週間が経過しても、今後1週間程度は震度5強以上の地震に注意が必要です。特に、5日現在、熊本県内では危険な暑さが見込まれており、復旧作業を行う際は熱中症対策を徹底する必要があります。",
+   "text": "熊本県では、先月発生した震度7の地震の後も6日も危険な暑さが予想され、熱中症対策が徹底される必要があります。また、大型台風13号は6日から8日にかけて沖縄・奄美に接近し、那覇や鹿屋など広い範囲で風と波が高くなる見込みです。週末にかけて影響が長引く可能性があり、沖縄県や奄美特別警戒隊などが厳重な警戒に入っています。熊本地震により、日本製紙の工場で煙突が倒壊し9人が死亡した事故を受け、工場長は「正直何もできなかった」と謝罪しました。",
    "sources": [
     {
-     "title": "熊本 震度5強程度以上の地震注意 復旧作業の際は熱中症対策を",
-     "url": "http://www3.nhk.or.jp/news/html/20260805/k10015196771000.html",
+     "title": "台風13号 沖縄・奄美接近へ 影響長引くおそれ 厳重警戒を",
+     "url": "http://www3.nhk.or.jp/news/html/20260806/k10015197581000.html",
      "feed_title": "NHKニュース"
     },
     {
-     "title": "台風13号 7日から沖縄を直撃 動き遅く影響が長引く 九州南部も雨量多くなる恐れ(tenki.jp)",
-     "url": "https://news.yahoo.co.jp/articles/3b9b61dd6015a12353d26c51cd02be246cf3557f?source=rss",
+     "title": "熊本地震 煙突倒壊で9人死亡の日本製紙 事故後初の会見 遺族に謝罪(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/94c39e7b84edc91ab4f860ffef75b48694a7c4fe?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "熊本 県が避難先として確保のホテルで被災者を受け入れ",
-     "url": "http://www3.nhk.or.jp/news/html/20260805/k10015196611000.html",
-     "feed_title": "NHKニュース"
+     "title": "台風13号は明日7日に沖縄本島に最接近 週末まで影響 暴風や高波などに厳重警戒(tenki.jp)",
+     "url": "https://news.yahoo.co.jp/articles/99a54936648ae586bea5f15a72c09cf0c2746acb?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "経済",
-   "text": "政府は来年4月から2年間、消費税率を1%に引き下げる減税の方針を決定する予定です。この方針に基づき、与党は税制改正大綱の検討を進め、具体的な制度設計を本格化させる見込みです。一方で、高市早苗首相は、この減税措置を人口減少社会への対応策としていますが、野党からは国会でただす構えを示されています。また、マルハニチロが社名をUmios（ウミオス）に変更しました。",
+   "text": "政府と与党は、来年4月から2年間、食料品の消費税率を1%に引き下げる基本方針を決定しました。この減税措置により、国民の負担軽減が期待されています。また、「首相として決めたのであれば反対はしない」という麻生副総裁の発言や、高市首相とのパワーバランスを左右する幹事長人事と消費税減税に関する議論が活発です。",
    "sources": [
     {
-     "title": "消費税減税 基本方針案 閣議決定へ 野党は国会でただす構え",
-     "url": "http://www3.nhk.or.jp/news/html/20260805/k10015196581000.html",
+     "title": "消費税減税の基本方針決定 秋に法案提出し成立目指す 政府与党",
+     "url": "http://www3.nhk.or.jp/news/html/20260806/k10015197551000.html",
      "feed_title": "NHKニュース"
     },
     {
-     "title": "高市政権は消費減税を政争の具にするな！人口減少社会にふさわしい税と社会保障制度の再構築を(Wedge（ウェッジ）)",
-     "url": "https://news.yahoo.co.jp/articles/00754c6263cd04aa2ad53e93d8caa7f85875b532?source=rss",
+     "title": "「首相として決めたのであれば反対はしない」は“麻生副総裁”の本心か？ 高市首相とのパワーバランスを左右する「幹事長人事」と「消費税減税」という関門(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/420c3565051adff6f86fbe06f9d4759dffb3cdfb?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "マルハニチロからUmios（ウミオス）に 海から食卓へ【経済トレンド／わが社のあの時】(共同通信)",
-     "url": "https://news.yahoo.co.jp/articles/d53225e5e3b063346cee303f3e20b62f7f70aff8?source=rss",
+     "title": "「悲願」の消費減税決定 異論押し切った首相 自民党内に残る火種(北海道新聞)",
+     "url": "https://news.yahoo.co.jp/articles/cbaa860eb5e4599d4680037cfd5b3a9345bcb4a3?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "社会",
-   "text": "60代の女性がSNSを通じて知り合った人物から投資話を持ちかけられ、約4300万円相当の暗号資産を騙し取られました。これは、SNSを通じた詐欺の手口が巧妙化していることを示唆しています。また、2023年の小中高校における暴力行為件数は過去最多の12万8859件に達し、前年度比で18.2%も増加しました。生徒の自主性を重んじる時代になぜ校内暴力が過去最多になったのか、教育現場における「落ちこぼれ」や「吹きこぼれ」生徒への対応の遅れが影響している可能性が指摘されています。",
+   "text": "NHK職員による性被害事件が発覚し、9人が犠牲になりました。この問題を受け、番組出演者の一人が飲酒の影響で記憶がないことを証言しています。また、「原爆乙女」25人が手術と治療のため米国へ招かれ、昭和の終わりに心情を吐露しました。広島では81回目の「原爆の日」を迎えるにあたり、過去最多となる国や地域から参列者が集まりました。",
    "sources": [
     {
-     "title": "「AIで値動きを予測」などと…60代女性が約4300万円相当の暗号資産騙し取られる SNSで知り合った人物から投資話(東海テレビ)",
-     "url": "https://news.yahoo.co.jp/articles/743eda23cac4c6fac037ef9f58cf5192b1a46495?source=rss",
+     "title": "手術と治療のため米国に招かれた「原爆乙女」25人 昭和の終わりに吐露した心情「人間万事塞翁が馬」「受けたものでないと分からない苦しみ」(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/9dfbc0d62b5709d3b385317c1366a0e3ef55adbd?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "生徒の自主性を重んじる時代になぜ“校内暴力が12万件超”で過去最多に？ 「落ちこぼれ」と「吹きこぼれ」が教室にあふれる日本型教育の“機能不全”(デイリー新潮)",
-     "url": "https://news.yahoo.co.jp/articles/e163525faf63270455c81bb0119e506da30e45c3?source=rss",
+     "title": "広島 81回目の「原爆の日」 過去最多の国・地域が参列予定 「争いのない世界を願う」(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/f7c11a16db446ce6b625201de7865f80ee366ce6?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "麻生太郎氏は「現代の藤原道長」か…皇室典範改正のウラで消えた“べらんめえ”調の麻生節 高市首相を「よく頑張っている」と評するのは本音か建て前か(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/147c0f5ae00a93aaa7725a69c7ed1286e27b3349?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "政治",
-   "text": "福岡県議会の正副議長問題で、藏内勇夫議長は第三者委員会の設置を通じて事実関係の調査を進める方針を決定しました。この決定は、金銭授受疑惑が浮上していることへの対応として行われました。高市早苗首相は、ヘリから被災地を訪問したことについて批判が殺到しており、その軽さが問題視されています。また、熊本県選出の閣僚が株価を上げたことが話題となっています。",
+   "text": "高市総理と麻生副総裁の関係を巡る内閣改造と幹事長人事において、今後の政局を左右する焦点が立っています。石破前首相は、「トランプ関税」交渉の秘話を明かしました。Z世代女性の間ではL.L.Beanの名作トートバッグが流行しており、刺繍に「訴えてみろ！」と入れるのが特徴となっています。",
    "sources": [
     {
-     "title": "福岡県議会 藏内議長 第三者委員会設置し調査の意向を固める",
-     "url": "http://www3.nhk.or.jp/news/html/20260805/k10015196751000.html",
-     "feed_title": "NHKニュース"
-    },
-    {
-     "title": "大型フェリーが被災地に到着 入浴や宿泊を支援 医療提供も(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/43dce4a3b8555568ae98b337069804c710de953d?source=rss",
+     "title": "「首相として決めたのであれば反対はしない」は“麻生副総裁”の本心か？ 高市首相とのパワーバランスを左右する「幹事長人事」と「消費税減税」という関門(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/420c3565051adff6f86fbe06f9d4759dffb3cdfb?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "マルハニチロからUmios（ウミオス）に 海から食卓へ【経済トレンド／わが社のあの時】(共同通信)",
-     "url": "https://news.yahoo.co.jp/articles/d53225e5e3b063346cee303f3e20b62f7f70aff8?source=rss",
+     "title": "Z世代女性の間でL.L.Beanの名作トートバッグが流行。刺繍で「訴えてみろ！」と入れる理由(BUSINESS INSIDER JAPAN)",
+     "url": "https://news.yahoo.co.jp/articles/ced3a9a5714879fe3c4041ce5bc247cf396f4a0e?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
-   "field": "事故",
-   "text": "愛知県豊川市の市が実施していた工事入札の募集資料に、事業者が「公開してはいけない情報」が含まれていることが判明し、入札が一時停止されました。この問題の原因は、市側が事業者の機密情報を誤って募集資料に掲載していたことによるものです。熊本県玉名郡大城町のイオンで爆発事故が発生し、従業員2名が死亡しました。警察と消防が出動要領を決定し、現場検証を開始しています。",
+   "field": "国際",
+   "text": "SpaceXのロケット残骸が月面に衝突し、宇宙ゴミが増えるかどうか懸念されています。大谷翔平選手はカブス戦で2本のホームランを放ち、今シーズン初めての快挙を記録しました。また、アメリカを代表する画家となった日本人がおり、宇都宮美術館でその作品が展示されています。",
    "sources": [
     {
-     "title": "事業者から「公開してはいけない情報が…」市が工事入札の募集資料に誤って“機密情報” 入札を中止しやり直す方針(東海テレビ)",
-     "url": "https://news.yahoo.co.jp/articles/a80791855ff2d53df8a1cf9ea83226c4ff31161f?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
+     "title": "SpaceXの使用済みロケット、月面に衝突 宇宙ゴミは増える？増えない？ - CNET Japan",
+     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5PUXBZOGUtT1RtU1lvNktGb08zSklwRkx0VDNxV1hLdVFWRU4wZFB4WGEtV1FRV01pUjRaNG5ZajFlc3RMbXI1dEFrZDJPZXZ2SWc?oc=5",
+     "feed_title": "トップニュース - Google ニュース"
     },
     {
-     "title": "マルハニチロからUmios（ウミオス）に 海から食卓へ【経済トレンド／わが社のあの時】(共同通信)",
-     "url": "https://news.yahoo.co.jp/articles/d53225e5e3b063346cee303f3e20b62f7f70aff8?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
+     "title": "ドジャース 大谷 カブス戦で25号ソロ 26号ツーランホームラン",
+     "url": "http://www3.nhk.or.jp/news/html/20260806/k10015197681000.html",
+     "feed_title": "NHKニュース"
     },
     {
-     "title": "「AIで値動きを予測」などと…60代女性が約4300万円相当の暗号資産騙し取られる SNSで知り合った人物から投資話(東海テレビ)",
-     "url": "https://news.yahoo.co.jp/articles/743eda23cac4c6fac037ef9f58cf5192b1a46495?source=rss",
+     "title": "アメリカを代表する画家となった日本人がいた（宇都宮美術館）(BUSINESS INSIDER JAPAN)",
+     "url": "https://news.yahoo.co.jp/articles/84c0304ca398e4dae21a504e34e17ad975e56299?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
-   "field": "教育",
-   "text": "80歳の妻スーザンがケンブリッジ大学の修士課程に合格し、夫である私は留学先で専業主夫を務めています。この挑戦を支えるために、カナダからイギリスへ移住しました。日本全国の小学校と中学校において、水泳の実技授業が実施されていない学校が増加しており、特に中学校では約23%にあたる1668校で実技が行われていません。",
+   "field": "産業",
+   "text": "鈴鹿サーキットにて訓練走行中に白バイが転倒し、運転していた20代の女性隊員が頭などを強く打ち重傷を負いました。日本製紙の工場長は熊本地震発生時の事故で9名が死亡したことを受け、「煙突崩壊に関するマニュアルはなく、鉄筋コンクリート製煙突の寿命」について説明しました。大型フェリーでは入浴支援を開始し、船上で内科診療や熱中症治療も行われています。",
    "sources": [
     {
-     "title": "妻が80歳でケンブリッジ大学に合格した。夫の私は留学先に帯同し専業主夫になった(BUSINESS INSIDER JAPAN)",
-     "url": "https://news.yahoo.co.jp/articles/c6e74088c75141803947719bc9f242a92ccc1a0a?source=rss",
+     "title": "ティグリス＝ユーフラテス川の上流を手漕ぎボートで旅する日本人探検家たち 未知に分け入る『メソポタミアのボート三人男』（Bookレビュー）(Book Bang)",
+     "url": "https://news.yahoo.co.jp/articles/65b03cc833b83eaca9a347d9dc9bf79d6931de27?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "学校からプールが消え…“泳げない子ども”が増えている 「クロールで25m泳げず」小6が約半数という衝撃(デイリー新潮)",
-     "url": "https://news.yahoo.co.jp/articles/208d8e35f7f12e87bcd3ebd097daea76e84fd7f9?source=rss",
+     "title": "3月に配属されたばかり…20代の女性白バイ隊員が鈴鹿サーキットで訓練走行中に転倒 頭などを強く打ち重傷(東海テレビ)",
+     "url": "https://news.yahoo.co.jp/articles/3cfc73f8c9c4c18d40cb68164791d52ff0aaad81?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "field": "その他",
-   "text": "熊本県は今回の地震の被災者を支援するため、避難所となるホテルを確保し、4月4日夜には八代市内のホテルにおいて5人の被災者を受け入れる準備が整いました。また、手足口病の報告数が東北5県で警報レベルに達しました。東野圭吾さんの最新作「ガリレオ」シリーズが発売され、歴代編集者が集まるイベントが開催されました。",
-   "sources": [
-    {
-     "title": "熊本 県が避難先として確保のホテルで被災者を受け入れ",
-     "url": "http://www3.nhk.or.jp/news/html/20260805/k10015196611000.html",
-     "feed_title": "NHKニュース"
     },
     {
-     "title": "先月死去の東野圭吾さん 最新作発売 歴代編集者が魅力語る",
-     "url": "http://www3.nhk.or.jp/news/html/20260805/k10015196601000.html",
-     "feed_title": "NHKニュース"
-    },
-    {
-     "title": "もし地震が起きたら…“観光の町”三重県伊勢市で進む災害への備え 内宮近くに帰宅困難者5千人分の水やベッド等用意(FNNプライムオンライン)",
-     "url": "https://news.yahoo.co.jp/articles/98e5d8cf6e876675dc9b25c23d491ca3e1fd381b?source=rss",
+     "title": "熊本地震 煙突倒壊で9人死亡の日本製紙 事故後初の会見 遺族に謝罪(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/94c39e7b84edc91ab4f860ffef75b48694a7c4fe?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   }
  ],
- "digest_at": "2026-08-04T21:36:56.856166+00:00",
+ "digest_at": "2026-08-05T21:36:31.721217+00:00",
  "topics": [
   {
-   "term": "従業員",
-   "article_count": 10
+   "term": "被害",
+   "article_count": 20
   },
   {
    "term": "熊本",
-   "article_count": 10
-  },
-  {
-   "term": "イオン",
-   "article_count": 9
-  },
-  {
-   "term": "爆発",
-   "article_count": 9
-  },
-  {
-   "term": "事故",
-   "article_count": 9
-  },
-  {
-   "term": "爆発事故",
-   "article_count": 8
-  },
-  {
-   "term": "指示",
-   "article_count": 8
-  },
-  {
-   "term": "批判",
-   "article_count": 8
-  },
-  {
-   "term": "高市早苗首相",
-   "article_count": 7
-  },
-  {
-   "term": "テレビ",
-   "article_count": 7
-  },
-  {
-   "term": "熊本県",
-   "article_count": 7
-  },
-  {
-   "term": "被災地",
-   "article_count": 7
-  },
-  {
-   "term": "店舗",
-   "article_count": 7
-  },
-  {
-   "term": "現場",
-   "article_count": 7
-  },
-  {
-   "term": "訪問",
-   "article_count": 7
-  },
-  {
-   "term": "売上回収",
-   "article_count": 6
-  },
-  {
-   "term": "売上金",
-   "article_count": 6
-  },
-  {
-   "term": "金庫",
-   "article_count": 6
+   "article_count": 19
   },
   {
    "term": "地震",
-   "article_count": 6
+   "article_count": 19
   },
   {
-   "term": "生活",
-   "article_count": 6
+   "term": "福岡県議会",
+   "article_count": 18
   },
   {
-   "term": "証言",
-   "article_count": 6
+   "term": "熊本地震",
+   "article_count": 18
   },
   {
-   "term": "店長",
-   "article_count": 6
+   "term": "第三者委",
+   "article_count": 18
+  },
+  {
+   "term": "NHK",
+   "article_count": 18
+  },
+  {
+   "term": "工場",
+   "article_count": 18
+  },
+  {
+   "term": "設置",
+   "article_count": 18
+  },
+  {
+   "term": "第三者委員会",
+   "article_count": 17
+  },
+  {
+   "term": "工場長",
+   "article_count": 17
+  },
+  {
+   "term": "性被害",
+   "article_count": 17
+  },
+  {
+   "term": "職員",
+   "article_count": 17
+  },
+  {
+   "term": "日本製紙",
+   "article_count": 16
   },
   {
    "term": "死亡",
-   "article_count": 6
+   "article_count": 15
   },
   {
-   "term": "警察",
-   "article_count": 5
+   "term": "視察動画",
+   "article_count": 14
   },
   {
-   "term": "知人",
-   "article_count": 5
+   "term": "批判",
+   "article_count": 12
   },
   {
-   "term": "優先",
-   "article_count": 5
+   "term": "一転",
+   "article_count": 12
   },
   {
-   "term": "作業",
-   "article_count": 5
+   "term": "高市首相",
+   "article_count": 11
   },
   {
-   "term": "安全管理体制",
-   "article_count": 4
+   "term": "事故",
+   "article_count": 11
   },
   {
-   "term": "売上回収指示",
-   "article_count": 4
+   "term": "煙突",
+   "article_count": 11
   },
   {
-   "term": "被災地訪問",
-   "article_count": 4
+   "term": "事件",
+   "article_count": 11
   },
   {
-   "term": "デイリー",
-   "article_count": 4
+   "term": "プロモーションビデオ",
+   "article_count": 10
   },
   {
-   "term": "ハビタ",
-   "article_count": 4
+   "term": "芥川賞作家",
+   "article_count": 10
   },
   {
-   "term": "重要性",
-   "article_count": 4
+   "term": "蔵内議長",
+   "article_count": 10
   },
   {
-   "term": "不信感",
-   "article_count": 4
+   "term": "ネパール",
+   "article_count": 10
   },
   {
-   "term": "捜査",
-   "article_count": 4
+   "term": "出演",
+   "article_count": 10
   },
   {
-   "term": "準備",
-   "article_count": 4
+   "term": "番組",
+   "article_count": 10
+  },
+  {
+   "term": "マニュアル",
+   "article_count": 9
+  },
+  {
+   "term": "極秘帰国",
+   "article_count": 9
+  },
+  {
+   "term": "出演者",
+   "article_count": 9
+  },
+  {
+   "term": "崩壊",
+   "article_count": 9
+  },
+  {
+   "term": "夫妻",
+   "article_count": 9
+  },
+  {
+   "term": "小室",
+   "article_count": 9
+  },
+  {
+   "term": "決定",
+   "article_count": 9
+  },
+  {
+   "term": "小室夫妻",
+   "article_count": 8
   }
  ],
  "total": 40,
@@ -290,7 +274,9 @@
  "sources": [
   "GIGAZINE",
   "NHKニュース",
-  "国内 - Yahoo!ニュース"
+  "国内 - Yahoo!ニュース",
+  "ニュース速報（総合）RSS",
+  "トップニュース - Google ニュース"
  ],
  "feeds": [
   {
@@ -312,7 +298,17 @@
    "title": "国内 - Yahoo!ニュース",
    "priority": 2,
    "last_error": ""
+  },
+  {
+   "title": "ニュース速報（総合）RSS",
+   "priority": 2,
+   "last_error": ""
+  },
+  {
+   "title": "トップニュース - Google ニュース",
+   "priority": 2,
+   "last_error": ""
   }
  ],
- "generated_at": "2026-08-04T21:36:58.203214+00:00"
+ "generated_at": "2026-08-05T21:36:33.314325+00:00"
 }
