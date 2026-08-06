@@ -1,281 +1,279 @@
 {
  "digest": [
   {
-   "field": "災害",
-   "text": "熊本県では、先月発生した震度7の地震の後も6日も危険な暑さが予想され、熱中症対策が徹底される必要があります。また、大型台風13号は6日から8日にかけて沖縄・奄美に接近し、那覇や鹿屋など広い範囲で風と波が高くなる見込みです。週末にかけて影響が長引く可能性があり、沖縄県や奄美特別警戒隊などが厳重な警戒に入っています。熊本地震により、日本製紙の工場で煙突が倒壊し9人が死亡した事故を受け、工場長は「正直何もできなかった」と謝罪しました。",
+   "field": "地震",
+   "text": "7月28日に発生した熊本地震により、住宅や高速道路に被害が生じました。特に八代市上片町では長さ60メートルの段差が発生し、高速道路の継ぎ目も上下にずれ動きました。熊本県内では、記録的な大雨による停電が広がり、31都府県から計190台の給水車が派遣され、飲料水の供給が行われています。熊本地震から13年を経て、氷川町で車中泊中の女性が熱中症により死亡し、町の長は「真夏の災害の備えが足りず」と述べました。",
    "sources": [
     {
-     "title": "台風13号 沖縄・奄美接近へ 影響長引くおそれ 厳重警戒を",
-     "url": "http://www3.nhk.or.jp/news/html/20260806/k10015197581000.html",
-     "feed_title": "NHKニュース"
+     "title": "停電で「建物は暑くなり危険」、避難所の開設見送り…車中泊の女性死亡に氷川町長「真夏の災害の備え足りず」 - 読売新聞",
+     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9QdUVVSzd6Z2d6QnhwZjZqNFYtM2VlM2hzT3NsTUswZ09tUzQ3aktjVmc3OWEzSEJDNnJaa2VZd3RJVjFRdzAzLXAtdElkODVob1M1U3plcW5GVVg2U0toYUxyMXMydw?oc=5",
+     "feed_title": "トップニュース - Google ニュース"
     },
     {
-     "title": "熊本地震 煙突倒壊で9人死亡の日本製紙 事故後初の会見 遺族に謝罪(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/94c39e7b84edc91ab4f860ffef75b48694a7c4fe?source=rss",
+     "title": "住宅や高速道路にも被害もたらした「断層のずれ」 地表に現れた日奈久断層帯を追う 令和8年熊本地震(FNNプライムオンライン)",
+     "url": "https://news.yahoo.co.jp/articles/3d50c2ea4056e7314b8ba039f4910e3d0fa5aad7?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "台風13号は明日7日に沖縄本島に最接近 週末まで影響 暴風や高波などに厳重警戒(tenki.jp)",
-     "url": "https://news.yahoo.co.jp/articles/99a54936648ae586bea5f15a72c09cf0c2746acb?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "field": "経済",
-   "text": "政府と与党は、来年4月から2年間、食料品の消費税率を1%に引き下げる基本方針を決定しました。この減税措置により、国民の負担軽減が期待されています。また、「首相として決めたのであれば反対はしない」という麻生副総裁の発言や、高市首相とのパワーバランスを左右する幹事長人事と消費税減税に関する議論が活発です。",
-   "sources": [
-    {
-     "title": "消費税減税の基本方針決定 秋に法案提出し成立目指す 政府与党",
-     "url": "http://www3.nhk.or.jp/news/html/20260806/k10015197551000.html",
-     "feed_title": "NHKニュース"
-    },
-    {
-     "title": "「首相として決めたのであれば反対はしない」は“麻生副総裁”の本心か？ 高市首相とのパワーバランスを左右する「幹事長人事」と「消費税減税」という関門(デイリー新潮)",
-     "url": "https://news.yahoo.co.jp/articles/420c3565051adff6f86fbe06f9d4759dffb3cdfb?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "「悲願」の消費減税決定 異論押し切った首相 自民党内に残る火種(北海道新聞)",
-     "url": "https://news.yahoo.co.jp/articles/cbaa860eb5e4599d4680037cfd5b3a9345bcb4a3?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "field": "社会",
-   "text": "NHK職員による性被害事件が発覚し、9人が犠牲になりました。この問題を受け、番組出演者の一人が飲酒の影響で記憶がないことを証言しています。また、「原爆乙女」25人が手術と治療のため米国へ招かれ、昭和の終わりに心情を吐露しました。広島では81回目の「原爆の日」を迎えるにあたり、過去最多となる国や地域から参列者が集まりました。",
-   "sources": [
-    {
-     "title": "手術と治療のため米国に招かれた「原爆乙女」25人 昭和の終わりに吐露した心情「人間万事塞翁が馬」「受けたものでないと分からない苦しみ」(デイリー新潮)",
-     "url": "https://news.yahoo.co.jp/articles/9dfbc0d62b5709d3b385317c1366a0e3ef55adbd?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "広島 81回目の「原爆の日」 過去最多の国・地域が参列予定 「争いのない世界を願う」(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/f7c11a16db446ce6b625201de7865f80ee366ce6?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "麻生太郎氏は「現代の藤原道長」か…皇室典範改正のウラで消えた“べらんめえ”調の麻生節 高市首相を「よく頑張っている」と評するのは本音か建て前か(デイリー新潮)",
-     "url": "https://news.yahoo.co.jp/articles/147c0f5ae00a93aaa7725a69c7ed1286e27b3349?source=rss",
+     "title": "31都府県から熊本に給水車 国も派遣、計190台活動(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/845636256b23d832ddce8cd1f629ee3dd9f9b2a8?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "政治",
-   "text": "高市総理と麻生副総裁の関係を巡る内閣改造と幹事長人事において、今後の政局を左右する焦点が立っています。石破前首相は、「トランプ関税」交渉の秘話を明かしました。Z世代女性の間ではL.L.Beanの名作トートバッグが流行しており、刺繍に「訴えてみろ！」と入れるのが特徴となっています。",
+   "text": "高市総理の内閣支持率が低下傾向にあり、その原因について総理自身も「分からない」と述べています。「寝ていないアピール」など、様々な行動が裏目に出ているとの指摘もあります。島田裕美氏が麻生太郎元首相の皇室典範に関する発言を批判し、「野望にとらわれた麻生太郎が見落とした大原則」と指摘しています。また、福岡県議会の発言や小渕優子氏の消費税減税に反発が相次いでいます。",
    "sources": [
     {
-     "title": "「首相として決めたのであれば反対はしない」は“麻生副総裁”の本心か？ 高市首相とのパワーバランスを左右する「幹事長人事」と「消費税減税」という関門(デイリー新潮)",
-     "url": "https://news.yahoo.co.jp/articles/420c3565051adff6f86fbe06f9d4759dffb3cdfb?source=rss",
+     "title": "被災地熊本代表 夏の甲子園きょう初戦 有明高校ブラスバンドが後押し(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/8a3fdc0e706557d2f1637ede7125b1db4efa74fa?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "Z世代女性の間でL.L.Beanの名作トートバッグが流行。刺繍で「訴えてみろ！」と入れる理由(BUSINESS INSIDER JAPAN)",
-     "url": "https://news.yahoo.co.jp/articles/ced3a9a5714879fe3c4041ce5bc247cf396f4a0e?source=rss",
+     "title": "無電柱化計画、策定「18％」 310市区町村止まり(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/dd99b008d1e9e3ed6097ee1a9d1ed6b8787cbd99?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "独特の形にうまみ凝縮「パスタキューブ」 隠し味求め、名店食べ歩き【経済トレンド／ヒットのヒント】(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/58543c9784137d956dd558f6bffec5d2425c848d?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
-   "field": "国際",
-   "text": "SpaceXのロケット残骸が月面に衝突し、宇宙ゴミが増えるかどうか懸念されています。大谷翔平選手はカブス戦で2本のホームランを放ち、今シーズン初めての快挙を記録しました。また、アメリカを代表する画家となった日本人がおり、宇都宮美術館でその作品が展示されています。",
+   "field": "経済",
+   "text": "物価高の影響で、今年の夏休み中の外出は6割にまで見直され、「近場」での活動が最も多くなっています。鶴屋百貨店では「くまもとの特産品まつり」が予定通り開催され、食を通じて熊本を元気づける取り組みが行われています。また、「パスタキューブ」と呼ばれる独特の形状でうまみを凝縮した商品が注目を集めています。",
    "sources": [
     {
-     "title": "SpaceXの使用済みロケット、月面に衝突 宇宙ゴミは増える？増えない？ - CNET Japan",
-     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5PUXBZOGUtT1RtU1lvNktGb08zSklwRkx0VDNxV1hLdVFWRU4wZFB4WGEtV1FRV01pUjRaNG5ZajFlc3RMbXI1dEFrZDJPZXZ2SWc?oc=5",
+     "title": "こんな時だからこそ――食の力で熊本を元気に 鶴屋百貨店「くまもとの特産品まつり」予定通り開催(スポニチアネックス)",
+     "url": "https://news.yahoo.co.jp/articles/1badcac85d79693baef1165ad8c94cad4df2788e?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "夏休みの外出「見直し」6割 物価高影響、「近場」が最多(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/44bd26d5c146905668bcaa106e5a7006493aea9c?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "独特の形にうまみ凝縮「パスタキューブ」 隠し味求め、名店食べ歩き【経済トレンド／ヒットのヒント】(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/58543c9784137d956dd558f6bffec5d2425c848d?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "社会",
+   "text": "18歳未満の未成年女子の裸写真所持容疑で、小学校講師の男が逮捕されました。この男は米国の民間組織からの情報提供を受けて捜査されており、複数の画像を所持しているとみられています。また、「闇バイト」に関与した逃亡者が語った「トクリュウ」と呼ばれる犯罪グループによる監禁やめった打ちなどの事件が発覚しました。",
+   "sources": [
+    {
+     "title": "米国の民間組織から情報提供…18歳未満の女の子の裸が写った画像を所持か 小学校講師の38歳男を逮捕(東海テレビ)",
+     "url": "https://news.yahoo.co.jp/articles/9ee33be2f1c388197148fb4b9b605a58c89f6370?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "「中国人30人ほどに捕まって、素手や棒でめった打ちに…」 「闇バイト」逃亡者が語った「トクリュウ」からの脱出“恐怖の瞬間” 入れ墨男に浴びせられた“脅しの言葉”とは(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/685c9252110c5d7c7d772501a6faed8dfa5a7df3?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "「中国人にボコボコにされ、ビルの6階から突き落とされた」 「闇バイト」 トクリュウの使い捨てにされた悲惨すぎる実態 募集時の約束は「月収300万円」も、組織に入った瞬間、「お前たちは…」(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/b9bc58ed6b69540e05d453bcf304d3a5b2243e6c?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "気象",
+   "text": "本日7日、台風13号が沖縄や奄美に最接近し、猛烈な風と高波による被害が懸念されています。沖縄本島の一部はすでに暴風域に入り、航空便の欠航など4万人以上に影響が出ています。また、線状降水帯が発生するおそれがあり、長時間の暴風や高波への注意が必要です。",
+   "sources": [
+    {
+     "title": "7日は台風13号が沖縄や奄美に最接近 線状降水帯発生のおそれ 長時間の暴風・高波(tenki.jp)",
+     "url": "https://news.yahoo.co.jp/articles/1bcda200101f7b4dbb4965c03457de2c1ff93eb7?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "台風13号 まもなく沖縄に最接近 空の便欠航 4万人以上に影響(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/7921625aee6d0d88a57f7cab7b5c7c8cac0c87ec?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "【速報】台風13号 沖縄本島の一部が暴風域に入りました(tenki.jp)",
+     "url": "https://news.yahoo.co.jp/articles/5893507f976af5dfccfc60bd4c59526c9be5e4dd?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "文化",
+   "text": "女優の寿美花代さんが94歳で亡くなりました。夫・忠夫さんのうつ病の看護に尽力し、最期まで大女優として輝きを放ち続けたと報じられています。小山美砂さんのルポ『ルポ 被爆二世』は、戦後八十年を迎え被爆二世の苦悩や生き方を探る作品として宇佐美まこと氏によって評価されています。",
+   "sources": [
+    {
+     "title": "小山美砂『ルポ 被爆二世』を宇佐美まことさんが読む（Bookレビュー）(Book Bang)",
+     "url": "https://news.yahoo.co.jp/articles/079e52d1ddd3fbc57e903aaa971f737507301da2?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "寿美花代さん死去…高嶋政宏さん「最期の最期まで大女優」、政伸さん「いつもユーモア忘れない明るく優しい母」 - 読売新聞",
+     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1EM00zVHg0UENLNDR3dEtzWWdDSFVncmtOdG5nX01hcEF0dVo1S1J0LVVscFFHMmJnTl9KWTBSY0FOcURNdXJ3VVloUUVZMEozbFRKSUlTeVh3WWR3VENhZzNEQzhjQQ?oc=5",
      "feed_title": "トップニュース - Google ニュース"
-    },
-    {
-     "title": "ドジャース 大谷 カブス戦で25号ソロ 26号ツーランホームラン",
-     "url": "http://www3.nhk.or.jp/news/html/20260806/k10015197681000.html",
-     "feed_title": "NHKニュース"
-    },
-    {
-     "title": "アメリカを代表する画家となった日本人がいた（宇都宮美術館）(BUSINESS INSIDER JAPAN)",
-     "url": "https://news.yahoo.co.jp/articles/84c0304ca398e4dae21a504e34e17ad975e56299?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "field": "産業",
-   "text": "鈴鹿サーキットにて訓練走行中に白バイが転倒し、運転していた20代の女性隊員が頭などを強く打ち重傷を負いました。日本製紙の工場長は熊本地震発生時の事故で9名が死亡したことを受け、「煙突崩壊に関するマニュアルはなく、鉄筋コンクリート製煙突の寿命」について説明しました。大型フェリーでは入浴支援を開始し、船上で内科診療や熱中症治療も行われています。",
-   "sources": [
-    {
-     "title": "ティグリス＝ユーフラテス川の上流を手漕ぎボートで旅する日本人探検家たち 未知に分け入る『メソポタミアのボート三人男』（Bookレビュー）(Book Bang)",
-     "url": "https://news.yahoo.co.jp/articles/65b03cc833b83eaca9a347d9dc9bf79d6931de27?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "3月に配属されたばかり…20代の女性白バイ隊員が鈴鹿サーキットで訓練走行中に転倒 頭などを強く打ち重傷(東海テレビ)",
-     "url": "https://news.yahoo.co.jp/articles/3cfc73f8c9c4c18d40cb68164791d52ff0aaad81?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "熊本地震 煙突倒壊で9人死亡の日本製紙 事故後初の会見 遺族に謝罪(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/94c39e7b84edc91ab4f860ffef75b48694a7c4fe?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   }
  ],
- "digest_at": "2026-08-05T21:36:31.721217+00:00",
+ "digest_at": "2026-08-06T21:37:28.182582+00:00",
  "topics": [
   {
-   "term": "被害",
-   "article_count": 20
-  },
-  {
    "term": "熊本",
-   "article_count": 19
-  },
-  {
-   "term": "地震",
-   "article_count": 19
-  },
-  {
-   "term": "福岡県議会",
-   "article_count": 18
-  },
-  {
-   "term": "熊本地震",
-   "article_count": 18
-  },
-  {
-   "term": "第三者委",
-   "article_count": 18
-  },
-  {
-   "term": "NHK",
-   "article_count": 18
-  },
-  {
-   "term": "工場",
-   "article_count": 18
-  },
-  {
-   "term": "設置",
-   "article_count": 18
-  },
-  {
-   "term": "第三者委員会",
-   "article_count": 17
-  },
-  {
-   "term": "工場長",
-   "article_count": 17
-  },
-  {
-   "term": "性被害",
-   "article_count": 17
-  },
-  {
-   "term": "職員",
-   "article_count": 17
-  },
-  {
-   "term": "日本製紙",
    "article_count": 16
   },
   {
-   "term": "死亡",
-   "article_count": 15
-  },
-  {
-   "term": "視察動画",
+   "term": "県議会",
    "article_count": 14
   },
   {
-   "term": "批判",
+   "term": "内閣",
+   "article_count": 14
+  },
+  {
+   "term": "福岡県議会",
+   "article_count": 13
+  },
+  {
+   "term": "高市総理",
+   "article_count": 13
+  },
+  {
+   "term": "内閣改造",
+   "article_count": 13
+  },
+  {
+   "term": "SNS",
+   "article_count": 13
+  },
+  {
+   "term": "熊本県",
+   "article_count": 13
+  },
+  {
+   "term": "生活",
+   "article_count": 13
+  },
+  {
+   "term": "麻生太郎",
    "article_count": 12
   },
   {
-   "term": "一転",
-   "article_count": 12
+   "term": "批判",
+   "article_count": 11
+  },
+  {
+   "term": "投稿",
+   "article_count": 11
+  },
+  {
+   "term": "小渕優子氏",
+   "article_count": 10
+  },
+  {
+   "term": "茂木敏充氏",
+   "article_count": 10
+  },
+  {
+   "term": "小林鷹之氏",
+   "article_count": 10
   },
   {
    "term": "高市首相",
-   "article_count": 11
-  },
-  {
-   "term": "事故",
-   "article_count": 11
-  },
-  {
-   "term": "煙突",
-   "article_count": 11
-  },
-  {
-   "term": "事件",
-   "article_count": 11
-  },
-  {
-   "term": "プロモーションビデオ",
    "article_count": 10
   },
   {
-   "term": "芥川賞作家",
+   "term": "森山裕",
    "article_count": 10
   },
   {
-   "term": "蔵内議長",
+   "term": "地震",
    "article_count": 10
   },
   {
-   "term": "ネパール",
+   "term": "避難",
    "article_count": 10
   },
   {
-   "term": "出演",
+   "term": "外交",
    "article_count": 10
   },
   {
-   "term": "番組",
-   "article_count": 10
-  },
-  {
-   "term": "マニュアル",
+   "term": "消費税減税",
    "article_count": 9
   },
   {
-   "term": "極秘帰国",
+   "term": "避難生活",
    "article_count": 9
   },
   {
-   "term": "出演者",
+   "term": "対中外交",
    "article_count": 9
   },
   {
-   "term": "崩壊",
+   "term": "森山裕氏",
    "article_count": 9
   },
   {
-   "term": "夫妻",
+   "term": "自民党",
    "article_count": 9
   },
   {
-   "term": "小室",
-   "article_count": 9
-  },
-  {
-   "term": "決定",
-   "article_count": 9
-  },
-  {
-   "term": "小室夫妻",
+   "term": "習近平",
    "article_count": 8
+  },
+  {
+   "term": "テレビ",
+   "article_count": 8
+  },
+  {
+   "term": "失態",
+   "article_count": 8
+  },
+  {
+   "term": "皇室",
+   "article_count": 8
+  },
+  {
+   "term": "浮上",
+   "article_count": 8
+  },
+  {
+   "term": "麻生太郎元首相",
+   "article_count": 7
+  },
+  {
+   "term": "習近平主席",
+   "article_count": 7
+  },
+  {
+   "term": "島田裕美氏",
+   "article_count": 7
+  },
+  {
+   "term": "皇室典範",
+   "article_count": 7
+  },
+  {
+   "term": "通信",
+   "article_count": 7
+  },
+  {
+   "term": "中国",
+   "article_count": 7
   }
  ],
  "total": 40,
  "readable": 30,
  "sources": [
   "GIGAZINE",
-  "NHKニュース",
   "国内 - Yahoo!ニュース",
-  "ニュース速報（総合）RSS",
   "トップニュース - Google ニュース"
  ],
  "feeds": [
@@ -310,5 +308,5 @@
    "last_error": ""
   }
  ],
- "generated_at": "2026-08-05T21:36:33.314325+00:00"
+ "generated_at": "2026-08-06T21:37:32.641688+00:00"
 }
