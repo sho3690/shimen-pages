@@ -1,278 +1,305 @@
 {
  "digest": [
   {
-   "field": "地震",
-   "text": "7月28日に発生した熊本地震により、住宅や高速道路に被害が生じました。特に八代市上片町では長さ60メートルの段差が発生し、高速道路の継ぎ目も上下にずれ動きました。熊本県内では、記録的な大雨による停電が広がり、31都府県から計190台の給水車が派遣され、飲料水の供給が行われています。熊本地震から13年を経て、氷川町で車中泊中の女性が熱中症により死亡し、町の長は「真夏の災害の備えが足りず」と述べました。",
+   "field": "災害",
+   "text": "7月28日に発生した熊本地震により、氷川町で死者数が38人に達しています。71歳の白丸弘幸さんは、地震の余震により自宅が全壊し、熱中症と体調不良に陥りました。熊本県では8日も猛烈な暑さが続いており、最大震度7の地震で大きな被害を受けた地域でも熱中症対策が必要です。政府は熊本地震を『激甚災害』に指定し、被災自治体の財政負担軽減を図り、ボランティアへの協力を呼びかけています。宇城市のボランティアセンターでは、小川町川尻での支援活動が本格化しています。",
    "sources": [
     {
-     "title": "停電で「建物は暑くなり危険」、避難所の開設見送り…車中泊の女性死亡に氷川町長「真夏の災害の備え足りず」 - 読売新聞",
-     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9QdUVVSzd6Z2d6QnhwZjZqNFYtM2VlM2hzT3NsTUswZ09tUzQ3aktjVmc3OWEzSEJDNnJaa2VZd3RJVjFRdzAzLXAtdElkODVob1M1U3plcW5GVVg2U0toYUxyMXMydw?oc=5",
-     "feed_title": "トップニュース - Google ニュース"
-    },
-    {
-     "title": "住宅や高速道路にも被害もたらした「断層のずれ」 地表に現れた日奈久断層帯を追う 令和8年熊本地震(FNNプライムオンライン)",
-     "url": "https://news.yahoo.co.jp/articles/3d50c2ea4056e7314b8ba039f4910e3d0fa5aad7?source=rss",
+     "title": "「皆さんの手を待ってます」災害ボランティア本格化…課題も 熊本地震発生から10日(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/7982215884c4c85fd2b81d409c14dca177b4fb98?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "31都府県から熊本に給水車 国も派遣、計190台活動(共同通信)",
-     "url": "https://news.yahoo.co.jp/articles/845636256b23d832ddce8cd1f629ee3dd9f9b2a8?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "field": "政治",
-   "text": "高市総理の内閣支持率が低下傾向にあり、その原因について総理自身も「分からない」と述べています。「寝ていないアピール」など、様々な行動が裏目に出ているとの指摘もあります。島田裕美氏が麻生太郎元首相の皇室典範に関する発言を批判し、「野望にとらわれた麻生太郎が見落とした大原則」と指摘しています。また、福岡県議会の発言や小渕優子氏の消費税減税に反発が相次いでいます。",
-   "sources": [
-    {
-     "title": "被災地熊本代表 夏の甲子園きょう初戦 有明高校ブラスバンドが後押し(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/8a3fdc0e706557d2f1637ede7125b1db4efa74fa?source=rss",
+     "title": "「何にも食べていないのに、吐いてしまい…」 被災者が明かす熱中症の恐怖 「救急車を呼んだけど、電話がつながらない」(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/2cc2a65bdd56e4780d5a0b5a03afa6c713b0add0?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "無電柱化計画、策定「18％」 310市区町村止まり(共同通信)",
-     "url": "https://news.yahoo.co.jp/articles/dd99b008d1e9e3ed6097ee1a9d1ed6b8787cbd99?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "独特の形にうまみ凝縮「パスタキューブ」 隠し味求め、名店食べ歩き【経済トレンド／ヒットのヒント】(共同通信)",
-     "url": "https://news.yahoo.co.jp/articles/58543c9784137d956dd558f6bffec5d2425c848d?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
+     "title": "熊本 8日も猛烈な暑さ 熱中症対策を 台風13号で強風にも注意",
+     "url": "http://www3.nhk.or.jp/news/html/20260808/k10015199781000.html",
+     "feed_title": "NHKニュース"
     }
    ]
   },
   {
    "field": "経済",
-   "text": "物価高の影響で、今年の夏休み中の外出は6割にまで見直され、「近場」での活動が最も多くなっています。鶴屋百貨店では「くまもとの特産品まつり」が予定通り開催され、食を通じて熊本を元気づける取り組みが行われています。また、「パスタキューブ」と呼ばれる独特の形状でうまみを凝縮した商品が注目を集めています。",
+   "text": "厚生労働省は、障害者雇用の仲介利用企業による「水増し」行為が相次いでいることを明らかにしました。雇用期間が1年を超える「常用雇用労働者数」の報告をすることで、統計上の対象外となるケースが増加しています。7月度の米国雇用統計で、就業者数が2万人3千人減少しました。テイクツーインタラクティブのダン・ワイズナーCEOは、『グランド・セフト・オートVI』（GTA 6）のダウンロード版限定販売について、ディスクが消費者にとって必ずしも重要ではないと主張しました。",
    "sources": [
     {
-     "title": "こんな時だからこそ――食の力で熊本を元気に 鶴屋百貨店「くまもとの特産品まつり」予定通り開催(スポニチアネックス)",
-     "url": "https://news.yahoo.co.jp/articles/1badcac85d79693baef1165ad8c94cad4df2788e?source=rss",
+     "title": "『GTA 6』DL版限定を擁護？「ディスクは消費者にとって有意義でない」とテイクツー社長―アナログレコードを例に限定的な需要と主張 - Game*Spark",
+     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBhSlNMOTVYM2NPNGROTmhCbWpnbWI3M3FQbjg1YXBwR0MyQmtfTVkzYTNWS2tNMmg2N0dqSjc4Z3g1TUhWVUM0cUZGZnQya00xbEZoc0lvM0ZYeDBPbFh3YkUyZWQxQQ?oc=5",
+     "feed_title": "トップニュース - Google ニュース"
+    },
+    {
+     "title": "障害者雇用の仲介利用企業が「水増し」、雇用期間が１年を超える「常用雇用労働者数」報告で対象外を計上 - yomiuri.co.jp",
+     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5xOS11Ykx3YjYtOUJrcWVITGZaWGVoRGlscmpTRXJFa3hRNmZJaURsengwelNaVGVqM2ZIaEVmRTMzWG9MS1JkSE1YUFpGZ2FoNG5IRGhnQVNkbTVhVnA1SWpiMXpuQQ?oc=5",
+     "feed_title": "トップニュース - Google ニュース"
+    },
+    {
+     "title": "米7月雇用統計、労働市場の現状反映＝リッチモンド連銀総裁 - ロイター",
+     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPaWVEYmZIeEt4OG9WQmpvMjlZN01GM3N3cXZSYXd2V1RpbjJPMmR5dkVIMTd5SXMxS0pCZU5uZExmc2lWLTNEbWpKM3lzTmMtcEp0NFJnRU1paHJDM3NJNWZhV25CN3F0UGw2ZDVZT2dUTTZvRFdFZzRXTXFld3A2bA?oc=5",
+     "feed_title": "トップニュース - Google ニュース"
+    }
+   ]
+  },
+  {
+   "field": "政治",
+   "text": "高市早苗首相が旧安倍派の勢いを背景とした人事案を進める中、自民党内で萩生田光一幹事長代行の幹事長起用などが浮上しています。前大統領ドナルド・トランプ氏が計画していたホワイトハウス内の宴会場建設工事をアメリカ合衆国地裁が差し止めました。スペインでは、セウタに大量の移民が流入する騒動を受け、イタリアが国境管理を強化したことで、スペイン政府がイタリアに対し「対抗措置」を講じる可能性があることを警告しました。",
+   "sources": [
+    {
+     "title": "スペイン、移民騒動でイタリアに「対抗措置」警告 国境管理強化うけ - 日本経済新聞",
+     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBfSnA0OTB2aEpTMV9JSmVmVDFRVlBCN2FJRlFyTWM2U3VUS0lac1FGOEw0eEdyTWhpR1ZJZl8zS1pRX1BoMDhyZWhCY180UkNhYUNKY1JPamFOYlVxdnZPVENPNlJQcmtZckMxag?oc=5",
+     "feed_title": "トップニュース - Google ニュース"
+    },
+    {
+     "title": "首相、人事で旧安倍派重用か 自民「萩生田幹事長」案が浮上 世論反発警戒も(北海道新聞)",
+     "url": "https://news.yahoo.co.jp/articles/d0eac7d0a3fc6dc051db13463b7c419a051d0720?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "夏休みの外出「見直し」6割 物価高影響、「近場」が最多(共同通信)",
-     "url": "https://news.yahoo.co.jp/articles/44bd26d5c146905668bcaa106e5a7006493aea9c?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "独特の形にうまみ凝縮「パスタキューブ」 隠し味求め、名店食べ歩き【経済トレンド／ヒットのヒント】(共同通信)",
-     "url": "https://news.yahoo.co.jp/articles/58543c9784137d956dd558f6bffec5d2425c848d?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
+     "title": "米地裁、ホワイトハウス宴会場建設計画を差し止め トランプ氏は上訴へ - ロイター",
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQc1pTTjRzVGkxRkZBcy00UDFnZ01qajRpa2xFRzlFT2lJendzU2llNXNfNUdmMnhFaHZvOWVVeEpwV1F5cXJNOXZxWXJvQW5TRlk4R3NvWUJ6TGdkaVY1b0piR1VLTWc0eHQzNVpHbHZzNkRab29wM2M1cUdXVEljRVN3?oc=5",
+     "feed_title": "トップニュース - Google ニュース"
     }
    ]
   },
   {
    "field": "社会",
-   "text": "18歳未満の未成年女子の裸写真所持容疑で、小学校講師の男が逮捕されました。この男は米国の民間組織からの情報提供を受けて捜査されており、複数の画像を所持しているとみられています。また、「闇バイト」に関与した逃亡者が語った「トクリュウ」と呼ばれる犯罪グループによる監禁やめった打ちなどの事件が発覚しました。",
+   "text": "36歳の秘湯マニアが、軽井沢の石尊山でクマに遭遇し、激しい格闘の末に生還しました。81歳の高齢女性が、地震後に自宅の玄関扉が壊れ施錠できない状況下で、自衛隊か警察を名乗る男がなりすまし強盗を行ったと証言しています。戦後、復員兵の渡辺清氏が著した『砕かれた神』を基に、敗戦直後の日本の光景を描写する中で、「おい、見ろ、あれも敗残兵だ」という嘲笑を浴びました。京都大学病院で、脳腫瘍摘出手術後に患者が呼吸困難など重症化した医療事故が発生しました。",
    "sources": [
     {
-     "title": "米国の民間組織から情報提供…18歳未満の女の子の裸が写った画像を所持か 小学校講師の38歳男を逮捕(東海テレビ)",
-     "url": "https://news.yahoo.co.jp/articles/9ee33be2f1c388197148fb4b9b605a58c89f6370?source=rss",
+     "title": "「自衛隊員や報道カメラマンのフリをして泥棒を…」 500万円分の預金通帳を盗まれた高齢女性が明かす被害 「外出が怖くなり、避難所にも行けない」(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/417ca200941f224e65a8749adfbffd9e72096f46?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "「中国人30人ほどに捕まって、素手や棒でめった打ちに…」 「闇バイト」逃亡者が語った「トクリュウ」からの脱出“恐怖の瞬間” 入れ墨男に浴びせられた“脅しの言葉”とは(デイリー新潮)",
-     "url": "https://news.yahoo.co.jp/articles/685c9252110c5d7c7d772501a6faed8dfa5a7df3?source=rss",
+     "title": "「おい、見ろ、あれも敗残兵だ」“国のため”に戦った兵士を待ち受けていた小学生の心無い嘲笑…戦争に翻弄された男が帰郷先で味わった“どん底の屈辱”とは(文春オンライン)",
+     "url": "https://news.yahoo.co.jp/articles/7edaeb9f3e2bb282a44dfb9c26e9cf566d86ca85?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "「中国人にボコボコにされ、ビルの6階から突き落とされた」 「闇バイト」 トクリュウの使い捨てにされた悲惨すぎる実態 募集時の約束は「月収300万円」も、組織に入った瞬間、「お前たちは…」(デイリー新潮)",
-     "url": "https://news.yahoo.co.jp/articles/b9bc58ed6b69540e05d453bcf304d3a5b2243e6c?source=rss",
+     "title": "耳の後ろから流血､指の肉をごっそり食べられ…クマに｢猪木キック｣で応戦した36歳男性の\"数十秒間の死闘\"(プレジデントオンライン)",
+     "url": "https://news.yahoo.co.jp/articles/b7a6679fff4d3627e626c9fd87c95bce8a467821?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "国際",
+   "text": "韓国の調査船が、竹島周辺で日本政府の許可なしに海洋調査を実施していたことが明らかになり、日本政府は外交ルートを通じて韓国側に強い抗議を行いました。米地裁が、前大統領ドナルド・トランプ氏が計画していたホワイトハウス内の宴会場建設工事を差し止めた決定に対し、トランプ氏は上訴しています。台湾軍が、中国の台湾侵攻への備えとして年に一度の大規模な軍事演習を実施しました。",
+   "sources": [
+    {
+     "title": "米地裁、ホワイトハウス宴会場建設計画を差し止め トランプ氏は上訴へ - ロイター",
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQc1pTTjRzVGkxRkZBcy00UDFnZ01qajRpa2xFRzlFT2lJendzU2llNXNfNUdmMnhFaHZvOWVVeEpwV1F5cXJNOXZxWXJvQW5TRlk4R3NvWUJ6TGdkaVY1b0piR1VLTWc0eHQzNVpHbHZzNkRab29wM2M1cUdXVEljRVN3?oc=5",
+     "feed_title": "トップニュース - Google ニュース"
+    },
+    {
+     "title": "韓国調査船が竹島周辺EEZ内で海洋調査か 日本政府が抗議",
+     "url": "http://www3.nhk.or.jp/news/html/20260808/k10015199831000.html",
+     "feed_title": "NHKニュース"
+    },
+    {
+     "title": "台湾軍 中国による侵攻を想定した大規模演習を公開",
+     "url": "http://www3.nhk.or.jp/news/html/20260808/k10015199791000.html",
+     "feed_title": "NHKニュース"
+    }
+   ]
+  },
+  {
+   "field": "事件",
+   "text": "岐阜南警察署の留置場で体調不良を訴えた男性が、搬送先の病院で死亡しました。この男性は勾留中で、具体的な状況や理由については現時点では不明です。イオンモール熊本で発生した爆発事故により、玖瑠美さんが死亡し、被害者の親族が慟哭の証言を行いました。",
+   "sources": [
+    {
+     "title": "警察署の留置場で体調不良訴え… 勾留されていた男性が搬送先の病院で死亡 岐阜南警察署(中京テレビＮＥＷＳ)",
+     "url": "https://news.yahoo.co.jp/articles/ca9039130420ad8b76a3ec11d9cb326f2ab950c5?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "「玖瑠美の最期の言葉は…」 イオンモール事故被害者の親族が慟哭の証言 「おばたちは制止できなかった自分たちを責めている」 さらに、間一髪で事故を免れた従業員の証言も(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/372318348d9210f0ef667bd0d6db02c6b846d3bf?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "茨城県で震度3の地震 津波の心配なし(tenki.jp)",
+     "url": "https://news.yahoo.co.jp/articles/4d6c948cc2f2bb61d3244205cf702d29aeded72b?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "気象",
-   "text": "本日7日、台風13号が沖縄や奄美に最接近し、猛烈な風と高波による被害が懸念されています。沖縄本島の一部はすでに暴風域に入り、航空便の欠航など4万人以上に影響が出ています。また、線状降水帯が発生するおそれがあり、長時間の暴風や高波への注意が必要です。",
+   "text": "現在、沖縄本島地方と奄美地方を中心に、大型で非常に強い台風13号が接近しています。お盆期間中に日本列島に影響を及ぼす可能性のある大型台風15号が、気象庁によって発表されました。茨城県で震度3の地震が発生しました。",
    "sources": [
     {
-     "title": "7日は台風13号が沖縄や奄美に最接近 線状降水帯発生のおそれ 長時間の暴風・高波(tenki.jp)",
-     "url": "https://news.yahoo.co.jp/articles/1bcda200101f7b4dbb4965c03457de2c1ff93eb7?source=rss",
+     "title": "大型で非常に強い台風13号 暴風などに厳重警戒",
+     "url": "http://www3.nhk.or.jp/news/html/20260808/k10015199841000.html",
+     "feed_title": "NHKニュース"
+    },
+    {
+     "title": "【台風情報】お盆の日本列島に影響のおそれ...最大瞬間風速35 m/s予想の大型「台風15号」は本州・四国・九州が予報円内に、18日（火）までの雨・風シミュレーションを確認【気象庁8日午前4時5分発表】(RSK山陽放送)",
+     "url": "https://news.yahoo.co.jp/articles/fdfb0cde48f4a40dae6811f3a8998db468cd6742?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "台風13号 まもなく沖縄に最接近 空の便欠航 4万人以上に影響(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/7921625aee6d0d88a57f7cab7b5c7c8cac0c87ec?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "【速報】台風13号 沖縄本島の一部が暴風域に入りました(tenki.jp)",
-     "url": "https://news.yahoo.co.jp/articles/5893507f976af5dfccfc60bd4c59526c9be5e4dd?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "field": "文化",
-   "text": "女優の寿美花代さんが94歳で亡くなりました。夫・忠夫さんのうつ病の看護に尽力し、最期まで大女優として輝きを放ち続けたと報じられています。小山美砂さんのルポ『ルポ 被爆二世』は、戦後八十年を迎え被爆二世の苦悩や生き方を探る作品として宇佐美まこと氏によって評価されています。",
-   "sources": [
-    {
-     "title": "小山美砂『ルポ 被爆二世』を宇佐美まことさんが読む（Bookレビュー）(Book Bang)",
-     "url": "https://news.yahoo.co.jp/articles/079e52d1ddd3fbc57e903aaa971f737507301da2?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "寿美花代さん死去…高嶋政宏さん「最期の最期まで大女優」、政伸さん「いつもユーモア忘れない明るく優しい母」 - 読売新聞",
-     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1EM00zVHg0UENLNDR3dEtzWWdDSFVncmtOdG5nX01hcEF0dVo1S1J0LVVscFFHMmJnTl9KWTBSY0FOcURNdXJ3VVloUUVZMEozbFRKSUlTeVh3WWR3VENhZzNEQzhjQQ?oc=5",
-     "feed_title": "トップニュース - Google ニュース"
+     "title": "熊本 8日も猛烈な暑さ 熱中症対策を 台風13号で強風にも注意",
+     "url": "http://www3.nhk.or.jp/news/html/20260808/k10015199781000.html",
+     "feed_title": "NHKニュース"
     }
    ]
   }
  ],
- "digest_at": "2026-08-06T21:37:28.182582+00:00",
+ "digest_at": "2026-08-07T21:36:58.693268+00:00",
  "topics": [
   {
-   "term": "熊本",
-   "article_count": 16
-  },
-  {
-   "term": "県議会",
-   "article_count": 14
-  },
-  {
-   "term": "内閣",
-   "article_count": 14
-  },
-  {
-   "term": "福岡県議会",
-   "article_count": 13
-  },
-  {
-   "term": "高市総理",
-   "article_count": 13
-  },
-  {
-   "term": "内閣改造",
-   "article_count": 13
-  },
-  {
-   "term": "SNS",
-   "article_count": 13
-  },
-  {
-   "term": "熊本県",
-   "article_count": 13
-  },
-  {
-   "term": "生活",
-   "article_count": 13
-  },
-  {
-   "term": "麻生太郎",
-   "article_count": 12
-  },
-  {
-   "term": "批判",
-   "article_count": 11
-  },
-  {
-   "term": "投稿",
-   "article_count": 11
-  },
-  {
-   "term": "小渕優子氏",
-   "article_count": 10
-  },
-  {
-   "term": "茂木敏充氏",
-   "article_count": 10
-  },
-  {
-   "term": "小林鷹之氏",
-   "article_count": 10
-  },
-  {
-   "term": "高市首相",
-   "article_count": 10
-  },
-  {
-   "term": "森山裕",
-   "article_count": 10
-  },
-  {
    "term": "地震",
-   "article_count": 10
+   "article_count": 6
   },
   {
-   "term": "避難",
-   "article_count": 10
+   "term": "熊本",
+   "article_count": 6
   },
   {
-   "term": "外交",
-   "article_count": 10
+   "term": "被害",
+   "article_count": 6
   },
   {
-   "term": "消費税減税",
-   "article_count": 9
+   "term": "事件",
+   "article_count": 6
   },
   {
-   "term": "避難生活",
-   "article_count": 9
+   "term": "オンライン",
+   "article_count": 5
   },
   {
-   "term": "対中外交",
-   "article_count": 9
+   "term": "住民",
+   "article_count": 5
   },
   {
-   "term": "森山裕氏",
-   "article_count": 9
+   "term": "首相",
+   "article_count": 5
   },
   {
-   "term": "自民党",
-   "article_count": 9
+   "term": "証言",
+   "article_count": 5
   },
   {
-   "term": "習近平",
-   "article_count": 8
+   "term": "事故",
+   "article_count": 5
+  },
+  {
+   "term": "イオンモール",
+   "article_count": 4
+  },
+  {
+   "term": "デイリー",
+   "article_count": 4
+  },
+  {
+   "term": "ミサイル",
+   "article_count": 4
+  },
+  {
+   "term": "時間滞在",
+   "article_count": 4
+  },
+  {
+   "term": "バイト",
+   "article_count": 4
+  },
+  {
+   "term": "発射時",
+   "article_count": 4
+  },
+  {
+   "term": "北朝鮮",
+   "article_count": 4
+  },
+  {
+   "term": "ANN",
+   "article_count": 4
   },
   {
    "term": "テレビ",
-   "article_count": 8
+   "article_count": 4
   },
   {
-   "term": "失態",
-   "article_count": 8
+   "term": "台風",
+   "article_count": 4
   },
   {
-   "term": "皇室",
-   "article_count": 8
+   "term": "言葉",
+   "article_count": 4
   },
   {
-   "term": "浮上",
-   "article_count": 8
+   "term": "兵士",
+   "article_count": 4
   },
   {
-   "term": "麻生太郎元首相",
-   "article_count": 7
+   "term": "低下",
+   "article_count": 4
   },
   {
-   "term": "習近平主席",
-   "article_count": 7
+   "term": "新潮",
+   "article_count": 4
   },
   {
-   "term": "島田裕美氏",
-   "article_count": 7
+   "term": "場所",
+   "article_count": 4
   },
   {
-   "term": "皇室典範",
-   "article_count": 7
+   "term": "熊本地震",
+   "article_count": 3
   },
   {
-   "term": "通信",
-   "article_count": 7
+   "term": "高市首相",
+   "article_count": 3
   },
   {
-   "term": "中国",
-   "article_count": 7
+   "term": "爆発事故",
+   "article_count": 3
+  },
+  {
+   "term": "気象庁",
+   "article_count": 3
+  },
+  {
+   "term": "海軍兵",
+   "article_count": 3
+  },
+  {
+   "term": "復員兵",
+   "article_count": 3
+  },
+  {
+   "term": "朝日系",
+   "article_count": 3
+  },
+  {
+   "term": "警戒",
+   "article_count": 3
+  },
+  {
+   "term": "判断",
+   "article_count": 3
+  },
+  {
+   "term": "男性",
+   "article_count": 3
+  },
+  {
+   "term": "文春",
+   "article_count": 3
+  },
+  {
+   "term": "準備",
+   "article_count": 3
   }
  ],
  "total": 40,
- "readable": 30,
+ "readable": 28,
  "sources": [
   "GIGAZINE",
+  "NHKニュース",
   "国内 - Yahoo!ニュース",
   "トップニュース - Google ニュース"
  ],
@@ -308,5 +335,5 @@
    "last_error": ""
   }
  ],
- "generated_at": "2026-08-06T21:37:32.641688+00:00"
+ "generated_at": "2026-08-07T21:37:01.260254+00:00"
 }
