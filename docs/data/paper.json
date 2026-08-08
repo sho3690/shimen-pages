@@ -1,298 +1,288 @@
 {
  "digest": [
   {
-   "field": "災害",
-   "text": "7月28日に発生した熊本地震により、氷川町で死者数が38人に達しています。71歳の白丸弘幸さんは、地震の余震により自宅が全壊し、熱中症と体調不良に陥りました。熊本県では8日も猛烈な暑さが続いており、最大震度7の地震で大きな被害を受けた地域でも熱中症対策が必要です。政府は熊本地震を『激甚災害』に指定し、被災自治体の財政負担軽減を図り、ボランティアへの協力を呼びかけています。宇城市のボランティアセンターでは、小川町川尻での支援活動が本格化しています。",
+   "field": "気象",
+   "text": "各地で災害が相次いでいます。台風13号の影響により東海地方では家族で川遊び中に40代男性が溺死する事故が発生し、影響は長期化しています。また、気象庁は9日にも新たな熱帯低気圧が日本の南に2つ同時に発生する可能性を予想しており、台風15号も西進中です。岩手県沖ではマグニチュード5.6の地震が発生し、普代村で震度4を観測しました。",
    "sources": [
     {
-     "title": "「皆さんの手を待ってます」災害ボランティア本格化…課題も 熊本地震発生から10日(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/7982215884c4c85fd2b81d409c14dca177b4fb98?source=rss",
+     "title": "各地襲う“猛烈な雨” 影響長引く台風13号(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/9102ccbecc3c391366f4a00c202353fb5e22f79a?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "「何にも食べていないのに、吐いてしまい…」 被災者が明かす熱中症の恐怖 「救急車を呼んだけど、電話がつながらない」(デイリー新潮)",
-     "url": "https://news.yahoo.co.jp/articles/2cc2a65bdd56e4780d5a0b5a03afa6c713b0add0?source=rss",
+     "title": "岩手・普代村で震度4 M5.6(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/9b173554fe27a925a2a79fd0baa2f8a1b12e4efd?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "熊本 8日も猛烈な暑さ 熱中症対策を 台風13号で強風にも注意",
-     "url": "http://www3.nhk.or.jp/news/html/20260808/k10015199781000.html",
-     "feed_title": "NHKニュース"
+     "title": "【速報】岩手県で震度4 北海道から福島県の広い範囲で揺れ 新幹線に影響なし(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/409d7ddeb619e04625479b9cc388416a09f34164?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
-   "field": "経済",
-   "text": "厚生労働省は、障害者雇用の仲介利用企業による「水増し」行為が相次いでいることを明らかにしました。雇用期間が1年を超える「常用雇用労働者数」の報告をすることで、統計上の対象外となるケースが増加しています。7月度の米国雇用統計で、就業者数が2万人3千人減少しました。テイクツーインタラクティブのダン・ワイズナーCEOは、『グランド・セフト・オートVI』（GTA 6）のダウンロード版限定販売について、ディスクが消費者にとって必ずしも重要ではないと主張しました。",
+   "field": "原発",
+   "text": "関西電力の大飯原発3号機が、発電機内に磁界発生させる装置に異常の警報が出たため、本日午前9時40分頃に自動停止しました。検査の結果、放射能漏れは確認されておらず、原因の特定と復旧作業が行われています。この影響により、電力供給に支障が出る可能性があり、今後の動向が注目されます。",
    "sources": [
     {
-     "title": "『GTA 6』DL版限定を擁護？「ディスクは消費者にとって有意義でない」とテイクツー社長―アナログレコードを例に限定的な需要と主張 - Game*Spark",
-     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBhSlNMOTVYM2NPNGROTmhCbWpnbWI3M3FQbjg1YXBwR0MyQmtfTVkzYTNWS2tNMmg2N0dqSjc4Z3g1TUhWVUM0cUZGZnQya00xbEZoc0lvM0ZYeDBPbFh3YkUyZWQxQQ?oc=5",
+     "title": "大飯原発３号機が自動停止、発電機内に磁界発生させる装置に異常の警報…周辺への放射能の影響なし - 読売新聞",
+     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB4c1hUQlVkUnpVQl9iYWRVOVdwbnd2Ym9hNzZ5ekFKY1JCcURvTG1ta1JqS2VNM01ObkRZS1pKV0V5V2NZQUxKUW9NbTZOVWFFQzdxNjVpbTNtTVJHWDBaM1Z4UFQ5QQ?oc=5",
      "feed_title": "トップニュース - Google ニュース"
     },
     {
-     "title": "障害者雇用の仲介利用企業が「水増し」、雇用期間が１年を超える「常用雇用労働者数」報告で対象外を計上 - yomiuri.co.jp",
-     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5xOS11Ykx3YjYtOUJrcWVITGZaWGVoRGlscmpTRXJFa3hRNmZJaURsengwelNaVGVqM2ZIaEVmRTMzWG9MS1JkSE1YUFpGZ2FoNG5IRGhnQVNkbTVhVnA1SWpiMXpuQQ?oc=5",
-     "feed_title": "トップニュース - Google ニュース"
+     "title": "【速報】関西電力・大飯原発３号機が自動停止 発電機に関連する機器で警報「放射能漏れはなし」と発表(読売テレビ)",
+     "url": "https://news.yahoo.co.jp/articles/b9ca4554e8e8d493f41fc8d853bba9f6485e3ce6?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "事故",
+   "text": "東武東上線で人身事故が発生し、一部区間で運転が見合わせられています。また、愛知県東栄町では40歳の父親が息子を川から助けようとした際、自身も溺死するという痛ましい事故がありました。さらに、東京・大田区で3階建てビルが火事となり、高齢女性1人が死亡し、2名が怪我をしています。",
+   "sources": [
+    {
+     "title": "東武東上線で人身事故 一部運転見合わせ(レスキューナウニュース)",
+     "url": "https://news.yahoo.co.jp/articles/afff684db9b416bd196d94eecb5da0a2aa4c1d6a?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "米7月雇用統計、労働市場の現状反映＝リッチモンド連銀総裁 - ロイター",
-     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPaWVEYmZIeEt4OG9WQmpvMjlZN01GM3N3cXZSYXd2V1RpbjJPMmR5dkVIMTd5SXMxS0pCZU5uZExmc2lWLTNEbWpKM3lzTmMtcEp0NFJnRU1paHJDM3NJNWZhV25CN3F0UGw2ZDVZT2dUTTZvRFdFZzRXTXFld3A2bA?oc=5",
-     "feed_title": "トップニュース - Google ニュース"
+     "title": "東京・大田区 飲食店など入る3階建てビルで火事 高齢女性1人死亡 2階の住人か 様子を見に行った2人けが(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/2c24b2ffd5d035f0db0133f6a435f270afb6317a?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "川で溺れた息子を助けようとした父親（40）が死亡 息子は救助され無事 愛知・東栄町(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/9363448d11c92f6520feb4b7d20236a2a0d5533e?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "夫婦",
+   "text": "YouTuberのひろゆき氏とタレントの西村ゆか氏の間で離婚問題が浮上しており、「信頼関係が保てない状態で夫婦を続けるのは無理」という状況です。西村氏はひろゆき氏に「いずみ新党（仮）」の設立を知らされなかったことを理由に離婚を提案し、激怒したと報じられています。この問題は、二人の信頼関係の崩壊を示唆しており、今後の展開が注目されます。",
+   "sources": [
+    {
+     "title": "｢織田家の後継者選び｣でも｢秀吉の一人勝ち｣でもない…清洲会議で信長の息子2人が争った\"本当の争点\"(プレジデントオンライン)",
+     "url": "https://news.yahoo.co.jp/articles/ed568d975dcdec3050997838945783ae5ef2e5c3?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "「まるで難民キャンプ」 避難所の劣悪な環境に専門家も「びっくりした」 車中泊にもリスクが 「熱したフライパンに飛び込むようなもの」(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/c8661e6eb923d4c9bb9b384983494e968d63de50?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "熊本・日奈久温泉の名物「ちくわ」製造再開へ始動(ABEMA TIMES)",
+     "url": "https://news.yahoo.co.jp/articles/82a9766da3c7aadff5fd547bd392178ae2419b6c?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "政治",
-   "text": "高市早苗首相が旧安倍派の勢いを背景とした人事案を進める中、自民党内で萩生田光一幹事長代行の幹事長起用などが浮上しています。前大統領ドナルド・トランプ氏が計画していたホワイトハウス内の宴会場建設工事をアメリカ合衆国地裁が差し止めました。スペインでは、セウタに大量の移民が流入する騒動を受け、イタリアが国境管理を強化したことで、スペイン政府がイタリアに対し「対抗措置」を講じる可能性があることを警告しました。",
+   "text": "ひろゆき氏と西村ゆか氏が共同で「ひろゆき＆いずみ新党（仮）」の届け出を行っていることが報じられています。この件を受けて、清洲会議での信長の息子2人の争点に関する記事も公開され、権力闘争を彷彿とさせる状況です。",
    "sources": [
     {
-     "title": "スペイン、移民騒動でイタリアに「対抗措置」警告 国境管理強化うけ - 日本経済新聞",
-     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBfSnA0OTB2aEpTMV9JSmVmVDFRVlBCN2FJRlFyTWM2U3VUS0lac1FGOEw0eEdyTWhpR1ZJZl8zS1pRX1BoMDhyZWhCY180UkNhYUNKY1JPamFOYlVxdnZPVENPNlJQcmtZckMxag?oc=5",
-     "feed_title": "トップニュース - Google ニュース"
-    },
-    {
-     "title": "首相、人事で旧安倍派重用か 自民「萩生田幹事長」案が浮上 世論反発警戒も(北海道新聞)",
-     "url": "https://news.yahoo.co.jp/articles/d0eac7d0a3fc6dc051db13463b7c419a051d0720?source=rss",
+     "title": "｢織田家の後継者選び｣でも｢秀吉の一人勝ち｣でもない…清洲会議で信長の息子2人が争った\"本当の争点\"(プレジデントオンライン)",
+     "url": "https://news.yahoo.co.jp/articles/ed568d975dcdec3050997838945783ae5ef2e5c3?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "米地裁、ホワイトハウス宴会場建設計画を差し止め トランプ氏は上訴へ - ロイター",
-     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQc1pTTjRzVGkxRkZBcy00UDFnZ01qajRpa2xFRzlFT2lJendzU2llNXNfNUdmMnhFaHZvOWVVeEpwV1F5cXJNOXZxWXJvQW5TRlk4R3NvWUJ6TGdkaVY1b0piR1VLTWc0eHQzNVpHbHZzNkRab29wM2M1cUdXVEljRVN3?oc=5",
+     "title": "ハウステンボスが長崎国際大と包括連携協定、観光人材の育成と地域社会の発展目指す(日刊スポーツ)",
+     "url": "https://news.yahoo.co.jp/articles/2830040f474812be32965dbdeafc9bb5e66ea838?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "「まるで難民キャンプ」 避難所の劣悪な環境に専門家も「びっくりした」 車中泊にもリスクが 「熱したフライパンに飛び込むようなもの」(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/c8661e6eb923d4c9bb9b384983494e968d63de50?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "経済",
+   "text": "日立レールはイタリアの鉄道グループから新型高速列車19編成を受注し、欧州での事業展開を強化します。また、秋田と宮城のブランド米において、「西高東低」という暑さに強いコメの栽培面積が減少しており、気候変動の影響が農業にも及んでいることが示唆されています。",
+   "sources": [
+    {
+     "title": "日立レール、新型高速列車１９編成をイタリア鉄道グループから受注…「欧州での地位を確固たるものに」 - 読売新聞",
+     "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5taldXQm9meklzOUpYTWJxamhST2tKb09jZGRxdnhTWm9nNnJJc0FXaTFWb2t3bDF6R3FsaXFwX3hxd1g5T3JFN0R0dFhGNmhpSUVIWlEwSmFldTFkU1dmU2s2QXc?oc=5",
+     "feed_title": "トップニュース - Google ニュース"
+    },
+    {
+     "title": "暑さに強いコメ「西高東低」 秋田・宮城1割未満、ブランド米が定着 - 日本経済新聞",
+     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE40R1I0SlRkVEs0Y0ZSclFVUWFvZ01Zd3JvV1F2VG5LRlZWSXBycXM3d1BCVGhUeEYxQWU4SG8wTVB0UEdWelVhSGZaQzY1MHI3MU0yeW9RYzM0YWtzMG9FNzlaZHhyeXVOdWhnNQ?oc=5",
      "feed_title": "トップニュース - Google ニュース"
     }
    ]
   },
   {
    "field": "社会",
-   "text": "36歳の秘湯マニアが、軽井沢の石尊山でクマに遭遇し、激しい格闘の末に生還しました。81歳の高齢女性が、地震後に自宅の玄関扉が壊れ施錠できない状況下で、自衛隊か警察を名乗る男がなりすまし強盗を行ったと証言しています。戦後、復員兵の渡辺清氏が著した『砕かれた神』を基に、敗戦直後の日本の光景を描写する中で、「おい、見ろ、あれも敗残兵だ」という嘲笑を浴びました。京都大学病院で、脳腫瘍摘出手術後に患者が呼吸困難など重症化した医療事故が発生しました。",
+   "text": "軽井沢では自動運転バスの実証運行が開始され、予約制で1日あたり6便運行されます。ハウステンボスと長崎国際大は包括連携協定を締結し、観光人材の育成と地域社会の発展を目指します。熊本地震による断水問題が解消に向かっている一方、避難所生活を送っていた人々にとって、二次避難の課題が浮上しています。",
    "sources": [
     {
-     "title": "「自衛隊員や報道カメラマンのフリをして泥棒を…」 500万円分の預金通帳を盗まれた高齢女性が明かす被害 「外出が怖くなり、避難所にも行けない」(デイリー新潮)",
-     "url": "https://news.yahoo.co.jp/articles/417ca200941f224e65a8749adfbffd9e72096f46?source=rss",
+     "title": "熊本地震 断水解消で近づく“日常” 「二次避難」に新たな課題も(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/76e6bc0566951b4dbf0c427c674c0b49c4aa0df3?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "「おい、見ろ、あれも敗残兵だ」“国のため”に戦った兵士を待ち受けていた小学生の心無い嘲笑…戦争に翻弄された男が帰郷先で味わった“どん底の屈辱”とは(文春オンライン)",
-     "url": "https://news.yahoo.co.jp/articles/7edaeb9f3e2bb282a44dfb9c26e9cf566d86ca85?source=rss",
+     "title": "ハウステンボスが長崎国際大と包括連携協定、観光人材の育成と地域社会の発展目指す(日刊スポーツ)",
+     "url": "https://news.yahoo.co.jp/articles/2830040f474812be32965dbdeafc9bb5e66ea838?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "耳の後ろから流血､指の肉をごっそり食べられ…クマに｢猪木キック｣で応戦した36歳男性の\"数十秒間の死闘\"(プレジデントオンライン)",
-     "url": "https://news.yahoo.co.jp/articles/b7a6679fff4d3627e626c9fd87c95bce8a467821?source=rss",
+     "title": "軽井沢で自動運転バスの実証運行、予約制で１日あたり６便 ９月６日から実施(日刊スポーツ)",
+     "url": "https://news.yahoo.co.jp/articles/98c129d205cface35c8e2c15e9b31a12690c0fcc?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "field": "国際",
-   "text": "韓国の調査船が、竹島周辺で日本政府の許可なしに海洋調査を実施していたことが明らかになり、日本政府は外交ルートを通じて韓国側に強い抗議を行いました。米地裁が、前大統領ドナルド・トランプ氏が計画していたホワイトハウス内の宴会場建設工事を差し止めた決定に対し、トランプ氏は上訴しています。台湾軍が、中国の台湾侵攻への備えとして年に一度の大規模な軍事演習を実施しました。",
-   "sources": [
-    {
-     "title": "米地裁、ホワイトハウス宴会場建設計画を差し止め トランプ氏は上訴へ - ロイター",
-     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQc1pTTjRzVGkxRkZBcy00UDFnZ01qajRpa2xFRzlFT2lJendzU2llNXNfNUdmMnhFaHZvOWVVeEpwV1F5cXJNOXZxWXJvQW5TRlk4R3NvWUJ6TGdkaVY1b0piR1VLTWc0eHQzNVpHbHZzNkRab29wM2M1cUdXVEljRVN3?oc=5",
-     "feed_title": "トップニュース - Google ニュース"
-    },
-    {
-     "title": "韓国調査船が竹島周辺EEZ内で海洋調査か 日本政府が抗議",
-     "url": "http://www3.nhk.or.jp/news/html/20260808/k10015199831000.html",
-     "feed_title": "NHKニュース"
-    },
-    {
-     "title": "台湾軍 中国による侵攻を想定した大規模演習を公開",
-     "url": "http://www3.nhk.or.jp/news/html/20260808/k10015199791000.html",
-     "feed_title": "NHKニュース"
-    }
-   ]
-  },
-  {
-   "field": "事件",
-   "text": "岐阜南警察署の留置場で体調不良を訴えた男性が、搬送先の病院で死亡しました。この男性は勾留中で、具体的な状況や理由については現時点では不明です。イオンモール熊本で発生した爆発事故により、玖瑠美さんが死亡し、被害者の親族が慟哭の証言を行いました。",
-   "sources": [
-    {
-     "title": "警察署の留置場で体調不良訴え… 勾留されていた男性が搬送先の病院で死亡 岐阜南警察署(中京テレビＮＥＷＳ)",
-     "url": "https://news.yahoo.co.jp/articles/ca9039130420ad8b76a3ec11d9cb326f2ab950c5?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "「玖瑠美の最期の言葉は…」 イオンモール事故被害者の親族が慟哭の証言 「おばたちは制止できなかった自分たちを責めている」 さらに、間一髪で事故を免れた従業員の証言も(デイリー新潮)",
-     "url": "https://news.yahoo.co.jp/articles/372318348d9210f0ef667bd0d6db02c6b846d3bf?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "茨城県で震度3の地震 津波の心配なし(tenki.jp)",
-     "url": "https://news.yahoo.co.jp/articles/4d6c948cc2f2bb61d3244205cf702d29aeded72b?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "field": "気象",
-   "text": "現在、沖縄本島地方と奄美地方を中心に、大型で非常に強い台風13号が接近しています。お盆期間中に日本列島に影響を及ぼす可能性のある大型台風15号が、気象庁によって発表されました。茨城県で震度3の地震が発生しました。",
-   "sources": [
-    {
-     "title": "大型で非常に強い台風13号 暴風などに厳重警戒",
-     "url": "http://www3.nhk.or.jp/news/html/20260808/k10015199841000.html",
-     "feed_title": "NHKニュース"
-    },
-    {
-     "title": "【台風情報】お盆の日本列島に影響のおそれ...最大瞬間風速35 m/s予想の大型「台風15号」は本州・四国・九州が予報円内に、18日（火）までの雨・風シミュレーションを確認【気象庁8日午前4時5分発表】(RSK山陽放送)",
-     "url": "https://news.yahoo.co.jp/articles/fdfb0cde48f4a40dae6811f3a8998db468cd6742?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "熊本 8日も猛烈な暑さ 熱中症対策を 台風13号で強風にも注意",
-     "url": "http://www3.nhk.or.jp/news/html/20260808/k10015199781000.html",
-     "feed_title": "NHKニュース"
     }
    ]
   }
  ],
- "digest_at": "2026-08-07T21:36:58.693268+00:00",
+ "digest_at": "2026-08-08T21:36:54.951467+00:00",
  "topics": [
   {
-   "term": "地震",
-   "article_count": 6
-  },
-  {
-   "term": "熊本",
-   "article_count": 6
-  },
-  {
-   "term": "被害",
-   "article_count": 6
-  },
-  {
-   "term": "事件",
-   "article_count": 6
-  },
-  {
-   "term": "オンライン",
-   "article_count": 5
-  },
-  {
-   "term": "住民",
-   "article_count": 5
-  },
-  {
-   "term": "首相",
-   "article_count": 5
-  },
-  {
-   "term": "証言",
-   "article_count": 5
+   "term": "気象庁",
+   "article_count": 19
   },
   {
    "term": "事故",
-   "article_count": 5
+   "article_count": 18
   },
   {
-   "term": "イオンモール",
-   "article_count": 4
-  },
-  {
-   "term": "デイリー",
-   "article_count": 4
-  },
-  {
-   "term": "ミサイル",
-   "article_count": 4
-  },
-  {
-   "term": "時間滞在",
-   "article_count": 4
-  },
-  {
-   "term": "バイト",
-   "article_count": 4
-  },
-  {
-   "term": "発射時",
-   "article_count": 4
-  },
-  {
-   "term": "北朝鮮",
-   "article_count": 4
-  },
-  {
-   "term": "ANN",
-   "article_count": 4
-  },
-  {
-   "term": "テレビ",
-   "article_count": 4
+   "term": "熱帯低気圧",
+   "article_count": 17
   },
   {
    "term": "台風",
-   "article_count": 4
+   "article_count": 17
   },
   {
-   "term": "言葉",
-   "article_count": 4
+   "term": "西村",
+   "article_count": 17
   },
   {
-   "term": "兵士",
-   "article_count": 4
+   "term": "家族",
+   "article_count": 17
   },
   {
-   "term": "低下",
-   "article_count": 4
+   "term": "離婚",
+   "article_count": 17
   },
   {
-   "term": "新潮",
-   "article_count": 4
+   "term": "飯塚幸三氏",
+   "article_count": 16
   },
   {
-   "term": "場所",
-   "article_count": 4
+   "term": "死亡",
+   "article_count": 16
   },
   {
-   "term": "熊本地震",
-   "article_count": 3
+   "term": "加害者家族",
+   "article_count": 13
   },
   {
-   "term": "高市首相",
-   "article_count": 3
+   "term": "暴力",
+   "article_count": 13
   },
   {
-   "term": "爆発事故",
-   "article_count": 3
+   "term": "激怒",
+   "article_count": 13
   },
   {
-   "term": "気象庁",
-   "article_count": 3
+   "term": "父親",
+   "article_count": 13
   },
   {
-   "term": "海軍兵",
-   "article_count": 3
+   "term": "川遊",
+   "article_count": 13
   },
   {
-   "term": "復員兵",
-   "article_count": 3
+   "term": "シミュレーション",
+   "article_count": 12
   },
   {
-   "term": "朝日系",
-   "article_count": 3
+   "term": "習近平国家主席",
+   "article_count": 12
   },
   {
-   "term": "警戒",
-   "article_count": 3
+   "term": "暴走事故",
+   "article_count": 12
   },
   {
-   "term": "判断",
-   "article_count": 3
+   "term": "池袋",
+   "article_count": 12
   },
   {
-   "term": "男性",
-   "article_count": 3
+   "term": "信頼関係",
+   "article_count": 11
+  },
+  {
+   "term": "誕生日会",
+   "article_count": 10
+  },
+  {
+   "term": "息子",
+   "article_count": 10
+  },
+  {
+   "term": "オンライン",
+   "article_count": 9
+  },
+  {
+   "term": "テレビ",
+   "article_count": 9
+  },
+  {
+   "term": "ダブル",
+   "article_count": 9
+  },
+  {
+   "term": "夫婦",
+   "article_count": 9
   },
   {
    "term": "文春",
-   "article_count": 3
+   "article_count": 9
   },
   {
-   "term": "準備",
-   "article_count": 3
+   "term": "森喜朗元首相",
+   "article_count": 8
+  },
+  {
+   "term": "高市議員",
+   "article_count": 8
+  },
+  {
+   "term": "小学生",
+   "article_count": 8
+  },
+  {
+   "term": "進路",
+   "article_count": 8
+  },
+  {
+   "term": "新党",
+   "article_count": 7
+  },
+  {
+   "term": "提示",
+   "article_count": 7
+  },
+  {
+   "term": "プレジデントオンライン",
+   "article_count": 6
+  },
+  {
+   "term": "ニュース",
+   "article_count": 6
+  },
+  {
+   "term": "車椅子",
+   "article_count": 6
+  },
+  {
+   "term": "予報",
+   "article_count": 6
   }
  ],
  "total": 40,
@@ -335,5 +325,5 @@
    "last_error": ""
   }
  ],
- "generated_at": "2026-08-07T21:37:01.260254+00:00"
+ "generated_at": "2026-08-08T21:36:57.434216+00:00"
 }
