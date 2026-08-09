@@ -11,7 +11,12 @@
   max-width: 40em;
   margin: 0 auto;
   padding: 0 var(--space-4) var(--space-8);
-  font-family: "Hiragino Mincho ProN", "Yu Mincho", "MS Mincho", serif;
+  /* 本文は読みやすさ優先でゴシック体をやや太め(W5)に組む。
+     細い明朝は画面では掠れて読みにくい。新聞らしさは題字（明朝のまま）と
+     罫線・両端揃えで出す */
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Yu Gothic Medium", system-ui, sans-serif;
+  font-weight: 500;
 }
 
 /* ===== 題字 ===== */
@@ -46,6 +51,8 @@
   margin: 0;
   padding: 0.28em 0 0.2em;
   text-align: center;
+  /* 題字だけは明朝。新聞の顔なので残す */
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "MS Mincho", serif;
   font-size: 2.75em;
   font-weight: 600;
   line-height: 1;
@@ -225,7 +232,7 @@
   padding: 0.4em 0;
   color: var(--ink-2);
   text-decoration: none;
-  font-size: 0.75em;
+  font-size: 0.8125em;
   line-height: 1.45;
   -webkit-tap-highlight-color: transparent;
 }

@@ -173,19 +173,19 @@
    "article_count": 17
   },
   {
-   "term": "西村",
-   "article_count": 17
-  },
-  {
-   "term": "台風",
-   "article_count": 17
-  },
-  {
    "term": "家族",
    "article_count": 17
   },
   {
    "term": "離婚",
+   "article_count": 17
+  },
+  {
+   "term": "西村",
+   "article_count": 17
+  },
+  {
+   "term": "台風",
    "article_count": 17
   },
   {
@@ -201,7 +201,11 @@
    "article_count": 13
   },
   {
-   "term": "暴力",
+   "term": "父親",
+   "article_count": 13
+  },
+  {
+   "term": "川遊",
    "article_count": 13
   },
   {
@@ -209,11 +213,7 @@
    "article_count": 13
   },
   {
-   "term": "父親",
-   "article_count": 13
-  },
-  {
-   "term": "川遊",
+   "term": "暴力",
    "article_count": 13
   },
   {
@@ -257,11 +257,11 @@
    "article_count": 9
   },
   {
-   "term": "文春",
+   "term": "夫婦",
    "article_count": 9
   },
   {
-   "term": "夫婦",
+   "term": "文春",
    "article_count": 9
   },
   {
@@ -345,5 +345,5 @@
    "last_error": ""
   }
  ],
- "generated_at": "2026-08-09T16:29:20.402366+00:00"
+ "generated_at": "2026-08-09T17:57:21.605038+00:00"
 }
