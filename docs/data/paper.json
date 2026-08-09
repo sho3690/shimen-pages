@@ -1,315 +1,399 @@
 {
  "digest": [
   {
-   "field": "気象",
-   "text": "各地で災害が相次いでいます。台風13号の影響により東海地方では家族で川遊び中に40代男性が溺死する事故が発生し、影響は長期化しています。また、気象庁は9日にも新たな熱帯低気圧が日本の南に2つ同時に発生する可能性を予想しており、台風15号も西進中です。岩手県沖ではマグニチュード5.6の地震が発生し、普代村で震度4を観測しました。",
+   "field": "台風",
+   "text": "11日に東北南部から関東地方に接近・上陸する可能性が高い台風15号の影響で、お盆休みの交通機関への影響が懸念されています。最大瞬間風速25m/sと予想される台風15号は、現在中心気圧990ヘクトパスカルです。また、小笠原近海を東に進む台風16号（ペイロー）も、最大瞬間風速30m/sで、20日(木)までの雨・風シミュレーションで注意が必要です。",
    "sources": [
     {
-     "title": "各地襲う“猛烈な雨” 影響長引く台風13号(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/9102ccbecc3c391366f4a00c202353fb5e22f79a?source=rss",
+     "title": "台風15号は11日に東北南部～関東に接近・上陸のおそれ お盆休みの交通にも影響(tenki.jp)",
+     "url": "https://news.yahoo.co.jp/articles/7fde50c0021be752fde075c1221103c069ca3c16?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "岩手・普代村で震度4 M5.6(共同通信)",
-     "url": "https://news.yahoo.co.jp/articles/9b173554fe27a925a2a79fd0baa2f8a1b12e4efd?source=rss",
+     "title": "【台風情報】最大瞬間風速25m/s 、998 hPa「台風16号（ペイロー）」小笠原近海を東進中...今後の進路は?20日（木）までの雨・風シミュレーション【気象庁10日午前4時15分発表】(RSK山陽放送)",
+     "url": "https://news.yahoo.co.jp/articles/b302dc137d9706ac932c45dea72839d536c35125?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "【速報】岩手県で震度4 北海道から福島県の広い範囲で揺れ 新幹線に影響なし(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/409d7ddeb619e04625479b9cc388416a09f34164?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "岩手県沖でM5.6の地震 岩手・普代村で震度4 津波の心配なし - ウェザーニュース",
-     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBXZW1veG5sd2dMcWtlRTBrVXN4STJCTjUtWmg2TWF0LWdPbFJnMWR6dVJQRV95QnhqNlhuVVFmSkJHd1pmVlhMcnlFQUxRQnZYZDFLcklMN1pORW8?oc=5",
-     "feed_title": "トップニュース - Google ニュース"
-    }
-   ]
-  },
-  {
-   "field": "原発",
-   "text": "関西電力の大飯原発3号機が、発電機内に磁界発生させる装置に異常の警報が出たため、本日午前9時40分頃に自動停止しました。検査の結果、放射能漏れは確認されておらず、原因の特定と復旧作業が行われています。この影響により、電力供給に支障が出る可能性があり、今後の動向が注目されます。",
-   "sources": [
-    {
-     "title": "大飯原発３号機が自動停止、発電機内に磁界発生させる装置に異常の警報…周辺への放射能の影響なし - 読売新聞",
-     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB4c1hUQlVkUnpVQl9iYWRVOVdwbnd2Ym9hNzZ5ekFKY1JCcURvTG1ta1JqS2VNM01ObkRZS1pKV0V5V2NZQUxKUW9NbTZOVWFFQzdxNjVpbTNtTVJHWDBaM1Z4UFQ5QQ?oc=5",
-     "feed_title": "トップニュース - Google ニュース"
-    },
-    {
-     "title": "【速報】関西電力・大飯原発３号機が自動停止 発電機に関連する機器で警報「放射能漏れはなし」と発表(読売テレビ)",
-     "url": "https://news.yahoo.co.jp/articles/b9ca4554e8e8d493f41fc8d853bba9f6485e3ce6?source=rss",
+     "title": "【台風情報】最大瞬間風速30 m/s、990 hPa「台風15号（チャンホン）」12日に北陸地方に接近予想...今後の進路は?20日（木）までの雨・風シミュレーション【気象庁10日午前4時発表】(RSK山陽放送)",
+     "url": "https://news.yahoo.co.jp/articles/00d63acb2f42fdb6fd55b9d5e593c0000062d9e2?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
-   "field": "事故",
-   "text": "東武東上線で人身事故が発生し、一部区間で運転が見合わせられています。また、愛知県東栄町では40歳の父親が息子を川から助けようとした際、自身も溺死するという痛ましい事故がありました。さらに、東京・大田区で3階建てビルが火事となり、高齢女性1人が死亡し、2名が怪我をしています。",
+   "field": "皇室",
+   "text": "細川護熙元首相が「文藝春秋」に寄稿し、高市早苗首相の皇室典範改正に対する態度を厳しく批判しました。昭和100年記念式典での高市首相の振る舞いを指摘し、その姿勢について問題点を訴えています。",
    "sources": [
     {
-     "title": "東武東上線で人身事故 一部運転見合わせ(レスキューナウニュース)",
-     "url": "https://news.yahoo.co.jp/articles/afff684db9b416bd196d94eecb5da0a2aa4c1d6a?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "東京・大田区 飲食店など入る3階建てビルで火事 高齢女性1人死亡 2階の住人か 様子を見に行った2人けが(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/2c24b2ffd5d035f0db0133f6a435f270afb6317a?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "川で溺れた息子を助けようとした父親（40）が死亡 息子は救助され無事 愛知・東栄町(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/9363448d11c92f6520feb4b7d20236a2a0d5533e?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "｢織田家の後継者選び｣でも｢秀吉の一人勝ち｣でもない…清洲会議で信長の息子2人が争った\"本当の争点\"(プレジデントオンライン)",
-     "url": "https://news.yahoo.co.jp/articles/ed568d975dcdec3050997838945783ae5ef2e5c3?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "field": "夫婦",
-   "text": "YouTuberのひろゆき氏とタレントの西村ゆか氏の間で離婚問題が浮上しており、「信頼関係が保てない状態で夫婦を続けるのは無理」という状況です。西村氏はひろゆき氏に「いずみ新党（仮）」の設立を知らされなかったことを理由に離婚を提案し、激怒したと報じられています。この問題は、二人の信頼関係の崩壊を示唆しており、今後の展開が注目されます。",
-   "sources": [
-    {
-     "title": "｢織田家の後継者選び｣でも｢秀吉の一人勝ち｣でもない…清洲会議で信長の息子2人が争った\"本当の争点\"(プレジデントオンライン)",
-     "url": "https://news.yahoo.co.jp/articles/ed568d975dcdec3050997838945783ae5ef2e5c3?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "「まるで難民キャンプ」 避難所の劣悪な環境に専門家も「びっくりした」 車中泊にもリスクが 「熱したフライパンに飛び込むようなもの」(デイリー新潮)",
-     "url": "https://news.yahoo.co.jp/articles/c8661e6eb923d4c9bb9b384983494e968d63de50?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "熊本・日奈久温泉の名物「ちくわ」製造再開へ始動(ABEMA TIMES)",
-     "url": "https://news.yahoo.co.jp/articles/82a9766da3c7aadff5fd547bd392178ae2419b6c?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "令和8年8月8日「TOKYOおうえんフェスタ」開催(ABEMA TIMES)",
-     "url": "https://news.yahoo.co.jp/articles/ec2b932788ec1e35a56791f0d084c3eb6823ef06?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "field": "政治",
-   "text": "ひろゆき氏と西村ゆか氏が共同で「ひろゆき＆いずみ新党（仮）」の届け出を行っていることが報じられています。この件を受けて、清洲会議での信長の息子2人の争点に関する記事も公開され、権力闘争を彷彿とさせる状況です。",
-   "sources": [
-    {
-     "title": "｢織田家の後継者選び｣でも｢秀吉の一人勝ち｣でもない…清洲会議で信長の息子2人が争った\"本当の争点\"(プレジデントオンライン)",
-     "url": "https://news.yahoo.co.jp/articles/ed568d975dcdec3050997838945783ae5ef2e5c3?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "ハウステンボスが長崎国際大と包括連携協定、観光人材の育成と地域社会の発展目指す(日刊スポーツ)",
-     "url": "https://news.yahoo.co.jp/articles/2830040f474812be32965dbdeafc9bb5e66ea838?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "「まるで難民キャンプ」 避難所の劣悪な環境に専門家も「びっくりした」 車中泊にもリスクが 「熱したフライパンに飛び込むようなもの」(デイリー新潮)",
-     "url": "https://news.yahoo.co.jp/articles/c8661e6eb923d4c9bb9b384983494e968d63de50?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "〔地震〕岩手県普代村で震度4 津波の心配なし(8/9)(レスキューナウニュース)",
-     "url": "https://news.yahoo.co.jp/articles/ca01467d86f2c59ddc9056abb50bc8e50952064a?source=rss",
+     "title": "皇室典範改正は「だまし討ち」…五摂家筆頭・近衛家の血を引く元首相・細川護熙氏が見た高市首相の「皇室への信じがたい態度」(文春オンライン)",
+     "url": "https://news.yahoo.co.jp/articles/a441064fbdf2fdc8ff861477c51168afe32a93ab?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "経済",
-   "text": "日立レールはイタリアの鉄道グループから新型高速列車19編成を受注し、欧州での事業展開を強化します。また、秋田と宮城のブランド米において、「西高東低」という暑さに強いコメの栽培面積が減少しており、気候変動の影響が農業にも及んでいることが示唆されています。",
+   "text": "元日本銀行副総裁の岩田規久男氏が著書『日本経済の分岐点』の中で、高市早苗政権の経済政策「サナエノミクス」を評価しています。「責任ある積極財政」という特徴を踏まえ、その内容について分析を行っています。",
    "sources": [
     {
-     "title": "日立レール、新型高速列車１９編成をイタリア鉄道グループから受注…「欧州での地位を確固たるものに」 - 読売新聞",
-     "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5taldXQm9meklzOUpYTWJxamhST2tKb09jZGRxdnhTWm9nNnJJc0FXaTFWb2t3bDF6R3FsaXFwX3hxd1g5T3JFN0R0dFhGNmhpSUVIWlEwSmFldTFkU1dmU2s2QXc?oc=5",
-     "feed_title": "トップニュース - Google ニュース"
+     "title": "高市政権「サナエノミクス」の産業政策を批判した元日銀副総裁は、なぜ姿勢を転換したのか？ 岩田規久男・著『日本経済の分岐点』（Bookレビュー）(Book Bang)",
+     "url": "https://news.yahoo.co.jp/articles/3f481e2f518e7b569f71977fc0acf041fcb49b36?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "犯罪",
+   "text": "香港などを拠点とする犯罪組織による金密輸の手口が判明しました。海外で購入した金を“金粉”として下着やラップに隠し、税関の目を欺いて日本へ持ち込む手口です。また、トクリュウと呼ばれる闇バイト窃盗犯グループは、狙う家の内情を探るために盗聴器を使用している疑いがあります。",
+   "sources": [
+    {
+     "title": "下着の中からラップに包まれた大量の“金粉”が…いまだ相次ぐ「金密輸」の知られざる実態(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/71f19df7de817909331128ec80f8294dec6e4fc7?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "暑さに強いコメ「西高東低」 秋田・宮城1割未満、ブランド米が定着 - 日本経済新聞",
-     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE40R1I0SlRkVEs0Y0ZSclFVUWFvZ01Zd3JvV1F2VG5LRlZWSXBycXM3d1BCVGhUeEYxQWU4SG8wTVB0UEdWelVhSGZaQzY1MHI3MU0yeW9RYzM0YWtzMG9FNzlaZHhyeXVOdWhnNQ?oc=5",
-     "feed_title": "トップニュース - Google ニュース"
+     "title": "トクリュウ「闇バイト窃盗犯」は“下見”だけでなく“盗聴”も!? 専門家が明かす「盗聴器が見つかるのはどのお宅でも“同じ場所”です」(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/22c3721fa8eeacc8486a5f7bee67319aacd55adf?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "トクリュウ窃盗団はなぜ“同じ家に何度も侵入”するのか？ 専門家が指摘する“盗聴器”の脅威…どこに仕掛けられたか分からない“盗聴器を一掃する”裏ワザも紹介(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/4aa5e8a7bd564df2d10b332f7b0ef33048ba609b?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "災害",
+   "text": "長野県安曇野市で土石流が発生し、約390人が一時的に孤立しました。仮設の橋が設けられ、登山者らが通行できるようになっています。また、熊本地震では米軍による支援物資の輸送が始まりました。",
+   "sources": [
+    {
+     "title": "土石流で約390人が一時孤立 仮設の橋で登山者ら通行可能に 長野・安曇野市(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/2e159d9033a129174d43d4232aed78351e616e59?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "熊本地震 米軍の支援物資 輸送始まる 飲料水約16tなどが被災地へ(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/bdbac1a8f809fbebc5759714e75966687104b03a?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "社会",
-   "text": "軽井沢では自動運転バスの実証運行が開始され、予約制で1日あたり6便運行されます。ハウステンボスと長崎国際大は包括連携協定を締結し、観光人材の育成と地域社会の発展を目指します。熊本地震による断水問題が解消に向かっている一方、避難所生活を送っていた人々にとって、二次避難の課題が浮上しています。",
+   "text": "死刑囚の執行が停滞しており、確定した死刑囚は今年4月時点で101名に上っています。2013年に公開された元受刑者の証言に基づき、東京拘置所の死刑囚たちの獄中生活を詳述する記事も公開されています。",
    "sources": [
     {
-     "title": "熊本地震 断水解消で近づく“日常” 「二次避難」に新たな課題も(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/76e6bc0566951b4dbf0c427c674c0b49c4aa0df3?source=rss",
+     "title": "「目ん玉くり抜くぞ！」と脅し、独居房は「写真集」まみれ…凶悪死刑囚たちの知られざる「獄中生活」 身の回りの世話をした元受刑者が証言(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/a97a6b0f6091532dd255c9951211981b6fad7d60?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "ハウステンボスが長崎国際大と包括連携協定、観光人材の育成と地域社会の発展目指す(日刊スポーツ)",
-     "url": "https://news.yahoo.co.jp/articles/2830040f474812be32965dbdeafc9bb5e66ea838?source=rss",
+     "title": "「死刑執行の朝は、怒号が飛び交い、警報機が鳴り響き…」 凶悪死刑囚たちの獄中生活を、身の回りの世話をした元受刑者が明かす(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/09de5018848567fec851e145b4f37fbc2304f82f?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "軽井沢で自動運転バスの実証運行、予約制で１日あたり６便 ９月６日から実施(日刊スポーツ)",
-     "url": "https://news.yahoo.co.jp/articles/98c129d205cface35c8e2c15e9b31a12690c0fcc?source=rss",
+     "title": "トクリュウ窃盗団はなぜ“同じ家に何度も侵入”するのか？ 専門家が指摘する“盗聴器”の脅威…どこに仕掛けられたか分からない“盗聴器を一掃する”裏ワザも紹介(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/4aa5e8a7bd564df2d10b332f7b0ef33048ba609b?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "土石流で約390人が一時孤立 仮設の橋で登山者ら通行可能に 長野・安曇野市(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/2e159d9033a129174d43d4232aed78351e616e59?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "教育",
+   "text": "東京都北区の滝野川第三小学校で火災が発生し、児童20名と教職員9名が負傷しました。今回の火災は過去10年間における都内の学校火災としては異例の規模であり、安全点検の行き届かなさが原因である可能性も指摘されています。",
+   "sources": [
+    {
+     "title": "東京都北区の小学校火災は教員だけの問題ではない！行き届かなかった安全点検、その理由とは？(Wedge（ウェッジ）)",
+     "url": "https://news.yahoo.co.jp/articles/0b620a26cf70763cbfca4596838cbb951208d34a?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "土石流で約390人が一時孤立 仮設の橋で登山者ら通行可能に 長野・安曇野市(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/2e159d9033a129174d43d4232aed78351e616e59?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "動物",
+   "text": "上野動物園でレッサーパンダを撮影している高氏貴博さんが、ブログ「毎日パンダ」でカリンとルカの日常を発信しています。また、盛岡市動物公園ZOOMOでは、ピューマのかぞくに関するフォトブックが発売され、反響を呼んでいます。",
+   "sources": [
+    {
+     "title": "2匹を見分けるポイントは顔の模様？ カリンとルカ、それぞれの特徴とは(朝日新聞デジタルマガジン＆［and］)",
+     "url": "https://news.yahoo.co.jp/articles/f1a56e5b743b90b529c7b69e5952b82f90ee99b6?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "盛岡市動物公園「ピューマのかぞく」飼育係の「正しく伝えたい」SNS発信からフォトブックに(日刊スポーツ)",
+     "url": "https://news.yahoo.co.jp/articles/9dc010de16e5a7ff19d526b96efa31c83689bd2f?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "その他",
+   "text": "",
+   "sources": []
+  },
+  {
+   "field": "",
+   "text": "大阪税関が神戸市の清盛商事ら3社による消費税不正還付の手口を摘発し、約1億円1000万円の追徴課税を行いました。",
+   "sources": [
+    {
+     "title": "大阪税関が見つけた中国向け「ニセiPhone」は消費税不正還付の道具だった〈背後に大がかりな偽造グループか〉(文春オンライン)",
+     "url": "https://news.yahoo.co.jp/articles/40425d45ea428605a6ecefa74958df7a6cddaaf9?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "",
+   "text": "新潟県燕市に跡地を残す私鉄の廃線跡を巡る調査が行われました。",
+   "sources": [
+    {
+     "title": "「草まみれの空き地にレール跡が…」「さみしげに残る鉄橋」新潟のど真ん中にあったターミナル駅は今…27年前に消えた“ローカル私鉄”廃線跡には何がある？(文春オンライン)",
+     "url": "https://news.yahoo.co.jp/articles/01ed95b31fa26d26b50f823462124f1c067349ef?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "",
+   "text": "「飛鳥・藤原の宮都」が世界文化遺産に登録され、古墳を巡る旅が新たなブームとなっています。",
+   "sources": [
+    {
+     "title": "「飛鳥・藤原の宮都」世界遺産登録で、\"御墳印（ごふんいん）\"ブームがやってくる!!(週プレNEWS)",
+     "url": "https://news.yahoo.co.jp/articles/d94eab79f5d9974ee0dff4daee6c7886b6ba19be?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "",
+   "text": "iOS 27の正式版リリース日が9月14日に予定されています。",
+   "sources": [
+    {
+     "title": "iOS 27正式版、9月14日リリースか：アップル、Siri AIと安定性向上で巻き返し図る - BigGo ファイナンス",
+     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFA3U3pWWVZDSmNBMF84bjktZ3NzVk1VSnJmcWQ5NV82aE5xdVlhbWU5Rmxsa2tCNlJhRTNKMEhtWnhPbXBqNTdOcFdEbk9xMWV5UUlLM3NrM0xCaDE4eDdEeGZWUjIyZ01YZnZqdEFtVXlYTUF1?oc=5",
+     "feed_title": "トップニュース - Google ニュース"
+    }
+   ]
+  },
+  {
+   "field": "",
+   "text": "日向坂46の正源司陽子が、シングル「イチャイチャ虫」で6作ぶりにセンターを務めることが発表されました。",
+   "sources": [
+    {
+     "title": "日向坂46正源司陽子、6作ぶりセンターに決定 平岡海月&佐藤優羽が初選抜【「イチャイチャ虫」フォーメーション一覧】 - oricon.co.jp",
+     "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0xT3ZsUFJSTF9IUVpySEFxRjBSR2dxbEk5YkFYT3VuR2JfM2c4eTdnUTluQk53TVlGN2JQNXpzNHBYMnZnRG0taElXcmt4dDQ2VUhXQTd3?oc=5",
+     "feed_title": "トップニュース - Google ニュース"
+    }
+   ]
+  },
+  {
+   "field": "",
+   "text": "和歌山市長選で新人候補者である尾崎太郎氏が初当選を果たしました。",
+   "sources": [
+    {
+     "title": "「たくさんの笑顔で和歌山市を元気に」 和歌山市長選 新人・尾崎太郎氏が初当選(読売テレビ)",
+     "url": "https://news.yahoo.co.jp/articles/4ba265c73fef17b7c6ddf65ec166afeb481ca10b?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "",
+   "text": "滋賀県北部でM4.4の地震が発生し、岐阜県と滋賀県では震度3を観測しました。",
+   "sources": [
+    {
+     "title": "滋賀県北部でM4.4の地震 岐阜県と滋賀県で震度3 津波の心配なし - ウェザーニュース",
+     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE55ZFNfMkR5WnJ5Y1hNVXJ5VDNQRW1McnZDVUI2SGc3b1NqbzhoRGhXaWZzOGdMbW83bUMzY2Z5LU1zdkZkaVRUdVE1UXktZVNTdGZMNDlmbkZfYzg?oc=5",
+     "feed_title": "トップニュース - Google ニュース"
+    }
+   ]
+  },
+  {
+   "field": "",
+   "text": "大谷翔平選手がロサンゼルス・ドジャースの一番打者兼リリーフとして対戦するロサンゼルス・エンゼルス・オブ・アナハイム戦に出場しました。",
+   "sources": [
+    {
+     "title": "大谷翔平「１番DH」でＤバックス戦 ３試合ぶり27号出るか／速報中 - 日刊スポーツ",
+     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBiSzdRM0NxbWFNa3lMeWU1eEFYSlF1dmpURzhmSXNwa0lfWnA3Mk1DZkVZSS1mRFBTNm96T3Jub0d6OUJIUWZmWTV6X2tmbi1KZC1BYkJScDRWSDVHOC1oSzh2bkxBM1dwTzZaTVdVNXc0Y3pWZmc?oc=5",
+     "feed_title": "トップニュース - Google ニュース"
+    }
+   ]
+  },
+  {
+   "field": "",
+   "text": "中高生7割がヤングケアラーの経験があることが、子ども家庭庁の調査で明らかになりました。",
+   "sources": [
+    {
+     "title": "ヤングケアラー認知、中高生7割 こども家庭庁調査、啓発進む(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/0a620c8f1fdd64675e537303c3f986a5d5f524ce?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   }
  ],
- "digest_at": "2026-08-08T21:36:54.951467+00:00",
+ "digest_at": "2026-08-09T21:38:23.227252+00:00",
  "topics": [
   {
-   "term": "気象庁",
-   "article_count": 19
+   "term": "東京",
+   "article_count": 10
+  },
+  {
+   "term": "生活",
+   "article_count": 9
+  },
+  {
+   "term": "元受刑者",
+   "article_count": 7
+  },
+  {
+   "term": "獄中生活",
+   "article_count": 7
+  },
+  {
+   "term": "死刑囚",
+   "article_count": 7
+  },
+  {
+   "term": "万円",
+   "article_count": 7
+  },
+  {
+   "term": "証言",
+   "article_count": 7
+  },
+  {
+   "term": "高市早苗首相",
+   "article_count": 6
+  },
+  {
+   "term": "東京都北区",
+   "article_count": 6
+  },
+  {
+   "term": "タイプ",
+   "article_count": 6
+  },
+  {
+   "term": "写真",
+   "article_count": 6
+  },
+  {
+   "term": "世話",
+   "article_count": 6
   },
   {
    "term": "事故",
-   "article_count": 18
+   "article_count": 6
   },
   {
-   "term": "熱帯低気圧",
-   "article_count": 17
-  },
-  {
-   "term": "家族",
-   "article_count": 17
-  },
-  {
-   "term": "離婚",
-   "article_count": 17
-  },
-  {
-   "term": "西村",
-   "article_count": 17
-  },
-  {
-   "term": "台風",
-   "article_count": 17
-  },
-  {
-   "term": "飯塚幸三氏",
-   "article_count": 16
-  },
-  {
-   "term": "死亡",
-   "article_count": 16
-  },
-  {
-   "term": "加害者家族",
-   "article_count": 13
-  },
-  {
-   "term": "父親",
-   "article_count": 13
-  },
-  {
-   "term": "川遊",
-   "article_count": 13
-  },
-  {
-   "term": "激怒",
-   "article_count": 13
-  },
-  {
-   "term": "暴力",
-   "article_count": 13
-  },
-  {
-   "term": "シミュレーション",
-   "article_count": 12
-  },
-  {
-   "term": "習近平国家主席",
-   "article_count": 12
-  },
-  {
-   "term": "暴走事故",
-   "article_count": 12
-  },
-  {
-   "term": "池袋",
-   "article_count": 12
-  },
-  {
-   "term": "信頼関係",
-   "article_count": 11
-  },
-  {
-   "term": "誕生日会",
-   "article_count": 10
-  },
-  {
-   "term": "息子",
-   "article_count": 10
+   "term": "イオンモール",
+   "article_count": 5
   },
   {
    "term": "オンライン",
-   "article_count": 9
+   "article_count": 5
+  },
+  {
+   "term": "デイリー",
+   "article_count": 5
+  },
+  {
+   "term": "万円以上",
+   "article_count": 5
+  },
+  {
+   "term": "新公用車",
+   "article_count": 5
+  },
+  {
+   "term": "小学校",
+   "article_count": 5
+  },
+  {
+   "term": "SUV",
+   "article_count": 5
+  },
+  {
+   "term": "様子",
+   "article_count": 5
+  },
+  {
+   "term": "新潮",
+   "article_count": 5
+  },
+  {
+   "term": "親族",
+   "article_count": 5
+  },
+  {
+   "term": "グループ",
+   "article_count": 4
+  },
+  {
+   "term": "安全点検",
+   "article_count": 4
+  },
+  {
+   "term": "日午前",
+   "article_count": 4
+  },
+  {
+   "term": "被害者",
+   "article_count": 4
   },
   {
    "term": "テレビ",
-   "article_count": 9
+   "article_count": 4
   },
   {
-   "term": "ダブル",
-   "article_count": 9
+   "term": "交通",
+   "article_count": 4
   },
   {
-   "term": "夫婦",
-   "article_count": 9
+   "term": "朝日",
+   "article_count": 4
   },
   {
-   "term": "文春",
-   "article_count": 9
+   "term": "凶悪",
+   "article_count": 4
   },
   {
-   "term": "森喜朗元首相",
-   "article_count": 8
+   "term": "慟哭",
+   "article_count": 4
   },
   {
-   "term": "高市議員",
-   "article_count": 8
+   "term": "火災",
+   "article_count": 4
   },
   {
-   "term": "小学生",
-   "article_count": 8
+   "term": "最大瞬間風速",
+   "article_count": 3
   },
   {
-   "term": "進路",
-   "article_count": 8
+   "term": "iPhone",
+   "article_count": 3
   },
   {
-   "term": "新党",
-   "article_count": 7
-  },
-  {
-   "term": "提示",
-   "article_count": 7
-  },
-  {
-   "term": "プレジデントオンライン",
-   "article_count": 6
-  },
-  {
-   "term": "ニュース",
-   "article_count": 6
-  },
-  {
-   "term": "車椅子",
-   "article_count": 6
-  },
-  {
-   "term": "予報",
-   "article_count": 6
+   "term": "凶悪死刑囚",
+   "article_count": 3
   }
  ],
  "total": 40,
- "readable": 28,
+ "readable": 29,
  "sources": [
   "GIGAZINE",
-  "NHKニュース",
   "国内 - Yahoo!ニュース",
   "トップニュース - Google ニュース"
  ],
@@ -345,5 +429,5 @@
    "last_error": ""
   }
  ],
- "generated_at": "2026-08-09T17:57:21.605038+00:00"
+ "generated_at": "2026-08-09T21:38:24.801390+00:00"
 }
