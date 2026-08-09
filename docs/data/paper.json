@@ -18,6 +18,11 @@
      "title": "【速報】岩手県で震度4 北海道から福島県の広い範囲で揺れ 新幹線に影響なし(テレビ朝日系（ANN）)",
      "url": "https://news.yahoo.co.jp/articles/409d7ddeb619e04625479b9cc388416a09f34164?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "岩手県沖でM5.6の地震 岩手・普代村で震度4 津波の心配なし - ウェザーニュース",
+     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBXZW1veG5sd2dMcWtlRTBrVXN4STJCTjUtWmg2TWF0LWdPbFJnMWR6dVJQRV95QnhqNlhuVVFmSkJHd1pmVlhMcnlFQUxRQnZYZDFLcklMN1pORW8?oc=5",
+     "feed_title": "トップニュース - Google ニュース"
     }
    ]
   },
@@ -55,6 +60,11 @@
      "title": "川で溺れた息子を助けようとした父親（40）が死亡 息子は救助され無事 愛知・東栄町(テレビ朝日系（ANN）)",
      "url": "https://news.yahoo.co.jp/articles/9363448d11c92f6520feb4b7d20236a2a0d5533e?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "｢織田家の後継者選び｣でも｢秀吉の一人勝ち｣でもない…清洲会議で信長の息子2人が争った\"本当の争点\"(プレジデントオンライン)",
+     "url": "https://news.yahoo.co.jp/articles/ed568d975dcdec3050997838945783ae5ef2e5c3?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
@@ -76,6 +86,11 @@
      "title": "熊本・日奈久温泉の名物「ちくわ」製造再開へ始動(ABEMA TIMES)",
      "url": "https://news.yahoo.co.jp/articles/82a9766da3c7aadff5fd547bd392178ae2419b6c?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "令和8年8月8日「TOKYOおうえんフェスタ」開催(ABEMA TIMES)",
+     "url": "https://news.yahoo.co.jp/articles/ec2b932788ec1e35a56791f0d084c3eb6823ef06?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
@@ -96,6 +111,11 @@
     {
      "title": "「まるで難民キャンプ」 避難所の劣悪な環境に専門家も「びっくりした」 車中泊にもリスクが 「熱したフライパンに飛び込むようなもの」(デイリー新潮)",
      "url": "https://news.yahoo.co.jp/articles/c8661e6eb923d4c9bb9b384983494e968d63de50?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "〔地震〕岩手県普代村で震度4 津波の心配なし(8/9)(レスキューナウニュース)",
+     "url": "https://news.yahoo.co.jp/articles/ca01467d86f2c59ddc9056abb50bc8e50952064a?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
@@ -153,11 +173,11 @@
    "article_count": 17
   },
   {
-   "term": "台風",
+   "term": "西村",
    "article_count": 17
   },
   {
-   "term": "西村",
+   "term": "台風",
    "article_count": 17
   },
   {
@@ -237,11 +257,11 @@
    "article_count": 9
   },
   {
-   "term": "夫婦",
+   "term": "文春",
    "article_count": 9
   },
   {
-   "term": "文春",
+   "term": "夫婦",
    "article_count": 9
   },
   {
@@ -325,5 +345,5 @@
    "last_error": ""
   }
  ],
- "generated_at": "2026-08-08T21:36:57.434216+00:00"
+ "generated_at": "2026-08-09T16:29:20.402366+00:00"
 }

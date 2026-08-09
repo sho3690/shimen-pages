@@ -218,6 +218,41 @@
     buildBtn.addEventListener("click", startBuild);
   }
 
+  /* 紙面の色（白/黒）。ふだんはOSの設定に従い、ボタンで選んだら
+     その色を覚える（このブラウザの中だけに保存。外部には送らない）。 */
+  const themeBtn = document.getElementById("toggle-theme");
+  const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+  function currentTheme() {
+    const chosen = document.documentElement.dataset.theme;
+    if (chosen === "light" || chosen === "dark") return chosen;
+    return darkQuery.matches ? "dark" : "light";
+  }
+
+  function refreshTheme() {
+    themeBtn.textContent =
+      currentTheme() === "dark" ? "白い紙面にする" : "黒い紙面にする";
+    // iOSのステータスバーの色も紙面に合わせる
+    const bar = currentTheme() === "dark" ? "#0d0d0f" : "#fffdf8";
+    [].forEach.call(
+      document.querySelectorAll('meta[name="theme-color"]'),
+      function (meta) { meta.content = bar; }
+    );
+  }
+
+  themeBtn.addEventListener("click", function () {
+    const next = currentTheme() === "dark" ? "light" : "dark";
+    document.documentElement.dataset.theme = next;
+    try { localStorage.setItem("shimen-theme", next); } catch (e) {}
+    refreshTheme();
+  });
+
+  // OS側の設定が変わったとき、ボタンの文言を追従させる
+  if (darkQuery.addEventListener) {
+    darkQuery.addEventListener("change", refreshTheme);
+  }
+  refreshTheme();
+
   document.getElementById("open-settings").addEventListener("click", function () {
     settingsEl.hidden = false;
     loadFeeds();

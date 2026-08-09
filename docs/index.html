@@ -8,6 +8,15 @@
   <meta name="apple-mobile-web-app-title" content="紙面">
   <meta name="theme-color" content="#fffdf8" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0d0d0f" media="(prefers-color-scheme: dark)">
+  <script>
+    /* 保存された紙面の色（白/黒）を、描画前に適用する。後から当てるとちらつく */
+    (function () {
+      try {
+        var t = localStorage.getItem("shimen-theme");
+        if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    })();
+  </script>
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="apple-touch-icon" href="./icons/icon-180.png">
   <link rel="stylesheet" href="./css/hig.css">
@@ -34,6 +43,7 @@
 
   <div class="paper-foot">
     <button id="open-settings" class="btn btn--quiet" type="button">フィードを見る</button>
+    <button id="toggle-theme" class="btn btn--quiet" type="button">紙面の色を切り替える</button>
   </div>
 
   <footer id="wifi" class="footnote"></footer>

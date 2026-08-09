@@ -141,6 +141,7 @@
 
   function layoutCloud(box, list) {
     var W = box.clientWidth;
+    var H = box.clientHeight;   // 枠はCSSで固定。中身をこの高さに収める
     if (W < 80) {   // まだレイアウトされていない。次の描画で再挑戦
       requestAnimationFrame(function () { layoutCloud(box, list); });
       return;
@@ -177,12 +178,14 @@
       while (tries < 2600) {
         x = W / 2 + r * Math.cos(angle) - w / 2;
         y = r * Math.sin(angle) * 0.6 - h / 2;
-        if (x >= 0 && x + w <= W && !cloudCollides(x, y, w, h, placed)) { ok = true; break; }
+        if (x >= 0 && x + w <= W &&
+            y >= -H / 2 && y + h <= H / 2 &&
+            !cloudCollides(x, y, w, h, placed)) { ok = true; break; }
         angle += 0.4;
         r += 1.0;
         tries++;
       }
-      if (!ok) return;   // 置き切れない語は諦める（幅が極端に狭いときだけ）
+      if (!ok) return;   // 固定枠に入り切らない語は省く（小さい語から諦める）
 
       placed.push({ x: x, y: y, w: w, h: h });
       if (y < minY) minY = y;
@@ -196,12 +199,12 @@
       box.appendChild(node);
     });
 
-    // 置き終わってから全体を上端に寄せ、箱の高さを内容に合わせる
-    var shift = -minY;
+    // 置き終わってから、固定枠の縦中央に寄せる。枠の高さは変えない
+    if (!placed.length) return;
+    var shift = (H - (maxY - minY)) / 2 - minY;
     [].forEach.call(box.children, function (node) {
       node.style.top = (parseFloat(node.dataset.top) + shift).toFixed(1) + "px";
     });
-    box.style.height = Math.ceil(maxY - minY) + "px";
   }
 
   var relayoutTimer = null;

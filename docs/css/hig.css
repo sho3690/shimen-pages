@@ -32,8 +32,12 @@
   --tap: 2.75rem;            /* 44pt */
 }
 
+/* 黒い紙面。OSの設定に従うときと、画面のボタンで選んだとき
+   （html[data-theme]）の両方で同じ配色にする。
+   トークンを変えるときは、下の2ブロックを同時に直すこと。 */
+
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --paper: #0d0d0f;        /* 黒い紙に白インク */
     --surface: #1c1c1e;
     --surface-2: #17171a;   /* 紙より僅かに明るく。暗くすると穴に見える */
@@ -48,6 +52,25 @@
     --warn-ink: #ffd88a;
   }
 }
+
+:root[data-theme="dark"] {
+  --paper: #0d0d0f;
+  --surface: #1c1c1e;
+  --surface-2: #17171a;
+  --ink: #ece9e3;
+  --ink-2: #c4c1bb;
+  --ink-3: #a5a29c;
+  --rule: rgba(235, 235, 245, 0.2);
+  --rule-strong: rgba(235, 235, 245, 0.38);
+  --accent: #6cb4ff;
+  --danger: #ff6961;
+  --warn-bg: #2a2113;
+  --warn-ink: #ffd88a;
+}
+
+/* 選択中は、セレクト等のOS部品の色も紙面に合わせる */
+:root[data-theme="light"] { color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; }
 
 * { box-sizing: border-box; }
 
@@ -145,11 +168,16 @@ body {
 .btn--danger { background: transparent; color: var(--danger); }
 
 @media (prefers-color-scheme: dark) {
-  .btn { color: #06121f; }      /* 明るい青地には濃い文字 */
-  .btn--quiet, .btn--danger { color: var(--accent); }
-  .btn--danger { color: var(--danger); }
-  .btn:disabled { color: var(--ink-3); }
+  :root:not([data-theme="light"]) .btn { color: #06121f; }  /* 明るい青地には濃い文字 */
+  :root:not([data-theme="light"]) .btn--quiet { color: var(--accent); }
+  :root:not([data-theme="light"]) .btn--danger { color: var(--danger); }
+  :root:not([data-theme="light"]) .btn:disabled { color: var(--ink-3); }
 }
+
+:root[data-theme="dark"] .btn { color: #06121f; }
+:root[data-theme="dark"] .btn--quiet { color: var(--accent); }
+:root[data-theme="dark"] .btn--danger { color: var(--danger); }
+:root[data-theme="dark"] .btn:disabled { color: var(--ink-3); }
 
 @media (prefers-reduced-motion: reduce) {
   .btn { transition: opacity 100ms ease; }
@@ -331,6 +359,8 @@ body {
 .paper-foot {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-2);
   padding: 0 var(--space-4);
 }
 
