@@ -1,408 +1,350 @@
 {
  "digest": [
   {
-   "field": "台風",
-   "text": "11日に東北南部から関東地方に接近・上陸する可能性が高い台風15号の影響で、お盆休みの交通機関への影響が懸念されています。最大瞬間風速25m/sと予想される台風15号は、現在中心気圧990ヘクトパスカルです。また、小笠原近海を東に進む台風16号（ペイロー）も、最大瞬間風速30m/sで、20日(木)までの雨・風シミュレーションで注意が必要です。",
+   "field": "気象",
+   "text": "台風15号が関東甲信地方に接近し、11日に上陸のおそれがある。最大瞬間風速は35m/sと予想され、強い風雨による交通乱れに警戒が必要だ。また、台風16号も南鳥島近海で発達しており、今後の進路が注目される。8月16日から24日には、日本全国で猛暑となる可能性があり、特に関東甲信地方、近畿、東海など広い範囲で記録的な高温となることが予想されている。鹿児島県種子島ではH3ロケット9号機が打ち上げられ、準天頂衛星「みちびき7号機」を軌道投入した。",
    "sources": [
     {
-     "title": "台風15号は11日に東北南部～関東に接近・上陸のおそれ お盆休みの交通にも影響(tenki.jp)",
-     "url": "https://news.yahoo.co.jp/articles/7fde50c0021be752fde075c1221103c069ca3c16?source=rss",
+     "title": "「この時期としては10年に一度程度しか起きないような著しい高温」になる可能性…8月16日〜24日 気象庁が「高温に関する早期天候情報」発表【関東甲信、近畿、東海、北陸、中国、四国、九州、東北、北海道】(MBC南日本放送)",
+     "url": "https://news.yahoo.co.jp/articles/1e56b720442efd617328e1c0c9b5a14427509ab1?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "【台風情報】最大瞬間風速25m/s 、998 hPa「台風16号（ペイロー）」小笠原近海を東進中...今後の進路は?20日（木）までの雨・風シミュレーション【気象庁10日午前4時15分発表】(RSK山陽放送)",
-     "url": "https://news.yahoo.co.jp/articles/b302dc137d9706ac932c45dea72839d536c35125?source=rss",
+     "title": "【異例】迷走台風15号がお盆休みの首都圏に直撃 11日は風雨強まり交通乱れに注意(tenki.jp)",
+     "url": "https://news.yahoo.co.jp/articles/c2442d1e4f56de665b0f3b51b46bdf813be46304?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "【台風情報】最大瞬間風速30 m/s、990 hPa「台風15号（チャンホン）」12日に北陸地方に接近予想...今後の進路は?20日（木）までの雨・風シミュレーション【気象庁10日午前4時発表】(RSK山陽放送)",
-     "url": "https://news.yahoo.co.jp/articles/00d63acb2f42fdb6fd55b9d5e593c0000062d9e2?source=rss",
+     "title": "H3ロケット9号機、打ち上げ成功 準天頂衛星「みちびき7号機」を軌道投入(Yahoo!ニュース オリジナル THE PAGE)",
+     "url": "https://news.yahoo.co.jp/articles/94185330a327fd564d9b80d6d7523db4667a5600?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "【台風情報】最大瞬間風速35m/s、985hPa「台風15号（チャンホン）」関東に上陸のおそれ、お盆の列島横断か...今後の進路は?13日（木）までの雨・風シミュレーション【気象庁11日午前3時45分発表】(RSK山陽放送)",
+     "url": "https://news.yahoo.co.jp/articles/5e7e2220b57753212701c6c764d0a786c030a6aa?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
-   "field": "皇室",
-   "text": "細川護熙元首相が「文藝春秋」に寄稿し、高市早苗首相の皇室典範改正に対する態度を厳しく批判しました。昭和100年記念式典での高市首相の振る舞いを指摘し、その姿勢について問題点を訴えています。",
+   "field": "政治",
+   "text": "高市首相が被爆者団体の会長と面会する姿がSNSで拡散され、批判を浴びている。この件を受け、高市首相は被爆者団体との面会で話を聞くなどしていた。また、イラン最高指導者ハメネイ師が、先月の米・イスラエルによる攻撃で死亡した参謀総長らの後任として軍および革命防衛隊の要職に新たな人物を任命した。",
    "sources": [
     {
-     "title": "皇室典範改正は「だまし討ち」…五摂家筆頭・近衛家の血を引く元首相・細川護熙氏が見た高市首相の「皇室への信じがたい態度」(文春オンライン)",
-     "url": "https://news.yahoo.co.jp/articles/a441064fbdf2fdc8ff861477c51168afe32a93ab?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "field": "経済",
-   "text": "元日本銀行副総裁の岩田規久男氏が著書『日本経済の分岐点』の中で、高市早苗政権の経済政策「サナエノミクス」を評価しています。「責任ある積極財政」という特徴を踏まえ、その内容について分析を行っています。",
-   "sources": [
+     "title": "イラン最高指導者ハメネイ師、米・イスラエルの攻撃で殺害された参謀総長らの後任６人を任命 - 読売新聞",
+     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1KUlhOci1fM212dV9xYU55eDQtdVcxckVkeVViMjhRVDBkTXVVeUdHRUtDOTZqc3pUXzVMa1F2YnJ4ZXBOR3RoMjhmcTIxei1heU16ZHNXMlBFT2pVMF9yWlZB?oc=5",
+     "feed_title": "トップニュース - Google ニュース"
+    },
     {
-     "title": "高市政権「サナエノミクス」の産業政策を批判した元日銀副総裁は、なぜ姿勢を転換したのか？ 岩田規久男・著『日本経済の分岐点』（Bookレビュー）(Book Bang)",
-     "url": "https://news.yahoo.co.jp/articles/3f481e2f518e7b569f71977fc0acf041fcb49b36?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "field": "犯罪",
-   "text": "香港などを拠点とする犯罪組織による金密輸の手口が判明しました。海外で購入した金を“金粉”として下着やラップに隠し、税関の目を欺いて日本へ持ち込む手口です。また、トクリュウと呼ばれる闇バイト窃盗犯グループは、狙う家の内情を探るために盗聴器を使用している疑いがあります。",
-   "sources": [
-    {
-     "title": "下着の中からラップに包まれた大量の“金粉”が…いまだ相次ぐ「金密輸」の知られざる実態(デイリー新潮)",
-     "url": "https://news.yahoo.co.jp/articles/71f19df7de817909331128ec80f8294dec6e4fc7?source=rss",
+     "title": "「死んでよかった、ゴミが消えた」SNSの罵詈雑言 未解決事件の絶望と闘った家族の執念「将太行ってくるぞ」遺影に誓い続けた犯人逮捕までの11年【男子高校生刺殺事件/連載第3話】(RSK山陽放送)",
+     "url": "https://news.yahoo.co.jp/articles/2d6a682165417ade47af1e65aa3c1df8ea80ce2e?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "トクリュウ「闇バイト窃盗犯」は“下見”だけでなく“盗聴”も!? 専門家が明かす「盗聴器が見つかるのはどのお宅でも“同じ場所”です」(デイリー新潮)",
-     "url": "https://news.yahoo.co.jp/articles/22c3721fa8eeacc8486a5f7bee67319aacd55adf?source=rss",
+     "title": "みちびき7号機、H3ロケットで打ち上げ(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/2eba8e2c10abba6545bf002b3c82eee3df9c56be?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "トクリュウ窃盗団はなぜ“同じ家に何度も侵入”するのか？ 専門家が指摘する“盗聴器”の脅威…どこに仕掛けられたか分からない“盗聴器を一掃する”裏ワザも紹介(デイリー新潮)",
-     "url": "https://news.yahoo.co.jp/articles/4aa5e8a7bd564df2d10b332f7b0ef33048ba609b?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "field": "災害",
-   "text": "長野県安曇野市で土石流が発生し、約390人が一時的に孤立しました。仮設の橋が設けられ、登山者らが通行できるようになっています。また、熊本地震では米軍による支援物資の輸送が始まりました。",
-   "sources": [
-    {
-     "title": "土石流で約390人が一時孤立 仮設の橋で登山者ら通行可能に 長野・安曇野市(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/2e159d9033a129174d43d4232aed78351e616e59?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "熊本地震 米軍の支援物資 輸送始まる 飲料水約16tなどが被災地へ(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/bdbac1a8f809fbebc5759714e75966687104b03a?source=rss",
+     "title": "そりゃ秀吉が出世するわ…「格上」の柴田勝家を追い抜いた〈根回し力〉がエグすぎた(ダイヤモンド・オンライン)",
+     "url": "https://news.yahoo.co.jp/articles/a0660f383080d7111bf7c73d44c1a89490cdbbb8?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "社会",
-   "text": "死刑囚の執行が停滞しており、確定した死刑囚は今年4月時点で101名に上っています。2013年に公開された元受刑者の証言に基づき、東京拘置所の死刑囚たちの獄中生活を詳述する記事も公開されています。",
+   "text": "神奈川県内で200万円相当のブドウを盗んだ42歳の男が逮捕された。また、別の寺に侵入し仏像3体と110万円相当の美術品を盗んだ74歳の無職男性が再逮捕され、容疑を否認している。東京地検は村上世彰を逮捕した。村上はフジテレビとの決着を期した敵対的買収を試みた。",
    "sources": [
     {
-     "title": "「目ん玉くり抜くぞ！」と脅し、独居房は「写真集」まみれ…凶悪死刑囚たちの知られざる「獄中生活」 身の回りの世話をした元受刑者が証言(デイリー新潮)",
-     "url": "https://news.yahoo.co.jp/articles/a97a6b0f6091532dd255c9951211981b6fad7d60?source=rss",
+     "title": "寺に侵入し仏像3体・110万円相当を盗んだか 別の寺でも盗んだ疑いのある74歳無職の男を再逮捕 容疑を否認(東海テレビ)",
+     "url": "https://news.yahoo.co.jp/articles/818d1ed4bf183d9a6431b5f3eeea4c0dd7d765c2?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "「死刑執行の朝は、怒号が飛び交い、警報機が鳴り響き…」 凶悪死刑囚たちの獄中生活を、身の回りの世話をした元受刑者が明かす(デイリー新潮)",
-     "url": "https://news.yahoo.co.jp/articles/09de5018848567fec851e145b4f37fbc2304f82f?source=rss",
+     "title": "「フジテレビが手に入るよ」堀江貴文に敵対的買収を仕掛けさせ、特捜部に狙われ逮捕…村上世彰が味わった屈辱《フジテレビとの「20年前の因縁」》(文春オンライン)",
+     "url": "https://news.yahoo.co.jp/articles/9480a7aa890796e36debe7004b3ce5cabb41d027?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "トクリュウ窃盗団はなぜ“同じ家に何度も侵入”するのか？ 専門家が指摘する“盗聴器”の脅威…どこに仕掛けられたか分からない“盗聴器を一掃する”裏ワザも紹介(デイリー新潮)",
-     "url": "https://news.yahoo.co.jp/articles/4aa5e8a7bd564df2d10b332f7b0ef33048ba609b?source=rss",
+     "title": "「死んでよかった、ゴミが消えた」SNSの罵詈雑言 未解決事件の絶望と闘った家族の執念「将太行ってくるぞ」遺影に誓い続けた犯人逮捕までの11年【男子高校生刺殺事件/連載第3話】(RSK山陽放送)",
+     "url": "https://news.yahoo.co.jp/articles/2d6a682165417ade47af1e65aa3c1df8ea80ce2e?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "土石流で約390人が一時孤立 仮設の橋で登山者ら通行可能に 長野・安曇野市(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/2e159d9033a129174d43d4232aed78351e616e59?source=rss",
+     "title": "「この時期としては10年に一度程度しか起きないような著しい高温」になる可能性…8月16日〜24日 気象庁が「高温に関する早期天候情報」発表【関東甲信、近畿、東海、北陸、中国、四国、九州、東北、北海道】(MBC南日本放送)",
+     "url": "https://news.yahoo.co.jp/articles/1e56b720442efd617328e1c0c9b5a14427509ab1?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
-   "field": "教育",
-   "text": "東京都北区の滝野川第三小学校で火災が発生し、児童20名と教職員9名が負傷しました。今回の火災は過去10年間における都内の学校火災としては異例の規模であり、安全点検の行き届かなさが原因である可能性も指摘されています。",
+   "field": "経済",
+   "text": "ウォーレン・バフェット氏が複数の商社の株式を継続的に購入し、その時価総額が5倍にまで急増している。名鉄の4月から6月の連結決算では、名鉄百貨店の閉店などが影響し、売上高が減少した。今年度の業績見通しは現時点では据え置かれている。",
    "sources": [
     {
-     "title": "東京都北区の小学校火災は教員だけの問題ではない！行き届かなかった安全点検、その理由とは？(Wedge（ウェッジ）)",
-     "url": "https://news.yahoo.co.jp/articles/0b620a26cf70763cbfca4596838cbb951208d34a?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
+     "title": "商社、AI時代が問う目利きの力 バフェット氏投資後に時価総額5倍 - 日本経済新聞",
+     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5qRkRhVktkc2JWXzBhc20tX1RSUTVyRUpIZFZ4UGMxY2dxVDNvTVQxd2NxRnl3OFdxMlY1OWZNci0wakIzTkdRWFVUc2tscjRadEZmWk0tNVlKbnQ0amdqdEt6RjVLWnRCSlg0Xw?oc=5",
+     "feed_title": "トップニュース - Google ニュース"
     },
     {
-     "title": "土石流で約390人が一時孤立 仮設の橋で登山者ら通行可能に 長野・安曇野市(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/2e159d9033a129174d43d4232aed78351e616e59?source=rss",
+     "title": "名鉄 4月〜6月の連結決算 名鉄百貨店の閉店などが影響 売上高は減少 今年度の業績見通しは据え置く(CBCテレビ)",
+     "url": "https://news.yahoo.co.jp/articles/6db91fb9ae8e7f623bc4119608bbf5e5a9848162?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
-   "field": "動物",
-   "text": "上野動物園でレッサーパンダを撮影している高氏貴博さんが、ブログ「毎日パンダ」でカリンとルカの日常を発信しています。また、盛岡市動物公園ZOOMOでは、ピューマのかぞくに関するフォトブックが発売され、反響を呼んでいます。",
+   "field": "国際",
+   "text": "南米コロンビアでマグニチュード7.4の地震が発生し、少なくとも111人が死亡、国家非常事態宣言が出された。アメリカのトランプ前大統領が重要な情報処理が滞っている状況が続いており、イランは強硬姿勢を崩していない。",
    "sources": [
     {
-     "title": "2匹を見分けるポイントは顔の模様？ カリンとルカ、それぞれの特徴とは(朝日新聞デジタルマガジン＆［and］)",
-     "url": "https://news.yahoo.co.jp/articles/f1a56e5b743b90b529c7b69e5952b82f90ee99b6?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
+     "title": "再びTACOに陥ったトランプ、「裸の王様」状態で重要情報入らず、イランは強硬姿勢鮮明でこの先不透明に（Wedge（ウェッジ）） - Yahoo!ニュース",
+     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9iNWxNSUE3eVFNNTdjZzY2eWNMZUtxLTFuT0tvOUszRTVXalY4dlNwSW1XbUdjVUxkUTNqZnZ3emlGaGVpNG5mLWFMbnFIeXdxYjFKcjRmU01rdEVtNXJ3aDZLRE04SlNQSGhhanVBcnJKNHNEUHJHUFI2Q2ZxeTg?oc=5",
+     "feed_title": "トップニュース - Google ニュース"
     },
     {
-     "title": "盛岡市動物公園「ピューマのかぞく」飼育係の「正しく伝えたい」SNS発信からフォトブックに(日刊スポーツ)",
-     "url": "https://news.yahoo.co.jp/articles/9dc010de16e5a7ff19d526b96efa31c83689bd2f?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
+     "title": "南米コロンビアでＭ7.4の地震、国家非常事態宣言 100人超死亡 - ロイター",
+     "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1fMjg0clZPNGJXaVZYeEdiWEtkdjFLOUpNOTFaOXR5eHNNM1BIcXF0X2hDR3FhaFo0blJiMnFYdHJ1cUxXcWtMQ2hSQVV5WGJzZXRabi1vZEVkeXFOOFFjSTZ0aE11SkFFWnhxaDVIdFl3V1NIRGFTTg?oc=5",
+     "feed_title": "トップニュース - Google ニュース"
     }
    ]
   },
   {
-   "field": "その他",
+   "field": "短信",
    "text": "",
    "sources": []
   },
   {
    "field": "",
-   "text": "大阪税関が神戸市の清盛商事ら3社による消費税不正還付の手口を摘発し、約1億円1000万円の追徴課税を行いました。",
+   "text": "飲食店でオムライスなどを食べた21〜64歳の男女13人が下痢や嘔吐等の症状を示し、ノロウイルスによる食中毒と断定され営業禁止処分となった。",
    "sources": [
     {
-     "title": "大阪税関が見つけた中国向け「ニセiPhone」は消費税不正還付の道具だった〈背後に大がかりな偽造グループか〉(文春オンライン)",
-     "url": "https://news.yahoo.co.jp/articles/40425d45ea428605a6ecefa74958df7a6cddaaf9?source=rss",
+     "title": "飲食店でオムライスなど食べた21〜64歳の男女13人が下痢や嘔吐等の症状 ノロウイルスによる食中毒と断定し営業禁止処分(東海テレビ)",
+     "url": "https://news.yahoo.co.jp/articles/cc4a3a66ab5879dc8f807b13d443e16e773c3159?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "",
-   "text": "新潟県燕市に跡地を残す私鉄の廃線跡を巡る調査が行われました。",
+   "text": "JAXAが開発を進めているH3ロケットの9号機が試験打ち上げで成功を収め、「みちびき7号機」を軌道に投入した。",
    "sources": [
     {
-     "title": "「草まみれの空き地にレール跡が…」「さみしげに残る鉄橋」新潟のど真ん中にあったターミナル駅は今…27年前に消えた“ローカル私鉄”廃線跡には何がある？(文春オンライン)",
-     "url": "https://news.yahoo.co.jp/articles/01ed95b31fa26d26b50f823462124f1c067349ef?source=rss",
+     "title": "「Ｈ３ロケット」９号機、打ち上げ成功…２回連続で「基幹ロケット」本格復帰 - 読売新聞",
+     "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1sWlh4SmRURjRVWF9GNzFTSVdrWTdFYjMyOU51OUJ3Z01QUFV1YmNUQTN4Zms4Zy1ZbGYzMWdrb1J1Tm5GdV9FRmRQNTFsR25kS2FlT1pEVXRjazl2T0xrMndNSHM?oc=5",
+     "feed_title": "トップニュース - Google ニュース"
+    },
+    {
+     "title": "H3ロケット9号機打ち上げ成功 日本版GPS衛星「みちびき7号機」を予定の軌道に投入(MBC南日本放送)",
+     "url": "https://news.yahoo.co.jp/articles/7983a5b1b838eb5153b9a4221dbfb6886e6989dc?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "H3ロケット9号機、打ち上げ成功 準天頂衛星「みちびき7号機」を軌道投入(Yahoo!ニュース オリジナル THE PAGE)",
+     "url": "https://news.yahoo.co.jp/articles/94185330a327fd564d9b80d6d7523db4667a5600?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "みちびき7号機の打ち上げに成功 JAXA、H3ロケットで(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/218dd973933581646abc200f279db958aeb3e83a?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "",
-   "text": "「飛鳥・藤原の宮都」が世界文化遺産に登録され、古墳を巡る旅が新たなブームとなっています。",
+   "text": "別のニュースでは、日本のほぼ全域で8月16日頃〜18日頃から「この時期としては10年に1度程度しか起きないような著しい高温」となる可能性が高いと気象庁が発表している。",
    "sources": [
     {
-     "title": "「飛鳥・藤原の宮都」世界遺産登録で、\"御墳印（ごふんいん）\"ブームがやってくる!!(週プレNEWS)",
-     "url": "https://news.yahoo.co.jp/articles/d94eab79f5d9974ee0dff4daee6c7886b6ba19be?source=rss",
+     "title": "日本のほぼ全域で8月16日頃〜18日頃から「この時期としては10年に1度程度しか起きないような著しい高温」となる可能性が高まっている…気象庁が「高温に関する早期天候情報」発表(BSS山陰放送)",
+     "url": "https://news.yahoo.co.jp/articles/074b94eb118ef5b27cb6d341124b03c278420352?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "「この時期としては10年に一度程度しか起きないような著しい高温」になる可能性…8月16日〜24日 気象庁が「高温に関する早期天候情報」発表【関東甲信、近畿、東海、北陸、中国、四国、九州、東北、北海道】(MBC南日本放送)",
+     "url": "https://news.yahoo.co.jp/articles/1e56b720442efd617328e1c0c9b5a14427509ab1?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "",
-   "text": "iOS 27の正式版リリース日が9月14日に予定されています。",
+   "text": "日本時間2024年5月11日、熊本県上天草市や長崎県南島原市でM3.7の地震が発生し、最大震度は震度3を記録した。",
    "sources": [
     {
-     "title": "iOS 27正式版、9月14日リリースか：アップル、Siri AIと安定性向上で巻き返し図る - BigGo ファイナンス",
-     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFA3U3pWWVZDSmNBMF84bjktZ3NzVk1VSnJmcWQ5NV82aE5xdVlhbWU5Rmxsa2tCNlJhRTNKMEhtWnhPbXBqNTdOcFdEbk9xMWV5UUlLM3NrM0xCaDE4eDdEeGZWUjIyZ01YZnZqdEFtVXlYTUF1?oc=5",
+     "title": "熊本・上天草 長崎・南島原で震度3 津波の心配なし(2:47） - NHKニュース",
+     "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE56TEFiVTBVRDNVZTl1SV9MVWl6R3ZTLUJrS2FTNHIwS1FIdC1pN0hvMlp2TjRqU3gwOGlTOW9sUjY4NkxnLUtMalhVQVFqVUl1TmFLamk2d1NPZkxhWGRF?oc=5",
      "feed_title": "トップニュース - Google ニュース"
     }
    ]
   },
   {
    "field": "",
-   "text": "日向坂46の正源司陽子が、シングル「イチャイチャ虫」で6作ぶりにセンターを務めることが発表されました。",
+   "text": "円相場は一時159.30円台まで下落し、日米協調介入以降に持ち直した円相場がその半分の水準まで戻った。",
    "sources": [
     {
-     "title": "日向坂46正源司陽子、6作ぶりセンターに決定 平岡海月&佐藤優羽が初選抜【「イチャイチャ虫」フォーメーション一覧】 - oricon.co.jp",
-     "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0xT3ZsUFJSTF9IUVpySEFxRjBSR2dxbEk5YkFYT3VuR2JfM2c4eTdnUTluQk53TVlGN2JQNXpzNHBYMnZnRG0taElXcmt4dDQ2VUhXQTd3?oc=5",
+     "title": "円安進行、対ドル一時１５９円台に…日米協調介入以降の上げ幅を半分打ち消す - 読売新聞",
+     "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBkSXhxR1N2bXJZRFhFRTNWQUN6djZPbnNxdTMyeEJjbkVCQzU0MGo5TzVfcWhGblk3Yldwemh5Q1ZMWVV0OW5sX20tZGJsOGZDWXpfTHpjcDFiNUd6by1XSjZCTm8?oc=5",
      "feed_title": "トップニュース - Google ニュース"
-    }
-   ]
-  },
-  {
-   "field": "",
-   "text": "和歌山市長選で新人候補者である尾崎太郎氏が初当選を果たしました。",
-   "sources": [
-    {
-     "title": "「たくさんの笑顔で和歌山市を元気に」 和歌山市長選 新人・尾崎太郎氏が初当選(読売テレビ)",
-     "url": "https://news.yahoo.co.jp/articles/4ba265c73fef17b7c6ddf65ec166afeb481ca10b?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "field": "",
-   "text": "滋賀県北部でM4.4の地震が発生し、岐阜県と滋賀県では震度3を観測しました。",
-   "sources": [
-    {
-     "title": "滋賀県北部でM4.4の地震 岐阜県と滋賀県で震度3 津波の心配なし - ウェザーニュース",
-     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE55ZFNfMkR5WnJ5Y1hNVXJ5VDNQRW1McnZDVUI2SGc3b1NqbzhoRGhXaWZzOGdMbW83bUMzY2Z5LU1zdkZkaVRUdVE1UXktZVNTdGZMNDlmbkZfYzg?oc=5",
-     "feed_title": "トップニュース - Google ニュース"
-    }
-   ]
-  },
-  {
-   "field": "",
-   "text": "大谷翔平選手がロサンゼルス・ドジャースの一番打者兼リリーフとして対戦するロサンゼルス・エンゼルス・オブ・アナハイム戦に出場しました。",
-   "sources": [
-    {
-     "title": "大谷翔平「１番DH」でＤバックス戦 ３試合ぶり27号出るか／速報中 - 日刊スポーツ",
-     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBiSzdRM0NxbWFNa3lMeWU1eEFYSlF1dmpURzhmSXNwa0lfWnA3Mk1DZkVZSS1mRFBTNm96T3Jub0d6OUJIUWZmWTV6X2tmbi1KZC1BYkJScDRWSDVHOC1oSzh2bkxBM1dwTzZaTVdVNXc0Y3pWZmc?oc=5",
-     "feed_title": "トップニュース - Google ニュース"
-    }
-   ]
-  },
-  {
-   "field": "",
-   "text": "中高生7割がヤングケアラーの経験があることが、子ども家庭庁の調査で明らかになりました。",
-   "sources": [
-    {
-     "title": "ヤングケアラー認知、中高生7割 こども家庭庁調査、啓発進む(共同通信)",
-     "url": "https://news.yahoo.co.jp/articles/0a620c8f1fdd64675e537303c3f986a5d5f524ce?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   }
  ],
- "digest_at": "2026-08-09T21:38:23.227252+00:00",
+ "digest_at": "2026-08-10T21:37:49.963905+00:00",
  "topics": [
   {
-   "term": "東京",
+   "term": "台風",
+   "article_count": 17
+  },
+  {
+   "term": "逮捕",
+   "article_count": 16
+  },
+  {
+   "term": "関東",
+   "article_count": 16
+  },
+  {
+   "term": "関東甲信地方",
+   "article_count": 15
+  },
+  {
+   "term": "被爆者団体",
+   "article_count": 13
+  },
+  {
+   "term": "ブドウ",
+   "article_count": 13
+  },
+  {
+   "term": "首相",
+   "article_count": 13
+  },
+  {
+   "term": "警戒",
+   "article_count": 13
+  },
+  {
+   "term": "接近",
+   "article_count": 13
+  },
+  {
+   "term": "高市首相",
+   "article_count": 12
+  },
+  {
+   "term": "横浜市",
+   "article_count": 12
+  },
+  {
+   "term": "事件",
+   "article_count": 12
+  },
+  {
+   "term": "芥川賞作家",
+   "article_count": 11
+  },
+  {
+   "term": "不倫疑惑",
+   "article_count": 11
+  },
+  {
+   "term": "歳同僚",
+   "article_count": 11
+  },
+  {
+   "term": "SNS",
+   "article_count": 11
+  },
+  {
+   "term": "カメラ",
+   "article_count": 11
+  },
+  {
+   "term": "上陸",
+   "article_count": 11
+  },
+  {
+   "term": "強引",
+   "article_count": 11
+  },
+  {
+   "term": "批判",
+   "article_count": 11
+  },
+  {
+   "term": "防犯",
+   "article_count": 11
+  },
+  {
+   "term": "横浜市議",
    "article_count": 10
   },
   {
-   "term": "生活",
+   "term": "気象庁",
+   "article_count": 10
+  },
+  {
+   "term": "映像",
+   "article_count": 10
+  },
+  {
+   "term": "愛子",
+   "article_count": 10
+  },
+  {
+   "term": "大雨",
+   "article_count": 10
+  },
+  {
+   "term": "ニュース",
    "article_count": 9
   },
   {
-   "term": "元受刑者",
+   "term": "会長",
+   "article_count": 9
+  },
+  {
+   "term": "災害",
+   "article_count": 9
+  },
+  {
+   "term": "拡散",
+   "article_count": 9
+  },
+  {
+   "term": "万円相当",
+   "article_count": 8
+  },
+  {
+   "term": "皇室",
+   "article_count": 8
+  },
+  {
+   "term": "面会",
+   "article_count": 8
+  },
+  {
+   "term": "未解決事件",
    "article_count": 7
   },
   {
-   "term": "獄中生活",
+   "term": "土砂災害",
    "article_count": 7
   },
   {
-   "term": "死刑囚",
+   "term": "号機",
    "article_count": 7
-  },
-  {
-   "term": "万円",
-   "article_count": 7
-  },
-  {
-   "term": "証言",
-   "article_count": 7
-  },
-  {
-   "term": "高市早苗首相",
-   "article_count": 6
-  },
-  {
-   "term": "東京都北区",
-   "article_count": 6
-  },
-  {
-   "term": "タイプ",
-   "article_count": 6
-  },
-  {
-   "term": "写真",
-   "article_count": 6
-  },
-  {
-   "term": "世話",
-   "article_count": 6
-  },
-  {
-   "term": "事故",
-   "article_count": 6
-  },
-  {
-   "term": "イオンモール",
-   "article_count": 5
-  },
-  {
-   "term": "オンライン",
-   "article_count": 5
-  },
-  {
-   "term": "デイリー",
-   "article_count": 5
-  },
-  {
-   "term": "万円以上",
-   "article_count": 5
-  },
-  {
-   "term": "新公用車",
-   "article_count": 5
-  },
-  {
-   "term": "小学校",
-   "article_count": 5
-  },
-  {
-   "term": "SUV",
-   "article_count": 5
-  },
-  {
-   "term": "様子",
-   "article_count": 5
-  },
-  {
-   "term": "新潮",
-   "article_count": 5
-  },
-  {
-   "term": "親族",
-   "article_count": 5
-  },
-  {
-   "term": "グループ",
-   "article_count": 4
-  },
-  {
-   "term": "安全点検",
-   "article_count": 4
-  },
-  {
-   "term": "日午前",
-   "article_count": 4
-  },
-  {
-   "term": "被害者",
-   "article_count": 4
-  },
-  {
-   "term": "テレビ",
-   "article_count": 4
-  },
-  {
-   "term": "交通",
-   "article_count": 4
-  },
-  {
-   "term": "朝日",
-   "article_count": 4
-  },
-  {
-   "term": "凶悪",
-   "article_count": 4
-  },
-  {
-   "term": "慟哭",
-   "article_count": 4
-  },
-  {
-   "term": "火災",
-   "article_count": 4
-  },
-  {
-   "term": "最大瞬間風速",
-   "article_count": 3
-  },
-  {
-   "term": "iPhone",
-   "article_count": 3
-  },
-  {
-   "term": "凶悪死刑囚",
-   "article_count": 3
   }
  ],
  "total": 40,
  "readable": 29,
  "sources": [
-  "GIGAZINE",
   "国内 - Yahoo!ニュース",
   "トップニュース - Google ニュース"
  ],
  "feeds": [
-  {
-   "title": "GIGAZINE",
-   "priority": 2,
-   "last_error": ""
-  },
   {
    "title": "NHKニュース",
    "priority": 2,
@@ -429,5 +371,5 @@
    "last_error": ""
   }
  ],
- "generated_at": "2026-08-09T21:38:24.801390+00:00"
+ "generated_at": "2026-08-10T21:37:51.961830+00:00"
 }
