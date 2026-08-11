@@ -1,111 +1,126 @@
 {
  "digest": [
   {
-   "field": "気象",
-   "text": "台風15号が関東甲信地方に接近し、11日に上陸のおそれがある。最大瞬間風速は35m/sと予想され、強い風雨による交通乱れに警戒が必要だ。また、台風16号も南鳥島近海で発達しており、今後の進路が注目される。8月16日から24日には、日本全国で猛暑となる可能性があり、特に関東甲信地方、近畿、東海など広い範囲で記録的な高温となることが予想されている。鹿児島県種子島ではH3ロケット9号機が打ち上げられ、準天頂衛星「みちびき7号機」を軌道投入した。",
+   "field": "災害",
+   "text": "台風15号は、茨城県に上陸後、近畿地方から西へと進み、東北から西日本にかけて大雨をもたらしている。気象庁は土砂災害への厳重な警戒を呼びかけており、最大瞬間風速23m/sの熱帯低気圧“a”も小笠原近海で発達し、今後台風に発達する可能性があり、注意が必要だ。特に茨城県を中心に12日も大雨が継続しており、河川の増水や氾濫に警戒を呼びかけている。また、海水浴客への注意喚起として、神奈川県藤沢市ではGPS装着による迅速な救助体制が整備されている。",
    "sources": [
     {
-     "title": "「この時期としては10年に一度程度しか起きないような著しい高温」になる可能性…8月16日〜24日 気象庁が「高温に関する早期天候情報」発表【関東甲信、近畿、東海、北陸、中国、四国、九州、東北、北海道】(MBC南日本放送)",
-     "url": "https://news.yahoo.co.jp/articles/1e56b720442efd617328e1c0c9b5a14427509ab1?source=rss",
+     "title": "台風15号は近畿地方から西へ 東北～西日本で大雨のおそれ 土砂災害に厳重警戒(tenki.jp)",
+     "url": "https://news.yahoo.co.jp/articles/372318899f36faa4988ecc4da570ac7476537905?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "【異例】迷走台風15号がお盆休みの首都圏に直撃 11日は風雨強まり交通乱れに注意(tenki.jp)",
-     "url": "https://news.yahoo.co.jp/articles/c2442d1e4f56de665b0f3b51b46bdf813be46304?source=rss",
+     "title": "【台風情報】最大瞬間風速25m/s、996hPa「台風15号（チャンホン）」関市の東付近に、今後の進路は?14日（金）までの雨・風シミュレーション【気象庁12日午前3時50分】(RSK山陽放送)",
+     "url": "https://news.yahoo.co.jp/articles/1de3ac3333d84bbb7249c891ec7a6d00ca170f1f?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "H3ロケット9号機、打ち上げ成功 準天頂衛星「みちびき7号機」を軌道投入(Yahoo!ニュース オリジナル THE PAGE)",
-     "url": "https://news.yahoo.co.jp/articles/94185330a327fd564d9b80d6d7523db4667a5600?source=rss",
+     "title": "【台風のたまご】最大瞬間風速23 m/s「熱帯低気圧a」は小笠原近海に、今後台風に発達見込み...逆走・急カーブで日本に接近か...今後の台風情報に注意 22日（土）までの雨・風シミュレーション＆全国各地の天気予報【気象庁12日午前4時30分発表】(RSK山陽放送)",
+     "url": "https://news.yahoo.co.jp/articles/fb99f71180aa7b43b6f6565777bd955019b7ec7e?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "【台風情報】最大瞬間風速35m/s、985hPa「台風15号（チャンホン）」関東に上陸のおそれ、お盆の列島横断か...今後の進路は?13日（木）までの雨・風シミュレーション【気象庁11日午前3時45分発表】(RSK山陽放送)",
-     "url": "https://news.yahoo.co.jp/articles/5e7e2220b57753212701c6c764d0a786c030a6aa?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "field": "政治",
-   "text": "高市首相が被爆者団体の会長と面会する姿がSNSで拡散され、批判を浴びている。この件を受け、高市首相は被爆者団体との面会で話を聞くなどしていた。また、イラン最高指導者ハメネイ師が、先月の米・イスラエルによる攻撃で死亡した参謀総長らの後任として軍および革命防衛隊の要職に新たな人物を任命した。",
-   "sources": [
-    {
-     "title": "イラン最高指導者ハメネイ師、米・イスラエルの攻撃で殺害された参謀総長らの後任６人を任命 - 読売新聞",
-     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1KUlhOci1fM212dV9xYU55eDQtdVcxckVkeVViMjhRVDBkTXVVeUdHRUtDOTZqc3pUXzVMa1F2YnJ4ZXBOR3RoMjhmcTIxei1heU16ZHNXMlBFT2pVMF9yWlZB?oc=5",
-     "feed_title": "トップニュース - Google ニュース"
-    },
-    {
-     "title": "「死んでよかった、ゴミが消えた」SNSの罵詈雑言 未解決事件の絶望と闘った家族の執念「将太行ってくるぞ」遺影に誓い続けた犯人逮捕までの11年【男子高校生刺殺事件/連載第3話】(RSK山陽放送)",
-     "url": "https://news.yahoo.co.jp/articles/2d6a682165417ade47af1e65aa3c1df8ea80ce2e?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "みちびき7号機、H3ロケットで打ち上げ(共同通信)",
-     "url": "https://news.yahoo.co.jp/articles/2eba8e2c10abba6545bf002b3c82eee3df9c56be?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "そりゃ秀吉が出世するわ…「格上」の柴田勝家を追い抜いた〈根回し力〉がエグすぎた(ダイヤモンド・オンライン)",
-     "url": "https://news.yahoo.co.jp/articles/a0660f383080d7111bf7c73d44c1a89490cdbbb8?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "field": "社会",
-   "text": "神奈川県内で200万円相当のブドウを盗んだ42歳の男が逮捕された。また、別の寺に侵入し仏像3体と110万円相当の美術品を盗んだ74歳の無職男性が再逮捕され、容疑を否認している。東京地検は村上世彰を逮捕した。村上はフジテレビとの決着を期した敵対的買収を試みた。",
-   "sources": [
-    {
-     "title": "寺に侵入し仏像3体・110万円相当を盗んだか 別の寺でも盗んだ疑いのある74歳無職の男を再逮捕 容疑を否認(東海テレビ)",
-     "url": "https://news.yahoo.co.jp/articles/818d1ed4bf183d9a6431b5f3eeea4c0dd7d765c2?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "「フジテレビが手に入るよ」堀江貴文に敵対的買収を仕掛けさせ、特捜部に狙われ逮捕…村上世彰が味わった屈辱《フジテレビとの「20年前の因縁」》(文春オンライン)",
-     "url": "https://news.yahoo.co.jp/articles/9480a7aa890796e36debe7004b3ce5cabb41d027?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "「死んでよかった、ゴミが消えた」SNSの罵詈雑言 未解決事件の絶望と闘った家族の執念「将太行ってくるぞ」遺影に誓い続けた犯人逮捕までの11年【男子高校生刺殺事件/連載第3話】(RSK山陽放送)",
-     "url": "https://news.yahoo.co.jp/articles/2d6a682165417ade47af1e65aa3c1df8ea80ce2e?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "「この時期としては10年に一度程度しか起きないような著しい高温」になる可能性…8月16日〜24日 気象庁が「高温に関する早期天候情報」発表【関東甲信、近畿、東海、北陸、中国、四国、九州、東北、北海道】(MBC南日本放送)",
-     "url": "https://news.yahoo.co.jp/articles/1e56b720442efd617328e1c0c9b5a14427509ab1?source=rss",
+     "title": "拾った財布を届けたら泥棒扱い――日航123便の垂直尾翼を回収した「護衛艦まつゆき」元乗員の怒り(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/818f5416e2b7a6d01736c5359ba6a92176bc59f2?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "経済",
-   "text": "ウォーレン・バフェット氏が複数の商社の株式を継続的に購入し、その時価総額が5倍にまで急増している。名鉄の4月から6月の連結決算では、名鉄百貨店の閉店などが影響し、売上高が減少した。今年度の業績見通しは現時点では据え置かれている。",
+   "text": "財務省上層部からは、高市首相のスケジュール管理巡り「徒労感」の声が上がっている。政府は消費減税の財源確保を検討しているものの、為替介入の利益流用は困難であるとの指摘が出ている。また、備蓄米買い戻しを提案した農水相鈴木氏の進退をめぐり、高市首相が激怒しているという報道もある。さらに、サカナクションの山口一郎氏や小渕優子氏が消費減税に反対する姿勢を示しており、その動向が注目されている。",
    "sources": [
     {
-     "title": "商社、AI時代が問う目利きの力 バフェット氏投資後に時価総額5倍 - 日本経済新聞",
-     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5qRkRhVktkc2JWXzBhc20tX1RSUTVyRUpIZFZ4UGMxY2dxVDNvTVQxd2NxRnl3OFdxMlY1OWZNci0wakIzTkdRWFVUc2tscjRadEZmWk0tNVlKbnQ0amdqdEt6RjVLWnRCSlg0Xw?oc=5",
-     "feed_title": "トップニュース - Google ニュース"
+     "title": "「物価高対策をしようという時に！」“備蓄米買い戻し”で首相を激怒させた「鈴木農水相」進退への神経戦(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/64b217a147541f1fed260379bf5fc3970e69c8b9?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "名鉄 4月〜6月の連結決算 名鉄百貨店の閉店などが影響 売上高は減少 今年度の業績見通しは据え置く(CBCテレビ)",
-     "url": "https://news.yahoo.co.jp/articles/6db91fb9ae8e7f623bc4119608bbf5e5a9848162?source=rss",
+     "title": "「黙ってひな壇にはいられない」 「小渕優子」の「消費減税反対」宣言で試される「アンチ高市の覚悟」(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/c16f7cda45cdd6f0dbc493fd7ea76c18ee36cef6?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "〈「国会嫌い」が招いた混乱〉高市首相にネグレクトされた財務省上層部が漏らした〈徒労感〉の正体(文春オンライン)",
+     "url": "https://news.yahoo.co.jp/articles/3f43ecf0aaa9e52629ed1b13efd82de39f4478a8?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "消費減税の財源に「為替介入の利益」流用困難と言われる理由(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/b80c4583627e088cd487bd445111b8feeda197fb?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
-   "field": "国際",
-   "text": "南米コロンビアでマグニチュード7.4の地震が発生し、少なくとも111人が死亡、国家非常事態宣言が出された。アメリカのトランプ前大統領が重要な情報処理が滞っている状況が続いており、イランは強硬姿勢を崩していない。",
+   "field": "社会",
+   "text": "52歳の男性が酒気を帯びて運転し、別の車を追突して相手に怪我をさせた疑いで現行犯逮捕された。アユ釣りをしていた86歳男性が川に流され死亡した事件では、ライフジャケット未着用が原因とみられている。また、セルフレジでのトラブルとして、利用者が小銭を大量投入しレジを詰まらせるケースが頻発している。さらに、JAL機墜落事件に関する陰謀論を広めた張本人として、サカナクションの山口一郎氏の名前が取り上げられている。",
    "sources": [
     {
-     "title": "再びTACOに陥ったトランプ、「裸の王様」状態で重要情報入らず、イランは強硬姿勢鮮明でこの先不透明に（Wedge（ウェッジ）） - Yahoo!ニュース",
-     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9iNWxNSUE3eVFNNTdjZzY2eWNMZUtxLTFuT0tvOUszRTVXalY4dlNwSW1XbUdjVUxkUTNqZnZ3emlGaGVpNG5mLWFMbnFIeXdxYjFKcjRmU01rdEVtNXJ3aDZLRE04SlNQSGhhanVBcnJKNHNEUHJHUFI2Q2ZxeTg?oc=5",
-     "feed_title": "トップニュース - Google ニュース"
+     "title": "日航機墜落の陰謀論を作り出したのは誰か 存在しない「オレンジエアー」に執着したジャーナリストの名前(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/c845174ef06194ecadd1bf2104fe8ed0b3eb9477?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "南米コロンビアでＭ7.4の地震、国家非常事態宣言 100人超死亡 - ロイター",
-     "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1fMjg0clZPNGJXaVZYeEdiWEtkdjFLOUpNOTFaOXR5eHNNM1BIcXF0X2hDR3FhaFo0blJiMnFYdHJ1cUxXcWtMQ2hSQVV5WGJzZXRabi1vZEVkeXFOOFFjSTZ0aE11SkFFWnhxaDVIdFl3V1NIRGFTTg?oc=5",
+     "title": "酒を飲んで車を運転し追突事故を起こして相手にケガさせたか 危険運転致傷の疑いで52歳男を現行犯逮捕(東海テレビ)",
+     "url": "https://news.yahoo.co.jp/articles/50fa0b6cd8a68fc08d7c1b43fd59edb3fc5f479a?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "万引きや行列だけじゃない「セルフレジ」の新たな問題…“小銭を大量投入”してレジを詰まらせるトラブルが絶えない理由(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/e90052eb58a122a99d45902ed9bd50458ef20c30?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "ライフジャケットは着用せず…川へアユ釣りに来ていた86歳男性が流され死亡 知人と2人で訪れるも当時は別行動(東海テレビ)",
+     "url": "https://news.yahoo.co.jp/articles/2f0d63e8512c2adab648990db04da350dbce9497?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "医療",
+   "text": "令和8年の熊本地震を受け、宮崎県から消防・医療チームやインフラ支援物資が被災地へ緊急輸送された。災害時の口のケアにおいて、呼吸器系の疾患が死亡原因の3割近くを占めていることが明らかになり、水なしでも可能な口腔ケアの方法が推奨されている。また、福島県会津で発生した火災から奇跡的に日本酒の製造が可能になった「正宗酒」が復活する見込みとなった。",
+   "sources": [
+    {
+     "title": "「復活の一滴だ」火災から生き延びた奇跡の日本酒 笹正宗酒造の再建を支える会津の蔵元たちの強い絆(FNNプライムオンライン)",
+     "url": "https://news.yahoo.co.jp/articles/d25a15b57439e0f38aaf8c987267600c298606fe?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "熊本地震を受け、隣県・宮崎から消防・医療・インフラの支援 給水車やトイレカー、移動ATM、モバイルファーマシーも被災地へ急行(FNNプライムオンライン)",
+     "url": "https://news.yahoo.co.jp/articles/283d919fc750efce35b0a5cedabd62592cc529f2?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "「災害時こそ口のケアを」 10年前の“関連死”3割近くが「呼吸器系の疾患」 水なしでもできる方法 【令和8年熊本地震】(FNNプライムオンライン)",
+     "url": "https://news.yahoo.co.jp/articles/27ea82c655006d7069c7f1e482449a03b8678a49?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "その他",
+   "text": "デジタル教科書の正式導入は東京大学教授によって「人体実験」と批判されている。日航123便の垂直尾翼を回収した「護衛艦まつゆき」元乗員からは、当時の状況に対する怒りが語られている。また、真夏にタイヤの劣化が進み、「車のSOS」が増加していることが日本自動車連盟（JAF）への取材で明らかになった。さらに、南米コロンビアでマグニチュード7.4の地震が発生し、死者224人という甚大な被害が出ている。",
+   "sources": [
+    {
+     "title": "熱でタイヤ劣化も激しく…真夏に増える『車のSOS』JAFに密着するとバッテリー上がりなど続々「日頃の点検が大事」(FNNプライムオンライン)",
+     "url": "https://news.yahoo.co.jp/articles/550cbad6ef0fd4282047b1f7c35cec16dff5f16e?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "拾った財布を届けたら泥棒扱い――日航123便の垂直尾翼を回収した「護衛艦まつゆき」元乗員の怒り(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/818f5416e2b7a6d01736c5359ba6a92176bc59f2?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "デジタル教科書の正式導入は“人体実験”――デジタル・AI教育の弊害は「既に明らか」だと専門家が指摘する理由(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/eac299aef3c3b8a4abed00e7ef0516651d681f5d?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "南米コロンビア地震、死者２２４人に…主要都市カリ市で患者６００人を路上で手当て・複数都市で建物倒壊 - 読売新聞",
+     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1qaWxJRUlLeDBJUFBEd25GaUF4WkNQb3BBX2wzbFhsTnNhTlo0TkE5eFpsMUhTT2RPMkpsSG00Zm9SX25vNENibVJhb1V3WGxldmhSS3VXdnJ6a2REOE1pLVVB?oc=5",
      "feed_title": "トップニュース - Google ニュース"
     }
    ]
@@ -117,148 +132,106 @@
   },
   {
    "field": "",
-   "text": "飲食店でオムライスなどを食べた21〜64歳の男女13人が下痢や嘔吐等の症状を示し、ノロウイルスによる食中毒と断定され営業禁止処分となった。",
+   "text": "・高市首相のX投稿が医師から「非常に危険」と批判されている。",
    "sources": [
     {
-     "title": "飲食店でオムライスなど食べた21〜64歳の男女13人が下痢や嘔吐等の症状 ノロウイルスによる食中毒と断定し営業禁止処分(東海テレビ)",
-     "url": "https://news.yahoo.co.jp/articles/cc4a3a66ab5879dc8f807b13d443e16e773c3159?source=rss",
+     "title": "高市首相｢プロモビデオ風｣動画より深刻…現役医師が｢国にとって危うい｣と断じるX投稿の\"一文“(プレジデントオンライン)",
+     "url": "https://news.yahoo.co.jp/articles/11aa54ac0543d96ee78495553e2c141387f95a5c?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "",
-   "text": "JAXAが開発を進めているH3ロケットの9号機が試験打ち上げで成功を収め、「みちびき7号機」を軌道に投入した。",
+   "text": "・改正教育法により、2030年度からデジタル教科書の本格導入が見込まれている。",
    "sources": [
     {
-     "title": "「Ｈ３ロケット」９号機、打ち上げ成功…２回連続で「基幹ロケット」本格復帰 - 読売新聞",
-     "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1sWlh4SmRURjRVWF9GNzFTSVdrWTdFYjMyOU51OUJ3Z01QUFV1YmNUQTN4Zms4Zy1ZbGYzMWdrb1J1Tm5GdV9FRmRQNTFsR25kS2FlT1pEVXRjazl2T0xrMndNSHM?oc=5",
-     "feed_title": "トップニュース - Google ニュース"
-    },
-    {
-     "title": "H3ロケット9号機打ち上げ成功 日本版GPS衛星「みちびき7号機」を予定の軌道に投入(MBC南日本放送)",
-     "url": "https://news.yahoo.co.jp/articles/7983a5b1b838eb5153b9a4221dbfb6886e6989dc?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "H3ロケット9号機、打ち上げ成功 準天頂衛星「みちびき7号機」を軌道投入(Yahoo!ニュース オリジナル THE PAGE)",
-     "url": "https://news.yahoo.co.jp/articles/94185330a327fd564d9b80d6d7523db4667a5600?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "みちびき7号機の打ち上げに成功 JAXA、H3ロケットで(共同通信)",
-     "url": "https://news.yahoo.co.jp/articles/218dd973933581646abc200f279db958aeb3e83a?source=rss",
+     "title": "デジタル教科書の正式導入は“人体実験”――デジタル・AI教育の弊害は「既に明らか」だと専門家が指摘する理由(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/eac299aef3c3b8a4abed00e7ef0516651d681f5d?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "",
-   "text": "別のニュースでは、日本のほぼ全域で8月16日頃〜18日頃から「この時期としては10年に1度程度しか起きないような著しい高温」となる可能性が高いと気象庁が発表している。",
+   "text": "・JAFへの取材でバッテリー上がりのトラブルが続々と報告されている。",
    "sources": [
     {
-     "title": "日本のほぼ全域で8月16日頃〜18日頃から「この時期としては10年に1度程度しか起きないような著しい高温」となる可能性が高まっている…気象庁が「高温に関する早期天候情報」発表(BSS山陰放送)",
-     "url": "https://news.yahoo.co.jp/articles/074b94eb118ef5b27cb6d341124b03c278420352?source=rss",
+     "title": "熱でタイヤ劣化も激しく…真夏に増える『車のSOS』JAFに密着するとバッテリー上がりなど続々「日頃の点検が大事」(FNNプライムオンライン)",
+     "url": "https://news.yahoo.co.jp/articles/550cbad6ef0fd4282047b1f7c35cec16dff5f16e?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "",
+   "text": "・サカナクションの山口一郎氏と川口春奈さんが注目を集めている。",
+   "sources": [
+    {
+     "title": "「黙ってひな壇にはいられない」 「小渕優子」の「消費減税反対」宣言で試される「アンチ高市の覚悟」(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/c16f7cda45cdd6f0dbc493fd7ea76c18ee36cef6?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "「この時期としては10年に一度程度しか起きないような著しい高温」になる可能性…8月16日〜24日 気象庁が「高温に関する早期天候情報」発表【関東甲信、近畿、東海、北陸、中国、四国、九州、東北、北海道】(MBC南日本放送)",
-     "url": "https://news.yahoo.co.jp/articles/1e56b720442efd617328e1c0c9b5a14427509ab1?source=rss",
+     "title": "海水浴、GPS装着で迅速救助を 神奈川・藤沢で無料貸し出し(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/f2e650897009c4032829ca8b2dfa76cd2ba958a1?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "field": "",
-   "text": "日本時間2024年5月11日、熊本県上天草市や長崎県南島原市でM3.7の地震が発生し、最大震度は震度3を記録した。",
-   "sources": [
-    {
-     "title": "熊本・上天草 長崎・南島原で震度3 津波の心配なし(2:47） - NHKニュース",
-     "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE56TEFiVTBVRDNVZTl1SV9MVWl6R3ZTLUJrS2FTNHIwS1FIdC1pN0hvMlp2TjRqU3gwOGlTOW9sUjY4NkxnLUtMalhVQVFqVUl1TmFLamk2d1NPZkxhWGRF?oc=5",
-     "feed_title": "トップニュース - Google ニュース"
-    }
-   ]
-  },
-  {
-   "field": "",
-   "text": "円相場は一時159.30円台まで下落し、日米協調介入以降に持ち直した円相場がその半分の水準まで戻った。",
-   "sources": [
-    {
-     "title": "円安進行、対ドル一時１５９円台に…日米協調介入以降の上げ幅を半分打ち消す - 読売新聞",
-     "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBkSXhxR1N2bXJZRFhFRTNWQUN6djZPbnNxdTMyeEJjbkVCQzU0MGo5TzVfcWhGblk3Yldwemh5Q1ZMWVV0OW5sX20tZGJsOGZDWXpfTHpjcDFiNUd6by1XSjZCTm8?oc=5",
-     "feed_title": "トップニュース - Google ニュース"
     }
    ]
   }
  ],
- "digest_at": "2026-08-10T21:37:49.963905+00:00",
+ "digest_at": "2026-08-11T21:36:37.574897+00:00",
  "topics": [
   {
    "term": "台風",
    "article_count": 17
   },
   {
-   "term": "逮捕",
+   "term": "茨城県",
    "article_count": 16
   },
   {
-   "term": "関東",
+   "term": "大雨",
    "article_count": 16
   },
   {
-   "term": "関東甲信地方",
+   "term": "財務省",
    "article_count": 15
   },
   {
-   "term": "被爆者団体",
+   "term": "熱帯低気圧",
+   "article_count": 14
+  },
+  {
+   "term": "異例",
    "article_count": 13
   },
   {
-   "term": "ブドウ",
+   "term": "人事",
    "article_count": 13
   },
   {
-   "term": "首相",
+   "term": "発達",
    "article_count": 13
+  },
+  {
+   "term": "異例人事",
+   "article_count": 12
+  },
+  {
+   "term": "土砂災害",
+   "article_count": 12
   },
   {
    "term": "警戒",
-   "article_count": 13
-  },
-  {
-   "term": "接近",
-   "article_count": 13
-  },
-  {
-   "term": "高市首相",
    "article_count": 12
   },
   {
-   "term": "横浜市",
-   "article_count": 12
-  },
-  {
-   "term": "事件",
-   "article_count": 12
-  },
-  {
-   "term": "芥川賞作家",
+   "term": "エース",
    "article_count": 11
   },
   {
-   "term": "不倫疑惑",
-   "article_count": 11
-  },
-  {
-   "term": "歳同僚",
-   "article_count": 11
-  },
-  {
-   "term": "SNS",
-   "article_count": 11
-  },
-  {
-   "term": "カメラ",
+   "term": "法改正",
    "article_count": 11
   },
   {
@@ -266,80 +239,96 @@
    "article_count": 11
   },
   {
-   "term": "強引",
+   "term": "婚姻",
    "article_count": 11
   },
   {
-   "term": "批判",
-   "article_count": 11
-  },
-  {
-   "term": "防犯",
-   "article_count": 11
-  },
-  {
-   "term": "横浜市議",
+   "term": "民法改正",
    "article_count": 10
   },
   {
-   "term": "気象庁",
+   "term": "左遷",
    "article_count": 10
   },
   {
-   "term": "映像",
-   "article_count": 10
-  },
-  {
-   "term": "愛子",
-   "article_count": 10
-  },
-  {
-   "term": "大雨",
-   "article_count": 10
+   "term": "年民法改正",
+   "article_count": 9
   },
   {
    "term": "ニュース",
    "article_count": 9
   },
   {
-   "term": "会長",
+   "term": "西日本",
    "article_count": 9
   },
   {
-   "term": "災害",
-   "article_count": 9
-  },
-  {
-   "term": "拡散",
-   "article_count": 9
-  },
-  {
-   "term": "万円相当",
+   "term": "小笠原近海",
    "article_count": 8
   },
   {
-   "term": "皇室",
+   "term": "川口春奈",
    "article_count": 8
   },
   {
-   "term": "面会",
+   "term": "板倉滉",
    "article_count": 8
   },
   {
-   "term": "未解決事件",
+   "term": "高市",
+   "article_count": 8
+  },
+  {
+   "term": "接近",
+   "article_count": 8
+  },
+  {
+   "term": "高市首相",
    "article_count": 7
   },
   {
-   "term": "土砂災害",
+   "term": "法的地位",
    "article_count": 7
   },
   {
-   "term": "号機",
+   "term": "デイリー",
    "article_count": 7
+  },
+  {
+   "term": "東北",
+   "article_count": 7
+  },
+  {
+   "term": "新潮",
+   "article_count": 7
+  },
+  {
+   "term": "シミュレーション",
+   "article_count": 6
+  },
+  {
+   "term": "気象庁",
+   "article_count": 6
+  },
+  {
+   "term": "豊作",
+   "article_count": 6
+  },
+  {
+   "term": "広島",
+   "article_count": 6
+  },
+  {
+   "term": "平和祈念式典後",
+   "article_count": 5
+  },
+  {
+   "term": "台風情報",
+   "article_count": 5
   }
  ],
  "total": 40,
- "readable": 29,
+ "readable": 26,
  "sources": [
   "国内 - Yahoo!ニュース",
   "トップニュース - Google ニュース"
@@ -371,5 +360,5 @@
    "last_error": ""
   }
  ],
- "generated_at": "2026-08-10T21:37:51.961830+00:00"
+ "generated_at": "2026-08-11T21:36:38.985007+00:00"
 }
