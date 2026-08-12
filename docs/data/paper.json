@@ -1,127 +1,153 @@
 {
  "digest": [
   {
-   "field": "災害",
-   "text": "台風15号は、茨城県に上陸後、近畿地方から西へと進み、東北から西日本にかけて大雨をもたらしている。気象庁は土砂災害への厳重な警戒を呼びかけており、最大瞬間風速23m/sの熱帯低気圧“a”も小笠原近海で発達し、今後台風に発達する可能性があり、注意が必要だ。特に茨城県を中心に12日も大雨が継続しており、河川の増水や氾濫に警戒を呼びかけている。また、海水浴客への注意喚起として、神奈川県藤沢市ではGPS装着による迅速な救助体制が整備されている。",
+   "field": "国際",
+   "text": "イスラエルとハマスの和平合意が崩壊寸前という情報が入り混じる中、ドナルド・トランプ前大統領は、ハマス指導部による「譲歩」強調に不信感を表明しました。この事態を受け、在京イスラエル大使館が日本メディアを次々と非難する事象も発生しており、国際的な緊張が高まっています。",
    "sources": [
     {
-     "title": "台風15号は近畿地方から西へ 東北～西日本で大雨のおそれ 土砂災害に厳重警戒(tenki.jp)",
-     "url": "https://news.yahoo.co.jp/articles/372318899f36faa4988ecc4da570ac7476537905?source=rss",
+     "title": "トランプ氏「ガザで歴史的合意」に早くも亀裂、民衆のため「譲歩」強調のハマス指導部に不信感(Wedge（ウェッジ）)",
+     "url": "https://news.yahoo.co.jp/articles/c1cd3ca79db365af4df8d015c0f0657c74b02c76?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "【台風情報】最大瞬間風速25m/s、996hPa「台風15号（チャンホン）」関市の東付近に、今後の進路は?14日（金）までの雨・風シミュレーション【気象庁12日午前3時50分】(RSK山陽放送)",
-     "url": "https://news.yahoo.co.jp/articles/1de3ac3333d84bbb7249c891ec7a6d00ca170f1f?source=rss",
+     "title": "《昭和史の闇》「ドイツが勝つという判断ですべてやっていました」通訳も記録もない密室交渉が招いた〈日独伊三国同盟〉の杜撰な真実(文春オンライン)",
+     "url": "https://news.yahoo.co.jp/articles/eb2a0f1dd2694a90ca50ff37f7da07b36c98455e?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "【台風のたまご】最大瞬間風速23 m/s「熱帯低気圧a」は小笠原近海に、今後台風に発達見込み...逆走・急カーブで日本に接近か...今後の台風情報に注意 22日（土）までの雨・風シミュレーション＆全国各地の天気予報【気象庁12日午前4時30分発表】(RSK山陽放送)",
-     "url": "https://news.yahoo.co.jp/articles/fb99f71180aa7b43b6f6565777bd955019b7ec7e?source=rss",
+     "title": "外国人労働者を束ねて工事現場で汗を流す男の正体…「“現役”というのは内緒ですが、言葉も理屈も通じない連中をうまくまとめてくれます」 ヤクザが“正業”に精を出す理由(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/c473b5ad9ac70febcf17b4b3fbbe135dba4d882b?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "拾った財布を届けたら泥棒扱い――日航123便の垂直尾翼を回収した「護衛艦まつゆき」元乗員の怒り(デイリー新潮)",
-     "url": "https://news.yahoo.co.jp/articles/818f5416e2b7a6d01736c5359ba6a92176bc59f2?source=rss",
+     "title": "政治的中立性、17教委が指針 18歳選挙権導入が契機に(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/11c642fd0b5f7d397836a45b161e19d349a5297e?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "国内",
+   "text": "山陽新幹線で、乗客の親子が車両に接近したため緊急停止が発生し、その様子が動画として拡散されました。JR西日本は顛末を聞き調査を進めており、この事件をきっかけにSNS上で「豊かな子供は自衛隊とかに入らない」という意見が炎上しました。また、台風17号が小笠原近海を北上しており、気象庁は23日までの雨・風シミュレーションでその影響を確認するよう呼びかけています。さらに、名古屋市内の公園で身元不明の遺体が見つかり、警察が捜査を進めています。",
+   "sources": [
+    {
+     "title": "「豊かな子供は自衛隊とかに入らない」を単なる「一時の炎上」で終わらせてはいけない(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/ca619f5647cc36cfd0252c6224aa4da55f59885f?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "外国人労働者を束ねて工事現場で汗を流す男の正体…「“現役”というのは内緒ですが、言葉も理屈も通じない連中をうまくまとめてくれます」 ヤクザが“正業”に精を出す理由(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/c473b5ad9ac70febcf17b4b3fbbe135dba4d882b?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "「減税反対の持論を曲げなかった」“財務省のエース”左遷の内幕と「官邸との暗闘」(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/f2fcf197d772ca2ad868143430b6491ec41f4e31?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "埼玉うどん多彩な魅力発信 300店食べ歩き動画紹介(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/3801e6bfe515d75efed19fafacfac8f2f0cf7699?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "政治",
+   "text": "本日、新検事総長が過去の不祥事に言及し、「高い倫理観を持ち全力尽くす」という決意を表明しました。また、福岡県議会の蔵内議長が、山陽新幹線で乗り遅れた親子に対し支援者へ送った「説明文」の内容が問題視されています。さらに、日航機墜落事故から41年を迎えるにあたり、慰霊式が開催され、事故の風化を防ぐための取り組みが呼びかけられています。",
+   "sources": [
+    {
+     "title": "「批判は見当違い」「扇動されたマスコミと世論が…」 福岡県議会“カツアゲ”疑惑 渦中のドン・蔵内議長が支援者に送った「説明文」の呆れた中身(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/c98c4b7a748c81b6ea909d3363a3dc6a6781b814?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "新検事総長 不祥事に言及 「高い倫理観を持ち全力尽くす」(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/9f0aaf1954b8b2bf76a956aba4f0e91d1efd5e94?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "日航機墜落から41年で慰霊式 “風化”させず「安全文化を築く」(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/13813597d11137922757639b9013934c1f520cf9?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "トラックと乗用車の接触事故 電柱は傾き…7人重軽傷 大阪(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/7a90b24c05a454795e6b1a36f432d7c9bcb9ec0b?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "経済",
-   "text": "財務省上層部からは、高市首相のスケジュール管理巡り「徒労感」の声が上がっている。政府は消費減税の財源確保を検討しているものの、為替介入の利益流用は困難であるとの指摘が出ている。また、備蓄米買い戻しを提案した農水相鈴木氏の進退をめぐり、高市首相が激怒しているという報道もある。さらに、サカナクションの山口一郎氏や小渕優子氏が消費減税に反対する姿勢を示しており、その動向が注目されている。",
+   "text": "JA元職員が顧客の定期預金を600万円余りを着服した疑いで逮捕されました。警察は、この資金の一部がギャンブルに充てられた可能性を調べており、総額約1億円規模の横領が行われた疑いが浮上しています。また、「正業」（暴力団の活動）の現場でヤクザが重宝されている背景には、外国人観光客とのトラブル対応などがあるという情報も入ってきました。",
    "sources": [
     {
-     "title": "「物価高対策をしようという時に！」“備蓄米買い戻し”で首相を激怒させた「鈴木農水相」進退への神経戦(デイリー新潮)",
-     "url": "https://news.yahoo.co.jp/articles/64b217a147541f1fed260379bf5fc3970e69c8b9?source=rss",
+     "title": "ギャンブルに充てたか…顧客の定期預金を解約し600万円余りを着服した疑い 36歳のJA元職員を逮捕 総額約1億円を横領か(東海テレビ)",
+     "url": "https://news.yahoo.co.jp/articles/00fc6f5becb2e1a7b5b2d551279052b6046a2dbc?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "「黙ってひな壇にはいられない」 「小渕優子」の「消費減税反対」宣言で試される「アンチ高市の覚悟」(デイリー新潮)",
-     "url": "https://news.yahoo.co.jp/articles/c16f7cda45cdd6f0dbc493fd7ea76c18ee36cef6?source=rss",
+     "title": "居酒屋や寿司屋、旅館にも…シノギに窮したヤクザが“正業”の現場で重宝される理由 「店で外国人観光客のトラブルはありませんね。注意したことは一度もないんですが…」(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/f0c1b52009b2cb4e8d8efe75d0342e8d2b0010b3?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "〈「国会嫌い」が招いた混乱〉高市首相にネグレクトされた財務省上層部が漏らした〈徒労感〉の正体(文春オンライン)",
-     "url": "https://news.yahoo.co.jp/articles/3f43ecf0aaa9e52629ed1b13efd82de39f4478a8?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "消費減税の財源に「為替介入の利益」流用困難と言われる理由(デイリー新潮)",
-     "url": "https://news.yahoo.co.jp/articles/b80c4583627e088cd487bd445111b8feeda197fb?source=rss",
+     "title": "外国人労働者を束ねて工事現場で汗を流す男の正体…「“現役”というのは内緒ですが、言葉も理屈も通じない連中をうまくまとめてくれます」 ヤクザが“正業”に精を出す理由(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/c473b5ad9ac70febcf17b4b3fbbe135dba4d882b?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
-   "field": "社会",
-   "text": "52歳の男性が酒気を帯びて運転し、別の車を追突して相手に怪我をさせた疑いで現行犯逮捕された。アユ釣りをしていた86歳男性が川に流され死亡した事件では、ライフジャケット未着用が原因とみられている。また、セルフレジでのトラブルとして、利用者が小銭を大量投入しレジを詰まらせるケースが頻発している。さらに、JAL機墜落事件に関する陰謀論を広めた張本人として、サカナクションの山口一郎氏の名前が取り上げられている。",
+   "field": "教育",
+   "text": "「豊かな子供は自衛隊とかに入らない」という意見がSNS上で炎上する一方、警察犬として活躍する小型犬、特にトイプードルなどの採用が増加しています。この背景には、山陽新幹線で発生した緊急停止事件など、小型犬の敏捷性が活きる状況へのニーズの高まりがあると考えられます。また、「批判は見当違い」「扇動されたマスコミと世論が…」といった表現を含む蔵内議長の「説明文」の内容に疑問を呈する声も上がっています。",
    "sources": [
     {
-     "title": "日航機墜落の陰謀論を作り出したのは誰か 存在しない「オレンジエアー」に執着したジャーナリストの名前(デイリー新潮)",
-     "url": "https://news.yahoo.co.jp/articles/c845174ef06194ecadd1bf2104fe8ed0b3eb9477?source=rss",
+     "title": "「批判は見当違い」「扇動されたマスコミと世論が…」 福岡県議会“カツアゲ”疑惑 渦中のドン・蔵内議長が支援者に送った「説明文」の呆れた中身(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/c98c4b7a748c81b6ea909d3363a3dc6a6781b814?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "酒を飲んで車を運転し追突事故を起こして相手にケガさせたか 危険運転致傷の疑いで52歳男を現行犯逮捕(東海テレビ)",
-     "url": "https://news.yahoo.co.jp/articles/50fa0b6cd8a68fc08d7c1b43fd59edb3fc5f479a?source=rss",
+     "title": "大型犬のイメージから一転… トイプードルなど小さくてかわいい警察犬が増加 全国の9割が\"嘱託\" 小型犬の採用が増えた理由とは(CBCテレビ)",
+     "url": "https://news.yahoo.co.jp/articles/4b83fec0f114af0252b160dbe0651ca4f0378b9d?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "万引きや行列だけじゃない「セルフレジ」の新たな問題…“小銭を大量投入”してレジを詰まらせるトラブルが絶えない理由(デイリー新潮)",
-     "url": "https://news.yahoo.co.jp/articles/e90052eb58a122a99d45902ed9bd50458ef20c30?source=rss",
+     "title": "「豊かな子供は自衛隊とかに入らない」を単なる「一時の炎上」で終わらせてはいけない(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/ca619f5647cc36cfd0252c6224aa4da55f59885f?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "ライフジャケットは着用せず…川へアユ釣りに来ていた86歳男性が流され死亡 知人と2人で訪れるも当時は別行動(東海テレビ)",
-     "url": "https://news.yahoo.co.jp/articles/2f0d63e8512c2adab648990db04da350dbce9497?source=rss",
+     "title": "辺野古沖で高校生ら死亡の転覆事故 海保が運航団体関係先を捜索(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/e7a634ffbba04f553069ed183b93c805ee071e3a?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
-   "field": "医療",
-   "text": "令和8年の熊本地震を受け、宮崎県から消防・医療チームやインフラ支援物資が被災地へ緊急輸送された。災害時の口のケアにおいて、呼吸器系の疾患が死亡原因の3割近くを占めていることが明らかになり、水なしでも可能な口腔ケアの方法が推奨されている。また、福島県会津で発生した火災から奇跡的に日本酒の製造が可能になった「正宗酒」が復活する見込みとなった。",
+   "field": "文化",
+   "text": "戦後81年において、家庭内暴力の根源には戦争トラウマが深く関わっていることが明らかになっており、NHK BSスペシャルで知られる依存症臨床家の信田さよ子氏によると、戦争中のPTSD（心的外傷後ストレス障害）は、復員兵に影響を与えたとされています。また、「ドイツが勝つという判断」に基づき行われた日独伊三国同盟の杜撰な状況が指摘されています。さらに、東京大空襲を生き延びた女性が自身の体験を語り、平和の尊さを説いています。",
    "sources": [
     {
-     "title": "「復活の一滴だ」火災から生き延びた奇跡の日本酒 笹正宗酒造の再建を支える会津の蔵元たちの強い絆(FNNプライムオンライン)",
-     "url": "https://news.yahoo.co.jp/articles/d25a15b57439e0f38aaf8c987267600c298606fe?source=rss",
+     "title": "《カウンセラーが語る敗戦と家庭内暴力》なぜ昭和の父親は酔うと豹変したのか……虐待とDVのルーツに見る「復員兵たちの戦争トラウマ」という闇(文春オンライン)",
+     "url": "https://news.yahoo.co.jp/articles/70b3cb54eafe7304698a3f228abb2d1db6197de5?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "熊本地震を受け、隣県・宮崎から消防・医療・インフラの支援 給水車やトイレカー、移動ATM、モバイルファーマシーも被災地へ急行(FNNプライムオンライン)",
-     "url": "https://news.yahoo.co.jp/articles/283d919fc750efce35b0a5cedabd62592cc529f2?source=rss",
+     "title": "戦争を知らない世代へ平和の尊さを説く─東京大空襲を生き延びた女性が語る空襲体験(ニッポン放送)",
+     "url": "https://news.yahoo.co.jp/articles/a814888e53951c97762b6884c4d4c49a65567107?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "「災害時こそ口のケアを」 10年前の“関連死”3割近くが「呼吸器系の疾患」 水なしでもできる方法 【令和8年熊本地震】(FNNプライムオンライン)",
-     "url": "https://news.yahoo.co.jp/articles/27ea82c655006d7069c7f1e482449a03b8678a49?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "field": "その他",
-   "text": "デジタル教科書の正式導入は東京大学教授によって「人体実験」と批判されている。日航123便の垂直尾翼を回収した「護衛艦まつゆき」元乗員からは、当時の状況に対する怒りが語られている。また、真夏にタイヤの劣化が進み、「車のSOS」が増加していることが日本自動車連盟（JAF）への取材で明らかになった。さらに、南米コロンビアでマグニチュード7.4の地震が発生し、死者224人という甚大な被害が出ている。",
-   "sources": [
-    {
-     "title": "熱でタイヤ劣化も激しく…真夏に増える『車のSOS』JAFに密着するとバッテリー上がりなど続々「日頃の点検が大事」(FNNプライムオンライン)",
-     "url": "https://news.yahoo.co.jp/articles/550cbad6ef0fd4282047b1f7c35cec16dff5f16e?source=rss",
+     "title": "《昭和史の闇》「ドイツが勝つという判断ですべてやっていました」通訳も記録もない密室交渉が招いた〈日独伊三国同盟〉の杜撰な真実(文春オンライン)",
+     "url": "https://news.yahoo.co.jp/articles/eb2a0f1dd2694a90ca50ff37f7da07b36c98455e?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "拾った財布を届けたら泥棒扱い――日航123便の垂直尾翼を回収した「護衛艦まつゆき」元乗員の怒り(デイリー新潮)",
-     "url": "https://news.yahoo.co.jp/articles/818f5416e2b7a6d01736c5359ba6a92176bc59f2?source=rss",
+     "title": "戦後81年 戦争の記憶を刻む忠魂碑がいま存続の危機に 守り手を失う“慰霊と記憶の場”をどう未来へつなぐか(FNNプライムオンライン)",
+     "url": "https://news.yahoo.co.jp/articles/89447488851eac1263ec813ed58f8f25db79d3da?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "デジタル教科書の正式導入は“人体実験”――デジタル・AI教育の弊害は「既に明らか」だと専門家が指摘する理由(デイリー新潮)",
-     "url": "https://news.yahoo.co.jp/articles/eac299aef3c3b8a4abed00e7ef0516651d681f5d?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "南米コロンビア地震、死者２２４人に…主要都市カリ市で患者６００人を路上で手当て・複数都市で建物倒壊 - 読売新聞",
-     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1qaWxJRUlLeDBJUFBEd25GaUF4WkNQb3BBX2wzbFhsTnNhTlo0TkE5eFpsMUhTT2RPMkpsSG00Zm9SX25vNENibVJhb1V3WGxldmhSS3VXdnJ6a2REOE1pLVVB?oc=5",
-     "feed_title": "トップニュース - Google ニュース"
     }
    ]
   },
@@ -132,203 +158,230 @@
   },
   {
    "field": "",
-   "text": "・高市首相のX投稿が医師から「非常に危険」と批判されている。",
+   "text": "・北アルプスの氷河が大幅に縮小し、厚さが20メートル減少した。",
    "sources": [
     {
-     "title": "高市首相｢プロモビデオ風｣動画より深刻…現役医師が｢国にとって危うい｣と断じるX投稿の\"一文“(プレジデントオンライン)",
-     "url": "https://news.yahoo.co.jp/articles/11aa54ac0543d96ee78495553e2c141387f95a5c?source=rss",
+     "title": "北アルプス氷河縮小、新潟大調査 厚さ20メートル減も(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/74d0724eedeea3f8ae6ebf27dcb8dc077d2bd4e3?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "",
-   "text": "・改正教育法により、2030年度からデジタル教科書の本格導入が見込まれている。",
+   "text": "・アメリカの前大統領報道官が、月末での退任を発表した。",
    "sources": [
     {
-     "title": "デジタル教科書の正式導入は“人体実験”――デジタル・AI教育の弊害は「既に明らか」だと専門家が指摘する理由(デイリー新潮)",
-     "url": "https://news.yahoo.co.jp/articles/eac299aef3c3b8a4abed00e7ef0516651d681f5d?source=rss",
+     "title": "今年５月に第２子出産発表、レビット米大統領報道官が退任へ…トランプ氏は「愛する子供たちや家族と時間を過ごすため」と説明 - 読売新聞",
+     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1mNnFBX3A3UVIzUV80Vkw2ZUd1V3JfdjYyLXI2djNheUFBbmQzTUd6NVU4ajc2T21qeVJZTGpYTExGOWpWZHl1YlRiSHphOXdyM2xPV0VJQVAwdzhuWkI1OGVR?oc=5",
+     "feed_title": "トップニュース - Google ニュース"
+    }
+   ]
+  },
+  {
+   "field": "",
+   "text": "・埼玉県のうどん店を紹介する動画が制作された。",
+   "sources": []
+  },
+  {
+   "field": "",
+   "text": "・ロッキード社の元幹部の供述判明により、全日空ルートと元検事総長に関する資料が公開された。",
+   "sources": [
+    {
+     "title": "ロッキード「灰色高官」供述判明 全日空ルート、元検事総長資料に(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/92f8aaf425c82d50383037607513f430a27f90ce?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "",
-   "text": "・JAFへの取材でバッテリー上がりのトラブルが続々と報告されている。",
+   "text": "・17教委が政治的中立性に関する指針を導入した。",
    "sources": [
     {
-     "title": "熱でタイヤ劣化も激しく…真夏に増える『車のSOS』JAFに密着するとバッテリー上がりなど続々「日頃の点検が大事」(FNNプライムオンライン)",
-     "url": "https://news.yahoo.co.jp/articles/550cbad6ef0fd4282047b1f7c35cec16dff5f16e?source=rss",
+     "title": "政治的中立性、17教委が指針 18歳選挙権導入が契機に(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/11c642fd0b5f7d397836a45b161e19d349a5297e?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "",
-   "text": "・サカナクションの山口一郎氏と川口春奈さんが注目を集めている。",
+   "text": "・今年5月に第2子を出産したレビット米大統領報道官が退任した。",
    "sources": [
     {
-     "title": "「黙ってひな壇にはいられない」 「小渕優子」の「消費減税反対」宣言で試される「アンチ高市の覚悟」(デイリー新潮)",
-     "url": "https://news.yahoo.co.jp/articles/c16f7cda45cdd6f0dbc493fd7ea76c18ee36cef6?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
+     "title": "今年５月に第２子出産発表、レビット米大統領報道官が退任へ…トランプ氏は「愛する子供たちや家族と時間を過ごすため」と説明 - 読売新聞",
+     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1mNnFBX3A3UVIzUV80Vkw2ZUd1V3JfdjYyLXI2djNheUFBbmQzTUd6NVU4ajc2T21qeVJZTGpYTExGOWpWZHl1YlRiSHphOXdyM2xPV0VJQVAwdzhuWkI1OGVR?oc=5",
+     "feed_title": "トップニュース - Google ニュース"
+    }
+   ]
+  },
+  {
+   "field": "",
+   "text": "・太平洋戦争における東京大空襲で約10万人が命を落とした。",
+   "sources": [
     {
-     "title": "海水浴、GPS装着で迅速救助を 神奈川・藤沢で無料貸し出し(共同通信)",
-     "url": "https://news.yahoo.co.jp/articles/f2e650897009c4032829ca8b2dfa76cd2ba958a1?source=rss",
+     "title": "戦争を知らない世代へ平和の尊さを説く─東京大空襲を生き延びた女性が語る空襲体験(ニッポン放送)",
+     "url": "https://news.yahoo.co.jp/articles/a814888e53951c97762b6884c4d4c49a65567107?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
+  },
+  {
+   "field": "",
+   "text": "・「また恋愛話か」と評された見上愛さんのエッセイが紹介された。",
+   "sources": []
   }
  ],
- "digest_at": "2026-08-11T21:36:37.574897+00:00",
+ "digest_at": "2026-08-12T21:37:06.940167+00:00",
  "topics": [
   {
-   "term": "台風",
+   "term": "イスラエル",
+   "article_count": 24
+  },
+  {
+   "term": "メディア",
+   "article_count": 24
+  },
+  {
+   "term": "大使館",
+   "article_count": 24
+  },
+  {
+   "term": "映像",
+   "article_count": 24
+  },
+  {
+   "term": "教師",
+   "article_count": 23
+  },
+  {
+   "term": "県立高校",
+   "article_count": 22
+  },
+  {
+   "term": "山陽新幹線",
+   "article_count": 21
+  },
+  {
+   "term": "懲戒免職",
+   "article_count": 21
+  },
+  {
+   "term": "身元不明",
+   "article_count": 21
+  },
+  {
+   "term": "名古屋",
+   "article_count": 21
+  },
+  {
+   "term": "遺体",
+   "article_count": 21
+  },
+  {
+   "term": "女子生徒",
+   "article_count": 20
+  },
+  {
+   "term": "在京",
+   "article_count": 20
+  },
+  {
+   "term": "事件",
+   "article_count": 19
+  },
+  {
+   "term": "名古屋市",
+   "article_count": 18
+  },
+  {
+   "term": "緊急停止",
    "article_count": 17
   },
   {
-   "term": "茨城県",
-   "article_count": 16
-  },
-  {
-   "term": "大雨",
-   "article_count": 16
-  },
-  {
-   "term": "財務省",
+   "term": "神奈川県",
    "article_count": 15
   },
   {
-   "term": "熱帯低気圧",
+   "term": "公園",
+   "article_count": 15
+  },
+  {
+   "term": "代男性教師",
    "article_count": 14
   },
   {
-   "term": "異例",
+   "term": "京都",
+   "article_count": 14
+  },
+  {
+   "term": "殺害事件",
    "article_count": 13
   },
   {
-   "term": "人事",
+   "term": "様々",
    "article_count": 13
   },
   {
-   "term": "発達",
+   "term": "親子",
    "article_count": 13
   },
   {
-   "term": "異例人事",
-   "article_count": 12
-  },
-  {
-   "term": "土砂災害",
-   "article_count": 12
-  },
-  {
-   "term": "警戒",
-   "article_count": 12
-  },
-  {
-   "term": "エース",
-   "article_count": 11
-  },
-  {
-   "term": "法改正",
-   "article_count": 11
-  },
-  {
-   "term": "上陸",
-   "article_count": 11
-  },
-  {
-   "term": "婚姻",
-   "article_count": 11
-  },
-  {
-   "term": "民法改正",
-   "article_count": 10
-  },
-  {
-   "term": "左遷",
-   "article_count": 10
-  },
-  {
-   "term": "年民法改正",
-   "article_count": 9
-  },
-  {
-   "term": "ニュース",
-   "article_count": 9
-  },
-  {
-   "term": "西日本",
-   "article_count": 9
-  },
-  {
-   "term": "小笠原近海",
-   "article_count": 8
-  },
-  {
-   "term": "川口春奈",
-   "article_count": 8
-  },
-  {
-   "term": "板倉滉",
-   "article_count": 8
-  },
-  {
-   "term": "高市",
-   "article_count": 8
-  },
-  {
-   "term": "接近",
-   "article_count": 8
-  },
-  {
-   "term": "高市首相",
-   "article_count": 7
-  },
-  {
-   "term": "法的地位",
-   "article_count": 7
-  },
-  {
-   "term": "デイリー",
-   "article_count": 7
-  },
-  {
-   "term": "東北",
-   "article_count": 7
-  },
-  {
-   "term": "新潮",
-   "article_count": 7
+   "term": "台風",
+   "article_count": 13
   },
   {
    "term": "シミュレーション",
-   "article_count": 6
+   "article_count": 12
   },
   {
-   "term": "気象庁",
-   "article_count": 6
+   "term": "歳男児殺害事件",
+   "article_count": 12
   },
   {
-   "term": "豊作",
-   "article_count": 6
+   "term": "非難",
+   "article_count": 12
   },
   {
-   "term": "広島",
-   "article_count": 6
+   "term": "結婚",
+   "article_count": 12
   },
   {
-   "term": "平和祈念式典後",
-   "article_count": 5
+   "term": "批判",
+   "article_count": 12
   },
   {
-   "term": "台風情報",
-   "article_count": 5
+   "term": "神奈川県立高校",
+   "article_count": 11
+  },
+  {
+   "term": "名古屋市内",
+   "article_count": 11
+  },
+  {
+   "term": "ニュース",
+   "article_count": 11
+  },
+  {
+   "term": "農水相",
+   "article_count": 10
+  },
+  {
+   "term": "首相",
+   "article_count": 10
+  },
+  {
+   "term": "愛子",
+   "article_count": 10
+  },
+  {
+   "term": "鈴木農水相",
+   "article_count": 9
   }
  ],
  "total": 40,
- "readable": 26,
+ "readable": 30,
  "sources": [
   "国内 - Yahoo!ニュース",
   "トップニュース - Google ニュース"
@@ -360,5 +413,5 @@
    "last_error": ""
   }
  ],
- "generated_at": "2026-08-11T21:36:38.985007+00:00"
+ "generated_at": "2026-08-12T21:37:08.546869+00:00"
 }
