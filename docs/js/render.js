@@ -89,12 +89,16 @@
 
   /* 総括の1段落 = 紙面の1記事。下に根拠の元記事をぶら下げる。
      分野名は項目ごとには出さない。同じ分野が並ぶと重複して見えるため、
-     paper() が面名（section-head）としてグループの先頭に1回だけ置く。 */
+     paper() が面名（section-head）としてグループの先頭に1回だけ置く。
+     項目の表札は、段落ごとに付けた短い見出し（subtitle）。 */
   function digestSection(section, index, handlers) {
     const block = el("section", "brief");
 
     const head = el("div", "brief__head");
     head.appendChild(el("span", "brief__num", ("0" + (index + 1)).slice(-2)));
+    if (section.subtitle) {
+      head.appendChild(el("h2", "brief__title", section.subtitle));
+    }
     block.appendChild(head);
 
     block.appendChild(el("p", "brief__text", section.text));

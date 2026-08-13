@@ -176,13 +176,15 @@
   letter-spacing: 0.02em;
 }
 
-.brief__field {
+/* 項目の見出し。本文との級数差で「新聞の見出し」に見せる */
+.brief__title {
   margin: 0;
-  font-family: -apple-system, system-ui, sans-serif;
-  font-size: 1.0625em;
+  font-size: 1.1875em;
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
+  line-height: 1.3;
   color: var(--ink);
+  overflow-wrap: anywhere;
 }
 
 .brief__text {
