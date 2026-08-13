@@ -87,13 +87,14 @@
     return link;
   }
 
-  /* 総括の1段落 = 紙面の1記事。下に根拠の元記事をぶら下げる。 */
+  /* 総括の1段落 = 紙面の1記事。下に根拠の元記事をぶら下げる。
+     分野名は項目ごとには出さない。同じ分野が並ぶと重複して見えるため、
+     paper() が面名（section-head）としてグループの先頭に1回だけ置く。 */
   function digestSection(section, index, handlers) {
     const block = el("section", "brief");
 
     const head = el("div", "brief__head");
     head.appendChild(el("span", "brief__num", ("0" + (index + 1)).slice(-2)));
-    if (section.field) head.appendChild(el("h2", "brief__field", section.field));
     block.appendChild(head);
 
     block.appendChild(el("p", "brief__text", section.text));
@@ -280,8 +281,15 @@
       root.appendChild(topicStrip(data.topics));
     }
 
+    // 同じ分野はサーバー側でまとまって並んでくる。分野が変わる位置にだけ
+    // 面名を置く（「社会」を項目ごとに繰り返さない）
     const body = el("section", "briefs");
+    let currentField = null;
     data.digest.forEach(function (section, index) {
+      if (section.field && section.field !== currentField) {
+        body.appendChild(sectionHead(section.field, ""));
+      }
+      currentField = section.field;
       body.appendChild(digestSection(section, index, handlers));
     });
     root.appendChild(body);
