@@ -118,11 +118,11 @@
    "article_count": 3
   },
   {
-   "term": "被害",
+   "term": "女性",
    "article_count": 3
   },
   {
-   "term": "女性",
+   "term": "被害",
    "article_count": 3
   },
   {
@@ -135,14 +135,6 @@
   },
   {
    "term": "就任",
-   "article_count": 3
-  },
-  {
-   "term": "計画",
-   "article_count": 3
-  },
-  {
-   "term": "人物",
    "article_count": 3
   },
   {
@@ -162,6 +154,14 @@
    "article_count": 3
   },
   {
+   "term": "計画",
+   "article_count": 3
+  },
+  {
+   "term": "人物",
+   "article_count": 3
+  },
+  {
    "term": "国民",
    "article_count": 3
   },
@@ -170,19 +170,19 @@
    "article_count": 3
   },
   {
-   "term": "現状",
-   "article_count": 3
-  },
-  {
    "term": "不明",
    "article_count": 3
   },
   {
-   "term": "紹介",
+   "term": "現状",
    "article_count": 3
   },
   {
    "term": "攻撃",
+   "article_count": 3
+  },
+  {
+   "term": "紹介",
    "article_count": 3
   },
   {
@@ -263,5 +263,5 @@
    "last_error": ""
   }
  ],
- "generated_at": "2026-08-13T15:20:22.952928+00:00"
+ "generated_at": "2026-08-13T15:24:39.849909+00:00"
 }
