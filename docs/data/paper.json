@@ -116,15 +116,11 @@
    "article_count": 3
   },
   {
-   "term": "政治",
-   "article_count": 3
-  },
-  {
    "term": "人物",
    "article_count": 3
   },
   {
-   "term": "計画",
+   "term": "政治",
    "article_count": 3
   },
   {
@@ -132,11 +128,15 @@
    "article_count": 3
   },
   {
+   "term": "連携",
+   "article_count": 3
+  },
+  {
    "term": "批判",
    "article_count": 3
   },
   {
-   "term": "連携",
+   "term": "計画",
    "article_count": 3
   },
   {
@@ -148,19 +148,19 @@
    "article_count": 3
   },
   {
-   "term": "不明",
-   "article_count": 3
-  },
-  {
    "term": "現状",
    "article_count": 3
   },
   {
-   "term": "紹介",
+   "term": "不明",
    "article_count": 3
   },
   {
    "term": "攻撃",
+   "article_count": 3
+  },
+  {
+   "term": "紹介",
    "article_count": 3
   },
   {
@@ -192,11 +192,11 @@
    "article_count": 3
   },
   {
-   "term": "当初",
+   "term": "米国",
    "article_count": 3
   },
   {
-   "term": "米国",
+   "term": "当初",
    "article_count": 3
   },
   {
@@ -241,5 +241,6 @@
    "last_error": ""
   }
  ],
- "generated_at": "2026-08-13T15:39:00.046022+00:00"
+ "generated_at": "2026-08-13T15:45:23.330361+00:00",
+ "build": "20260814004523"
 }

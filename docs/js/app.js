@@ -61,8 +61,26 @@
 
   function clearNotices() { noticesEl.replaceChildren(); }
 
+  /* GitHub Pages版の自己更新。ホーム画面アプリはHTMLやJSを長くキャッシュし、
+     表示の修正が届かないことがある。紙面データ（毎回取り直す）に入っている
+     ビルド版数が自分のものと違えば、一度だけURLを変えて読み直す。
+     版数ごとに1回きり（sessionStorageで抑止）なので、配信の時間差があっても
+     読み直しの繰り返しにはならない。 */
+  function reloadIfViewerIsStale(data) {
+    if (!API.isStatic || !data || !data.build || !window.SHIMEN_BUILD) return false;
+    if (data.build === window.SHIMEN_BUILD) return false;
+    const guard = "shimen_reloaded_" + data.build;
+    try {
+      if (sessionStorage.getItem(guard)) return false;
+      sessionStorage.setItem(guard, "1");
+    } catch (e) { return false; }   // プライベートモード等では読み直さない
+    location.replace(location.pathname + "?r=" + data.build);
+    return true;
+  }
+
   function loadPaper() {
     return API.getPaper().then(function (data) {
+      if (reloadIfViewerIsStale(data)) return data;
       if (API.isStatic) {
         data.emptyHint = "Macで紙面を作ってから、もう一度開いてください。";
       }
