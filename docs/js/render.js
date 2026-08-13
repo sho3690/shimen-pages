@@ -220,8 +220,8 @@
   function topicStrip(topicList) {
     const panel = el("section", "topics");
 
+    // 見出しは置かない。雲は見れば分かるので、説明の一行だけ添える
     const head = el("div", "topics__head");
-    head.appendChild(el("h2", "topics__title", "ワードクラウド"));
     head.appendChild(el("p", "topics__note", "語が大きいほど多くの記事に登場（タップで本数）"));
     panel.appendChild(head);
 
