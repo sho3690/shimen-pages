@@ -91,19 +91,6 @@
   font-family: -apple-system, system-ui, sans-serif;
 }
 
-.topics__head {
-  padding: var(--space-1) 0 var(--space-3);
-  margin-bottom: var(--space-4);
-  border-bottom: 1px solid var(--rule);
-  text-align: center;
-}
-
-.topics__note {
-  margin: 0;
-  font-size: 0.6875em;
-  color: var(--ink-3);
-}
-
 /* 渦巻き配置。JSが絶対座標で語を置く。
    枠の高さは固定。日によって紙面の形が変わらないようにする */
 .cloud {

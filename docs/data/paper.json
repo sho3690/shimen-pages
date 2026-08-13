@@ -116,10 +116,6 @@
    "article_count": 3
   },
   {
-   "term": "言葉",
-   "article_count": 3
-  },
-  {
    "term": "政治",
    "article_count": 3
   },
@@ -128,11 +124,15 @@
    "article_count": 3
   },
   {
-   "term": "批判",
+   "term": "計画",
    "article_count": 3
   },
   {
-   "term": "計画",
+   "term": "言葉",
+   "article_count": 3
+  },
+  {
+   "term": "批判",
    "article_count": 3
   },
   {
@@ -148,11 +148,11 @@
    "article_count": 3
   },
   {
-   "term": "現状",
+   "term": "不明",
    "article_count": 3
   },
   {
-   "term": "不明",
+   "term": "現状",
    "article_count": 3
   },
   {
@@ -241,5 +241,5 @@
    "last_error": ""
   }
  ],
- "generated_at": "2026-08-13T15:37:33.423397+00:00"
+ "generated_at": "2026-08-13T15:39:00.046022+00:00"
 }
