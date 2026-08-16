@@ -2,165 +2,138 @@
  "digest": [
   {
    "field": "社会",
-   "subtitle": "中央総武線で人身事故 運転見合わせ",
-   "text": "5月5日午前4時45分頃、中央総武線で阿佐ヶ谷駅付近の人身事故が発生し、三鷹～中野駅間の運転を見合わせています。事故発生時刻は06時45頃と報じられており、警察や消防による救助活動が行われた後、現場検証が進められています。中央総武線全線の上下線で運転見合わせに加え、中央線快速も全線で運転を見合わせており、ダイヤの乱れや鉄道利用者の遅延が続いています。現在、運転再開の見込みは午後5時20分頃とされています。",
+   "subtitle": "県議会議長 自己認識を表明",
+   "text": "福岡県議会議長の藏内勇夫氏が、正副議長ポストをめぐる金銭授受疑惑で批判を浴びている。藏内氏は7月23日、「日本で一番悪い男」と自己認識を示し、自身の権力基盤について説明した。県議会事務局や県庁職員からの過剰な敬遇やマスコミ各社の「藏内詣で」が、独自の権力構造を築き、県政に関する記事の入手を巡る記者クラブ内の競争を助長したという。藏内氏の拒否を避ける傾向があったことが元マスコミ記者の証言で明らかになった。",
    "sources": [
     {
-     "title": "JR中央・総武線の各駅停車 全線の上下線で運転見合わせ - NHKニュース",
-     "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1TQk8xXzF0T1AwckdGOE9EOWtjX25uRHhhd2toX0ZsX21TYTJfQzdxUld0NEZSZ1MxTXEtb1h0aHpPaUFiekc4aExEMEFjX0NUYnBpdmRhdXptSXlJU3FZ?oc=5",
+     "title": "だからテレビも新聞も藏内勇夫の\"犬\"になった…｢福岡のドン｣が県議会の番記者たちにバラまいた\"エサ\"の正体(プレジデントオンライン)",
+     "url": "https://news.yahoo.co.jp/articles/a239da7f5e35af1bafd749e30c356c85f338ccb0?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "社会",
+   "subtitle": "情報提供不足が課題",
+   "text": "熊本地震で避難所生活を送るろう者の方々への情報提供不足が明らかになった。支援物資の情報を受け取れなかったり、困り事を伝えられなかったりするケースが見られるという。情報伝達は「見える方法」に偏っていたことが原因の一つとされ、一部の避難所では筆談ボードが設置されている。関係機関は、ろう者の方々への情報提供方法の多様化と、より適切な支援体制の構築が必要とされている。",
+   "sources": [
+    {
+     "title": "避難所ろう者に情報届かず 「見える方法で伝えて」(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/c146cdfe5cfc2e50e602cda40ff1c8d202d70e5b?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "社会",
+   "subtitle": "耐震性 構造 土地 備えが不可欠",
+   "text": "令和8年熊本地震を機に、建物の耐震性が改めて注目されている。地震に強い家を建てるには、建物の構造に加え、土地の揺れやすさや間取り、停電対策、地震保険といった備えが不可欠である。住宅会社を選ぶ際には、実験方法や検証回数などを確認し、過去の地震波を再現した実験を行っているかどうかも判断材料となる。住宅性能表示制度に基づく耐震等級は目安の一つであり、木造住宅でも適切な設計により高い耐震性能を確保できる。",
+   "sources": [
+    {
+     "title": "〈令和8年熊本地震〉「耐震等級3だから安心」は危険…「大地震に強い家」の本当の条件とは？(ダイヤモンド・オンライン)",
+     "url": "https://news.yahoo.co.jp/articles/19b9105da7bc77e6d49d7783a548f9184c116467?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "社会",
+   "subtitle": "警察が音楽ユニットを立ち上げた",
+   "text": "岐阜県警察は、特殊詐欺の手口を啓発するため、男性ボーカルユニット「断絶」を立ち上げた。ユニットは、詐欺の手口を歌詞に盛り込んだ楽曲をイベントなどで披露し、歌を通して詐欺被害の未然防止を目指すという。この取り組みは、県内の特殊詐欺対策の一環として位置づけられており、警察は今後も同様の活動を検討していく方針だ。",
+   "sources": [
+    {
+     "title": "「歌の力」で特殊詐欺防げ 岐阜県警ボーカルユニット(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/83abfe8f85b61c0549fecab6455303098ed4463e?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "社会",
+   "subtitle": "豊川市で遺体遺棄事件 男女３人を逮捕",
+   "text": "愛知県豊川市でイラン国籍の男性の遺体が遺棄された事件で、犯行に使われた車が蒲郡市内で乗り捨てられていたことが判明しました。逮捕されたのは、キャラミ・ナーデル容疑者を含む男女3人で、警察は3人が遺体遺棄に関与したことを確認しています。捜査当局は、遺体の身元特定や犯行の動機、事件に関与した他の人物の捜査を進めており、組織的な犯罪活動の有無についても調べています。この事件は、愛知県豊川市と蒲郡市を巻き込んだ犯罪事件として注目されています。",
+   "sources": [
+    {
+     "title": "病院死体遺棄事件 犯行の車は蒲郡市で乗り捨てか 愛知・豊川市(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/da77034b75923761792fc706c12e8f146d11350a?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "未明に埠頭の路上で“ドリフト走行”か 交通の危険を生じさせた疑い トルコ国籍の29歳会社員の男逮捕(東海テレビ)",
+     "url": "https://news.yahoo.co.jp/articles/1dd400f826492ed794148cc7f0708c5c676ec0e4?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "科学",
+   "subtitle": "LLMアプリ開発に高性能ハードウェアを活用",
+   "text": "PC WatchのUbuntu日和の配信で、個人が30万円のRadeon AI PRO R9700を購入し、大規模言語モデル（LLM）にアプリを作成させる実験を行った。この実験を通じて、LLMの能力や限界を認識したという。高性能なハードウェアの重要性が浮き彫りになったとのことである。今後は、LLMを活用したアプリ開発をさらに進めていくとみられる。",
+   "sources": [
+    {
+     "title": "【Ubuntu日和】【第91回】30万円のRadeon AI PRO R9700自腹購入！LLMにアプリを作らせて気づいた真実 - PC Watch",
+     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE93TmVMclFGcVJHZXlNRWpxdGpTV1Z6M01lX0h2d09VVDBDM2ZKcVNXWnI2cmo0d0NkTnRDZnN6dTVocHZYMk9vNmtzTHhodnpjOTZNMk5vX0t5UTBVcnhIWjlGNVJDT1FmT2szWlBLVQ?oc=5",
      "feed_title": "トップニュース - Google ニュース"
-    },
-    {
-     "title": "中央総武線(各停)で人身事故 一部運転見合わせ(レスキューナウニュース)",
-     "url": "https://news.yahoo.co.jp/articles/69d92b6dfd0d5f9d3ae187dac592763742dcdecd?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "中央総武線(各停)で人身事故 運転再開(レスキューナウニュース)",
-     "url": "https://news.yahoo.co.jp/articles/b08d19ddfeb0398472ed6c2b8dcaa9940ff0ac87?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
-   "field": "社会",
-   "subtitle": "美濃橋付近で23歳男性が死亡",
-   "text": "15日午後0時半過ぎ、岐阜県美濃市にある長良川の美濃橋付近で、23歳の男性が溺死しました。男性は岩場から飛び込んで遊んでいたところ、行方不明になり、心肺停止状態で病院へ搬送されましたが、約3時間半後の15日午後4時頃に死亡が確認されました。警察は事故原因を調査しており、長良川周辺では警備員が配置されることになりました。関係機関は、長良川での水難事故防止のため注意喚起を行う予定です。",
+   "field": "経済",
+   "subtitle": "WindowsのOEMライセンス料が値上げ",
+   "text": "MicrosoftはWindowsのOEMライセンス料を7～10％値上げした。この値上げはPCメーカーや消費者に影響を与え、PC価格の高騰の一因となる可能性がある。Microsoftは、AIへの投資回収のためにWindowsライセンス料を調整したものであり、OEMモデルのPC価格が上昇する見込みだ。影響は特に中小企業や個人ユーザーに波及すると予想されている。",
    "sources": [
     {
-     "title": "「飛び込んで遊んでいて姿が見えなくなった」川で23歳男性が溺れる 心肺停止状態で搬送され約3時間半後に死亡(東海テレビ)",
-     "url": "https://news.yahoo.co.jp/articles/65ee558e44144c6e0447d4eb5eff7350b562efdf?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "【千葉豪雨】死者9人 行方不明1人 浸水被害1000棟超 雨に注意 - NHKニュース",
-     "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1XR3UzQUlneWdwZUc0T001enNEaEJjYlNrUk15QTNWUWR0Y1lKTFJGSmJ4M2NuTk00UlJ3UktvclBHTUtoS241WV9JX2dUZ2RIZEl2cUh4ZHZ5dDljRjhr?oc=5",
+     "title": "Windows OEMライセンス料“サイレント値上げ”のショック PC価格高騰の裏でMicrosoftが急ぐAI投資の回収：Windowsフロントライン（1/3 ページ） - ITmedia PC USER - ITmedia",
+     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9SOW10WGZFaTRzV083WFpaVUpHSC1BWm1FS0pfbjBkZGlRRTZPUzgtd2V6Vi1UNF9HYUlyTlB2U19PWVRSWHB4RXJ3UG9IUzNQcUJDajZudnQzMVRLYlZTQkJDbUpvU29QNG1tM1RFNNIBaEFVX3lxTFBaMmZyQ0Y4YmhzLVNRbjdyZTNSOElhX1hoVjBVdHFnbmpMSjJSb2duRV9uVUVRS0xwV2FmTHZ6enZlT0VTbXM4VUE0cXVrYll4WXhFWHNmeWpJaTZMczRzN3RmdUtTWlF5?oc=5",
      "feed_title": "トップニュース - Google ニュース"
-    }
-   ]
-  },
-  {
-   "field": "社会",
-   "subtitle": "死者9人行方不明者1人",
-   "text": "千葉県で記録的な豪雨による被害が拡大し、新たにいすみ市で70代男性が死亡したことで、死者数は合計9人にのぼっています。行方不明者は1人、浸水被害は1000棟以上に上り、住宅被害は1160棟に拡大しています。千葉県は、今回の被害を受け激甚災害の指定を要望しており、死者9人の家族への支援や被災者への物資提供などを検討しています。放置車両も1200台以上発生し、レッカー車による回収が追いついていない状況です。",
-   "sources": [
-    {
-     "title": "千葉県の豪雨被害 いすみ市の男性死亡 死者9人に 知事「激甚災害」指定を要望(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/b5262d395d72442403b2fe2243830c3351fa6198?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "【千葉豪雨】死者9人 行方不明1人 浸水被害1000棟超 雨に注意 - NHKニュース",
-     "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1XR3UzQUlneWdwZUc0T001enNEaEJjYlNrUk15QTNWUWR0Y1lKTFJGSmJ4M2NuTk00UlJ3UktvclBHTUtoS241WV9JX2dUZ2RIZEl2cUh4ZHZ5dDljRjhr?oc=5",
-     "feed_title": "トップニュース - Google ニュース"
-    }
-   ]
-  },
-  {
-   "field": "社会",
-   "subtitle": "反中感情高まる韓国",
-   "text": "韓国で中国への反中感情が高まり、2024年には反中デモが前年比5倍の65件に達した。習近平国家主席が日本を批判したことが影響していると見られ、台湾人観光客が中国人と間違われるケースが相次いでおり、2024年には焼酎瓶で殴られる事件も発生した。現地ガイドによると、台湾人観光客のおよそ20人が中国人と間違われる被害に遭っているという。韓国政府は中国との関係悪化を懸念しており、今後の外交展開に影響を与える可能性がある。",
-   "sources": [
-    {
-     "title": "習近平が｢日本に行くな｣と煽ったばかりに…反中感情が高まる韓国で､台湾人観光客が持ち歩く\"自衛アイテム\"(プレジデントオンライン)",
-     "url": "https://news.yahoo.co.jp/articles/b66f1c0255cce201ec565675e635db91c048f454?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "field": "社会",
-   "subtitle": "花火爆発 三人軽傷",
-   "text": "山形県鶴岡市で開催されていた赤川花火大会で、15日午後9時20分ごろに花火が爆発し、3人が軽傷を負いました。爆発は会場付近で発生し、負傷者3人はいずれも軽傷で、県警や地元消防が救護活動を行っています。現在、爆発の原因を調査中で、毎年多くの観客を集める同花火大会の安全対策の見直しが検討される可能性があります。",
-   "sources": [
-    {
-     "title": "花火大会で爆発、3人軽傷 山形・鶴岡(共同通信)",
-     "url": "https://news.yahoo.co.jp/articles/4c3b3ea3723fba3178bd88fb4cb709a99313f2bf?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "field": "政治",
-   "subtitle": "経済安全保障課題は終わらない",
-   "text": "小野田紀美経済安全保障担当大臣は、特別国会で審議された経済安全保障推進法関連法案について、経済安全保障の課題は「終わりがない」と指摘した。ホルムズ湾岸におけるナフサ不足や石油備蓄といった問題に焦点を当て、特定重要物資の指定対象を再検討する議論が進められた。従来の石油備蓄法を担当していた赤澤大臣とは異なり、医薬品など他の物資についても指定を検討し、国会で議論を深める必要性を認識している。小野田大臣は、外国人政策に関しては「厳格化しすぎ」という声や「まだまだ甘いぞ」という声も寄せられていると述べた。",
-   "sources": [
-    {
-     "title": "【小野田紀美大臣】「外国人政策は『厳格化しすぎ』というお叱りの声や『まだまだ甘いぞ』というお叱りの声も」(RSK山陽放送)",
-     "url": "https://news.yahoo.co.jp/articles/208d5a957219f74ccb1c4bde96c51a29d926c22d?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   }
  ],
- "digest_at": "2026-08-16T00:21:52.234405+00:00",
+ "digest_at": "2026-08-16T21:38:09.215757+00:00",
  "topics": [
   {
-   "term": "男性",
-   "article_count": 5
-  },
-  {
-   "term": "事故",
-   "article_count": 5
-  },
-  {
-   "term": "女性",
-   "article_count": 4
-  },
-  {
-   "term": "理解",
-   "article_count": 4
-  },
-  {
-   "term": "消防",
-   "article_count": 4
-  },
-  {
    "term": "警察",
-   "article_count": 4
-  },
-  {
-   "term": "不明",
-   "article_count": 4
-  },
-  {
-   "term": "中央総武線",
-   "article_count": 3
-  },
-  {
-   "term": "人身事故",
-   "article_count": 3
-  },
-  {
-   "term": "行方不明",
-   "article_count": 3
-  },
-  {
-   "term": "被災地",
-   "article_count": 3
-  },
-  {
-   "term": "NHK",
-   "article_count": 3
-  },
-  {
-   "term": "日午後",
-   "article_count": 3
+   "article_count": 5
   },
   {
    "term": "認識",
+   "article_count": 5
+  },
+  {
+   "term": "位置",
+   "article_count": 5
+  },
+  {
+   "term": "男性",
+   "article_count": 4
+  },
+  {
+   "term": "大谷翔平選手",
    "article_count": 3
   },
   {
-   "term": "感情",
+   "term": "イベント",
    "article_count": 3
   },
   {
-   "term": "行動",
+   "term": "熊本地震",
    "article_count": 3
   },
   {
-   "term": "日常",
+   "term": "千葉豪雨",
+   "article_count": 3
+  },
+  {
+   "term": "浸水被害",
+   "article_count": 3
+  },
+  {
+   "term": "千葉市",
+   "article_count": 3
+  },
+  {
+   "term": "女性",
    "article_count": 3
   },
   {
@@ -168,80 +141,104 @@
    "article_count": 3
   },
   {
+   "term": "歴史",
+   "article_count": 3
+  },
+  {
+   "term": "限界",
+   "article_count": 3
+  },
+  {
+   "term": "生活",
+   "article_count": 3
+  },
+  {
+   "term": "笑顔",
+   "article_count": 3
+  },
+  {
+   "term": "一環",
+   "article_count": 3
+  },
+  {
+   "term": "戦略",
+   "article_count": 3
+  },
+  {
+   "term": "災害",
+   "article_count": 3
+  },
+  {
+   "term": "停電",
+   "article_count": 3
+  },
+  {
    "term": "人々",
    "article_count": 3
   },
   {
-   "term": "復旧",
+   "term": "捜査",
    "article_count": 3
   },
   {
-   "term": "阿佐",
+   "term": "死者",
    "article_count": 3
   },
   {
-   "term": "谷駅",
+   "term": "場所",
    "article_count": 3
   },
   {
-   "term": "運転",
-   "article_count": 3
-  },
-  {
-   "term": "被害",
-   "article_count": 3
-  },
-  {
-   "term": "批判",
-   "article_count": 3
-  },
-  {
-   "term": "連携",
-   "article_count": 3
-  },
-  {
-   "term": "作業",
-   "article_count": 3
-  },
-  {
-   "term": "時間半後",
+   "term": "news.yahoo.co.jp",
    "article_count": 2
   },
   {
-   "term": "中野駅間",
+   "term": "メジャーリーグ",
    "article_count": 2
   },
   {
-   "term": "救助活動",
+   "term": "村上宗隆選手",
    "article_count": 2
   },
   {
-   "term": "イベント",
+   "term": "イスラエル",
    "article_count": 2
   },
   {
-   "term": "花火大会",
+   "term": "メーカー",
    "article_count": 2
   },
   {
-   "term": "谷駅付近",
+   "term": "被害状況",
    "article_count": 2
   },
   {
-   "term": "一時見合",
+   "term": "大谷選手",
    "article_count": 2
   },
   {
-   "term": "事故原因",
+   "term": "号本塁打",
    "article_count": 2
   },
   {
-   "term": "関係機関",
+   "term": "SNS",
+   "article_count": 2
+  },
+  {
+   "term": "アジア",
+   "article_count": 2
+  },
+  {
+   "term": "重要性",
+   "article_count": 2
+  },
+  {
+   "term": "モデル",
    "article_count": 2
   }
  ],
  "total": 40,
- "readable": 28,
+ "readable": 30,
  "sources": [
   "国内 - Yahoo!ニュース",
   "トップニュース - Google ニュース"
@@ -273,6 +270,6 @@
    "last_error": ""
   }
  ],
- "generated_at": "2026-08-16T00:21:53.802623+00:00",
- "build": "20260816092153"
+ "generated_at": "2026-08-16T21:38:10.464407+00:00",
+ "build": "20260817063810"
 }
