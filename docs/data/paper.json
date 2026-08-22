@@ -2,162 +2,159 @@
  "digest": [
   {
    "field": "社会",
-   "subtitle": "ゴルフ場研修生死亡 遺族が提訴",
-   "text": "石川遼のマネジメント会社が経営権を取得した福島県棚倉町のゴルフ場「棚倉田舎倶楽部」で研修生だった19歳のA君が2022年6月24日に死亡した事件で、遺族がゴルフ場の上司からのパワハラが死因だと主張し、約1億円の損害賠償を求めて福島地裁いわき支部に提訴した。遺族は、ゴルフ場の経営に熱心な石川勝美社長の言動も背景にあると指摘している。A君の母親は「Aを研修生にしたことは一生の後悔です。息子を返してほしい」と取材に語った。",
+   "subtitle": "茨城県南部で地震 最大震度5弱",
+   "text": "23日午前2時ごろ、茨城県南部で最大震度5弱を観測した地震が発生し、関東地方に大きな揺れが及んだ。神奈川県川崎市では3人が転倒により負傷し、いずれも軽傷で治療を受けている。高市早苗首相はXを通じて「被害状況の把握指示」と「同程度の地震注意」を呼びかけ、官邸危機管理センターに官邸連絡室を設置し、政府は被害状況の把握と情報提供を指示した。気象庁は、震源地周辺で今後1週間程度、同程度の規模の地震が発生する可能性があると注意を促している。",
    "sources": [
     {
-     "title": "《遺族が提訴》母が「息子を返して」“石川遼ゴルフ場”でプロ志望の19歳研修生が自殺していた(文春オンライン)",
-     "url": "https://news.yahoo.co.jp/articles/c5c33139ff6f52f05366cdecfb7ed7774ced0fa8?source=rss",
+     "title": "高市首相、関東の震度5弱で「被害状況の把握指示」「同程度の地震注意」とXで発信(産経新聞)",
+     "url": "https://news.yahoo.co.jp/articles/ca1085283da8c611c78bff88eb5f112cdb66f474?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "自宅で92歳母親の首をケーブルで絞めて殺害か 同居する66歳長男を殺人容疑で逮捕「間違いありません」と認める(東海テレビ)",
-     "url": "https://news.yahoo.co.jp/articles/6bd71d7fcce5ca46d4050a622cff2570052bc4f6?source=rss",
+     "title": "関東で震度5弱、政府が官邸連絡室設置 高市首相が被害状況把握指示 原発施設に異常なし(産経新聞)",
+     "url": "https://news.yahoo.co.jp/articles/f93744c2cbb4a9084e96a8a6394191be135d6c0a?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "関東震度5弱 高市総理「被害状況把握など指示」(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/96fce1938a735815a6a2cc5d8b0573899166702c?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "首相、関東の地震で被害状況の把握指示(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/7e940293dfe0bf05c1c552351b6b8bac7ccde45f?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "社会",
-   "subtitle": "給水バルブ誤開け 水漏れ112万円",
-   "text": "市立東中学校で、教員が古い給水バルブを誤って開けたことで、約2週間にわたる水漏れが発生し、約112万円の水道料金が発生する見込みです。教員はバルブの開け方が分からず、専門家への確認を怠ったことが原因とされています。教育委員会は学校施設の管理体制の見直しと教員の研修強化を方針としており、同様の事故を防ぐための安全対策の徹底が求められています。",
+   "subtitle": "議論を避け組織安定",
+   "text": "経営者は、怒りや不満が強く表面化した社員への対応として、「議論しない」戦略を取るべきだと提唱されている。これは、冷静な交渉が困難な状況を悪化させないために、感情的な対立を避けることに焦点を当てるものであり、問題の根本原因の特定は後回しとする。日経ビジネスの記事では、この戦略が組織全体の安定に繋がる可能性があると指摘されている。",
    "sources": [
     {
-     "title": "約2週間水を出しっぱなしに…中学校のプールで教員が誤った給水バルブ開ける 水道料金は1.8倍の約112万円に(東海テレビ)",
-     "url": "https://news.yahoo.co.jp/articles/bfe41451ba4b402c2373fd787f8999c898854b75?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "東武鉄道4人死亡事故 栃木県警が特別捜査班設置(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/414525e218ec5f0855d51c5f5e9f5933b80d6960?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "栃木4人死亡事故 運転士「急ブレーキかけたが間に合わず」 - NHKニュース",
-     "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBkUlR6MXBXVjZ5TUUwSTROb2RWV1RWMy1ob1g0SFVpV2F2am11aV9nM1RtQ2U4NDNJZzZ2ZmlMemUyYlhyRjhrdTJpbmF5SGFUWTRZdVp4V0pWWkwweEhJ?oc=5",
-     "feed_title": "トップニュース - Google ニュース"
-    }
-   ]
-  },
-  {
-   "field": "社会",
-   "subtitle": "従業員死亡 遺族が真相解明を求める",
-   "text": "イオンモール熊本の爆発事故で、7人の従業員が死亡し、遺族らが真相解明を求めて怒りの証言を行っている。爆発直前にオンワードホールディングスの系列店で働いていた女性の兄は、妹が不必要な時間を館内に留まり、最終的に爆発に巻き込まれた経緯に疑問を呈した。また、雑貨店「ハビタ」に勤めていた大竹玖瑠美さんの遺族も、彼女が安全確認ができていない館内に戻ってしまった理由について疑問を呈している。イオン側は、地震発生後30分後に野外への避難を完了させたものの、その後50分後に爆発が起き、再入館を判断した。",
-   "sources": [
-    {
-     "title": "「ハビタが無責任な態度に終始するなら…」 イオンモール爆発事故の被害者遺族が怒りの証言 専門家は「刑事責任の追及は可能」(デイリー新潮)",
-     "url": "https://news.yahoo.co.jp/articles/7e5218f81aa3985ff2f30d0aaae7766150fff796?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "〈イオンモール爆発〉館内に戻ったのに被害を免れた生存者の証言 「食品売り場に寄ったことで助かったのかも」(デイリー新潮)",
-     "url": "https://news.yahoo.co.jp/articles/9a20bf01dc9a1fd6fc010b7a88e6c3b166e2db1a?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "《遺族が提訴》母が「息子を返して」“石川遼ゴルフ場”でプロ志望の19歳研修生が自殺していた(文春オンライン)",
-     "url": "https://news.yahoo.co.jp/articles/c5c33139ff6f52f05366cdecfb7ed7774ced0fa8?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "森永卓郎さんが『書いてはいけない』と警告を発した「日航123便墜落事故」 元客室乗務員が『書かなきゃいけない』と新著で問う［ノンフィクションベストセラー］(Book Bang)",
-     "url": "https://news.yahoo.co.jp/articles/04c3c31eef6c718404c97a318311e6355605fb9d?source=rss",
+     "title": "社内クレーマー化した困った社員への対応は「議論しない」(日経ビジネス)",
+     "url": "https://news.yahoo.co.jp/articles/986f5a91e89824cbafae19af7c59895624412281?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "社会",
-   "subtitle": "半蔵門駅で石綿の飛散を確認",
-   "text": "東京メトロは8月9日午前5時55分ごろ、半蔵門駅永田町駅側ホームで乗務員がホコリの飛散を認め、現地調査と修繕を実施した。8月10日に石綿含有と判明したが、東京メトロは当初、破損した布地が石綿を含む可能性を認識していなかった。11日には渋谷駅～九段下駅間の運転を中止し、半蔵門駅で清掃を実施、空気環境測定の結果、総繊維数濃度は0.11本未満だった。",
+   "subtitle": "京浜東北線と湘南新宿ライン運転見合わせ",
+   "text": "首都圏の鉄道で、地震の影響による運転見合わせが発生しました。JR東日本は、京浜東北線の大宮駅と赤羽駅間の運転を始発から見合わせ、湘南新宿ラインも新宿駅より北側の区間において運転を見合わせました。最大震度5弱の地震が発生し、首都圏の通勤・通学に支障が生じています。JR東日本は、今後の状況を注視し、運行の復旧を目指す方針です。",
    "sources": [
     {
-     "title": "半蔵門駅ホームにアスベストが降り注ぐ 東京メトロが明かさない真相(アジアプレス・ネットワーク)",
-     "url": "https://news.yahoo.co.jp/articles/7c68710e31d3e71f0b53e6c02d5ae0641e86d064?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "field": "社会",
-   "subtitle": "避難者数は公式に2884人",
-   "text": "熊本地震から1ヶ月となった現在、避難者の公式な数値は2884人となっているが、車中泊や軒先避難をしている人々は含まれていない。宇城市不知火町では、プレハブ小屋での生活を余儀なくされている家族もおり、断水や生活空間の寸断により精神的な負担が大きいという。また、八代市では約4400世帯で井戸水の使用に支障をきたしており、地盤の液状化によって砂が井戸に溜まっていることが原因と報告されている。現地調査では、日奈久断層帯に沿った地割れや建物倒壊、液状化現象による地盤沈下などの被害が確認されている。",
-   "sources": [
-    {
-     "title": "「体は元気だが心が…」地震から1カ月、避難者数に表れない“軒先避難”の実態 プレハブに断熱素材なく「暑い」【令和8年熊本地震】(FNNプライムオンライン)",
-     "url": "https://news.yahoo.co.jp/articles/acc338998c35ef934a291bc253e07771442c280e?source=rss",
+     "title": "地震の影響で京浜東北線などで一部運転見合わせ(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/9fb72b0576d5ace76fa970fc395a896bb47669bf?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "【現地ルポ】「備蓄だけでは命を守れない」熊本地震の現地調査で明らかになった地震に強い家の3条件(ダイヤモンド・オンライン)",
-     "url": "https://news.yahoo.co.jp/articles/7826957130fd3f39fc7c0669f8c1006f2d7de17b?source=rss",
+     "title": "東電福島第1、第2原発に異常なし(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/615d3370a1da8d7b70f629901643e5c9bac4395f?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "社会",
+   "subtitle": "相模原市 60代女性が階段から転落",
+   "text": "相模原市で60代女性が自宅の階段から転落し、頭を負傷する事故があった。相模原市消防局と救急隊が現場に駆けつけ、意識のある状態で女性を搬送した。女性の現在の容態は不明で、事故原因の調査は現在行われており、詳しい状況は今後の捜査で明らかになる見込みだ。今回の事故を受け、相模原市では高齢者向けの安全対策の重要性が改めて認識された。",
+   "sources": [
+    {
+     "title": "相模原市で60代女性が階段から落ちてけが(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/b95c2d330c3c4415205a4cc06705ea2dbb6361ec?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "「水が出ない」「濁る」八代市4400世帯で井戸に不具合 「液状化によって砂がたまっている」復旧修理の現状を報告【令和8年熊本地震】(FNNプライムオンライン)",
-     "url": "https://news.yahoo.co.jp/articles/db43d223197377abedf3b94781abf0f922c6f717?source=rss",
+     "title": "「娘が帰ってこない」母親から通報…SNSで知り合った14歳少女を車で連れ出すなどして誘拐か 25歳無職の男を逮捕(東海テレビ)",
+     "url": "https://news.yahoo.co.jp/articles/f4776c0e8dbfdd87f1a8417ac50afddda2ac9d94?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "震度6強で被災「八代飯店」が営業再開 全国の飲食店から食器の支援 演劇公演がつないだ縁も 令和8年熊本地震(FNNプライムオンライン)",
-     "url": "https://news.yahoo.co.jp/articles/33e80e30e3540906c63ef23fd8a65591bf5d68eb?source=rss",
+     "title": "コンビニで食料品を万引き…男が声掛けた店員を殴ってケガさせ自転車で逃走 50代位とみられ身長約170cm(東海テレビ)",
+     "url": "https://news.yahoo.co.jp/articles/36830f68f930b14707939fbadf8b05340b8328dc?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "川崎市で3人けが、命に別条なし(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/feae4c46365e2017726a14656c03da07d60f9f1c?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "社会",
-   "subtitle": "執刀医の判断ミスが原因",
-   "text": "京都大学医学部附属病院で7月末に行われた手術で、50代女性患者が重篤な合併症を発症した。摘出されたのは腫瘍ではなく正常な部位であり、呼吸に関わる脳幹も損傷したとされ、事故の責任は執刀医の判断ミスが原因とされている。診療科長は執刀医の判断ミスや思い込みを指摘しており、現在は当該手術のカルテが見られない状態である。患者は手術前に通常の生活を送っていたが、数年前の診察で発見された脳腫瘍を理由に手術を決定していた。",
+   "subtitle": "震度3も原子力施設は安全",
+   "text": "茨城県東海村の原子力施設周辺で震度3の揺れに見舞われたが、原子力規制庁はモニタリングポストの数値に変化がないと発表した。東海第2原発を含む原子力施設周辺の放射線量に変化は見られず、外部への放射能の拡散や住民への健康影響は確認されていない。原子力規制庁は引き続きモニタリングを強化し、状況を注視する方針である。今回のモニタリング結果は、原子力施設周辺の安全性を確認する上で重要なデータとなる。",
    "sources": [
     {
-     "title": "〈京大病院で医療ミス〉ベテラン執刀医が失敗した原因は… 「現在は当該手術のカルテが見られない状態」(デイリー新潮)",
-     "url": "https://news.yahoo.co.jp/articles/b63b462a5184ffe142df8f9df60c0ff27f82bd5c?source=rss",
+     "title": "茨城・東海村の原子力施設 外部への放射能の影響なし 原子力規制庁(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/88bb8e6ee03b2ecff646ce36806af7d94c9214a8?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "社会",
-   "subtitle": "父の暴力と性暴力の証言",
-   "text": "大阪在住の藤岡美千代さん（67）は、戦地帰還した父・古本石松さんによる暴力と性暴力に苦しめられた壮絶な日常を文春オンラインで語った。石松さんは千島列島で戦場を過ごし、ソ連軍捕虜として抑留生活を送った後、奇行やアルコール依存に陥り、下半身だけ露出したまま自転車を押したり、ちゃぶ台をひっくり返したりしたという。美千代さんによると、石松さんは子供たちを軍隊のように扱い、「死ぬぞ」と叫ぶ暴力的な「ごっこ」を繰り返した。藤岡さんは、父による下半身露出と性暴力についても証言している。",
+   "subtitle": "原発に異常なし運転は通常通り",
+   "text": "東京電力は、茨城県などで発生した最大震度5弱の地震を受け、福島第一原発と福島第二原発に異常がないことを発表した。地震の揺れは原発の安全装置に影響を与えなかったと判断され、両原発の運転状況は現在も通常通りである。今回の地震は4月14日に発生した四国地方を中心としたM7.3の地震の余震によるもので、東京電力は今後も原発の状況を注視し、安全対策を強化していく方針だ。",
    "sources": [
     {
-     "title": "「下半身だけ露出したまま自転車を押して…」戦地から戻った父が奇行を繰り返し、激しい家庭内暴力も…「戦争トラウマ」当事者家族の67歳女性が明かす“壮絶な日常”(文春オンライン)",
-     "url": "https://news.yahoo.co.jp/articles/73abef47f77b007dad23dd3ecb831f0729366c18?source=rss",
+     "title": "東電福島第1、第2原発に異常なし(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/615d3370a1da8d7b70f629901643e5c9bac4395f?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "field": "社会",
-   "subtitle": "死刑執行は約1年2か月ぶり",
-   "text": "法務省は8月21日、高見素直死刑囚（58歳）に死刑を執行し、約1年2か月ぶりの執行となった。高見死刑囚は、2009年にパチンコ店放火事件で5人を殺害し、最高裁判所での死刑判決が確定していた。今回の執行は、2025年10月に組閣された高市政権で初入閣した平口法相が担当したものであり、平口法相はこれまで法務副大臣などを歴任している。死刑執行までの歳月が約10年にも及んだことや、未執行の確定死刑囚が100人以上も待機する現状に対し、ネット上では批判が相次いでいる。",
-   "sources": [
+    },
     {
-     "title": "平口法相、高市政権で初の死刑執行命令「死刑は正義ではなく復讐」反対派に示した“制度存廃の答え”(週刊女性PRIME)",
-     "url": "https://news.yahoo.co.jp/articles/d806571649fb12a19883ba236cde0da6a63ef0eb?source=rss",
+     "title": "関東で震度5弱、政府が官邸連絡室設置 高市首相が被害状況把握指示 原発施設に異常なし(産経新聞)",
+     "url": "https://news.yahoo.co.jp/articles/f93744c2cbb4a9084e96a8a6394191be135d6c0a?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "“地震の巣”で最大震度5弱 同程度の地震に注意 気象庁(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/7e31fbab5685939dfe9956ecad8c2169ae417c2f?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "地震の影響で京浜東北線などで一部運転見合わせ(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/9fb72b0576d5ace76fa970fc395a896bb47669bf?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   }
  ],
- "digest_at": "2026-08-21T21:40:14.618896+00:00",
+ "digest_at": "2026-08-22T21:37:01.823983+00:00",
  "topics": [
   {
-   "term": "事故",
+   "term": "震度",
+   "article_count": 13
+  },
+  {
+   "term": "地震",
+   "article_count": 12
+  },
+  {
+   "term": "観測",
+   "article_count": 11
+  },
+  {
+   "term": "被害",
    "article_count": 8
   },
   {
-   "term": "生活",
-   "article_count": 7
-  },
-  {
-   "term": "証言",
-   "article_count": 6
+   "term": "関東",
+   "article_count": 8
   },
   {
    "term": "女性",
+   "article_count": 7
+  },
+  {
+   "term": "関東地方",
+   "article_count": 6
+  },
+  {
+   "term": "被害状況",
    "article_count": 6
   },
   {
@@ -165,63 +162,67 @@
    "article_count": 6
   },
   {
-   "term": "死亡",
+   "term": "注視",
    "article_count": 6
   },
   {
-   "term": "熊本",
+   "term": "把握",
    "article_count": 6
   },
   {
-   "term": "被害",
-   "article_count": 6
-  },
-  {
-   "term": "地震",
-   "article_count": 6
-  },
-  {
-   "term": "家族",
+   "term": "高市早苗",
    "article_count": 5
   },
   {
-   "term": "真相",
+   "term": "最大震度",
    "article_count": 5
   },
   {
-   "term": "捜査",
+   "term": "茨城県",
    "article_count": 5
+  },
+  {
+   "term": "気象庁",
+   "article_count": 5
+  },
+  {
+   "term": "負傷",
+   "article_count": 5
+  },
+  {
+   "term": "首相",
+   "article_count": 5
+  },
+  {
+   "term": "指示",
+   "article_count": 5
+  },
+  {
+   "term": "国民",
+   "article_count": 5
+  },
+  {
+   "term": "シミュレーション",
+   "article_count": 4
+  },
+  {
+   "term": "高市早苗首相",
+   "article_count": 4
   },
   {
    "term": "安全対策",
    "article_count": 4
   },
   {
-   "term": "熊本地震",
+   "term": "台風情報",
    "article_count": 4
   },
   {
-   "term": "熊本県",
+   "term": "情報提供",
    "article_count": 4
   },
   {
-   "term": "勢力",
-   "article_count": 4
-  },
-  {
-   "term": "遺族",
-   "article_count": 4
-  },
-  {
-   "term": "令和",
-   "article_count": 4
-  },
-  {
-   "term": "殺害",
-   "article_count": 4
-  },
-  {
-   "term": "容疑",
+   "term": "捜査",
    "article_count": 4
   },
   {
@@ -229,63 +230,43 @@
    "article_count": 4
   },
   {
+   "term": "設置",
+   "article_count": 4
+  },
+  {
+   "term": "場所",
+   "article_count": 4
+  },
+  {
+   "term": "連絡",
+   "article_count": 4
+  },
+  {
+   "term": "震源",
+   "article_count": 4
+  },
+  {
    "term": "進路",
    "article_count": 4
   },
   {
-   "term": "台風",
+   "term": "住民",
    "article_count": 4
   },
   {
-   "term": "シミュレーション",
+   "term": "最大瞬間風速",
    "article_count": 3
   },
   {
-   "term": "年熊本地震",
+   "term": "地震発生直後",
    "article_count": 3
   },
   {
-   "term": "中心気圧",
+   "term": "官邸連絡室",
    "article_count": 3
   },
   {
-   "term": "液状化",
-   "article_count": 3
-  },
-  {
-   "term": "八代市",
-   "article_count": 3
-  },
-  {
-   "term": "NHK",
-   "article_count": 3
-  },
-  {
-   "term": "気象庁",
-   "article_count": 3
-  },
-  {
-   "term": "見直",
-   "article_count": 3
-  },
-  {
-   "term": "現状",
-   "article_count": 3
-  },
-  {
-   "term": "解明",
-   "article_count": 3
-  },
-  {
-   "term": "当初",
-   "article_count": 3
-  },
-  {
-   "term": "疑問",
-   "article_count": 3
-  },
-  {
-   "term": "判断",
+   "term": "高市首相",
    "article_count": 3
   }
  ],
@@ -322,6 +303,6 @@
    "last_error": ""
   }
  ],
- "generated_at": "2026-08-21T21:40:16.142648+00:00",
- "build": "20260822064016"
+ "generated_at": "2026-08-22T21:37:03.079150+00:00",
+ "build": "20260823063703"
 }
