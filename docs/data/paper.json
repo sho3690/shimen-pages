@@ -2,227 +2,120 @@
  "digest": [
   {
    "field": "社会",
-   "subtitle": "茨城県南部で地震 最大震度5弱",
-   "text": "23日午前2時ごろ、茨城県南部で最大震度5弱を観測した地震が発生し、関東地方に大きな揺れが及んだ。神奈川県川崎市では3人が転倒により負傷し、いずれも軽傷で治療を受けている。高市早苗首相はXを通じて「被害状況の把握指示」と「同程度の地震注意」を呼びかけ、官邸危機管理センターに官邸連絡室を設置し、政府は被害状況の把握と情報提供を指示した。気象庁は、震源地周辺で今後1週間程度、同程度の規模の地震が発生する可能性があると注意を促している。",
+   "subtitle": "東武日光線で作業員4人死亡",
+   "text": "東武日光線で作業員4人が死亡する事故が発生し、警察は事故原因の解明に向けて捜査を進めている。事故当時、特急列車が3本も通過しており、十分な安全対策が講じられていなかったことが問題視されている。東武鉄道は安全管理体制の見直しを行う方針を示しており、事故現場周辺の住民への支援も検討している。警察は元請け会社を捜索し、業務上過失致死容疑で捜査を進めている。名鉄の特急列車と衝突した事故では、13歳の女子中学生が死亡し、乗客約250人が軽傷を負った。",
    "sources": [
     {
-     "title": "高市首相、関東の震度5弱で「被害状況の把握指示」「同程度の地震注意」とXで発信(産経新聞)",
-     "url": "https://news.yahoo.co.jp/articles/ca1085283da8c611c78bff88eb5f112cdb66f474?source=rss",
+     "title": "特急列車と衝突…駅近くの線路上で死亡した女性は13歳女子中学生と判明 乗客約250人にケガはなく2時間近く運転見合わせ(東海テレビ)",
+     "url": "https://news.yahoo.co.jp/articles/a3c95dd20b58454b827244df9c51735dee7ef063?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "関東で震度5弱、政府が官邸連絡室設置 高市首相が被害状況把握指示 原発施設に異常なし(産経新聞)",
-     "url": "https://news.yahoo.co.jp/articles/f93744c2cbb4a9084e96a8a6394191be135d6c0a?source=rss",
+     "title": "東武鉄道4人死亡事故 複数のミス重なった疑い 警察 経緯解明へ - NHKニュース",
+     "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBsa3F3cXowb2NMZmJNVWVEUmhuaWJxU0hPYlVMNFA4Ui1Ta3h3bGFmN3pMQ092OW5JMVZvY3pCX2tKOHNYRWpwRUN4MmpFNXBYOW1ncTMwTmtISmR5aUZR?oc=5",
+     "feed_title": "トップニュース - Google ニュース"
+    },
+    {
+     "title": "東武4人死亡事故 作業時間に電車3本通過(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/bda419d3cf422609c46b0d5ae6e2cbabaad3a346?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "関東震度5弱 高市総理「被害状況把握など指示」(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/96fce1938a735815a6a2cc5d8b0573899166702c?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "首相、関東の地震で被害状況の把握指示(共同通信)",
-     "url": "https://news.yahoo.co.jp/articles/7e940293dfe0bf05c1c552351b6b8bac7ccde45f?source=rss",
+     "title": "近鉄大阪線で人身事故 運転再開(レスキューナウニュース)",
+     "url": "https://news.yahoo.co.jp/articles/da214cbaf5b16f9e31d4ec057f7b0984d86eb1ea?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "社会",
-   "subtitle": "議論を避け組織安定",
-   "text": "経営者は、怒りや不満が強く表面化した社員への対応として、「議論しない」戦略を取るべきだと提唱されている。これは、冷静な交渉が困難な状況を悪化させないために、感情的な対立を避けることに焦点を当てるものであり、問題の根本原因の特定は後回しとする。日経ビジネスの記事では、この戦略が組織全体の安定に繋がる可能性があると指摘されている。",
+   "subtitle": "外国ルーツの子ども支援 書籍が出版",
+   "text": "NPO法人「共に暮らす」のアジズ・アフメッドさんが、外国ルーツを持つ子どもへの支援活動に関する書籍「ことばのヤングケアラー」を出版した。本書は、外国ルーツを持つ子どもの学習支援といった活動の実態を伝え、言葉による支援の重要性を訴えている。アフメッドさんは、自身の経験を踏まえ、家族通訳の実態やニーズに対する理解を深めることを目指している。この出版により、外国ルーツ当事者への支援体制構築の必要性が改めて認識されるだろう。",
    "sources": [
     {
-     "title": "社内クレーマー化した困った社員への対応は「議論しない」(日経ビジネス)",
-     "url": "https://news.yahoo.co.jp/articles/986f5a91e89824cbafae19af7c59895624412281?source=rss",
+     "title": "「家族通訳」の実態理解を 外国ルーツ当事者が出版(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/6374f605865d10aae6c63729ab0a808f3e74b8eb?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "社会",
-   "subtitle": "京浜東北線と湘南新宿ライン運転見合わせ",
-   "text": "首都圏の鉄道で、地震の影響による運転見合わせが発生しました。JR東日本は、京浜東北線の大宮駅と赤羽駅間の運転を始発から見合わせ、湘南新宿ラインも新宿駅より北側の区間において運転を見合わせました。最大震度5弱の地震が発生し、首都圏の通勤・通学に支障が生じています。JR東日本は、今後の状況を注視し、運行の復旧を目指す方針です。",
+   "subtitle": "少年院送致 逆送なし",
+   "text": "埼玉県狭山市で発生した強盗事件で、バールで頭を殴打した17歳の少年が、裁判所によって「逆送なし」で少年院に送致された。被害者男性は79歳で重傷を負い、「一歩間違えれば死んだかもしれない」と憤慨している。少年は「先輩から誘われた」と供述しているが、裁判所は少年の反省や弁済の意思を十分に考慮したと判断した。被害者男性は少年から謝罪や弁済の申し出を受けていない。裁判所は、刑事処分が相当と判断した場合にのみ検察官送致となる「逆送」をしないという方針に基づいている。",
    "sources": [
     {
-     "title": "地震の影響で京浜東北線などで一部運転見合わせ(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/9fb72b0576d5ace76fa970fc395a896bb47669bf?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "東電福島第1、第2原発に異常なし(共同通信)",
-     "url": "https://news.yahoo.co.jp/articles/615d3370a1da8d7b70f629901643e5c9bac4395f?source=rss",
+     "title": "こんな甘い処分で少年たちの暴走を止められるのか…“バールで頭を殴打”の強盗事件を起こした17歳が「逆送なし」で少年院に 79歳被害者の思い(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/ed4f5d595306fb92576bfbbd16ef550f582ea2e6?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "社会",
-   "subtitle": "相模原市 60代女性が階段から転落",
-   "text": "相模原市で60代女性が自宅の階段から転落し、頭を負傷する事故があった。相模原市消防局と救急隊が現場に駆けつけ、意識のある状態で女性を搬送した。女性の現在の容態は不明で、事故原因の調査は現在行われており、詳しい状況は今後の捜査で明らかになる見込みだ。今回の事故を受け、相模原市では高齢者向けの安全対策の重要性が改めて認識された。",
+   "subtitle": "西田氏 懲戒免職 弁護士活動制限",
+   "text": "最高検は7月29日、特捜部の直告班キャップだった西田将仁氏（48）の懲戒免職を発表した。西田氏は家庭を持ちながら愛人弁護士と同棲し、捜査対象者との密会や金品提供を行っていた事実が明らかになった。懲戒免職により、西田氏は3年間弁護士活動ができないが、その後弁護士資格を取得する可能性があり、法廷に立つことも理論上可能である。しかし、弁護士会への登録が日弁連の許可を必要とし、過去の黒川元検事長の麻雀賭博事件などを考慮すると、登録は難しいと見られている。",
    "sources": [
     {
-     "title": "相模原市で60代女性が階段から落ちてけが(共同通信)",
-     "url": "https://news.yahoo.co.jp/articles/b95c2d330c3c4415205a4cc06705ea2dbb6361ec?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "「娘が帰ってこない」母親から通報…SNSで知り合った14歳少女を車で連れ出すなどして誘拐か 25歳無職の男を逮捕(東海テレビ)",
-     "url": "https://news.yahoo.co.jp/articles/f4776c0e8dbfdd87f1a8417ac50afddda2ac9d94?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "コンビニで食料品を万引き…男が声掛けた店員を殴ってケガさせ自転車で逃走 50代位とみられ身長約170cm(東海テレビ)",
-     "url": "https://news.yahoo.co.jp/articles/36830f68f930b14707939fbadf8b05340b8328dc?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "川崎市で3人けが、命に別条なし(共同通信)",
-     "url": "https://news.yahoo.co.jp/articles/feae4c46365e2017726a14656c03da07d60f9f1c?source=rss",
+     "title": "捜査対象と男女関係、愛人と二重生活…懲戒免職の「乱倫エース検事」は今後弁護士に？ 「おいそれと許可するとは考えにくい」(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/c620c4e46beb22978ea90c3a4ae13cafc59689e8?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "社会",
-   "subtitle": "震度3も原子力施設は安全",
-   "text": "茨城県東海村の原子力施設周辺で震度3の揺れに見舞われたが、原子力規制庁はモニタリングポストの数値に変化がないと発表した。東海第2原発を含む原子力施設周辺の放射線量に変化は見られず、外部への放射能の拡散や住民への健康影響は確認されていない。原子力規制庁は引き続きモニタリングを強化し、状況を注視する方針である。今回のモニタリング結果は、原子力施設周辺の安全性を確認する上で重要なデータとなる。",
+   "subtitle": "検察官辞表 組織不祥事訴え",
+   "text": "元大阪地検検事正のひかりさん（仮名）は、上司による性犯罪被害を受け、2024年4月末に辞表を提出した。北川健太郎被告の無罪主張が続く第2回公判は日程未定となっている。ひかりさんは、組織のハラスメント不祥事や自浄作用の欠如を強く訴え、第三者委員会の設置を必要不可欠だと主張している。また、2024年2月には、同僚の検事による誹謗中傷拡散問題で国などを相手取った裁判を起こしている。",
    "sources": [
     {
-     "title": "茨城・東海村の原子力施設 外部への放射能の影響なし 原子力規制庁(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/88bb8e6ee03b2ecff646ce36806af7d94c9214a8?source=rss",
+     "title": "性被害訴える女性検事「司法が茶番になってしまう」孤独な闘いも、広がる支援「検察改革に声を」(日刊スポーツ)",
+     "url": "https://news.yahoo.co.jp/articles/f49111763f06b87f7dc63319c83df35152230f4c?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
-   "field": "社会",
-   "subtitle": "原発に異常なし運転は通常通り",
-   "text": "東京電力は、茨城県などで発生した最大震度5弱の地震を受け、福島第一原発と福島第二原発に異常がないことを発表した。地震の揺れは原発の安全装置に影響を与えなかったと判断され、両原発の運転状況は現在も通常通りである。今回の地震は4月14日に発生した四国地方を中心としたM7.3の地震の余震によるもので、東京電力は今後も原発の状況を注視し、安全対策を強化していく方針だ。",
+   "field": "経済",
+   "subtitle": "土屋氏が素材産業局長に昇進",
+   "text": "経済産業省の人事では、ナフサやエチレンの生産流通支援に休日返上で半年間を費やした土屋博史氏が素材産業局長に昇進した。これは、イラン攻撃以降のナフサ不足対策への貢献が評価された結果であり、同局総務課長の玉井優子氏の後任となった。今回の世代交代では、中小企業庁長官の山下隆一氏や資源エネルギー庁長官の村瀬佳史氏といった次官級の氏が退任し、平成3年入省の技官を中心とした人事が行われた。人事の背景には、関税交渉での連携や素材産業に関する冷静な判断など、中堅・若手職員への気配りも含まれている。",
    "sources": [
     {
-     "title": "東電福島第1、第2原発に異常なし(共同通信)",
-     "url": "https://news.yahoo.co.jp/articles/615d3370a1da8d7b70f629901643e5c9bac4395f?source=rss",
+     "title": "《経産省の世代交代》休日返上で「ナフサ対策」に半年打ち込んだ技官が“異例の昇進”(文春オンライン)",
+     "url": "https://news.yahoo.co.jp/articles/ef7ea2cb71d0be841cafe2b9eb98d4ae58db99b9?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
-    },
+    }
+   ]
+  },
+  {
+   "field": "経済",
+   "subtitle": "飲食料品消費税 27年4月減税",
+   "text": "政府は2027年4月から2年間限定で、飲食料品の消費税率を8％から1％に減税する方針を決定した。この減税により、年間8.8兆円の財源が確保される見込みだが、具体的な財源確保策は示されていない。財源確保策として、社会保障4経費から年間4.4兆円を削減する案が浮上しており、自民党内でも反対意見が出ている。石破茂前総理や河野太郎元デジタル相らは減税に反対したことで、ネット上で批判を受けている。減税反対派からは、弱者を切り捨てるという批判や、財務省の手先であるという批判が寄せられている。",
+   "sources": [
     {
-     "title": "関東で震度5弱、政府が官邸連絡室設置 高市首相が被害状況把握指示 原発施設に異常なし(産経新聞)",
-     "url": "https://news.yahoo.co.jp/articles/f93744c2cbb4a9084e96a8a6394191be135d6c0a?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "“地震の巣”で最大震度5弱 同程度の地震に注意 気象庁(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/7e31fbab5685939dfe9956ecad8c2169ae417c2f?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "地震の影響で京浜東北線などで一部運転見合わせ(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/9fb72b0576d5ace76fa970fc395a896bb47669bf?source=rss",
+     "title": "消費税減税が「弱者をさらに苦しめる」理由 物価がもっと上がって地方自治体が衰退する(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/e45fb4356a64d610cdfbfa9789f7ad9464b44735?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   }
  ],
- "digest_at": "2026-08-22T21:37:01.823983+00:00",
+ "digest_at": "2026-08-23T21:40:14.159632+00:00",
  "topics": [
   {
-   "term": "震度",
-   "article_count": 13
-  },
-  {
-   "term": "地震",
-   "article_count": 12
-  },
-  {
-   "term": "観測",
-   "article_count": 11
+   "term": "事故",
+   "article_count": 6
   },
   {
    "term": "被害",
-   "article_count": 8
+   "article_count": 5
   },
   {
-   "term": "関東",
-   "article_count": 8
+   "term": "作業",
+   "article_count": 5
   },
   {
    "term": "女性",
-   "article_count": 7
-  },
-  {
-   "term": "関東地方",
-   "article_count": 6
-  },
-  {
-   "term": "被害状況",
-   "article_count": 6
-  },
-  {
-   "term": "事件",
-   "article_count": 6
-  },
-  {
-   "term": "注視",
-   "article_count": 6
-  },
-  {
-   "term": "把握",
-   "article_count": 6
-  },
-  {
-   "term": "高市早苗",
-   "article_count": 5
-  },
-  {
-   "term": "最大震度",
-   "article_count": 5
-  },
-  {
-   "term": "茨城県",
-   "article_count": 5
-  },
-  {
-   "term": "気象庁",
-   "article_count": 5
-  },
-  {
-   "term": "負傷",
-   "article_count": 5
-  },
-  {
-   "term": "首相",
-   "article_count": 5
-  },
-  {
-   "term": "指示",
-   "article_count": 5
-  },
-  {
-   "term": "国民",
-   "article_count": 5
-  },
-  {
-   "term": "シミュレーション",
-   "article_count": 4
-  },
-  {
-   "term": "高市早苗首相",
-   "article_count": 4
-  },
-  {
-   "term": "安全対策",
-   "article_count": 4
-  },
-  {
-   "term": "台風情報",
-   "article_count": 4
-  },
-  {
-   "term": "情報提供",
-   "article_count": 4
-  },
-  {
-   "term": "捜査",
    "article_count": 4
   },
   {
@@ -230,48 +123,132 @@
    "article_count": 4
   },
   {
-   "term": "設置",
+   "term": "死亡",
    "article_count": 4
   },
   {
-   "term": "場所",
+   "term": "経験",
    "article_count": 4
   },
   {
-   "term": "連絡",
+   "term": "事件",
    "article_count": 4
   },
   {
-   "term": "震源",
+   "term": "役割",
    "article_count": 4
   },
   {
-   "term": "進路",
+   "term": "東京",
    "article_count": 4
+  },
+  {
+   "term": "千葉",
+   "article_count": 4
+  },
+  {
+   "term": "判断",
+   "article_count": 4
+  },
+  {
+   "term": "生活",
+   "article_count": 4
+  },
+  {
+   "term": "大阪",
+   "article_count": 4
+  },
+  {
+   "term": "事故原因",
+   "article_count": 3
+  },
+  {
+   "term": "裁判所",
+   "article_count": 3
+  },
+  {
+   "term": "被災地",
+   "article_count": 3
+  },
+  {
+   "term": "運転",
+   "article_count": 3
+  },
+  {
+   "term": "見直",
+   "article_count": 3
+  },
+  {
+   "term": "捜査",
+   "article_count": 3
   },
   {
    "term": "住民",
-   "article_count": 4
-  },
-  {
-   "term": "最大瞬間風速",
    "article_count": 3
   },
   {
-   "term": "地震発生直後",
+   "term": "処分",
    "article_count": 3
   },
   {
-   "term": "官邸連絡室",
+   "term": "一般",
    "article_count": 3
   },
   {
-   "term": "高市首相",
+   "term": "考慮",
    "article_count": 3
+  },
+  {
+   "term": "十分",
+   "article_count": 3
+  },
+  {
+   "term": "設置",
+   "article_count": 3
+  },
+  {
+   "term": "地震",
+   "article_count": 3
+  },
+  {
+   "term": "熊本",
+   "article_count": 3
+  },
+  {
+   "term": "災害",
+   "article_count": 3
+  },
+  {
+   "term": "豪雨",
+   "article_count": 3
+  },
+  {
+   "term": "シミュレーション",
+   "article_count": 2
+  },
+  {
+   "term": "人死亡事故",
+   "article_count": 2
+  },
+  {
+   "term": "近鉄大阪線",
+   "article_count": 2
+  },
+  {
+   "term": "八尾駅構内",
+   "article_count": 2
+  },
+  {
+   "term": "近鉄八尾駅",
+   "article_count": 2
+  },
+  {
+   "term": "サポート",
+   "article_count": 2
   }
  ],
  "total": 40,
- "readable": 30,
+ "readable": 29,
  "sources": [
   "国内 - Yahoo!ニュース",
   "トップニュース - Google ニュース"
@@ -303,6 +280,6 @@
    "last_error": ""
   }
  ],
- "generated_at": "2026-08-22T21:37:03.079150+00:00",
- "build": "20260823063703"
+ "generated_at": "2026-08-23T21:40:15.646787+00:00",
+ "build": "20260824064015"
 }
