@@ -2,238 +2,247 @@
  "digest": [
   {
    "field": "社会",
-   "subtitle": "AI校正で文章の多様性が減少",
-   "text": "AIによる文章校正が文章の多様性を損ない、筆者らしさを薄める可能性があることが、米国南カリフォルニア大学の研究チームによって明らかになった。研究では、AIが文章を修正することで語彙や文体のばらつきが減り、人間が書いた文章と区別しにくくなると分かった。生成AIの利用が文章表現の多様性を脅かす可能性を示唆する研究結果は、AIの活用方法を検討する上で重要な示唆を与えている。文章の多様性を維持するための対策を講じる必要性が訴えられている。",
+   "subtitle": "福井県に大雨特別警報河川氾濫リスク",
+   "text": "福井県福井市、大野市、勝山市にレベル5の大雨特別警報が発表され、記録的な大雨による災害が発生している可能性が極めて高いと気象庁と国土交通省が会見で発表した。荒川や赤根川など河川が氾濫し、九頭竜川水系の竹田川では氾濫の恐れも出ており、現在、各地域で浸水リスクが高まっている。気象庁は住民に対し、避難指示に従い安全な場所に移動するよう呼びかけ、車での移動は非常に危険と注意を促している。今後の降雨状況によっては、他の市町村にも同様の特別警報が発表される可能性があり、警戒が必要とされている。",
    "sources": [
     {
-     "title": "AI校正、筆者らしさ薄く 文章整うが多様性危機？(共同通信)",
-     "url": "https://news.yahoo.co.jp/articles/0d39bbfe11e5911af5db9f834b398f1e50b9aea3?source=rss",
+     "title": "福井県にレベル5大雨特別警報、気象庁・国交省が会見「浸水想定区域では既に災害発生の可能性が極めて高い」「浸水した場所での車の移動は非常に危険」ダムで緊急放流の可能性も(ABEMA TIMES)",
+     "url": "https://news.yahoo.co.jp/articles/ca2f9c7c8b744588f2a1b77468beffd48ae8b72b?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "福井県に大雨特別警報 対象は福井市 大野市 勝山市 - NHKニュース",
+     "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBSUXI5OU1QaGV1YVNuNHdibVhOVDI2TW1yTEVFZEEtLVRDQWdYb3JzblJRSkdrZ0tabjcyd05HY2xJalI2dDBobEJldmFRVUM4aE5WYTJ2bWVPcnh2WG1F?oc=5",
+     "feed_title": "トップニュース - Google ニュース"
+    },
+    {
+     "title": "福井県にレベル5大雨特別警報 今すぐ身の安全の確保を(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/7ca3cc5ed722a17c2ae9536847b5cf7cd08c8003?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "福井に大雨特別警報 気象庁、避難呼びかけ(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/df79f0f712e9cda62fc1c3da101e99f80d47a74d?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "社会",
-   "subtitle": "貯留槽満杯 内水氾濫発生",
-   "text": "千葉県で記録的な豪雨が発生し、中心部の貯留槽3施設が満杯となり、雨水を貯留できなくなりました。貯留槽3施設は計2万1100トンの雨水を貯留できる能力を持ちますが、25メートルプール約54杯分相当の雨水が流れ込み、内水氾濫と一部の浸水被害が発生しました。市は昨年から貯留槽の整備を進めていましたが、今回の豪雨の規模に対しては限界があったと見られています。今後はより大規模な雨水貯留施設の整備や、浸水対策の強化を検討していく方針です。",
+   "subtitle": "生活道路の速度制限変更",
+   "text": "9月1日から、中央線がない、または幅が狭い生活道路の法定速度が時速60キロから30キロに引き下げられることになった。これは、改正道路交通法の施行によるもので、交通省が安全対策強化のために推進している。速度超過は違反となるため、歩行者や自転車利用者の安全確保がより一層重視される。関係機関は、標識の設置や交通ルールの周知など、具体的な安全対策を進めていく方針だ。",
    "sources": [
     {
-     "title": "千葉豪雨、貯留槽の許容オーバー 浸水対策で昨年から整備も限界(共同通信)",
-     "url": "https://news.yahoo.co.jp/articles/11385a93bbdb40fca308446d0ee7e021ea1f3bab?source=rss",
+     "title": "生活道路は9月から法定速度30キロに 標識なしの狭い道で“超えれば違反” 改正道路交通法で安全対策強化(FNNプライムオンライン)",
+     "url": "https://news.yahoo.co.jp/articles/0df611a1e50182874c61997dd416a1f8d6143841?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "社会",
-   "subtitle": "文化史研究 地理要素が重要",
-   "text": "文化史を学ぶ際、作品の画像や時代背景だけでなく、国境や街道、海や山脈といった地理的な要素を考慮することが、より深い理解につながるという研究結果が出ている。文化は地理的な要因と深く結びついているため、これらの要素を理解することで、文化の形成過程をより深く把握できるという。研究者たちは、文化が生まれた場所の地理的な特徴を「地図」として捉えることが、文化史を理解する上で重要な鍵だと指摘している。今後は、文化史の研究において、地理的な要素の重要性が注目されるだろう。",
+   "subtitle": "茨城県南部で震度4の地震発生",
+   "text": "30日午前0時17分ごろ、茨城県南部で震度4の地震が発生し、福島県から東京都の一部で揺れが観測された。震源地は千葉県東方沖で、地震の規模はマグニチュード4.8～4.0と推定されており、気象庁は津波の心配はないと発表した。茨城県南部では地震による被害は限定的だが、関係機関が被害状況の確認や二次災害への警戒を行っており、気象庁は今後余震が発生する可能性もあるとして注意を呼びかけている。関係自治体は住民に対し、安全確保を呼びかけている。",
    "sources": [
     {
-     "title": "「考えが浅い人」は作品だけを見る、「考えが深い人」は地図を見る…教養の決定的な違い(ダイヤモンド・オンライン)",
-     "url": "https://news.yahoo.co.jp/articles/2d3b9a433c3cdb91c8a297d99678f69bc4117a19?source=rss",
+     "title": "茨城県南部で震度4 津波の心配なし(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/fae4769c85a05aef2f2b5d61ed51e923442a1df0?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "茨城で震度4(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/26575bc3bb10edc6a41332b3ff3acd31c10c29e7?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "茨城県で震度4の地震 津波の心配なし(tenki.jp)",
+     "url": "https://news.yahoo.co.jp/articles/50214938ddcc6110bb16bdc6c92aa26d9092c826?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "茨城で震度4 M4.8(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/5be04265bf203a372d8fd3b1297d0b3924642e63?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "社会",
-   "subtitle": "レディオ空港が24時間運用を支える",
-   "text": "福島空港が東日本大震災の際、24時間運用を支えた背景には、専任の管制官がいない「レディオ空港」という運用体制がある。空港には雲の高さ計測装置「シーロメーター」や雷監視システムなどの観測設備が設置され、航空管制運航情報官がパイロットに気象状況や滑走路の情報を英語で提供している。風向や風速などのデータは、航空機の離着陸に合わせて常に伝えられ、滑走距離の調整などが行われている。福島空港は、福島県玉川村に位置している。",
+   "subtitle": "東海第2原発に異常なし",
+   "text": "茨城県で震度4を観測した地震により、東海第2原発に異常が確認されていないと日本原子力発電社が発表した。地震は東海第2原発に影響を与えなかったとされ、同社は地震後の原子炉状況を監視している。今回の地震は、2024年1月1日に発生した南海地震の余震によるものとみられている。原子力規制庁は、今後も全国の原子力発電所の安全点検を継続し、地震への備えを強化する方針だ。",
    "sources": [
     {
-     "title": "震災支えた福島空港の裏側!専任管制官なき「レディオ空港」 雲の高さや雷まで独自観測 気象データを生かすANAの現場力とは(FNNプライムオンライン)",
-     "url": "https://news.yahoo.co.jp/articles/4ce223a91708cce8b15e615285ea05521202f33f?source=rss",
+     "title": "東海第2原発に異常なし(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/82f588d3a153869516bf63636703fb3337053337?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "field": "経済",
-   "subtitle": "青春18きっぷ 金券ショップから消える",
-   "text": "2024年より青春18きっぷの利用条件が大幅に変更された影響で、金券ショップから同きっぷが次々と消えている。今回の変更は、これまで売れ筋だった青春18きっぷの利用者を減らすことを目的としたもので、きっぷの売れ筋が変化したことが原因と見られる。業界トップの金券ショップが転売対策を講じているとの見方がある一方、JRは異なる回答を寄せている。JRにとってきっぷの転売は新たな課題であり、今後の対策強化の可能性が示唆されている。",
-   "sources": [
+    },
     {
-     "title": "金券ショップから｢お得なきっぷ｣が次々と消えていく…青春18きっぷ｢改悪｣で売れ筋を失った業界トップの本音(プレジデントオンライン)",
-     "url": "https://news.yahoo.co.jp/articles/5ea9aebeaeaba47469497f63cccea2447c78c938?source=rss",
+     "title": "茨城で震度4 M4.8(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/5be04265bf203a372d8fd3b1297d0b3924642e63?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "field": "経済",
-   "subtitle": "景品の上限引き上げ検討",
-   "text": "消費者庁は、物価高騰の影響による景品コスト増を受け、商品購入時の景品の上限金額を1000円から引き上げる可能性を検討している。景品の上限金額引き上げによって、消費者の購買意欲維持を目指すもので、2027年にも結果が発表される見込みである。",
-   "sources": [
+    },
     {
-     "title": "景品上限金額、引き上げ検討 物価高騰影響、27年にも(共同通信)",
-     "url": "https://news.yahoo.co.jp/articles/0656a6503e93ae35b85f609e108d5d6ccbfadbc1?source=rss",
+     "title": "茨城南部で震度4 震源は千葉東方沖、M4.8 津波の心配なし(産経新聞)",
+     "url": "https://news.yahoo.co.jp/articles/c823f4949540c52595842521e864531ae6af19b0?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "field": "政治",
-   "subtitle": "立憲民主党 自民党との対抗軸を組めず",
-   "text": "立憲民主党が公明党との政権合流を断念し、自民党との対抗軸を組むことができなかった。3党の合流協議は、内部対立が深刻だったため白紙となったもので、立憲民主党が「中道改革連合」を掲げる一方、自民党が「1強」を維持する構図が明確になった。これにより、野党が複数に分裂する「多弱野党」の状態が常態化する見込みであり、各党はそれぞれ独自の政策を推進していくことになる。来年の衆議院議員選挙の結果に影響を与える可能性がある。",
-   "sources": [
+    },
     {
-     "title": "立民断念で「1強自民」対抗軸になれず 3党合流白紙 「多弱野党」常態化(北海道新聞)",
-     "url": "https://news.yahoo.co.jp/articles/decf1fc58b6e888652427971514be08d385a6bfa?source=rss",
+     "title": "茨城県で震度4の地震 津波の心配なし(tenki.jp)",
+     "url": "https://news.yahoo.co.jp/articles/50214938ddcc6110bb16bdc6c92aa26d9092c826?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   }
  ],
- "digest_at": "2026-08-28T21:37:53.026196+00:00",
+ "digest_at": "2026-08-29T21:36:48.047553+00:00",
  "topics": [
   {
-   "term": "維持",
-   "article_count": 4
-  },
-  {
-   "term": "気象",
-   "article_count": 4
-  },
-  {
-   "term": "専門家",
-   "article_count": 3
-  },
-  {
    "term": "気象庁",
-   "article_count": 3
-  },
-  {
-   "term": "行動",
-   "article_count": 3
-  },
-  {
-   "term": "大学",
-   "article_count": 3
-  },
-  {
-   "term": "適切",
-   "article_count": 3
-  },
-  {
-   "term": "人気",
-   "article_count": 3
-  },
-  {
-   "term": "独自",
-   "article_count": 3
-  },
-  {
-   "term": "事故",
-   "article_count": 3
-  },
-  {
-   "term": "役割",
-   "article_count": 3
-  },
-  {
-   "term": "風速",
-   "article_count": 3
+   "article_count": 15
   },
   {
    "term": "住民",
-   "article_count": 3
+   "article_count": 13
   },
   {
-   "term": "避難",
-   "article_count": 3
+   "term": "福井県",
+   "article_count": 11
   },
   {
-   "term": "台風",
-   "article_count": 3
+   "term": "大雨",
+   "article_count": 11
   },
   {
-   "term": "進路",
-   "article_count": 3
+   "term": "特別警報",
+   "article_count": 9
   },
   {
-   "term": "シミュレーション",
-   "article_count": 2
+   "term": "被害",
+   "article_count": 9
   },
   {
-   "term": "最大瞬間風速",
-   "article_count": 2
+   "term": "観測",
+   "article_count": 9
   },
   {
-   "term": "年熊本地震",
-   "article_count": 2
+   "term": "地震",
+   "article_count": 9
   },
   {
-   "term": "研究結果",
-   "article_count": 2
+   "term": "大雨特別警報",
+   "article_count": 8
   },
   {
-   "term": "現場検証",
-   "article_count": 2
+   "term": "茨城県",
+   "article_count": 8
   },
   {
-   "term": "原因究明",
-   "article_count": 2
-  },
-  {
-   "term": "物価高騰",
-   "article_count": 2
-  },
-  {
-   "term": "台風情報",
-   "article_count": 2
-  },
-  {
-   "term": "ウェーク",
-   "article_count": 2
-  },
-  {
-   "term": "中心気圧",
-   "article_count": 2
-  },
-  {
-   "term": "被災地",
-   "article_count": 2
+   "term": "震度",
+   "article_count": 8
   },
   {
    "term": "千葉県",
-   "article_count": 2
+   "article_count": 7
   },
   {
-   "term": "大規模",
-   "article_count": 2
+   "term": "日午前",
+   "article_count": 7
+  },
+  {
+   "term": "避難",
+   "article_count": 7
+  },
+  {
+   "term": "災害",
+   "article_count": 7
+  },
+  {
+   "term": "震源",
+   "article_count": 7
+  },
+  {
+   "term": "千葉県東方沖",
+   "article_count": 6
+  },
+  {
+   "term": "氾濫",
+   "article_count": 6
+  },
+  {
+   "term": "河川",
+   "article_count": 6
+  },
+  {
+   "term": "津波",
+   "article_count": 6
+  },
+  {
+   "term": "心配",
+   "article_count": 6
+  },
+  {
+   "term": "大野市",
+   "article_count": 5
+  },
+  {
+   "term": "福井市",
+   "article_count": 5
+  },
+  {
+   "term": "勝山市",
+   "article_count": 5
+  },
+  {
+   "term": "指示",
+   "article_count": 5
+  },
+  {
+   "term": "警戒",
+   "article_count": 5
+  },
+  {
+   "term": "注視",
+   "article_count": 5
+  },
+  {
+   "term": "マグニチュード",
+   "article_count": 4
+  },
+  {
+   "term": "茨城県南部",
+   "article_count": 4
+  },
+  {
+   "term": "避難指示",
+   "article_count": 4
+  },
+  {
+   "term": "被害状況",
+   "article_count": 4
   },
   {
    "term": "リスク",
-   "article_count": 2
+   "article_count": 4
   },
   {
-   "term": "hPa",
-   "article_count": 2
+   "term": "記録的",
+   "article_count": 4
   },
   {
-   "term": "島近海",
-   "article_count": 2
+   "term": "行動",
+   "article_count": 4
   },
   {
-   "term": "モデル",
-   "article_count": 2
+   "term": "交通",
+   "article_count": 4
   },
   {
-   "term": "革新的",
-   "article_count": 2
-  },
-  {
-   "term": "地位",
-   "article_count": 2
-  },
-  {
-   "term": "報酬",
-   "article_count": 2
+   "term": "余震",
+   "article_count": 4
   }
  ],
  "total": 40,
- "readable": 30,
+ "readable": 29,
  "sources": [
   "国内 - Yahoo!ニュース",
   "トップニュース - Google ニュース"
@@ -265,6 +274,6 @@
    "last_error": ""
   }
  ],
- "generated_at": "2026-08-28T21:37:54.337171+00:00",
- "build": "20260829063754"
+ "generated_at": "2026-08-29T21:36:49.891762+00:00",
+ "build": "20260830063649"
 }
