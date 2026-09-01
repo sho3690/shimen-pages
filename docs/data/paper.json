@@ -2,247 +2,310 @@
  "digest": [
   {
    "field": "社会",
-   "subtitle": "福井県に大雨特別警報河川氾濫リスク",
-   "text": "福井県福井市、大野市、勝山市にレベル5の大雨特別警報が発表され、記録的な大雨による災害が発生している可能性が極めて高いと気象庁と国土交通省が会見で発表した。荒川や赤根川など河川が氾濫し、九頭竜川水系の竹田川では氾濫の恐れも出ており、現在、各地域で浸水リスクが高まっている。気象庁は住民に対し、避難指示に従い安全な場所に移動するよう呼びかけ、車での移動は非常に危険と注意を促している。今後の降雨状況によっては、他の市町村にも同様の特別警報が発表される可能性があり、警戒が必要とされている。",
+   "subtitle": "奈良と福井で交通事故 三人死亡傷",
+   "text": "奈良県御所のトンネルと福井県福井市で相次いで交通事故が発生し、合わせて3人が死傷した。御所のトンネルでは8月31日、車同士の正面衝突事故で運転していた男女2名が死亡し、奈良県警は21歳の古田健人容疑者を過失運転の疑いで逮捕した。福井市では1日朝、児童館駐車場で75歳の女性がアクセルとブレーキを踏み間違え、44歳の女性をはね死亡させ、同女性は現行犯逮捕された。警察は両事故の状況について詳しく調べている。",
    "sources": [
     {
-     "title": "福井県にレベル5大雨特別警報、気象庁・国交省が会見「浸水想定区域では既に災害発生の可能性が極めて高い」「浸水した場所での車の移動は非常に危険」ダムで緊急放流の可能性も(ABEMA TIMES)",
-     "url": "https://news.yahoo.co.jp/articles/ca2f9c7c8b744588f2a1b77468beffd48ae8b72b?source=rss",
+     "title": "奈良・御所のトンネルで車正面衝突 2人死傷、容疑で21歳男を逮捕 車線はみ出したか(産経新聞)",
+     "url": "https://news.yahoo.co.jp/articles/3b2c7ba6633423bde829b6d0360cce751bf5ed89?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "福井県に大雨特別警報 対象は福井市 大野市 勝山市 - NHKニュース",
-     "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBSUXI5OU1QaGV1YVNuNHdibVhOVDI2TW1yTEVFZEEtLVRDQWdYb3JzblJRSkdrZ0tabjcyd05HY2xJalI2dDBobEJldmFRVUM4aE5WYTJ2bWVPcnh2WG1F?oc=5",
-     "feed_title": "トップニュース - Google ニュース"
-    },
-    {
-     "title": "福井県にレベル5大雨特別警報 今すぐ身の安全の確保を(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/7ca3cc5ed722a17c2ae9536847b5cf7cd08c8003?source=rss",
+     "title": "75歳女がアクセルとブレーキ踏み間違える 44歳女性が福井市の児童館駐車場ではねられ死亡 運転手の女を現行犯逮捕(FNNプライムオンライン)",
+     "url": "https://news.yahoo.co.jp/articles/5d4660ff007ad6725879defe3a5aeb648f3278ba?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "福井に大雨特別警報 気象庁、避難呼びかけ(共同通信)",
-     "url": "https://news.yahoo.co.jp/articles/df79f0f712e9cda62fc1c3da101e99f80d47a74d?source=rss",
+     "title": "長崎県警事務職、乱暴疑いで逮捕 交通部の58歳(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/4accc4d57fa27421486a009f7fc6d247cfedf080?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "不同意性交疑いで長崎県警の事務職員逮捕(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/d8a6a04b43592cf00fc95117336a9c68bf369f5e?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "社会",
-   "subtitle": "生活道路の速度制限変更",
-   "text": "9月1日から、中央線がない、または幅が狭い生活道路の法定速度が時速60キロから30キロに引き下げられることになった。これは、改正道路交通法の施行によるもので、交通省が安全対策強化のために推進している。速度超過は違反となるため、歩行者や自転車利用者の安全確保がより一層重視される。関係機関は、標識の設置や交通ルールの周知など、具体的な安全対策を進めていく方針だ。",
+   "subtitle": "同志社国際高校 安全管理室を設置",
+   "text": "同志社国際高校は、辺野古沖転覆事故を受け、安全対策を強化するため「安全管理室」を設置した。安全管理室は、安全対策に関する活動や、事故の検証結果に基づいたマニュアルの策定を行うもので、事故で犠牲になった武石知華さん（17）の死を悼み、再発防止に向けた取り組みを徹底する方針だ。学校法人同志社は、事故原因の究明と、同様の事故の発生を防ぐための対策を最優先課題として取り組むとしている。今後は、安全管理室の活動内容や、策定されるマニュアルの詳細が注目される。",
    "sources": [
     {
-     "title": "生活道路は9月から法定速度30キロに 標識なしの狭い道で“超えれば違反” 改正道路交通法で安全対策強化(FNNプライムオンライン)",
-     "url": "https://news.yahoo.co.jp/articles/0df611a1e50182874c61997dd416a1f8d6143841?source=rss",
+     "title": "同志社が「安全管理室」を設置、安全対策やマニュアル策定 辺野古沖転覆事故で(産経新聞)",
+     "url": "https://news.yahoo.co.jp/articles/ef7649bc10fe6e8d0b1649511cbae3a8127ed565?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "埼玉栄高校での男子生徒死亡事故 両親が学校法人などに損害賠償を求め提訴(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/f9f7e72008d6474685a4b72ec84d16a1ad277bf8?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "埼玉栄高校での男子生徒死亡事故 両親が学校法人などに損害賠償を求め提訴(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/ffe174e613b5bcfd2d2689da8b1acb376288e878?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "社会",
-   "subtitle": "茨城県南部で震度4の地震発生",
-   "text": "30日午前0時17分ごろ、茨城県南部で震度4の地震が発生し、福島県から東京都の一部で揺れが観測された。震源地は千葉県東方沖で、地震の規模はマグニチュード4.8～4.0と推定されており、気象庁は津波の心配はないと発表した。茨城県南部では地震による被害は限定的だが、関係機関が被害状況の確認や二次災害への警戒を行っており、気象庁は今後余震が発生する可能性もあるとして注意を呼びかけている。関係自治体は住民に対し、安全確保を呼びかけている。",
+   "subtitle": "秋の交通安全運動開始",
+   "text": "奈良県警察は9月1日に奈良市で出発式を行い、「秋の交通安全県民運動」を9月21日から30日までの期間実施する。運動は秋の交通安全意識の向上を図るための取り組みで、宮西健至本部長ら関係機関や地域住民が参加した。県警は高齢者や子どもたちの安全確保に注力し、交通違反に対する取り締まりを強化する方針を示しており、奈良県内の交通事故削減を目指す。県民一人ひとりの交通安全への意識向上を呼びかけている。",
    "sources": [
     {
-     "title": "茨城県南部で震度4 津波の心配なし(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/fae4769c85a05aef2f2b5d61ed51e923442a1df0?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "茨城で震度4(共同通信)",
-     "url": "https://news.yahoo.co.jp/articles/26575bc3bb10edc6a41332b3ff3acd31c10c29e7?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "茨城県で震度4の地震 津波の心配なし(tenki.jp)",
-     "url": "https://news.yahoo.co.jp/articles/50214938ddcc6110bb16bdc6c92aa26d9092c826?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "茨城で震度4 M4.8(共同通信)",
-     "url": "https://news.yahoo.co.jp/articles/5be04265bf203a372d8fd3b1297d0b3924642e63?source=rss",
+     "title": "「日本一安全・安心で暮らせる奈良を」 県警、秋の交通安全県民運動周知へ出発式(産経新聞)",
+     "url": "https://news.yahoo.co.jp/articles/afba85b4185001081b01f7f02104942decacd01b?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "社会",
-   "subtitle": "東海第2原発に異常なし",
-   "text": "茨城県で震度4を観測した地震により、東海第2原発に異常が確認されていないと日本原子力発電社が発表した。地震は東海第2原発に影響を与えなかったとされ、同社は地震後の原子炉状況を監視している。今回の地震は、2024年1月1日に発生した南海地震の余震によるものとみられている。原子力規制庁は、今後も全国の原子力発電所の安全点検を継続し、地震への備えを強化する方針だ。",
+   "subtitle": "県警職員が女性を不同意性交容疑で逮捕",
+   "text": "長崎県警の事務職員である里慶治容疑者（58歳）が、30代の女性に対する不同意性交の疑いで逮捕された。里慶治容疑者は現在、取り調べに供述を拒否しており、警察は事件の経緯や動機について詳しく調べている。長崎県警は内部調査を行い、再発防止策を検討するとともに、関係者の処分も検討する方針を示している。また、愛知県刈谷市では、34歳の会社員男が路上で17歳の少女に体液をかけた疑いで逮捕されており、警察は同様の被害が4件発生していることからも同一人物によるものと見て捜査を進めている。刈谷市周辺ではパトロール強化や防犯カメラの設置などの再発防止策が講じられている。",
    "sources": [
     {
-     "title": "東海第2原発に異常なし(共同通信)",
-     "url": "https://news.yahoo.co.jp/articles/82f588d3a153869516bf63636703fb3337053337?source=rss",
+     "title": "路上で自転車の17歳少女に“体液”かけたか 34歳会社員の男を逮捕 近くで同様被害が4件あり全て関与か(東海テレビ)",
+     "url": "https://news.yahoo.co.jp/articles/35bc968f44505fbadf91f90bc8eb160e52dde9fc?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "茨城で震度4 M4.8(共同通信)",
-     "url": "https://news.yahoo.co.jp/articles/5be04265bf203a372d8fd3b1297d0b3924642e63?source=rss",
+     "title": "不同意性交疑いで長崎県警の事務職員逮捕(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/d8a6a04b43592cf00fc95117336a9c68bf369f5e?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "茨城南部で震度4 震源は千葉東方沖、M4.8 津波の心配なし(産経新聞)",
-     "url": "https://news.yahoo.co.jp/articles/c823f4949540c52595842521e864531ae6af19b0?source=rss",
+     "title": "長崎県警事務職、乱暴疑いで逮捕 交通部の58歳(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/4accc4d57fa27421486a009f7fc6d247cfedf080?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "茨城県で震度4の地震 津波の心配なし(tenki.jp)",
-     "url": "https://news.yahoo.co.jp/articles/50214938ddcc6110bb16bdc6c92aa26d9092c826?source=rss",
+     "title": "奈良・御所のトンネルで車正面衝突 2人死傷、容疑で21歳男を逮捕 車線はみ出したか(産経新聞)",
+     "url": "https://news.yahoo.co.jp/articles/3b2c7ba6633423bde829b6d0360cce751bf5ed89?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "社会",
+   "subtitle": "台風24号は南で停滞 進路が複雑",
+   "text": "台風24号（クロヴァン）は現在、日本の南で停滞しており、当初の北上予想から進路が複雑化し、迷走する可能性が指摘されている。気象庁は9月11日にかけての雨風をシミュレーションし、今後の進路予想を発表しており、西日本を中心に河川の氾濫や土砂災害の危険性が高まっている。また、先月復活した台風18号が再び逆走する見込みで、竜巻の発生も警戒が必要という。9月上旬までに24個の台風が発生しており、台風の発生ペースが速い状況である。関係機関は今後の進路に注意し、警戒レベルの引き上げや避難指示の発令などを検討する見込みだ。",
+   "sources": [
+    {
+     "title": "【台風情報】「台風24号（クロヴァン）」日本の南で停滞中 北上すると思いきや“迷走”か…複雑な進路とる可能性も 今後の進路予想・9月11日にかけての雨風シミュレーション【気象庁1日18時45分発表】(BSS山陰放送)",
+     "url": "https://news.yahoo.co.jp/articles/56652ce686d40dc6d6fbeb1df0fd9faa7f9b91b4?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "“迷走”台風24号 “復活”台風18号逆走か(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/d48105550b8a3e14fa22a911510575c36a04d5eb?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "社会",
+   "subtitle": "占星術師を詐欺の疑いで追送検",
+   "text": "福岡県警は1日、占星術師の田斉法子容疑者（52歳）を詐欺などの疑いで追送検した。田容疑者は、顧客や知人らから嘘の投資話で27億円以上の金品をだまし取った疑いがあり、捜査の結果、複数の顧客に対し高利回りを謳う投資話で金品を騙し取っていたことが判明した。現在、田容疑者の身柄は拘束されており、県警は関係者への事情聴取を進めるとともに、被害者への補償や被害回復に向けた動きを探っている。",
+   "sources": [
+    {
+     "title": "架空投資で27億円詐取か 占い師だった女を追送検(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/c3899c51f2674e27625f3429518ad53f39f8c860?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "社会",
+   "subtitle": "医療ミスで患者意識不明",
+   "text": "鳥取県立病院で心筋梗塞の患者が治療中に医療ミスを受け、意識不明の重体となっています。病院側の機械操作の誤りが原因で発生した事故を受け、患者は鳥取県立中央病院に移送され、現在も重篤な状態です。病院は謝罪し、原因究明と再発防止策の徹底を急いでいます。具体的な事故の詳細は現在調査中です。",
+   "sources": [
+    {
+     "title": "鳥取県立病院で医療事故 患者は意識不明の重体(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/f0688d4923850d0e476a3546a35d404bec45bc40?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "社会",
+   "subtitle": "遺族が学校法人を提訴",
+   "text": "埼玉栄高校で発生した男子生徒の死亡事故を受け、遺族が学校法人などを相手に損害賠償を求めて提訴した。事故は、生徒が運転する軽自動車が横転し、助手席にいた生徒が死亡したもので、遺族は学校側の安全対策の不備が原因と主張している。学校側と遺族の間では、事故原因や責任の所在について話し合いが行われていたが合意に至らず、今回の提訴に至った。裁判所での事実関係の解明が期待される。",
+   "sources": [
+    {
+     "title": "埼玉栄高校での男子生徒死亡事故 両親が学校法人などに損害賠償を求め提訴(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/f9f7e72008d6474685a4b72ec84d16a1ad277bf8?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "埼玉栄高校での男子生徒死亡事故 両親が学校法人などに損害賠償を求め提訴(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/ffe174e613b5bcfd2d2689da8b1acb376288e878?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "奈良・御所のトンネルで車正面衝突 2人死傷、容疑で21歳男を逮捕 車線はみ出したか(産経新聞)",
+     "url": "https://news.yahoo.co.jp/articles/3b2c7ba6633423bde829b6d0360cce751bf5ed89?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "同志社が「安全管理室」を設置、安全対策やマニュアル策定 辺野古沖転覆事故で(産経新聞)",
+     "url": "https://news.yahoo.co.jp/articles/ef7649bc10fe6e8d0b1649511cbae3a8127ed565?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   }
  ],
- "digest_at": "2026-08-29T21:36:48.047553+00:00",
+ "digest_at": "2026-09-01T12:49:15.453281+00:00",
  "topics": [
   {
-   "term": "気象庁",
-   "article_count": 15
+   "term": "事故",
+   "article_count": 8
+  },
+  {
+   "term": "運転",
+   "article_count": 6
+  },
+  {
+   "term": "警察",
+   "article_count": 6
+  },
+  {
+   "term": "設置",
+   "article_count": 5
+  },
+  {
+   "term": "捜査",
+   "article_count": 5
+  },
+  {
+   "term": "県警",
+   "article_count": 5
+  },
+  {
+   "term": "容疑",
+   "article_count": 5
+  },
+  {
+   "term": "逮捕",
+   "article_count": 5
+  },
+  {
+   "term": "死亡",
+   "article_count": 5
+  },
+  {
+   "term": "事故原因",
+   "article_count": 4
+  },
+  {
+   "term": "再発防止",
+   "article_count": 4
+  },
+  {
+   "term": "容疑者",
+   "article_count": 4
   },
   {
    "term": "住民",
-   "article_count": 13
+   "article_count": 4
   },
   {
-   "term": "福井県",
-   "article_count": 11
-  },
-  {
-   "term": "大雨",
-   "article_count": 11
-  },
-  {
-   "term": "特別警報",
-   "article_count": 9
+   "term": "女性",
+   "article_count": 4
   },
   {
    "term": "被害",
-   "article_count": 9
+   "article_count": 4
   },
   {
-   "term": "観測",
-   "article_count": 9
+   "term": "再発防止策",
+   "article_count": 3
   },
   {
-   "term": "地震",
-   "article_count": 9
+   "term": "安全対策",
+   "article_count": 3
   },
   {
-   "term": "大雨特別警報",
-   "article_count": 8
+   "term": "学校法人",
+   "article_count": 3
   },
   {
-   "term": "茨城県",
-   "article_count": 8
+   "term": "地域住民",
+   "article_count": 3
   },
   {
-   "term": "震度",
-   "article_count": 8
+   "term": "死亡事故",
+   "article_count": 3
   },
   {
-   "term": "千葉県",
-   "article_count": 7
+   "term": "西日本",
+   "article_count": 3
   },
   {
-   "term": "日午前",
-   "article_count": 7
+   "term": "危険性",
+   "article_count": 3
   },
   {
-   "term": "避難",
-   "article_count": 7
+   "term": "十分",
+   "article_count": 3
   },
   {
-   "term": "災害",
-   "article_count": 7
+   "term": "議会",
+   "article_count": 3
   },
   {
-   "term": "震源",
-   "article_count": 7
+   "term": "見通",
+   "article_count": 3
   },
   {
-   "term": "千葉県東方沖",
-   "article_count": 6
+   "term": "責任",
+   "article_count": 3
   },
   {
-   "term": "氾濫",
-   "article_count": 6
+   "term": "東京",
+   "article_count": 3
   },
   {
-   "term": "河川",
-   "article_count": 6
+   "term": "高校",
+   "article_count": 3
   },
   {
-   "term": "津波",
-   "article_count": 6
+   "term": "同意",
+   "article_count": 3
   },
   {
-   "term": "心配",
-   "article_count": 6
+   "term": "事件",
+   "article_count": 3
   },
   {
-   "term": "大野市",
-   "article_count": 5
+   "term": "裁判",
+   "article_count": 3
   },
   {
-   "term": "福井市",
-   "article_count": 5
-  },
-  {
-   "term": "勝山市",
-   "article_count": 5
-  },
-  {
-   "term": "指示",
-   "article_count": 5
+   "term": "大雨",
+   "article_count": 3
   },
   {
    "term": "警戒",
-   "article_count": 5
+   "article_count": 3
   },
   {
-   "term": "注視",
-   "article_count": 5
+   "term": "連携",
+   "article_count": 3
   },
   {
-   "term": "マグニチュード",
-   "article_count": 4
+   "term": "首相",
+   "article_count": 3
   },
   {
-   "term": "茨城県南部",
-   "article_count": 4
-  },
-  {
-   "term": "避難指示",
-   "article_count": 4
-  },
-  {
-   "term": "被害状況",
-   "article_count": 4
-  },
-  {
-   "term": "リスク",
-   "article_count": 4
-  },
-  {
-   "term": "記録的",
-   "article_count": 4
-  },
-  {
-   "term": "行動",
-   "article_count": 4
-  },
-  {
-   "term": "交通",
-   "article_count": 4
-  },
-  {
-   "term": "余震",
-   "article_count": 4
+   "term": "適切",
+   "article_count": 3
   }
  ],
  "total": 40,
- "readable": 29,
+ "readable": 30,
  "sources": [
   "国内 - Yahoo!ニュース",
   "トップニュース - Google ニュース"
@@ -274,6 +337,6 @@
    "last_error": ""
   }
  ],
- "generated_at": "2026-08-29T21:36:49.891762+00:00",
- "build": "20260830063649"
+ "generated_at": "2026-09-01T12:49:17.677230+00:00",
+ "build": "20260901214917"
 }
