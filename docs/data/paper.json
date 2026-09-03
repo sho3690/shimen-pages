@@ -1,92 +1,102 @@
 {
  "digest": [
   {
-   "field": "社会",
-   "subtitle": "身体活動量 推奨基準を下回る",
-   "text": "笹川スポーツ財団と明治安田厚生事業団の調査で、日本国民の身体活動量が国の推奨基準を下回っていることが明らかになった。1日60分以上の身体活動量を目標にしている人が全体の46.6％に留まっており、高齢者の場合は1日40分以上の目標達成率も低いという。政府は、この状況を鑑み、身体活動量の推奨基準の見直しを検討し、国民の運動習慣の改善を促す対策を講じるとしている。今回の調査結果は、国民の健康寿命を延ばすための課題を浮き彫りにしている。",
+   "field": "政治",
+   "subtitle": "内閣改造と党役員人事の見込み",
+   "text": "高市早苗首相は、9月下旬の内閣改造と党役員人事を行う見込みであり、自民党の麻生氏との間で権力争いが繰り広げられている。高市首相は、鈴木俊一幹事長と木原稔官房長官の続投を決定し、16～18日に人事を行う予定だ。今回の決定は、9月の選挙結果を踏まえ党内勢力間のバランスを調整することを目的としており、来年1月14日の統一地方選挙に向けて、選挙戦を担う人材の選定も考慮されている。清水克彦氏は、高市首相が麻生氏との全面的な対立に耐えるだけの力はないと分析している。",
    "sources": [
     {
-     "title": "身体活動量の目安、5割未達成 国が推奨、歩数も下回る(共同通信)",
-     "url": "https://news.yahoo.co.jp/articles/adb26827bba3ad95a7f02e5c6600f9e5ed1e8261?source=rss",
+     "title": "｢高市vs麻生｣の最終決戦が始まった…9月の内閣改造･党役員人事で｢真の勝者｣を左右する政治家の名前(プレジデントオンライン)",
+     "url": "https://news.yahoo.co.jp/articles/dffea0448ec56ce063eab3d6a7c90fb70659642c?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "高市首相、内閣改造で鈴木幹事長続投へ 木原官房長官も留任 16日にも人事(北海道新聞)",
+     "url": "https://news.yahoo.co.jp/articles/12a020637990e6862763205901103f3d9db6cb25?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "社会",
-   "subtitle": "東北から九州まで大雨長期化見込み",
-   "text": "7日(月)頃まで、東北から九州にかけて大雨が長期化する見込みで、気象庁は警戒を呼びかけている。台風24号の進路と秋雨前線が合わさり、特に3日(木)から5日(土)にかけて本州の南岸付近で局地的に非常に激しい雨が降る恐れがある。青森市では瀬戸子川が氾濫し、456世帯892人に警戒レベル5の緊急安全確保が指示され、住民の避難が必要となっている。市は河川の状況を注視し、情報提供や支援を行っている。",
+   "subtitle": "線状降水帯発生の可能性 奄美地方注意",
+   "text": "西日本を中心に線状降水帯が発生し、大雨による災害の危険度が高まっている。4日0時28分には名瀬測候所から線状降水帯の発生の可能性を警告する情報が発表され、鹿児島県喜界町にはレベル4の土砂災害危険警報が発令されている。気象庁は、奄美地方で記録的大雨の恐れがあるとして、住民に対し早めの避難や安全確保を呼びかけており、関係自治体も同様の注意喚起を行っている。台風24号と秋雨前線の合流により、今後も線状降水帯の動きに注意が必要である。",
    "sources": [
     {
-     "title": "青森市 瀬戸子川で氾濫発生 456世帯にレベル5緊急安全確保(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/d441e0311e5fd4c723edaa272eb691e9378c0041?source=rss",
+     "title": "九州や四国で線状降水帯の恐れ 災害級の大雨に厳重警戒(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/3225b2024d25c2e2cecdc7d77ee3aaea7b7e3ebc?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "【警報級大雨のおそれ】秋雨前線南下 台風24号北上「湿った空気流入さらに強まる」【雨風シミュレーション/全国の週間予報】気象庁「大雨が続いて総雨量がさらに多くなる」(MBC南日本放送)",
-     "url": "https://news.yahoo.co.jp/articles/88674a35211cbd0dd5a9afd1690a09a6074c378a?source=rss",
+     "title": "台風と前線で各地に発達した雨雲 線状降水帯のおそれも - news.web.nhk",
+     "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4zdVJINGFPRy01dTdRYXp1Ump3azVMTGI2S2JLMGI5OTI3Qk1xSGMyY0xTclgtMnV5TFBnd2swamkwbjlqYVU4ck81S3REckpYelFMSXZXQ2Vmd0N0NVZB?oc=5",
+     "feed_title": "トップニュース - Google ニュース"
+    },
+    {
+     "title": "レベル4土砂災害危険警報 鹿児島・喜界町(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/fc4eb2d030de53dfc7b2356c2030e062e42ef68a?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "【速報】青森市で瀬戸子川が氾濫 456世帯892人に警戒レベル5緊急安全確保(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/9c97940743a36827849b5320936adb7ae01d369d?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "迷走台風24号と秋雨前線で7日まで大雨が長期化 東北～九州で非常に激しい雨に警戒(tenki.jp)",
-     "url": "https://news.yahoo.co.jp/articles/f9cce45fd7327d7e1e91d4d86ec0aeb34fb2fdd6?source=rss",
+     "title": "“秋雨前線”南下…台風24号は“迷走”列島各地で激しい大雨に(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/31c05aa8c49ba0f352283a17210f9a64f46666ff?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "社会",
-   "subtitle": "秋田市と小坂町に土砂災害危険警報",
-   "text": "気象庁は3日午前5時前に秋田県秋田市と小坂町に「レベル4土砂災害危険警報」を発表し、命に危険を及ぼす土砂災害の恐れが高まっているとして、自治体には避難指示の発令を促しています。秋田市と小坂町では厳重な警戒が呼びかけられており、小坂町では防災体制が強化されています。気象庁は住民に対し注意を呼びかけ、安全確保を要請しており、現在も状況は推移中です。",
+   "subtitle": "オーナーのパワハラ行為を謝罪",
+   "text": "東京エムケイの社長が、週刊新潮で報道されたオーナーのパワハラ行為について謝罪会見を行った。会見では、62歳のオーナーが「ゲッタッファッカウ！」と叫びながら朝礼を行っていた映像や、パイプ椅子を従業員に投げつける映像が公開された。この行為は、デイリー新潮が映像を入手し詳細を報じたことで明らかになった。東京エムケイはオーナーの行動を厳しく非難し、再発防止策を講じることを表明した。今後、経営体制や労務管理体制に変化が生じる可能性がある。",
    "sources": [
     {
-     "title": "【速報】秋田市に「レベル4土砂災害危険警報」 厳重な警戒を(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/6a927bec42dd0809f77fd1058a39762567a842f5?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "【速報】秋田県小坂町に「レベル4土砂災害危険警報」 気象庁(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/fc5042e44caaca244f320d5fc6b5ed511278603c?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "【速報】青森市で瀬戸子川が氾濫 456世帯892人に警戒レベル5緊急安全確保(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/9c97940743a36827849b5320936adb7ae01d369d?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "【警報級大雨のおそれ】秋雨前線南下 台風24号北上「湿った空気流入さらに強まる」【雨風シミュレーション/全国の週間予報】気象庁「大雨が続いて総雨量がさらに多くなる」(MBC南日本放送)",
-     "url": "https://news.yahoo.co.jp/articles/88674a35211cbd0dd5a9afd1690a09a6074c378a?source=rss",
+     "title": "【パワハラ全容】東京エムケイ社長が謝罪…「ゲッタッファッカウ！」62歳実弟オーナー“パイプ椅子ぶん投げ朝礼”の一部始終(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/8b6e70cea1284d5765823b58a6030e0060ad9f2d?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "社会",
-   "subtitle": "埼玉栄高校 無断運転事故で生徒死亡",
-   "text": "埼玉栄高校で2022年、生徒が無断運転した車が横転し、生徒1人が死亡する事故が発生した。遺族は学校法人に対し損害賠償を求め、2日に記者会見を開いた。事故の原因は無断運転であり、学校側の監視・管理体制の不備が指摘されている。裁判を通して事故原因や責任の所在が明確になることが期待される。",
+   "subtitle": "避難生活による健康被害 患者が診察",
+   "text": "東京都で、避難所での生活による健康被害を訴える患者が7月27日に診察を受けた。田中医師は、猛暑が病気や症状に影響を与える可能性を説明し、患者の体調や生活環境を詳しく聞き取った。また、避難所での急性ストレス障害への配慮も重要であるとし、精神的なケアにも焦点を当てた。診察では、心身ともに健康を改善するための具体的なアドバイスが提供された。",
    "sources": [
     {
-     "title": "「横転する怖い」2年前から続いた“無断運転”埼玉栄高の車横転 遺族が提訴(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/4fb64901129445b9493f26b767b0d2934daa719d?source=rss",
+     "title": "避難所での健康被害をなくすために…災害と猛暑の二重苦に気を付けたいこと：意外と知らない暑さと薬の関係、急性ストレス障害への配慮も(Wedge（ウェッジ）)",
+     "url": "https://news.yahoo.co.jp/articles/b02daac56d084e44621523b538614f6b729be8ec?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "経済",
+   "subtitle": "NYダウは5万3686ドルで終了",
+   "text": "米国株式市場でNYダウは624ドル高の5万3686ドルで取引を終え、主要3指数も1％以上上昇しました。FRBのウォラー理事の発言により利上げ観測が後退したことが背景に、ITや消費関連企業の株が買われました。NY原油先物は一時93ドル台まで下落しましたが、その後反発し、円高・ドル安の円安が進むなど、為替市場にも影響が出ています。",
+   "sources": [
+    {
+     "title": "NYダウ続伸、利上げ観測後退で624ドル高 NY原油は一時93ドル台 - 日本経済新聞",
+     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9NckRNR05RSUczOWN6NFRIYVlpMVVneVcxQnN2eEh3TFJERFpuOHJmWDF6aU9ENmFGWUF0eVIxc2dxMHdMZU5iWFlSMEhobmJqZVlxOHpWUE9idVlBSF9oZHVQTHFWb25QNEpnOQ?oc=5",
+     "feed_title": "トップニュース - Google ニュース"
     }
    ]
   }
  ],
- "digest_at": "2026-09-02T21:37:58.538632+00:00",
+ "digest_at": "2026-09-03T21:38:33.892760+00:00",
  "topics": [
   {
-   "term": "警戒",
-   "article_count": 7
+   "term": "災害",
+   "article_count": 8
+  },
+  {
+   "term": "住民",
+   "article_count": 8
   },
   {
    "term": "避難",
+   "article_count": 8
+  },
+  {
+   "term": "警戒",
    "article_count": 7
   },
   {
@@ -94,119 +104,51 @@
    "article_count": 6
   },
   {
-   "term": "事件",
-   "article_count": 6
-  },
-  {
-   "term": "住民",
+   "term": "線状降水帯",
    "article_count": 5
   },
   {
-   "term": "被害",
-   "article_count": 5
-  },
-  {
-   "term": "大雨",
-   "article_count": 5
-  },
-  {
-   "term": "非常",
-   "article_count": 5
-  },
-  {
-   "term": "警報",
-   "article_count": 5
-  },
-  {
-   "term": "捜査",
+   "term": "奄美地方",
    "article_count": 4
-  },
-  {
-   "term": "女性",
-   "article_count": 4
-  },
-  {
-   "term": "生活",
-   "article_count": 4
-  },
-  {
-   "term": "台風",
-   "article_count": 4
-  },
-  {
-   "term": "災害",
-   "article_count": 4
-  },
-  {
-   "term": "指示",
-   "article_count": 4
-  },
-  {
-   "term": "監視",
-   "article_count": 4
-  },
-  {
-   "term": "シミュレーション",
-   "article_count": 3
-  },
-  {
-   "term": "警報級大雨",
-   "article_count": 3
-  },
-  {
-   "term": "スポーツ",
-   "article_count": 3
   },
   {
    "term": "土砂災害",
+   "article_count": 4
+  },
+  {
+   "term": "周辺",
+   "article_count": 4
+  },
+  {
+   "term": "評価",
+   "article_count": 4
+  },
+  {
+   "term": "大雨",
+   "article_count": 4
+  },
+  {
+   "term": "厳重警戒",
    "article_count": 3
   },
   {
-   "term": "安全確保",
+   "term": "日本人",
    "article_count": 3
   },
   {
-   "term": "避難指示",
+   "term": "自治体",
    "article_count": 3
   },
   {
-   "term": "愛知県",
+   "term": "危険性",
    "article_count": 3
   },
   {
-   "term": "容疑者",
+   "term": "鹿児島",
    "article_count": 3
   },
   {
-   "term": "男性",
-   "article_count": 3
-  },
-  {
-   "term": "逮捕",
-   "article_count": 3
-  },
-  {
-   "term": "瞬間",
-   "article_count": 3
-  },
-  {
-   "term": "見直",
-   "article_count": 3
-  },
-  {
-   "term": "深刻",
-   "article_count": 3
-  },
-  {
-   "term": "氾濫",
-   "article_count": 3
-  },
-  {
-   "term": "河川",
-   "article_count": 3
-  },
-  {
-   "term": "世帯",
+   "term": "党内",
    "article_count": 3
   },
   {
@@ -214,7 +156,59 @@
    "article_count": 3
   },
   {
+   "term": "大幅",
+   "article_count": 3
+  },
+  {
+   "term": "批判",
+   "article_count": 3
+  },
+  {
+   "term": "社会",
+   "article_count": 3
+  },
+  {
+   "term": "連続",
+   "article_count": 3
+  },
+  {
+   "term": "九州",
+   "article_count": 3
+  },
+  {
+   "term": "台風",
+   "article_count": 3
+  },
+  {
+   "term": "前線",
+   "article_count": 3
+  },
+  {
+   "term": "指示",
+   "article_count": 3
+  },
+  {
+   "term": "相談",
+   "article_count": 3
+  },
+  {
+   "term": "米国",
+   "article_count": 3
+  },
+  {
    "term": "速報",
+   "article_count": 3
+  },
+  {
+   "term": "被害",
+   "article_count": 3
+  },
+  {
+   "term": "河川",
+   "article_count": 3
+  },
+  {
+   "term": "氾濫",
    "article_count": 3
   },
   {
@@ -222,12 +216,20 @@
    "article_count": 2
   },
   {
-   "term": "緊急安全確保",
+   "term": "鹿児島県奄美地方",
+   "article_count": 2
+  },
+  {
+   "term": "旭川医科大学",
+   "article_count": 2
+  },
+  {
+   "term": "気象防災速報",
    "article_count": 2
   }
  ],
  "total": 40,
- "readable": 30,
+ "readable": 29,
  "sources": [
   "国内 - Yahoo!ニュース",
   "トップニュース - Google ニュース"
@@ -259,6 +261,6 @@
    "last_error": ""
   }
  ],
- "generated_at": "2026-09-02T21:38:01.674171+00:00",
- "build": "20260903063801"
+ "generated_at": "2026-09-03T21:38:39.902330+00:00",
+ "build": "20260904063839"
 }
