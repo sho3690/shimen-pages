@@ -1,126 +1,100 @@
 {
  "digest": [
   {
-   "field": "政治",
-   "subtitle": "内閣改造と党役員人事の見込み",
-   "text": "高市早苗首相は、9月下旬の内閣改造と党役員人事を行う見込みであり、自民党の麻生氏との間で権力争いが繰り広げられている。高市首相は、鈴木俊一幹事長と木原稔官房長官の続投を決定し、16～18日に人事を行う予定だ。今回の決定は、9月の選挙結果を踏まえ党内勢力間のバランスを調整することを目的としており、来年1月14日の統一地方選挙に向けて、選挙戦を担う人材の選定も考慮されている。清水克彦氏は、高市首相が麻生氏との全面的な対立に耐えるだけの力はないと分析している。",
+   "field": "経済",
+   "subtitle": "名古屋税関 輸入差し止めが過去最多",
+   "text": "名古屋税関で今年上半期（6月まで）の偽ブランド品等の輸入差し止め点数が、前年同期比約23倍の9割を超え、過去最多となった。差し止められたのは主に「ホットアイマスク」などの知的財産侵害に関する輸入物で、名古屋税関は具体的な数字を公表していない。偽ブランド品等の流入を抑制するための取り組み強化が背景にあるとみられる。知的財産権の保護に向けた取締りは今後も強化される見込みである。",
    "sources": [
     {
-     "title": "｢高市vs麻生｣の最終決戦が始まった…9月の内閣改造･党役員人事で｢真の勝者｣を左右する政治家の名前(プレジデントオンライン)",
-     "url": "https://news.yahoo.co.jp/articles/dffea0448ec56ce063eab3d6a7c90fb70659642c?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "高市首相、内閣改造で鈴木幹事長続投へ 木原官房長官も留任 16日にも人事(北海道新聞)",
-     "url": "https://news.yahoo.co.jp/articles/12a020637990e6862763205901103f3d9db6cb25?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "field": "社会",
-   "subtitle": "線状降水帯発生の可能性 奄美地方注意",
-   "text": "西日本を中心に線状降水帯が発生し、大雨による災害の危険度が高まっている。4日0時28分には名瀬測候所から線状降水帯の発生の可能性を警告する情報が発表され、鹿児島県喜界町にはレベル4の土砂災害危険警報が発令されている。気象庁は、奄美地方で記録的大雨の恐れがあるとして、住民に対し早めの避難や安全確保を呼びかけており、関係自治体も同様の注意喚起を行っている。台風24号と秋雨前線の合流により、今後も線状降水帯の動きに注意が必要である。",
-   "sources": [
-    {
-     "title": "九州や四国で線状降水帯の恐れ 災害級の大雨に厳重警戒(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/3225b2024d25c2e2cecdc7d77ee3aaea7b7e3ebc?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "台風と前線で各地に発達した雨雲 線状降水帯のおそれも - news.web.nhk",
-     "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4zdVJINGFPRy01dTdRYXp1Ump3azVMTGI2S2JLMGI5OTI3Qk1xSGMyY0xTclgtMnV5TFBnd2swamkwbjlqYVU4ck81S3REckpYelFMSXZXQ2Vmd0N0NVZB?oc=5",
-     "feed_title": "トップニュース - Google ニュース"
-    },
-    {
-     "title": "レベル4土砂災害危険警報 鹿児島・喜界町(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/fc4eb2d030de53dfc7b2356c2030e062e42ef68a?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "“秋雨前線”南下…台風24号は“迷走”列島各地で激しい大雨に(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/31c05aa8c49ba0f352283a17210f9a64f46666ff?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "field": "社会",
-   "subtitle": "オーナーのパワハラ行為を謝罪",
-   "text": "東京エムケイの社長が、週刊新潮で報道されたオーナーのパワハラ行為について謝罪会見を行った。会見では、62歳のオーナーが「ゲッタッファッカウ！」と叫びながら朝礼を行っていた映像や、パイプ椅子を従業員に投げつける映像が公開された。この行為は、デイリー新潮が映像を入手し詳細を報じたことで明らかになった。東京エムケイはオーナーの行動を厳しく非難し、再発防止策を講じることを表明した。今後、経営体制や労務管理体制に変化が生じる可能性がある。",
-   "sources": [
-    {
-     "title": "【パワハラ全容】東京エムケイ社長が謝罪…「ゲッタッファッカウ！」62歳実弟オーナー“パイプ椅子ぶん投げ朝礼”の一部始終(デイリー新潮)",
-     "url": "https://news.yahoo.co.jp/articles/8b6e70cea1284d5765823b58a6030e0060ad9f2d?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "field": "社会",
-   "subtitle": "避難生活による健康被害 患者が診察",
-   "text": "東京都で、避難所での生活による健康被害を訴える患者が7月27日に診察を受けた。田中医師は、猛暑が病気や症状に影響を与える可能性を説明し、患者の体調や生活環境を詳しく聞き取った。また、避難所での急性ストレス障害への配慮も重要であるとし、精神的なケアにも焦点を当てた。診察では、心身ともに健康を改善するための具体的なアドバイスが提供された。",
-   "sources": [
-    {
-     "title": "避難所での健康被害をなくすために…災害と猛暑の二重苦に気を付けたいこと：意外と知らない暑さと薬の関係、急性ストレス障害への配慮も(Wedge（ウェッジ）)",
-     "url": "https://news.yahoo.co.jp/articles/b02daac56d084e44621523b538614f6b729be8ec?source=rss",
+     "title": "『ホットアイマスク』が全体の9割超…偽ブランド品等の輸入差し止め点数が名古屋税関で過去最多 前年同期比約23倍(東海テレビ)",
+     "url": "https://news.yahoo.co.jp/articles/16b3e9a97b90710ad28e3587aae5d4491be25687?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "経済",
-   "subtitle": "NYダウは5万3686ドルで終了",
-   "text": "米国株式市場でNYダウは624ドル高の5万3686ドルで取引を終え、主要3指数も1％以上上昇しました。FRBのウォラー理事の発言により利上げ観測が後退したことが背景に、ITや消費関連企業の株が買われました。NY原油先物は一時93ドル台まで下落しましたが、その後反発し、円高・ドル安の円安が進むなど、為替市場にも影響が出ています。",
+   "subtitle": "障害者雇用率引き上げ対象企業拡大",
+   "text": "日本の障害者雇用制度は、2026年7月に法定雇用率を2.5%から2.7%に引き上げ、対象企業を従業員40人以上から37.5人以上に変更する。これにより、中小企業も雇用対象となり、障害者インクルージョンの現状は、雇用数を増やすだけでなく、個々の能力やニーズに合わせた質の高い雇用が求められている。企業は多様な人材を活用し、生産性向上やイノベーションに繋げるための取り組みを強化する必要がある。障害者の方々の社会参加を促進する動きとして、今後の企業対応が注目される。",
    "sources": [
     {
-     "title": "NYダウ続伸、利上げ観測後退で624ドル高 NY原油は一時93ドル台 - 日本経済新聞",
-     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9NckRNR05RSUczOWN6NFRIYVlpMVVneVcxQnN2eEh3TFJERFpuOHJmWDF6aU9ENmFGWUF0eVIxc2dxMHdMZU5iWFlSMEhobmJqZVlxOHpWUE9idVlBSF9oZHVQTHFWb25QNEpnOQ?oc=5",
-     "feed_title": "トップニュース - Google ニュース"
+     "title": "雇用は「数」から「質」へ。3,104名の調査で見えた「障害者インクルージョン」のリアル(BUSINESS INSIDER JAPAN)",
+     "url": "https://news.yahoo.co.jp/articles/ea9d8dde35d1f77532901e0544ee7f603c3ac8e5?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "社会",
+   "subtitle": "官邸連絡室を設置",
+   "text": "政府は5日、九州南部で発生している大雨への対応を強化するため、首相官邸に設置していた情報連絡室を官邸連絡室に格上げした。これにより、首相や閣僚が直接状況を把握し、指示を出すことができる体制になった。関係閣僚による合同会議が毎日開催され、雨水や土砂災害の状況、避難指示区域、支援物資の調達などが共有される。政府は、引き続き警戒を呼びかけ、被災地への支援を最大限に行う方針を示している。",
+   "sources": [
+    {
+     "title": "政府、大雨対応で官邸連絡室に格上げ(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/234131deedbcec9d470080fd63b4f028a67e8490?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "【速報】鹿児島県屋久島町に「レベル5土砂災害特別警報」を発表 命を守る行動を(tenki.jp)",
+     "url": "https://news.yahoo.co.jp/articles/ff4dee4040d10a4ece1bdc126891cab4c290f66f?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "【速報】鹿児島県種子島・屋久島地方 「線状降水帯」発生(tenki.jp)",
+     "url": "https://news.yahoo.co.jp/articles/4e7ca14c414a8b1ac3ab13995329a0173a81ccb1?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "社会",
+   "subtitle": "",
+   "text": "30歳の男が警察官を装い、神奈川県の高齢男性から100万円を騙し取った疑いで逮捕されました。男は若山優哉容疑者といい、、",
+   "sources": [
+    {
+     "title": "ブローカーから“入金用口座”買う…警察官を装い高齢男性から100万円騙し取った疑い 自称自営業の30歳男を逮捕(東海テレビ)",
+     "url": "https://news.yahoo.co.jp/articles/0b1021715facabee5a2ee6ab68415f6e6cc722bf?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   }
  ],
- "digest_at": "2026-09-03T21:38:33.892760+00:00",
+ "digest_at": "2026-09-04T21:36:16.433169+00:00",
  "topics": [
   {
-   "term": "災害",
-   "article_count": 8
-  },
-  {
-   "term": "住民",
-   "article_count": 8
-  },
-  {
-   "term": "避難",
-   "article_count": 8
-  },
-  {
-   "term": "警戒",
+   "term": "土砂災害",
    "article_count": 7
   },
   {
-   "term": "気象庁",
+   "term": "鹿児島県",
+   "article_count": 7
+  },
+  {
+   "term": "住民",
+   "article_count": 7
+  },
+  {
+   "term": "屋久島",
    "article_count": 6
   },
   {
-   "term": "線状降水帯",
-   "article_count": 5
+   "term": "避難",
+   "article_count": 6
   },
   {
-   "term": "奄美地方",
+   "term": "指示",
+   "article_count": 6
+  },
+  {
+   "term": "速報",
+   "article_count": 6
+  },
+  {
+   "term": "危険性",
    "article_count": 4
   },
   {
-   "term": "土砂災害",
-   "article_count": 4
-  },
-  {
-   "term": "周辺",
-   "article_count": 4
-  },
-  {
-   "term": "評価",
+   "term": "気象庁",
    "article_count": 4
   },
   {
@@ -128,11 +102,39 @@
    "article_count": 4
   },
   {
-   "term": "厳重警戒",
+   "term": "河川",
+   "article_count": 4
+  },
+  {
+   "term": "警戒",
+   "article_count": 4
+  },
+  {
+   "term": "特別",
+   "article_count": 4
+  },
+  {
+   "term": "土砂災害特別警報",
    "article_count": 3
   },
   {
-   "term": "日本人",
+   "term": "線状降水帯",
+   "article_count": 3
+  },
+  {
+   "term": "地域住民",
+   "article_count": 3
+  },
+  {
+   "term": "避難指示",
+   "article_count": 3
+  },
+  {
+   "term": "アメリカ",
+   "article_count": 3
+  },
+  {
+   "term": "屋久島町",
    "article_count": 3
   },
   {
@@ -140,71 +142,35 @@
    "article_count": 3
   },
   {
-   "term": "危険性",
+   "term": "大統領",
    "article_count": 3
   },
   {
-   "term": "鹿児島",
+   "term": "種子島",
    "article_count": 3
   },
   {
-   "term": "党内",
+   "term": "維持",
    "article_count": 3
   },
   {
-   "term": "注視",
+   "term": "人物",
    "article_count": 3
   },
   {
-   "term": "大幅",
+   "term": "行動",
    "article_count": 3
   },
   {
-   "term": "批判",
+   "term": "位置",
    "article_count": 3
   },
   {
-   "term": "社会",
+   "term": "経済",
    "article_count": 3
   },
   {
-   "term": "連続",
-   "article_count": 3
-  },
-  {
-   "term": "九州",
-   "article_count": 3
-  },
-  {
-   "term": "台風",
-   "article_count": 3
-  },
-  {
-   "term": "前線",
-   "article_count": 3
-  },
-  {
-   "term": "指示",
-   "article_count": 3
-  },
-  {
-   "term": "相談",
-   "article_count": 3
-  },
-  {
-   "term": "米国",
-   "article_count": 3
-  },
-  {
-   "term": "速報",
-   "article_count": 3
-  },
-  {
-   "term": "被害",
-   "article_count": 3
-  },
-  {
-   "term": "河川",
+   "term": "周辺",
    "article_count": 3
   },
   {
@@ -212,19 +178,31 @@
    "article_count": 3
   },
   {
-   "term": "土砂災害危険警報",
+   "term": "jp.reuters.com",
    "article_count": 2
   },
   {
-   "term": "鹿児島県奄美地方",
+   "term": "鹿児島県屋久島町",
    "article_count": 2
   },
   {
-   "term": "旭川医科大学",
+   "term": "Yahoo",
    "article_count": 2
   },
   {
-   "term": "気象防災速報",
+   "term": "屋久島地方",
+   "article_count": 2
+  },
+  {
+   "term": "センター",
+   "article_count": 2
+  },
+  {
+   "term": "注意喚起",
+   "article_count": 2
+  },
+  {
+   "term": "トランプ",
    "article_count": 2
   }
  ],
@@ -261,6 +239,6 @@
    "last_error": ""
   }
  ],
- "generated_at": "2026-09-03T21:38:39.902330+00:00",
- "build": "20260904063839"
+ "generated_at": "2026-09-04T21:36:26.742290+00:00",
+ "build": "20260905063626"
 }
