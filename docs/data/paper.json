@@ -18,8 +18,23 @@
    "text": "政府は5日、九州南部で発生している大雨への対応を強化するため、首相官邸に設置していた情報連絡室を官邸連絡室に格上げした。これにより、首相や閣僚が直接状況を把握し、指示を出すことができる体制になった。関係閣僚による合同会議が毎日開催され、雨水や土砂災害の状況、避難指示区域、支援物資の調達などが共有される。政府は、引き続き警戒を呼びかけ、被災地への支援を最大限に行う方針を示している。",
    "sources": [
     {
-     "title": "【速報】伊豆諸島は7日にかけて「線状降水帯」発生の可能性 避難の検討や準備を(tenki.jp)",
-     "url": "https://news.yahoo.co.jp/articles/c779960eb4fcf92308df62175857da11b77a9e9c?source=rss",
+     "title": "各自治体「避難指示」事前対応も 千葉市は“3万世帯の15万人”対象(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/a3e2c6039ab474188fa07c5d30008b5c2cd4cc15?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "降り始めからの雨量は尾鷲で413ミリ…7日の東海3県は警報級の大雨となる可能性 土砂災害や浸水などに警戒(東海テレビ)",
+     "url": "https://news.yahoo.co.jp/articles/7cdfb00354bf7ff5c7bf3e3e104a3309ab262e42?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "気象庁「新島村で24時間364ミリ大雨」「関東で線状降水帯の恐れ」「通勤・通学の注意点」「台風24号の見通し」「今後の雨予報」会見で説明(ABEMA TIMES)",
+     "url": "https://news.yahoo.co.jp/articles/0e95a7ac8e2b46c89795c7d80da0be2611e3efca?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "関東地方、各自治体が警戒レベル4「避難指示」(ABEMA TIMES)",
+     "url": "https://news.yahoo.co.jp/articles/35937a988674feb8ba42212de9511ebed42e50e2?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
@@ -34,155 +49,154 @@
  "digest_at": "2026-09-04T21:36:16.433169+00:00",
  "topics": [
   {
-   "term": "誕生",
-   "article_count": 7
-  },
-  {
-   "term": "住民",
-   "article_count": 7
-  },
-  {
-   "term": "誕生日",
-   "article_count": 6
-  },
-  {
-   "term": "ケーキ",
-   "article_count": 6
-  },
-  {
-   "term": "悠仁",
-   "article_count": 6
-  },
-  {
-   "term": "警察",
-   "article_count": 6
-  },
-  {
-   "term": "秋篠宮",
-   "article_count": 5
-  },
-  {
-   "term": "本巣市",
-   "article_count": 5
-  },
-  {
-   "term": "気象庁",
-   "article_count": 5
-  },
-  {
-   "term": "長男",
-   "article_count": 5
-  },
-  {
-   "term": "捜査",
-   "article_count": 5
-  },
-  {
-   "term": "不明",
-   "article_count": 5
-  },
-  {
-   "term": "負傷",
-   "article_count": 5
-  },
-  {
-   "term": "岐阜県本巣市",
-   "article_count": 4
-  },
-  {
-   "term": "消火活動",
-   "article_count": 4
-  },
-  {
-   "term": "現場検証",
-   "article_count": 4
-  },
-  {
-   "term": "火災",
-   "article_count": 4
-  },
-  {
-   "term": "事件",
-   "article_count": 4
-  },
-  {
-   "term": "被害",
-   "article_count": 4
-  },
-  {
-   "term": "社会",
-   "article_count": 4
-  },
-  {
-   "term": "災害",
-   "article_count": 4
-  },
-  {
-   "term": "消防",
-   "article_count": 4
-  },
-  {
-   "term": "地方",
-   "article_count": 4
-  },
-  {
-   "term": "大学",
-   "article_count": 4
-  },
-  {
-   "term": "皇室",
-   "article_count": 4
-  },
-  {
-   "term": "線状降水帯",
-   "article_count": 3
-  },
-  {
-   "term": "秋篠宮家",
-   "article_count": 3
-  },
-  {
-   "term": "ガソリン",
-   "article_count": 3
+   "term": "警報",
+   "article_count": 12
   },
   {
    "term": "土砂災害",
-   "article_count": 3
+   "article_count": 11
   },
   {
-   "term": "読売新聞",
-   "article_count": 3
+   "term": "警戒",
+   "article_count": 11
   },
   {
-   "term": "消防隊",
-   "article_count": 3
+   "term": "東京",
+   "article_count": 11
   },
   {
-   "term": "負傷者",
-   "article_count": 3
+   "term": "気象庁",
+   "article_count": 10
+  },
+  {
+   "term": "特別警報",
+   "article_count": 9
+  },
+  {
+   "term": "土砂災害特別警報",
+   "article_count": 8
+  },
+  {
+   "term": "避難",
+   "article_count": 8
+  },
+  {
+   "term": "大雨",
+   "article_count": 8
+  },
+  {
+   "term": "住民",
+   "article_count": 8
+  },
+  {
+   "term": "新島村",
+   "article_count": 7
+  },
+  {
+   "term": "東京都",
+   "article_count": 7
+  },
+  {
+   "term": "危険性",
+   "article_count": 7
+  },
+  {
+   "term": "伊豆諸島",
+   "article_count": 6
+  },
+  {
+   "term": "千葉",
+   "article_count": 6
+  },
+  {
+   "term": "関東地方",
+   "article_count": 5
+  },
+  {
+   "term": "千葉県",
+   "article_count": 5
+  },
+  {
+   "term": "前線",
+   "article_count": 5
+  },
+  {
+   "term": "発令",
+   "article_count": 5
+  },
+  {
+   "term": "指示",
+   "article_count": 5
   },
   {
    "term": "行動",
+   "article_count": 5
+  },
+  {
+   "term": "線状降水帯",
+   "article_count": 4
+  },
+  {
+   "term": "安全確保",
+   "article_count": 4
+  },
+  {
+   "term": "避難指示",
+   "article_count": 4
+  },
+  {
+   "term": "気象情報",
+   "article_count": 4
+  },
+  {
+   "term": "神奈川",
+   "article_count": 4
+  },
+  {
+   "term": "自治体",
+   "article_count": 4
+  },
+  {
+   "term": "周辺",
+   "article_count": 4
+  },
+  {
+   "term": "男性",
+   "article_count": 4
+  },
+  {
+   "term": "非常",
+   "article_count": 4
+  },
+  {
+   "term": "土砂災害危険警報",
    "article_count": 3
   },
   {
-   "term": "連絡",
+   "term": "東京都新島村",
    "article_count": 3
   },
   {
-   "term": "成長",
+   "term": "一部区間",
    "article_count": 3
   },
   {
-   "term": "役割",
+   "term": "神奈川県",
+   "article_count": 3
+  },
+  {
+   "term": "最大級",
+   "article_count": 3
+  },
+  {
+   "term": "記録的",
    "article_count": 3
   }
  ],
  "total": 40,
- "readable": 29,
+ "readable": 30,
  "sources": [
   "国内 - Yahoo!ニュース",
-  "ニュース速報（総合）RSS",
   "トップニュース - Google ニュース"
  ],
  "feeds": [
@@ -212,6 +226,6 @@
    "last_error": ""
   }
  ],
- "generated_at": "2026-09-05T21:36:47.167871+00:00",
- "build": "20260906063656"
+ "generated_at": "2026-09-06T21:36:20.947651+00:00",
+ "build": "20260907063623"
 }
