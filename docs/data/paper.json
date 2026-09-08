@@ -1,142 +1,141 @@
 {
  "digest": [
   {
-   "field": "政治",
-   "subtitle": "県議のホテル費と航空券の支払い",
-   "text": "福岡県議会をめぐる問題で、「福岡県議会のドン」と呼ばれる人物が、ホテル費17万円、航空券212万円といった高額な支払いを計上していたことが明らかになった。この問題は、270本の記事から「歪んだ関係」が浮かび上がっていたものであり、同人物は自身の声によく似ている人物との関係について「記憶にない」とコメントしている。福岡県議会は内部調査を開始し、不正行為の有無を検証する予定であり、西日本新聞の調査は新聞協会賞を受賞した。",
+   "field": "社会",
+   "subtitle": "東海3県に線状降水帯発生予測",
+   "text": "9日、東海3県を中心に線状降水帯の発生が予測され、名古屋市などでは小中学校などに臨時休校が呼びかけられています。8日には名古屋市で観測史上104.5ミリの雨量を記録し、三重県、愛知県、岐阜県では夕方から夜前半にかけて線状降水帯が発生する可能性に警戒されています。気象庁は9日夜にかけて線状降水帯が発生する可能性を指摘しており、関東甲信、東海、近畿、四国では200ミリに及ぶ大雨が予想されています。関係機関は監視体制を強化し、住民に対し土砂災害や河川氾濫への警戒を呼びかけています。",
    "sources": [
     {
-     "title": "「ホテル17万円、航空券212万円」「自分の声によく似ているが、記憶にない」記事270本から見えた、「歪んだ関係」の正体《福岡県議会のドン》(文春オンライン)",
-     "url": "https://news.yahoo.co.jp/articles/3c530669dbc274450c034ea5bc104f2ec9a389bc?source=rss",
+     "title": "名古屋市立の小中学校など臨時休校…東海3県は9日も線状降水帯発生の恐れ 三重では夕方 愛知・岐阜では夜のはじめ頃にかけて(東海テレビ)",
+     "url": "https://news.yahoo.co.jp/articles/74b621ffa4a42cf3352c8ddf088d63feed732b5f?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "四国～東海で線状降水帯の恐れ 土砂災害や河川氾濫に警戒(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/a8027e50de9a83e4866b15b7ef396f7744d46bf3?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "【速報】関東・東海・近畿・四国で「線状降水帯」発生の可能性 東海は夜にかけて(tenki.jp)",
+     "url": "https://news.yahoo.co.jp/articles/756b8f09ca67a4a2f21f5e7625671033c124870f?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "今日9日 関東～四国で線状降水帯の恐れ 東海・近畿は24時間200ミリの大雨予想(tenki.jp)",
+     "url": "https://news.yahoo.co.jp/articles/d3cfc74549f5d4692c1a8fe12dd49077c6cdc1a5?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "科学",
+   "subtitle": "",
+   "text": "遺伝子工学は、DNAを分子レベルで操作し、病気に強い作物や栄養価の高い家畜を作り出すために利用されている。トウモロコシやダイズなどの遺伝子組換え生物は、病気への耐性を付与するために作られているが、遺伝子操作によって特定の遺伝子が失われる可能性があり、生態系に影響を及ぼすリスクも指摘されている。遺伝子工学の進歩に伴い、遺伝子操作を施した作物は「遺伝子組換え生物（GMO）」と呼称される。",
+   "sources": [
+    {
+     "title": "「遺伝子組換え生物」はどうやってつくられるのか？ 「遺伝子組換え」の仕組みと絶滅リスクのジレンマに迫る(ダイヤモンド・オンライン)",
+     "url": "https://news.yahoo.co.jp/articles/8bdbfc023beccc7ed2b761d1346188411fbd1d96?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   }
  ],
- "digest_at": "2026-09-07T21:35:52.744388+00:00",
+ "digest_at": "2026-09-08T21:38:30.904477+00:00",
  "topics": [
   {
-   "term": "警察",
+   "term": "愛知",
    "article_count": 8
   },
   {
-   "term": "住民",
-   "article_count": 7
-  },
-  {
-   "term": "死亡",
-   "article_count": 7
-  },
-  {
-   "term": "土砂災害",
-   "article_count": 6
-  },
-  {
-   "term": "危険性",
-   "article_count": 6
+   "term": "大雨",
+   "article_count": 8
   },
   {
    "term": "警戒",
+   "article_count": 7
+  },
+  {
+   "term": "線状降水帯",
    "article_count": 6
   },
   {
-   "term": "大雨",
+   "term": "名古屋市",
    "article_count": 6
   },
   {
-   "term": "事件",
-   "article_count": 6
-  },
-  {
-   "term": "事故",
+   "term": "愛知県",
    "article_count": 6
   },
   {
    "term": "岐阜県",
+   "article_count": 6
+  },
+  {
+   "term": "東海",
+   "article_count": 6
+  },
+  {
+   "term": "道路",
    "article_count": 5
+  },
+  {
+   "term": "冠水",
+   "article_count": 5
+  },
+  {
+   "term": "観測史上",
+   "article_count": 4
+  },
+  {
+   "term": "西日本",
+   "article_count": 4
+  },
+  {
+   "term": "評価",
+   "article_count": 4
+  },
+  {
+   "term": "被害",
+   "article_count": 4
+  },
+  {
+   "term": "経済",
+   "article_count": 4
+  },
+  {
+   "term": "住民",
+   "article_count": 4
+  },
+  {
+   "term": "氾濫",
+   "article_count": 4
+  },
+  {
+   "term": "災害",
+   "article_count": 4
+  },
+  {
+   "term": "四国",
+   "article_count": 4
   },
   {
    "term": "避難",
-   "article_count": 5
-  },
-  {
-   "term": "男性",
-   "article_count": 5
-  },
-  {
-   "term": "捜査",
-   "article_count": 5
-  },
-  {
-   "term": "特別",
-   "article_count": 5
-  },
-  {
-   "term": "関係自治体",
    "article_count": 4
   },
   {
-   "term": "気象庁",
-   "article_count": 4
-  },
-  {
-   "term": "警報",
-   "article_count": 4
-  },
-  {
-   "term": "刃物",
-   "article_count": 4
-  },
-  {
-   "term": "指示",
-   "article_count": 4
-  },
-  {
-   "term": "不明",
-   "article_count": 4
-  },
-  {
-   "term": "土砂災害危険警報",
+   "term": "観測史上最大",
    "article_count": 3
   },
   {
-   "term": "岐阜県本巣市",
+   "term": "高市首相",
    "article_count": 3
   },
   {
-   "term": "線状降水帯",
+   "term": "関東甲信",
    "article_count": 3
   },
   {
-   "term": "安全確保",
-   "article_count": 3
-  },
-  {
-   "term": "コメント",
-   "article_count": 3
-  },
-  {
-   "term": "事故原因",
-   "article_count": 3
-  },
-  {
-   "term": "特別警報",
-   "article_count": 3
-  },
-  {
-   "term": "避難指示",
-   "article_count": 3
-  },
-  {
-   "term": "伊豆諸島",
-   "article_count": 3
-  },
-  {
-   "term": "ケーキ",
-   "article_count": 3
-  },
-  {
-   "term": "サイト",
+   "term": "土砂災害",
    "article_count": 3
   },
   {
@@ -144,19 +143,47 @@
    "article_count": 3
   },
   {
-   "term": "記録的",
+   "term": "気象庁",
    "article_count": 3
   },
   {
-   "term": "大島町",
+   "term": "リスク",
    "article_count": 3
   },
   {
-   "term": "利島村",
+   "term": "財務相",
    "article_count": 3
   },
   {
-   "term": "新島村",
+   "term": "夕方",
+   "article_count": 3
+  },
+  {
+   "term": "更新",
+   "article_count": 3
+  },
+  {
+   "term": "前線",
+   "article_count": 3
+  },
+  {
+   "term": "速報",
+   "article_count": 3
+  },
+  {
+   "term": "運行",
+   "article_count": 3
+  },
+  {
+   "term": "指示",
+   "article_count": 3
+  },
+  {
+   "term": "地方",
+   "article_count": 3
+  },
+  {
+   "term": "片山",
    "article_count": 3
   }
  ],
@@ -193,6 +220,6 @@
    "last_error": ""
   }
  ],
- "generated_at": "2026-09-07T21:37:10.356013+00:00",
- "build": "20260908063720"
+ "generated_at": "2026-09-08T21:39:33.555288+00:00",
+ "build": "20260909063933"
 }
