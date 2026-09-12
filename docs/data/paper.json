@@ -2,48 +2,112 @@
  "digest": [
   {
    "field": "社会",
-   "subtitle": "ケーキ店兼住宅火災 死者4人",
-   "text": "岐阜県本巣市で発生したケーキ店兼住宅の火災により、店主の曽野さとみさん（66歳）を含む死者4人が確認されました。5日に火災が発生し、現場から搬送された曽野さんは病院で治療を受けていましたが、11日に死亡が確認されました。警察は、この事件を殺人・放火事件として捜査を進めており、火災の原因を特定するため、遺留品や目撃証言などを調べています。火災当時、生存していた3人がおり、事件当時の状況について証言を行っています。",
+   "subtitle": "最大震度7の地震 38人死亡",
+   "text": "熊本県で7月28日16時27分に最大震度7の地震が発生し、38人の死者・負傷者が出た。その後、イオンモール熊本で爆発事故が多発し、二次災害も発生した。熊本県知事の木村敬氏は、飛行機内Wi-Fiを通じて迅速に決断を下すことができた。2016年4月の熊本地震の教訓も生かし、救援活動が展開されている。今回の震災を受け、防災対策の重要性が改めて浮き彫りになっている。",
    "sources": [
     {
-     "title": "【速報】岐阜・本巣市のケーキ店火災 搬送されていた店主の66歳女性死亡 死者4人に(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/5877641b141db350a945dcb3a5051780090e549a?source=rss",
+     "title": "一報は飛行機内Wi-Fiで…熊本県知事・木村敬が“2度目の震度7”で、早急に決断を下せたのはなぜか？(文春オンライン)",
+     "url": "https://news.yahoo.co.jp/articles/5e843a1ed8ba4e50557c398c9eb079d7d4f993b3?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "死者は4人に…ケーキ店で5人が死傷した火事 治療中だった66歳女性店主が死亡 刺し傷などの目立った外傷なし(東海テレビ)",
-     "url": "https://news.yahoo.co.jp/articles/d9cb0891222db5a499ee4562257fe6bdc4c202d7?source=rss",
+     "title": "熊本地震でＳＮＳに根拠なき情報「炊き出しでイスラム教徒に配慮」…食事提供の自治体は「宗教的対応していない」 - 読売新聞",
+     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBhMkJHZTIySkZmc3RraVJtcTZZZk1rSzZOck0wcnlFVnUtSmJBQjVSbERseEVWVnpVTDNYRUY1TngydS1JbnNPVmFnaktncHRnNTh6V3VYaUdCSFZ1NjdJYWF2SVEzdw?oc=5",
+     "feed_title": "トップニュース - Google ニュース"
+    }
+   ]
+  },
+  {
+   "field": "社会",
+   "subtitle": "会社役員死亡 献花が行われた",
+   "text": "岐阜県本巣市のケーキ店放火事件で、死亡が確認されたのは、事件前日に来店していた会社役員の男性とされています。現場では12日に関係者や遺族による献花が行われました。火災の原因は現時点で特定されておらず、警察が捜査を進めています。男性が事件前日に来店していた動機や状況が焦点となっています。",
+   "sources": [
+    {
+     "title": "ケーキ店放火 死亡した会社役員の男性は事件前日も来店 岐阜・本巣市(CBCテレビ)",
+     "url": "https://news.yahoo.co.jp/articles/813e872c637b74a38b802f67336fddf1e8561302?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "岐阜 洋菓子店殺人事件 店主の死亡確認 死者4人に - NHKニュース",
-     "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5tYjdZN0ljLWhUdkJTcjRoeE5uQVNXRXV3Q05WdV9iR3JucmpEZHJDa0hXbFhJeGloQlEwcXBuVkc0aTJaQ3pPb2RkRGZ2VWVvcmZWM0FQcTM4empnUlFv?oc=5",
+     "title": "埼玉・寄居町の鍼灸院で火事 2人死亡 70代夫婦と連絡取れず(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/2c2d8eaeea432a69f47e8b4eb0a810d34a6df1e9?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "埼玉 寄居町の治療院兼住宅で火事 男女2人死亡 - NHKニュース",
+     "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBjREs5YlIzS21xZWhQRUZpNUFYS05ZNzY1bjhrbTVCcjRXMm9SOWRlbzMzVjhwa1BuSHFscHc5MjRzRm5IWDdPX0RmaVUwTXhxcnduaUpuTUxidTMwTFUw?oc=5",
      "feed_title": "トップニュース - Google ニュース"
     },
     {
-     "title": "岐阜ケーキ店主66歳女性が死亡 目立った外傷なし(共同通信)",
-     "url": "https://news.yahoo.co.jp/articles/f18c541d1328c27e8bf310c0cb8f572e4a666b6c?source=rss",
+     "title": "埼玉の店舗兼住宅で火災、2人死亡(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/fcd61a8bd6845279f877632e785816d232cf76f6?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "社会",
+   "subtitle": "寄居町 治療院住宅 火災 男女2人死亡",
+   "text": "埼玉県寄居町で12日午後6時15分ごろ、治療院兼住宅で火災が発生し、男女2人が死亡しました。火災現場は70代の夫婦が経営する木造2階建て住宅で、夫婦と連絡が取れなくなっており、消防隊が救助した2人は搬送先の病院で死亡が確認されました。火災原因は現在調査中で、消防隊は電気系統の不具合を視野に、警察は夫婦の安否確認のため捜索活動を続けています。建物は全焼し、周辺住民への通行止めが行われています。",
+   "sources": [
+    {
+     "title": "店舗兼住宅で火災男女死亡 70代夫婦か、埼玉・寄居町(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/fb892429485e1c785af79b75e70a71d2be230259?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "埼玉 寄居町の治療院兼住宅で火事 男女2人死亡 - NHKニュース",
+     "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBjREs5YlIzS21xZWhQRUZpNUFYS05ZNzY1bjhrbTVCcjRXMm9SOWRlbzMzVjhwa1BuSHFscHc5MjRzRm5IWDdPX0RmaVUwTXhxcnduaUpuTUxidTMwTFUw?oc=5",
+     "feed_title": "トップニュース - Google ニュース"
+    },
+    {
+     "title": "埼玉・寄居町の鍼灸院で火事 2人死亡 70代夫婦と連絡取れず(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/2c2d8eaeea432a69f47e8b4eb0a810d34a6df1e9?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "埼玉の店舗兼住宅で火災、2人死亡(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/fcd61a8bd6845279f877632e785816d232cf76f6?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "科学",
+   "subtitle": "水星半径 12km 縮小",
+   "text": "北海道大学の研究チームが、水星の半径が惑星誕生後から約12km縮んでいることを発見した。これは従来の研究で推定されていたよりも小さく、水星の形成過程に関する新たな知見をもたらす可能性がある。研究チームは水星の表面にある凹凸を分析し、この縮みが46億年前から続いていたことを明らかにした。この発見は、惑星の形成と進化を理解する上で重要な意味を持ち、今後の惑星研究に影響を与えるものと見られる。",
+   "sources": [
+    {
+     "title": "水星は惑星誕生後に半径約12km縮む 北海道大学、従来推計上回る - 日本経済新聞",
+     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1xWElybDlheGwxUTlPY2t6dkZDLVVGb1JfNGJMdWg0SnM4dG5fUG5CZ3B0bW44Z3ZWOVBtZWthZHgwN0N3VmN3LWVLTGVmdV9PMkhjY3lLY1dvSWhuQ25ueXNrZncyMnRyVHYwbA?oc=5",
+     "feed_title": "トップニュース - Google ニュース"
+    }
+   ]
+  },
+  {
+   "field": "国際",
+   "subtitle": "両国関係改善で合意",
+   "text": "モディ首相と習近平主席が会談し、インドと中国の「戦略的かつ長期的」な発展で合意しました。合意はBRICS首脳会議で採択された共同宣言と一致しており、両国関係の改善を目指すものです。習近平主席は会談の場で訪印し、関係強化について協議しました。両国は関税や中東情勢などについて懸念を表明しつつ、関係強化の方向性を共有しました。",
+   "sources": [
+    {
+     "title": "モディ首相と習主席が会談、インドと中国の「戦略的かつ長期的」発展で一致…関係改善を強調 - 読売新聞",
+     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBIbERCS0tnYlRRMVE3U1BqTFJ0RjRYZ0ZnVU5wM1Z4cWdVR0F6T2lncjhOZ25fUVVXakllSkEtLWRydXRmdEhuSmFZT0hnODZzTFpSOTZPYTEwdWNoaUhRQXF3?oc=5",
+     "feed_title": "トップニュース - Google ニュース"
     }
    ]
   }
  ],
- "digest_at": "2026-09-11T21:36:46.343779+00:00",
+ "digest_at": "2026-09-12T21:53:19.829253+00:00",
  "topics": [
   {
-   "term": "捜査",
-   "article_count": 10
+   "term": "戦略",
+   "article_count": 5
   },
   {
-   "term": "警察",
-   "article_count": 8
+   "term": "評価",
+   "article_count": 5
   },
   {
-   "term": "女性",
-   "article_count": 6
-  },
-  {
-   "term": "岐阜県本巣市",
+   "term": "新聞",
    "article_count": 5
   },
   {
@@ -51,127 +115,131 @@
    "article_count": 5
   },
   {
-   "term": "店主",
-   "article_count": 5
-  },
-  {
    "term": "死亡",
    "article_count": 5
   },
   {
-   "term": "政策",
-   "article_count": 5
-  },
-  {
-   "term": "ケーキ",
+   "term": "埼玉県寄居町",
    "article_count": 4
   },
   {
-   "term": "搬送",
+   "term": "火災原因",
    "article_count": 4
   },
   {
-   "term": "特定",
+   "term": "調査中",
    "article_count": 4
   },
   {
-   "term": "事件",
+   "term": "消防隊",
    "article_count": 4
   },
   {
-   "term": "様々",
+   "term": "展開",
    "article_count": 4
   },
   {
-   "term": "国民",
+   "term": "男女",
    "article_count": 4
   },
   {
-   "term": "反発",
+   "term": "生活",
    "article_count": 4
   },
   {
-   "term": "病院",
+   "term": "住宅",
    "article_count": 4
   },
   {
-   "term": "運転",
+   "term": "夫婦",
    "article_count": 4
   },
   {
-   "term": "東京",
-   "article_count": 4
+   "term": "Yahoo",
+   "article_count": 3
   },
   {
-   "term": "評価",
-   "article_count": 4
+   "term": "メディア",
+   "article_count": 3
+  },
+  {
+   "term": "読売新聞",
+   "article_count": 3
+  },
+  {
+   "term": "地域住民",
+   "article_count": 3
+  },
+  {
+   "term": "人死亡",
+   "article_count": 3
+  },
+  {
+   "term": "建物内",
+   "article_count": 3
+  },
+  {
+   "term": "過程",
+   "article_count": 3
+  },
+  {
+   "term": "物語",
+   "article_count": 3
+  },
+  {
+   "term": "事故",
+   "article_count": 3
+  },
+  {
+   "term": "知事",
+   "article_count": 3
+  },
+  {
+   "term": "番組",
+   "article_count": 3
+  },
+  {
+   "term": "人気",
+   "article_count": 3
+  },
+  {
+   "term": "施設",
+   "article_count": 3
+  },
+  {
+   "term": "支持",
+   "article_count": 3
   },
   {
    "term": "大幅",
-   "article_count": 4
-  },
-  {
-   "term": "被害",
-   "article_count": 4
-  },
-  {
-   "term": "再開",
-   "article_count": 4
-  },
-  {
-   "term": "女性店主",
    "article_count": 3
   },
   {
-   "term": "歳女性",
+   "term": "幅広",
    "article_count": 3
   },
   {
-   "term": "現時点",
+   "term": "勝利",
    "article_count": 3
   },
   {
-   "term": "サイト",
+   "term": "特定",
    "article_count": 3
   },
   {
-   "term": "死者",
+   "term": "更新",
    "article_count": 3
   },
   {
-   "term": "逮捕",
+   "term": "選手",
    "article_count": 3
   },
   {
-   "term": "法案",
+   "term": "警察",
    "article_count": 3
   },
   {
-   "term": "位置",
-   "article_count": 3
-  },
-  {
-   "term": "証言",
-   "article_count": 3
-  },
-  {
-   "term": "担当",
-   "article_count": 3
-  },
-  {
-   "term": "当局",
-   "article_count": 3
-  },
-  {
-   "term": "見合",
-   "article_count": 3
-  },
-  {
-   "term": "映画",
-   "article_count": 3
-  },
-  {
-   "term": "米国",
+   "term": "病院",
    "article_count": 3
   }
  ],
@@ -208,6 +276,6 @@
    "last_error": ""
   }
  ],
- "generated_at": "2026-09-11T21:37:36.994173+00:00",
- "build": "20260912063747"
+ "generated_at": "2026-09-12T21:53:23.359911+00:00",
+ "build": "20260913065323"
 }
