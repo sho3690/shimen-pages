@@ -1,145 +1,158 @@
 {
  "digest": [
   {
-   "field": "政治",
-   "subtitle": "公邸で物価対策投稿 臨時国会は減税国会",
-   "text": "高市首相は、飲食料品への消費税減税成立を目指す政局に対応するため、8月中旬には公邸で物価高対策に関するXへの投稿を連投するなど、周囲とのコミュニケーションをほとんど取っていた。8月下旬の世論調査では、減税法案成立を目指す臨時国会が「減税国会」となる見通しであり、高市首相は来年4月の消費税率実質ゼロ施行を通じて支持率を維持し、9月の自民党総裁選で無投票での再選を目指している。総務会では、党執行部が中堅・若手議員を動員し、賛成意見を強めたことで、8月3日の税調会合で賛成が65％に達した。高市首相は内閣改造の人事について、麻生氏への配慮から言及を避けている。",
+   "field": "社会",
+   "subtitle": "熊本で震度4地震 停電も発生",
+   "text": "熊本県水俣市を含む広い範囲で16日午前6時9分ごろに震度4の地震が発生し、一部地域で停電が発生した。地震の規模はマグニチュード6.3と推定され、震源地は熊本県天草・芦北地方である。気象庁は津波警報を発表しておらず、復旧作業が進められているが、今後余震が発生する可能性があるため注意が必要である。関係機関は警戒を呼びかけ、状況を注視し情報提供を継続する。",
    "sources": [
     {
-     "title": "「内閣改造も近く、高市さんには何も言えない」高市首相の人事を左右する“麻生依存”の深層(文春オンライン)",
-     "url": "https://news.yahoo.co.jp/articles/bc733b5b67d864edcf6c61134541051f955be6f6?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "field": "政治",
-   "subtitle": "古謝玄太氏が新知事に選出",
-   "text": "沖縄県知事選挙で、古謝玄太氏が14万票以上の差で玉城デニー氏を破り、新知事に選出された。古謝氏は、普天間基地の返還時期を政府に強く求めるとともに、沖縄経済の活性化を目指す方針を表明した。一方、玉城氏は選挙を「不利な戦いだった」と振り返り、政府からの「物量でかかってくる圧力」への対応を課題とした。共産党の田村智子委員長は、官邸と自民党による選挙への介入を主張し、SNSを通じた玉城氏への誹謗中傷やデマを指摘した。",
-   "sources": [
-    {
-     "title": "《沖縄県知事選》「高市政権が介入」共産・田村委員長の発言が波紋、玉城デニー氏にも「見苦しい」と県民も辛辣(週刊女性PRIME)",
-     "url": "https://news.yahoo.co.jp/articles/4b5a58ecfa63be7083148cf5456f1eed4190cd58?source=rss",
+     "title": "熊本県天草・芦北で震度4 津波の心配なし(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/e1c56b6ce9145121e7654001fb0b5383320b2739?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "得票差“14万票以上”沖縄新知事に古謝氏 大越健介が聞く“大勝の舞台裏”(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/365101dffa203e71e916a0809b30c37cb8e71ab0?source=rss",
+     "title": "熊本で震度4(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/3601ac7105c51f7f143a44483073818db3cd43bd?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "《PFAS汚染》米軍が「公表OK」と考えを示すも、日本政府が公表せず…沖縄県知事選の裏で起きていた“もう一つの重大事態”(文春オンライン)",
-     "url": "https://news.yahoo.co.jp/articles/856e107b090ec4567778800acf982e7976765514?source=rss",
+     "title": "熊本県で震度4の地震 津波の心配なし(tenki.jp)",
+     "url": "https://news.yahoo.co.jp/articles/66a576f8cc4b005f311d0f7bf4f8769cd8ac81d8?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "field": "政治",
-   "subtitle": "財務省官僚への不満 表明",
-   "text": "高市首相が夏の省幹部人事を通じて、財務省の官僚たちへの不満を表明した。主計局次長の一松氏が東京税関長に転出した際、高市首相は消費減税を阻害する動きへの怒りを募らせたという。この背景には、20年前に奈良県知事選で敗北した際、自民支持層の分裂を招いた元生駒市長の当選を招いたことへの高市氏の不信感があった。高市氏は、荒井正吾元知事の行動を敗因の一因と捉え、その恨みを抱き続けていたことが関係者の証言で明らかになった。",
-   "sources": [
+    },
     {
-     "title": "財務省“まさかの左遷人事”の陰にあった、高市首相が忘れない「奈良の怨念」〈消費減税を巡る暗闘〉(文春オンライン)",
-     "url": "https://news.yahoo.co.jp/articles/e0bc20d64205d5c7466075c501956209cdcaa39a?source=rss",
+     "title": "〔地震〕熊本県水俣市で震度4 津波の心配なし(9/16)(レスキューナウニュース)",
+     "url": "https://news.yahoo.co.jp/articles/348b458329b9c2317d34aaa6250cd3c71225929d?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "社会",
-   "subtitle": "SNSで実行役を募り強盗や窃盗",
-   "text": "京都府警は、SNSを通じて実行役を募り強盗や窃盗を繰り返した匿名犯罪グループの事件計画主導を疑われる20代の男を逮捕する方針を固めた。グループは京都市北区や城陽市などで活動し、少なくとも5軒の民家を標的にバールや催涙スプレーを使用した。現場指示役とみられる男女26人は既に逮捕・書類送検されており、事件の計画立案者である「案件屋」の逮捕が今後の焦点となる。逮捕される予定の男は、事件計画の最上位に位置する指示役とみられている。京都府警は、事件の全容解明に向けて捜査を進めている。",
+   "subtitle": "ラーメン店全損 復旧に4000万円",
+   "text": "名古屋市で記録的豪雨から1週間が経過し、あるラーメン店は浸水により全損と判断され、復旧には約4000万円の費用がかかる見込みです。住宅街には多くの“災害ゴミ”が残り、住民生活への影響が続いています。市は、被災地域での除染作業や、住民への支援物資の提供を進めています。今回の豪雨により、都市部の排水能力に対する課題が浮き彫りになっています。",
    "sources": [
     {
-     "title": "【速報】トクリュウ指示役最上位の男を逮捕へ 事件計画の「案件屋」か、実行役など26人も逮捕・書類送検(京都新聞)",
-     "url": "https://news.yahoo.co.jp/articles/c98c46daad1fef695102cea70b2a32cd98aa3365?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "field": "社会",
-   "subtitle": "台風へ発達 20日に接近",
-   "text": "熱帯低気圧aは24時間以内に台風に発達し、20日に日本列島に接近する見込みです。気象庁は、トラック諸島近海を北西へ時速15kmで移動するこの台風について、最大瞬間風速55m/s、中心気圧960hPaと予想しています。シルバーウィーク期間中、各地で雨風が強まる見込みがあり、気象庁は今後の発達状況を注視し、最新情報を発表する方針です。",
-   "sources": [
-    {
-     "title": "【台風情報】最大瞬間風速55m/s・960hPa予想...台風のたまご「熱帯低気圧a」は24時間以内に台風へ発達、20日には日本の南に接近見込み...シルバーウィーク各地の天気は?25日（金）までの雨風シミュレーション【気象庁15日4時05分発表】(RSK山陽放送)",
-     "url": "https://news.yahoo.co.jp/articles/61b8ca6e673ed96a8f72ae47001f304f8e76c945?source=rss",
+     "title": "記録的豪雨から1週間…浸水被害のラーメン店「全損で約4000万円かかる」住宅街には“災害ゴミ”も残る(FNNプライムオンライン)",
+     "url": "https://news.yahoo.co.jp/articles/ac4732d8d3dc47b14e5365f347d43e1d6a6a4b72?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "関東つかの間晴天も…台風25号発生へ 進路定まらず“5連休に直撃”の恐れも(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/ee332b1471b81c65cdc86d470dba014fc29a58fb?source=rss",
+     "title": "豪雨の夜、想定の倍以上の帰宅困難者が千葉県庁に集中「ギリギリの対応だった」…滞在施設の周知・誘導に課題 - 読売新聞",
+     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE10UmVfTUJDVU1IUVdnZWNkbFdqOHpmUk1RTGFpZ1FpWks3bVlhai02NVdHcXh1SG1sSWJPZ2ZzR1FIWDBsdWR2NG9WTzJhLWZnMXpWQmtCNkpzMGVUdVE1QTBYOGpOZw?oc=5",
+     "feed_title": "トップニュース - Google ニュース"
+    }
+   ]
+  },
+  {
+   "field": "科学",
+   "subtitle": "細菌の増殖速度は驚異的",
+   "text": "17世紀に科学者によって発見された細菌は、驚異的な増殖速度を持つことが明らかになった。科学者は自作の顕微鏡で歯垢を観察し、ヒトの細胞が約72回も分裂を繰り返すというメカニズムを持つことを突き止めた。この発見は、細菌の分類体系の基礎を築き、微生物学の発展に貢献した。現在も細菌の増殖メカニズムは研究対象となっている。",
+   "sources": [
+    {
+     "title": "わずか20分で増殖…驚異のスピードで増える「細菌」の正体と発見の歴史(ダイヤモンド・オンライン)",
+     "url": "https://news.yahoo.co.jp/articles/0b282f20dd5f00ad8e6aa7fb2f46f3e5397049fd?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "経済",
-   "subtitle": "コメ卸売業者 卸売業者在庫と価格",
-   "text": "新潟県でコメの卸売業者らが在庫問題と価格形成について議論した。全国米穀販売事業共済協会の山﨑代表理事は、最大280万トン強の在庫が予測される現状について「誰も得をしていない」と述べた。卸売業者からは、離農の影響によるコメ不足の可能性や、政府の備蓄米買い戻しへの要望が相次いでいる。JA全農にいがたの伊藤会長は、仮渡し金の追加支払いについて「状況が許せば」という形で対応を保留した。今後のコメ市場への影響が注目される。",
+   "subtitle": "飲食料品消費税減税と就業者支援法案を提出",
+   "text": "政府は秋の臨時国会で、飲食料品に対する消費税率の引き下げと就業者負担軽減支援金の導入を合わせた法案を一本化して提出する方針を固めた。法案は消費の低迷を打開し、経済の活性化を図るためのものであり、成立すれば国民への経済的な支援が強化される。政府は、この一本化により消費税減税の実施を円滑に進め、国会審議での野党批判をかわす狙いを示している。",
    "sources": [
     {
-     "title": "【コメ卸売業者の声】「誰も得していない」27年には“過去に経験のない在庫量”予測も 大幅減となった仮渡し金“追加支払い”は「断定できない」新潟(FNNプライムオンライン)",
-     "url": "https://news.yahoo.co.jp/articles/a358c0b3b915ca84eb2fb9db9d221765d841de4f?source=rss",
+     "title": "消費減税、「給付」と法案一本化 国会審議で野党批判かわす狙い(北海道新聞)",
+     "url": "https://news.yahoo.co.jp/articles/2cf77201d6dbac3a7e158bf3fd09778429dff4ab?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "経済",
-   "subtitle": "浜岡原発白紙化で経営再編論",
-   "text": "中部電力で浜岡原発の白紙化による減損リスクが懸念され、「10電力体制」の再編論が再燃している。経営トップ2名の辞任の可能性が浮上しており、組織の意識改革が焦点となっている。不正データ問題の一因となった社長の叱責が、不正行為につながる一因となったと指摘されており、電力市場全体の損失が懸念されている。中部電力は、浜岡原発の早期再稼働を優先する姿勢に対し、異論を排除する傾向があった。電力業界全体で再発防止策を講じる必要性が高まっている。",
+   "subtitle": "ダウ平均株価は33933ドルに下落",
+   "text": "15日の米国株式市場で、ダウ平均株価は328ドル安の33,933ドルに落ち込みました。長期金利が一時5％を超えたことや原油価格の高騰、AI関連株の開発減速への懸念などが売りにつながりました。孫正義氏の資産は約1.2兆円減少するなど、投資家はリスク回避姿勢を強めており、原油供給への警戒感も市場の不安を増大させています。",
    "sources": [
     {
-     "title": "「10電力体制」再編論、再燃も 中部電力に浜岡原発白紙で減損リスク - 日本経済新聞",
-     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5oODZrdm5mQjJHekpZeXV6VUVlMlVDMEZkdTZLaFY0dHJ5MTZod1p3ams3NnJ3emMwM21sdHVKdTVTUUp3QVBXQWlOdDNSNE9xQWFpZXZ2c0xSQm9XRmlSaW1ra1lNRUlnUFdNdQ?oc=5",
+     "title": "NYダウ、続落し328ドル安 原油供給への警戒一段と - 日本経済新聞",
+     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE45eXdnejEtc0V6Wk5PcllicUJfamxtLVh0VFpFRVR5N2RiMXE3Q2FacFp4QTlXMVo3eE1EWjVydVpIOUgzX296OVFOSGpKUGswU1h3QU9TZXdNUEJBbFRWRzdkZExRc1hVdU1obA?oc=5",
      "feed_title": "トップニュース - Google ニュース"
     }
    ]
   }
  ],
- "digest_at": "2026-09-14T21:40:17.660211+00:00",
+ "digest_at": "2026-09-15T21:36:36.275342+00:00",
  "topics": [
   {
-   "term": "自民党",
+   "term": "気象庁",
    "article_count": 5
+  },
+  {
+   "term": "熊本県",
+   "article_count": 4
+  },
+  {
+   "term": "日午前",
+   "article_count": 4
+  },
+  {
+   "term": "震源",
+   "article_count": 4
+  },
+  {
+   "term": "津波",
+   "article_count": 4
+  },
+  {
+   "term": "観測",
+   "article_count": 4
+  },
+  {
+   "term": "震度",
+   "article_count": 4
+  },
+  {
+   "term": "地震",
+   "article_count": 4
+  },
+  {
+   "term": "復旧",
+   "article_count": 4
+  },
+  {
+   "term": "歴史",
+   "article_count": 4
+  },
+  {
+   "term": "警察",
+   "article_count": 4
+  },
+  {
+   "term": "経済",
+   "article_count": 4
+  },
+  {
+   "term": "措置",
+   "article_count": 4
   },
   {
    "term": "東京",
-   "article_count": 5
-  },
-  {
-   "term": "知事",
-   "article_count": 5
-  },
-  {
-   "term": "SNS",
    "article_count": 4
   },
   {
-   "term": "高市",
-   "article_count": 4
-  },
-  {
-   "term": "当選",
-   "article_count": 4
-  },
-  {
-   "term": "選挙",
-   "article_count": 4
-  },
-  {
-   "term": "改善",
-   "article_count": 4
-  },
-  {
-   "term": "シルバーウィーク",
+   "term": "マグニチュード",
    "article_count": 3
   },
   {
-   "term": "沖縄県知事選",
+   "term": "熊本県天草",
+   "article_count": 3
+  },
+  {
+   "term": "関係機関",
+   "article_count": 3
+  },
+  {
+   "term": "芦北地方",
    "article_count": 3
   },
   {
@@ -147,103 +160,71 @@
    "article_count": 3
   },
   {
-   "term": "デニー",
+   "term": "範囲",
    "article_count": 3
   },
   {
-   "term": "低下",
+   "term": "停電",
    "article_count": 3
   },
   {
-   "term": "返還",
+   "term": "分頃",
    "article_count": 3
   },
   {
-   "term": "年前",
+   "term": "心配",
    "article_count": 3
   },
   {
-   "term": "攻撃",
+   "term": "警戒",
    "article_count": 3
   },
   {
-   "term": "経済",
+   "term": "運転",
    "article_count": 3
   },
   {
-   "term": "維持",
+   "term": "構築",
    "article_count": 3
   },
   {
-   "term": "投稿",
+   "term": "万円",
    "article_count": 3
   },
   {
-   "term": "支持",
+   "term": "判断",
    "article_count": 3
   },
   {
-   "term": "玉城",
+   "term": "位置",
    "article_count": 3
   },
   {
-   "term": "不足",
-   "article_count": 3
-  },
-  {
-   "term": "県民",
-   "article_count": 3
-  },
-  {
-   "term": "合意",
-   "article_count": 3
-  },
-  {
-   "term": "古謝",
-   "article_count": 3
-  },
-  {
-   "term": "男性",
-   "article_count": 3
-  },
-  {
-   "term": "逮捕",
-   "article_count": 3
-  },
-  {
-   "term": "住民",
-   "article_count": 3
-  },
-  {
-   "term": "被害",
-   "article_count": 3
-  },
-  {
-   "term": "YouTuber",
+   "term": "三重県四日市市",
    "article_count": 2
   },
   {
-   "term": "契約社員男性",
+   "term": "熊本県水俣市",
    "article_count": 2
   },
   {
-   "term": "山口組系組長",
+   "term": "現在復旧作業",
    "article_count": 2
   },
   {
-   "term": "タイミング",
+   "term": "アメリカ",
    "article_count": 2
   },
   {
-   "term": "古謝玄太氏",
+   "term": "日未明",
    "article_count": 2
   },
   {
-   "term": "熱帯低気圧",
+   "term": "関連株",
    "article_count": 2
   },
   {
-   "term": "秋雨前線",
+   "term": "推定",
    "article_count": 2
   }
  ],
@@ -280,6 +261,6 @@
    "last_error": ""
   }
  ],
- "generated_at": "2026-09-14T21:40:19.199851+00:00",
- "build": "20260915064019"
+ "generated_at": "2026-09-15T21:36:37.600924+00:00",
+ "build": "20260916063637"
 }
