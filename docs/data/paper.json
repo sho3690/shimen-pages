@@ -1,174 +1,230 @@
 {
  "digest": [
   {
-   "field": "社会",
-   "subtitle": "熊本で震度4地震 停電も発生",
-   "text": "熊本県水俣市を含む広い範囲で16日午前6時9分ごろに震度4の地震が発生し、一部地域で停電が発生した。地震の規模はマグニチュード6.3と推定され、震源地は熊本県天草・芦北地方である。気象庁は津波警報を発表しておらず、復旧作業が進められているが、今後余震が発生する可能性があるため注意が必要である。関係機関は警戒を呼びかけ、状況を注視し情報提供を継続する。",
+   "field": "政治",
+   "subtitle": "共産党内で批判相次ぐ",
+   "text": "沖縄知事選後、共産党内で批判が相次いでいる。筆坂秀世氏らは、翁長雄志元市長が提唱した「オール沖縄」構想が「嘘だった」と指摘し、田村智子委員長の辺野古沖転覆事故に関する玉城デニー前知事への説明責任に関する発言を巡り、ネット上で批判を呼んだ。田村委員長は、今回の選挙結果を「官邸と自民党による選挙介入」と批判しているが、SNS上では「高市政権の介入を示す明確な証拠はない」との意見も出ている。共産党内では、今回の選挙結果を検証するため、今後の対応が注目される。",
    "sources": [
     {
-     "title": "熊本県天草・芦北で震度4 津波の心配なし(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/e1c56b6ce9145121e7654001fb0b5383320b2739?source=rss",
+     "title": "沖縄知事選で露呈したオール沖縄の“陳腐化”と、共産党の“無責任体質”…田村智子委員長を縛る「自分たちの主張は常に正しいという自己認識」(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/7f88774ca0c9f8fde4f9ef27a8af88dbd0865f36?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "熊本で震度4(共同通信)",
-     "url": "https://news.yahoo.co.jp/articles/3601ac7105c51f7f143a44483073818db3cd43bd?source=rss",
+     "title": "共産「田村智子委員長」に“逆ギレ”批判が殺到…沖縄知事選は「高市政権の選挙介入」が敗因、辺野古沖転覆事故でデニー氏に「説明責任があるという考え方が違う」(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/7ba68f09a6df20303f91b35cdddc726ece1f1b29?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "熊本県で震度4の地震 津波の心配なし(tenki.jp)",
-     "url": "https://news.yahoo.co.jp/articles/66a576f8cc4b005f311d0f7bf4f8769cd8ac81d8?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "〔地震〕熊本県水俣市で震度4 津波の心配なし(9/16)(レスキューナウニュース)",
-     "url": "https://news.yahoo.co.jp/articles/348b458329b9c2317d34aaa6250cd3c71225929d?source=rss",
+     "title": "大相撲千秋楽で注目の過去も 自民・村井秀樹新国対委員長は高市早苗首相の「一本釣り」抜てき(日刊スポーツ)",
+     "url": "https://news.yahoo.co.jp/articles/31baf2131a138c890e6855209ce34079ea29c7f5?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
-   "field": "社会",
-   "subtitle": "ラーメン店全損 復旧に4000万円",
-   "text": "名古屋市で記録的豪雨から1週間が経過し、あるラーメン店は浸水により全損と判断され、復旧には約4000万円の費用がかかる見込みです。住宅街には多くの“災害ゴミ”が残り、住民生活への影響が続いています。市は、被災地域での除染作業や、住民への支援物資の提供を進めています。今回の豪雨により、都市部の排水能力に対する課題が浮き彫りになっています。",
+   "field": "政治",
+   "subtitle": "国会運営効率化と首相権限強化",
+   "text": "自民党の新執行部が16日、国会運営の効率化と高市早苗首相の権限強化を目指し、役員人事を決定した。参議院幹事長が、長年影響力を持っていた石井準一氏から村井英樹氏に交代した。この決定は、26年度予算案審議での首相の意向に沿うもので、石井氏が予算成立の遅れを懸念していたことが背景にある。村井氏が国会対策委員長に就任したことや、「首相の国会出席時間を見直すべき」という発言も、今回の人事に影響を与えた。松山政司参議院会長は、首相が石井氏を外すよう要請していたことを認めた。",
    "sources": [
     {
-     "title": "記録的豪雨から1週間…浸水被害のラーメン店「全損で約4000万円かかる」住宅街には“災害ゴミ”も残る(FNNプライムオンライン)",
-     "url": "https://news.yahoo.co.jp/articles/ac4732d8d3dc47b14e5365f347d43e1d6a6a4b72?source=rss",
+     "title": "官邸主導の国会運営狙う 自民新執行部 石井参院幹事長を交代(北海道新聞)",
+     "url": "https://news.yahoo.co.jp/articles/64839dc20461d58f7f8d6328527f2ff3de10c5de?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "豪雨の夜、想定の倍以上の帰宅困難者が千葉県庁に集中「ギリギリの対応だった」…滞在施設の周知・誘導に課題 - 読売新聞",
-     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE10UmVfTUJDVU1IUVdnZWNkbFdqOHpmUk1RTGFpZ1FpWks3bVlhai02NVdHcXh1SG1sSWJPZ2ZzR1FIWDBsdWR2NG9WTzJhLWZnMXpWQmtCNkpzMGVUdVE1QTBYOGpOZw?oc=5",
+     "title": "大相撲千秋楽で注目の過去も 自民・村井秀樹新国対委員長は高市早苗首相の「一本釣り」抜てき(日刊スポーツ)",
+     "url": "https://news.yahoo.co.jp/articles/31baf2131a138c890e6855209ce34079ea29c7f5?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "政治",
+   "subtitle": "改造内閣発足 関連法案審議へ",
+   "text": "高市首相は17日、第2次改造内閣の発足を正式に発表し、10月召集予定の臨時国会で審議される消費税減税関連法案や、年末に改定される安全保障関連3文書改定の実現を目指す。茂木敏充外相、片山さつき財務相、小泉進次郎防衛相、木原稔官房長官らは留任し、政権の基盤を維持する。維新の会からは中司宏幹事長が閣僚に起用される見込みで、赤沢亮正経済産業相と城内実成長戦略相も続投する。一方、去年の総裁選で高市首相と争った林芳正氏の処遇が焦点となっており、氏が総務大臣のポストを維持するかどうかが注目されている。",
+   "sources": [
+    {
+     "title": "第2次高市改造内閣発足へ 木原官房長官ら骨格維持(共同通信)",
+     "url": "https://news.yahoo.co.jp/articles/3f86a7b67c11a5b8f9572d2aa0799dfd951d06f7?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "総理側近「革命だ」“総裁選のライバル”林芳正氏の処遇は 高市政権初の内閣改造へ(テレビ朝日系（ANN）)",
+     "url": "https://news.yahoo.co.jp/articles/876730516e37eeebfa075eea4a8ad322f48f0803?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "維新「閣内協力」で正式合意、内閣改造は赤沢亮正・経済産業相と城内実・成長戦略相が続投へ - 読売新聞",
+     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE4teFpmcDRPbXdfVDhjNXlVZGpoZGV0WVFjX016dGE5UkNMSDZZcVlCWnZUejVycGNYNVhMN0dqYVZQaFE2TzVxVXBkdTdHMkdCbHZ4UHJkZXhnc1hZRVdVamx3WU5hQQ?oc=5",
      "feed_title": "トップニュース - Google ニュース"
+    },
+    {
+     "title": "まもなく“内閣改造”の高市総理 第二次改造内閣で注目すべきポイントは？ 維新の入閣で『入閣氷河期』との声も…自民中堅に広がる不満 “留任続出”の背景は来年総裁選への「ライバル封じ」か 鈴木哲夫氏解説(関西テレビ)",
+     "url": "https://news.yahoo.co.jp/articles/33ecec198992f5fccd5d1165bbe493cef078bf77?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
-   "field": "科学",
-   "subtitle": "細菌の増殖速度は驚異的",
-   "text": "17世紀に科学者によって発見された細菌は、驚異的な増殖速度を持つことが明らかになった。科学者は自作の顕微鏡で歯垢を観察し、ヒトの細胞が約72回も分裂を繰り返すというメカニズムを持つことを突き止めた。この発見は、細菌の分類体系の基礎を築き、微生物学の発展に貢献した。現在も細菌の増殖メカニズムは研究対象となっている。",
+   "field": "政治",
+   "subtitle": "村井氏が国対委員長に就任",
+   "text": "自民党は16日、臨時総務会を開き、村井秀樹元官房副長官を国対委員長に任命した。鈴木俊一幹事長は、村井氏の起用について、高市早苗首相の政策実現への貢献を期待していると述べた。村井氏は就任あいさつで、高市首相との円滑な政策実現を目指す意欲を示した。今回の起用は、萩生田光一氏の幹事長代行再任と合わせて行われ、抜擢感の強い人事と評価されている。村井氏は、大相撲千秋楽で内閣総理大臣杯を介助なしで手渡した場面もSNSで話題となった。",
    "sources": [
     {
-     "title": "わずか20分で増殖…驚異のスピードで増える「細菌」の正体と発見の歴史(ダイヤモンド・オンライン)",
-     "url": "https://news.yahoo.co.jp/articles/0b282f20dd5f00ad8e6aa7fb2f46f3e5397049fd?source=rss",
+     "title": "大相撲千秋楽で注目の過去も 自民・村井秀樹新国対委員長は高市早苗首相の「一本釣り」抜てき(日刊スポーツ)",
+     "url": "https://news.yahoo.co.jp/articles/31baf2131a138c890e6855209ce34079ea29c7f5?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "官邸主導の国会運営狙う 自民新執行部 石井参院幹事長を交代(北海道新聞)",
+     "url": "https://news.yahoo.co.jp/articles/64839dc20461d58f7f8d6328527f2ff3de10c5de?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "まもなく“内閣改造”の高市総理 第二次改造内閣で注目すべきポイントは？ 維新の入閣で『入閣氷河期』との声も…自民中堅に広がる不満 “留任続出”の背景は来年総裁選への「ライバル封じ」か 鈴木哲夫氏解説(関西テレビ)",
+     "url": "https://news.yahoo.co.jp/articles/33ecec198992f5fccd5d1165bbe493cef078bf77?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "社会",
+   "subtitle": "使途不明金計2億5000万円",
+   "text": "「赤い羽根共同募金」の運営団体である北海道共同募金会で、使途不明金が計2億5000万円に拡大した。9月16日、社会福祉法人側が新たに7000万円の使途不明金が判明し、これまでの約1億8000万円と合わせ計2億5000万円となった。会計担当だった50代の男性事務局長は着服の疑いで懲戒解雇されており、募金会はガバナンスの欠如を認めて陳謝している。原因究明と再発防止策を検討するため、第三者委員会が設置され、調査報告書は2027年1月末に提出される予定である。",
+   "sources": [
+    {
+     "title": "【「赤い羽根」の浄財が消えた】使途不明金は『計2億5000万円』に拡大―新たに7000万円判明で「赤い羽根共同募金」を運営する北海道共同募金会が陳謝 会計担当の元事務局長による着服の疑いも(FNNプライムオンライン)",
+     "url": "https://news.yahoo.co.jp/articles/4ddb142d16ba2684589b5b6e8ac22487667f325e?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "field": "社会",
+   "subtitle": "ドパガキはドーパミン過剰放出",
+   "text": "SNSで広まった「ドパガキ」は、脳内の神経伝達物質ドーパミンの過剰な放出による中毒状態を指す。米国の精神科医アンナ・レンブケ氏の書籍『ドーパミン中毒』の内容を基に解説が進んでおり、ドーパミンは「欲しい」という動機に関係し、快楽を求める感覚を生み出すとレンブケ氏は説明する。遺伝子組み換えマウスの例では、ドーパミンを生成できないマウスが餓死したことから、ドーパミンの重要性が示されている。ドーパミンの過剰放出は「渇望」を引き起こし、より強い快楽を求める中毒状態へと繋がる。",
+   "sources": [
+    {
+     "title": "「ドパガキ」って何？ 脳が“ドーパミン中毒”になる“快楽と苦痛の関係”を研究者の本から解説(Book Bang)",
+     "url": "https://news.yahoo.co.jp/articles/321f8ec699fa6dd67f6acaa35a138290d77e3329?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "field": "経済",
-   "subtitle": "飲食料品消費税減税と就業者支援法案を提出",
-   "text": "政府は秋の臨時国会で、飲食料品に対する消費税率の引き下げと就業者負担軽減支援金の導入を合わせた法案を一本化して提出する方針を固めた。法案は消費の低迷を打開し、経済の活性化を図るためのものであり、成立すれば国民への経済的な支援が強化される。政府は、この一本化により消費税減税の実施を円滑に進め、国会審議での野党批判をかわす狙いを示している。",
+   "subtitle": "FRB政策金利0.25%引き上げ",
+   "text": "米連邦準備制度（FRB）は、3年2か月ぶりに政策金利を0.25%引き上げた。インフレ抑制を目的とした金融政策の一環であり、市場ではFRBが今後も追加の利上げを行う可能性があると見られている。金利引き上げに伴い、ドルは上昇傾向にある。FRBは、長期金利の急騰リスクを抑えることを目指しており、市場関係者からは慎重な姿勢が評価されている。今回の利上げは、米国のインフレ率を抑制するための重要な一歩となる見込みだ。",
    "sources": [
     {
-     "title": "消費減税、「給付」と法案一本化 国会審議で野党批判かわす狙い(北海道新聞)",
-     "url": "https://news.yahoo.co.jp/articles/2cf77201d6dbac3a7e158bf3fd09778429dff4ab?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "field": "経済",
-   "subtitle": "ダウ平均株価は33933ドルに下落",
-   "text": "15日の米国株式市場で、ダウ平均株価は328ドル安の33,933ドルに落ち込みました。長期金利が一時5％を超えたことや原油価格の高騰、AI関連株の開発減速への懸念などが売りにつながりました。孫正義氏の資産は約1.2兆円減少するなど、投資家はリスク回避姿勢を強めており、原油供給への警戒感も市場の不安を増大させています。",
-   "sources": [
-    {
-     "title": "NYダウ、続落し328ドル安 原油供給への警戒一段と - 日本経済新聞",
-     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE45eXdnejEtc0V6Wk5PcllicUJfamxtLVh0VFpFRVR5N2RiMXE3Q2FacFp4QTlXMVo3eE1EWjVydVpIOUgzX296OVFOSGpKUGswU1h3QU9TZXdNUEJBbFRWRzdkZExRc1hVdU1obA?oc=5",
+     "title": "ＮＹ外為市場＝ドル上昇、ＦＲＢが3年超ぶり利上げ 追加引き締め見通しも - Reuters",
+     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9KYlA4ZXlqVkFESDFVOER2RklnTHRvcE1WVDFqd3JTUnhDZ09NNi00OXJUOVJXMDhId2YwdWhrOGRUTXFKd2xacjFGNkpiNmpoRDcycHJvQ294a3Z3LWFxZ2hUdjlkRDhITm9ZblZuQkNaZTludU9RMHQ5MzQ0Zw?oc=5",
      "feed_title": "トップニュース - Google ニュース"
     }
    ]
   }
  ],
- "digest_at": "2026-09-15T21:36:36.275342+00:00",
+ "digest_at": "2026-09-16T21:39:10.232478+00:00",
  "topics": [
   {
-   "term": "気象庁",
+   "term": "政権",
+   "article_count": 8
+  },
+  {
+   "term": "SNS",
+   "article_count": 7
+  },
+  {
+   "term": "委員長",
+   "article_count": 6
+  },
+  {
+   "term": "自民党",
+   "article_count": 6
+  },
+  {
+   "term": "評価",
+   "article_count": 6
+  },
+  {
+   "term": "起用",
+   "article_count": 6
+  },
+  {
+   "term": "高市政権",
    "article_count": 5
   },
   {
-   "term": "熊本県",
+   "term": "首相",
+   "article_count": 5
+  },
+  {
+   "term": "人事",
+   "article_count": 5
+  },
+  {
+   "term": "批判",
+   "article_count": 5
+  },
+  {
+   "term": "高市早苗首相",
    "article_count": 4
   },
   {
-   "term": "日午前",
+   "term": "判断",
    "article_count": 4
   },
   {
-   "term": "震源",
+   "term": "担当",
    "article_count": 4
   },
   {
-   "term": "津波",
+   "term": "維持",
    "article_count": 4
   },
   {
-   "term": "観測",
+   "term": "総理",
    "article_count": 4
   },
   {
-   "term": "震度",
+   "term": "維新",
    "article_count": 4
   },
   {
-   "term": "地震",
+   "term": "改造",
    "article_count": 4
   },
   {
-   "term": "復旧",
-   "article_count": 4
-  },
-  {
-   "term": "歴史",
-   "article_count": 4
-  },
-  {
-   "term": "警察",
-   "article_count": 4
-  },
-  {
-   "term": "経済",
-   "article_count": 4
-  },
-  {
-   "term": "措置",
-   "article_count": 4
-  },
-  {
-   "term": "東京",
-   "article_count": 4
-  },
-  {
-   "term": "マグニチュード",
+   "term": "内閣改造",
    "article_count": 3
   },
   {
-   "term": "熊本県天草",
+   "term": "高市総理",
    "article_count": 3
   },
   {
-   "term": "関係機関",
+   "term": "日本維新",
    "article_count": 3
   },
   {
-   "term": "芦北地方",
+   "term": "交通機関",
    "article_count": 3
   },
   {
-   "term": "読売新聞",
+   "term": "委員会",
    "article_count": 3
   },
   {
-   "term": "範囲",
+   "term": "NHK",
    "article_count": 3
   },
   {
-   "term": "停電",
+   "term": "気象庁",
    "article_count": 3
   },
   {
-   "term": "分頃",
+   "term": "女性",
    "article_count": 3
   },
   {
@@ -176,60 +232,48 @@
    "article_count": 3
   },
   {
-   "term": "警戒",
+   "term": "活用",
    "article_count": 3
   },
   {
-   "term": "運転",
+   "term": "官邸",
    "article_count": 3
   },
   {
-   "term": "構築",
+   "term": "介入",
    "article_count": 3
   },
   {
-   "term": "万円",
+   "term": "審議",
    "article_count": 3
   },
   {
-   "term": "判断",
+   "term": "閣僚",
    "article_count": 3
   },
   {
-   "term": "位置",
+   "term": "経験",
    "article_count": 3
   },
   {
-   "term": "三重県四日市市",
-   "article_count": 2
+   "term": "投稿",
+   "article_count": 3
   },
   {
-   "term": "熊本県水俣市",
-   "article_count": 2
+   "term": "留任",
+   "article_count": 3
   },
   {
-   "term": "現在復旧作業",
-   "article_count": 2
+   "term": "戦略",
+   "article_count": 3
   },
   {
-   "term": "アメリカ",
-   "article_count": 2
-  },
-  {
-   "term": "日未明",
-   "article_count": 2
-  },
-  {
-   "term": "関連株",
-   "article_count": 2
-  },
-  {
-   "term": "推定",
-   "article_count": 2
+   "term": "政策",
+   "article_count": 3
   }
  ],
  "total": 40,
- "readable": 29,
+ "readable": 30,
  "sources": [
   "国内 - Yahoo!ニュース",
   "トップニュース - Google ニュース"
@@ -261,6 +305,6 @@
    "last_error": ""
   }
  ],
- "generated_at": "2026-09-15T21:36:37.600924+00:00",
- "build": "20260916063637"
+ "generated_at": "2026-09-16T21:39:12.880755+00:00",
+ "build": "20260917063913"
 }
