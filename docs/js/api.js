@@ -78,7 +78,7 @@
       const paper = await response.json();
       return { feeds: (paper.feeds || []).map(function (f, i) {
         return { id: i, title: f.title, url: "", priority: f.priority,
-                 last_error: f.last_error, readonly: true };
+                 genre: f.genre, last_error: f.last_error, readonly: true };
       }) };
     },
 

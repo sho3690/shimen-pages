@@ -242,6 +242,15 @@
     return head;
   }
 
+  /* 面の見出し（総合・エンタメ・話題）。新聞の面替わりの双罫。
+     面が1つしかない紙面（2026-09-17までの総合だけの紙面）には出さない */
+  function pageHead(name) {
+    const head = el("div", "page-head");
+    head.appendChild(el("span", "page-head__name", name));
+    head.appendChild(el("span", "page-head__suffix", "面"));
+    return head;
+  }
+
   function paper(data, handlers) {
     const root = document.createDocumentFragment();
     const issued = data.generated_at ? new Date(data.generated_at) : new Date();
@@ -257,13 +266,21 @@
     masthead.appendChild(el("h1", "masthead__name", "紙面"));
     masthead.appendChild(el("hr", "masthead__rule"));
 
-    const sources = data.sources && data.sources.length
-      ? data.sources.join("・")
-      : "";
-    masthead.appendChild(el(
-      "p", "masthead__meta",
-      "全" + data.total + "本" + (sources ? "　" + sources : "")
-    ));
+    // 面ごとの本数と配信元の数を一行で。配信元の名前を全部並べると
+    // フィードが10本を超えたあたりで5行になり、題字まわりが読めなくなった。
+    // 面の本数が無い古い紙面データでは、従来どおり配信元の名前を並べる
+    const pageNames = Object.keys(data.pages || {});
+    let meta = "全" + data.total + "本";
+    if (pageNames.length) {
+      meta += "　" + pageNames.map(function (name) {
+        return name + data.pages[name];
+      }).join("・");
+      const sourceCount = data.sources ? data.sources.length : 0;
+      if (sourceCount) meta += "　配信元" + sourceCount;
+    } else if (data.sources && data.sources.length) {
+      meta += "　" + data.sources.join("・");
+    }
+    masthead.appendChild(el("p", "masthead__meta", meta));
     root.appendChild(masthead);
 
     // --- きょうの要点。これが紙面の本体 ---
@@ -281,11 +298,20 @@
       root.appendChild(topicStrip(data.topics));
     }
 
-    // 同じ分野はサーバー側でまとまって並んでくる。分野が変わる位置にだけ
-    // 面名を置く（「社会」を項目ごとに繰り返さない）
+    // 同じ面・同じ分野はサーバー側でまとまって並んでくる。面が変わる位置に
+    // 面の見出し、分野が変わる位置にだけ分野名を置く（項目ごとに繰り返さない）
     const body = el("section", "briefs");
+    const pages = {};
+    data.digest.forEach(function (s) { if (s.genre) pages[s.genre] = true; });
+    const showPages = Object.keys(pages).length >= 2;
+    let currentPage = null;
     let currentField = null;
     data.digest.forEach(function (section, index) {
+      if (showPages && section.genre && section.genre !== currentPage) {
+        body.appendChild(pageHead(section.genre));
+        currentPage = section.genre;
+        currentField = null;
+      }
       if (section.field && section.field !== currentField) {
         body.appendChild(sectionHead(section.field, ""));
       }
@@ -321,6 +347,11 @@
         body.appendChild(el("p", "feed-row__error", feed.last_error));
       }
       row.appendChild(body);
+
+      // どの面に載るか（名前とURLから自動で決まる）
+      if (feed.genre) {
+        row.appendChild(el("span", "feed-row__badge feed-row__badge--page", feed.genre));
+      }
 
       if (feed.readonly) {
         const label = ["", "重点", "通常", "軽め"][feed.priority] || "通常";

@@ -229,6 +229,37 @@
   white-space: nowrap;
 }
 
+/* ===== 面の見出し（総合・エンタメ・話題。2026-09-18〜） =====
+   新聞の面替わり。太罫と細罫の双罫で区切り、面名を題字と同じ明朝で置く。
+   項目の分野名（section-head）より明確に強い。 */
+
+.page-head {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  margin: var(--space-8) 0 var(--space-4);
+  padding: var(--space-2) 0;
+  border-top: 3px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Yu Mincho",
+    "YuMincho", serif;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--ink);
+}
+
+.page-head__name { font-size: 1.25em; line-height: 1.2; }
+
+.page-head__suffix {
+  font-size: 0.75em;
+  letter-spacing: 0.12em;
+  color: var(--ink-2);
+}
+
+.briefs > .page-head:first-child { margin-top: 0; }
+
+.feed-row__badge--page { margin-right: var(--space-2); }
+
 /* ===== 面名（紙面のセクション見出し） ===== */
 
 .section-head {
