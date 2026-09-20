@@ -128,12 +128,12 @@
      語の大きさを記事の本数に比例させ、中心から渦巻きに詰めて置く。
      置き場所は总当たりの衝突判定で決める（外部ライブラリは使わない）。 */
 
-  var CLOUD_COLORS = 6;
-
-  function cloudColorClass(term) {
-    var sum = 0;
-    for (var i = 0; i < term.length; i++) sum = (sum + term.charCodeAt(i)) % CLOUD_COLORS;
-    return "cloud--c" + sum;
+  /* 語の強弱は大きさに加えて色でも示す。上位3語は青、次の半分は本文の色、
+     残りは控えめな色。色相を増やさず、家の3色で段を作る */
+  function cloudTierClass(rank, total) {
+    if (rank < 3) return "cloud--key";
+    if (rank < Math.ceil(total / 2)) return "cloud--main";
+    return "cloud--quiet";
   }
 
   function cloudCollides(x, y, w, h, placed) {
@@ -173,7 +173,7 @@
       var size = Math.round(
         sMin + ((Math.sqrt(t.article_count) - Math.sqrt(minC)) / denom) * (sMax - sMin)
       );
-      measure.font = "700 " + size + "px -apple-system, 'Hiragino Sans', sans-serif";
+      measure.font = "600 " + size + "px -apple-system, 'Hiragino Sans', sans-serif";
       var w = measure.measureText(t.term).width + size * 0.4;
       var h = size * 1.25;
 
@@ -196,7 +196,7 @@
       if (y < minY) minY = y;
       if (y + h > maxY) maxY = y + h;
 
-      var node = el("span", "cloud__word " + cloudColorClass(t.term), t.term);
+      var node = el("span", "cloud__word " + cloudTierClass(idx, sorted.length), t.term);
       node.style.fontSize = size + "px";
       node.style.left = x.toFixed(1) + "px";
       node.dataset.top = y.toFixed(1);
@@ -238,43 +238,117 @@
   function sectionHead(mark, label) {
     const head = el("div", "section-head");
     head.appendChild(el("span", "section-head__mark", mark));
-    head.appendChild(el("span", null, label));
+    if (label) head.appendChild(el("span", null, label));
     return head;
   }
 
   /* 面の見出し（総合・エンタメ・話題）。新聞の面替わりの双罫。
      面が1つしかない紙面（2026-09-17までの総合だけの紙面）には出さない */
-  function pageHead(name) {
+  function pageHead(name, index) {
     const head = el("div", "page-head");
+    head.id = "page-" + index;
     head.appendChild(el("span", "page-head__name", name));
     head.appendChild(el("span", "page-head__suffix", "面"));
     return head;
   }
 
+  /* 面のタブ。題字の下に固定され、押すとその面の頭へ飛ぶ */
+  function pageNav(pageOrder, counts) {
+    const nav = el("nav", "pagenav");
+    nav.setAttribute("aria-label", "面");
+    pageOrder.forEach(function (name, i) {
+      const link = el("a", "pagenav__link");
+      link.href = "#page-" + i;
+      link.appendChild(document.createTextNode(name));
+      if (counts && counts[name]) {
+        link.appendChild(el("span", "pagenav__count", String(counts[name])));
+      }
+      link.addEventListener("click", function (event) {
+        const target = document.getElementById("page-" + i);
+        if (!target) return;   // 無ければ通常のリンクとして飛ぶ
+        event.preventDefault();
+        const reduce = window.matchMedia &&
+          window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        target.scrollIntoView({ block: "start", behavior: reduce ? "auto" : "smooth" });
+      });
+      nav.appendChild(link);
+    });
+    return nav;
+  }
+
+  /* 固定タブの現在地と「固定中」の見た目。スクロールのたびに、
+     タブの下端を越えた最後の面を現在地にする */
+  var navTicking = false;
+
+  function syncPageNav() {
+    navTicking = false;
+    var nav = document.querySelector(".pagenav");
+    if (!nav) return;
+    var rect = nav.getBoundingClientRect();
+    var stickTop = parseFloat(getComputedStyle(nav).top) || 0;
+    nav.classList.toggle("pagenav--stuck", window.scrollY > 0 && rect.top <= stickTop + 0.5);
+
+    // タブで飛んだ見出しは scroll-margin のぶん（12px）タブの下に着地するので、
+    // その余裕を含めて「タブの下端を越えた」とみなす
+    var heads = document.querySelectorAll(".page-head");
+    var current = heads.length ? heads[0].id : null;
+    for (var i = 0; i < heads.length; i++) {
+      if (heads[i].getBoundingClientRect().top <= rect.bottom + 24) current = heads[i].id;
+    }
+    var links = nav.querySelectorAll(".pagenav__link");
+    for (var j = 0; j < links.length; j++) {
+      if (links[j].getAttribute("href") === "#" + current) {
+        links[j].setAttribute("aria-current", "true");
+      } else {
+        links[j].removeAttribute("aria-current");
+      }
+    }
+  }
+
+  function requestNavSync() {
+    if (navTicking) return;
+    navTicking = true;
+    requestAnimationFrame(syncPageNav);
+  }
+
+  window.addEventListener("scroll", requestNavSync, { passive: true });
+  window.addEventListener("resize", requestNavSync);
+
   function paper(data, handlers) {
     const root = document.createDocumentFragment();
     const issued = data.generated_at ? new Date(data.generated_at) : new Date();
 
+    // 面（総合・エンタメ・話題）の並びは、紙面データに出てくる順。
+    // 面が1つしかない紙面（2026-09-17までの総合だけの紙面）にはタブも面の見出しも出さない
+    const pageOrder = [];
+    (data.digest || []).forEach(function (s) {
+      if (s.genre && pageOrder.indexOf(s.genre) < 0) pageOrder.push(s.genre);
+    });
+    const showPages = pageOrder.length >= 2;
+
     // --- 題字 ---
     const masthead = el("header", "masthead");
 
+    // 題字を左、発行日と刊種を右に。題字まわりを低く保って、本文を早く見せる
+    const row = el("div", "masthead__row");
+    row.appendChild(el("h1", "masthead__name", "紙面"));
     const strip = el("div", "masthead__strip");
-    strip.appendChild(el("span", null, formatIssueDate(issued)));
     strip.appendChild(el("span", "masthead__edition", editionName(issued)));
-    masthead.appendChild(strip);
+    strip.appendChild(el("span", "masthead__date", formatIssueDate(issued)));
+    row.appendChild(strip);
+    masthead.appendChild(row);
 
-    masthead.appendChild(el("h1", "masthead__name", "紙面"));
-    masthead.appendChild(el("hr", "masthead__rule"));
-
-    // 面ごとの本数と配信元の数を一行で。配信元の名前を全部並べると
-    // フィードが10本を超えたあたりで5行になり、題字まわりが読めなくなった。
-    // 面の本数が無い古い紙面データでは、従来どおり配信元の名前を並べる
+    // 本数と配信元の数を一行で。面ごとの本数はタブに出す（タブが無い紙面ではここに出す）。
+    // 配信元の名前を全部並べるとフィードが10本を超えたあたりで5行になり、
+    // 題字まわりが読めなくなった。面の本数が無い古い紙面データでは、従来どおり名前を並べる
     const pageNames = Object.keys(data.pages || {});
     let meta = "全" + data.total + "本";
     if (pageNames.length) {
-      meta += "　" + pageNames.map(function (name) {
-        return name + data.pages[name];
-      }).join("・");
+      if (!showPages) {
+        meta += "　" + pageNames.map(function (name) {
+          return name + data.pages[name];
+        }).join("・");
+      }
       const sourceCount = data.sources ? data.sources.length : 0;
       if (sourceCount) meta += "　配信元" + sourceCount;
     } else if (data.sources && data.sources.length) {
@@ -282,6 +356,10 @@
     }
     masthead.appendChild(el("p", "masthead__meta", meta));
     root.appendChild(masthead);
+
+    if (showPages && data.digest && data.digest.length) {
+      root.appendChild(pageNav(pageOrder, data.pages || {}));
+    }
 
     // --- きょうの要点。これが紙面の本体 ---
     if (!data.digest || !data.digest.length) {
@@ -301,14 +379,11 @@
     // 同じ面・同じ分野はサーバー側でまとまって並んでくる。面が変わる位置に
     // 面の見出し、分野が変わる位置にだけ分野名を置く（項目ごとに繰り返さない）
     const body = el("section", "briefs");
-    const pages = {};
-    data.digest.forEach(function (s) { if (s.genre) pages[s.genre] = true; });
-    const showPages = Object.keys(pages).length >= 2;
     let currentPage = null;
     let currentField = null;
     data.digest.forEach(function (section, index) {
       if (showPages && section.genre && section.genre !== currentPage) {
-        body.appendChild(pageHead(section.genre));
+        body.appendChild(pageHead(section.genre, pageOrder.indexOf(section.genre)));
         currentPage = section.genre;
         currentField = null;
       }
@@ -394,5 +469,7 @@
     return root;
   }
 
-  window.Render = { paper: paper, feedList: feedList, relativeTime: relativeTime };
+  window.Render = {
+    paper: paper, feedList: feedList, relativeTime: relativeTime, syncPageNav: syncPageNav,
+  };
 })();

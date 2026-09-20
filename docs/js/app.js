@@ -85,6 +85,7 @@
         data.emptyHint = "Macで紙面を作ってから、もう一度開いてください。";
       }
       paperEl.replaceChildren(Render.paper(data, handlers));
+      Render.syncPageNav();
       return data;
     }).catch(function (e) {
       notify("紙面を読み込めませんでした", e.message, "error");
@@ -166,6 +167,7 @@
   /* いつ作られた紙面かを出す。古いままなら、それと分かるようにする。
      自動更新が止まっていることに気づける唯一の手がかりなので消さない。 */
   function showFreshness(paper) {
+    wifiEl.classList.remove("footnote--stale");
     const issued = paper && paper.generated_at ? new Date(paper.generated_at) : null;
     if (!issued || isNaN(issued.getTime())) {
       wifiEl.textContent = "この紙面はMacで作られた控えです。";
@@ -183,10 +185,9 @@
     if (hours >= 24) {
       wifiEl.textContent = "⚠ この紙面は " + when + " のものです（" +
         Math.floor(hours / 24) + "日前）。自動更新が止まっているかもしれません。";
-      wifiEl.style.color = "var(--danger)";
+      wifiEl.classList.add("footnote--stale");
       return;
     }
-    wifiEl.style.color = "";
     wifiEl.textContent = hours >= 12
       ? "この紙面は " + when + " のものです。次の更新は明朝6時半です。"
       : "この紙面は " + when + " に作られました。";
@@ -251,7 +252,7 @@
     themeBtn.textContent =
       currentTheme() === "dark" ? "白い紙面にする" : "黒い紙面にする";
     // iOSのステータスバーの色も紙面に合わせる
-    const bar = currentTheme() === "dark" ? "#0d0d0f" : "#fffdf8";
+    const bar = currentTheme() === "dark" ? "#212529" : "#ffffff";
     [].forEach.call(
       document.querySelectorAll('meta[name="theme-color"]'),
       function (meta) { meta.content = bar; }

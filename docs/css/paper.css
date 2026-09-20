@@ -1,490 +1,383 @@
 /* 紙面レイアウト。日本の新聞の版面の作法を、iPhoneの縦スクロールに翻訳する。
 
-   本物の新聞に寄せるために効いているのは、書体よりも次の4つ:
-     1. 罫線の使い分け（太罫・双罫・細罫・段罫）で紙面を区切る
-     2. 見出しと本文の級数差を大きく取る
-     3. 本文を両端揃えにして、字を詰めて組む
-     4. 題字まわりに日付・号・面名などの「紙面の情報」を置く
-*/
+   新聞らしさは太い罫ではなく、次の4つで出す:
+     1. 題字だけ明朝。面の見出しも明朝で「面替わり」を示す
+     2. 見出しと本文の級数差（xl 20px / md 16px）と、余白の勾配で階層を作る
+     3. 罫線は 1px だけ。題字の下と面替わりは本文色、それ以外は薄い色
+     4. 本文は両端揃えで組む
+   広い画面では、机（--color-background）の上に一枚の紙（--color-surface）を置く。 */
 
 .paper {
-  max-width: 40em;
+  --paper-pad: var(--space-4);
+  max-width: var(--width-readable);
   margin: 0 auto;
-  padding: 0 var(--space-4) var(--space-8);
-  /* 本文は読みやすさ優先でゴシック体をやや太め(W5)に組む。
-     細い明朝は画面では掠れて読みにくい。新聞らしさは題字（明朝のまま）と
-     罫線・両端揃えで出す */
-  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
-    "Hiragino Kaku Gothic ProN", "Yu Gothic Medium", system-ui, sans-serif;
-  font-weight: 500;
+  padding: 0 var(--paper-pad) var(--space-10);
+}
+
+@media (min-width: 600px) {
+  .paper {
+    --paper-pad: var(--space-8);
+    max-width: calc(var(--width-readable) + 2 * var(--paper-pad));
+    margin-top: var(--space-6);
+    padding-bottom: var(--space-12);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+  }
+}
+
+@media (min-width: 840px) {
+  .paper {
+    --paper-pad: var(--space-12);
+    max-width: calc(var(--width-readable) + 2 * var(--paper-pad));
+    margin-top: var(--space-10);
+  }
 }
 
 /* ===== 題字 ===== */
 
 .masthead {
-  padding: var(--space-4) 0 0;
+  padding: var(--space-5) 0 var(--space-3);
+  border-bottom: 1px solid var(--color-text-primary);
 }
 
-/* 発行日・刊種を題字の上に一列で置く。新聞の題字まわりの作法 */
-.masthead__strip {
+.masthead__row {
   display: flex;
-  align-items: baseline;
+  align-items: flex-end;
   justify-content: space-between;
-  gap: var(--space-2);
-  padding-bottom: var(--space-2);
-  border-bottom: 1px solid var(--ink);
-  font-family: -apple-system, system-ui, sans-serif;
-  font-size: 0.6875em;
-  letter-spacing: 0.02em;
-  color: var(--ink-2);
-  font-variant-numeric: tabular-nums;
-}
-
-.masthead__edition {
-  padding: 0.15em 0.5em;
-  border: 1px solid var(--ink-2);
-  font-weight: 600;
-  white-space: nowrap;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-4);
 }
 
 .masthead__name {
   margin: 0;
-  padding: 0.28em 0 0.2em;
-  text-align: center;
   /* 題字だけは明朝。新聞の顔なので残す */
-  font-family: "Hiragino Mincho ProN", "Yu Mincho", "MS Mincho", serif;
-  font-size: 2.75em;
+  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Yu Mincho", "YuMincho",
+    "Noto Serif JP", serif;
+  font-size: var(--font-size-3xl);
   font-weight: 600;
   line-height: 1;
-  letter-spacing: 0.3em;
-  text-indent: 0.3em;   /* 字間ぶんの右寄りを打ち消して中央に見せる */
+  letter-spacing: 0.12em;
 }
 
-/* 題字の下は太罫。紙面で一番強い区切り */
-.masthead__rule {
-  border: none;
-  border-top: 3px solid var(--ink);
-  border-bottom: 1px solid var(--ink);
-  height: 3px;
-  margin: 0 0 var(--space-2);
+/* 発行日・刊種。題字の右に小さく */
+.masthead__strip {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--space-1);
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-normal);
+  color: var(--color-text-secondary);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.masthead__edition {
+  padding: 0.1em var(--space-2);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 .masthead__meta {
-  margin: 0 0 var(--space-6);
-  font-family: -apple-system, system-ui, sans-serif;
-  font-size: 0.6875em;
-  line-height: 1.5;
-  color: var(--ink-3);
-  text-align: center;
+  margin: var(--space-3) 0 0;
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-normal);
+  color: var(--color-text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ===== 面のタブ（総合・エンタメ・話題） =====
+   題字の下に固定して、いま読んでいる面を青の下線で示す。
+   紙の左右いっぱいに広げるため、紙の余白ぶんだけ外にはみ出させる */
+
+.pagenav {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 10;
+  display: flex;
+  gap: var(--space-1);
+  margin: 0 calc(-1 * var(--paper-pad));
+  padding: 0 var(--paper-pad);
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  flex-wrap: wrap;   /* 文字を大きくした設定でも切れずに折り返す */
+  transition: box-shadow var(--dur-short) var(--ease-standard);
+}
+
+/* 固定中は薄い影で「浮いている」ことを示す。下の本文とぶつかって見えないように */
+.pagenav--stuck { box-shadow: var(--shadow-sm); }
+
+/* ホーム画面アプリでは、固定中に状態バーの裏も紙の色で塗る */
+.pagenav--stuck::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  height: env(safe-area-inset-top, 0px);
+  background: inherit;
+}
+
+.pagenav__link {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--space-1);
+  flex: none;
+  min-height: var(--tap);
+  padding: var(--space-3) var(--space-3);
+  margin-bottom: -1px;
+  border-bottom: 2px solid transparent;
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  white-space: nowrap;
+  -webkit-tap-highlight-color: transparent;
+  transition:
+    color var(--dur-short) var(--ease-standard),
+    background-color var(--dur-short) var(--ease-standard),
+    border-color var(--dur-short) var(--ease-standard);
+}
+
+.pagenav__link:hover {
+  color: var(--color-text-primary);
+  background: color-mix(in srgb, var(--color-text-primary) 8%, transparent);
+}
+
+.pagenav__link:active {
+  background: color-mix(in srgb, var(--color-text-primary) 10%, transparent);
+}
+
+.pagenav__link:focus-visible { outline-offset: -2px; }
+
+.pagenav__link[aria-current="true"] {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+}
+
+.pagenav__count {
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  color: var(--color-text-muted);
   font-variant-numeric: tabular-nums;
 }
 
 /* ===== ワードクラウド =====
    複数の記事に出てきた語を、本数に応じた大きさで並べる。
-   数えた事実がそのまま視覚の強弱になるようにする。 */
+   数えた事実がそのまま視覚の強弱になるようにする。色は家の3色で段を作る。 */
 
 .topics {
-  margin: 0 0 var(--space-8);
-  padding: var(--space-5) var(--space-4) var(--space-5);
-  background: var(--surface-2);
-  border-radius: var(--radius-lg);
-  font-family: -apple-system, system-ui, sans-serif;
+  margin: 0;
+  padding: var(--space-5) 0 var(--space-2);
 }
 
 /* 渦巻き配置。JSが絶対座標で語を置く。
    枠の高さは固定。日によって紙面の形が変わらないようにする */
 .cloud {
   position: relative;
-  height: 11em;
+  height: 11rem;
   overflow: hidden;
 }
 
 .cloud__word {
   position: absolute;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.25;
   white-space: nowrap;
   letter-spacing: -0.02em;
+  color: var(--color-text-secondary);
 }
 
-/* 語の色。落ち着いた6色に散らす（同じ語は毎回同じ色になる） */
-.cloud--c0 { color: var(--ink); }
-.cloud--c1 { color: #0a5ec7; }
-.cloud--c2 { color: #b0350f; }
-.cloud--c3 { color: #0e6b3d; }
-.cloud--c4 { color: #6d28a8; }
-.cloud--c5 { color: #8a5a00; }
+.cloud--key { color: var(--color-primary); }
+.cloud--main { color: var(--color-text-primary); }
+.cloud--quiet { color: var(--color-text-secondary); }
 
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .cloud--c1 { color: #7ab5ff; }
-  :root:not([data-theme="light"]) .cloud--c2 { color: #ff9b78; }
-  :root:not([data-theme="light"]) .cloud--c3 { color: #59c98d; }
-  :root:not([data-theme="light"]) .cloud--c4 { color: #c99bff; }
-  :root:not([data-theme="light"]) .cloud--c5 { color: #e8b34b; }
-}
-
-:root[data-theme="dark"] .cloud--c1 { color: #7ab5ff; }
-:root[data-theme="dark"] .cloud--c2 { color: #ff9b78; }
-:root[data-theme="dark"] .cloud--c3 { color: #59c98d; }
-:root[data-theme="dark"] .cloud--c4 { color: #c99bff; }
-:root[data-theme="dark"] .cloud--c5 { color: #e8b34b; }
-
-/* ===== きょうの要点の各項目 =====
-   紙面の本体。通し番号と太罫で、どこからどこまでが1項目かを明示する。 */
-
-.briefs { padding-top: 0; }
-
-.brief { padding: 0 0 var(--space-8); }
-
-.brief__head {
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
-  padding-bottom: var(--space-3);
-  margin-bottom: var(--space-4);
-  border-bottom: 2px solid var(--ink);
-}
-
-/* 通し番号。項目の始まりを一目で分からせる */
-.brief__num {
-  flex: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 2.1em;
-  height: 2.1em;
-  background: var(--ink);
-  color: var(--paper);
-  border-radius: 50%;
-  font-family: -apple-system, system-ui, sans-serif;
-  font-size: 0.75em;
-  font-weight: 700;
-  font-variant-numeric: tabular-nums;
-  letter-spacing: 0.02em;
-}
-
-/* 項目の見出し。本文との級数差で「新聞の見出し」に見せる */
-.brief__title {
-  margin: 0;
-  font-size: 1.1875em;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  line-height: 1.3;
-  color: var(--ink);
-  overflow-wrap: anywhere;
-}
-
-.brief__text {
-  margin: 0;
-  font-size: 1em;
-  line-height: 1.75;
-  letter-spacing: 0.005em;
-  text-align: justify;
-  overflow-wrap: anywhere;
-}
-
-/* ===== 出典 =====
-   読みたい人だけが辿れればよい。本文より明確に弱くする。 */
-
-.sources {
-  margin: var(--space-4) 0 0;
-  padding: var(--space-2) var(--space-3);
-  background: var(--surface-2);
-  border-radius: var(--radius);
-  font-family: -apple-system, system-ui, sans-serif;
-}
-
-.sources__label {
-  margin: 0 0 var(--space-1);
-  font-size: 0.625em;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  color: var(--ink-3);
-}
-
-.brief__sources { margin: 0; padding: 0; list-style: none; }
-
-.brief__source {
-  /* 1行に収まる出典でも指で押せる高さを確保する（44pt） */
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  min-height: 2.75rem;
-  padding: 0.4em 0;
-  color: var(--ink-2);
-  text-decoration: none;
-  font-size: 0.8125em;
-  line-height: 1.45;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.brief__sources li + li { border-top: 1px solid var(--rule); }
-.brief__source:active { opacity: 0.5; }
-
-/* 配信元の名前は色で分ける。太字にすると本文と強さが並んでしまう */
-.brief__outlet {
-  margin-right: 0.5em;
-  color: var(--ink-3);
-  font-size: 0.9em;
-  white-space: nowrap;
-}
-
-/* ===== 面の見出し（総合・エンタメ・話題。2026-09-18〜） =====
-   新聞の面替わり。太罫と細罫の双罫で区切り、面名を題字と同じ明朝で置く。
-   項目の分野名（section-head）より明確に強い。 */
+/* ===== 面の見出し（総合・エンタメ・話題） =====
+   新聞の面替わり。上に広い余白と本文色の罫、面名は題字と同じ明朝。 */
 
 .page-head {
   display: flex;
   align-items: baseline;
   gap: var(--space-2);
-  margin: var(--space-8) 0 var(--space-4);
-  padding: var(--space-2) 0;
-  border-top: 3px solid var(--ink);
-  border-bottom: 1px solid var(--ink);
-  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Yu Mincho",
-    "YuMincho", serif;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  color: var(--ink);
+  margin: var(--space-12) 0 var(--space-6);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-text-primary);
+  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Yu Mincho", "YuMincho",
+    "Noto Serif JP", serif;
+  color: var(--color-text-primary);
+  /* タブに飛んだとき、固定タブの下に見出しが隠れないようにする */
+  scroll-margin-top: calc(var(--tap) + var(--space-3) + env(safe-area-inset-top, 0px));
 }
 
-.page-head__name { font-size: 1.25em; line-height: 1.2; }
+.page-head__name {
+  font-size: var(--font-size-2xl);
+  font-weight: 600;
+  line-height: var(--line-height-tight);
+  letter-spacing: 0.12em;
+}
 
 .page-head__suffix {
-  font-size: 0.75em;
-  letter-spacing: 0.12em;
-  color: var(--ink-2);
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.1em;
+  color: var(--color-text-secondary);
 }
 
-.briefs > .page-head:first-child { margin-top: 0; }
+.briefs > .page-head:first-child { margin-top: var(--space-6); }
 
-.feed-row__badge--page { margin-right: var(--space-2); }
-
-/* ===== 面名（紙面のセクション見出し） ===== */
+/* ===== 分野名（社会・政治…）。面の中の小見出し ===== */
 
 .section-head {
   display: flex;
   align-items: center;
-  gap: var(--space-2);
-  margin: var(--space-6) 0 var(--space-3);
-  font-family: -apple-system, system-ui, sans-serif;
-  font-size: 0.6875em;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  color: var(--ink-2);
+  gap: var(--space-3);
+  margin: var(--space-8) 0 var(--space-4);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--color-primary);
 }
 
 .section-head::after {
   content: "";
   flex: 1;
-  border-top: 1px solid var(--rule-strong);
+  border-top: 1px solid var(--color-border);
 }
 
-.section-head__mark {
-  padding: 0.1em 0.45em;
-  background: var(--ink);
-  color: var(--paper);
-  letter-spacing: 0.1em;
+.page-head + .section-head { margin-top: 0; }
+
+/* ===== きょうの要点の各項目 =====
+   紙面の本体。番号と見出しの級数差で、どこからが1項目かを分からせる。 */
+
+.brief { padding: 0 0 var(--space-6); }
+
+.brief + .brief {
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-border);
 }
 
-/* ===== 記事の共通部分 ===== */
-
-.article {
-  display: block;
-  color: inherit;
-  text-decoration: none;
-  -webkit-tap-highlight-color: transparent;
-  transition: opacity 100ms ease-out;
+.brief__head {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
 }
 
-.article:active { opacity: 0.55; }
-
-/* 袖見出し。出典を記事の頭に置いて、どこの記事か一目で分かるようにする */
-.article__kicker {
-  margin: 0 0 0.35em;
-  font-family: -apple-system, system-ui, sans-serif;
-  font-size: 0.6875em;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  color: var(--ink-2);
-}
-
-/* 本文。新聞は両端揃えで字を詰めて組む */
-.article__summary {
-  text-align: justify;
-  text-justify: inter-character;
-  text-indent: 1em;         /* 段落の1字下げ */
-  letter-spacing: 0.01em;
-  overflow-wrap: anywhere;
-}
-
-.article__source {
-  margin: var(--space-2) 0 0;
-  font-family: -apple-system, system-ui, sans-serif;
-  font-size: 0.6875em;
-  color: var(--ink-3);
-  text-align: right;
+/* 通し番号。小さく、控えめに */
+.brief__num {
+  flex: none;
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
   font-variant-numeric: tabular-nums;
 }
 
-.article--read .article__title { color: var(--ink-2); }
-
-.article__note {
-  margin: var(--space-1) 0 0;
-  font-family: -apple-system, system-ui, sans-serif;
-  font-size: 0.6875em;
-  color: var(--ink-3);
-  text-align: right;
-}
-
-/* ===== トップ記事 ===== */
-
-.lead {
-  padding: var(--space-2) 0 var(--space-4);
-  border-bottom: 3px double var(--ink);
-}
-
-.lead .article__title {
-  margin: 0 0 var(--space-3);
-  font-size: 2em;
-  font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: -0.045em;   /* 大きい見出しほど字間を詰める */
-}
-
-/* 見出しの頭に黒の四角。新聞の主見出しの印 */
-.lead .article__title::before {
-  content: "■";
-  margin-right: 0.15em;
-  font-size: 0.62em;
-  vertical-align: 0.18em;
-}
-
-.lead .article__summary {
+/* 項目の見出し。本文との級数差で「新聞の見出し」に見せる */
+.brief__title {
   margin: 0;
-  font-size: 1.0625em;
-  line-height: 1.85;
-}
-
-/* ===== 準トップ（2段組み・段罫で仕切る） ===== */
-
-.seconds {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0 var(--space-4);
-  padding: var(--space-4) 0;
-  border-bottom: 3px double var(--ink);
-}
-
-.seconds--single { grid-template-columns: 1fr; }
-
-/* 2段のときだけ段罫を引く */
-.seconds:not(.seconds--single) > .article:first-child {
-  padding-right: var(--space-4);
-  border-right: 1px solid var(--rule-strong);
-}
-
-.seconds .article__title {
-  margin: 0 0 var(--space-2);
-  font-size: 1.125em;
+  font-size: var(--font-size-xl);
   font-weight: 600;
-  line-height: 1.32;
-  letter-spacing: -0.03em;
+  line-height: var(--line-height-tight);
+  letter-spacing: 0.01em;
+  color: var(--color-text-primary);
+  overflow-wrap: anywhere;
 }
 
-.seconds .article__title::before {
-  content: "▪";
-  margin-right: 0.2em;
-  font-size: 0.8em;
-  vertical-align: 0.1em;
-}
-
-.seconds .article__summary {
+.brief__text {
   margin: 0;
-  font-size: 0.875em;
-  line-height: 1.75;
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-relaxed);
+  text-align: justify;
+  overflow-wrap: anywhere;
 }
 
-/* ===== 一段の記事リスト ===== */
+/* ===== 出典 =====
+   読みたい人だけが辿れればよい。本文より明確に弱く、枠で囲わない。 */
 
-.items .article {
-  padding: var(--space-4) 0;
-  border-bottom: 1px solid var(--rule);
-}
+.sources { margin: var(--space-5) 0 0; }
 
-.items .article:last-child { border-bottom: none; }
-
-.items .article__title {
-  margin: 0 0 var(--space-1);
-  font-size: 1.0625em;
+.sources__label {
+  margin: 0;
+  padding-bottom: var(--space-1);
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--font-size-xs);
   font-weight: 600;
-  line-height: 1.45;
-  letter-spacing: -0.025em;
+  letter-spacing: 0.12em;
+  color: var(--color-text-muted);
 }
 
-.items .article__title::before {
-  content: "・";
-  margin-left: -0.35em;
-  color: var(--ink-2);
+.brief__sources { margin: 0; padding: 0; list-style: none; }
+
+.brief__sources li + li { border-top: 1px solid var(--color-border); }
+
+.brief__source {
+  /* 1行に収まる出典でも指で押せる高さを確保する（44pt） */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: var(--tap);
+  padding: var(--space-2) 0;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-normal);
+  -webkit-tap-highlight-color: transparent;
+  transition:
+    color var(--dur-short) var(--ease-standard),
+    background-color var(--dur-short) var(--ease-standard);
 }
 
-.items .article__summary {
-  margin: 0;
-  font-size: 0.875em;
-  line-height: 1.7;
-  color: var(--ink-2);
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+.brief__source:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
 }
 
-.items .article__kicker { display: inline; margin-right: 0.5em; }
+.brief__source:active {
+  background: color-mix(in srgb, var(--color-text-primary) 10%, transparent);
+}
+
+/* 配信元の名前。見出しより一段弱く */
+.brief__outlet {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+}
 
 /* ===== 紙面の締め ===== */
 
 .colophon {
-  margin-top: var(--space-6);
-  padding-top: var(--space-3);
-  border-top: 3px double var(--ink);
-  font-family: -apple-system, system-ui, sans-serif;
-  font-size: 0.6875em;
-  line-height: 1.7;
-  color: var(--ink-3);
-  text-align: center;
+  margin-top: var(--space-10);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-text-primary);
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-secondary);
 }
+
+.colophon p { margin: 0 0 var(--space-1); }
 
 /* ===== 記事が無いとき ===== */
 
 .empty {
-  padding: var(--space-8) var(--space-4);
+  padding: var(--space-12) var(--space-4);
   text-align: center;
-  color: var(--ink-2);
-  line-height: 1.9;
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
 }
 
 .empty__title {
-  font-size: 1.25em;
-  font-weight: 600;
   margin: 0 0 var(--space-2);
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  color: var(--color-text-primary);
 }
 
-/* ===== 要約が失敗した記事 ===== */
-
-.article__retry {
-  margin-top: var(--space-2);
-  font-family: -apple-system, system-ui, sans-serif;
-}
-
-/* ===== 広い画面（iPad・横向き）では段数を増やす ===== */
-
-@media (min-width: 44em) {
-  .lead { display: grid; grid-template-columns: 1.1fr 1fr; gap: var(--space-6); }
-  .lead .article__title { margin-bottom: 0; }
-  .items {
-    columns: 2;
-    column-gap: var(--space-6);
-    column-rule: 1px solid var(--rule-strong);
-  }
-  .items .article { break-inside: avoid; }
+/* 動きを減らす設定。全体の無効化は hig.css にもあるが、この紙面の遷移も明示して止める */
+@media (prefers-reduced-motion: reduce) {
+  .pagenav, .pagenav__link, .brief__source { transition: none; }
 }
