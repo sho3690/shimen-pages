@@ -87,6 +87,7 @@
   --radius-lg: 0.75rem;
   --tap: 2.75rem;               /* 44pt */
   --width-readable: 45rem;       /* 720px */
+  --width-wide: 75rem;           /* 1200px */
 
   --ease-standard: cubic-bezier(0.2, 0, 0, 1);
   --dur-short: 150ms;
@@ -161,7 +162,7 @@
 
 body {
   margin: 0;
-  /* スマホでは紙が画面いっぱい。広い画面では机（--color-background）の上に紙を置く */
+  /* どの画面幅でも紙が画面いっぱい。版面の幅は paper.css の .paper が決める */
   background: var(--color-surface);
   color: var(--color-text-primary);
   line-height: var(--line-height-normal);
@@ -172,10 +173,6 @@ body {
     env(safe-area-inset-bottom)
     env(safe-area-inset-left);
   overscroll-behavior-y: contain;
-}
-
-@media (min-width: 600px) {
-  body { background: var(--color-background); }
 }
 
 :focus-visible {

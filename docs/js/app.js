@@ -85,7 +85,6 @@
         data.emptyHint = "Macで紙面を作ってから、もう一度開いてください。";
       }
       paperEl.replaceChildren(Render.paper(data, handlers));
-      Render.syncPageNav();
       return data;
     }).catch(function (e) {
       notify("紙面を読み込めませんでした", e.message, "error");

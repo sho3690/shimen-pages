@@ -87,41 +87,99 @@
     return link;
   }
 
-  /* 総括の1段落 = 紙面の1記事。下に根拠の元記事をぶら下げる。
-     分野名は項目ごとには出さない。同じ分野が並ぶと重複して見えるため、
-     paper() が面名（section-head）としてグループの先頭に1回だけ置く。
-     項目の表札は、段落ごとに付けた短い見出し（subtitle）。 */
-  function digestSection(section, index, handlers) {
-    const block = el("section", "brief");
+  /* 出典。読みたい人だけが開く。件数だけを見せて畳んでおく */
+  function sourceList(sources) {
+    const wrap = el("details", "sources");
+    wrap.appendChild(el("summary", "sources__toggle", "出典 " + sources.length + "件"));
+    const list = el("ul", "sources__list");
+    sources.forEach(function (s) {
+      const item = el("li");
+      const link = el("a", "sources__link");
+      link.href = s.url;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      link.appendChild(el("span", "sources__outlet", s.feed_title));
+      link.appendChild(el("span", "sources__title", s.title));
+      item.appendChild(link);
+      list.appendChild(item);
+    });
+    wrap.appendChild(list);
+    return wrap;
+  }
 
-    const head = el("div", "brief__head");
-    head.appendChild(el("span", "brief__num", ("0" + (index + 1)).slice(-2)));
+  function storyId(index) { return "story-" + (index + 1); }
+
+  function storyNum(index) { return ("0" + (index + 1)).slice(-2); }
+
+  /* 総括の1段落 = 紙面の1記事。kind は "lead"（面のトップ）か "story" */
+  function storyNode(section, index, kind) {
+    const block = el("article", kind);
+    block.id = storyId(index);
+
+    const kicker = el("p", kind + "__kicker");
+    kicker.appendChild(el("span", kind + "__num", storyNum(index)));
+    if (section.field) kicker.appendChild(el("span", kind + "__field", section.field));
+    block.appendChild(kicker);
+
     if (section.subtitle) {
-      head.appendChild(el("h2", "brief__title", section.subtitle));
+      block.appendChild(el(kind === "lead" ? "h2" : "h3", kind + "__title", section.subtitle));
     }
-    block.appendChild(head);
-
-    block.appendChild(el("p", "brief__text", section.text));
+    block.appendChild(el("p", kind + "__text", section.text));
 
     if (section.sources && section.sources.length) {
-      const wrap = el("div", "sources");
-      wrap.appendChild(el("p", "sources__label", "出典"));
-      const list = el("ul", "brief__sources");
-      section.sources.forEach(function (s) {
-        const item = el("li");
-        const link = el("a", "brief__source");
-        link.href = s.url;
-        link.target = "_blank";
-        link.rel = "noopener noreferrer";
-        link.appendChild(el("span", "brief__outlet", s.feed_title));
-        link.appendChild(document.createTextNode(s.title));
-        item.appendChild(link);
-        list.appendChild(item);
-      });
-      wrap.appendChild(list);
-      block.appendChild(wrap);
+      block.appendChild(sourceList(section.sources));
     }
     return block;
+  }
+
+  function scrollToNode(node) {
+    const reduce = window.matchMedia &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    node.scrollIntoView({ block: "start", behavior: reduce ? "auto" : "smooth" });
+  }
+
+  /* 面のトップの右に置く「この面の記事」。押すとその記事へ飛ぶ */
+  function railNode(items) {
+    const rail = el("nav", "rail");
+    rail.setAttribute("aria-label", "この面の記事");
+    rail.appendChild(el("p", "rail__label", "この面の記事"));
+    const list = el("ol", "rail__list");
+    items.forEach(function (item) {
+      const li = el("li");
+      const link = el("a", "rail__link");
+      link.href = "#" + storyId(item.index);
+      link.appendChild(el("span", "rail__num", storyNum(item.index)));
+      link.appendChild(el("span", "rail__title", item.section.subtitle || item.section.field || "記事"));
+      link.addEventListener("click", function (event) {
+        const target = document.getElementById(storyId(item.index));
+        if (!target) return;
+        event.preventDefault();
+        scrollToNode(target);
+      });
+      li.appendChild(link);
+      list.appendChild(li);
+    });
+    rail.appendChild(list);
+    return rail;
+  }
+
+  /* 1面ぶん。1本目をトップに大きく、残りを段組みで並べる */
+  function pagePanel(items) {
+    const panel = el("div", "panel");
+
+    const front = el("div", "front");
+    front.appendChild(storyNode(items[0].section, items[0].index, "lead"));
+    if (items.length > 1) front.appendChild(railNode(items.slice(1)));
+    panel.appendChild(front);
+
+    if (items.length > 1) {
+      const rest = el("div", "stories");
+      items.slice(1).forEach(function (item) {
+        rest.appendChild(storyNode(item.section, item.index, "story"));
+      });
+      panel.appendChild(rest);
+    }
+    return panel;
   }
 
   /* ===== ワードクラウド =====
@@ -223,8 +281,11 @@
   });
 
   function topicStrip(topicList) {
-    // 見出しも説明も置かない。雲は見れば分かる
     const panel = el("section", "topics");
+    panel.setAttribute("aria-labelledby", "topics-title");
+    const head = el("h2", "topics__title", "きょうの言葉");
+    head.id = "topics-title";
+    panel.appendChild(head);
 
     const cloud = el("div", "cloud");
     cloud.__topics = topicList;
@@ -235,84 +296,81 @@
     return panel;
   }
 
-  function sectionHead(mark, label) {
-    const head = el("div", "section-head");
-    head.appendChild(el("span", "section-head__mark", mark));
-    if (label) head.appendChild(el("span", null, label));
-    return head;
+  /* 面のタブ（総合・エンタメ・話題）。押した面だけを見せる。
+     題字の下に置くだけで固定はしない（スクロール中に本文とぶつからない） */
+  var currentPage = 0;
+
+  function pageFromHash(count) {
+    var m = /^#(?:p|page-)(\d)$/.exec(location.hash || "");
+    var n = m ? Number(m[1]) : NaN;
+    return n >= 0 && n < count ? n : 0;
   }
 
-  /* 面の見出し（総合・エンタメ・話題）。新聞の面替わりの双罫。
-     面が1つしかない紙面（2026-09-17までの総合だけの紙面）には出さない */
-  function pageHead(name, index) {
-    const head = el("div", "page-head");
-    head.id = "page-" + index;
-    head.appendChild(el("span", "page-head__name", name));
-    head.appendChild(el("span", "page-head__suffix", "面"));
-    return head;
-  }
-
-  /* 面のタブ。題字の下に固定され、押すとその面の頭へ飛ぶ */
-  function pageNav(pageOrder, counts) {
-    const nav = el("nav", "pagenav");
+  function pageTabs(pageOrder, counts, panels) {
+    const nav = el("div", "tabs");
+    nav.setAttribute("role", "tablist");
     nav.setAttribute("aria-label", "面");
-    pageOrder.forEach(function (name, i) {
-      const link = el("a", "pagenav__link");
-      link.href = "#page-" + i;
-      link.appendChild(document.createTextNode(name));
-      if (counts && counts[name]) {
-        link.appendChild(el("span", "pagenav__count", String(counts[name])));
-      }
-      link.addEventListener("click", function (event) {
-        const target = document.getElementById("page-" + i);
-        if (!target) return;   // 無ければ通常のリンクとして飛ぶ
-        event.preventDefault();
-        const reduce = window.matchMedia &&
-          window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-        target.scrollIntoView({ block: "start", behavior: reduce ? "auto" : "smooth" });
+    const tabs = [];
+
+    function select(i, focus) {
+      currentPage = i;
+      tabs.forEach(function (tab, j) {
+        const on = i === j;
+        tab.setAttribute("aria-selected", on ? "true" : "false");
+        tab.tabIndex = on ? 0 : -1;
+        panels[j].hidden = !on;
       });
-      nav.appendChild(link);
+      if (focus) tabs[i].focus();
+      try { history.replaceState(null, "", "#p" + i); } catch (e) {}
+    }
+
+    pageOrder.forEach(function (name, i) {
+      const tab = el("button", "tab");
+      tab.type = "button";
+      tab.id = "tab-" + i;
+      tab.setAttribute("role", "tab");
+      tab.setAttribute("aria-controls", "panel-" + i);
+      tab.appendChild(el("span", "tab__name", name));
+      if (counts && counts[name]) {
+        tab.appendChild(el("span", "tab__count", counts[name] + "本"));
+      }
+      tab.addEventListener("click", function () { select(i, false); });
+      tab.addEventListener("keydown", function (event) {
+        var next = null;
+        if (event.key === "ArrowRight") next = (i + 1) % pageOrder.length;
+        if (event.key === "ArrowLeft") next = (i + pageOrder.length - 1) % pageOrder.length;
+        if (event.key === "Home") next = 0;
+        if (event.key === "End") next = pageOrder.length - 1;
+        if (next === null) return;
+        event.preventDefault();
+        select(next, true);
+      });
+      tabs.push(tab);
+      nav.appendChild(tab);
     });
+
+    nav.select = select;
     return nav;
   }
 
-  /* 固定タブの現在地と「固定中」の見た目。スクロールのたびに、
-     タブの下端を越えた最後の面を現在地にする */
-  var navTicking = false;
-
-  function syncPageNav() {
-    navTicking = false;
-    var nav = document.querySelector(".pagenav");
-    if (!nav) return;
-    var rect = nav.getBoundingClientRect();
-    var stickTop = parseFloat(getComputedStyle(nav).top) || 0;
-    nav.classList.toggle("pagenav--stuck", window.scrollY > 0 && rect.top <= stickTop + 0.5);
-
-    // タブで飛んだ見出しは scroll-margin のぶん（12px）タブの下に着地するので、
-    // その余裕を含めて「タブの下端を越えた」とみなす
-    var heads = document.querySelectorAll(".page-head");
-    var current = heads.length ? heads[0].id : null;
-    for (var i = 0; i < heads.length; i++) {
-      if (heads[i].getBoundingClientRect().top <= rect.bottom + 24) current = heads[i].id;
-    }
-    var links = nav.querySelectorAll(".pagenav__link");
-    for (var j = 0; j < links.length; j++) {
-      if (links[j].getAttribute("href") === "#" + current) {
-        links[j].setAttribute("aria-current", "true");
-      } else {
-        links[j].removeAttribute("aria-current");
-      }
-    }
+  /* 面の最後に置く「次の面へ」。最後の面では最初の面へ戻す */
+  function nextPageLink(pageOrder, counts, i, tabsNode) {
+    const next = (i + 1) % pageOrder.length;
+    const name = pageOrder[next];
+    const wrap = el("div", "turn");
+    const btn = el("button", "btn btn--secondary turn__btn");
+    btn.type = "button";
+    btn.textContent = next === 0
+      ? name + "面へ戻る"
+      : "次の面　" + name + (counts && counts[name] ? "（" + counts[name] + "本）" : "") + "　→";
+    btn.addEventListener("click", function () {
+      tabsNode.select(next, false);
+      scrollToNode(tabsNode);
+      document.getElementById("tab-" + next).focus({ preventScroll: true });
+    });
+    wrap.appendChild(btn);
+    return wrap;
   }
-
-  function requestNavSync() {
-    if (navTicking) return;
-    navTicking = true;
-    requestAnimationFrame(syncPageNav);
-  }
-
-  window.addEventListener("scroll", requestNavSync, { passive: true });
-  window.addEventListener("resize", requestNavSync);
 
   function paper(data, handlers) {
     const root = document.createDocumentFragment();
@@ -329,12 +387,14 @@
     // --- 題字 ---
     const masthead = el("header", "masthead");
 
-    // 題字を左、発行日と刊種を右に。題字まわりを低く保って、本文を早く見せる
+    // 題字を左、発行日・刊種・本数を右に。題字まわりを低く保って、本文を早く見せる
     const row = el("div", "masthead__row");
     row.appendChild(el("h1", "masthead__name", "紙面"));
     const strip = el("div", "masthead__strip");
-    strip.appendChild(el("span", "masthead__edition", editionName(issued)));
-    strip.appendChild(el("span", "masthead__date", formatIssueDate(issued)));
+    strip.appendChild(el("p", "masthead__date", formatIssueDate(issued)));
+    const line = el("p", "masthead__line");
+    line.appendChild(el("span", "masthead__edition", editionName(issued)));
+    strip.appendChild(line);
     row.appendChild(strip);
     masthead.appendChild(row);
 
@@ -354,12 +414,8 @@
     } else if (data.sources && data.sources.length) {
       meta += "　" + data.sources.join("・");
     }
-    masthead.appendChild(el("p", "masthead__meta", meta));
+    line.appendChild(el("span", "masthead__meta", meta));
     root.appendChild(masthead);
-
-    if (showPages && data.digest && data.digest.length) {
-      root.appendChild(pageNav(pageOrder, data.pages || {}));
-    }
 
     // --- きょうの要点。これが紙面の本体 ---
     if (!data.digest || !data.digest.length) {
@@ -372,28 +428,38 @@
       return root;
     }
 
+    // 面ごとに項目を分ける。番号は紙面全体の通し番号のまま
+    const groups = showPages ? pageOrder.map(function () { return []; }) : [[]];
+    data.digest.forEach(function (section, index) {
+      const g = showPages ? pageOrder.indexOf(section.genre) : 0;
+      groups[g < 0 ? 0 : g].push({ section: section, index: index });
+    });
+
+    const panels = groups.map(function (items, i) {
+      const panel = pagePanel(items);
+      if (showPages) {
+        panel.id = "panel-" + i;
+        panel.setAttribute("role", "tabpanel");
+        panel.setAttribute("aria-labelledby", "tab-" + i);
+      }
+      return panel;
+    });
+
+    if (showPages) {
+      const tabsNode = pageTabs(pageOrder, data.pages || {}, panels);
+      root.appendChild(tabsNode);
+      panels.forEach(function (panel, i) {
+        panel.appendChild(nextPageLink(pageOrder, data.pages || {}, i, tabsNode));
+        root.appendChild(panel);
+      });
+      tabsNode.select(pageFromHash(pageOrder.length), false);
+    } else {
+      root.appendChild(panels[0]);
+    }
+
     if (data.topics && data.topics.length) {
       root.appendChild(topicStrip(data.topics));
     }
-
-    // 同じ面・同じ分野はサーバー側でまとまって並んでくる。面が変わる位置に
-    // 面の見出し、分野が変わる位置にだけ分野名を置く（項目ごとに繰り返さない）
-    const body = el("section", "briefs");
-    let currentPage = null;
-    let currentField = null;
-    data.digest.forEach(function (section, index) {
-      if (showPages && section.genre && section.genre !== currentPage) {
-        body.appendChild(pageHead(section.genre, pageOrder.indexOf(section.genre)));
-        currentPage = section.genre;
-        currentField = null;
-      }
-      if (section.field && section.field !== currentField) {
-        body.appendChild(sectionHead(section.field, ""));
-      }
-      currentField = section.field;
-      body.appendChild(digestSection(section, index, handlers));
-    });
-    root.appendChild(body);
 
     // --- 締め ---
     const colophon = el("div", "colophon");
@@ -470,6 +536,6 @@
   }
 
   window.Render = {
-    paper: paper, feedList: feedList, relativeTime: relativeTime, syncPageNav: syncPageNav,
+    paper: paper, feedList: feedList, relativeTime: relativeTime,
   };
 })();
