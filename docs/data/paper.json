@@ -351,98 +351,98 @@
    "title": "NHKニュース",
    "priority": 2,
    "genre": "総合",
-   "last_error": ""
+   "last_error": "このMacの中や社内ネットワーク宛のURLは取得できません"
   },
   {
    "title": "ITmedia NEWS 最新記事一覧",
    "priority": 2,
    "genre": "総合",
-   "last_error": ""
+   "last_error": "このMacの中や社内ネットワーク宛のURLは取得できません"
   },
   {
    "title": "国内 - Yahoo!ニュース",
    "priority": 2,
    "genre": "総合",
-   "last_error": ""
+   "last_error": "このMacの中や社内ネットワーク宛のURLは取得できません"
   },
   {
    "title": "ニュース速報（総合）RSS",
    "priority": 2,
    "genre": "総合",
-   "last_error": ""
+   "last_error": "このMacの中や社内ネットワーク宛のURLは取得できません"
   },
   {
    "title": "トップニュース - Google ニュース",
    "priority": 2,
    "genre": "総合",
-   "last_error": ""
+   "last_error": "このMacの中や社内ネットワーク宛のURLは取得できません"
   },
   {
    "title": "エンタメ - Yahoo!ニュース",
    "priority": 2,
    "genre": "エンタメ",
-   "last_error": ""
+   "last_error": "このMacの中や社内ネットワーク宛のURLは取得できません"
   },
   {
    "title": "Yahoo!ニュース・トピックス - エンタメ",
    "priority": 2,
    "genre": "エンタメ",
-   "last_error": ""
+   "last_error": "このMacの中や社内ネットワーク宛のURLは取得できません"
   },
   {
    "title": "音楽ナタリー - 最新ニュース",
    "priority": 2,
    "genre": "エンタメ",
-   "last_error": ""
+   "last_error": "このMacの中や社内ネットワーク宛のURLは取得できません"
   },
   {
    "title": "映画ナタリー - 最新ニュース",
    "priority": 2,
    "genre": "エンタメ",
-   "last_error": ""
+   "last_error": "このMacの中や社内ネットワーク宛のURLは取得できません"
   },
   {
    "title": "コミックナタリー - 最新ニュース",
    "priority": 2,
    "genre": "エンタメ",
-   "last_error": ""
+   "last_error": "このMacの中や社内ネットワーク宛のURLは取得できません"
   },
   {
    "title": "お笑いナタリー - 最新ニュース",
    "priority": 2,
    "genre": "エンタメ",
-   "last_error": ""
+   "last_error": "このMacの中や社内ネットワーク宛のURLは取得できません"
   },
   {
    "title": "はてなブックマーク - 人気エントリー - エンタメ",
    "priority": 2,
    "genre": "エンタメ",
-   "last_error": ""
+   "last_error": "このMacの中や社内ネットワーク宛のURLは取得できません"
   },
   {
    "title": "スポーツ - Yahoo!ニュース",
    "priority": 2,
    "genre": "話題",
-   "last_error": ""
+   "last_error": "このMacの中や社内ネットワーク宛のURLは取得できません"
   },
   {
    "title": "Yahoo!ニュース・トピックス - スポーツ",
    "priority": 2,
    "genre": "話題",
-   "last_error": ""
+   "last_error": "このMacの中や社内ネットワーク宛のURLは取得できません"
   },
   {
    "title": "はてなブックマーク - 人気エントリー - 総合",
    "priority": 2,
    "genre": "話題",
-   "last_error": ""
+   "last_error": "このMacの中や社内ネットワーク宛のURLは取得できません"
   }
  ],
- "generated_at": "2026-10-01T23:49:09.997909+00:00",
+ "generated_at": "2026-10-03T02:38:25.119640+00:00",
  "pages": {
   "総合": 24,
   "エンタメ": 20,
   "話題": 16
  },
- "build": "20261002084910"
+ "build": "20261003113825"
 }
