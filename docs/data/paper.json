@@ -2,211 +2,103 @@
  "digest": [
   {
    "genre": "総合",
+   "field": "社会",
+   "subtitle": "催涙スプレー散布事件増加",
+   "text": "学校や商業施設で催涙スプレーが散布される事件が相次いでいる。これらのスプレーはカプサイシンを主成分とし、無差別にまかれているという。警察は催涙スプレーの所持・使用に関する注意喚起を行い、事件の抑止に努めており、販売事業者への規制強化も検討されている。事件の多くは愉快犯によるものや、誤ってスプレーが噴射されたケースが原因となっている。",
+   "sources": [
+    {
+     "title": "学校や商業施設で続々噴射！ 「催涙スプレーテロ」に気をつけろ！(週プレNEWS)",
+     "url": "https://news.yahoo.co.jp/articles/45f6805f09604e8191f7c3f8e15b70cc7d9dd18a?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "genre": "総合",
+   "field": "社会",
+   "subtitle": "医療版ファストパス導入検討 批判も",
+   "text": "9月中旬、一部の医療機関で診察順を優先する「医療版ファストパス」の導入が検討された。診療所理事長は、患者の都合に合わせた時間調整が可能になるツールと説明し、患者と病院双方にとってメリットがあると主張した。一方で、この仕組みは不公平感や経済格差を拡大する可能性があるという批判も相次いでおり、公平性や健康格差に関する懸念が示されている。導入にあたっては、医療保険制度との整合性や公平性を担保するための検討が必要とされている。",
+   "sources": [
+    {
+     "title": "｢500円で診察順を繰り上げる｣…現役医師が明かす、新聞テレビが報じない｢医療版ファストパス｣論争の本質(プレジデントオンライン)",
+     "url": "https://news.yahoo.co.jp/articles/73614f14ac7d0294b8a66917bc59cd70901597d7?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "genre": "総合",
+   "field": "社会",
+   "subtitle": "那覇で殺人強盗 容疑者逮捕",
+   "text": "沖縄県那覇市で10月3日に発生した殺人・強盗事件では、39歳の屋宜杏奈さんが殺害され、強盗被害に遭った。現場は米軍基地内にあったとみられ、警察は容疑者を逮捕・送検し、捜査を進めている。通常は基地に逃げ込む事件が多いが、今回は基地内での事件として捜査が本格化しており、基地内の警備体制に問題があった可能性が指摘されている。一方、神戸市で発生した連続発砲事件では、元暴力団「侠友会」会長の亀谷被告が容疑者として逮捕され、「赤ちゃんが撃たれて死んだ！」と発言した。亀谷被告は過去に暴力団関係者の射殺で有罪判決を受けており、警察は事件の動機や背景について捜査している。",
+   "sources": [
+    {
+     "title": "米兵の事件では「基地に逃げ込まれる」ケースが多いが… なぜ今回は逮捕、送検できた？〈沖縄・強盗殺人〉(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/3e00e94b705960b325b5ae77fb29bd29c267c30c?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    },
+    {
+     "title": "「“赤ちゃん”が撃たれて死んだ！」 神戸連続発砲事件、容疑者の元暴力団会長（79）の素顔とは(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/088e199a1855246bc640df56787fb595acc92cfc?source=rss",
+     "feed_title": "国内 - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "genre": "総合",
    "field": "政治",
-   "subtitle": "大臣続投 総理が評価",
-   "text": "高市総理は8日、臨時国会で簗農水産大臣の“予算カット”発言を巡る国会での論戦後、大臣の続投を決定した。高市総理は「とにかく働いて仕事で返せ」と述べ、大臣の続投を強調し、その実績を評価する姿勢を示した。今回の論戦は、消費税減税など、国が抱える課題が山積している中で行われた。政府は、引き続き課題解決に向けた取り組みを強化していく方針である。",
+   "subtitle": "官僚人事は政策有利に",
+   "text": "政府が内閣府の人事において、批判を抑制する傾向を強めている。文春オンラインのコラム「霞が関コンフィデンシャル」によると、これまで「直言型」と呼ばれた官僚が交代し、「能吏型」の官僚が抜擢されている。これは、政府が自らの政策を有利に進めるための人事戦略と見られる。岸田政権による政策決定の遅れや閣僚の政策に対する批判が背景にあると分析されている。具体的な人数は明示されていない。",
    "sources": [
     {
-     "title": "高市総理「働いて仕事で返せ」“予算カット発言”簗農水大臣の続投を強調(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/c6daa6189b6fdca46a48cb7728d3b259d6dc9b8b?source=rss",
+     "title": "高市政権が仕掛けた“批判封じ込め”の内閣府人事 「直言型」官僚を追い出し、「能吏型」を抜擢(文春オンライン)",
+     "url": "https://news.yahoo.co.jp/articles/09bc235b3d1904ac65b6ba8118259799011e8611?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     }
    ]
   },
   {
    "genre": "総合",
-   "field": "社会",
-   "subtitle": "市原市雑木林で身元不明遺体発見",
-   "text": "千葉県市原市で身元不明の遺体が見つかり、警察が捜査を進めています。遺体は市原市内の雑木林で発見され、身元は特定されていません。警察は、千葉市花区で車を放置した男の供述から事件に気づき、その男が今回の遺体事件に関与しているか調べています。捜査当局は、遺体の身元特定のため、DNA鑑定などの捜査を行っており、背景には2021年1月に千葉市花区で起訴された別の事件との関連性が疑われています。",
+   "field": "政治",
+   "subtitle": "簗氏謝罪 閲覧履歴チェック問題",
+   "text": "簗和生農林水産大臣は、自身の恫喝音声問題を受けて謝罪した。問題の発端となった秘書のパソコンの閲覧履歴チェックについて「ミスには激怒」と発言したことや、音声の中で「命に支障がないところを削減」と発言していたことが明らかになり、これまで数度の会見で言葉を濁していた簗氏は、週刊新潮の報道を受けて謝罪に追い込まれた。農水省内では簗氏の言動に対する批判が高まっており、今回の問題が政治に与える影響が注目される。",
    "sources": [
     {
-     "title": "別事件で起訴された男関与か…千葉・市原市で身元不明遺体(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/fee6603cc7f4006689edaf45c35373144a326f50?source=rss",
+     "title": "「簗さんの親から『縁を切る』と電話が…」 簗農水大臣の“独特過ぎる素顔” 「ミスには激怒。秘書のパソコンの閲覧履歴をチェックすることも」【恫喝発言問題】(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/31fb9af1c9523793580c296fbd7737f3241e2d3d?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
     },
     {
-     "title": "韓国で工藤会系組員に懲役10年の判決(ABEMA TIMES)",
-     "url": "https://news.yahoo.co.jp/articles/454a4f0349787c378a7059e86dec0d7818d032ce?source=rss",
+     "title": "【恫喝発言】簗農水相は「命に支障がないところを削減」と明言していた！ 「現実に役所に圧力をかけていた言い方」(デイリー新潮)",
+     "url": "https://news.yahoo.co.jp/articles/5b7f0efdccd554d37a6083f310c570f7b23d3b86?source=rss",
      "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "genre": "総合",
-   "field": "社会",
-   "subtitle": "巡査長 住民免許証を紛失",
-   "text": "神奈川県警の巡査長が、運転免許証の更新手続きで回収した住民の免許証約30～31枚を無断で持ち出し、そのうちの一部を飲酒後に紛失したことが判明しました。巡査長は免許証をリュックサックに持ち帰っており、駅のホームや飲食店で紛失したとみられています。県警は巡査長に対する失効処分を検討しており、同様の事案を防ぐため、全署に対し免許証の管理体制の見直しを指示しています。住民の個人情報保護の観点からも問題視されており、県警内部では厳重な注意喚起が行われています。",
-   "sources": [
-    {
-     "title": "神奈川県警の警察官が回収した運転免許証を無断持ち出し 約30枚をリュックサックに(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/7dccab6dcc00b007dd4caf1e709b80eec8612e57?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "神奈川県警巡査長、免許証を不正持ち出し 数十枚を飲酒後に紛失 - 毎日新聞",
-     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1NT1pmVmtlMmdJM2QxcEI1TW55STFYTXlfdFMtbGFqM2FoZHlpM2ZMSWIxbE9QRWd0cDc5WlBFUktkMTVOYnZfVEhjSmQySzJwOXZvbnZkc2xsb1VfcFRreWFXeV9SNkhy?oc=5",
-     "feed_title": "トップニュース - Google ニュース"
-    },
-    {
-     "title": "SBI証券、Google・Appleパスキー乗っ取り被害「確認されていない」 注意喚起は他社事案",
-     "url": "https://www.itmedia.co.jp/news/article/2610/08/2000002137/",
-     "feed_title": "ITmedia NEWS 最新記事一覧"
-    }
-   ]
-  },
-  {
-   "genre": "総合",
-   "field": "社会",
-   "subtitle": "個人情報漏えい 約900万件",
-   "text": "複数の企業で個人情報漏えいが発生し、影響を受けた件数は合計で約900万件に及ぶ。ローソンでは会員アプリへの不正アクセスにより約215万件、第一興商ではカラオケの顧客や従業員の個人情報約872万件が漏えいした可能性がある。また、NewsPicksも業務ツールへの不正アクセスにより顧客情報が漏洩した可能性があり、影響を受ける可能性のある顧客のCEOの文字が漏洩したとされている。政府は企業への脆弱性対策を要請し、関係省庁会議を開催するとともに、運転免許画像の再交付受付も実施している。",
-   "sources": [
-    {
-     "title": "ローソン215万件の情報漏えい 不正アクセス、第一興商も（共同通信） - Yahoo!ニュース",
-     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBBOFdrUnBCMlpTRVpiR25UTWlablFSbk4zYllNOWtNSVd3WTNDWUhVb1FuQ0tRdTNVTW9haksydEwtTk1USV94SE8yWVVHSEUwcDJtblZudE1HY2k3Zzgyc0FsUEdoT2EtOFBicTdNTDBRcG9PNE8ya2JVWnZ4OEk?oc=5",
-     "feed_title": "トップニュース - Google ニュース"
-    },
-    {
-     "title": "カラオケ第一興商 個人情報872万件漏えいか(ABEMA TIMES)",
-     "url": "https://news.yahoo.co.jp/articles/935a0f352af1e6f888c51786730d85989e91c16e?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    },
-    {
-     "title": "ライバル社に不正アクセス、顧客名簿入手し営業活動 容疑の光回線代理店従業員を逮捕",
-     "url": "https://www.itmedia.co.jp/news/article/2610/08/2000002129/",
-     "feed_title": "ITmedia NEWS 最新記事一覧"
-    },
-    {
-     "title": "SBI証券、Google・Appleパスキー乗っ取り被害「確認されていない」 注意喚起は他社事案",
-     "url": "https://www.itmedia.co.jp/news/article/2610/08/2000002137/",
-     "feed_title": "ITmedia NEWS 最新記事一覧"
-    }
-   ]
-  },
-  {
-   "genre": "総合",
-   "field": "社会",
-   "subtitle": "作業員4人転落死亡",
-   "text": "4月7日、川崎市川崎区扇島でクレーンの解体作業中に、作業員4人が重りと共に転落し、4人が死亡する事故が発生した。事故原因として、クレーンのアームを削ったことが、重りを支えられなくなり、作業員が転落した原因だったとみられている。調査の結果、アームの削りによってクレーンの安定性が損なわれたと判断された。この事故を受け、クレーンの解体作業における安全管理体制の見直しが急務となっている。",
-   "sources": [
-    {
-     "title": "クレーン解体中4人死亡 アーム削ったことが重り落下の原因か 川崎市(テレビ朝日系（ANN）)",
-     "url": "https://news.yahoo.co.jp/articles/295eca1eefe634d6d0f96441d0a170dce6463057?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "genre": "総合",
-   "field": "社会",
-   "subtitle": "AI活用攻撃増加 対策強化が急務",
-   "text": "個人情報漏えい事件が近年相次ぐ中、攻撃側がAIを活用していることはほぼ間違いないと専門機関が指摘している。高市総理は対策強化を表明し、プログラム更新などによる対策徹底を呼びかけている。大手ベンダー各社は、防御側にもAIの活用を取り入れるべきだと考えており、高度化する攻撃手法への対応が企業にとって急務となっている。会員ポイントの不正交換による「二次被害」も懸念されている。",
-   "sources": [
-    {
-     "title": "相次ぐ情報漏えい、攻撃側のAI活用「間違いない」 防御側はどう使うか 傾向と対策を大手ベンダー各社に聞く - ITmedia",
-     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1CekZXbEctaHF4Z0FoWTNRbHBERmNOOW8zUzlYOXc5UlhvblNDcTNRQ1JFcVVUSkcxWFRUdkl2cFhRdG5sY0dJR3NPbVpBUWJzWE9PdXUwS1N6LWZmekJzajhkQjlyTnlnVFo5Yw?oc=5",
-     "feed_title": "トップニュース - Google ニュース"
-    }
-   ]
-  },
-  {
-   "genre": "総合",
-   "field": "経済",
-   "subtitle": "社員による金銭詐取 52億円詐取",
-   "text": "プルデンシャル生命で社員による金銭詐取事件が発覚し、64人の社員が解雇、詐取金額は52億円と推定される。第三者委員会は、営業成績を過度に重視する企業風土が不正の温床になったと指摘し、過去の経営陣の責任も確認された。得丸社長は経営の問題点を認め、自身は続投し再発防止策の実行に当たる意向を示した。プルデンシャル生命は内部統制の見直しやリスク管理の強化に取り組む方針である。",
-   "sources": [
-    {
-     "title": "プルデンシャル生命「営業成績を過度に重視する企業風土」不正の温床に…社員１５７人処分 - 読売新聞",
-     "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1fUXRodndjMlo3X21IeGM5d2stQ1hhWTdtaG9kUnVaRzNLX3JQY2JfbjZyQTFVUjM1TGZvdjBLUXNuVlljb05wblZDU1ViTFZxOVd5dE5ockVldWJEUkMxdnJvcEU?oc=5",
-     "feed_title": "トップニュース - Google ニュース"
-    },
-    {
-     "title": "プルデンシャル生命社長陳謝 自身は続投(ABEMA TIMES)",
-     "url": "https://news.yahoo.co.jp/articles/6f0634f69bdcdfdc2192acd594abd8af1e8fb766?source=rss",
-     "feed_title": "国内 - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "genre": "総合",
-   "field": "国際",
-   "subtitle": "ペスト研究所職員死亡 異常なし",
-   "text": "ロシアのペスト研究所で職員が死亡する事故が発生し、ロシア公衆衛生当局は、接触者に健康上の異常は確認されていないと発表した。WHOはロシアに対し詳細な情報提供を求めており、追加情報を要請している。トランプ氏は、この件に関して生物兵器説を否定した。WHOはロシアの調査を注視し、必要に応じて追加の調査を行う可能性がある。",
-   "sources": [
-    {
-     "title": "ペスト研究所の職員死亡、ロシア公衆衛生当局「接触者に健康上の異常確認されず」 - 読売新聞",
-     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9HcTBBdUx1MGNuQkptVHhjTDlsQlNiMmZWQjJaYlhQMllEUTkzR0dnY1RRRGJ4ajB1clY1eDh0di1XQjNoU3lDcUJZWS1fS2YxMXNNZTFKVHpmWUk0Qjk5UEdB?oc=5",
-     "feed_title": "トップニュース - Google ニュース"
-    }
-   ]
-  },
-  {
-   "genre": "エンタメ",
-   "field": "アニメ",
-   "subtitle": "氷の城壁 第2期 オープニング映像公開",
-   "text": "アニメ「氷の城壁」第2期のノンクレジットオープニング映像が公開され、小雪たちの青春が再び動き出した。原作コミックはLINEマンガで累計1.9億回、コミックスで340万部を突破しており、高い人気を誇る。オープニング映像では、THE BEAT GARDENの新曲「エスコート」が使用され、小雪たちが過ごす様子や校舎内を走る小雪の姿が描かれている。氷川小雪役は永瀬アンナさん、雨宮湊役は千葉翔也さん、安曇美姫役は和泉風花さん、日野陽太役は猪股慧士さんが担当する。",
-   "sources": [
-    {
-     "title": "＜氷の城壁＞第2期ノンクレジットOP映像公開 小雪たちの“青春”が動き出す(WEBザテレビジョン)",
-     "url": "https://news.yahoo.co.jp/articles/1b61b347d9743f402370bdd079d789ed2b9c4fd0?source=rss",
-     "feed_title": "エンタメ - Yahoo!ニュース"
-    },
-    {
-     "title": "TVアニメ「北北西に曇と往け」2027年にTBSで放送、御山慧役は大野智敬",
-     "url": "https://natalie.mu/comic/news/692947",
-     "feed_title": "コミックナタリー - 最新ニュース"
-    }
-   ]
-  },
-  {
-   "genre": "エンタメ",
-   "field": "ゲーム",
-   "subtitle": "超サイヤ人4悟空とピッコロがメタリックカラーで登場",
-   "text": "バンダイは、ドラゴンボールの超サイヤ人4孫悟空とピッコロをメタリックカラーで彩色したHGフィギュアを、ガシャポンとして全4種、ガシャポンバンダイオフィシャルショップで限定販売する。10月9日より発売され、メタリックカラーが特徴となっている。今回の商品は、ドラゴンボールファン向けの貴重なコレクションアイテムとなり、数量限定での販売となる。ガシャポンバンダイオフィシャルショップでのみ購入可能。",
-   "sources": [
-    {
-     "title": "超サイヤ人4孫悟空、ピッコロたちがメタリックカラー彩色に！HG「ドラゴンボール」全4種が、ガシャポンオフィシャル限定で発売(インサイド)",
-     "url": "https://news.yahoo.co.jp/articles/3fbc4fce9e84314de6627b93e00ee083b54ec504?source=rss",
-     "feed_title": "エンタメ - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "genre": "エンタメ",
-   "field": "ゲーム",
-   "subtitle": "ペルソナ主人公デザインTシャツ発売",
-   "text": "スポーツブランドatmosとゲームブランドPERSONA Memoriaがコラボレーションし、10月9日に『ペルソナ』シリーズの歴代主人公をデザインした限定Tシャツを発売する。TシャツはatmosとPERSONA Memoriaのオンラインストア、およびatmos直営店で購入可能で、両ブランドのファンにとって貴重なアイテムとなる。コラボレーションの背景には、両ブランドのファン層の共通性がある。今後のコラボレーションに関する詳細な情報が発表される予定である。",
-   "sources": [
-    {
-     "title": "「atmos」×「PERSONA Memoria」がコラボ！『ペルソナ』歴代主人公勢ぞろいの限定Tシャツが発売(インサイド)",
-     "url": "https://news.yahoo.co.jp/articles/e5bbeb75bfcd31e25276e7a7f03f576193f081b5?source=rss",
-     "feed_title": "エンタメ - Yahoo!ニュース"
-    },
-    {
-     "title": "超サイヤ人4孫悟空、ピッコロたちがメタリックカラー彩色に！HG「ドラゴンボール」全4種が、ガシャポンオフィシャル限定で発売(インサイド)",
-     "url": "https://news.yahoo.co.jp/articles/3fbc4fce9e84314de6627b93e00ee083b54ec504?source=rss",
-     "feed_title": "エンタメ - Yahoo!ニュース"
-    },
-    {
-     "title": "“おてがみ”を手にしたドラえもんがモチーフの郵便局グッズ、マスコットやポーチなど",
-     "url": "https://natalie.mu/comic/news/692858",
-     "feed_title": "コミックナタリー - 最新ニュース"
     }
    ]
   },
   {
    "genre": "エンタメ",
    "field": "芸能",
-   "subtitle": "森田剛氏 指元に指輪",
-   "text": "元V6の森田剛氏が、Instagramに投稿された写真で左手薬指に指輪を着用している様子が写し出され、話題となっている。写真は、峯田和伸氏のInstagramに掲載されており、森田剛氏と妻の宮沢りえさんを捉えたもの。ファンからは「とてもいい写真！」「久々にヒゲなし」といったコメントが寄せられ、森田剛氏の近況が伝えられた。",
+   "subtitle": "氷川きよし 本名を告白",
+   "text": "氷川きよしがテレビ朝日系番組『鶴瓶孝太郎 スターの今を大調査！』に出演し、自身の本名（川本 義行）を「普通に」と明かした。これまで本名を公にすることはなかったため、ファンやメディアに驚きを与えた。一方、番組では64歳の国際的モデル、カイヤがモデル活動について語り、100歳までモデルを続け、ギネス世界記録への挑戦も視野に入れているとコメントした。また、Snow Manの目黒蓮がドラマ「SHOGUN将軍」シーズン2のオフショット映像で注目を集め、ファンからは演技に対する感銘の声が上がっている。さらに、Snow Manの深澤、渡辺、宮舘、向井がバラエティ番組「ドッキリGP」に出演し、ゲームに挑戦する様子が放送される。",
    "sources": [
     {
-     "title": "“妻・宮沢りえとの密着ショットが話題”元V6・森田剛（47）、左手薬指に指輪をつけた最新ショットに「とてもいい写真！」「久々にヒゲなし」などの反響(ABEMA TIMES)",
-     "url": "https://news.yahoo.co.jp/articles/87a58ee61183df62d6b4841790695b4e5807154d?source=rss",
+     "title": "氷川きよし、サラッと“本名”明かす「…普通に」(オリコン)",
+     "url": "https://news.yahoo.co.jp/articles/db6553897806c82024a520031f89895f240cafbe?source=rss",
      "feed_title": "エンタメ - Yahoo!ニュース"
     },
     {
-     "title": "「カメラマンが一番体張ってる」川でグラビア撮影〝衝撃の裏側〟グラドルちなぷぷ投稿に「裏側のほうがそそる」「耳に水入ってるな」(西スポWEB OTTO!)",
-     "url": "https://news.yahoo.co.jp/articles/579c739b804c9dbb0dffbb72674e7c6494afebf8?source=rss",
+     "title": "「努力の証…」「心臓がキュッとなる」目黒蓮〝ある異変〟に注目！〝将軍ビジュ〟に「うるうるしてくる」「この笑顔が見たかった」と反響続々(西スポWEB OTTO!)",
+     "url": "https://news.yahoo.co.jp/articles/f1dae7dbad84ea71d2559ae68e88874c3a91d83f?source=rss",
+     "feed_title": "エンタメ - Yahoo!ニュース"
+    },
+    {
+     "title": "Snow Man深澤、渡辺、宮舘、向井「ドッキリGP」でゲームに挑戦 ミスすると“お尻ビリビリ”",
+     "url": "https://natalie.mu/music/news/693178",
+     "feed_title": "音楽ナタリー - 最新ニュース"
+    },
+    {
+     "title": "６４歳・カイヤ、現在も国際的モデルとして大活躍「１００歳までやろうかなと思ってる。ギネス世界記録を取ろうかなって」(スポーツ報知)",
+     "url": "https://news.yahoo.co.jp/articles/d94ff84caa248cc3229f94a9e500146e3f934716?source=rss",
      "feed_title": "エンタメ - Yahoo!ニュース"
     }
    ]
@@ -214,58 +106,137 @@
   {
    "genre": "エンタメ",
    "field": "芸能",
-   "subtitle": "怪奇YesどんぐりRPG 解散を発表",
-   "text": "お笑いユニット「怪奇！YesどんぐりRPG」が12月に解散を発表した。このユニットは、Yes!アキト、どんぐりたけし、サツマカワRPGの3人で構成されていた。解散の旨はYouTubeチャンネルで伝えられ、発表は8日に行われた。解散の理由や経緯は現時点では明らかにされていない。メンバーの今後の活動に注目が集まる。",
+   "subtitle": "弓木奈於は池田の分析に恐怖",
+   "text": "乃木坂46の番組「乃木坂工事延長中」で、弓木奈於が池田瑛紗による自身のバラエティーテクニックの分析に「怖い…」と発言した。池田は6期生メンバーの活躍を冷静に分析し、愛宕心響は小津玲奈から「私が泣いたときに抱き締めてくれたからお返し！」という名言を披露した。小津は愛宕から慰められたエピソードを振り返り、感謝の気持ちを伝えた。川崎桜は5期生のメンバーから、努力を見てくれる人がいるという名言を受け取った。",
    "sources": [
     {
-     "title": "怪奇！YesどんぐりRPG、12月に解散 Yes!アキト、どんぐりたけし、サツマカワRPGからなるお笑いユニット(オリコン)",
-     "url": "https://news.yahoo.co.jp/articles/19e4bb820cc982c03268ff48b3e46fd86e0b9ea4?source=rss",
+     "title": "乃木坂46弓木奈於、自身の“バラエティーテク”を池田瑛紗に冷静に分析されポツリ「怖い…」＜乃木坂工事延長中＞(WEBザテレビジョン)",
+     "url": "https://news.yahoo.co.jp/articles/4060c74ce604373ca384d34c5af74aa95ef2161c?source=rss",
+     "feed_title": "エンタメ - Yahoo!ニュース"
+    },
+    {
+     "title": "６４歳・カイヤ、現在も国際的モデルとして大活躍「１００歳までやろうかなと思ってる。ギネス世界記録を取ろうかなって」(スポーツ報知)",
+     "url": "https://news.yahoo.co.jp/articles/d94ff84caa248cc3229f94a9e500146e3f934716?source=rss",
      "feed_title": "エンタメ - Yahoo!ニュース"
     }
    ]
   },
   {
    "genre": "エンタメ",
-   "field": "マンガ",
-   "subtitle": "新作マンガ多数発売",
-   "text": "本日10月9日、多数の新作マンガと人気シリーズの最新巻が発売された。転生ものや異世界ものを含む新作は19作品、恋愛、ハーレム、バトル、コメディなど多様なジャンルの作品が揃っている。アース・スターエンターテイメント、小学館、スクウェア・エニックスなど複数の出版社から作品が発売されている。注目作品として、「転生した大聖女は、聖女であることをひた隠す」シリーズや「異世界転生ダンジョンマスター」などが挙げられる。",
+   "field": "芸能",
+   "subtitle": "RIMAのツインテール写真が話題",
+   "text": "NiziUのRIMAがインスタグラムに投稿した高めツインテールの写真が、ファンから大きな反響を呼んでいる。RIMAはこの投稿に「バブい」といったコメントを付け、アニメキャラクターのようなスタイルが「小悪魔っぽくてかわいい」「ギャップ」といったコメントを呼んでいる。写真は9日に公開され、RIMAのインスタグラムアカウントで話題となっている。NiziUのファンはRIMAの新たな魅力を楽しんでいる。",
    "sources": [
     {
-     "title": "【2026年10月9日】本日発売のマンガ単行本リスト 「ゆるキャン△」19巻ほか",
-     "url": "https://natalie.mu/comic/news/691196",
+     "title": "「バブい」「アニメキャラみたい」NiziUメンバー、高めツインテール姿にファン歓喜「小悪魔っぽくてかわい」「ギャップ」(中日スポーツ)",
+     "url": "https://news.yahoo.co.jp/articles/d73cab7d07c3b6260bb708f7859b4e498e6b1faf?source=rss",
+     "feed_title": "エンタメ - Yahoo!ニュース"
+    },
+    {
+     "title": "中川安奈アナ、“肩チラ”開襟トップス姿で『とっても楽しい収録でしたん』！ ファン「オトナの美」「肩チラGood」「ネイルもお洒落」と絶賛(中日スポーツ)",
+     "url": "https://news.yahoo.co.jp/articles/9a22641b209b84d988f0b338f1e76f6e3b34d5b5?source=rss",
+     "feed_title": "エンタメ - Yahoo!ニュース"
+    },
+    {
+     "title": "「努力の証…」「心臓がキュッとなる」目黒蓮〝ある異変〟に注目！〝将軍ビジュ〟に「うるうるしてくる」「この笑顔が見たかった」と反響続々(西スポWEB OTTO!)",
+     "url": "https://news.yahoo.co.jp/articles/f1dae7dbad84ea71d2559ae68e88874c3a91d83f?source=rss",
+     "feed_title": "エンタメ - Yahoo!ニュース"
+    },
+    {
+     "title": "夫は１３歳下！ゴージャス美女の正体「ふーみん！」「美しいですネ」引退から１２年…転身話題の村主章枝さん(スポーツ報知)",
+     "url": "https://news.yahoo.co.jp/articles/2b6289e73bdee7a133550344feec51bb3f34ef19?source=rss",
+     "feed_title": "エンタメ - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "genre": "エンタメ",
+   "field": "芸能",
+   "subtitle": "佐久間と浮所 リカちゃんに興味",
+   "text": "人気番組「サクサクヒムヒム ☆推しの降る夜☆」で、佐久間大介と浮所飛貴がリカちゃんに強い興味を示した。佐久間はリカちゃんの質量や足の可動性に驚き、浮所は「変形ロボみたいに！」とコメントした。番組内では、リカちゃんでんわに挑戦したり、コーディネートを試みる企画も行われた。リカちゃん自身もX（旧Twitter）で番組内容を紹介し、「みんなにも見てほしいな☆」とメッセージを投稿している。この番組は10月10日放送された。",
+   "sources": [
+    {
+     "title": "佐久間大介と浮所飛貴がリカちゃんに興味津々「質量がある」「足もこんなに動くんだ」",
+     "url": "https://natalie.mu/music/news/693083",
+     "feed_title": "音楽ナタリー - 最新ニュース"
+    },
+    {
+     "title": "Snow Man深澤、渡辺、宮舘、向井「ドッキリGP」でゲームに挑戦 ミスすると“お尻ビリビリ”",
+     "url": "https://natalie.mu/music/news/693178",
+     "feed_title": "音楽ナタリー - 最新ニュース"
+    },
+    {
+     "title": "氷川きよし、サラッと“本名”明かす「…普通に」(オリコン)",
+     "url": "https://news.yahoo.co.jp/articles/db6553897806c82024a520031f89895f240cafbe?source=rss",
+     "feed_title": "エンタメ - Yahoo!ニュース"
+    },
+    {
+     "title": "６４歳・カイヤ、現在も国際的モデルとして大活躍「１００歳までやろうかなと思ってる。ギネス世界記録を取ろうかなって」(スポーツ報知)",
+     "url": "https://news.yahoo.co.jp/articles/d94ff84caa248cc3229f94a9e500146e3f934716?source=rss",
+     "feed_title": "エンタメ - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "genre": "エンタメ",
+   "field": "特撮",
+   "subtitle": "スピルバンTOKYO MXで放送開始",
+   "text": "特撮ヒーロー作品『時空戦士スピルバン』が、2026年10月11日からTOKYO MXで放送される。これは、「みんなで決めよう！東映特撮Blu-ray化 PROJECT！」第2弾作品を記念した地上波放送となる。本作は、「宇宙刑事」シリーズのフォーマットに原点回帰した作品で、渡洋史さんや森永奈緒美さんといった veteran cast が起用されている。主人公「スピルバン」と、敵対する父親「ベン博士」と姉「ヘレン」の悲劇的な展開が描かれる。主題歌は水木一が担当する。",
+   "sources": [
+    {
+     "title": "『スピルバン』語り継がれる最終回は「みんなポカーン」そもそもどんな作品だったの？(マグミクス)",
+     "url": "https://news.yahoo.co.jp/articles/d38d4c69b5fe2169fc8225179411cb87a18f21f9?source=rss",
+     "feed_title": "エンタメ - Yahoo!ニュース"
+    },
+    {
+     "title": "【今週の注目記事】1位は「おぼっちゃまくん」の新作アニメ",
+     "url": "https://natalie.mu/comic/news/693060",
      "feed_title": "コミックナタリー - 最新ニュース"
     },
     {
-     "title": "本日2026年10月9日（金）発売分のマンガ雑誌リスト",
-     "url": "https://natalie.mu/comic/news/692719",
+     "title": "ミュージカル「南くんの恋人」南聡介と、手のひらサイズの堀切千代光のキービジュ公開",
+     "url": "https://natalie.mu/comic/news/693179",
      "feed_title": "コミックナタリー - 最新ニュース"
     }
    ]
   },
   {
-   "genre": "話題",
-   "field": "スポーツ",
-   "subtitle": "佐藤輝明選手 三冠王と最多安打",
-   "text": "阪神タイガースの佐藤輝明選手が、2023年のセ・リーグで打率、本塁打、打点の3部門で1位となり、史上9人目となる三冠王を獲得した。また、最多安打も獲得し、阪神勢として5人のタイトル獲得となった。この記録は、村上宗隆選手以来、4年ぶりであり、阪神ではバース以来40年ぶりの快挙である。佐藤選手は「少しずつ積み重ねてここまで来られた」とコメントし、チームを牽引する存在となっている。",
+   "genre": "エンタメ",
+   "field": "音楽",
+   "subtitle": "銀魂テーマソングをSPYAIRがセルフカバー",
+   "text": "SPYAIRが、人気アニメ「銀魂」の日である本日10月10日に、歴代テーマソングのセルフカバーEP『BEST OF ANIME』をリリースした。EPには、映画『銀魂 THE FINAL』主題歌「サムライハート」を含む全17曲が収録され、当時のデザインをモチーフにしたアートワークが採用されている。合わせて、YouTubeの「銀魂」公式チャンネルでは10時間耐久配信企画も開始された。SPYAIRは今月末からヨーロッパツアー、12月には国内ライブツアーを開催する予定である。",
    "sources": [
     {
-     "title": "阪神・佐藤輝明が三冠王を獲得",
-     "url": "https://news.yahoo.co.jp/pickup/6598052?source=rss",
-     "feed_title": "Yahoo!ニュース・トピックス - スポーツ"
+     "title": "本日10月10日は“銀魂の日”SPYAIRが歴代「銀魂」テーマソングのセルフカバーEPリリース",
+     "url": "https://natalie.mu/music/news/693194",
+     "feed_title": "音楽ナタリー - 最新ニュース"
     },
     {
-     "title": "佐藤が三冠王に最多安打 阪神勢5人がタイトル獲得(共同通信)",
-     "url": "https://news.yahoo.co.jp/articles/7635f3a5b9ab05ca67bc4500171f429644ee1895?source=rss",
+     "title": "“日本のトップアイドル”pinponpanpon、初のCDアルバム「pinponism」リリース",
+     "url": "https://natalie.mu/music/news/692613",
+     "feed_title": "音楽ナタリー - 最新ニュース"
+    }
+   ]
+  },
+  {
+   "genre": "話題",
+   "field": "スポーツ",
+   "subtitle": "柏が首位に神戸に勝利 瀬川選手は得点ランク2位",
+   "text": "柏は明治安田J1リーグ第9節で神戸に4-2の勝利を収め、首位に浮上した。試合終了時のスーパーサブとして途中出場で8点目を挙げた瀬川祐輔選手は、得点ランク2位となっている。一方、リヨンはランスとのリーグ戦で2-1と敗れ、今季初の黒星を喫し、順位も低迷している。リヨンのオペンダ選手は負傷退場となり、後半には中村敬斗選手が緊急出場した。",
+   "sources": [
+    {
+     "title": "柏・瀬川祐輔が今季８点目 全て途中出場で得点ランク２位のスーパーサブ「ベテランの意味をＪリーグに波及したい」(スポーツ報知)",
+     "url": "https://news.yahoo.co.jp/articles/b87b0110e254e4b0cde2129ffe416e90e72ddab3?source=rss",
      "feed_title": "スポーツ - Yahoo!ニュース"
     },
     {
-     "title": "セ・リーグ 各部門のタイトル確定",
-     "url": "https://news.yahoo.co.jp/pickup/6598058?source=rss",
-     "feed_title": "Yahoo!ニュース・トピックス - スポーツ"
+     "title": "リヨン、ランスに敗れて今季リーグ初黒星…FW中村敬斗は負傷者発生で“緊急出場”、終盤の反撃も及ばず(フットボールチャンネル)",
+     "url": "https://news.yahoo.co.jp/articles/e5913470737d40f563d2a3d4f09d57da9a7a5a72?source=rss",
+     "feed_title": "スポーツ - Yahoo!ニュース"
     },
     {
-     "title": "佐藤瞳、世界ランク8位のアンチ使いに完勝で8強入り 次戦の中国カットマンも警戒「カットの守備力が高い」＜卓球・チャイナスマッシュ2026＞(Rallys)",
-     "url": "https://news.yahoo.co.jp/articles/c1dc19e06abaa7b86e30148fa6325883471fb5de?source=rss",
+     "title": "大谷翔平が投稿した“歓喜の1枚”に同僚ロハスが反応「GOATに水浴びを」シャンパンファイトの舞台裏公開(CoCoKARAnext)",
+     "url": "https://news.yahoo.co.jp/articles/ff52679ee272be7394089efc41120bf6348cc1ca?source=rss",
      "feed_title": "スポーツ - Yahoo!ニュース"
     }
    ]
@@ -273,12 +244,12 @@
   {
    "genre": "話題",
    "field": "スポーツ",
-   "subtitle": "ロナウド監督指示に反発疑い",
-   "text": "ポルトガル代表のクリスティアーノ・ロナウドは、ジョルジェ・ジェズス監督の交代指示に反発した疑いがある。元ブラジル代表ロマーリオ氏は、ロナウドの過ちは交代されたことではなく、監督に対して「ク○食らえ」という言葉遣いをしなかったことだと指摘した。この一件は、UEFAネーションズリーグのノルウェー戦（2-1でポルトガル勝利）での出来事を背景としている。ロナウドの今後の活動に注目が集まっている。",
+   "subtitle": "クライマックスシリーズ日程と予告先発発表",
+   "text": "2026年のプロ野球クライマックスシリーズ（CS）の試合日程、開催球場、試合開始時間、そして各カードの予告先発投手が発表された。JERAがスポンサーを務めるCSは、対戦カードや組み合わせがすでに決定している。開催球場はまだ発表されておらず、各球団はスケジュールに基づき戦略を練り、選手調整を進めていくことになっている。",
    "sources": [
     {
-     "title": "ロマーリオ氏、ポルトガル代表離脱のC・ロナウドについて…「彼の過ちは離脱したことじゃない。『ク○食らえ』と言わなかったことだ」(DAZN News)",
-     "url": "https://news.yahoo.co.jp/articles/c7cf96fc2c1d0bdd9c86d3f2fd918b4ebddc4267?source=rss",
+     "title": "【きょうのプロ野球CS】10月10日の対戦カード・試合開始時間・予告先発投手は？(ベースボールチャンネル)",
+     "url": "https://news.yahoo.co.jp/articles/243d2c8862a58ff6bd63eac157b6293dc28d6f4d?source=rss",
      "feed_title": "スポーツ - Yahoo!ニュース"
     }
    ]
@@ -286,12 +257,12 @@
   {
    "genre": "話題",
    "field": "スポーツ",
-   "subtitle": "村尾選手が世界選手権で2連覇",
-   "text": "柔道男子90キロ級で村尾三四郎選手が世界選手権で2連覇を達成した。8日の決勝で田嶋剛希選手を破り優勝し、2021年以来2度目の世界選手権優勝となった。決勝に進出した田嶋選手は準決勝で韓国のキム・ジンヒ選手を破っていた。村尾選手の優勝は、高藤光好選手に続く、日本勢による2度目の世界選手権優勝である。試合はアゼルバイジャンのバクーで行われた。",
+   "subtitle": "次期監督問題は不透明",
+   "text": "巨人の次期監督問題は、阿部前監督の事件を受け、依然として不透明な状況にある。広岡博一監督は、生え抜きOBの監督を望むものの、高橋由伸や川相原悠真らにはまだ力量不足と指摘し、ふさわしい人材がいない現状を「情けない」と危惧している。中日の工藤琢磨氏の就任を例に挙げ、チーム立て直しのため橋上秀樹氏が監督代行を務めるものの、その続投や新たな監督指名については未定である。",
    "sources": [
     {
-     "title": "柔道男子90キロ級で村尾が2連覇(共同通信)",
-     "url": "https://news.yahoo.co.jp/articles/1d1aad50fe066994a3ba51c5657ff19a30e505ef?source=rss",
+     "title": "「情けないが巨人の生え抜きOBには監督にふさわしい人材がいない」G大物OBが次期監督問題に緊急提言…「高橋（由伸）もまだ勉強不足。阿部（前監督）を戻した方がいいが無理なら川相」(RONSPO)",
+     "url": "https://news.yahoo.co.jp/articles/de8e1775c45736ec6f81ea91fa1e9ef7f5184282?source=rss",
      "feed_title": "スポーツ - Yahoo!ニュース"
     }
    ]
@@ -299,167 +270,170 @@
   {
    "genre": "話題",
    "field": "スポーツ",
-   "subtitle": "ジャカ 偽造で罰金執行猶予",
-   "text": "スイス代表MFジャカが、コロナワクチン接種証明書の偽造で、約2850万円の執行猶予付き罰金処分を受けた。スイス連邦裁判所は、ジャカがワクチン接種を免れようとしたとして、15万スイスフラン（約2850万円）の罰金を科し、執行猶予は1年間である。医療機関スイスメデがジャカに偽造証明書を提供したことが判明している。今回の処分は、スポーツ界におけるワクチン接種の重要性を浮き彫りにした。",
+   "subtitle": "地区シリーズ突破をインスタグラムで報告",
+   "text": "ドジャースの大谷翔平選手が、インスタグラムで3年連続の地区シリーズ突破を報告した。チームメイトのロハス選手は「GOAT（史上最高）」とコメントし、大谷選手の活躍を称賛した。シャンパンファイトの舞台裏写真も公開され、チームの勝利を祝福する様子が伝わっている。ドジャースは次なる目標として、リーグ優勝決定シリーズへの挑戦を目指している。",
    "sources": [
     {
-     "title": "MFジャカ、コロナワクチン接種証明書の偽造で執行猶予付き約2850万円罰金処分(サッカーキング)",
-     "url": "https://news.yahoo.co.jp/articles/ec8642e9fdad122c6b91d231164374c3ca1bba75?source=rss",
-     "feed_title": "スポーツ - Yahoo!ニュース"
-    }
-   ]
-  },
-  {
-   "genre": "話題",
-   "field": "スポーツ",
-   "subtitle": "佐藤瞳選手 卓球女子8強入り",
-   "text": "卓球の佐藤瞳選手がチャイナスマッシュ2026女子シングルスで、世界ランキング8位のサビーネ・ウィンター選手に勝利し、8強入りを果たした。第1ゲームではカットでのミスを誘い、第2ゲームでは守備範囲の広さでウィンター選手を圧倒した。次戦の準々決勝では、中国の朱思冰選手と対戦することになり、佐藤選手は朱選手のカットの守備力に警戒している。Tリーグの日本ペイントマレッツのファンからの応援が勝利につながったとコメントした。",
-   "sources": [
-    {
-     "title": "佐藤瞳、世界ランク8位のアンチ使いに完勝で8強入り 次戦の中国カットマンも警戒「カットの守備力が高い」＜卓球・チャイナスマッシュ2026＞(Rallys)",
-     "url": "https://news.yahoo.co.jp/articles/c1dc19e06abaa7b86e30148fa6325883471fb5de?source=rss",
+     "title": "大谷翔平が投稿した“歓喜の1枚”に同僚ロハスが反応「GOATに水浴びを」シャンパンファイトの舞台裏公開(CoCoKARAnext)",
+     "url": "https://news.yahoo.co.jp/articles/ff52679ee272be7394089efc41120bf6348cc1ca?source=rss",
      "feed_title": "スポーツ - Yahoo!ニュース"
     },
     {
-     "title": "佐藤が三冠王に最多安打 阪神勢5人がタイトル獲得(共同通信)",
-     "url": "https://news.yahoo.co.jp/articles/7635f3a5b9ab05ca67bc4500171f429644ee1895?source=rss",
+     "title": "柏・瀬川祐輔が今季８点目 全て途中出場で得点ランク２位のスーパーサブ「ベテランの意味をＪリーグに波及したい」(スポーツ報知)",
+     "url": "https://news.yahoo.co.jp/articles/b87b0110e254e4b0cde2129ffe416e90e72ddab3?source=rss",
      "feed_title": "スポーツ - Yahoo!ニュース"
+    },
+    {
+     "title": "リヨン、ランスに敗れて今季リーグ初黒星…FW中村敬斗は負傷者発生で“緊急出場”、終盤の反撃も及ばず(フットボールチャンネル)",
+     "url": "https://news.yahoo.co.jp/articles/e5913470737d40f563d2a3d4f09d57da9a7a5a72?source=rss",
+     "feed_title": "スポーツ - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "genre": "話題",
+   "field": "スポーツ",
+   "subtitle": "バルベルデ復帰にアトレティコ批判",
+   "text": "アトレティコ・デ・マドリードは、9月20日のラ・リーガ第7節でレアル・マドリードと対戦した際、レアル・マドリードのMFフェデ・バルベルデの早期復帰を批判した。アトレティコは「レアル・マドリードを祝福する。彼らは医療の間違いを証明したんだ」とコメントを発表し、バルベルデの早期復帰がレアル・マドリードの勝利に貢献したことを指摘した。アトレティコは、バルベルデの復帰が自身のチームに不利益をもたらしたと主張している。レアル・マドリードの医療体制に疑問を呈する姿勢を示している。",
+   "sources": [
+    {
+     "title": "アトレティコ、バルベルデの“奇跡”の早期復帰を皮肉る「レアル・マドリードを祝福する。彼らは医療の間違いを証明したんだ」(DAZN News)",
+     "url": "https://news.yahoo.co.jp/articles/f0a4579ae7552f017fbd4d5341ae58c7783501de?source=rss",
+     "feed_title": "スポーツ - Yahoo!ニュース"
+    },
+    {
+     "title": "大谷翔平が投稿した“歓喜の1枚”に同僚ロハスが反応「GOATに水浴びを」シャンパンファイトの舞台裏公開(CoCoKARAnext)",
+     "url": "https://news.yahoo.co.jp/articles/ff52679ee272be7394089efc41120bf6348cc1ca?source=rss",
+     "feed_title": "スポーツ - Yahoo!ニュース"
+    }
+   ]
+  },
+  {
+   "genre": "話題",
+   "field": "ネット",
+   "subtitle": "Steamウォレットの利用期限6か月",
+   "text": "Valveは、日本向けのSteam利用規約を4月20日に更新し、Steamウォレットに追加したクレジットは、追加日から6か月以内に使用しないと失効すると定めた。Steamウォレットはゲーム購入に利用できる資金をアカウントに追加できる機能で、500円から購入可能なデジタルギフトカードとして提供されている。この変更は、資金決済法に基づき、電子マネーの未利用残高に関する基準を満たすための措置である。Valveは、今回の規約変更により、日本に拠点を置くユーザーに対してSteamウォレットの資金が追加日から6か月以内に利用されるよう促している。",
+   "sources": [
+    {
+     "title": "Steamウォレットに追加したクレジット、実は“6か月以内”に使わないと消える。Valveが日本向け「Steam利用規約」をひっそり更新していた - AUTOMATON",
+     "url": "https://automaton-media.com/articles/newsjp/20261009-472868/",
+     "feed_title": "はてなブックマーク - 人気エントリー - 総合"
     }
    ]
   }
  ],
- "digest_at": "2026-10-08T15:57:44.944088+00:00",
+ "digest_at": "2026-10-10T00:12:48.463892+00:00",
  "topics": [
   {
    "term": "選手",
-   "article_count": 11
+   "article_count": 7
   },
   {
-   "term": "展開",
-   "article_count": 9
+   "term": "投稿",
+   "article_count": 7
   },
   {
-   "term": "不正",
-   "article_count": 9
-  },
-  {
-   "term": "発売",
-   "article_count": 8
+   "term": "人気",
+   "article_count": 7
   },
   {
    "term": "コメント",
-   "article_count": 7
-  },
-  {
-   "term": "獲得",
-   "article_count": 7
-  },
-  {
-   "term": "事件",
-   "article_count": 7
-  },
-  {
-   "term": "顧客",
-   "article_count": 7
-  },
-  {
-   "term": "佐藤",
-   "article_count": 7
-  },
-  {
-   "term": "イベント",
    "article_count": 6
   },
   {
-   "term": "個人情報",
+   "term": "勝利",
    "article_count": 6
   },
   {
-   "term": "アクセス",
+   "term": "批判",
    "article_count": 6
   },
   {
-   "term": "佐藤選手",
-   "article_count": 6
+   "term": "メンバー",
+   "article_count": 5
   },
   {
    "term": "ファン",
-   "article_count": 6
-  },
-  {
-   "term": "最終",
-   "article_count": 6
-  },
-  {
-   "term": "達成",
-   "article_count": 6
-  },
-  {
-   "term": "捜査",
-   "article_count": 6
-  },
-  {
-   "term": "警察",
-   "article_count": 6
-  },
-  {
-   "term": "阪神",
-   "article_count": 6
-  },
-  {
-   "term": "冠王",
-   "article_count": 6
-  },
-  {
-   "term": "マンガ",
    "article_count": 5
   },
   {
-   "term": "リーグ",
+   "term": "主人公",
    "article_count": 5
   },
   {
-   "term": "三冠王",
+   "term": "出演",
    "article_count": 5
   },
   {
-   "term": "佐藤輝",
+   "term": "番組",
    "article_count": 5
   },
   {
-   "term": "監督",
+   "term": "事件",
    "article_count": 5
   },
   {
-   "term": "指示",
+   "term": "展開",
    "article_count": 5
   },
   {
-   "term": "見直",
+   "term": "作品",
    "article_count": 5
   },
   {
-   "term": "防止",
+   "term": "新聞",
    "article_count": 5
   },
   {
-   "term": "タイガース",
+   "term": "インスタグラム",
    "article_count": 4
   },
   {
-   "term": "管理体制",
+   "term": "トランプ",
    "article_count": 4
   },
   {
-   "term": "注意喚起",
+   "term": "視聴者",
    "article_count": 4
   },
   {
-   "term": "ヤクルト",
+   "term": "国際的",
    "article_count": 4
   },
   {
-   "term": "情報漏",
+   "term": "評価",
+   "article_count": 4
+  },
+  {
+   "term": "音楽",
+   "article_count": 4
+  },
+  {
+   "term": "紹介",
+   "article_count": 4
+  },
+  {
+   "term": "表現",
+   "article_count": 4
+  },
+  {
+   "term": "言葉",
+   "article_count": 4
+  },
+  {
+   "term": "一面",
+   "article_count": 4
+  },
+  {
+   "term": "攻撃",
+   "article_count": 4
+  },
+  {
+   "term": "多数",
+   "article_count": 4
+  },
+  {
+   "term": "挑戦",
    "article_count": 4
   },
   {
@@ -467,16 +441,36 @@
    "article_count": 4
   },
   {
-   "term": "勝利",
+   "term": "舞台",
    "article_count": 4
   },
   {
-   "term": "試合",
+   "term": "映像",
    "article_count": 4
+  },
+  {
+   "term": "警察",
+   "article_count": 4
+  },
+  {
+   "term": "政権",
+   "article_count": 4
+  },
+  {
+   "term": "被害",
+   "article_count": 4
+  },
+  {
+   "term": "発売",
+   "article_count": 4
+  },
+  {
+   "term": "ソフトバンク",
+   "article_count": 3
   }
  ],
  "total": 60,
- "readable": 59,
+ "readable": 54,
  "sources": [
   "ITmedia NEWS 最新記事一覧",
   "国内 - Yahoo!ニュース",
@@ -484,7 +478,7 @@
   "エンタメ - Yahoo!ニュース",
   "音楽ナタリー - 最新ニュース",
   "コミックナタリー - 最新ニュース",
-  "はてなブックマーク - 人気エントリー - エンタメ",
+  "お笑いナタリー - 最新ニュース",
   "スポーツ - Yahoo!ニュース",
   "Yahoo!ニュース・トピックス - スポーツ",
   "はてなブックマーク - 人気エントリー - 総合"
@@ -494,98 +488,98 @@
    "title": "NHKニュース",
    "priority": 2,
    "genre": "総合",
-   "last_error": "このMacの中や社内ネットワーク宛のURLは取得できません"
+   "last_error": ""
   },
   {
    "title": "ITmedia NEWS 最新記事一覧",
    "priority": 2,
    "genre": "総合",
-   "last_error": "このMacの中や社内ネットワーク宛のURLは取得できません"
+   "last_error": ""
   },
   {
    "title": "国内 - Yahoo!ニュース",
    "priority": 2,
    "genre": "総合",
-   "last_error": "このMacの中や社内ネットワーク宛のURLは取得できません"
+   "last_error": ""
   },
   {
    "title": "ニュース速報（総合）RSS",
    "priority": 2,
    "genre": "総合",
-   "last_error": "このMacの中や社内ネットワーク宛のURLは取得できません"
+   "last_error": ""
   },
   {
    "title": "トップニュース - Google ニュース",
    "priority": 2,
    "genre": "総合",
-   "last_error": "このMacの中や社内ネットワーク宛のURLは取得できません"
+   "last_error": ""
   },
   {
    "title": "エンタメ - Yahoo!ニュース",
    "priority": 2,
    "genre": "エンタメ",
-   "last_error": "このMacの中や社内ネットワーク宛のURLは取得できません"
+   "last_error": ""
   },
   {
    "title": "Yahoo!ニュース・トピックス - エンタメ",
    "priority": 2,
    "genre": "エンタメ",
-   "last_error": "このMacの中や社内ネットワーク宛のURLは取得できません"
+   "last_error": ""
   },
   {
    "title": "音楽ナタリー - 最新ニュース",
    "priority": 2,
    "genre": "エンタメ",
-   "last_error": "このMacの中や社内ネットワーク宛のURLは取得できません"
+   "last_error": ""
   },
   {
    "title": "映画ナタリー - 最新ニュース",
    "priority": 2,
    "genre": "エンタメ",
-   "last_error": "このMacの中や社内ネットワーク宛のURLは取得できません"
+   "last_error": ""
   },
   {
    "title": "コミックナタリー - 最新ニュース",
    "priority": 2,
    "genre": "エンタメ",
-   "last_error": "このMacの中や社内ネットワーク宛のURLは取得できません"
+   "last_error": ""
   },
   {
    "title": "お笑いナタリー - 最新ニュース",
    "priority": 2,
    "genre": "エンタメ",
-   "last_error": "このMacの中や社内ネットワーク宛のURLは取得できません"
+   "last_error": ""
   },
   {
    "title": "はてなブックマーク - 人気エントリー - エンタメ",
    "priority": 2,
    "genre": "エンタメ",
-   "last_error": "このMacの中や社内ネットワーク宛のURLは取得できません"
+   "last_error": ""
   },
   {
    "title": "スポーツ - Yahoo!ニュース",
    "priority": 2,
    "genre": "話題",
-   "last_error": "このMacの中や社内ネットワーク宛のURLは取得できません"
+   "last_error": ""
   },
   {
    "title": "Yahoo!ニュース・トピックス - スポーツ",
    "priority": 2,
    "genre": "話題",
-   "last_error": "このMacの中や社内ネットワーク宛のURLは取得できません"
+   "last_error": ""
   },
   {
    "title": "はてなブックマーク - 人気エントリー - 総合",
    "priority": 2,
    "genre": "話題",
-   "last_error": "このMacの中や社内ネットワーク宛のURLは取得できません"
+   "last_error": ""
   }
  ],
- "generated_at": "2026-10-09T18:55:57.022490+00:00",
+ "generated_at": "2026-10-10T00:12:51.775472+00:00",
  "pages": {
   "総合": 24,
   "エンタメ": 20,
   "話題": 16
  },
- "build": "20261010035557"
+ "build": "20261010091251"
 }
