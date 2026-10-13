@@ -140,8 +140,8 @@
     if (API.isStatic) return Promise.resolve(null);
 
     return API.getStatus().then(function (status) {
-      if (!status.ollama.running || !status.ollama.model_ready) {
-        notify("要約はいまできません", status.ollama.detail);
+      if (!status.ai.ready) {
+        notify("要約はいまできません", status.ai.detail);
       } else {
         clearNotices();
       }

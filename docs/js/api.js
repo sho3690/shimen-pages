@@ -65,9 +65,8 @@
       return applyReadState(await response.json());
     },
 
-    // サーバーが無いので、Ollamaの状態もWi-Fi名も確かめようがない
-    getStatus: async () => ({ ollama: { running: true, model_ready: true },
-                              wifi: null, static: true }),
+    // サーバーが無いので、Claudeのログイン状態もWi-Fi名も確かめようがない
+    getStatus: async () => ({ ai: { ready: true }, wifi: null, static: true }),
 
     markRead: async function (id) { rememberRead(id); },
 
