@@ -9,39 +9,32 @@
     "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
   -webkit-text-size-adjust: 100%;
 
-  /* --- 原色（家のスケール） --- */
-  --color-neutral-50:  #f8f9fa;
-  --color-neutral-100: #e9ecef;
-  --color-neutral-200: #dee2e6;
-  --color-neutral-300: #ced4da;
-  --color-neutral-400: #adb5bd;
-  --color-neutral-600: #6c757d;
-  --color-neutral-700: #495057;
-  --color-neutral-800: #343a40;
-  --color-neutral-900: #212529;
-  --color-blue-950: #03045e;
-  --color-blue-900: #023e8a;
-  --color-blue-700: #0077b6;
-  --color-blue-600: #0096c7;
-  --color-blue-300: #48cae4;
-  --color-blue-200: #90e0ef;
-  --color-blue-50:  #caf0f8;
-
-  /* --- 意味色（白い紙面） --- */
-  --color-background: var(--color-neutral-50);     /* 机 */
-  --color-surface: #ffffff;                        /* 紙 */
-  --color-surface-muted: var(--color-neutral-100);
-  --color-text-primary: var(--color-neutral-900);
-  --color-text-secondary: var(--color-neutral-700);
-  --color-text-muted: var(--color-neutral-600);
-  --color-border: var(--color-neutral-200);
-  --color-border-strong: var(--color-neutral-300);
-  --color-border-input: var(--color-neutral-600);  /* 枠で識別する部品は 3:1 が要る */
-  --color-primary: var(--color-blue-900);
-  --color-primary-hover: var(--color-blue-950);
+  /* --- 色 ---
+     2026-10-13: 「つまらない。もっとカラフルに」との依頼で、参考画像
+     （青灰色の机に白いカード、朱の差し色、分野ごとの色）に合わせて刷新。
+     家のデザインシステム（青1色）とは意図して違えている。
+     文字に使う色は、置く地の上で 4.5:1 以上を計算で確かめてある */
+  --color-background: #e4e9f2;     /* 机。カードを浮かせる青灰色 */
+  --color-surface: #ffffff;        /* カード */
+  --color-surface-muted: #f1f4f9;
+  --color-text-primary: #1b1f2a;
+  --color-text-secondary: #4a5163;
+  --color-text-muted: #646c7f;     /* 白の上だけで使う（机の上では 4.32 で足りない） */
+  --color-border: #e3e7ef;
+  --color-border-strong: #cdd3df;
+  --color-border-input: #7a8296;   /* 枠で識別する部品は 3:1 が要る（白の上 3.85） */
+  --color-primary: #c2410c;        /* 朱。ボタン・リンク（白の上 5.18） */
+  --color-primary-hover: #9a3412;
+  --color-primary-strong: #9a3412; /* 机の上に置く朱の文字（机の上 6.00） */
   --color-on-primary: #ffffff;
-  --color-primary-muted: var(--color-blue-50);
-  --color-focus-ring: var(--color-blue-600);
+  --color-primary-muted: #fff1e8;
+  --color-focus-ring: #3446c7;
+  /* 面の色。分野名の文字と、選んだタブの地に使う（白い文字が 5.4〜6.3 で読める） */
+  --color-genre-general: #c62828;
+  --color-genre-ent: #b0207a;
+  --color-genre-buzz: #0f766e;
+  --color-on-genre: #ffffff;
+  --color-ink-blue: #3446c7;
   --color-error: #b42318;
   --color-error-muted: #fef3f2;
   --color-warning: #b54708;
@@ -55,8 +48,11 @@
   --btn-danger-fg: var(--color-error);
   --btn-danger-hover-bg: color-mix(in srgb, var(--color-error) 8%, transparent);
   --btn-danger-active-bg: color-mix(in srgb, var(--color-error) 10%, transparent);
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-sm: 0 1px 2px rgba(27, 31, 42, 0.06);
+  --shadow-card: 0 1px 2px rgba(27, 31, 42, 0.05), 0 6px 16px rgba(27, 31, 42, 0.06);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-page: 0 12px 32px rgba(15, 20, 35, 0.18);   /* めくっている紙の影 */
+  --color-shade: #000000;                               /* めくる紙が傾くほど暗くなる */
 
   /* --- 型 --- */
   --font-size-xs: 0.75rem;
@@ -83,8 +79,9 @@
   --space-16: 4rem;
 
   --radius-sm: 0.375rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 0.75rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-card: 1.25rem;
   --tap: 2.75rem;               /* 44pt */
   --width-readable: 45rem;       /* 720px */
   --width-wide: 75rem;           /* 1200px */
@@ -96,61 +93,75 @@
 
 /* 黒い紙面。OSの設定に従うときと、画面のボタンで選んだとき（html[data-theme]）の
    両方で同じ配色にする。トークンを変えるときは、下の2ブロックを同時に直すこと。
-   色は家の neutral / blue スケールだけを使う（新しい色相を作らない）。 */
+   色付きの文字は明るく持ち上げ、カードの上で 7:1 前後にしてある。 */
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --color-background: #000000;
-    --color-surface: var(--color-neutral-900);
-    --color-surface-muted: var(--color-neutral-800);
-    --color-text-primary: var(--color-neutral-50);
-    --color-text-secondary: var(--color-neutral-200);
-    --color-text-muted: var(--color-neutral-400);
-    --color-border: var(--color-neutral-700);
-    --color-border-strong: var(--color-neutral-600);
-    --color-border-input: var(--color-neutral-600);
-    --color-primary: var(--color-blue-300);
-    --color-primary-hover: var(--color-blue-200);
-    --color-on-primary: var(--color-neutral-900);
-    --color-primary-muted: var(--color-neutral-800);
-    --color-focus-ring: var(--color-blue-300);
+    --color-background: #0e121b;
+    --color-surface: #191f2c;
+    --color-surface-muted: #222a3a;
+    --color-text-primary: #f2f4f8;
+    --color-text-secondary: #c3c9d6;
+    --color-text-muted: #9aa3b5;
+    --color-border: #2c3445;
+    --color-border-strong: #3b4558;
+    --color-border-input: #7d879b;
+    --color-primary: #ff8a5c;
+    --color-primary-hover: #ffa580;
+    --color-primary-strong: #ff8a5c;
+    --color-on-primary: #111521;
+    --color-primary-muted: #3a2418;
+    --color-focus-ring: #93a5ff;
+    --color-genre-general: #ff8a80;
+    --color-genre-ent: #ff8cc6;
+    --color-genre-buzz: #4fd1c1;
+    --color-on-genre: #111521;
+    --color-ink-blue: #93a5ff;
     --color-alert-error-bg: var(--color-error);
     --color-alert-error-text: #ffffff;
-    --color-alert-warning-bg: var(--color-neutral-800);
+    --color-alert-warning-bg: var(--color-surface-muted);
     --color-alert-warning-text: var(--color-warning-muted);
     --btn-danger-bg: var(--color-error);
     --btn-danger-fg: #ffffff;
     --btn-danger-hover-bg: color-mix(in srgb, var(--color-error) 92%, #ffffff);
     --btn-danger-active-bg: color-mix(in srgb, var(--color-error) 90%, #ffffff);
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.6);
+    --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.5);
     --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.7);
   }
 }
 
 :root[data-theme="dark"] {
-  --color-background: #000000;
-  --color-surface: var(--color-neutral-900);
-  --color-surface-muted: var(--color-neutral-800);
-  --color-text-primary: var(--color-neutral-50);
-  --color-text-secondary: var(--color-neutral-200);
-  --color-text-muted: var(--color-neutral-400);
-  --color-border: var(--color-neutral-700);
-  --color-border-strong: var(--color-neutral-600);
-  --color-border-input: var(--color-neutral-600);
-  --color-primary: var(--color-blue-300);
-  --color-primary-hover: var(--color-blue-200);
-  --color-on-primary: var(--color-neutral-900);
-  --color-primary-muted: var(--color-neutral-800);
-  --color-focus-ring: var(--color-blue-300);
+  --color-background: #0e121b;
+  --color-surface: #191f2c;
+  --color-surface-muted: #222a3a;
+  --color-text-primary: #f2f4f8;
+  --color-text-secondary: #c3c9d6;
+  --color-text-muted: #9aa3b5;
+  --color-border: #2c3445;
+  --color-border-strong: #3b4558;
+  --color-border-input: #7d879b;
+  --color-primary: #ff8a5c;
+  --color-primary-hover: #ffa580;
+  --color-primary-strong: #ff8a5c;
+  --color-on-primary: #111521;
+  --color-primary-muted: #3a2418;
+  --color-focus-ring: #93a5ff;
+  --color-genre-general: #ff8a80;
+  --color-genre-ent: #ff8cc6;
+  --color-genre-buzz: #4fd1c1;
+  --color-on-genre: #111521;
+  --color-ink-blue: #93a5ff;
   --color-alert-error-bg: var(--color-error);
   --color-alert-error-text: #ffffff;
-  --color-alert-warning-bg: var(--color-neutral-800);
+  --color-alert-warning-bg: var(--color-surface-muted);
   --color-alert-warning-text: var(--color-warning-muted);
   --btn-danger-bg: var(--color-error);
   --btn-danger-fg: #ffffff;
   --btn-danger-hover-bg: color-mix(in srgb, var(--color-error) 92%, #ffffff);
   --btn-danger-active-bg: color-mix(in srgb, var(--color-error) 90%, #ffffff);
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.6);
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.5);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.7);
 }
 
@@ -162,8 +173,8 @@
 
 body {
   margin: 0;
-  /* どの画面幅でも紙が画面いっぱい。版面の幅は paper.css の .paper が決める */
-  background: var(--color-surface);
+  /* 青灰色の机の上に白いカードを並べる。版面の幅は paper.css の .paper が決める */
+  background: var(--color-background);
   color: var(--color-text-primary);
   line-height: var(--line-height-normal);
   /* ノッチとホームバーを避ける */
@@ -173,6 +184,8 @@ body {
     env(safe-area-inset-bottom)
     env(safe-area-inset-left);
   overscroll-behavior-y: contain;
+  /* 横の2本指スワイプを「ページを戻る」ではなく、面めくりに使う */
+  overscroll-behavior-x: none;
 }
 
 :focus-visible {
@@ -247,7 +260,7 @@ body {
 
 .btn--quiet {
   background: transparent;
-  color: var(--color-primary);
+  color: var(--color-primary-strong);
 }
 
 .btn--quiet:hover { background: color-mix(in srgb, var(--color-primary) 8%, transparent); }
@@ -345,15 +358,146 @@ body {
   font-variant-numeric: tabular-nums;
 }
 
-/* --- 紙面の下の操作と注記 --- */
+/* --- 設定（歯車）とそのメニュー ---
+   ふだんは題字の右上にある（render.js が移す）。紙面を読めなかったときだけ、
+   ページの右上の .corner に残る */
 
-.paper-foot {
+.corner {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: var(--space-2);
-  padding: var(--space-6) var(--space-4) 0;
+  justify-content: flex-end;
+  padding: var(--space-4) var(--space-4) 0;
 }
+
+.corner[hidden] { display: none; }
+
+.menu-anchor {
+  position: relative;
+  flex: none;
+}
+
+.icon {
+  flex: none;
+  width: 1.375rem;
+  height: 1.375rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.icon--fill { fill: currentColor; stroke: none; }
+
+/* 丸い歯車のボタン。タブと同じ白い地に薄い影 */
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--tap);
+  height: var(--tap);
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  transition:
+    color var(--dur-short) var(--ease-standard),
+    background-color var(--dur-short) var(--ease-standard),
+    transform 100ms var(--ease-standard);
+}
+
+.icon-btn:hover {
+  color: var(--color-text-primary);
+  background: color-mix(in srgb, var(--color-surface) 92%, var(--color-text-primary));
+}
+
+.icon-btn:active { transform: scale(0.94); }
+
+.icon-btn[aria-expanded="true"] {
+  color: var(--color-text-primary);
+  background: var(--color-surface-muted);
+}
+
+/* 開くと歯車が少し回る（押したことが手応えとして分かる） */
+.icon-btn__gear { transition: transform var(--dur-medium) var(--ease-standard); }
+.icon-btn[aria-expanded="true"] .icon-btn__gear { transform: rotate(60deg); }
+
+/* メニュー。歯車から生えるように、右上を起点に広がる */
+.menu {
+  position: absolute;
+  top: calc(100% + var(--space-2));
+  right: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  min-width: 15rem;
+  padding: var(--space-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-md);
+  transform-origin: top right;
+  opacity: 0;
+  transform: translateY(-0.25rem) scale(0.96);
+  visibility: hidden;
+  pointer-events: none;
+  /* 閉じるときは素早く。消え終わってから操作と読み上げの対象から外す */
+  transition:
+    opacity 120ms var(--ease-standard),
+    transform 120ms var(--ease-standard),
+    visibility 0s linear 120ms;
+}
+
+.menu[data-open] {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+  pointer-events: auto;
+  transition:
+    opacity var(--dur-short) var(--ease-standard),
+    transform var(--dur-medium) var(--ease-standard),
+    visibility 0s;
+}
+
+.menu__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  width: 100%;
+  min-height: 3rem;
+  padding: 0 var(--space-3);
+  border: 0;
+  border-radius: var(--radius-md);
+  background: transparent;
+  color: var(--color-text-primary);
+  font: inherit;
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  text-align: left;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  transition: background-color var(--dur-short) var(--ease-standard);
+}
+
+.menu__item .icon { color: var(--color-text-secondary); }
+
+.menu__item:hover { background: var(--color-surface-muted); }
+
+.menu__item:active {
+  background: color-mix(in srgb, var(--color-surface-muted) 85%, var(--color-text-primary));
+}
+
+/* 角の丸い枠の内側に輪を描く（外に出すとメニューの縁で切れる） */
+.menu__item:focus-visible { outline-offset: -2px; }
+
+/* --- 紙面の下の注記 --- */
 
 .footnote {
   max-width: var(--width-readable);
@@ -454,10 +598,11 @@ body {
   white-space: nowrap;
 }
 
+/* 面のラベルは面の色（paper.css の .genre--*）。薄い地に濃い文字 */
 .feed-row__badge--page {
   border-color: transparent;
-  background: var(--color-primary-muted);
-  color: var(--color-primary);
+  background: color-mix(in srgb, var(--genre, var(--color-primary)) 10%, var(--color-surface));
+  color: var(--genre, var(--color-primary));
 }
 
 .sheet__note {
@@ -490,5 +635,6 @@ body {
     animation: none !important;
     scroll-behavior: auto !important;
   }
-  .btn:active { transform: none; }
+  .btn:active,
+  .icon-btn:active { transform: none; }
 }

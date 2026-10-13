@@ -1,103 +1,130 @@
-/* 紙面レイアウト。新聞の一面の作法を、画面の幅に合わせて組み替える。
+/* 紙面レイアウト。青灰色の机の上に、角の丸い白いカードを並べる。
 
-   1. 面（総合・エンタメ・話題）はタブで切り替え、一度に1面だけ見せる
-   2. 各面の1本目をトップ記事として大きく組み、右に「この面の記事」を置く
-   3. 残りの記事は、広い画面では2段組、スマホでは1段で縦に並べる
-   4. 罫は1px。題字の下だけ二重罫で新聞の顔を作る
-   机の上に紙を置く形はやめ、画面全体を紙にして版面の幅（1200px）で揃える。 */
+   1. 面（総合・エンタメ・話題）はタブで切り替え、一度に1面だけ見せる。面ごとに色がある
+   2. 各面の1本目をトップ記事として、大きな絵の上に白い紙を重ねて組む
+   3. 残りの記事はカード。左上に小さな絵、広い画面では2段組、スマホでは1段
+   4. 絵は記事の見出しから決まる幾何学模様（render.js の artNode）。写真は使わない
+   2026-10-13: 参考画像（白いカードと朱の差し色）に合わせて、罫線の新聞からカードへ刷新。
+   2026-10-14: 上から 題字 → きょうの言葉 → きょうのサマリー → 面のタブ → 要約 の順に。
+               「この面の記事」と「次の面へ」を外し、設定は題字の右上の歯車にしまった。 */
 
 .paper {
   --paper-pad: var(--space-4);
-  --paper-gap: var(--space-8);
+  --paper-gap: var(--space-4);
   max-width: calc(var(--width-wide) + 2 * var(--paper-pad));
   margin: 0 auto;
   padding: 0 var(--paper-pad) var(--space-12);
 }
 
 @media (min-width: 600px) {
-  .paper { --paper-pad: var(--space-6); }
+  .paper { --paper-pad: var(--space-6); --paper-gap: var(--space-5); }
 }
 
 @media (min-width: 840px) {
-  .paper { --paper-pad: var(--space-8); --paper-gap: var(--space-12); }
+  .paper { --paper-pad: var(--space-8); --paper-gap: var(--space-6); }
 }
 
-/* ===== 題字 ===== */
+/* 面の色。分野名・選んだタブ・出典の印に使う */
+.panel--general, .tab--general, .genre--general { --genre: var(--color-genre-general); }
+.panel--ent, .tab--ent, .genre--ent { --genre: var(--color-genre-ent); }
+.panel--buzz, .tab--buzz, .genre--buzz { --genre: var(--color-genre-buzz); }
 
-.masthead {
-  padding: var(--space-8) 0 var(--space-4);
-  border-bottom: 3px double var(--color-text-primary);
+/* ===== カード ===== */
+
+.card {
+  background: var(--color-surface);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
 }
 
-.masthead__row {
+/* 記事の絵。飾りなので読み上げない。枠いっぱいに切り抜いて敷く */
+.art {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.thumb {
+  flex: none;
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+/* ===== 題字 =====
+   2026-10-14: 題字を英語の「Front Page」に。上の帯に日付と歯車、その下に題字を大きく、
+   刊と本数を一行で（iPhoneの「大きな見出し」の組み方）。題字だけ新聞らしいセリフ体にする。
+   iPhone・MacのSafariでは New York（Appleの標準のセリフ体）になる */
+
+.masthead { padding: var(--space-4) 0 var(--space-6); }
+
+@media (min-width: 840px) {
+  .masthead { padding: var(--space-8) 0 var(--space-8); }
+}
+
+.masthead__bar {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: var(--space-3) var(--space-6);
+  gap: var(--space-4);
+  min-height: var(--tap);
 }
 
-.masthead__name {
+/* 机の上に置くので濃い朱（白の上用の朱では 4.25 で足りない） */
+.masthead__date {
   margin: 0;
-  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Yu Mincho", "YuMincho",
-    "Noto Serif JP", serif;
-  font-size: var(--font-size-3xl);
-  font-weight: 600;
-  line-height: 1;
-  letter-spacing: 0.16em;
-}
-
-@media (min-width: 840px) {
-  .masthead { padding-top: var(--space-10); }
-  .masthead__name { font-size: 2.5rem; }
-}
-
-.masthead__strip {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-1);
+  min-width: 0;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  line-height: var(--line-height-normal);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-primary-strong);
   font-variant-numeric: tabular-nums;
 }
 
-.masthead__date {
-  margin: 0;
-  font-size: var(--font-size-sm);
-  font-weight: 600;
-  line-height: var(--line-height-normal);
+.masthead__name {
+  margin: var(--space-1) 0 0;
+  font-family: ui-serif, "New York", "Iowan Old Style", "Hoefler Text", Georgia,
+    "Times New Roman", serif;
+  font-size: 2.75rem;
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
   color: var(--color-text-primary);
 }
+
+@media (min-width: 840px) {
+  .masthead__name { font-size: 3.5rem; }
+}
+
+.masthead__nowrap,
+.masthead__part { white-space: nowrap; }
 
 .masthead__line {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: var(--space-2);
-  margin: 0;
-  font-size: var(--font-size-xs);
+  margin: var(--space-3) 0 0;
+  font-size: var(--font-size-sm);
   line-height: var(--line-height-normal);
   color: var(--color-text-secondary);
+  font-variant-numeric: tabular-nums;
 }
 
-@media (min-width: 600px) {
-  .masthead__strip { align-items: flex-end; text-align: right; }
-  .masthead__line { justify-content: flex-end; }
-}
-
-.masthead__edition {
-  padding: 0 var(--space-2);
-  border: 1px solid var(--color-text-secondary);
-  border-radius: var(--radius-sm);
-  font-weight: 600;
+.masthead__line strong {
+  font-weight: 700;
   color: var(--color-text-primary);
-  white-space: nowrap;
 }
 
-/* ===== 面のタブ ===== */
+.masthead__edition { font-weight: 600; }
+
+.masthead__sep { margin: 0 0.25em; }
+
+/* ===== 面のタブ。選んだ面は面の色で塗る ===== */
 
 .tabs {
   display: flex;
   gap: var(--space-2);
-  border-bottom: 1px solid var(--color-border);
   scroll-margin-top: var(--space-4);
 }
 
@@ -110,12 +137,11 @@
   flex: 1 1 0;
   min-width: 0;
   min-height: 3.5rem;
-  margin: 0 0 -1px;
-  padding: var(--space-3) var(--space-3) var(--space-3);
+  padding: var(--space-2) var(--space-4);
   border: 0;
-  border-bottom: 3px solid transparent;
-  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
-  background: transparent;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
   color: var(--color-text-secondary);
   font: inherit;
   text-align: left;
@@ -124,7 +150,7 @@
   transition:
     color var(--dur-short) var(--ease-standard),
     background-color var(--dur-short) var(--ease-standard),
-    border-color var(--dur-short) var(--ease-standard);
+    transform 100ms var(--ease-standard);
 }
 
 @media (min-width: 600px) {
@@ -133,64 +159,137 @@
     flex-direction: row;
     align-items: baseline;
     gap: var(--space-2);
-    padding: var(--space-4) var(--space-5);
+    padding: var(--space-3) var(--space-6);
   }
 }
 
 .tab:hover {
   color: var(--color-text-primary);
-  background: color-mix(in srgb, var(--color-text-primary) 8%, transparent);
+  background: color-mix(in srgb, var(--color-surface) 92%, var(--genre));
 }
 
-.tab:active { background: color-mix(in srgb, var(--color-text-primary) 10%, transparent); }
-
-.tab:focus-visible { outline-offset: -2px; }
+.tab:active { transform: scale(0.98); }
 
 .tab[aria-selected="true"] {
-  color: var(--color-primary);
-  border-bottom-color: var(--color-primary);
+  background: var(--genre);
+  color: var(--color-on-genre);
+}
+
+.tab[aria-selected="true"]:hover {
+  background: color-mix(in srgb, var(--genre) 90%, var(--color-text-primary));
 }
 
 .tab__name {
   font-size: var(--font-size-lg);
-  font-weight: 700;
+  font-weight: 800;
   line-height: var(--line-height-tight);
   letter-spacing: 0.04em;
 }
 
 .tab__count {
   font-size: var(--font-size-xs);
-  font-weight: 500;
+  font-weight: 600;
   color: var(--color-text-muted);
   font-variant-numeric: tabular-nums;
 }
 
-.tab[aria-selected="true"] .tab__count { color: var(--color-text-secondary); }
+.tab[aria-selected="true"] .tab__count { color: inherit; }
 
 /* ===== 1面ぶん ===== */
 
-.panel { padding-top: var(--space-8); }
+/* 縦のスクロールとピンチ拡大はブラウザに任せ、横の動きだけを flip.js が受け取る */
+.panel {
+  position: relative;
+  padding-top: var(--space-6);
+  touch-action: pan-y pinch-zoom;
+}
 
 .panel[hidden] { display: none; }
 
-@media (min-width: 840px) {
-  .panel { padding-top: var(--space-10); }
+/* ===== めくり（flip.js） =====
+   めくっている間だけ、面を机の色の紙にして影を付ける。次の面は画面に固定して下に敷く */
+.panel--turning {
+  background: var(--color-background);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-page);
+  backface-visibility: hidden;
+  will-change: transform;
 }
 
-/* --- 面のトップ + この面の記事 --- */
+.panel--turning::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: var(--color-shade);
+  opacity: var(--flip-shade, 0);
+  pointer-events: none;
+}
 
-.front {
-  display: grid;
-  gap: var(--space-8);
-  padding-bottom: var(--space-8);
-  border-bottom: 1px solid var(--color-text-primary);
+.panel--stage {
+  position: fixed;
+  overflow: hidden;
+  background: var(--color-background);
+}
+
+/* めくる紙は、手前に起き上がっても紙面の頭（題字・きょうの言葉・タブ）の下をくぐる
+   （アプリの見出しのように手前に残す）。机の色で塗って、紙が透けて見えないようにする。
+   左右の余白まで塗るため外へ広げる。歯車のメニューもこの重なりの中で一番上に出る */
+.paper-head {
+  position: relative;
+  z-index: 4;
+  margin-inline: calc(-1 * var(--paper-pad));
+  padding-inline: var(--paper-pad);
+  background: var(--color-background);
 }
 
 @media (min-width: 840px) {
-  .front {
-    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
-    gap: var(--paper-gap);
-    padding-bottom: var(--space-10);
+  .panel { padding-top: var(--space-8); }
+}
+
+/* --- 面のトップ --- */
+
+.lead,
+.story { scroll-margin-top: var(--space-4); }
+
+/* トップ記事。上に大きな絵を敷き、その上に白い紙を少し重ねる */
+.lead { overflow: hidden; }
+
+.lead__art {
+  position: relative;
+  height: 11rem;
+  background: var(--color-surface-muted);
+}
+
+.lead__art .art { position: absolute; inset: 0; }
+
+@media (min-width: 600px) {
+  .lead__art { height: 15rem; }
+}
+
+.lead__body {
+  position: relative;
+  margin-top: calc(-1 * var(--space-6));
+  padding: var(--space-6) var(--space-5) var(--space-6);
+  border-radius: var(--radius-card) var(--radius-card) 0 0;
+  background: var(--color-surface);
+}
+
+@media (min-width: 600px) {
+  .lead__body { padding: var(--space-8) var(--space-8) var(--space-8); }
+}
+
+/* 広い画面では、絵を左に、要約を右に置く横長のトップにする（本文の行が長くなりすぎない） */
+@media (min-width: 840px) {
+  .lead {
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+  }
+  .lead__art { height: auto; min-height: 20rem; }
+  .lead__body {
+    align-self: center;
+    margin-top: 0;
+    border-radius: 0;
   }
 }
 
@@ -198,27 +297,29 @@
 .story__kicker {
   display: flex;
   align-items: baseline;
-  gap: var(--space-3);
-  margin: 0 0 var(--space-3);
-  font-size: var(--font-size-xs);
-  font-weight: 700;
+  gap: var(--space-2);
+  margin: 0 0 var(--space-2);
+  font-size: var(--font-size-sm);
+  font-weight: 800;
   line-height: var(--line-height-normal);
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
 }
+
+.lead__field,
+.story__field { color: var(--genre); }
 
 .lead__num,
 .story__num {
+  font-size: var(--font-size-xs);
+  font-weight: 600;
   color: var(--color-text-muted);
   font-variant-numeric: tabular-nums;
 }
 
-.lead__field,
-.story__field { color: var(--color-primary); }
-
 .lead__title {
-  margin: 0 0 var(--space-5);
+  margin: 0 0 var(--space-4);
   font-size: var(--font-size-2xl);
-  font-weight: 700;
+  font-weight: 800;
   line-height: var(--line-height-tight);
   letter-spacing: 0.01em;
   color: var(--color-text-primary);
@@ -232,10 +333,16 @@
 .lead__text,
 .story__text {
   margin: 0;
-  max-width: 40rem;
   font-size: var(--font-size-md);
   line-height: 1.85;
+  color: var(--color-text-secondary);
   overflow-wrap: anywhere;
+}
+
+/* トップの要約は他より一段大きく。紙面の統括にあたる */
+.lead__text {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-primary);
 }
 
 /* 両端揃えは広い画面だけ。スマホ幅では英単語の間が大きく空く */
@@ -244,123 +351,50 @@
   .story__text { text-align: justify; }
 }
 
-/* この面の記事。スマホではトップの下、広い画面では右の欄 */
-.rail {
-  padding-top: var(--space-5);
-  border-top: 1px solid var(--color-border);
+/* --- 残りの記事。カードを並べる --- */
+
+.stories {
+  display: grid;
+  gap: var(--paper-gap);
+  margin-top: var(--paper-gap);
 }
-
-@media (min-width: 840px) {
-  .rail {
-    padding: 0 0 0 var(--space-8);
-    border-top: 0;
-    border-left: 1px solid var(--color-border);
-  }
-}
-
-.rail__label {
-  margin: 0 0 var(--space-2);
-  font-size: var(--font-size-xs);
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  color: var(--color-text-secondary);
-}
-
-.rail__list { margin: 0; padding: 0; list-style: none; }
-
-.rail__list li + li { border-top: 1px solid var(--color-border); }
-
-.rail__link {
-  display: flex;
-  align-items: baseline;
-  gap: var(--space-3);
-  min-height: var(--tap);
-  padding: var(--space-3) var(--space-2);
-  margin: 0 calc(-1 * var(--space-2));
-  border-radius: var(--radius-sm);
-  color: var(--color-text-primary);
-  text-decoration: none;
-  -webkit-tap-highlight-color: transparent;
-  transition:
-    color var(--dur-short) var(--ease-standard),
-    background-color var(--dur-short) var(--ease-standard);
-}
-
-.rail__link:hover {
-  color: var(--color-primary);
-  background: color-mix(in srgb, var(--color-text-primary) 8%, transparent);
-}
-
-.rail__link:hover .rail__title {
-  text-decoration: underline;
-  text-underline-offset: 0.2em;
-}
-
-.rail__link:active { background: color-mix(in srgb, var(--color-text-primary) 10%, transparent); }
-
-.rail__num {
-  flex: none;
-  font-size: var(--font-size-xs);
-  font-weight: 700;
-  color: var(--color-text-muted);
-  font-variant-numeric: tabular-nums;
-}
-
-.rail__title {
-  font-size: var(--font-size-md);
-  font-weight: 600;
-  line-height: var(--line-height-normal);
-  overflow-wrap: anywhere;
-}
-
-/* --- 残りの記事。広い画面では2段組、段の間に縦罫 --- */
-
-.stories { display: grid; }
-
-.story {
-  padding: var(--space-8) 0;
-  scroll-margin-top: var(--space-4);
-}
-
-.story + .story { border-top: 1px solid var(--color-border); }
 
 @media (min-width: 840px) {
   .stories { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
 
-  .story { padding: var(--space-10) 0; }
-
-  .story:nth-child(odd) { padding-right: var(--space-6); }
-
-  .story:nth-child(even) {
-    padding-left: var(--space-6);
-    border-left: 1px solid var(--color-border);
-  }
-
-  .story + .story { border-top: 0; }
-
-  .story:nth-child(n + 3) { border-top: 1px solid var(--color-border); }
-
   /* 本数が奇数の面は、最後の1本を段抜きにして右の段を空けない */
-  .story:last-child:nth-child(odd) {
-    grid-column: 1 / -1;
-    padding-right: 0;
-  }
+  .story:last-child:nth-child(odd) { grid-column: 1 / -1; }
 }
 
+.story { padding: var(--space-5); }
+
+@media (min-width: 600px) {
+  .story { padding: var(--space-6); }
+}
+
+.story__head {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+
+.story__words { min-width: 0; }
+
+.story__head .story__kicker { margin-bottom: var(--space-1); }
+
 .story__title {
-  margin: 0 0 var(--space-4);
+  margin: 0;
   font-size: var(--font-size-xl);
-  font-weight: 700;
+  font-weight: 800;
   line-height: var(--line-height-tight);
   color: var(--color-text-primary);
   overflow-wrap: anywhere;
 }
 
-.lead { scroll-margin-top: var(--space-4); }
+/* ===== 出典。件数だけ見せて畳む。朱の「続きを読む」にあたる ===== */
 
-/* ===== 出典。件数だけ見せて畳む ===== */
-
-.sources { margin-top: var(--space-5); max-width: 40rem; }
+.sources { margin-top: var(--space-4); }
 
 .sources__toggle {
   display: inline-flex;
@@ -369,10 +403,10 @@
   min-height: var(--tap);
   padding: 0 var(--space-3) 0 var(--space-2);
   margin-left: calc(-1 * var(--space-2));
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-md);
   font-size: var(--font-size-sm);
-  font-weight: 600;
-  color: var(--color-text-secondary);
+  font-weight: 700;
+  color: var(--color-primary);
   cursor: pointer;
   list-style: none;
   -webkit-tap-highlight-color: transparent;
@@ -396,20 +430,19 @@
 .sources[open] > .sources__toggle::before { transform: rotate(45deg); }
 
 .sources__toggle:hover {
-  color: var(--color-primary);
-  background: color-mix(in srgb, var(--color-text-primary) 8%, transparent);
+  color: var(--color-primary-hover);
+  background: var(--color-primary-muted);
 }
 
-.sources__toggle:active { background: color-mix(in srgb, var(--color-text-primary) 10%, transparent); }
+.sources__toggle:active { background: color-mix(in srgb, var(--color-primary-muted) 80%, var(--color-primary)); }
 
 .sources__list {
   margin: var(--space-1) 0 0;
   padding: 0;
   list-style: none;
-  border-top: 1px solid var(--color-border);
 }
 
-.sources__list li { border-bottom: 1px solid var(--color-border); }
+.sources__list li + li { border-top: 1px solid var(--color-border); }
 
 .sources__link {
   display: flex;
@@ -417,16 +450,23 @@
   justify-content: center;
   gap: 0.125rem;
   min-height: var(--tap);
-  padding: var(--space-2) 0;
+  padding: var(--space-2) var(--space-3);
+  margin: 0 calc(-1 * var(--space-3));
+  border-radius: var(--radius-md);
   color: var(--color-text-secondary);
   text-decoration: none;
   font-size: var(--font-size-sm);
   line-height: var(--line-height-normal);
   -webkit-tap-highlight-color: transparent;
-  transition: color var(--dur-short) var(--ease-standard);
+  transition:
+    color var(--dur-short) var(--ease-standard),
+    background-color var(--dur-short) var(--ease-standard);
 }
 
-.sources__link:hover { color: var(--color-primary); }
+.sources__link:hover {
+  color: var(--color-text-primary);
+  background: var(--color-surface-muted);
+}
 
 .sources__link:hover .sources__title {
   text-decoration: underline;
@@ -435,42 +475,26 @@
 
 .sources__outlet {
   font-size: var(--font-size-xs);
-  color: var(--color-text-muted);
+  font-weight: 700;
+  color: var(--genre);
 }
 
-/* ===== 次の面へ ===== */
-
-.turn {
-  display: flex;
-  justify-content: flex-end;
-  padding-top: var(--space-6);
-  border-top: 1px solid var(--color-text-primary);
-}
-
-.stories + .turn,
-.front + .turn { margin-top: 0; }
-
-.turn__btn { width: 100%; }
-
-@media (min-width: 600px) {
-  .turn__btn { width: auto; }
-}
-
-/* ===== きょうの言葉（紙面全体から） ===== */
+/* ===== きょうの言葉（紙面全体から）。題字のすぐ下、タブの上 ===== */
 
 .topics {
-  margin-top: var(--space-12);
-  padding-top: var(--space-4);
-  border-top: 1px solid var(--color-text-primary);
+  margin-bottom: var(--space-5);
+  padding: var(--space-6) var(--space-5);
+}
+
+@media (min-width: 600px) {
+  .topics { padding: var(--space-8); }
 }
 
 .topics__title {
   margin: 0 0 var(--space-4);
-  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Yu Mincho", "YuMincho",
-    "Noto Serif JP", serif;
   font-size: var(--font-size-xl);
-  font-weight: 600;
-  letter-spacing: 0.12em;
+  font-weight: 800;
+  line-height: var(--line-height-tight);
 }
 
 /* 渦巻き配置。JSが絶対座標で語を置く。枠の高さは固定 */
@@ -484,23 +508,146 @@
 
 .cloud__word {
   position: absolute;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.25;
   white-space: nowrap;
   letter-spacing: -0.02em;
   color: var(--color-text-secondary);
 }
 
-.cloud--key { color: var(--color-primary); }
-.cloud--main { color: var(--color-text-primary); }
-.cloud--quiet { color: var(--color-text-secondary); }
+.cloud--c0 { color: var(--color-genre-general); }
+.cloud--c1 { color: var(--color-ink-blue); }
+.cloud--c2 { color: var(--color-genre-ent); }
+.cloud--c3 { color: var(--color-genre-buzz); }
+.cloud--c4 { color: var(--color-primary); }
+.cloud--quiet { color: var(--color-text-muted); }
 
-/* ===== 紙面の締め ===== */
+/* ===== きょうのサマリー（紙面全体から数行）。きょうの言葉の下、タブの上 ===== */
+
+.briefing {
+  margin-bottom: var(--space-5);
+  padding: var(--space-6) var(--space-5) var(--space-3);
+}
+
+@media (min-width: 600px) {
+  .briefing { padding: var(--space-8) var(--space-8) var(--space-5); }
+}
+
+.briefing__title {
+  margin: 0 0 var(--space-2);
+  font-size: var(--font-size-xl);
+  font-weight: 800;
+  line-height: var(--line-height-tight);
+}
+
+.briefing__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: point;
+}
+
+.briefing__item + .briefing__item { border-top: 1px solid var(--color-border); }
+
+/* 行の頭に朱の大きな番号。記事へ飛べる行は右に › を付け、押せることを示す */
+.briefing__row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-height: var(--tap);
+  padding: var(--space-3) var(--space-2);
+  margin: 0 calc(-1 * var(--space-2));
+  border-radius: var(--radius-md);
+  color: var(--color-text-primary);
+  text-decoration: none;
+  counter-increment: point;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color var(--dur-short) var(--ease-standard);
+}
+
+.briefing__row::before {
+  content: counter(point);
+  flex: none;
+  width: 1.5rem;
+  font-size: var(--font-size-2xl);
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+  color: var(--color-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+a.briefing__row::after {
+  content: "";
+  flex: none;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin: 0 var(--space-2) 0 var(--space-1);
+  border-right: 2px solid var(--color-text-muted);
+  border-bottom: 2px solid var(--color-text-muted);
+  transform: rotate(-45deg);
+}
+
+a.briefing__row:hover { background: var(--color-surface-muted); }
+
+a.briefing__row:active {
+  background: color-mix(in srgb, var(--color-surface-muted) 80%, var(--genre, var(--color-primary)));
+}
+
+.briefing__words {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.125rem;
+  min-width: 0;
+}
+
+.briefing__genre {
+  font-size: var(--font-size-xs);
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: var(--genre);
+}
+
+.briefing__text {
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+/* 広い画面では、きょうの言葉とサマリーを左右に並べ、高さをそろえる */
+@media (min-width: 840px) {
+  .paper-head--pair {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: var(--paper-gap);
+  }
+  .paper-head--pair > .masthead,
+  .paper-head--pair > .tabs { grid-column: 1 / -1; }
+  .paper-head--pair > .topics {
+    display: flex;
+    flex-direction: column;
+  }
+  .paper-head--pair .cloud {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+/* サマリーから記事へ着いたとき、縁を面の色で一度だけ光らせる */
+@keyframes arrive {
+  0%, 35% { box-shadow: 0 0 0 3px var(--genre), var(--shadow-card); }
+  100% { box-shadow: 0 0 0 3px transparent, var(--shadow-card); }
+}
+
+.card.is-arrived { animation: arrive 1.8s var(--ease-standard); }
+
+/* ===== 紙面の締め（机の上に置くので補助色） ===== */
 
 .colophon {
-  margin-top: var(--space-10);
-  padding-top: var(--space-4);
-  border-top: 1px solid var(--color-border);
+  margin-top: var(--space-8);
+  padding: 0 var(--space-2);
   font-size: var(--font-size-xs);
   line-height: var(--line-height-relaxed);
   color: var(--color-text-secondary);
@@ -520,12 +667,13 @@
 .empty__title {
   margin: 0 0 var(--space-2);
   font-size: var(--font-size-xl);
-  font-weight: 600;
+  font-weight: 700;
   color: var(--color-text-primary);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .tab, .rail__link, .sources__toggle, .sources__toggle::before, .sources__link {
+  .tab, .briefing__row, .sources__toggle, .sources__toggle::before, .sources__link {
     transition: none;
   }
+  .tab:active { transform: none; }
 }

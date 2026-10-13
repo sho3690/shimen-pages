@@ -1,6 +1,6 @@
 {
-  "name": "紙面",
-  "short_name": "紙面",
+  "name": "Front Page",
+  "short_name": "Front Page",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

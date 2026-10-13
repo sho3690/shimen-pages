@@ -15,6 +15,10 @@
   const addFeedError = document.getElementById("add-feed-error");
   const addFeedSubmit = document.getElementById("add-feed-submit");
   const wifiEl = document.getElementById("wifi");
+  const cornerEl = document.getElementById("corner");
+  const settingsControl = document.getElementById("settings-control");
+  const menuBtn = document.getElementById("open-menu");
+  const menuEl = document.getElementById("settings-menu");
 
   let stream = null;
 
@@ -25,6 +29,8 @@
   };
 
   const handlers = {
+    // 題字の右上に置く歯車。描き直しても同じ部品を移すので、開閉の状態が崩れない
+    settingsControl: settingsControl,
     onRead: function (id) { API.markRead(id).catch(function () {}); },
     onRetry: function (id) {
       API.resummarize(id)
@@ -84,7 +90,12 @@
       if (API.isStatic) {
         data.emptyHint = "Macで紙面を作ってから、もう一度開いてください。";
       }
+      // 描き直すと歯車が一度外れてフォーカスが消えるので、持っていたら戻す
+      const hadFocus = settingsControl.contains(document.activeElement);
       paperEl.replaceChildren(Render.paper(data, handlers));
+      if (hadFocus) menuBtn.focus({ preventScroll: true });
+      // 歯車が題字へ移ったら、予備の置き場（ページの右上）は畳む
+      cornerEl.hidden = !cornerEl.contains(settingsControl);
       return data;
     }).catch(function (e) {
       notify("紙面を読み込めませんでした", e.message, "error");
@@ -236,9 +247,71 @@
     buildBtn.addEventListener("click", startBuild);
   }
 
+  /* 設定（歯車）のメニュー。2026-10-14 に、紙面の下に並べていた
+     「フィードを見る」「白い紙面にする」をここへしまった。
+     開いたら最初の項目に移り、↑↓で項目を移る。Esc・外を押す・Tabで閉じる */
+  function menuItems() {
+    return [].slice.call(menuEl.querySelectorAll('[role="menuitem"]'));
+  }
+
+  function isMenuOpen() { return menuEl.hasAttribute("data-open"); }
+
+  function openMenu() {
+    menuEl.setAttribute("data-open", "");
+    menuBtn.setAttribute("aria-expanded", "true");
+    menuItems()[0].focus();
+  }
+
+  function closeMenu(returnFocus) {
+    if (!isMenuOpen()) return;
+    menuEl.removeAttribute("data-open");
+    menuBtn.setAttribute("aria-expanded", "false");
+    if (returnFocus) menuBtn.focus();
+  }
+
+  menuBtn.addEventListener("click", function () {
+    if (isMenuOpen()) closeMenu(true);
+    else openMenu();
+  });
+
+  menuBtn.addEventListener("keydown", function (event) {
+    if (event.key !== "ArrowDown" && event.key !== "ArrowUp") return;
+    event.preventDefault();
+    openMenu();
+    if (event.key === "ArrowUp") menuItems().slice(-1)[0].focus();
+  });
+
+  menuEl.addEventListener("keydown", function (event) {
+    const items = menuItems();
+    const at = items.indexOf(document.activeElement);
+    let next = null;
+    if (event.key === "ArrowDown") next = (at + 1) % items.length;
+    if (event.key === "ArrowUp") next = (at + items.length - 1) % items.length;
+    if (event.key === "Home") next = 0;
+    if (event.key === "End") next = items.length - 1;
+    if (next !== null) {
+      event.preventDefault();
+      items[next].focus();
+      return;
+    }
+    if (event.key === "Escape") {
+      event.preventDefault();
+      closeMenu(true);
+    } else if (event.key === "Tab") {
+      closeMenu(false);
+    }
+  });
+
+  // メニューの外を押したら閉じる。押した先の操作はそのまま通す
+  document.addEventListener("pointerdown", function (event) {
+    if (isMenuOpen() && !settingsControl.contains(event.target)) closeMenu(false);
+  });
+
   /* 紙面の色（白/黒）。ふだんはOSの設定に従い、ボタンで選んだら
      その色を覚える（このブラウザの中だけに保存。外部には送らない）。 */
-  const themeBtn = document.getElementById("toggle-theme");
+  const themeLabel = document.getElementById("toggle-theme-label");
+  const themeIconLight = document.getElementById("theme-icon-light");
+  const themeIconDark = document.getElementById("theme-icon-dark");
   const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
   function currentTheme() {
@@ -248,21 +321,25 @@
   }
 
   function refreshTheme() {
-    themeBtn.textContent =
-      currentTheme() === "dark" ? "白い紙面にする" : "黒い紙面にする";
-    // iOSのステータスバーの色も紙面に合わせる
-    const bar = currentTheme() === "dark" ? "#212529" : "#ffffff";
+    const dark = currentTheme() === "dark";
+    themeLabel.textContent = dark ? "白い紙面にする" : "黒い紙面にする";
+    // 行き先の色の印（白=太陽、黒=月）
+    themeIconLight.style.display = dark ? "" : "none";
+    themeIconDark.style.display = dark ? "none" : "";
+    // iOSのステータスバーの色も紙面の机の色に合わせる（hig.css の --color-background）
+    const bar = dark ? "#0e121b" : "#e4e9f2";
     [].forEach.call(
       document.querySelectorAll('meta[name="theme-color"]'),
       function (meta) { meta.content = bar; }
     );
   }
 
-  themeBtn.addEventListener("click", function () {
+  document.getElementById("toggle-theme").addEventListener("click", function () {
     const next = currentTheme() === "dark" ? "light" : "dark";
     document.documentElement.dataset.theme = next;
     try { localStorage.setItem("shimen-theme", next); } catch (e) {}
     refreshTheme();
+    closeMenu(true);
   });
 
   // OS側の設定が変わったとき、ボタンの文言を追従させる
@@ -272,12 +349,15 @@
   refreshTheme();
 
   document.getElementById("open-settings").addEventListener("click", function () {
+    closeMenu(false);
     settingsEl.hidden = false;
+    document.getElementById("close-settings").focus();
     loadFeeds();
   });
 
   document.getElementById("close-settings").addEventListener("click", function () {
     settingsEl.hidden = true;
+    menuBtn.focus({ preventScroll: true });
     if (!API.isStatic) loadPaper();
   });
 

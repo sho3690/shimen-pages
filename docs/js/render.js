@@ -29,25 +29,161 @@
     return "要約はまだありません";
   }
 
-  /* 西暦から元号を出す。令和は1989年ではなく2019年5月1日から */
-  function eraYear(date) {
-    const reiwaStart = new Date(2019, 4, 1);
-    if (date < reiwaStart) return "";
-    const year = date.getFullYear() - 2018;
-    return "令和" + (year === 1 ? "元" : year) + "年";
-  }
+  /* 題字まわりは英語（2026-10-14: 「紙面」の題字がださいとの依頼で英語に）。
+     題字の上に日付、下に刊と本数。面のタブや本文は日本語のまま */
+  const MASTHEAD_TITLE = "Front Page";
+  const DAYS_EN = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  const MONTHS_EN = ["January", "February", "March", "April", "May", "June", "July",
+    "August", "September", "October", "November", "December"];
 
   /* 朝刊・夕刊。新聞の刊種の目安に合わせて15時で切り替える */
   function editionName(date) {
-    return date.getHours() < 15 ? "朝刊" : "夕刊";
+    return date.getHours() < 15 ? "Morning Edition" : "Evening Edition";
   }
 
-  function formatIssueDate(date) {
-    const days = ["日", "月", "火", "水", "木", "金", "土"];
-    const era = eraYear(date);
-    return date.getFullYear() + "年" + (era ? "（" + era + "）" : "") +
-      (date.getMonth() + 1) + "月" + date.getDate() + "日　" +
-      days[date.getDay()] + "曜日";
+  /* 「Wednesday, October 14, 2026」。狭い画面で折り返すときは
+     曜日の後ろで切り、「2026」だけが次の行に落ちないようにする */
+  function issueDateNode(date) {
+    const time = el("time");
+    time.dateTime = isoDay(date);
+    time.appendChild(document.createTextNode(DAYS_EN[date.getDay()] + ", "));
+    time.appendChild(el("span", "masthead__nowrap",
+      MONTHS_EN[date.getMonth()] + " " + date.getDate() + ", " + date.getFullYear()));
+    return time;
+  }
+
+  /* 機械が読む日付（time要素の datetime）。端末の時刻で数える */
+  function isoDay(date) {
+    return date.getFullYear() + "-" + ("0" + (date.getMonth() + 1)).slice(-2) + "-" +
+      ("0" + date.getDate()).slice(-2);
+  }
+
+  /* 「60 stories」。数だけ太くする */
+  function countPart(count, one, many) {
+    const part = el("span", "masthead__part");
+    part.appendChild(el("strong", null, String(count)));
+    part.appendChild(document.createTextNode(" " + (count === 1 ? one : many)));
+    return part;
+  }
+
+  /* ===== 記事の絵 =====
+     紙面には記事の写真が無い（ニュースサイトの写真を公開ページに載せると
+     著作権の問題になる）。代わりに、見出しから決まる幾何学模様を描く。
+     同じ記事はいつも同じ絵になる。飾りなので読み上げない（aria-hidden）。
+     色は面ごとに変える: 総合=青と朱、エンタメ=桃と紫、話題=碧と黄 */
+
+  const SVG_NS = "http://www.w3.org/2000/svg";
+
+  const PALETTES = {
+    general: ["#3a63f3", "#ff6b4a", "#ffc23d", "#1d2130", "#cfe0ff", "#ffffff"],
+    ent: ["#ff5c93", "#7b5cff", "#ffc23d", "#1d2130", "#ffe1ec", "#ffffff"],
+    buzz: ["#23b5a6", "#ffc23d", "#ff6b4a", "#3a63f3", "#d3f5ea", "#1d2130"],
+  };
+
+  const GENRE_KEYS = { "総合": "general", "エンタメ": "ent", "話題": "buzz" };
+
+  function genreKey(name) { return GENRE_KEYS[name] || "general"; }
+
+  function hashString(text) {   // FNV-1a
+    let h = 2166136261;
+    for (let i = 0; i < text.length; i++) {
+      h ^= text.charCodeAt(i);
+      h = Math.imul(h, 16777619);
+    }
+    return h >>> 0;
+  }
+
+  function randomFrom(seed) {   // mulberry32。同じ種なら同じ並び
+    let a = seed;
+    return function () {
+      a = (a + 0x6d2b79f5) >>> 0;
+      let t = a;
+      t = Math.imul(t ^ (t >>> 15), t | 1);
+      t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+  }
+
+  function svgNode(tag, attrs) {
+    const node = document.createElementNS(SVG_NS, tag);
+    Object.keys(attrs).forEach(function (k) { node.setAttribute(k, attrs[k]); });
+    return node;
+  }
+
+  /* cols×rows のマス目に、円・扇・半円・三角・縞・輪を1つずつ置く */
+  function artNode(seedText, genre, cols, rows) {
+    const S = 60;
+    const colors = PALETTES[genre] || PALETTES.general;
+    const rnd = randomFrom(hashString(seedText || "紙面"));
+    function pick(avoid) {
+      let c = colors[Math.floor(rnd() * colors.length)];
+      while (c === avoid) c = colors[Math.floor(rnd() * colors.length)];
+      return c;
+    }
+
+    const svg = svgNode("svg", {
+      class: "art",
+      viewBox: "0 0 " + cols * S + " " + rows * S,
+      preserveAspectRatio: "xMidYMid slice",
+      "aria-hidden": "true",
+      focusable: "false",
+    });
+
+    for (let y = 0; y < rows; y++) {
+      for (let x = 0; x < cols; x++) {
+        const ox = x * S;
+        const oy = y * S;
+        const bg = pick();
+        const fg = pick(bg);
+        const turn = 90 * Math.floor(rnd() * 4);
+        const cell = svgNode("g", {
+          transform: "rotate(" + turn + " " + (ox + S / 2) + " " + (oy + S / 2) + ")",
+        });
+        // 隣のマスに少しはみ出させて、拡大したときの境目の細い線を消す
+        cell.appendChild(svgNode("rect", {
+          x: ox - 0.5, y: oy - 0.5, width: S + 1, height: S + 1, fill: bg,
+        }));
+
+        const kind = Math.floor(rnd() * 6);
+        if (kind === 0) {
+          cell.appendChild(svgNode("circle", { cx: ox + S / 2, cy: oy + S / 2, r: S * 0.34, fill: fg }));
+        } else if (kind === 1) {
+          cell.appendChild(svgNode("path", {
+            d: "M" + ox + " " + oy + "H" + (ox + S) + "A" + S + " " + S + " 0 0 1 " + ox + " " + (oy + S) + "Z",
+            fill: fg,
+          }));
+        } else if (kind === 2) {
+          cell.appendChild(svgNode("path", {
+            d: "M" + ox + " " + (oy + S) + "A" + S / 2 + " " + S / 2 + " 0 0 1 " + (ox + S) + " " + (oy + S) + "Z",
+            fill: fg,
+          }));
+        } else if (kind === 3) {
+          cell.appendChild(svgNode("polygon", {
+            points: ox + "," + oy + " " + (ox + S) + "," + oy + " " + ox + "," + (oy + S),
+            fill: fg,
+          }));
+        } else if (kind === 4) {
+          for (let k = 0; k < 3; k++) {
+            cell.appendChild(svgNode("rect", {
+              x: ox, y: oy + S * (0.12 + 0.3 * k), width: S, height: S * 0.14, fill: fg,
+            }));
+          }
+        } else {
+          cell.appendChild(svgNode("circle", {
+            cx: ox + S / 2, cy: oy + S / 2, r: S * 0.26,
+            fill: "none", stroke: fg, "stroke-width": S * 0.14,
+          }));
+        }
+        svg.appendChild(cell);
+      }
+    }
+    return svg;
+  }
+
+  function thumbNode(seedText, genre) {
+    const box = el("span", "thumb");
+    box.appendChild(artNode(seedText, genre, 2, 2));
+    return box;
   }
 
   function articleNode(article, handlers) {
@@ -111,23 +247,44 @@
 
   function storyNum(index) { return ("0" + (index + 1)).slice(-2); }
 
-  /* 総括の1段落 = 紙面の1記事。kind は "lead"（面のトップ）か "story" */
-  function storyNode(section, index, kind) {
-    const block = el("article", kind);
+  function seedOf(section) { return section.subtitle || section.text || ""; }
+
+  /* 総括の1段落 = 紙面の1記事。kind は "lead"（面のトップ）か "story"。
+     トップは上に大きな絵、その上に白い紙を重ねる。ほかは左上に小さな絵 */
+  function storyNode(section, index, kind, genre) {
+    const block = el("article", kind + " card");
     block.id = storyId(index);
 
     const kicker = el("p", kind + "__kicker");
-    kicker.appendChild(el("span", kind + "__num", storyNum(index)));
     if (section.field) kicker.appendChild(el("span", kind + "__field", section.field));
-    block.appendChild(kicker);
+    kicker.appendChild(el("span", kind + "__num", storyNum(index)));
 
-    if (section.subtitle) {
-      block.appendChild(el(kind === "lead" ? "h2" : "h3", kind + "__title", section.subtitle));
+    const title = section.subtitle
+      ? el(kind === "lead" ? "h2" : "h3", kind + "__title", section.subtitle)
+      : null;
+
+    let body = block;
+    if (kind === "lead") {
+      const art = el("div", "lead__art");
+      art.appendChild(artNode(seedOf(section), genre, 6, 3));
+      block.appendChild(art);
+      body = el("div", "lead__body");
+      block.appendChild(body);
+      body.appendChild(kicker);
+      if (title) body.appendChild(title);
+    } else {
+      const head = el("div", "story__head");
+      head.appendChild(thumbNode(seedOf(section), genre));
+      const words = el("div", "story__words");
+      words.appendChild(kicker);
+      if (title) words.appendChild(title);
+      head.appendChild(words);
+      block.appendChild(head);
     }
-    block.appendChild(el("p", kind + "__text", section.text));
 
+    body.appendChild(el("p", kind + "__text", section.text));
     if (section.sources && section.sources.length) {
-      block.appendChild(sourceList(section.sources));
+      body.appendChild(sourceList(section.sources));
     }
     return block;
   }
@@ -138,44 +295,65 @@
     node.scrollIntoView({ block: "start", behavior: reduce ? "auto" : "smooth" });
   }
 
-  /* 面のトップの右に置く「この面の記事」。押すとその記事へ飛ぶ */
-  function railNode(items) {
-    const rail = el("nav", "rail");
-    rail.setAttribute("aria-label", "この面の記事");
-    rail.appendChild(el("p", "rail__label", "この面の記事"));
-    const list = el("ol", "rail__list");
-    items.forEach(function (item) {
-      const li = el("li");
-      const link = el("a", "rail__link");
-      link.href = "#" + storyId(item.index);
-      link.appendChild(el("span", "rail__num", storyNum(item.index)));
-      link.appendChild(el("span", "rail__title", item.section.subtitle || item.section.field || "記事"));
-      link.addEventListener("click", function (event) {
-        const target = document.getElementById(storyId(item.index));
-        if (!target) return;
-        event.preventDefault();
-        scrollToNode(target);
-      });
-      li.appendChild(link);
-      list.appendChild(li);
+  /* 記事に着いたことが分かるように、縁を面の色で一度だけ光らせる。
+     読み上げとキーボードのために、その記事へフォーカスも移す */
+  function arriveAt(node) {
+    scrollToNode(node);
+    node.tabIndex = -1;
+    node.focus({ preventScroll: true });
+    node.classList.remove("is-arrived");
+    void node.offsetWidth;   // 同じ記事に続けて着いたときも光り直す
+    node.classList.add("is-arrived");
+    node.addEventListener("animationend", function done() {
+      node.classList.remove("is-arrived");
+      node.removeEventListener("animationend", done);
     });
-    rail.appendChild(list);
-    return rail;
   }
 
-  /* 1面ぶん。1本目をトップに大きく、残りを段組みで並べる */
-  function pagePanel(items) {
-    const panel = el("div", "panel");
+  /* きょうのサマリー（2026-10-14〜）。紙面全体から数行の要点。
+     記事が分かる行は押せて、その記事の面に切り替えて記事まで送る */
+  function briefingNode(points, goToStory) {
+    const card = el("section", "briefing card");
+    card.setAttribute("aria-labelledby", "briefing-title");
+    const title = el("h2", "briefing__title", "きょうのサマリー");
+    title.id = "briefing-title";
+    card.appendChild(title);
 
-    const front = el("div", "front");
-    front.appendChild(storyNode(items[0].section, items[0].index, "lead"));
-    if (items.length > 1) front.appendChild(railNode(items.slice(1)));
-    panel.appendChild(front);
+    const list = el("ol", "briefing__list");
+    points.forEach(function (point) {
+      const linked = typeof point.story === "number";
+      const row = el(linked ? "a" : "div", "briefing__row");
+      if (point.genre) row.classList.add("genre--" + genreKey(point.genre));
+      const words = el("span", "briefing__words");
+      if (point.genre) words.appendChild(el("span", "briefing__genre", point.genre));
+      words.appendChild(el("span", "briefing__text", point.text));
+      row.appendChild(words);
+      if (linked) {
+        row.href = "#" + storyId(point.story);
+        row.addEventListener("click", function (event) {
+          event.preventDefault();
+          goToStory(point.story);
+        });
+      }
+      const item = el("li", "briefing__item");
+      item.appendChild(row);
+      list.appendChild(item);
+    });
+    card.appendChild(list);
+    return card;
+  }
+
+  /* 1面ぶん。1本目をトップに大きく、残りを段組みで並べる。
+     2026-10-14: トップの横の「この面の記事」（目次）はいらないとの依頼で外した */
+  function pagePanel(items, genre) {
+    const panel = el("div", "panel panel--" + genre);
+
+    panel.appendChild(storyNode(items[0].section, items[0].index, "lead", genre));
 
     if (items.length > 1) {
       const rest = el("div", "stories");
       items.slice(1).forEach(function (item) {
-        rest.appendChild(storyNode(item.section, item.index, "story"));
+        rest.appendChild(storyNode(item.section, item.index, "story", genre));
       });
       panel.appendChild(rest);
     }
@@ -186,11 +364,10 @@
      語の大きさを記事の本数に比例させ、中心から渦巻きに詰めて置く。
      置き場所は总当たりの衝突判定で決める（外部ライブラリは使わない）。 */
 
-  /* 語の強弱は大きさに加えて色でも示す。上位3語は青、次の半分は本文の色、
-     残りは控えめな色。色相を増やさず、家の3色で段を作る */
+  /* 語の強弱は大きさで示し、色は面の色を順に回して雲を賑やかにする。
+     下位の語は控えめな色にして、上位の語が先に目に入るようにする */
   function cloudTierClass(rank, total) {
-    if (rank < 3) return "cloud--key";
-    if (rank < Math.ceil(total / 2)) return "cloud--main";
+    if (rank < Math.ceil(total / 2)) return "cloud--c" + (rank % 5);
     return "cloud--quiet";
   }
 
@@ -281,7 +458,7 @@
   });
 
   function topicStrip(topicList) {
-    const panel = el("section", "topics");
+    const panel = el("section", "topics card");
     panel.setAttribute("aria-labelledby", "topics-title");
     const head = el("h2", "topics__title", "きょうの言葉");
     head.id = "topics-title";
@@ -325,7 +502,7 @@
     }
 
     pageOrder.forEach(function (name, i) {
-      const tab = el("button", "tab");
+      const tab = el("button", "tab tab--" + genreKey(name));
       tab.type = "button";
       tab.id = "tab-" + i;
       tab.setAttribute("role", "tab");
@@ -334,7 +511,11 @@
       if (counts && counts[name]) {
         tab.appendChild(el("span", "tab__count", counts[name] + "本"));
       }
-      tab.addEventListener("click", function () { select(i, false); });
+      // めくる処理（flip.js）があれば、本のようにめくってから切り替える
+      tab.addEventListener("click", function () {
+        if (nav.turnTo) nav.turnTo(i);
+        else select(i, false);
+      });
       tab.addEventListener("keydown", function (event) {
         var next = null;
         if (event.key === "ArrowRight") next = (i + 1) % pageOrder.length;
@@ -353,25 +534,6 @@
     return nav;
   }
 
-  /* 面の最後に置く「次の面へ」。最後の面では最初の面へ戻す */
-  function nextPageLink(pageOrder, counts, i, tabsNode) {
-    const next = (i + 1) % pageOrder.length;
-    const name = pageOrder[next];
-    const wrap = el("div", "turn");
-    const btn = el("button", "btn btn--secondary turn__btn");
-    btn.type = "button";
-    btn.textContent = next === 0
-      ? name + "面へ戻る"
-      : "次の面　" + name + (counts && counts[name] ? "（" + counts[name] + "本）" : "") + "　→";
-    btn.addEventListener("click", function () {
-      tabsNode.select(next, false);
-      scrollToNode(tabsNode);
-      document.getElementById("tab-" + next).focus({ preventScroll: true });
-    });
-    wrap.appendChild(btn);
-    return wrap;
-  }
-
   function paper(data, handlers) {
     const root = document.createDocumentFragment();
     const issued = data.generated_at ? new Date(data.generated_at) : new Date();
@@ -384,45 +546,57 @@
     });
     const showPages = pageOrder.length >= 2;
 
+    // 紙面の頭。題字・きょうの言葉・面のタブをひとまとめにして、
+    // めくる紙がこの下をくぐるようにする（アプリの見出しのように手前に残す）
+    const head = el("div", "paper-head");
+
     // --- 題字 ---
     const masthead = el("header", "masthead");
 
-    // 題字を左、発行日・刊種・本数を右に。題字まわりを低く保って、本文を早く見せる
-    const row = el("div", "masthead__row");
-    row.appendChild(el("h1", "masthead__name", "紙面"));
-    const strip = el("div", "masthead__strip");
-    strip.appendChild(el("p", "masthead__date", formatIssueDate(issued)));
-    const line = el("p", "masthead__line");
-    line.appendChild(el("span", "masthead__edition", editionName(issued)));
-    strip.appendChild(line);
-    row.appendChild(strip);
-    masthead.appendChild(row);
+    // 上の帯に日付（小見出し）と設定（歯車）、その下に題字を大きく、刊と本数を一行で。
+    // iPhoneの「大きな見出し」の画面と同じ組み方。
+    // 歯車は app.js が持っている部品を借りてここへ移す（描き直しても同じ部品のまま）。
+    // 英語の部分には lang="en" を付け、読み上げを英語の発音にする
+    const bar = el("div", "masthead__bar");
+    const dateLine = el("p", "masthead__date");
+    dateLine.lang = "en";
+    dateLine.appendChild(issueDateNode(issued));
+    bar.appendChild(dateLine);
+    if (handlers && handlers.settingsControl) bar.appendChild(handlers.settingsControl);
+    masthead.appendChild(bar);
 
-    // 本数と配信元の数を一行で。面ごとの本数はタブに出す（タブが無い紙面ではここに出す）。
-    // 配信元の名前を全部並べるとフィードが10本を超えたあたりで5行になり、
-    // 題字まわりが読めなくなった。面の本数が無い古い紙面データでは、従来どおり名前を並べる
-    const pageNames = Object.keys(data.pages || {});
-    let meta = "全" + data.total + "本";
-    if (pageNames.length) {
-      if (!showPages) {
-        meta += "　" + pageNames.map(function (name) {
-          return name + data.pages[name];
-        }).join("・");
-      }
-      const sourceCount = data.sources ? data.sources.length : 0;
-      if (sourceCount) meta += "　配信元" + sourceCount;
-    } else if (data.sources && data.sources.length) {
-      meta += "　" + data.sources.join("・");
+    const name = el("h1", "masthead__name", MASTHEAD_TITLE);
+    name.lang = "en";
+    masthead.appendChild(name);
+
+    // 刊・本数・配信元の数を一行で。面ごとの本数はタブに出す。
+    // 配信元は名前を並べると5行になったので数だけ（2026-09-20〜）。
+    // 区切りの中黒は文字で入れる（読み上げで「Edition60」とつながらないように）
+    const line = el("p", "masthead__line");
+    line.lang = "en";
+    const parts = [el("span", "masthead__part masthead__edition", editionName(issued))];
+    if (typeof data.total === "number") parts.push(countPart(data.total, "story", "stories"));
+    const sourceCount = data.sources ? data.sources.length : 0;
+    if (sourceCount) parts.push(countPart(sourceCount, "source", "sources"));
+    parts.forEach(function (part, i) {
+      if (i) line.appendChild(el("span", "masthead__sep", " · "));
+      line.appendChild(part);
+    });
+    masthead.appendChild(line);
+    head.appendChild(masthead);
+    root.appendChild(head);
+
+    // 2026-10-14: きょうの言葉を一番上（題字のすぐ下）へ。その下に面ごとの要約
+    if (data.topics && data.topics.length) {
+      head.appendChild(topicStrip(data.topics));
     }
-    line.appendChild(el("span", "masthead__meta", meta));
-    root.appendChild(masthead);
 
     // --- きょうの要点。これが紙面の本体 ---
     if (!data.digest || !data.digest.length) {
       const empty = el("div", "empty");
       empty.appendChild(el("p", "empty__title", "まだ紙面がありません"));
       empty.appendChild(el("p", null, data.emptyHint ||
-        "右上の「フィード」からニュースサイトのRSSを登録して、" +
+        "右上の歯車から「フィードを見る」を開いてニュースサイトのRSSを登録し、" +
         "「今日の紙面をつくる」を押してください。"));
       root.appendChild(empty);
       return root;
@@ -436,7 +610,7 @@
     });
 
     const panels = groups.map(function (items, i) {
-      const panel = pagePanel(items);
+      const panel = pagePanel(items, showPages ? genreKey(pageOrder[i]) : "general");
       if (showPages) {
         panel.id = "panel-" + i;
         panel.setAttribute("role", "tabpanel");
@@ -445,20 +619,45 @@
       return panel;
     });
 
-    if (showPages) {
-      const tabsNode = pageTabs(pageOrder, data.pages || {}, panels);
-      root.appendChild(tabsNode);
-      panels.forEach(function (panel, i) {
-        panel.appendChild(nextPageLink(pageOrder, data.pages || {}, i, tabsNode));
-        root.appendChild(panel);
-      });
-      tabsNode.select(pageFromHash(pageOrder.length), false);
-    } else {
-      root.appendChild(panels[0]);
+    let tabsNode = null;
+
+    // サマリーの行から記事へ。別の面の記事なら面を切り替えてから送る。
+    // 面の頭が画面に見えているときは本のようにめくり、見えていなければ
+    // （サマリーを読んでいる位置では、めくる紙が画面の外になる）切り替えるだけ
+    function goToStory(index) {
+      const target = document.getElementById(storyId(index));
+      if (!target) return;
+      const page = panels.indexOf(target.closest(".panel"));
+      if (!tabsNode || page < 0 || page === currentPage) {
+        arriveAt(target);
+        return;
+      }
+      const shownTop = panels[currentPage].getBoundingClientRect().top;
+      if (tabsNode.turnTo && shownTop < window.innerHeight * 0.6) {
+        tabsNode.turnTo(page, function () { arriveAt(target); });
+      } else {
+        tabsNode.select(page, false);
+        arriveAt(target);
+      }
     }
 
-    if (data.topics && data.topics.length) {
-      root.appendChild(topicStrip(data.topics));
+    // 2026-10-14: きょうの言葉の次に、きょうのサマリー。その下に面のタブ
+    const briefing = data.briefing && data.briefing.length
+      ? briefingNode(data.briefing, goToStory)
+      : null;
+    if (briefing) head.appendChild(briefing);
+    // 広い画面では、きょうの言葉とサマリーを左右に並べる
+    if (briefing && head.querySelector(".topics")) head.classList.add("paper-head--pair");
+
+    // 2026-10-14: 面の最後の「次の面へ」ボタンは外した。タブ・スワイプ・キーでめくる
+    if (showPages) {
+      tabsNode = pageTabs(pageOrder, data.pages || {}, panels);
+      head.appendChild(tabsNode);
+      panels.forEach(function (panel) { root.appendChild(panel); });
+      tabsNode.select(pageFromHash(pageOrder.length), false);
+      if (window.Flip) window.Flip.attach(tabsNode, panels);
+    } else {
+      root.appendChild(panels[0]);
     }
 
     // --- 締め ---
@@ -491,7 +690,8 @@
 
       // どの面に載るか（名前とURLから自動で決まる）
       if (feed.genre) {
-        row.appendChild(el("span", "feed-row__badge feed-row__badge--page", feed.genre));
+        row.appendChild(el("span",
+          "feed-row__badge feed-row__badge--page genre--" + genreKey(feed.genre), feed.genre));
       }
 
       if (feed.readonly) {
