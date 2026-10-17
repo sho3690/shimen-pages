@@ -1,12 +1,14 @@
 /* 紙面レイアウト。青灰色の机の上に、角の丸い白いカードを並べる。
 
-   1. 面（総合・エンタメ・話題）はタブで切り替え、一度に1面だけ見せる。面ごとに色がある
-   2. 各面の1本目をトップ記事として、大きな絵の上に白い紙を重ねて組む
-   3. 残りの記事はカード。左上に小さな絵、広い画面では2段組、スマホでは1段
-   4. 絵は記事の見出しから決まる幾何学模様（render.js の artNode）。写真は使わない
+   1. 上から 題字 → きょうの言葉 → きょうのサマリー → 記事。全部を1本のスクロールで読む
+   2. 1本目をトップ記事として、大きな絵の上に白い紙を重ねて組む
+   3. 残りの記事は文字だけのカード。広い画面では2段組、スマホでは1段
+   4. 記事ごとに面（総合・エンタメ・話題）の色があり、分野名をその色で書く
+   5. 絵は記事の見出しから決まる幾何学模様（render.js の artNode）。写真は使わない
    2026-10-13: 参考画像（白いカードと朱の差し色）に合わせて、罫線の新聞からカードへ刷新。
-   2026-10-14: 上から 題字 → きょうの言葉 → きょうのサマリー → 面のタブ → 要約 の順に。
-               「この面の記事」と「次の面へ」を外し、設定は題字の右上の歯車にしまった。 */
+   2026-10-14: 「この面の記事」と「次の面へ」を外し、設定は題字の右上の歯車にしまった。
+   2026-10-18: 面のタブとめくりをやめて1本のスクロールに。見出しの横の小さな絵を外した。
+               題字をニュースアプリの組み方（印＋題字、その下に灰色の日付）に。 */
 
 .paper {
   --paper-pad: var(--space-4);
@@ -24,10 +26,10 @@
   .paper { --paper-pad: var(--space-8); --paper-gap: var(--space-6); }
 }
 
-/* 面の色。分野名・選んだタブ・出典の印に使う */
-.panel--general, .tab--general, .genre--general { --genre: var(--color-genre-general); }
-.panel--ent, .tab--ent, .genre--ent { --genre: var(--color-genre-ent); }
-.panel--buzz, .tab--buzz, .genre--buzz { --genre: var(--color-genre-buzz); }
+/* 面の色。分野名・出典の印・サマリーから着いたときの縁に使う */
+.genre--general { --genre: var(--color-genre-general); }
+.genre--ent { --genre: var(--color-genre-ent); }
+.genre--buzz { --genre: var(--color-genre-buzz); }
 
 /* ===== カード ===== */
 
@@ -44,19 +46,10 @@
   height: 100%;
 }
 
-.thumb {
-  flex: none;
-  display: block;
-  width: 3.5rem;
-  height: 3.5rem;
-  border-radius: var(--radius-md);
-  overflow: hidden;
-}
-
 /* ===== 題字 =====
-   2026-10-14: 題字を英語の「Front Page」に。上の帯に日付と歯車、その下に題字を大きく、
-   刊と本数を一行で（iPhoneの「大きな見出し」の組み方）。題字だけ新聞らしいセリフ体にする。
-   iPhone・MacのSafariでは New York（Appleの標準のセリフ体）になる */
+   2026-10-18: ニュースアプリ（Apple News）の組み方に。アイコンと同じ印＋題字を黒、
+   その下に日付を同じ大きさ・同じ太さの灰色で重ね、曜日と本数を小さく1行。
+   書体は本文と同じ（iPhoneでは San Francisco）。新聞風のセリフ体と大文字の帯はやめた */
 
 .masthead { padding: var(--space-4) 0 var(--space-6); }
 
@@ -72,182 +65,55 @@
   min-height: var(--tap);
 }
 
-/* 机の上に置くので濃い朱（白の上用の朱では 4.25 で足りない） */
+.masthead__brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-width: 0;
+}
+
+/* 印は題字の文字の高さにそろえる（文字を大きくする設定でも一緒に大きくなる） */
+.masthead__mark {
+  flex: none;
+  display: block;
+  width: 2.125rem;
+  height: 2.125rem;
+}
+
+.masthead__name,
 .masthead__date {
   margin: 0;
-  min-width: 0;
-  font-size: var(--font-size-xs);
-  font-weight: 700;
-  line-height: var(--line-height-normal);
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--color-primary-strong);
-  font-variant-numeric: tabular-nums;
+  font-size: 2.125rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  white-space: nowrap;
 }
 
-.masthead__name {
-  margin: var(--space-1) 0 0;
-  font-family: ui-serif, "New York", "Iowan Old Style", "Hoefler Text", Georgia,
-    "Times New Roman", serif;
-  font-size: 2.75rem;
-  font-weight: 800;
-  line-height: 1.05;
-  letter-spacing: -0.02em;
-  color: var(--color-text-primary);
-}
+.masthead__name { color: var(--color-text-primary); }
+
+/* 日付は大きな文字なので 3:1 で足りる（机の上 3.16、黒い紙面 5.07） */
+.masthead__date { color: var(--color-text-date); }
 
 @media (min-width: 840px) {
-  .masthead__name { font-size: 3.5rem; }
+  .masthead__mark { width: 2.75rem; height: 2.75rem; }
+  .masthead__name,
+  .masthead__date { font-size: 2.75rem; }
+  .masthead__line { font-size: var(--font-size-md); }
 }
-
-.masthead__nowrap,
-.masthead__part { white-space: nowrap; }
 
 .masthead__line {
   margin: var(--space-3) 0 0;
   font-size: var(--font-size-sm);
   line-height: var(--line-height-normal);
   color: var(--color-text-secondary);
-  font-variant-numeric: tabular-nums;
 }
 
-.masthead__line strong {
-  font-weight: 700;
-  color: var(--color-text-primary);
-}
+/* 紙面の頭（題字・きょうの言葉・サマリー）。広い画面では言葉とサマリーを左右に並べる */
+.paper-head > .topics,
+.paper-head > .briefing { margin-bottom: var(--paper-gap); }
 
-.masthead__edition { font-weight: 600; }
-
-.masthead__sep { margin: 0 0.25em; }
-
-/* ===== 面のタブ。選んだ面は面の色で塗る ===== */
-
-.tabs {
-  display: flex;
-  gap: var(--space-2);
-  scroll-margin-top: var(--space-4);
-}
-
-.tab {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 0.125rem;
-  flex: 1 1 0;
-  min-width: 0;
-  min-height: 3.5rem;
-  padding: var(--space-2) var(--space-4);
-  border: 0;
-  border-radius: var(--radius-lg);
-  background: var(--color-surface);
-  box-shadow: var(--shadow-sm);
-  color: var(--color-text-secondary);
-  font: inherit;
-  text-align: left;
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-  transition:
-    color var(--dur-short) var(--ease-standard),
-    background-color var(--dur-short) var(--ease-standard),
-    transform 100ms var(--ease-standard);
-}
-
-@media (min-width: 600px) {
-  .tab {
-    flex: none;
-    flex-direction: row;
-    align-items: baseline;
-    gap: var(--space-2);
-    padding: var(--space-3) var(--space-6);
-  }
-}
-
-.tab:hover {
-  color: var(--color-text-primary);
-  background: color-mix(in srgb, var(--color-surface) 92%, var(--genre));
-}
-
-.tab:active { transform: scale(0.98); }
-
-.tab[aria-selected="true"] {
-  background: var(--genre);
-  color: var(--color-on-genre);
-}
-
-.tab[aria-selected="true"]:hover {
-  background: color-mix(in srgb, var(--genre) 90%, var(--color-text-primary));
-}
-
-.tab__name {
-  font-size: var(--font-size-lg);
-  font-weight: 800;
-  line-height: var(--line-height-tight);
-  letter-spacing: 0.04em;
-}
-
-.tab__count {
-  font-size: var(--font-size-xs);
-  font-weight: 600;
-  color: var(--color-text-muted);
-  font-variant-numeric: tabular-nums;
-}
-
-.tab[aria-selected="true"] .tab__count { color: inherit; }
-
-/* ===== 1面ぶん ===== */
-
-/* 縦のスクロールとピンチ拡大はブラウザに任せ、横の動きだけを flip.js が受け取る */
-.panel {
-  position: relative;
-  padding-top: var(--space-6);
-  touch-action: pan-y pinch-zoom;
-}
-
-.panel[hidden] { display: none; }
-
-/* ===== めくり（flip.js） =====
-   めくっている間だけ、面を机の色の紙にして影を付ける。次の面は画面に固定して下に敷く */
-.panel--turning {
-  background: var(--color-background);
-  border-radius: var(--radius-card);
-  box-shadow: var(--shadow-page);
-  backface-visibility: hidden;
-  will-change: transform;
-}
-
-.panel--turning::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  background: var(--color-shade);
-  opacity: var(--flip-shade, 0);
-  pointer-events: none;
-}
-
-.panel--stage {
-  position: fixed;
-  overflow: hidden;
-  background: var(--color-background);
-}
-
-/* めくる紙は、手前に起き上がっても紙面の頭（題字・きょうの言葉・タブ）の下をくぐる
-   （アプリの見出しのように手前に残す）。机の色で塗って、紙が透けて見えないようにする。
-   左右の余白まで塗るため外へ広げる。歯車のメニューもこの重なりの中で一番上に出る */
-.paper-head {
-  position: relative;
-  z-index: 4;
-  margin-inline: calc(-1 * var(--paper-pad));
-  padding-inline: var(--paper-pad);
-  background: var(--color-background);
-}
-
-@media (min-width: 840px) {
-  .panel { padding-top: var(--space-8); }
-}
-
-/* --- 面のトップ --- */
+/* --- トップ記事 --- */
 
 .lead,
 .story { scroll-margin-top: var(--space-4); }
@@ -351,7 +217,7 @@
   .story__text { text-align: justify; }
 }
 
-/* --- 残りの記事。カードを並べる --- */
+/* --- 残りの記事。文字だけのカードを並べる --- */
 
 .stories {
   display: grid;
@@ -362,7 +228,7 @@
 @media (min-width: 840px) {
   .stories { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
 
-  /* 本数が奇数の面は、最後の1本を段抜きにして右の段を空けない */
+  /* 本数が奇数のときは、最後の1本を段抜きにして右の段を空けない */
   .story:last-child:nth-child(odd) { grid-column: 1 / -1; }
 }
 
@@ -372,19 +238,8 @@
   .story { padding: var(--space-6); }
 }
 
-.story__head {
-  display: flex;
-  align-items: center;
-  gap: var(--space-4);
-  margin-bottom: var(--space-4);
-}
-
-.story__words { min-width: 0; }
-
-.story__head .story__kicker { margin-bottom: var(--space-1); }
-
 .story__title {
-  margin: 0;
+  margin: 0 0 var(--space-3);
   font-size: var(--font-size-xl);
   font-weight: 800;
   line-height: var(--line-height-tight);
@@ -479,10 +334,9 @@
   color: var(--genre);
 }
 
-/* ===== きょうの言葉（紙面全体から）。題字のすぐ下、タブの上 ===== */
+/* ===== きょうの言葉（紙面全体から）。題字のすぐ下 ===== */
 
 .topics {
-  margin-bottom: var(--space-5);
   padding: var(--space-6) var(--space-5);
 }
 
@@ -522,10 +376,9 @@
 .cloud--c4 { color: var(--color-primary); }
 .cloud--quiet { color: var(--color-text-muted); }
 
-/* ===== きょうのサマリー（紙面全体から数行）。きょうの言葉の下、タブの上 ===== */
+/* ===== きょうのサマリー（紙面全体から数行）。きょうの言葉の下、記事の上 ===== */
 
 .briefing {
-  margin-bottom: var(--space-5);
   padding: var(--space-6) var(--space-5) var(--space-3);
 }
 
@@ -623,8 +476,7 @@ a.briefing__row:active {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     column-gap: var(--paper-gap);
   }
-  .paper-head--pair > .masthead,
-  .paper-head--pair > .tabs { grid-column: 1 / -1; }
+  .paper-head--pair > .masthead { grid-column: 1 / -1; }
   .paper-head--pair > .topics {
     display: flex;
     flex-direction: column;
@@ -672,8 +524,7 @@ a.briefing__row:active {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .tab, .briefing__row, .sources__toggle, .sources__toggle::before, .sources__link {
+  .briefing__row, .sources__toggle, .sources__toggle::before, .sources__link {
     transition: none;
   }
-  .tab:active { transform: none; }
 }

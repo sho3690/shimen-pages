@@ -20,6 +20,7 @@
   --color-text-primary: #1b1f2a;
   --color-text-secondary: #4a5163;
   --color-text-muted: #646c7f;     /* 白の上だけで使う（机の上では 4.32 で足りない） */
+  --color-text-date: #7a8296;      /* 題字の下の大きな日付だけ。大きな文字なので 3:1（机の上 3.16） */
   --color-border: #e3e7ef;
   --color-border-strong: #cdd3df;
   --color-border-input: #7a8296;   /* 枠で識別する部品は 3:1 が要る（白の上 3.85） */
@@ -51,8 +52,6 @@
   --shadow-sm: 0 1px 2px rgba(27, 31, 42, 0.06);
   --shadow-card: 0 1px 2px rgba(27, 31, 42, 0.05), 0 6px 16px rgba(27, 31, 42, 0.06);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
-  --shadow-page: 0 12px 32px rgba(15, 20, 35, 0.18);   /* めくっている紙の影 */
-  --color-shade: #000000;                               /* めくる紙が傾くほど暗くなる */
 
   /* --- 型 --- */
   --font-size-xs: 0.75rem;
@@ -103,6 +102,7 @@
     --color-text-primary: #f2f4f8;
     --color-text-secondary: #c3c9d6;
     --color-text-muted: #9aa3b5;
+    --color-text-date: #7c859a;
     --color-border: #2c3445;
     --color-border-strong: #3b4558;
     --color-border-input: #7d879b;
@@ -138,6 +138,7 @@
   --color-text-primary: #f2f4f8;
   --color-text-secondary: #c3c9d6;
   --color-text-muted: #9aa3b5;
+  --color-text-date: #7c859a;
   --color-border: #2c3445;
   --color-border-strong: #3b4558;
   --color-border-input: #7d879b;

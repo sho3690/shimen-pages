@@ -30,25 +30,18 @@
   }
 
   /* 題字まわりは英語（2026-10-14: 「紙面」の題字がださいとの依頼で英語に）。
-     題字の上に日付、下に刊と本数。面のタブや本文は日本語のまま */
+     2026-10-18: 新聞風のセリフ体・大文字の日付・刊の行が、カードの画面と
+     ちぐはぐだとの指摘で、ニュースアプリ（Apple News）の組み方にそろえた。
+     アイコンの印＋題字を黒、その下に日付を同じ大きさの灰色で、曜日と本数は小さく1行 */
   const MASTHEAD_TITLE = "Front Page";
   const DAYS_EN = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   const MONTHS_EN = ["January", "February", "March", "April", "May", "June", "July",
     "August", "September", "October", "November", "December"];
 
-  /* 朝刊・夕刊。新聞の刊種の目安に合わせて15時で切り替える */
-  function editionName(date) {
-    return date.getHours() < 15 ? "Morning Edition" : "Evening Edition";
-  }
-
-  /* 「Wednesday, October 14, 2026」。狭い画面で折り返すときは
-     曜日の後ろで切り、「2026」だけが次の行に落ちないようにする */
+  /* 「October 18」 */
   function issueDateNode(date) {
-    const time = el("time");
+    const time = el("time", null, MONTHS_EN[date.getMonth()] + " " + date.getDate());
     time.dateTime = isoDay(date);
-    time.appendChild(document.createTextNode(DAYS_EN[date.getDay()] + ", "));
-    time.appendChild(el("span", "masthead__nowrap",
-      MONTHS_EN[date.getMonth()] + " " + date.getDate() + ", " + date.getFullYear()));
     return time;
   }
 
@@ -58,12 +51,18 @@
       ("0" + date.getDate()).slice(-2);
   }
 
-  /* 「60 stories」。数だけ太くする */
-  function countPart(count, one, many) {
-    const part = el("span", "masthead__part");
-    part.appendChild(el("strong", null, String(count)));
-    part.appendChild(document.createTextNode(" " + (count === 1 ? one : many)));
-    return part;
+  function countText(count, one, many) {
+    return count + " " + (count === 1 ? one : many);
+  }
+
+  /* 「Sunday morning · 60 stories from 11 sources」。朝・夕は15時で切り替える */
+  function issueLine(date, total, sourceCount) {
+    let text = DAYS_EN[date.getDay()] + (date.getHours() < 15 ? " morning" : " evening");
+    if (typeof total === "number") {
+      text += " · " + countText(total, "story", "stories");
+      if (sourceCount) text += " from " + countText(sourceCount, "source", "sources");
+    }
+    return text;
   }
 
   /* ===== 記事の絵 =====
@@ -180,10 +179,39 @@
     return svg;
   }
 
-  function thumbNode(seedText, genre) {
-    const box = el("span", "thumb");
-    box.appendChild(artNode(seedText, genre, 2, 2));
-    return box;
+  /* 題字の左の印。ホーム画面のアイコン（icons/icon.svg）と同じ絵を小さく描く。
+     影は小さいと見えないので省く。飾りなので読み上げない */
+  function brandMark() {
+    const svg = svgNode("svg", {
+      class: "masthead__mark", viewBox: "0 0 512 512", "aria-hidden": "true", focusable: "false",
+    });
+    const defs = svgNode("defs", {});
+    const outer = svgNode("clipPath", { id: "mark-outer" });
+    outer.appendChild(svgNode("rect", { width: 512, height: 512, rx: 116 }));
+    const card = svgNode("clipPath", { id: "mark-card" });
+    card.appendChild(svgNode("rect", { x: 112, y: 104, width: 288, height: 304, rx: 40 }));
+    defs.appendChild(outer);
+    defs.appendChild(card);
+    svg.appendChild(defs);
+
+    const all = svgNode("g", { "clip-path": "url(#mark-outer)" });
+    all.appendChild(svgNode("rect", { width: 512, height: 512, fill: "#3a63f3" }));
+    all.appendChild(svgNode("path", { d: "M0 0 H256 A256 256 0 0 1 0 256 Z", fill: "#ff6b4a" }));
+    all.appendChild(svgNode("circle", { cx: 420, cy: 420, r: 150, fill: "#ffc23d" }));
+    all.appendChild(svgNode("rect", { x: 112, y: 104, width: 288, height: 304, rx: 40, fill: "#ffffff" }));
+    const art = svgNode("g", { "clip-path": "url(#mark-card)" });
+    art.appendChild(svgNode("rect", { x: 112, y: 104, width: 144, height: 150, fill: "#1d2130" }));
+    art.appendChild(svgNode("circle", {
+      cx: 184, cy: 179, r: 42, fill: "none", stroke: "#cfe0ff", "stroke-width": 24,
+    }));
+    art.appendChild(svgNode("rect", { x: 256, y: 104, width: 144, height: 150, fill: "#ffc23d" }));
+    art.appendChild(svgNode("path", { d: "M256 104 H400 A144 150 0 0 1 256 254 Z", fill: "#ff6b4a" }));
+    all.appendChild(art);
+    all.appendChild(svgNode("rect", { x: 148, y: 286, width: 216, height: 30, rx: 10, fill: "#1b1f2a" }));
+    all.appendChild(svgNode("rect", { x: 148, y: 332, width: 150, height: 30, rx: 10, fill: "#1b1f2a" }));
+    all.appendChild(svgNode("rect", { x: 148, y: 376, width: 84, height: 12, rx: 6, fill: "#c2410c" }));
+    svg.appendChild(all);
+    return svg;
   }
 
   function articleNode(article, handlers) {
@@ -249,19 +277,21 @@
 
   function seedOf(section) { return section.subtitle || section.text || ""; }
 
-  /* 総括の1段落 = 紙面の1記事。kind は "lead"（面のトップ）か "story"。
-     トップは上に大きな絵、その上に白い紙を重ねる。ほかは左上に小さな絵 */
-  function storyNode(section, index, kind, genre) {
-    const block = el("article", kind + " card");
+  /* 総括の1段落 = 紙面の1記事。kind は "lead"（紙面のトップ）か "story"。
+     トップは上に大きな絵、その上に白い紙を重ねる。
+     2026-10-18: ほかの記事の見出しの横の小さな絵は外した（記事の写真が使えないなら
+     要らないとの依頼）。分野名の色で、どの面の記事かが分かる。
+     id は紙面データの順（サマリーの行が指す番号）、見せる番号は並べた順 */
+  function storyNode(section, index, kind, position) {
+    const genre = genreKey(section.genre);
+    const block = el("article", kind + " card genre--" + genre);
     block.id = storyId(index);
 
     const kicker = el("p", kind + "__kicker");
     if (section.field) kicker.appendChild(el("span", kind + "__field", section.field));
-    kicker.appendChild(el("span", kind + "__num", storyNum(index)));
+    kicker.appendChild(el("span", kind + "__num", storyNum(position)));
 
-    const title = section.subtitle
-      ? el(kind === "lead" ? "h2" : "h3", kind + "__title", section.subtitle)
-      : null;
+    const title = section.subtitle ? el("h3", kind + "__title", section.subtitle) : null;
 
     let body = block;
     if (kind === "lead") {
@@ -270,17 +300,9 @@
       block.appendChild(art);
       body = el("div", "lead__body");
       block.appendChild(body);
-      body.appendChild(kicker);
-      if (title) body.appendChild(title);
-    } else {
-      const head = el("div", "story__head");
-      head.appendChild(thumbNode(seedOf(section), genre));
-      const words = el("div", "story__words");
-      words.appendChild(kicker);
-      if (title) words.appendChild(title);
-      head.appendChild(words);
-      block.appendChild(head);
     }
+    body.appendChild(kicker);
+    if (title) body.appendChild(title);
 
     body.appendChild(el("p", kind + "__text", section.text));
     if (section.sources && section.sources.length) {
@@ -311,8 +333,9 @@
   }
 
   /* きょうのサマリー（2026-10-14〜）。紙面全体から数行の要点。
-     記事が分かる行は押せて、その記事の面に切り替えて記事まで送る */
-  function briefingNode(points, goToStory) {
+     記事が分かる行は押せて、その記事まで送る。行の頭の小見出しは、
+     記事のカードと同じ分野名（国際・音楽など）。分からない行は面の名前 */
+  function briefingNode(points, labelOf, goToStory) {
     const card = el("section", "briefing card");
     card.setAttribute("aria-labelledby", "briefing-title");
     const title = el("h2", "briefing__title", "きょうのサマリー");
@@ -325,7 +348,8 @@
       const row = el(linked ? "a" : "div", "briefing__row");
       if (point.genre) row.classList.add("genre--" + genreKey(point.genre));
       const words = el("span", "briefing__words");
-      if (point.genre) words.appendChild(el("span", "briefing__genre", point.genre));
+      const label = labelOf(point);
+      if (label) words.appendChild(el("span", "briefing__genre", label));
       words.appendChild(el("span", "briefing__text", point.text));
       row.appendChild(words);
       if (linked) {
@@ -343,21 +367,44 @@
     return card;
   }
 
-  /* 1面ぶん。1本目をトップに大きく、残りを段組みで並べる。
-     2026-10-14: トップの横の「この面の記事」（目次）はいらないとの依頼で外した */
-  function pagePanel(items, genre) {
-    const panel = el("div", "panel panel--" + genre);
+  /* 2026-10-18: 面（総合・エンタメ・話題）に分けず、1本のスクロールで読む。
+     面の中の並び（大事な順）は崩さず、面ごとの本数の割合で混ぜる。
+     例: 総合8・エンタメ6・話題6 なら 総合・エンタメ・話題・総合・… の順になり、
+     先頭（トップ記事）は総合の1本目 */
+  function feedOrder(digest) {
+    const totals = {};
+    const seen = {};
+    digest.forEach(function (section) {
+      const g = section.genre || "";
+      totals[g] = (totals[g] || 0) + 1;
+    });
+    return digest.map(function (section, index) {
+      const g = section.genre || "";
+      seen[g] = (seen[g] || 0) + 1;
+      return { section: section, index: index, key: (seen[g] - 0.5) / totals[g] };
+    }).sort(function (a, b) {
+      return a.key - b.key || a.index - b.index;
+    });
+  }
 
-    panel.appendChild(storyNode(items[0].section, items[0].index, "lead", genre));
+  /* 記事の一覧。1本目をトップに大きく、残りをカードで並べる */
+  function feedNode(items) {
+    const feed = el("section", "feed");
+    feed.setAttribute("aria-labelledby", "feed-title");
+    const heading = el("h2", "visually-hidden", "記事");
+    heading.id = "feed-title";
+    feed.appendChild(heading);
+
+    feed.appendChild(storyNode(items[0].section, items[0].index, "lead", 0));
 
     if (items.length > 1) {
       const rest = el("div", "stories");
-      items.slice(1).forEach(function (item) {
-        rest.appendChild(storyNode(item.section, item.index, "story", genre));
+      items.slice(1).forEach(function (item, i) {
+        rest.appendChild(storyNode(item.section, item.index, "story", i + 1));
       });
-      panel.appendChild(rest);
+      feed.appendChild(rest);
     }
-    return panel;
+    return feed;
   }
 
   /* ===== ワードクラウド =====
@@ -473,120 +520,42 @@
     return panel;
   }
 
-  /* 面のタブ（総合・エンタメ・話題）。押した面だけを見せる。
-     題字の下に置くだけで固定はしない（スクロール中に本文とぶつからない） */
-  var currentPage = 0;
-
-  function pageFromHash(count) {
-    var m = /^#(?:p|page-)(\d)$/.exec(location.hash || "");
-    var n = m ? Number(m[1]) : NaN;
-    return n >= 0 && n < count ? n : 0;
-  }
-
-  function pageTabs(pageOrder, counts, panels) {
-    const nav = el("div", "tabs");
-    nav.setAttribute("role", "tablist");
-    nav.setAttribute("aria-label", "面");
-    const tabs = [];
-
-    function select(i, focus) {
-      currentPage = i;
-      tabs.forEach(function (tab, j) {
-        const on = i === j;
-        tab.setAttribute("aria-selected", on ? "true" : "false");
-        tab.tabIndex = on ? 0 : -1;
-        panels[j].hidden = !on;
-      });
-      if (focus) tabs[i].focus();
-      try { history.replaceState(null, "", "#p" + i); } catch (e) {}
-    }
-
-    pageOrder.forEach(function (name, i) {
-      const tab = el("button", "tab tab--" + genreKey(name));
-      tab.type = "button";
-      tab.id = "tab-" + i;
-      tab.setAttribute("role", "tab");
-      tab.setAttribute("aria-controls", "panel-" + i);
-      tab.appendChild(el("span", "tab__name", name));
-      if (counts && counts[name]) {
-        tab.appendChild(el("span", "tab__count", counts[name] + "本"));
-      }
-      // めくる処理（flip.js）があれば、本のようにめくってから切り替える
-      tab.addEventListener("click", function () {
-        if (nav.turnTo) nav.turnTo(i);
-        else select(i, false);
-      });
-      tab.addEventListener("keydown", function (event) {
-        var next = null;
-        if (event.key === "ArrowRight") next = (i + 1) % pageOrder.length;
-        if (event.key === "ArrowLeft") next = (i + pageOrder.length - 1) % pageOrder.length;
-        if (event.key === "Home") next = 0;
-        if (event.key === "End") next = pageOrder.length - 1;
-        if (next === null) return;
-        event.preventDefault();
-        select(next, true);
-      });
-      tabs.push(tab);
-      nav.appendChild(tab);
-    });
-
-    nav.select = select;
-    return nav;
-  }
-
   function paper(data, handlers) {
     const root = document.createDocumentFragment();
     const issued = data.generated_at ? new Date(data.generated_at) : new Date();
 
-    // 面（総合・エンタメ・話題）の並びは、紙面データに出てくる順。
-    // 面が1つしかない紙面（2026-09-17までの総合だけの紙面）にはタブも面の見出しも出さない
-    const pageOrder = [];
-    (data.digest || []).forEach(function (s) {
-      if (s.genre && pageOrder.indexOf(s.genre) < 0) pageOrder.push(s.genre);
-    });
-    const showPages = pageOrder.length >= 2;
-
-    // 紙面の頭。題字・きょうの言葉・面のタブをひとまとめにして、
-    // めくる紙がこの下をくぐるようにする（アプリの見出しのように手前に残す）
+    // 紙面の頭。題字・きょうの言葉・サマリーをひとまとめにする（広い画面で言葉とサマリーを並べる）
     const head = el("div", "paper-head");
 
     // --- 題字 ---
-    const masthead = el("header", "masthead");
-
-    // 上の帯に日付（小見出し）と設定（歯車）、その下に題字を大きく、刊と本数を一行で。
-    // iPhoneの「大きな見出し」の画面と同じ組み方。
+    // 上の行に印・題字と設定（歯車）、その下に日付を同じ大きさの灰色で、曜日と本数を小さく1行。
     // 歯車は app.js が持っている部品を借りてここへ移す（描き直しても同じ部品のまま）。
     // 英語の部分には lang="en" を付け、読み上げを英語の発音にする
+    const masthead = el("header", "masthead");
     const bar = el("div", "masthead__bar");
-    const dateLine = el("p", "masthead__date");
-    dateLine.lang = "en";
-    dateLine.appendChild(issueDateNode(issued));
-    bar.appendChild(dateLine);
+    const brand = el("div", "masthead__brand");
+    brand.appendChild(brandMark());
+    const name = el("h1", "masthead__name", MASTHEAD_TITLE);
+    name.lang = "en";
+    brand.appendChild(name);
+    bar.appendChild(brand);
     if (handlers && handlers.settingsControl) bar.appendChild(handlers.settingsControl);
     masthead.appendChild(bar);
 
-    const name = el("h1", "masthead__name", MASTHEAD_TITLE);
-    name.lang = "en";
-    masthead.appendChild(name);
+    const dateLine = el("p", "masthead__date");
+    dateLine.lang = "en";
+    dateLine.appendChild(issueDateNode(issued));
+    masthead.appendChild(dateLine);
 
-    // 刊・本数・配信元の数を一行で。面ごとの本数はタブに出す。
-    // 配信元は名前を並べると5行になったので数だけ（2026-09-20〜）。
-    // 区切りの中黒は文字で入れる（読み上げで「Edition60」とつながらないように）
-    const line = el("p", "masthead__line");
+    // 配信元は名前を並べると5行になったので数だけ（2026-09-20〜）
+    const line = el("p", "masthead__line",
+      issueLine(issued, data.total, data.sources ? data.sources.length : 0));
     line.lang = "en";
-    const parts = [el("span", "masthead__part masthead__edition", editionName(issued))];
-    if (typeof data.total === "number") parts.push(countPart(data.total, "story", "stories"));
-    const sourceCount = data.sources ? data.sources.length : 0;
-    if (sourceCount) parts.push(countPart(sourceCount, "source", "sources"));
-    parts.forEach(function (part, i) {
-      if (i) line.appendChild(el("span", "masthead__sep", " · "));
-      line.appendChild(part);
-    });
     masthead.appendChild(line);
     head.appendChild(masthead);
     root.appendChild(head);
 
-    // 2026-10-14: きょうの言葉を一番上（題字のすぐ下）へ。その下に面ごとの要約
+    // 2026-10-14: きょうの言葉を一番上（題字のすぐ下）へ
     if (data.topics && data.topics.length) {
       head.appendChild(topicStrip(data.topics));
     }
@@ -602,63 +571,26 @@
       return root;
     }
 
-    // 面ごとに項目を分ける。番号は紙面全体の通し番号のまま
-    const groups = showPages ? pageOrder.map(function () { return []; }) : [[]];
-    data.digest.forEach(function (section, index) {
-      const g = showPages ? pageOrder.indexOf(section.genre) : 0;
-      groups[g < 0 ? 0 : g].push({ section: section, index: index });
-    });
-
-    const panels = groups.map(function (items, i) {
-      const panel = pagePanel(items, showPages ? genreKey(pageOrder[i]) : "general");
-      if (showPages) {
-        panel.id = "panel-" + i;
-        panel.setAttribute("role", "tabpanel");
-        panel.setAttribute("aria-labelledby", "tab-" + i);
-      }
-      return panel;
-    });
-
-    let tabsNode = null;
-
-    // サマリーの行から記事へ。別の面の記事なら面を切り替えてから送る。
-    // 面の頭が画面に見えているときは本のようにめくり、見えていなければ
-    // （サマリーを読んでいる位置では、めくる紙が画面の外になる）切り替えるだけ
     function goToStory(index) {
       const target = document.getElementById(storyId(index));
-      if (!target) return;
-      const page = panels.indexOf(target.closest(".panel"));
-      if (!tabsNode || page < 0 || page === currentPage) {
-        arriveAt(target);
-        return;
-      }
-      const shownTop = panels[currentPage].getBoundingClientRect().top;
-      if (tabsNode.turnTo && shownTop < window.innerHeight * 0.6) {
-        tabsNode.turnTo(page, function () { arriveAt(target); });
-      } else {
-        tabsNode.select(page, false);
-        arriveAt(target);
-      }
+      if (target) arriveAt(target);
     }
 
-    // 2026-10-14: きょうの言葉の次に、きょうのサマリー。その下に面のタブ
+    function briefingLabel(point) {
+      const section = typeof point.story === "number" ? data.digest[point.story] : null;
+      return (section && section.field) || point.genre || "";
+    }
+
+    // 2026-10-14: きょうの言葉の次に、きょうのサマリー
     const briefing = data.briefing && data.briefing.length
-      ? briefingNode(data.briefing, goToStory)
+      ? briefingNode(data.briefing, briefingLabel, goToStory)
       : null;
     if (briefing) head.appendChild(briefing);
     // 広い画面では、きょうの言葉とサマリーを左右に並べる
     if (briefing && head.querySelector(".topics")) head.classList.add("paper-head--pair");
 
-    // 2026-10-14: 面の最後の「次の面へ」ボタンは外した。タブ・スワイプ・キーでめくる
-    if (showPages) {
-      tabsNode = pageTabs(pageOrder, data.pages || {}, panels);
-      head.appendChild(tabsNode);
-      panels.forEach(function (panel) { root.appendChild(panel); });
-      tabsNode.select(pageFromHash(pageOrder.length), false);
-      if (window.Flip) window.Flip.attach(tabsNode, panels);
-    } else {
-      root.appendChild(panels[0]);
-    }
+    // 2026-10-18: 面のタブとめくり（flip.js）を外し、全部の記事を1本のスクロールに並べる
+    root.appendChild(feedNode(feedOrder(data.digest)));
 
     // --- 締め ---
     const colophon = el("div", "colophon");
