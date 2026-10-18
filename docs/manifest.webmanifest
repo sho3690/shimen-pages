@@ -1,6 +1,6 @@
 {
-  "name": "Front Page",
-  "short_name": "Front Page",
+  "name": "日々 HIBI",
+  "short_name": "HIBI",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

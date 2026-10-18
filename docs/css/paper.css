@@ -1,16 +1,18 @@
-/* 紙面レイアウト。青灰色の机の上に、角の丸い白いカードを並べる。
+/* 紙面レイアウト。青灰色の机の上に、角の丸い白いカードを置く。
 
-   1. 上から 題字 → きょうの言葉 → きょうのサマリー → 記事。全部を1本のスクロールで読む
-   2. 1本目をトップ記事として、大きな絵の上に白い紙を重ねて組む
-   3. 残りの記事は文字だけのカード。広い画面では2段組、スマホでは1段
-   4. 記事ごとに面（総合・エンタメ・話題）の色があり、分野名をその色で書く
-   5. 絵は記事の見出しから決まる幾何学模様（render.js の artNode）。写真は使わない
+   1. 表紙（題字 → きょうの言葉 → きょうのサマリー）と、記事1本ずつのページを左右にめくる（flip.js）
+   2. 記事のページは、上に幾何学模様、その下に 見出し → かんたんに言うと → くわしく → ことば → 出典
+   3. 記事ごとに面（総合・エンタメ・話題）の色があり、分野名・言い換えの地・下線をその色で塗る
+   4. 模様は記事の見出しから決まる（render.js の artNode）。写真は使わない
+   5. 下に浮かぶ「めくり」のボタンで、前後のページと進み具合が分かる
    2026-10-13: 参考画像（白いカードと朱の差し色）に合わせて、罫線の新聞からカードへ刷新。
    2026-10-14: 「この面の記事」と「次の面へ」を外し、設定は題字の右上の歯車にしまった。
-   2026-10-18: 面のタブとめくりをやめて1本のスクロールに。見出しの横の小さな絵を外した。
-               題字をニュースアプリの組み方（印＋題字、その下に灰色の日付）に。 */
+   2026-10-18: 面のタブとめくりをやめて1本のスクロールに → 同じ日に、記事1本ずつをめくる形へ。
+               名前を「HIBI」（日々）にし、題字を太い文字＋面の色の三色の線にした。
+               記事に「かんたんに言うと」（やさしい言い換え）と「ことば」（用語の意味）を足した。 */
 
 .paper {
+  --pager-height: 3.5rem;
   --paper-pad: var(--space-4);
   --paper-gap: var(--space-4);
   max-width: calc(var(--width-wide) + 2 * var(--paper-pad));
@@ -47,9 +49,9 @@
 }
 
 /* ===== 題字 =====
-   2026-10-18: ニュースアプリ（Apple News）の組み方に。アイコンと同じ印＋題字を黒、
-   その下に日付を同じ大きさ・同じ太さの灰色で重ね、曜日と本数を小さく1行。
-   書体は本文と同じ（iPhoneでは San Francisco）。新聞風のセリフ体と大文字の帯はやめた */
+   2026-10-18: 「簡素すぎる。タイトルと分かるように、ちょうどよく目立たせて」との依頼で、
+   太い文字の「HIBI」（横に小さく「日々」）にし、下に面の色の短い線を3本並べた（4案から選んでもらった）。
+   その下に日付（太字）と、朝・夕と本数の1行 */
 
 .masthead { padding: var(--space-4) 0 var(--space-6); }
 
@@ -65,75 +67,190 @@
   min-height: var(--tap);
 }
 
-.masthead__brand {
+.masthead__name {
   display: flex;
-  align-items: center;
-  gap: var(--space-2);
-  min-width: 0;
-}
-
-/* 印は題字の文字の高さにそろえる（文字を大きくする設定でも一緒に大きくなる） */
-.masthead__mark {
-  flex: none;
-  display: block;
-  width: 2.125rem;
-  height: 2.125rem;
-}
-
-.masthead__name,
-.masthead__date {
+  align-items: baseline;
+  gap: var(--space-3);
   margin: 0;
-  font-size: 2.125rem;
-  font-weight: 800;
-  line-height: 1.1;
-  letter-spacing: -0.025em;
-  white-space: nowrap;
+  line-height: 1;
 }
 
-.masthead__name { color: var(--color-text-primary); }
+.masthead__en {
+  font-size: 2.75rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  color: var(--color-text-primary);
+}
 
-/* 日付は大きな文字なので 3:1 で足りる（机の上 3.16、黒い紙面 5.07） */
-.masthead__date { color: var(--color-text-date); }
+/* 三色の線。総合・エンタメ・話題の色（記事の分野名と同じ色） */
+.stripe {
+  display: flex;
+  gap: var(--space-1);
+  margin-top: var(--space-3);
+}
 
-@media (min-width: 840px) {
-  .masthead__mark { width: 2.75rem; height: 2.75rem; }
-  .masthead__name,
-  .masthead__date { font-size: 2.75rem; }
-  .masthead__line { font-size: var(--font-size-md); }
+.stripe__bar {
+  display: block;
+  width: 1.75rem;
+  height: 0.375rem;
+  border-radius: 0.1875rem;
+  background: var(--genre);
+}
+
+.masthead__ja {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--color-text-secondary);
+}
+
+.masthead__date {
+  margin: var(--space-4) 0 0;
+  font-size: var(--font-size-lg);
+  font-weight: 800;
+  line-height: var(--line-height-tight);
+  letter-spacing: -0.01em;
+  color: var(--color-text-primary);
 }
 
 .masthead__line {
-  margin: var(--space-3) 0 0;
+  margin: var(--space-1) 0 0;
   font-size: var(--font-size-sm);
   line-height: var(--line-height-normal);
   color: var(--color-text-secondary);
+}
+
+@media (min-width: 840px) {
+  .masthead__en { font-size: 3.5rem; }
+  .stripe__bar { width: 2.25rem; }
+  .masthead__ja { font-size: var(--font-size-md); }
+  .masthead__date { font-size: var(--font-size-xl); }
+  .masthead__line { font-size: var(--font-size-md); }
 }
 
 /* 紙面の頭（題字・きょうの言葉・サマリー）。広い画面では言葉とサマリーを左右に並べる */
 .paper-head > .topics,
 .paper-head > .briefing { margin-bottom: var(--paper-gap); }
 
-/* --- トップ記事 --- */
+/* ===== ページ（表紙・記事1本ずつ）。左右にめくる（flip.js） ===== */
 
-.lead,
-.story { scroll-margin-top: var(--space-4); }
-
-/* トップ記事。上に大きな絵を敷き、その上に白い紙を少し重ねる */
-.lead { overflow: hidden; }
-
-.lead__art {
+/* 縦のスクロールとピンチ拡大はブラウザに任せ、横の動きだけを flip.js が受け取る。
+   下に浮かぶ「めくり」のボタンに最後の行が隠れないよう、下を空けておく */
+.page {
   position: relative;
-  height: 11rem;
+  min-height: 100vh;
+  min-height: 100svh;
+  padding-bottom: calc(var(--pager-height) + var(--space-8) + env(safe-area-inset-bottom));
+  touch-action: pan-y pinch-zoom;
+}
+
+/* ページの下はページ自身が空けるので、紙面の下の余白は要らない */
+.paper:has(.deck) { padding-bottom: 0; }
+
+.page[hidden] { display: none; }
+
+/* めくっている間だけ、ページを机の色の紙にして影を付ける。次のページは画面に固定して下に敷く */
+.page--turning {
+  background: var(--color-background);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-page);
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+.page--turning::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: var(--color-shade);
+  opacity: var(--flip-shade, 0);
+  pointer-events: none;
+}
+
+.page--stage {
+  position: fixed;
+  overflow: hidden;
+  background: var(--color-background);
+}
+
+/* 記事のページの頭。小さな題字（押すと表紙へ）と日付 */
+.page__head,
+.story {
+  max-width: 46rem;
+  margin-inline: auto;
+}
+
+.page__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-2) 0;
+}
+
+.page__home {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap);
+  padding: 0 var(--space-2);
+  margin-left: calc(-1 * var(--space-2));
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color var(--dur-short) var(--ease-standard);
+}
+
+/* 小さな題字。文字と三色の線を縮めたもの */
+.page__brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.page__brand-name {
+  font-size: var(--font-size-lg);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  color: var(--color-text-primary);
+}
+
+.stripe--small { gap: 0.125rem; margin-top: 0.25rem; }
+.stripe--small .stripe__bar { width: 0.75rem; height: 0.1875rem; }
+.page__home:active { transform: scale(0.97); }
+
+/* 指で押した後に色が残らないよう、ホバーの色はマウスのときだけ */
+@media (hover: hover) {
+  .page__home:hover { background: color-mix(in srgb, var(--color-background) 85%, var(--color-text-primary)); }
+  .pager__btn:hover:not(:disabled) { background: var(--color-surface-muted); }
+}
+
+
+.page__date {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  color: var(--color-text-secondary);
+}
+
+/* --- 記事のカード。上に模様を敷き、その上に白い紙を少し重ねる --- */
+
+.story { overflow: hidden; }
+
+.story__art {
+  position: relative;
+  height: 8.5rem;
   background: var(--color-surface-muted);
 }
 
-.lead__art .art { position: absolute; inset: 0; }
+.story__art .art { position: absolute; inset: 0; }
 
 @media (min-width: 600px) {
-  .lead__art { height: 15rem; }
+  .story__art { height: 12rem; }
 }
 
-.lead__body {
+.story__body {
   position: relative;
   margin-top: calc(-1 * var(--space-6));
   padding: var(--space-6) var(--space-5) var(--space-6);
@@ -142,24 +259,9 @@
 }
 
 @media (min-width: 600px) {
-  .lead__body { padding: var(--space-8) var(--space-8) var(--space-8); }
+  .story__body { padding: var(--space-8); }
 }
 
-/* 広い画面では、絵を左に、要約を右に置く横長のトップにする（本文の行が長くなりすぎない） */
-@media (min-width: 840px) {
-  .lead {
-    display: grid;
-    grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
-  }
-  .lead__art { height: auto; min-height: 20rem; }
-  .lead__body {
-    align-self: center;
-    margin-top: 0;
-    border-radius: 0;
-  }
-}
-
-.lead__kicker,
 .story__kicker {
   display: flex;
   align-items: baseline;
@@ -171,19 +273,18 @@
   letter-spacing: 0.06em;
 }
 
-.lead__field,
 .story__field { color: var(--genre); }
 
-.lead__num,
 .story__num {
   font-size: var(--font-size-xs);
   font-weight: 600;
+  letter-spacing: 0.02em;
   color: var(--color-text-muted);
   font-variant-numeric: tabular-nums;
 }
 
-.lead__title {
-  margin: 0 0 var(--space-4);
+.story__title {
+  margin: 0 0 var(--space-5);
   font-size: var(--font-size-2xl);
   font-weight: 800;
   line-height: var(--line-height-tight);
@@ -193,10 +294,38 @@
 }
 
 @media (min-width: 600px) {
-  .lead__title { font-size: var(--font-size-3xl); }
+  .story__title { font-size: var(--font-size-3xl); }
 }
 
-.lead__text,
+/* かんたんに言うと。いちばん先に読む2文。面の色をうすく敷いて、本文より一段大きく */
+.easy {
+  margin: 0 0 var(--space-6);
+  padding: var(--space-4) var(--space-5) var(--space-5);
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--genre) 8%, var(--color-surface));
+}
+
+.easy__label,
+.story__label {
+  margin: 0 0 var(--space-1);
+  font-size: var(--font-size-xs);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.easy__label { color: var(--genre); }
+.story__label { color: var(--color-text-muted); }
+
+.easy__text {
+  margin: 0;
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  line-height: 1.75;
+  color: var(--color-text-primary);
+  overflow-wrap: anywhere;
+}
+
+/* くわしく（記事の言葉のままの要約） */
 .story__text {
   margin: 0;
   font-size: var(--font-size-md);
@@ -205,46 +334,152 @@
   overflow-wrap: anywhere;
 }
 
-/* トップの要約は他より一段大きく。紙面の統括にあたる */
-.lead__text {
-  font-size: var(--font-size-lg);
-  color: var(--color-text-primary);
-}
-
-/* 両端揃えは広い画面だけ。スマホ幅では英単語の間が大きく空く */
 @media (min-width: 840px) {
-  .lead__text,
   .story__text { text-align: justify; }
 }
 
-/* --- 残りの記事。文字だけのカードを並べる --- */
-
-.stories {
-  display: grid;
-  gap: var(--paper-gap);
-  margin-top: var(--paper-gap);
+/* 「ことば」に載っている言葉。本文の中で下線を引いて、下の説明と結ぶ */
+.term-mark {
+  font-weight: 700;
+  color: var(--color-text-primary);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--genre) 60%, transparent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.3em;
+  text-decoration-skip-ink: none;
 }
 
-@media (min-width: 840px) {
-  .stories { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
-
-  /* 本数が奇数のときは、最後の1本を段抜きにして右の段を空けない */
-  .story:last-child:nth-child(odd) { grid-column: 1 / -1; }
+/* ことば。言葉と、その意味（AIが書いた一般的な意味） */
+.terms {
+  margin-top: var(--space-6);
+  padding: var(--space-4) var(--space-5);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-muted);
 }
 
-.story { padding: var(--space-5); }
-
-@media (min-width: 600px) {
-  .story { padding: var(--space-6); }
-}
-
-.story__title {
-  margin: 0 0 var(--space-3);
-  font-size: var(--font-size-xl);
+.terms__title {
+  margin: 0 0 var(--space-2);
+  font-size: var(--font-size-sm);
   font-weight: 800;
-  line-height: var(--line-height-tight);
+  letter-spacing: 0.08em;
+  color: var(--color-text-secondary);
+}
+
+.terms__list { margin: 0; }
+
+.terms__item { padding: var(--space-2) 0; }
+.terms__item + .terms__item { border-top: 1px solid var(--color-border); }
+
+.terms__term {
+  font-size: var(--font-size-md);
+  font-weight: 800;
+  line-height: var(--line-height-normal);
   color: var(--color-text-primary);
   overflow-wrap: anywhere;
+}
+
+.terms__meaning {
+  margin: 0.125rem 0 0;
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-secondary);
+}
+
+/* ===== めくり（下に浮かぶボタン）。前・いまのページと進み具合・次 ===== */
+
+/* ボタンの後ろで、本文を机の色へ溶かす。文字がボタンの縁で切れて見えないように */
+.pager-fade {
+  position: fixed;
+  z-index: 9;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: calc(var(--pager-height) + var(--space-3) + var(--space-8) + env(safe-area-inset-bottom));
+  background: linear-gradient(to bottom, transparent, var(--color-background) 70%);
+  pointer-events: none;
+}
+
+.pager {
+  position: fixed;
+  z-index: 10;
+  left: 50%;
+  bottom: calc(var(--space-3) + env(safe-area-inset-bottom));
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  width: min(calc(100% - 2 * var(--space-4)), 24rem);
+  height: var(--pager-height);
+  padding: 0 var(--space-1);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-md);
+  transform: translateX(-50%);
+}
+
+.pager__btn {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: var(--tap);
+  height: var(--tap);
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius-md);
+  background: transparent;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition:
+    background-color var(--dur-short) var(--ease-standard),
+    transform var(--dur-short) var(--ease-standard);
+}
+
+.pager__btn:active { transform: scale(0.94); background: var(--color-surface-muted); }
+
+.pager__btn:disabled {
+  color: var(--color-border-input);
+  background: transparent;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.pager__mid {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+  min-width: 0;
+}
+
+.pager__count {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--color-text-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.pager__track {
+  position: relative;
+  width: 100%;
+  max-width: 10rem;
+  height: 0.25rem;
+  border-radius: 0.125rem;
+  background: var(--color-surface-muted);
+  overflow: hidden;
+}
+
+.pager__fill {
+  position: absolute;
+  inset: 0;
+  background: var(--color-primary);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform var(--dur-medium) var(--ease-standard);
 }
 
 /* ===== 出典。件数だけ見せて畳む。朱の「続きを読む」にあたる ===== */
@@ -487,14 +722,6 @@ a.briefing__row:active {
   }
 }
 
-/* サマリーから記事へ着いたとき、縁を面の色で一度だけ光らせる */
-@keyframes arrive {
-  0%, 35% { box-shadow: 0 0 0 3px var(--genre), var(--shadow-card); }
-  100% { box-shadow: 0 0 0 3px transparent, var(--shadow-card); }
-}
-
-.card.is-arrived { animation: arrive 1.8s var(--ease-standard); }
-
 /* ===== 紙面の締め（机の上に置くので補助色） ===== */
 
 .colophon {
@@ -524,7 +751,9 @@ a.briefing__row:active {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .briefing__row, .sources__toggle, .sources__toggle::before, .sources__link {
+  .briefing__row, .sources__toggle, .sources__toggle::before, .sources__link,
+  .page__home, .pager__btn, .pager__fill {
     transition: none;
   }
+  .page__home:active, .pager__btn:active { transform: none; }
 }
