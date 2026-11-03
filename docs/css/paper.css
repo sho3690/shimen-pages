@@ -1,15 +1,17 @@
 /* 紙面レイアウト。青灰色の机の上に、角の丸い白いカードを置く。
 
    1. 表紙（題字 → きょうの言葉 → きょうのサマリー）と、記事1本ずつのページを左右にめくる（flip.js）
-   2. 記事のページは、上に幾何学模様、その下に 見出し → かんたんに言うと → くわしく → ことば → 出典
-   3. 記事ごとに面（総合・エンタメ・話題）の色があり、分野名・言い換えの地・下線をその色で塗る
-   4. 模様は記事の見出しから決まる（render.js の artNode）。写真は使わない
-   5. 下に浮かぶ「めくり」のボタンで、前後のページと進み具合が分かる
+   2. 記事のページは、記事の頭（分野・番号・見出し）→ かんたんに言うと → くわしく → ことば → 出典
+   3. 記事ごとに面（総合・エンタメ・話題）の色があり、頭の地・分野の札・言い換えの線・下線をその色で塗る
+   4. 絵は使わない（写真は著作権の都合、幾何学模様は 2026-11-04 に「全部いらない」で外した）。
+      代わりに、面の色をうすく敷いた頭に大きな番号を透かして、見出しを主役にする
+   5. 下に浮かぶ「めくり」のボタンで、前後のページと、記事ごとの進み具合（読んだ記事）が分かる
    2026-10-13: 参考画像（白いカードと朱の差し色）に合わせて、罫線の新聞からカードへ刷新。
    2026-10-14: 「この面の記事」と「次の面へ」を外し、設定は題字の右上の歯車にしまった。
    2026-10-18: 面のタブとめくりをやめて1本のスクロールに → 同じ日に、記事1本ずつをめくる形へ。
                名前を「HIBI」（日々）にし、題字を太い文字＋面の色の三色の線にした。
-               記事に「かんたんに言うと」（やさしい言い換え）と「ことば」（用語の意味）を足した。 */
+               記事に「かんたんに言うと」（やさしい言い換え）と「ことば」（用語の意味）を足した。
+   2026-11-04: 模様を外し、記事の頭・下線の言葉の吹き出し・めくりの区切り・読んだ印・表紙の入場を足した。 */
 
 .paper {
   --pager-height: 3.5rem;
@@ -39,13 +41,6 @@
   background: var(--color-surface);
   border-radius: var(--radius-card);
   box-shadow: var(--shadow-card);
-}
-
-/* 記事の絵。飾りなので読み上げない。枠いっぱいに切り抜いて敷く */
-.art {
-  display: block;
-  width: 100%;
-  height: 100%;
 }
 
 /* ===== 題字 =====
@@ -234,87 +229,141 @@
   color: var(--color-text-secondary);
 }
 
-/* --- 記事のカード。上に模様を敷き、その上に白い紙を少し重ねる --- */
+/* --- 記事のカード。頭（面の色をうすく敷き、大きな番号を透かす）と、白い本文 ---
+   2026-11-04: 上の幾何学模様をやめ、見出しそのものを記事の顔にした */
 
-.story { overflow: hidden; }
-
-.story__art {
+.story__hero {
   position: relative;
-  height: 8.5rem;
-  background: var(--color-surface-muted);
+  overflow: hidden;   /* 透かしの番号を頭の中で切る */
+  padding: var(--space-6) var(--space-5) var(--space-5);
+  border-radius: var(--radius-card) var(--radius-card) 0 0;
+  background: color-mix(in srgb, var(--genre) 7%, var(--color-surface));
+  box-shadow: inset 0 0.25rem 0 var(--genre);   /* 上の縁に面の色の線 */
 }
-
-.story__art .art { position: absolute; inset: 0; }
 
 @media (min-width: 600px) {
-  .story__art { height: 12rem; }
+  .story__hero { padding: var(--space-10) var(--space-8) var(--space-6); }
 }
 
+/* 透かしの番号。飾りなので読み上げない（番号は札の横に文字で出している） */
+.story__ghost {
+  position: absolute;
+  top: -0.875rem;
+  right: -0.375rem;
+  font-size: 7.5rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.06em;
+  color: color-mix(in srgb, var(--genre) var(--ghost-strength), transparent);
+  font-variant-numeric: tabular-nums;
+  pointer-events: none;
+  user-select: none;
+}
+
+@media (min-width: 600px) {
+  .story__ghost { top: -1.25rem; right: 0; font-size: 11rem; }
+}
+
+.story__hero > :not(.story__ghost) { position: relative; }
+
+.story__kicker {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin: 0 0 var(--space-3);
+  line-height: var(--line-height-normal);
+}
+
+/* 分野の札。面の色の地に白い文字（黒い紙面では明るい地に濃い文字） */
+.story__field {
+  padding: 0.125rem var(--space-2);
+  border-radius: var(--radius-sm);
+  background: var(--genre);
+  color: var(--color-on-genre);
+  font-size: var(--font-size-sm);
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
+/* うすい地の上なので muted ではなく secondary（muted は白の上でしか足りない） */
+.story__num {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--color-text-secondary);
+  font-variant-numeric: tabular-nums;
+}
+
+.story__title {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 800;
+  line-height: var(--line-height-tight);
+  letter-spacing: 0.01em;
+  color: var(--color-text-primary);
+  overflow-wrap: anywhere;
+  text-wrap: balance;        /* 行の長さをそろえ、最後の行に1語だけ残さない */
+  word-break: auto-phrase;   /* 和文は文節で折り返す（対応しないブラウザでは今までどおり） */
+}
+
+@media (min-width: 600px) {
+  .story__title { font-size: 2.25rem; }
+}
+
+/* この下に何があるか（もとの記事の本数・ことばの数） */
+.story__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1) var(--space-4);
+  margin: var(--space-4) 0 0;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  line-height: var(--line-height-normal);
+  color: var(--color-text-secondary);
+}
+
+.story__meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.story__meta-icon { width: 1.125rem; height: 1.125rem; color: var(--genre); }
+
 .story__body {
-  position: relative;
-  margin-top: calc(-1 * var(--space-6));
-  padding: var(--space-6) var(--space-5) var(--space-6);
-  border-radius: var(--radius-card) var(--radius-card) 0 0;
-  background: var(--color-surface);
+  position: relative;   /* ことばの吹き出しの位置の基準 */
+  padding: var(--space-6) var(--space-5);
 }
 
 @media (min-width: 600px) {
   .story__body { padding: var(--space-8); }
 }
 
-.story__kicker {
-  display: flex;
-  align-items: baseline;
-  gap: var(--space-2);
-  margin: 0 0 var(--space-2);
-  font-size: var(--font-size-sm);
-  font-weight: 800;
-  line-height: var(--line-height-normal);
-  letter-spacing: 0.06em;
-}
-
-.story__field { color: var(--genre); }
-
-.story__num {
-  font-size: var(--font-size-xs);
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  color: var(--color-text-muted);
-  font-variant-numeric: tabular-nums;
-}
-
-.story__title {
-  margin: 0 0 var(--space-5);
-  font-size: var(--font-size-2xl);
-  font-weight: 800;
-  line-height: var(--line-height-tight);
-  letter-spacing: 0.01em;
-  color: var(--color-text-primary);
-  overflow-wrap: anywhere;
-}
-
-@media (min-width: 600px) {
-  .story__title { font-size: var(--font-size-3xl); }
-}
-
-/* かんたんに言うと。いちばん先に読む2文。面の色をうすく敷いて、本文より一段大きく */
+/* かんたんに言うと。いちばん先に読む2文。左に面の色の線を引いて、本文より一段大きく */
 .easy {
   margin: 0 0 var(--space-6);
-  padding: var(--space-4) var(--space-5) var(--space-5);
-  border-radius: var(--radius-md);
-  background: color-mix(in srgb, var(--genre) 8%, var(--color-surface));
+  padding: var(--space-1) 0 var(--space-1) var(--space-4);
+  border-left: 0.1875rem solid var(--genre);
 }
 
 .easy__label,
 .story__label {
-  margin: 0 0 var(--space-1);
+  margin: 0 0 var(--space-2);
   font-size: var(--font-size-xs);
   font-weight: 800;
   letter-spacing: 0.08em;
 }
 
-.easy__label { color: var(--genre); }
-.story__label { color: var(--color-text-muted); }
+.easy__label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  color: var(--genre);
+}
+
+.easy__icon { width: 1.125rem; height: 1.125rem; }
+
+.story__label { margin-bottom: var(--space-1); color: var(--color-text-muted); }
 
 .easy__text {
   margin: 0;
@@ -338,8 +387,11 @@
   .story__text { text-align: justify; }
 }
 
-/* 「ことば」に載っている言葉。本文の中で下線を引いて、下の説明と結ぶ */
+/* 「ことば」に載っている言葉。本文の中で下線を引き、押すとその場で意味が出る */
 .term-mark {
+  margin: 0 -0.125rem;
+  padding: 0 0.125rem;
+  border-radius: 0.25rem;
   font-weight: 700;
   color: var(--color-text-primary);
   text-decoration: underline;
@@ -347,6 +399,92 @@
   text-decoration-thickness: 2px;
   text-underline-offset: 0.3em;
   text-decoration-skip-ink: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color var(--dur-short) var(--ease-standard);
+}
+
+.term-mark:active { background: color-mix(in srgb, var(--genre) 18%, transparent); }
+
+.term-mark[aria-expanded="true"] {
+  background: color-mix(in srgb, var(--genre) 14%, transparent);
+  text-decoration-color: var(--genre);
+}
+
+/* 言葉の吹き出し。言葉から生えるように、矢印の位置を起点に広がる */
+.term-pop {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: min(20rem, calc(100% - 1.5rem));
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-md);
+  transform-origin: var(--arrow-x, 50%) top;
+  opacity: 0;
+  transform: translateY(-0.25rem) scale(0.97);
+  visibility: hidden;
+  pointer-events: none;
+  /* 閉じるときは素早く。消え終わってから読み上げの対象から外す */
+  transition:
+    opacity 120ms var(--ease-accelerate),
+    transform 120ms var(--ease-accelerate),
+    visibility 0s linear 120ms;
+}
+
+.term-pop--above {
+  transform-origin: var(--arrow-x, 50%) bottom;
+  transform: translateY(0.25rem) scale(0.97);
+}
+
+.term-pop[data-open] {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+  pointer-events: auto;
+  transition:
+    opacity var(--dur-short) var(--ease-decelerate),
+    transform var(--dur-medium) var(--ease-decelerate),
+    visibility 0s;
+}
+
+/* 言葉を指す矢印。吹き出しと同じ地と縁で、角を1つだけ見せる */
+.term-pop::before {
+  content: "";
+  position: absolute;
+  top: -0.4375rem;
+  left: var(--arrow-x, 50%);
+  width: 0.75rem;
+  height: 0.75rem;
+  border-top: 1px solid var(--color-border-strong);
+  border-left: 1px solid var(--color-border-strong);
+  border-top-left-radius: 0.1875rem;
+  background: var(--color-surface);
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.term-pop--above::before {
+  top: auto;
+  bottom: -0.4375rem;
+  transform: translateX(-50%) rotate(225deg);
+}
+
+.term-pop__term {
+  margin: 0 0 0.125rem;
+  font-size: var(--font-size-md);
+  font-weight: 800;
+  line-height: var(--line-height-normal);
+  color: var(--genre);
+}
+
+.term-pop__meaning {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-primary);
 }
 
 /* ことば。言葉と、その意味（AIが書いた一般的な意味） */
@@ -358,17 +496,29 @@
 }
 
 .terms__title {
-  margin: 0 0 var(--space-2);
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  margin: 0;
   font-size: var(--font-size-sm);
   font-weight: 800;
   letter-spacing: 0.08em;
   color: var(--color-text-secondary);
 }
 
-.terms__list { margin: 0; }
+.terms__icon { width: 1.125rem; height: 1.125rem; color: var(--genre); }
+
+.terms__hint {
+  margin: var(--space-1) 0 0;
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-normal);
+  color: var(--color-text-secondary);
+}
+
+.terms__list { margin: var(--space-2) 0 0; }
 
 .terms__item { padding: var(--space-2) 0; }
-.terms__item + .terms__item { border-top: 1px solid var(--color-border); }
+.terms__item + .terms__item { border-top: 1px solid var(--color-border-strong); }
 
 .terms__term {
   font-size: var(--font-size-md);
@@ -455,13 +605,20 @@
 }
 
 .pager__count {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
   margin: 0;
   font-size: var(--font-size-sm);
   font-weight: 800;
   line-height: 1.2;
   color: var(--color-text-primary);
   font-variant-numeric: tabular-nums;
+  white-space: nowrap;
 }
+
+/* いまの記事の分野。記事の面の色 */
+.pager__field { color: var(--genre); letter-spacing: 0.04em; }
 
 .pager__track {
   position: relative;
@@ -480,6 +637,36 @@
   transform: scaleX(0);
   transform-origin: left center;
   transition: transform var(--dur-medium) var(--ease-standard);
+}
+
+/* 記事ごとの区切り。面の色をうすく、読んだ記事は濃く、いまの記事はいちばん濃く太く。
+   読み上げには上の「分野 · 番号」の文字で伝える（区切りは飾り） */
+.pager__track--steps {
+  display: flex;
+  align-items: center;
+  gap: 0.125rem;
+  max-width: 12rem;
+  height: 0.375rem;
+  border-radius: 0;
+  background: none;
+  overflow: visible;
+}
+
+.pager__step {
+  flex: 1;
+  height: 0.25rem;
+  border-radius: 0.125rem;
+  background: color-mix(in srgb, var(--genre) 22%, var(--color-surface-muted));
+  transition:
+    background-color var(--dur-medium) var(--ease-standard),
+    height var(--dur-medium) var(--ease-standard);
+}
+
+.pager__step--read { background: color-mix(in srgb, var(--genre) 55%, var(--color-surface)); }
+
+.pager__step--current {
+  height: 0.375rem;
+  background: var(--genre);
 }
 
 /* ===== 出典。件数だけ見せて畳む。朱の「続きを読む」にあたる ===== */
@@ -536,9 +723,8 @@
 
 .sources__link {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0.125rem;
+  align-items: center;
+  gap: var(--space-3);
   min-height: var(--tap);
   padding: var(--space-2) var(--space-3);
   margin: 0 calc(-1 * var(--space-3));
@@ -563,10 +749,32 @@
   text-underline-offset: 0.15em;
 }
 
+.sources__words {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.125rem;
+  min-width: 0;
+}
+
 .sources__outlet {
   font-size: var(--font-size-xs);
   font-weight: 700;
   color: var(--genre);
+}
+
+/* 外へ出るリンクの印（新しいタブで元の記事が開く） */
+.sources__out {
+  width: 1.125rem;
+  height: 1.125rem;
+  color: var(--color-text-muted);
+  transition: color var(--dur-short) var(--ease-standard),
+    transform var(--dur-short) var(--ease-standard);
+}
+
+.sources__link:hover .sources__out {
+  color: var(--color-text-primary);
+  transform: translate(0.125rem, -0.125rem);
 }
 
 /* ===== きょうの言葉（紙面全体から）。題字のすぐ下 ===== */
@@ -637,7 +845,7 @@
 
 .briefing__item + .briefing__item { border-top: 1px solid var(--color-border); }
 
-/* 行の頭に朱の大きな番号。記事へ飛べる行は右に › を付け、押せることを示す */
+/* 行の頭に、記事の面の色の丸い番号。記事へ飛べる行は右に › を付け、押せることを示す */
 .briefing__row {
   display: flex;
   align-items: center;
@@ -656,13 +864,26 @@
 .briefing__row::before {
   content: counter(point);
   flex: none;
-  width: 1.5rem;
-  font-size: var(--font-size-2xl);
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--genre, var(--color-primary)) 12%, var(--color-surface));
+  color: var(--genre, var(--color-primary));
+  font-size: var(--font-size-lg);
   font-weight: 800;
   line-height: 1;
-  text-align: center;
-  color: var(--color-primary);
   font-variant-numeric: tabular-nums;
+  transition:
+    background-color var(--dur-short) var(--ease-standard),
+    color var(--dur-short) var(--ease-standard);
+}
+
+/* 押したとき、番号が面の色で塗られる */
+a.briefing__row:active::before {
+  background: var(--genre, var(--color-primary));
+  color: var(--color-on-genre);
 }
 
 a.briefing__row::after {
@@ -690,12 +911,33 @@ a.briefing__row:active {
   min-width: 0;
 }
 
+.briefing__tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.briefing__tags:empty { display: none; }
+
 .briefing__genre {
   font-size: var(--font-size-xs);
   font-weight: 800;
   letter-spacing: 0.06em;
   color: var(--genre);
 }
+
+/* もう読んだ記事の印。印と文字で示す（色だけに頼らない） */
+.briefing__done {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.125rem;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  color: var(--color-text-secondary);
+}
+
+.briefing__done-icon { width: 0.875rem; height: 0.875rem; stroke-width: 2.5; }
 
 .briefing__text {
   font-size: var(--font-size-md);
@@ -750,10 +992,28 @@ a.briefing__row:active {
   color: var(--color-text-primary);
 }
 
+/* ===== 表紙の入場。開いたときに一度だけ、題字とカードが下から順に現れる ===== */
+
+@keyframes hibi-rise {
+  from { opacity: 0; transform: translateY(0.75rem); }
+}
+
+.page--enter .masthead,
+.page--enter .card,
+.page--enter .colophon {
+  animation: hibi-rise 520ms var(--ease-emphasized) both;
+}
+
+.page--enter .topics { animation-delay: 70ms; }
+.page--enter .briefing { animation-delay: 140ms; }
+.page--enter .colophon { animation-delay: 210ms; }
+
 @media (prefers-reduced-motion: reduce) {
-  .briefing__row, .sources__toggle, .sources__toggle::before, .sources__link,
-  .page__home, .pager__btn, .pager__fill {
+  .briefing__row, .briefing__row::before, .sources__toggle, .sources__toggle::before,
+  .sources__link, .sources__out, .page__home, .pager__btn, .pager__fill, .pager__step,
+  .term-mark, .term-pop {
     transition: none;
   }
-  .page__home:active, .pager__btn:active { transform: none; }
+  .page__home:active, .pager__btn:active, .sources__link:hover .sources__out { transform: none; }
+  .page--enter .masthead, .page--enter .card, .page--enter .colophon { animation: none; }
 }

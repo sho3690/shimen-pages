@@ -650,11 +650,11 @@
    "article_count": 5
   },
   {
-   "term": "登場",
+   "term": "最高",
    "article_count": 5
   },
   {
-   "term": "最高",
+   "term": "登場",
    "article_count": 5
   },
   {
@@ -686,19 +686,19 @@
    "article_count": 4
   },
   {
-   "term": "通算",
-   "article_count": 4
-  },
-  {
    "term": "史上",
    "article_count": 4
   },
   {
-   "term": "更新",
+   "term": "通算",
    "article_count": 4
   },
   {
    "term": "結婚",
+   "article_count": 4
+  },
+  {
+   "term": "更新",
    "article_count": 4
   },
   {
@@ -742,7 +742,7 @@
    "article_count": 3
   },
   {
-   "term": "中心気圧",
+   "term": "インファ",
    "article_count": 3
   }
  ],
@@ -853,7 +853,7 @@
    "last_error": ""
   }
  ],
- "generated_at": "2026-11-03T00:41:33.547936+00:00",
+ "generated_at": "2026-11-03T16:25:33.053754+00:00",
  "pages": {
   "総合": 24,
   "エンタメ": 20,
@@ -886,5 +886,5 @@
    "story": 16
   }
  ],
- "build": "20261103094133"
+ "build": "20261104012533"
 }

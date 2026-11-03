@@ -53,6 +53,7 @@
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
   --shadow-page: 0 12px 32px rgba(15, 20, 35, 0.18);   /* めくっている紙の影 */
   --color-shade: #000000;                               /* めくる紙が傾くほど暗くなる */
+  --ghost-strength: 11%;   /* 記事の頭の透かし番号の濃さ（面の色の割合） */
 
   /* --- 型 --- */
   --font-size-xs: 0.75rem;
@@ -87,6 +88,9 @@
   --width-wide: 75rem;           /* 1200px */
 
   --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-decelerate: cubic-bezier(0, 0, 0, 1);         /* 現れるとき */
+  --ease-accelerate: cubic-bezier(0.3, 0, 1, 1);       /* 消えるとき */
+  --ease-emphasized: cubic-bezier(0.05, 0.7, 0.1, 1);  /* 表紙の入場など、大きめの動き */
   --dur-short: 150ms;
   --dur-medium: 250ms;
 }
@@ -128,6 +132,7 @@
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.6);
     --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.5);
     --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.7);
+    --ghost-strength: 7%;
   }
 }
 
@@ -163,6 +168,7 @@
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.6);
   --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.5);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.7);
+  --ghost-strength: 7%;
 }
 
 /* 選択中は、セレクト等のOS部品の色も紙面に合わせる */
