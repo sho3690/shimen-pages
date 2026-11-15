@@ -510,11 +510,11 @@
    "article_count": 5
   },
   {
-   "term": "投稿",
+   "term": "更新",
    "article_count": 5
   },
   {
-   "term": "更新",
+   "term": "投稿",
    "article_count": 5
   },
   {
@@ -622,11 +622,11 @@
    "article_count": 3
   },
   {
-   "term": "ジャンプ",
+   "term": "毎週日曜",
    "article_count": 3
   },
   {
-   "term": "毎週日曜",
+   "term": "ジャンプ",
    "article_count": 3
   }
  ],
@@ -738,7 +738,7 @@
    "last_error": ""
   }
  ],
- "generated_at": "2026-11-15T12:11:07.830161+00:00",
+ "generated_at": "2026-11-15T12:13:35.553054+00:00",
  "pages": {
   "総合": 24,
   "エンタメ": 20,
@@ -771,5 +771,5 @@
    "story": 11
   }
  ],
- "build": "20261115211107"
+ "build": "20261115211335"
 }
