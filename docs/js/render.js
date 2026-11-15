@@ -555,8 +555,10 @@
   function layoutCloud(box, list) {
     var W = box.clientWidth;
     var H = box.clientHeight;   // 枠はCSSで固定。中身をこの高さに収める
-    if (W < 80 || W === box.__laidWidth) return;   // まだ見えていない・幅が変わっていない
+    // まだ見えていない・大きさが変わっていない
+    if (W < 80 || (W === box.__laidWidth && H === box.__laidHeight)) return;
     box.__laidWidth = W;
+    box.__laidHeight = H;
     box.replaceChildren();
 
     var counts = list.map(function (t) { return t.article_count; });
@@ -564,7 +566,8 @@
     var minC = Math.min.apply(null, counts);
     var denom = (Math.sqrt(maxC) - Math.sqrt(minC)) || 1;
     var sMin = 13;
-    var sMax = Math.min(40, W / 8.5);
+    // 広い画面で枠が高いとき（サマリーと高さをそろえたとき）は、語を少し大きくして枠を埋める
+    var sMax = Math.min(H > 240 ? 56 : 40, W / 8.5);
 
     var measure = document.createElement("canvas").getContext("2d");
     var placed = [];
@@ -726,6 +729,17 @@
       if (section.field) pager.count.appendChild(el("span", "pager__field", section.field));
       // 頭の空白は画面では詰まり、読み上げでは分野と番号の区切りになる
       pager.count.appendChild(el("span", "pager__num", " " + i + " / " + items.length));
+      // 読み上げには、めくった先の見出しも伝える（画面には出さない）
+      pager.count.appendChild(el("span", "visually-hidden",
+        " " + (section.subtitle || section.field || "記事")));
+    }
+
+    // めくった先の見出しへフォーカスを移す（キーボードと読み上げの位置を、消えたページに残さない）
+    function focusPage(panel) {
+      const target = panel.querySelector(".story__title, .masthead__name");
+      if (!target) return;
+      target.tabIndex = -1;
+      target.focus({ preventScroll: true });
     }
 
     function showProgress(i) {
@@ -761,9 +775,18 @@
         closeTerm();
         current = i;
         if (i > 0) read.add(i);
+        // 消えるページの中（サマリーの行・小さな題字など）にフォーカスがあったら、めくった先へ移す
+        const had = document.activeElement;
+        const lost = panels.some(function (p, k) { return k !== i && p.contains(had); });
         panels.forEach(function (p, k) { p.hidden = k !== i; });
+        if (lost) focusPage(panels[i]);
+        // 押していたボタンが行き止まりで押せなくなるときは、反対のボタンへ移す
+        const atEnd = i === 0 ? pager.prev : i === panels.length - 1 ? pager.next : null;
+        const other = atEnd === pager.prev ? pager.next : pager.prev;
+        const moveFocus = atEnd && had === atEnd;
         pager.prev.disabled = i === 0;
         pager.next.disabled = i === panels.length - 1;
+        if (moveFocus) other.focus({ preventScroll: true });
         showCount(i);
         showProgress(i);
         if (i === 0) showBriefingRead();
@@ -792,6 +815,17 @@
     items.forEach(function (item, i) {
       panels.push(storyPage(item.section, i, items.length, issued, function () { go(0); }));
     });
+
+    // 最後のページの締め。ここで終わりだと分かるようにし、表紙へ戻れるようにする
+    if (panels.length > 1) {
+      const end = el("div", "page__end");
+      end.appendChild(el("p", "page__end-text", "きょうの紙面はここまでです。"));
+      const back = el("button", "btn btn--secondary", "表紙に戻る");
+      back.type = "button";
+      back.addEventListener("click", function () { go(0); });
+      end.appendChild(back);
+      panels[panels.length - 1].appendChild(end);
+    }
 
     function briefingLabel(point) {
       const section = typeof point.story === "number" ? data.digest[point.story] : null;

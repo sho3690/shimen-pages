@@ -19,11 +19,11 @@
   </script>
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="apple-touch-icon" href="./icons/icon-180.png">
-  <link rel="stylesheet" href="./css/hig.css?v=20261115063507">
-  <link rel="stylesheet" href="./css/paper.css?v=20261115063507">
+  <link rel="stylesheet" href="./css/hig.css?v=20261115163347">
+  <link rel="stylesheet" href="./css/paper.css?v=20261115163347">
   <meta name="robots" content="noindex, nofollow">
   <script>window.STATIC_MODE = true;
-  window.SHIMEN_BUILD = "20261115063507";
+  window.SHIMEN_BUILD = "20261115163347";
   window.SHIMEN_REPO = "sho3690/shimen-pages";
   window.SHIMEN_LABEL = "feed-request";</script>
   <title>日々 HIBI</title>
@@ -73,11 +73,14 @@
     </div>
   </div>
 
-  <main id="paper" class="paper" aria-live="polite"></main>
+  <!-- 紙面。読み込みが終わるまでは「読み込んでいます」を出す（app.js が紙面に差し替える） -->
+  <main id="paper" class="paper">
+    <p class="loading" role="status">紙面を読み込んでいます…</p>
+  </main>
 
   <footer id="wifi" class="footnote"></footer>
 
-  <section id="settings" class="sheet" hidden aria-labelledby="settings-title">
+  <section id="settings" class="sheet" hidden role="dialog" aria-modal="true" aria-labelledby="settings-title">
     <div class="sheet__head">
       <h2 id="settings-title" class="sheet__title">フィード</h2>
       <button id="close-settings" class="btn btn--quiet" type="button">閉じる</button>
@@ -96,9 +99,9 @@
     <div id="feed-list"></div>
   </section>
 
-  <script src="./js/api.js?v=20261115063507"></script>
-  <script src="./js/render.js?v=20261115063507"></script>
-  <script src="./js/flip.js?v=20261115063507"></script>
-  <script src="./js/app.js?v=20261115063507"></script>
+  <script src="./js/api.js?v=20261115163347"></script>
+  <script src="./js/render.js?v=20261115163347"></script>
+  <script src="./js/flip.js?v=20261115163347"></script>
+  <script src="./js/app.js?v=20261115163347"></script>
 </body>
 </html>

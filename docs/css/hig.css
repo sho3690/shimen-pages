@@ -505,10 +505,15 @@ body {
 
 /* --- 紙面の下の注記 --- */
 
+/* 下に浮かぶ「めくり」のボタン（paper.css の .pager）の高さ。
+   注記がボタンの後ろに隠れないよう、注記の下をこの分だけ空ける */
+:root { --pager-height: 3.5rem; }
+
 .footnote {
   max-width: var(--width-readable);
   margin: 0 auto;
-  padding: var(--space-4) var(--space-4) var(--space-10);
+  padding: var(--space-4) var(--space-4)
+    calc(var(--pager-height) + var(--space-8) + env(safe-area-inset-bottom));
   font-size: var(--font-size-xs);
   line-height: var(--line-height-normal);
   color: var(--color-text-secondary);
@@ -517,7 +522,8 @@ body {
 
 /* 紙面が1日以上古いとき。色だけに頼らず、帯と ⚠ で知らせる */
 .footnote--stale {
-  margin: var(--space-4) var(--space-4) var(--space-10);
+  margin: var(--space-4) var(--space-4)
+    calc(var(--pager-height) + var(--space-8) + env(safe-area-inset-bottom));
   padding: var(--space-3) var(--space-4);
   border-left: 3px solid var(--color-error);
   border-radius: var(--radius-md);

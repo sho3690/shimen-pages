@@ -307,6 +307,8 @@
   /* ===== キーボードとトラックパッド（紙面ごとではなく、1回だけ付ける） ===== */
 
   function typingIn(target) {
+    // フィードの一覧（設定シート）を開いている間は、後ろの紙面をめくらない
+    if (document.querySelector(".sheet:not([hidden])")) return true;
     return !!(target && target.closest &&
       target.closest("input, textarea, select, [contenteditable], [role=menu], .sheet"));
   }

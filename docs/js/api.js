@@ -60,8 +60,16 @@
     isStatic: true,
 
     getPaper: async function () {
-      const response = await fetch("data/paper.json", { cache: "no-cache" });
-      if (!response.ok) throw new Error("紙面データを読み込めませんでした");
+      // 圏外などで通信できないと fetch は英語のエラーを投げるので、日本語に言い換える
+      let response;
+      try {
+        response = await fetch("data/paper.json", { cache: "no-cache" });
+      } catch (e) {
+        throw new Error("通信できませんでした。電波の届く場所で、もう一度お試しください。");
+      }
+      if (!response.ok) {
+        throw new Error("紙面のデータを受け取れませんでした。少し時間をおいて、もう一度お試しください。");
+      }
       return applyReadState(await response.json());
     },
 
@@ -72,8 +80,13 @@
 
     // フィード一覧は紙面JSONに入っている（名前と状態だけ。URLは公開しない）
     listFeeds: async function () {
-      const response = await fetch("data/paper.json", { cache: "no-cache" });
-      if (!response.ok) throw new Error("フィード一覧を読み込めませんでした");
+      let response;
+      try {
+        response = await fetch("data/paper.json", { cache: "no-cache" });
+      } catch (e) {
+        throw new Error("通信できませんでした。電波の届く場所で、もう一度お試しください。");
+      }
+      if (!response.ok) throw new Error("少し時間をおいて、もう一度お試しください。");
       const paper = await response.json();
       return { feeds: (paper.feeds || []).map(function (f, i) {
         return { id: i, title: f.title, url: "", priority: f.priority,

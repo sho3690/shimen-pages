@@ -98,9 +98,48 @@
       cornerEl.hidden = !cornerEl.contains(settingsControl);
       return data;
     }).catch(function (e) {
-      notify("紙面を読み込めませんでした", e.message, "error");
+      // すでに紙面が出ているとき（作り直した後の読み直し等）は、紙面を残して上に知らせる。
+      // まだ何も出ていないときは、紙面の場所に、何が起きたかと「もう一度読み込む」を出す
+      if (paperEl.querySelector(".page")) {
+        notify("紙面を読み込めませんでした", e.message, "error");
+      } else {
+        showLoadError(e.message);
+      }
       return null;
     });
+  }
+
+  function showLoading() {
+    const p = document.createElement("p");
+    p.className = "loading";
+    p.setAttribute("role", "status");
+    p.textContent = "紙面を読み込んでいます…";
+    paperEl.replaceChildren(p);
+  }
+
+  function showLoadError(how) {
+    const box = document.createElement("div");
+    box.className = "empty";
+    box.setAttribute("role", "alert");
+    const title = document.createElement("p");
+    title.className = "empty__title";
+    title.textContent = "紙面を読み込めませんでした";
+    box.appendChild(title);
+    if (how) {
+      const h = document.createElement("p");
+      h.textContent = how;
+      box.appendChild(h);
+    }
+    const retry = document.createElement("button");
+    retry.type = "button";
+    retry.className = "btn";
+    retry.textContent = "もう一度読み込む";
+    retry.addEventListener("click", function () {
+      showLoading();
+      start();
+    });
+    box.appendChild(retry);
+    paperEl.replaceChildren(box);
   }
 
   function loadFeeds() {
@@ -130,7 +169,12 @@
         feedListEl.appendChild(box);
       }
     }).catch(function (e) {
-      notify("フィード一覧を読み込めませんでした", e.message, "error");
+      // 上の知らせの場所はシートの後ろに隠れるので、シートの中に出す
+      const box = document.createElement("p");
+      box.className = "banner banner--error";
+      box.setAttribute("role", "alert");
+      box.textContent = "フィード一覧を読み込めませんでした。" + (e.message || "");
+      feedListEl.replaceChildren(box);
     });
   }
 
@@ -163,22 +207,27 @@
 
   /* GitHub Pages版では、Macが必要な操作を画面から消す。
      押せないボタンを残しておくより、無いほうが迷わない。 */
-  function applyStaticMode(paper) {
+  function applyStaticMode() {
     // 紙面を作るのはMacの仕事なので、このボタンだけ消す。
     // フィードの確認はここでもできるようにしておく
     // 静的版ではツールバーの中身が空になるので、帯ごと消す。
     // 空の帯が本文の上に居座って場所を取っていた
+    // 2026-11-15: 紙面を読み込む前に消す（読み込みの間だけ、押せないボタンが見えていた）
     const bar = buildBtn.closest(".toolbar");
     if (bar) bar.remove(); else buildBtn.remove();
     addFeedForm.remove();
-    showFreshness(paper);
   }
 
   /* いつ作られた紙面かを出す。古いままなら、それと分かるようにする。
      自動更新が止まっていることに気づける唯一の手がかりなので消さない。 */
   function showFreshness(paper) {
     wifiEl.classList.remove("footnote--stale");
-    const issued = paper && paper.generated_at ? new Date(paper.generated_at) : null;
+    // 紙面を読み込めなかったときは、紙面についての注記を出さない
+    if (!paper) {
+      wifiEl.textContent = "";
+      return;
+    }
+    const issued = paper.generated_at ? new Date(paper.generated_at) : null;
     if (!issued || isNaN(issued.getTime())) {
       wifiEl.textContent = "この紙面はMacで作られた控えです。";
       return;
@@ -348,17 +397,34 @@
   }
   refreshTheme();
 
+  /* フィードの一覧（画面いっぱいのシート）。開いている間は、後ろの紙面を
+     キーボードと読み上げの対象から外す（inert）。Esc でも閉じられる */
+  function setBehindInert(on) {
+    [paperEl, wifiEl].forEach(function (node) { node.inert = on; });
+  }
+
+  function closeSettings() {
+    if (settingsEl.hidden) return;
+    settingsEl.hidden = true;
+    setBehindInert(false);
+    menuBtn.focus({ preventScroll: true });
+    if (!API.isStatic) loadPaper();
+  }
+
   document.getElementById("open-settings").addEventListener("click", function () {
     closeMenu(false);
     settingsEl.hidden = false;
+    setBehindInert(true);
     document.getElementById("close-settings").focus();
     loadFeeds();
   });
 
-  document.getElementById("close-settings").addEventListener("click", function () {
-    settingsEl.hidden = true;
-    menuBtn.focus({ preventScroll: true });
-    if (!API.isStatic) loadPaper();
+  document.getElementById("close-settings").addEventListener("click", closeSettings);
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key !== "Escape" || settingsEl.hidden) return;
+    event.preventDefault();
+    closeSettings();
   });
 
   addFeedForm.addEventListener("submit", function (event) {
@@ -381,12 +447,17 @@
     });
   });
 
-  // 初回表示
-  loadPaper().then(function (paper) {
-    if (API.isStatic) {
-      applyStaticMode(paper);
-      return null;
-    }
-    return checkStatus();
-  });
+  // 紙面を読み込んで出す（初回と、「もう一度読み込む」を押したとき）
+  function start() {
+    return loadPaper().then(function (paper) {
+      if (API.isStatic) {
+        showFreshness(paper);
+        return null;
+      }
+      return checkStatus();
+    });
+  }
+
+  if (API.isStatic) applyStaticMode();
+  start();
 })();

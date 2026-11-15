@@ -11,10 +11,11 @@
    2026-10-18: 面のタブとめくりをやめて1本のスクロールに → 同じ日に、記事1本ずつをめくる形へ。
                名前を「HIBI」（日々）にし、題字を太い文字＋面の色の三色の線にした。
                記事に「かんたんに言うと」（やさしい言い換え）と「ことば」（用語の意味）を足した。
-   2026-11-04: 模様を外し、記事の頭・下線の言葉の吹き出し・めくりの区切り・読んだ印・表紙の入場を足した。 */
+   2026-11-04: 模様を外し、記事の頭・下線の言葉の吹き出し・めくりの区切り・読んだ印・表紙の入場を足した。
+   2026-11-15: 磨き込み。下の注記がめくりのボタンに隠れないようにし、読み込み中・読み込めなかったときの
+               表示、最後のページの締め、広い画面の言葉の雲、下線の言葉の押しやすさを直した。 */
 
 .paper {
-  --pager-height: 3.5rem;
   --paper-pad: var(--space-4);
   --paper-gap: var(--space-4);
   max-width: calc(var(--width-wide) + 2 * var(--paper-pad));
@@ -131,12 +132,13 @@
 /* ===== ページ（表紙・記事1本ずつ）。左右にめくる（flip.js） ===== */
 
 /* 縦のスクロールとピンチ拡大はブラウザに任せ、横の動きだけを flip.js が受け取る。
-   下に浮かぶ「めくり」のボタンに最後の行が隠れないよう、下を空けておく */
+   下に浮かぶ「めくり」のボタンの分は、ページの下の注記（hig.css の .footnote）が空ける
+   （2026-11-15: ページと注記の両方で空けると間が空きすぎ、注記はボタンに隠れていた） */
 .page {
   position: relative;
   min-height: 100vh;
   min-height: 100svh;
-  padding-bottom: calc(var(--pager-height) + var(--space-8) + env(safe-area-inset-bottom));
+  padding-bottom: var(--space-6);
   touch-action: pan-y pinch-zoom;
 }
 
@@ -389,8 +391,9 @@
 
 /* 「ことば」に載っている言葉。本文の中で下線を引き、押すとその場で意味が出る */
 .term-mark {
-  margin: 0 -0.125rem;
-  padding: 0 0.125rem;
+  /* 押せる範囲を上下に広げる（行の高さいっぱい。行の送りは変わらない）。色を敷くのは文字の所だけ */
+  padding: 0.375rem 0;
+  background-clip: content-box;
   border-radius: 0.25rem;
   font-weight: 700;
   color: var(--color-text-primary);
@@ -958,9 +961,13 @@ a.briefing__row:active {
     display: flex;
     flex-direction: column;
   }
+  /* 言葉の雲は、サマリーとそろえた高さいっぱいに広げる（上下に空白を残さない） */
   .paper-head--pair .cloud {
+    flex: 1;
     width: 100%;
-    margin: auto;
+    height: auto;
+    min-height: 11rem;
+    margin: 0 auto;
   }
 }
 
@@ -976,7 +983,37 @@ a.briefing__row:active {
 
 .colophon p { margin: 0 0 var(--space-1); }
 
-/* ===== 記事が無いとき ===== */
+/* ===== 最後のページの締め。ここで終わりだと分かるようにし、表紙へ戻れるようにする ===== */
+
+.page__end {
+  max-width: 46rem;
+  margin: var(--space-6) auto 0;
+  text-align: center;
+}
+
+.page__end-text {
+  margin: 0 0 var(--space-3);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  color: var(--color-text-secondary);
+}
+
+/* ===== 読み込み中。すぐ終わるときはちらつかないよう、少し待ってから出す ===== */
+
+@keyframes hibi-appear {
+  from { opacity: 0; }
+}
+
+.loading {
+  margin: 0;
+  padding: var(--space-16) var(--space-4);
+  text-align: center;
+  font-size: var(--font-size-md);
+  color: var(--color-text-secondary);
+  animation: hibi-appear 200ms var(--ease-decelerate) 400ms backwards;
+}
+
+/* ===== 記事が無いとき・紙面を読み込めなかったとき ===== */
 
 .empty {
   padding: var(--space-12) var(--space-4);
@@ -991,6 +1028,9 @@ a.briefing__row:active {
   font-weight: 700;
   color: var(--color-text-primary);
 }
+
+.empty p { margin: 0 0 var(--space-2); }
+.empty .btn { margin-top: var(--space-4); }
 
 /* ===== 表紙の入場。開いたときに一度だけ、題字とカードが下から順に現れる ===== */
 
